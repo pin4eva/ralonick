@@ -1,0 +1,15 @@
+h1 {
+  font-size: 3em;
+  color: $secondary;
+  font-weight: 700;
+}
+
+.btn {
+  border-radius: 0;
+
+  &.hug {
+    padding: 1.5% 3%;
+    font-size: 1.125rem;
+    font-weight: 600;
+  }
+}

@@ -1,0 +1,30 @@
+.app-header {
+  position: relative;
+
+  .nav-brand {
+    font-weight: 700;
+    text-decoration: none;
+
+  }
+
+  .nav {
+    // display: none;
+
+    // @media screen and (min-width:768px) {
+    //   display: flex;
+    // }
+
+    &-link {
+      font-weight: 600;
+      color: black;
+    }
+  }
+
+  .mobile-nav {
+    background-color: red;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    min-height: 30vh;
+  }
+}

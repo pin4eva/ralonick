@@ -1,0 +1,100 @@
+.why {
+	display: flex;
+	.plant {
+		padding-top: 1rem;
+	}
+	.choose {
+		font-family: "Raleway";
+		font-weight: 800;
+		font-size: 3rem;
+        margin-left: 2rem;
+		// color: $secondary;
+		padding-left: 5rem;
+        
+
+        h3 {
+            padding-top: 3rem;
+            padding-bottom: 1.2rem;
+        }
+
+		.write1 {
+			display: flex;
+			font-family: "Raleway";
+			font-style: normal;
+			font-weight: 600;
+			font-size: 1rem;
+			line-height: 1.33rem;
+            .a {
+                padding-left: 0.5rem;
+                padding-right: 0.5rem;
+                border: 1px solid whitesmoke;
+
+                .square-icon{
+                    
+                  height: 3.125rem;
+                  width: 3.125rem;
+                  border-radius: 0.438rem;
+                  border: 1px solid black;
+
+                }
+            }
+            .b {
+                padding-left: 0.5rem;
+                padding-right: 0.5rem;
+                border: 1px solid whitesmoke;
+
+                .square-icon{
+                    
+                    height: 3.125rem;
+                    width: 3.125rem;
+                    border-radius: 0.438rem;
+                    border: 1px solid black;
+  
+                  }
+            }
+		}
+        .write2 {
+            display: flex;
+			font-family: "Raleway";
+			font-style: normal;
+			font-weight: 600;
+			font-size: 1rem;
+			line-height: 1.33rem;
+            margin-bottom: 2rem;
+            .c {
+                padding-left: 0.5rem;
+                padding-right: 0.5rem;
+                border: 1px solid whitesmoke;
+
+                .square-icon{
+                    
+                    height: 3.125rem;
+                    width: 3.125rem;
+                    border-radius: 0.438rem;
+                    border: 1px solid black;
+  
+                  }
+            }
+            .d {
+                padding-left: 0.5rem;
+                padding-right: 0.5rem;
+                border: 1px solid whitesmoke;
+
+                .square-icon{
+                    
+                    height: 3.125rem;
+                    width: 3.125rem;
+                    border-radius: 0.438rem;
+                    border: 1px solid black;
+  
+                  }
+            }
+        }
+	}
+}
+
+@media screen and (max-width:768px) {
+    .why {
+        flex-direction: column;
+    }
+  }

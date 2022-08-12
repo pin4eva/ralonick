@@ -1,0 +1,49 @@
+.container1 {
+	.about {
+		 display: flex;
+
+		.us {
+			padding-left: 7.5rem;
+			padding-right: 1rem;
+			padding-top: 5.75rem;
+			h6 {
+				font-family: "Raleway";
+				font-weight: 600;
+				font-size: 1.1rem;
+				color: $danger;
+			}
+			h3 {
+				font-family: "Raleway";
+				font-weight: 800;
+				font-size: 3rem;
+				color: $secondary;
+			}
+			.btn {
+				font-family: "Raleway";
+				color: $danger;
+				border: 1px solid $danger;
+				font-weight: 400;
+				font-size: 1rem;
+				padding: 0.7rem;
+				
+			}
+		}
+
+		.people {
+			img {
+				max-width: 100%;
+			}
+		}
+	}
+}
+
+@media screen and (max-width:768px) {
+	.about {
+		flex-direction: column;
+		
+	}
+
+	// .people {
+	// 	width: 50%;
+	// }
+  }

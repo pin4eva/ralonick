@@ -1,30 +1,151 @@
 .app-header {
-  position: relative;
+	.display {
+		display: block;
+	}
 
-  .nav-brand {
-    font-weight: 700;
-    text-decoration: none;
+	.none {
+		display: none;
+	}
 
-  }
+	// @media screen and (max-width:768px) {
 
-  .nav {
-    // display: none;
+	//   .navbar {
+	//     position: relative;
+	//   }
 
-    // @media screen and (min-width:768px) {
-    //   display: flex;
-    // }
+	//   .line {
+	//     width: 100%;
+	//     height: 3px;
+	//     background: $secondary;
+	//     opacity: 0.1;
+	//   }
 
-    &-link {
-      font-weight: 600;
-      color: black;
-    }
-  }
+	//   .mobile-nav {
+	//     background-color: white;
+	//     display: flex;
+	//     justify-content: center;
+	//     position: absolute;
+	//     top: 0;
+	//     width: 100%;
+	//     min-height: 30vh;
+	//     text-align: center;
+	//     z-index: 1;
+	//     padding-left: 13rem;
+	//     transition: all 1s ease-out;
 
-  .mobile-nav {
-    background-color: red;
-    position: absolute;
-    top: 0;
-    width: 100%;
-    min-height: 30vh;
-  }
+	//     li {
+	//      width: 50%;
+
+	//     }
+	//   }
+	// }
+
+	.nav-brand {
+		font-weight: 700;
+		text-decoration: none;
+	}
+
+	.hug-variant {
+		padding: 1.5% 3%;
+		font-size: 1.125rem;
+	}
+
+	.nav {
+		&-link {
+			font-weight: 600;
+			color: black;
+		}
+	}
+
+	@media screen and (max-width: 768px) {
+		.navbar {
+		}
+
+		.nav {
+			min-height: 30vh;
+			// background-color: white;
+
+			display: flex;
+			justify-content: center;
+			position: absolute;
+			top: 0;
+			width: 100%;
+			text-align: center;
+			// z-index: -5;
+
+			// padding-left: 10rem;
+			// transition: all 1s ease-out;
+		}
+	}
+}
+
+//===============HERO SESSION MOBILE VIE=======================
+.hero-section {
+	@media screen and (max-width: 768px) {
+		width: 90%;
+		margin: 0 auto;
+	}
+
+	.hero-h1 {
+		font-size: 3rem;
+		color: $primary;
+	}
+	.hero-h5 {
+		color: #000000;
+		font-size: 1.125rem;
+	}
+
+	@media screen and (max-width: 768px) {
+		.hero-image-2 {
+			.blur-image {
+				margin-top: -5rem;
+				margin-left: 20px;
+			}
+		}
+	}
+}
+
+// ===============HERO SESSION DESKTOP VIEW=========================
+@media screen and (min-width: 768px) {
+	.hero-section {
+		* {
+			margin: 0;
+			padding: 0;
+			box-sizing: content-box;
+		}
+		height: 42.25rem;
+		position: relative;
+
+
+		.hero-image-1 {
+			margin-left: 7.5%;
+			height: 29.75rem;
+
+			& > img {
+				height: 27rem;
+			}
+		}
+
+		.hero-text {
+			margin-left: 1.5%;
+
+			.hero-h5 {
+				margin-top: 1rem;
+			}
+
+			.pt-4 {
+				margin-top: 1.5rem;
+
+				.hug {
+					padding: 1.5% 3%;
+				}
+			}
+		}
+
+		.hero-image-2 {
+			position: absolute;
+			bottom: 0;
+			right: 0;
+		}
+	}
 }

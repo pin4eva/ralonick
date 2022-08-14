@@ -112,13 +112,14 @@
 			margin: 0;
 			padding: 0;
 			box-sizing: content-box;
+			list-style-type: none;
 		}
 		height: 42.25rem;
 		position: relative;
 
 
 		.hero-image-1 {
-			margin-left: 7.5%;
+			margin-left: 7.55%;
 			height: 29.75rem;
 
 			& > img {

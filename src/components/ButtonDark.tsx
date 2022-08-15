@@ -3,7 +3,7 @@ import React from "react";
 const ButtonDark = (props) => {
   return (
     <button
-      className={`btn ${props.className}`}
+      className={`btn1 ${props.className}`}
       type={`${props.type}` || "button"}
       onClick={props.onClick}
     >

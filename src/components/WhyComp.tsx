@@ -1,6 +1,6 @@
 import React from "react";
 
-const Why = () => {
+const WhyComp = () => {
   return (
     <div className="why">
       <section className="why_img_section">
@@ -59,4 +59,4 @@ const Why = () => {
   );
 };
 
-export default Why;
+export default WhyComp;

@@ -1,7 +1,7 @@
 import React from "react";
 import ButtonLight from "./ButtonLight";
 
-const About = () => {
+const AboutComp = () => {
   return (
     <div className="about">
       <section className="about_text_sect">
@@ -30,4 +30,4 @@ const About = () => {
   );
 };
 
-export default About;
+export default AboutComp;

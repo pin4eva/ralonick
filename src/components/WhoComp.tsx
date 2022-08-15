@@ -1,6 +1,6 @@
 import React from "react";
 
-const Who = () => {
+const WhoComp = () => {
   return (
     <div className="who">
       <section className="who_text_section">
@@ -36,4 +36,4 @@ const Who = () => {
   );
 };
 
-export default Who;
+export default WhoComp;

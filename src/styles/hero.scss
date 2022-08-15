@@ -54,9 +54,10 @@
       backdrop-filter: blur(5px);
       padding: 0.8rem;
       div {
-        margin-left: 1rem;
+        margin-left: 0.88889rem;
         p {
           color: $white;
+          margin:0.4rem;
           &:nth-child(1) {
             font-size: 1.125rem;
             font-weight: 600;

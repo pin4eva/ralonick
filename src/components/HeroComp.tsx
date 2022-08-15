@@ -1,7 +1,7 @@
 import React from "react";
 import ButtonDark from "./ButtonDark";
 
-const Hero = () => {
+const HeroComp = () => {
   return (
     <section className="hero_section">
       <div className="hero">
@@ -36,4 +36,4 @@ const Hero = () => {
   );
 };
 
-export default Hero;
+export default HeroComp;

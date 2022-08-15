@@ -16,12 +16,13 @@
     grid-template-columns: repeat(2, minmax(auto, 1fr));
     position: relative;
     div {
-      padding: 1rem 1.5rem;
+      padding: 0.88889rem 1.33333rem;
       position: absolute;
       top: 25%;
       width: 35%;
       p {
         color: $white;
+        margin:0;
         &:nth-child(1) {
           font-size: 0.75rem;
           font-weight: 700;

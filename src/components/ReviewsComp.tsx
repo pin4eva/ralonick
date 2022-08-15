@@ -1,11 +1,8 @@
 import React from "react";
-import classes from "./Reviews.module.scss";
-import reviewslider from "../../assets/reviewslider.png";
-import clientPic from "../../assets/clientPic.png";
 
-const Reviews = () => {
+const ReviewsComp = () => {
   return (
-    <div className={classes.reviews}>
+    <div className="reviews">
       <h2>Clients Reviews</h2>
       <p>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eros vitae
@@ -17,13 +14,13 @@ const Reviews = () => {
         vel in sit ullamcorper. Sollicitud
       </p>
       <div>
-        <img src={clientPic} alt="" />
+        <img src="/assets/clientPic.png" alt="" />
         <h3>Cindy Clifford</h3>
         <p>Rumuodara Interior Designer</p>
       </div>
-      <img src={reviewslider} alt="" />
+      <img src="/assets/reviewslider.png" alt="" />
     </div>
   );
 };
 
-export default Reviews;
+export default ReviewsComp;

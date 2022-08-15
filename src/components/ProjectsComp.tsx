@@ -1,18 +1,13 @@
 import React from "react";
-import classes from "./Projects.module.scss";
-import projects1 from "../../assets/projects1.png";
-import projects2 from "../../assets/projects2.png";
-import projects3 from "../../assets/projects3.png";
-import { Link } from "react-router-dom";
-import moreDetailsArrow from "../../assets/moreDetailsArrow.png";
-import ButtonDark from "../UI/Buttons/ButtonDark";
+import Link from "next/link";
+import ButtonDark from "./ButtonDark";
 
-const Projects = () => {
+const ProjectsComp = () => {
   return (
-    <div className={classes.projects}>
+    <div className="projects">
       <h2>Our Projects</h2>
-      <div className={classes.projects_sub}>
-        <img src={projects1} alt="" />
+      <div className="projects_sub">
+        <img src="/assets/projects1.png" alt="" />
         <div>
           <p>Project Name</p>
           <p>
@@ -21,14 +16,16 @@ const Projects = () => {
             convallis lectus.
           </p>
           <p>
-            <Link to="/">
-              More Details <img src={moreDetailsArrow} alt="" />
+            <Link href="/e">
+              <a>
+              More Details <img src="/assets/moreDetailsArrow.png" alt="" />
+              </a>
             </Link>
           </p>
         </div>
       </div>
-      <div className={classes.projects_sub}>
-        <img src={projects2} alt="" />
+      <div className="projects_sub">
+        <img src="/assets/projects2.png" alt="" />
         <div>
           <p>Project Name</p>
           <p>
@@ -37,15 +34,17 @@ const Projects = () => {
             convallis lectus.
           </p>
           <p>
-            <Link to="/">
-              More Details
-              <img src={moreDetailsArrow} alt="" />
+            <Link href="/f">
+             <a>
+               More Details
+              <img src="/assets/moreDetailsArrow.png" alt="" />
+             </a>
             </Link>
           </p>
         </div>
       </div>
-      <div className={classes.projects_sub}>
-        <img src={projects3} alt="" />
+      <div className="projects_sub">
+        <img src="/assets/projects3.png" alt="" />
         <div>
           <p>Project Name</p>
           <p>
@@ -54,18 +53,20 @@ const Projects = () => {
             convallis lectus.
           </p>
           <p>
-            <Link to="/">
-              More Details
-              <img src={moreDetailsArrow} alt="" />
+            <Link href="/g">
+            <a>
+                More Details
+              <img src="/assets/moreDetailsArrow.png" alt="" />
+            </a>
             </Link>
           </p>
         </div>
       </div>
-      <div className={classes.projects_btn}>
+      <div className="projects_btn">
         <ButtonDark>All Services</ButtonDark>
       </div>
     </div>
   );
 };
 
-export default Projects;
+export default ProjectsComp;

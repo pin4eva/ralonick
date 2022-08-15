@@ -2,7 +2,7 @@ import React from "react";
 import Link from "next/link";
 import ButtonLight from "./ButtonLight";
 
-const OurServices = () => {
+const OurServicesComp = () => {
   return (
     <div className="ourServices">
       <h2>Our Services</h2>
@@ -77,4 +77,4 @@ const OurServices = () => {
   );
 };
 
-export default OurServices;
+export default OurServicesComp;

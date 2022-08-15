@@ -3,7 +3,7 @@ import React from "react";
 const ButtonLight = (props) => {
   return (
     <button
-      className={`btn ${props.className}`}
+      className={`btn2 ${props.className}`}
       type={`${props.type}` || "button"}
       onClick={props.onClick}
     >

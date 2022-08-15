@@ -1,0 +1,31 @@
+// @import "../../variables";
+
+.about {
+  padding-left: 7.5rem;
+  display: flex;
+  .about_text_sect {
+    padding-right: 5rem;
+    padding-top: 5.75rem;
+    p {
+      font-size: 1.125rem;
+      line-height: 2rem;
+      font-weight: 500;
+      &:nth-child(1) {
+        color: $primaryRed;
+        font-weight: 600;
+      }
+      &:nth-child(3) {
+        margin-block: 1.5rem 2rem;
+      }
+      &:nth-child(4) {
+        margin-bottom: 3rem;
+      }
+    }
+    h2 {
+      font-size: 3rem;
+      font-weight: 800;
+      line-height: 4rem;
+      color: $lighterPrimaryDark;
+    }
+  }
+}

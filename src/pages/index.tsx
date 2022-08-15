@@ -1,14 +1,17 @@
 import React from "react";
 import FrontLayout from "../layouts/front.layout";
+import HeroComp from "../components/HeroComp";
+import AboutComp from "../components/AboutComp";
+import WhoComp from "../components/WhoComp";
+import WhyComp from "../components/WhyComp";
 
 const Home = () => {
 	return (
 		<FrontLayout>
-			<div className="container">
-				<h1 className="fw-800">Welcome Home</h1>
-
-				<button className="btn btn-danger hug shadow-none">See Projects</button>
-			</div>
+			<HeroComp/>
+			<AboutComp/>
+			<WhoComp/>
+			<WhyComp/>
 		</FrontLayout>
 	);
 };

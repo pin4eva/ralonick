@@ -1,0 +1,42 @@
+// @import "../../variables";
+
+.reviews {
+  padding-inline: 7.5rem;
+  text-align: center;
+  width: 65%;
+  margin-inline: auto;
+  margin-top: 12.75rem;
+  h2 {
+    color: $lighterPrimaryDark;
+    font-size: 3rem;
+    font-weight: 800;
+    line-height: 4rem;
+  }
+  p:nth-child(2) {
+    color: $primaryDark;
+    font-size: 1.125rem;
+    font-weight: 400;
+    line-height: 2rem;
+    margin-block: 1.8125rem 3rem;
+    font-style: italic;
+  }
+  div {
+    img {
+      border-radius: 50%;
+    }
+    h3 {
+      color: $primaryDark;
+      font-size: 1.5rem;
+      font-weight: 600;
+      line-height: 1.76125rem;
+      margin-block: 1.5rem 0.5rem;
+    }
+    p {
+      color: $primaryDark;
+      font-size: 1.125rem;
+      font-weight: 500;
+      line-height: 1.76125rem;
+      margin-bottom: 3rem;
+    }
+  }
+}

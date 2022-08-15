@@ -4,6 +4,7 @@ import HeroComp from "../components/HeroComp";
 import AboutComp from "../components/AboutComp";
 import WhoComp from "../components/WhoComp";
 import WhyComp from "../components/WhyComp";
+import OurServicesComp from "../components/OurServicesComp";
 
 const Home = () => {
 	return (
@@ -12,6 +13,7 @@ const Home = () => {
 			<AboutComp/>
 			<WhoComp/>
 			<WhyComp/>
+			<OurServicesComp/>
 		</FrontLayout>
 	);
 };

@@ -1,0 +1,52 @@
+.client {
+	width: 100%;
+
+	h2 {
+		font-family: "Raleway";
+		font-style: normal;
+		font-weight: 800;
+		font-size: 3rem;
+		line-height: 4rem;
+		color: $secondary;
+		text-align: center;
+	}
+
+	p {
+		text-align: center;
+		padding-top: 2rem;
+		padding-bottom: 2rem;
+	}
+
+	.profile {
+		align-items: center;
+		// justify-content: center;
+
+		.image {
+			display: flex;
+			justify-content: center;
+			flex-direction: column;
+			align-items: center;
+
+			img {
+				border-radius: 50%;
+				width: 7.38rem;
+				height: 7.38rem;
+			}
+
+		}
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.client {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		width: 90%;
+
+		.profile {
+			align-items: center;
+			
+		}
+	}
+}

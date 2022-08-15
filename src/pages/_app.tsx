@@ -3,6 +3,7 @@ import "../styles/index.scss";
 import "../styles/custom.scss";
 import "@fortawesome/fontawesome-free/css/all.css";
 
+
 function MyApp({ Component, pageProps }: AppProps) {
 	return <Component {...pageProps} />;
 }

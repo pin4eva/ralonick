@@ -1,0 +1,41 @@
+ [
+    {
+        "id": 1,
+        "heading": "Clients Reviews",
+        "writing": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eros vitae vitae dictum mattis risus, ut nec.",
+        "writing1": "Rhoncus egestas quis pellentesque risus posuere.facilisis. Enim quisque id sit molestie tincidunt",
+        "writing2": "faucibus. Amet, dictum eget egestas dictum non leo cras faucibus egestas. Mattis imperdiet elit",
+        "writing3": "nullam adipiscing lobortis fames. Et egestas vitae feugiat nisi, sed sit in pulvinar at. Ultrices tincidun",
+        "writing4": "vel in sit ullamcorper. Sollicitud",
+        "image": "/assets/lady.jpg",
+        "name": "Cindy Clifford",
+        "place": "Rumuodara Interior Designer"
+
+    },
+    {
+        "id": 2,
+        "heading": "Clients Reviews",
+        "writing": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eros vitae vitae dictum mattis risus, ut nec.",
+        "writing1": "Rhoncus egestas quis pellentesque risus posuere.facilisis. Enim quisque id sit molestie tincidunt",
+        "writing2": "faucibus. Amet, dictum eget egestas dictum non leo cras faucibus egestas. Mattis imperdiet elit",
+        "writing3": "nullam adipiscing lobortis fames. Et egestas vitae feugiat nisi, sed sit in pulvinar at. Ultrices tincidun",
+        "writing4": "vel in sit ullamcorper. Sollicitud",
+        "image": "/assets/lady.jpg",
+        "name": "Cindy Clifford",
+        "place": "Rumuodara Interior Designer"
+
+    },
+    {
+        "id": 3,
+        "heading": "Clients Reviews",
+        "writing": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eros vitae vitae dictum mattis risus, ut nec.",
+        "writing1": "Rhoncus egestas quis pellentesque risus posuere.facilisis. Enim quisque id sit molestie tincidunt",
+        "writing2": "faucibus. Amet, dictum eget egestas dictum non leo cras faucibus egestas. Mattis imperdiet elit",
+        "writing3": "nullam adipiscing lobortis fames. Et egestas vitae feugiat nisi, sed sit in pulvinar at. Ultrices tincidun",
+        "writing4": "vel in sit ullamcorper. Sollicitud",
+        "image": "/assets/lady.jpg ",
+        "name": "Cindy Clifford",
+        "place": "Rumuodara Interior Designer"
+
+    }
+ ]

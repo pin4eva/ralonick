@@ -4,6 +4,7 @@
   padding-left: 7.5rem;
   display: flex;
   .about_text_sect {
+    width: 50%;
     padding-right: 5rem;
     padding-top: 5.75rem;
     p {
@@ -27,5 +28,48 @@
       line-height: 4rem;
       color: $lighterPrimaryDark;
     }
+  }
+  .about_img_sect {
+    width: 50%;
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+  }
+}
+
+@media screen and (max-width: 1358px) {
+  .about {
+    .about_text_sect {
+      padding-top: 0.88889rem;
+    }
+  }
+}
+
+@media screen and (max-width: 1250px) {
+  .about {
+    display: block;
+    text-align: center;
+    padding-inline: 7.5rem;
+    .about_text_sect {
+      margin-inline: auto;
+      width: 100%;
+      padding-right: 0;
+    }
+    .about_img_sect {
+      display: none;
+    }
+  }
+}
+
+@media screen and (max-width: 1026px) {
+  .about {
+    padding-inline: 4.44444rem;
+  }
+}
+
+@media screen and (max-width: 714px) {
+  .about {
+    padding-inline: 1.77778rem;
   }
 }

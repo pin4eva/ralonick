@@ -17,7 +17,7 @@ const Home = () => {
 			<WhyComp/>
 			<OurServicesComp/>
 			<ReviewsComp/>
-			<ProjectsComp/>
+			{/* <ProjectsComp/> */}
 		</FrontLayout>
 	);
 };

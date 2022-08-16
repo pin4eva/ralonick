@@ -63,6 +63,7 @@
           font-weight: 600;
           line-height: 1.0275rem;
           color: $primaryDark;
+          margin:0;
         }
         &:nth-child(2),
         &:nth-child(4) {
@@ -70,7 +71,7 @@
           font-weight: 700;
           line-height: 1.21rem;
           color: $primaryDark;
-          margin-block: 1rem;
+          margin-block: 0.7rem;
         }
         &:nth-child(3),
         &:nth-child(5) {
@@ -81,7 +82,7 @@
           padding-right: 30%;
         }
         &:nth-child(2) {
-          margin-block: 1.75rem 1rem;
+          margin-block: 1rem;
         }
       }
     }

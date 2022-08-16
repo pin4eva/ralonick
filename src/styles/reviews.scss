@@ -40,3 +40,16 @@
     }
   }
 }
+
+@media screen and (max-width: 1026px) {
+  .reviews {
+    padding-inline: 4.44444rem;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 714px) {
+  .reviews {
+    padding-inline: 1.77778rem;
+  }
+}

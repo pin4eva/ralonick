@@ -8,7 +8,7 @@ const FrontLayout: React.FC<{ children: React.ReactElement }> = ({ children }) =
 		<div className="app">
 			<HeaderComp />
 			<main className="app-children">{children}</main>
-			<FooterComp />
+			{/* <FooterComp /> */}
 		</div>
 	);
 };

@@ -2,4 +2,6 @@
   display: grid;
   min-height: 100vh;
   grid-template-rows: auto 1fr auto;
+  max-width: 1600px;
+  margin-inline: auto;
 }

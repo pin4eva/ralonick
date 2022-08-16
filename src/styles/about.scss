@@ -3,10 +3,12 @@
 .about {
   padding-left: 7.5rem;
   display: flex;
+  justify-content:space-between;
   .about_text_sect {
-    width: 50%;
     padding-right: 5rem;
-    padding-top: 5.75rem;
+    // padding-top: 5.75rem;
+    padding-block:auto;
+    height:fit-content;
     p {
       font-size: 1.125rem;
       line-height: 2rem;
@@ -14,6 +16,7 @@
       &:nth-child(1) {
         color: $primaryRed;
         font-weight: 600;
+        margin-top:1rem;
       }
       &:nth-child(3) {
         margin-block: 1.5rem 2rem;
@@ -29,20 +32,24 @@
       color: $lighterPrimaryDark;
     }
   }
-  .about_img_sect {
-    width: 50%;
-    img {
-      max-width: 100%;
-      height: auto;
-    }
-  }
+
 }
 
-@media screen and (max-width: 1358px) {
+@media screen and (max-width: 1413px) {
   .about {
     .about_text_sect {
+       width: 50%;
       padding-top: 0.88889rem;
     }
+  }
+    .about_img_sect {
+      width: 50%;
+      height:fit-content;
+      margin-block:auto;
+      img {
+        max-width: 100%;
+        height: auto;
+      }
   }
 }
 

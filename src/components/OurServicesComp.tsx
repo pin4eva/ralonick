@@ -70,8 +70,8 @@ const OurServicesComp = () => {
         </div>
       </div>
       <div className="services_arrows">
-        <img src="/assets/leftArrow.png" alt="" />
-        <img src="/assets/rightArrow.png" alt="" />
+        <img src="/assets/keyboardArrowLeft.png" alt="" />
+        <img src="/assets/keyboardArrowRight.png" alt="" />
       </div>
     </div>
   );

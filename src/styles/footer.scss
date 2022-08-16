@@ -1,0 +1,214 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+    list-style-type: none;
+}
+
+footer {
+    color: $secondary;
+    
+    
+    
+    h5 {
+        font-size: 0.875rem;
+        font-weight: 800;
+    }
+    .contain {
+        // border: 1px solid red; 
+        display: grid;
+        grid-template-columns: 25% 20% 20% 25% 15%;
+        padding: 3.5rem 7rem 3rem 6rem;
+        // width: 100%;
+
+        .top{
+            margin-top: 1rem;
+        }
+        
+        
+        .ranolink {
+            font-size: 0.875rem;
+            font-family: 'Raleway', sans-serif;
+            margin-top: -0.2rem;
+            // border: 1px solid red;
+            // margin-right: 5rem;
+
+            p {
+                margin-top: 1rem;
+            }
+            .btn {
+                margin-top: 1rem;
+                background: transparent;
+                border: 1px solid $danger;
+                color: $danger;
+                font-size: 18px;
+            }
+            
+            
+            
+        }
+        
+        .company {
+            font-size: 1rem;
+            font-weight: 400;
+            margin-left: 1rem;
+            // border: 1px solid red;
+
+            .top {
+                margin-top: 1rem;
+            }
+            & > p {
+                
+                font-family: 'Inter', sans-serif;
+                font-size: 16px;
+            }
+            
+            
+            
+        }
+        
+        .services {
+            // border: 1px solid red;
+            margin-left: -4rem;
+            .danger {
+                color: $danger;
+                & > i {
+                    background: white;
+                    color: $danger;
+                }
+            }
+            & > p {
+                font-family: 'Inter', sans-serif;
+            }
+            
+        }
+
+        .icon {
+            margin-left: -1rem;
+            margin-top: 2.125rem;
+            // border: 1px solid red;
+
+            & > div {
+                display: flex;
+                gap: 1.5rem;
+                
+            }
+
+            & > p {
+                font-size: 14px;
+                margin-top: 4.5rem;
+                font-weight: 600;
+            }
+            .btn {
+                font-weight: 600;
+                // padding: 1.5% 3%;
+            }
+        }
+
+        .contact {
+            margin-left: -5rem;
+            // border: 1px solid red;
+
+            .location{
+                padding-top: 16px;
+            }
+            .fw-700 {
+                padding-top: 20px;
+                font-size: 16px;
+                font-weight: 700;
+            }
+            .date{
+                padding-top: 12px;
+            }
+            .email {
+                padding-top:15px ;
+                font-weight: 700;
+            }
+            & > p {
+                font-size: 1rem;
+                font-weight: 400;
+                font-family: 'Inter', sans-serif;
+            }
+        }
+
+
+
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    footer{
+        overflow: hidden;
+        font-size: 16px;
+    .contain {
+        grid-template-columns: 1fr 1fr 1fr;
+        row-gap: 1rem;
+        column-gap: 2rem;
+        width: 90%;
+
+        .ranolink {
+            
+           .btn, p{
+                margin-top:0.8rem ;
+            }
+        }
+        .icon {
+            margin-left: 1rem;
+            
+        }
+        .contact {
+            margin-left: 0.3rem;
+
+            .location {
+                padding-top: 1rem;
+            }
+            .fw-700{
+                padding-top: 1rem;
+            }
+            .date, .email {
+                padding-top: 0.8rem;
+            }
+        }
+        
+    }
+}
+}
+
+@media screen and (max-width: 800px) {
+    footer {
+        font-size: 14px;
+        display: flex;
+        justify-content: center;
+        .contain {
+            grid-template-columns: 50% 50%;
+            align-self: center;
+
+            .ranolink {
+                display: none;
+            }
+
+            .services {
+                margin-left: 0.6rem;
+            }
+
+            .contact {
+                .location {
+                    flex-wrap: wrap;
+                }
+            }
+            .icon {
+                margin-top: 0.1rem;
+                & > p {
+                    margin-top: 2rem;
+                }
+                & > div > i {
+                    font-size: 1.5rem;
+                }
+            }
+            .company {
+                margin-left: 0.3rem;
+            }
+
+        }
+    }
+}

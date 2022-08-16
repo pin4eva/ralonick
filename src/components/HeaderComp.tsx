@@ -48,7 +48,8 @@ const HeaderComp = () => {
 
 export default HeaderComp;
 
-const navList = [  //===========Mapped Through Navlinks===============
+const navList = [
+	//===========Mapped Through Navlinks===============
 	{ name: "Home", link: "/" },
 	{ name: "About", link: "/about" },
 	{ name: "Services", link: "/services" },
@@ -74,11 +75,9 @@ const MobileNav = () => {
 const Hero = () => {
 	return (
 		<div className="hero-section row container-fluid">
-			
-				<div className="hero-image-1 row col-md-3 justify-content-md-cente pt-3">
-					<img src="images/Frame9.png" alt="this image" />
-				</div>
-			
+			<div className="hero-image-1 row col-md-3 justify-content-md-cente pt-3">
+				<img src="images/Frame9.png" alt="this image" />
+			</div>
 
 			<div className="hero-text col-md-5 container justify-content-md-center mt-3">
 				<p className="fw-800 hero-h1 pt-5">Diverse & Flexible Structure</p>

@@ -1,45 +1,6 @@
 .app-header {
-	.display {
-		display: block;
-	}
-
-	.none {
-		display: none;
-	}
-
-	// @media screen and (max-width:768px) {
-
-	//   .navbar {
-	//     position: relative;
-	//   }
-
-	//   .line {
-	//     width: 100%;
-	//     height: 3px;
-	//     background: $secondary;
-	//     opacity: 0.1;
-	//   }
-
-	//   .mobile-nav {
-	//     background-color: white;
-	//     display: flex;
-	//     justify-content: center;
-	//     position: absolute;
-	//     top: 0;
-	//     width: 100%;
-	//     min-height: 30vh;
-	//     text-align: center;
-	//     z-index: 1;
-	//     padding-left: 13rem;
-	//     transition: all 1s ease-out;
-
-	//     li {
-	//      width: 50%;
-
-	//     }
-	//   }
-	// }
-
+	
+overflow: hidden;
 	.nav-brand {
 		font-weight: 700;
 		text-decoration: none;
@@ -71,10 +32,7 @@
 			top: 0;
 			width: 100%;
 			text-align: center;
-			// z-index: -5;
-
-			// padding-left: 10rem;
-			// transition: all 1s ease-out;
+		
 		}
 	}
 }
@@ -84,8 +42,10 @@
 	@media screen and (max-width: 768px) {
 		width: 90%;
 		margin: 0 auto;
-	}
 
+		
+	}
+	overflow: hidden;
 	.hero-h1 {
 		font-size: 3rem;
 		color: $primary;
@@ -116,7 +76,7 @@
 		}
 		height: 42.25rem;
 		position: relative;
-
+		
 
 		.hero-image-1 {
 			margin-left: 7.55%;
@@ -129,7 +89,7 @@
 
 		.hero-text {
 			margin-left: 1.5%;
-
+		
 			.hero-h5 {
 				margin-top: 1rem;
 			}

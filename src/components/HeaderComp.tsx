@@ -1,6 +1,5 @@
 import Link from "next/link";
 import React from "react";
-import ButtonDark from "./ButtonDark";
 
 const HeaderComp = () => {
 	return (
@@ -19,8 +18,8 @@ const HeaderComp = () => {
 						</li>
 					))}
 					<li>
-            <ButtonDark>Contact Us</ButtonDark>
-          </li>
+						<button className="btn1">Contact Us</button>
+					</li>
 				</ul>
 
 				<button className="btn d-inline-block d-md-none border-0">

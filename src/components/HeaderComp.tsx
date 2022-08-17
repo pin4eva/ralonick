@@ -1,7 +1,15 @@
 import Link from "next/link";
-import React from "react";
+import React, { useState } from "react";
+
 
 const HeaderComp = () => {
+	const [toggle, setToggle] = useState(false);
+
+	const toggleMenu = () => {
+		setToggle(!toggle);
+		//console.log (toggle);
+	};
+
 	return (
 		<header className="app-header">
 			<nav className="navbar container">
@@ -9,18 +17,21 @@ const HeaderComp = () => {
 					<a className="logo nav-brand">Ralonick LTD</a>
 				</Link>
 
-				<ul className="nav d-none d-md-flex">
+				<ul className={toggle? "nav  d-none d-md-flex" : "nav"}>
 					{navList.map((nav, i) => (
 						<li key={i} className="nav-item">
 							<Link href="/">
 								<a className="nav-link">{nav.name}</a>
 							</Link>
+							
 						</li>
+						
 					))}
 				</ul>
 
-				<button className="btn d-inline-block d-md-none border-0">
+				<button onClick={toggleMenu} className="btn hamburger-button d-inline-block d-md-none border-0">
 					<i className="fas fa-bars"></i>{" "}
+					{/* <i class="fa-solid fa-xmark"></i> */}
 				</button>
 			</nav>
 		</header>

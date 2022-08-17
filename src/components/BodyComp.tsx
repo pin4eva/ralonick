@@ -13,27 +13,80 @@ import "swiper/css/scrollbar";
 const BodyComp = () => {
 	return (
 		<div className="container1">
+			<section className="diverse container">
+				<div className="grid-i">
+					<img src="/assets/Frame 9.png" alt="ref" />
+				</div>
+				<div className="grid-i">
+					<h3>
+						Diverse & Flexible <br /> Structure
+					</h3>
+					<p>
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br /> Gravida facilisi mauris morbi.
+					</p>
+					<button className="btn btn-danger hug shadow-none">See Projects</button>
+				</div>
+				<div className="grid-i"></div>
+				<div className="grid-i ">
+					<img src="/assets/Frame 8.png" alt="" />
+				</div>
+			</section>
+
 			<section className="about container">
 				<div className="us">
 					<h6>ROLANIK</h6>
 					<h3>About Us</h3>
 					<p>
 						Our operation is based on a diverse and flexible structure. We adopt a <br />
-						system of Total quality Management (TQM) at a reasonable cost and within <br /> the shortest possible time, in conjunction with our technical partners. We <br /> provide end to end service in the design, engineering, procurement, <br /> fabrication, installation, repair and support of Glass fiber Reinforced Epoxy <br /> (GRE) Polyester (GRP) and Vinylester Pipe system and products. <br /> <br /> Odio quisque potenti feugiat commodo sit hendrerit cum platea. Turpis <br /> neque in turpis commodo egestas turpis auctor ut pharetra. Arcu quam <br /> morbi viverra lectus facilisi.
+						system of Total quality Management (TQM) at a reasonable cost and within <br /> the shortest possible time, in conjunction with our technical partners. We <br /> provide end to end service in the design, engineering, procurement, <br /> fabrication, installation, repair and support of Glass fiber Reinforced Epoxy <br /> (GRE) Polyester (GRP) and Vinylester Pipe system and products. <br /> Odio quisque potenti feugiat commodo sit hendrerit cum platea. Turpis <br /> neque in turpis commodo egestas turpis auctor ut pharetra. Arcu quam <br /> morbi viverra lectus facilisi.
 					</p>{" "}
-					<br />
 					<button className="btn">Learn More</button>
 				</div>
 				<div className="people">
 					{/* <img src="" alt="we" /> */}
-					<img src="/Assets/helmet.jpg" alt="" />
+					<img src="/assets/helmet.jpg" alt="" />
+				</div>
+			</section>
+
+			<section className="transform container">
+				<div className="tx">
+					<h6>ROLANIK</h6>
+					<p className="t1">Who We Are...</p>
+					<h2>
+						Transforming <br />
+						With Innovations
+					</h2>
+					<p className="lor">
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lacus <br />
+						risus, velit enim semper vestibulum aliquet. Ultricies tempor ac <br /> curabitur ornare at nunc facilisis tincidunt nisl. Odio id quis <br /> fermentum sapien sem iaculis augue erat. Ut dignissim sapien,
+						<br /> nibh dolor malesuada. Est sit vitae urna.
+					</p>
+
+					<div className="nos">
+						<div className="things">
+							<p className="dd">25</p>
+							<p className="rr">Years Experience</p>
+						</div>
+						<div className="things">
+							<p className="qq">25</p>
+							<p className="cc">Industries served</p>
+						</div>
+						<div className="things">
+							<p className="xx">25</p>
+							<p className="ff">Factories Built</p>
+						</div>
+					</div>
+				</div>
+				<br />
+				<div className="cy">
+					<img src="/assets/Frame 1.png" alt="fre" />
 				</div>
 			</section>
 
 			<section className="why container">
 				<div className="plant">
 					{/* <img src= {plants} alt="fill" /> */}
-					<img src="/Assets/steel plant.png" />
+					<img src="/assets/steel plant.png" />
 				</div>
 				<div className="choose">
 					<h3>Why Choose Us</h3>
@@ -72,8 +125,8 @@ const BodyComp = () => {
 				</div>
 			</section>
 
-			<section className="services container">
-				<div className="works">
+			<section className="services">
+				<div className="services-inner container">
 					<h3>Our Services</h3>
 					<div className="all">
 						<p>
@@ -95,7 +148,7 @@ const BodyComp = () => {
 								</div>
 								<div className="ln">
 									<p>Learn More</p>
-									<img src="/Assets/arrow.png" alt="lp" />
+									{/* <img src="/Assets/arrow.png" alt="lp" /> */}
 								</div>
 							</div>
 						</div>
@@ -110,7 +163,7 @@ const BodyComp = () => {
 								</div>
 								<div className="ln">
 									<p>Learn More</p>
-									<img src="/Assets/arrow.png" alt="lp" />
+									{/* <img src="/Assets/arrow.png" alt="lp" /> */}
 								</div>
 							</div>
 						</div>
@@ -125,7 +178,7 @@ const BodyComp = () => {
 								</div>
 								<div className="ln">
 									<p>Learn More</p>
-									<img src="/Assets/arrow.png" alt="lp" />
+									{/* <img src="/Assets/arrow.png" alt="lp" /> */}
 								</div>
 							</div>
 						</div>
@@ -141,12 +194,11 @@ const BodyComp = () => {
 					</p>
 					<div className="profile">
 						<div className="image">
-							<img src="/assets/lady.jpg" alt="babe" />	
+							<img src="/assets/lady.jpg" alt="babe" />
 							<h4>Cindy Clifford</h4>
 							<h5>Rumuodara Interior Designer</h5>
 							<br />
 						</div>
-						
 					</div>
 				</div>
 				<div>
@@ -171,7 +223,7 @@ const BodyComp = () => {
 				</div>
 			</section>
 
-			 <section className="projects container">
+			<section className="projects container">
 				<div className="proj">
 					<h2>Our Projects</h2>
 
@@ -180,22 +232,28 @@ const BodyComp = () => {
 							<div className="con1">
 								<div className="image-container">
 									<h6>Project Name</h6>
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br /> Duis mi sagittis aliquet elementum nunc lectus. Arcu, <br /> non ornare commodo, convallis lectus.</p>
-									<h6>More Details <img src="/Assets/arrow.png" alt="lp" /></h6>	
+									<p>
+										Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br /> Duis mi sagittis aliquet elementum nunc lectus. Arcu, <br /> non ornare commodo, convallis lectus.
+									</p>
+									<h6>
+										More Details <img src="/Assets/arrow.png" alt="lp" />
+									</h6>
 								</div>
 							</div>
 							<div className="con2"></div>
 						</div>
 						<br />
 						<div className="fill">
-							<div className="el1">
-
-							</div>
+							<div className="el1"></div>
 							<div className="el2">
-							<div className="image-container1">
+								<div className="image-container1">
 									<h6>Project Name</h6>
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br /> Duis mi sagittis aliquet elementum nunc lectus. Arcu, <br /> non ornare commodo, convallis lectus.</p>
-									<h6>More Details <img src="/Assets/arrow.png" alt="lp" /></h6>	
+									<p>
+										Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br /> Duis mi sagittis aliquet elementum nunc lectus. Arcu, <br /> non ornare commodo, convallis lectus.
+									</p>
+									<h6>
+										More Details <img src="/Assets/arrow.png" alt="lp" />
+									</h6>
 								</div>
 							</div>
 						</div>
@@ -204,8 +262,12 @@ const BodyComp = () => {
 							<div className="ril1">
 								<div className="image-container3">
 									<h6>Project Name</h6>
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br /> Duis mi sagittis aliquet elementum nunc lectus. Arcu, <br /> non ornare commodo, convallis lectus.</p>
-									<h6>More Details <img src="/Assets/arrow.png" alt="lp" /></h6>	
+									<p>
+										Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br /> Duis mi sagittis aliquet elementum nunc lectus. Arcu, <br /> non ornare commodo, convallis lectus.
+									</p>
+									<h6>
+										More Details <img src="/Assets/arrow.png" alt="lp" />
+									</h6>
 								</div>
 							</div>
 							<div className="con3"></div>

@@ -10,23 +10,24 @@ function SixthSection() {
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lacus risus, velit enim semper vestibulum aliquet. Ultricies tempor ac curabitur ornare at nunc facilisis tincidunt nisl. Odio</p>
                     <Link href="/" className={({ isActive }) => (isActive ? 'link active' : 'link')}>
                         <button>All Services</button>
-                        </Link>
+                    </Link>
                 </div>
                 <div className="Boxes">
                     {Research.map((item) => {
                         return (
                             <div key={item.id}>
-                           <div>{item.img}</div>
-                           <div className="text">
-                           <h1>{item.header}</h1>
-                            <p>{item.text}</p>
-                            {/* <Link href="/" className={({ isActive }) => (isActive ? 'link active' : 'link')}> */}
-                                <p>Learn More</p> 
-                                <img src={'/images/Vector2.png'}>
-
-                                </img>
-                                {/* </Link> */}
-</div>
+                                <div>{item.img}</div>
+                                <div className="text">
+                                    <h1>{item.header}</h1>
+                                    <p>{item.text}</p>
+                                    <div>
+                                        
+                                            Learn More
+                                            <img src={'/images/Vector2.png'}>
+                                            </img>
+                                        
+                                    </div>
+                                </div>
                             </div>
                         )
                     })}

@@ -6,6 +6,7 @@ const Home = () => {
 	return (
 		<FrontLayout>
 			<ShareLayout/>
+		
 			<div className="container">
 				<h1 className="fw-800">Welcome Home</h1>
 

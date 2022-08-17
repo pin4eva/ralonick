@@ -7,12 +7,6 @@ const FrontLayout: React.FC<{ children: React.ReactElement }> = ({ children }) =
 	return (
 		<div className="app">
 			<HeaderComp />
-			{/* <FirstSection/>
-			<SecondSection/>
-			<ThirdSection/>
-			<FourthSection/>
-			<FirthSection/>
-			<SixthSection/> */}
 			<Home/>
 			<main className="app-children">{children}</main>
 			<FooterComp />

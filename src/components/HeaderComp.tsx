@@ -1,10 +1,13 @@
 import React from "react";
 import Link from "next/link";
-import NavBar from "../pages/Header";
+import NavBar from "./Header";
 
 const HeaderComp = () => {
 	return (
-		<NavBar/>
+		<div>
+<NavBar/>
+		</div>
+		
 		// <header className="app-header">
 		// 	<nav className="navbar container">
 		// 		<Link href="/">

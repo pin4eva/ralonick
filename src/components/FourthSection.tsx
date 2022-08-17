@@ -21,7 +21,7 @@ function FourthSection() {
                 </div>
                 <div className="img5">
                     <img src={('./images/Rectangle1.png')} className="img" alt=""></img>
-                    <img src={('./images/Rectangle2.png')} className="img" alt=""></img>
+                    <img src={('./images/Rectangle2.png')} className="img51" alt=""></img>
                     <img src={('./images/Rectangle3.png')} className="img" alt=""></img>
                 </div>
             </section>

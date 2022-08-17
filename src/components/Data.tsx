@@ -1,3 +1,4 @@
+import Link from "next/link"
 import React from "react"
 
 //====Products Data====
@@ -49,3 +50,12 @@ export const Options=
             text:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis mi sagittis aliquet elementum nunc lectus. Arcu, non ornare commodo, convallis lectus. Proin scelerisque sed massa arcu nunc id ridiculus purus cursus. Luctus dolor et consequat nunc at ut."
         }
     ]
+export const Project=[
+    {
+        id:1,
+        name:"Project Name",
+content:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis mi sagittis aliquet elementum nunc lectus. Arcu, non ornare commodo, convallis lectus.",
+link:<Link href="/">More Details</Link>,
+imglink:<Link href="/"><img src={("./images/Vector2.png")} alt=""></img></Link>
+    }
+]

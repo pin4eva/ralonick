@@ -7,6 +7,7 @@ import FourthSection from "../components/FourthSection";
 import FirthSection from "../components/FirthSection";
 import SixthSection from "../components/SixthSection";
 import SeventhSection from "../components/seventhSection";
+import EightSection from "../components/EightSection";
 
 function Home() {
     return (
@@ -18,6 +19,7 @@ function Home() {
             <FirthSection />
             <SixthSection />
             <SeventhSection/>
+            <EightSection/>
         </>
     )
 }

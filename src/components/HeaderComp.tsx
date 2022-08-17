@@ -1,5 +1,6 @@
 import Link from "next/link";
 import React from "react";
+import ButtonDark from "./ButtonDark";
 
 const HeaderComp = () => {
 	return (
@@ -12,11 +13,14 @@ const HeaderComp = () => {
 				<ul className="nav d-none d-md-flex">
 					{navList.map((nav, i) => (
 						<li key={i} className="nav-item">
-							<Link href="/">
+							<Link href={nav.link}>
 								<a className="nav-link">{nav.name}</a>
 							</Link>
 						</li>
 					))}
+					<li>
+            <ButtonDark>Contact Us</ButtonDark>
+          </li>
 				</ul>
 
 				<button className="btn d-inline-block d-md-none border-0">
@@ -36,18 +40,18 @@ const navList = [
 	{ name: "Projects", link: "/projects" },
 ];
 
-// const MobileNav = () => {
-// 	return (
-// 		<div className="mobile-nav">
-// 			<ul className="nav flex-column">
-// 				{navList.map((nav, i) => (
-// 					<li key={i} className="nav-item">
-// 						<Link href="/">
-// 							<a className="nav-link">{nav.name}</a>
-// 						</Link>
-// 					</li>
-// 				))}
-// 			</ul>
-// 		</div>
-// 	);
-// };
+const MobileNav = () => {
+	return (
+		<div className="mobile-nav">
+			<ul className="nav flex-column">
+				{navList.map((nav, i) => (
+					<li key={i} className="nav-item">
+						<Link href="/">
+							<a className="nav-link">{nav.name}</a>
+						</Link>
+					</li>
+				))}
+			</ul>
+		</div>
+	);
+};

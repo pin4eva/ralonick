@@ -19,7 +19,7 @@ const FooterComp = () => {
 					</div>
 
 				</div>
-				<div className="part2">
+				<div className="part21">
 					<h1>Services</h1>
 					<div className="text">
 						<h2>Dredging</h2>
@@ -44,20 +44,22 @@ const FooterComp = () => {
 					</div>
 					<h3>Charlesclifford43@gmail.com</h3>
 					<h4>Mon - Sat: 8;am-5pm</h4>
-					
+
 				</div>
-				<div className="question">
-					<p>Still Have a Question?</p>
-					<Link href="/"><button>Send a Message</button></Link>
-				</div>
+
 				<div className="part4">
 					<i class="fa-brands fa-figma"></i>
 					<img src={("./images/twitter.png")} alt="" />
 					<i class="fa-brands fa-instagram"></i>
+					<div className="question">
+					<p>Still Have a Question?</p>
+					<Link href="/"><button>Send a Message</button></Link>
 				</div>
+				</div>
+
 				
 			</div>
-			
+
 			<p>footer component {new Date().getFullYear()}</p>
 		</footer>
 	);

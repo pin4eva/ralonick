@@ -49,6 +49,9 @@
 		
 	
 			.gird-i {
+				img { 
+					width: 100%;
+				}
 				.wp {
 					padding-top: 1rem;
 					// padding-left: 1rem;
@@ -86,11 +89,12 @@
 	@media screen and (max-width:768px) {
 		.services {
 			
-			display: flex;
+			// display: flex;
 			flex-direction: column;
 			justify-content: center;
 			align-content: center;
-			width: 100%;
+			
+			
 			.all {
 				display: flex;
 				

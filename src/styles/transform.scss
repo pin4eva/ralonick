@@ -25,6 +25,7 @@
 			margin-top: 3rem;
             border-top: 1px solid  blue;
             border-bottom:  1px solid blue;
+			width: 100%;
 
 			.things {
 				&:first-child {
@@ -89,6 +90,12 @@
 			}
 		}
 	}
+	.cy {
+		img {
+			width: 100%;
+			max-width: 36.75rem;
+		}
+	}
 }
 
 @media screen and (max-width:768px) {
@@ -96,11 +103,13 @@
 		flex-direction: column;
         justify-content: center;
         align-content: center;
-        width: 100%;
+      
+	
         .nos {
             display: flex;
             flex-direction: column;
             justify-content: center;
+			width: 50%;
         }
 		
 	}

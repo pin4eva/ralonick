@@ -2,6 +2,10 @@
 	display: flex;
 	.plant {
 		padding-top: 1rem;
+        img {
+            width: 100%;
+            max-width: 33rem;
+        }
 	}
 	.choose {
 		font-family: "Raleway";
@@ -9,7 +13,9 @@
 		font-size: 3rem;
         margin-left: 2rem;
 		// color: $secondary;
-		padding-left: 5rem;
+		// padding-left: 5rem;
+        width: 50%;
+        
         
 
         h3 {
@@ -96,5 +102,6 @@
 @media screen and (max-width:768px) {
     .why {
         flex-direction: column;
+       
     }
   }

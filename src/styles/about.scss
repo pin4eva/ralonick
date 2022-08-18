@@ -1,6 +1,7 @@
 .container1 {
 	.about {
 		 display: flex;
+		 gap: 0.7rem;
 
 		.us {
 			// padding-left: 7.5rem;
@@ -30,10 +31,10 @@
 		}
 
 		.people {
-			
+		
 			img {
-				max-width: 40.25rem;
 				width: 100%;
+				max-width: 40.25rem;
 			}
 		}
 	}
@@ -42,6 +43,7 @@
 @media screen and (max-width:768px) {
 	.about {
 		flex-direction: column;
+		
 		
 	}
 

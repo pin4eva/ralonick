@@ -43,7 +43,7 @@ const BodyComp = () => {
 					<button className="btn">Learn More</button>
 				</div>
 				<div className="people">
-					{/* <img src="" alt="we" /> */}
+				
 					<img src="/assets/helmet.jpg" alt="" />
 				</div>
 			</section>

@@ -46,3 +46,15 @@
 .text-muted {
   color: rgba(#000000, 0.5)
 }
+
+.c-pointer {
+  cursor: pointer;
+}
+
+.theme-padding {
+  padding-inline: 1.5rem;
+
+  @media screen and (min-width:992px) {
+    padding-inline: 7.5rem;
+  }
+}

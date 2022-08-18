@@ -1,98 +1,116 @@
-// @import "../../variables";
-.navbar {
-  padding-inline: 7.5rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding-block:0;
-  p {
-    color: $primaryBlue;
-    font-weight: 700;
-    font-size: 1.15556rem;
-    margin:0;
-  }
-  nav {
-    padding-bottom:0;
-    ul {
-      list-style-type: none;
-      display: flex;
-      align-items: center;
-      margin:0;
-      li {
-        margin-right: 2.44444rem;
-        a {
-          text-decoration: none;
-          color: $lighterPrimaryDark;
-          font-weight: 600;
-          font-size: 1rem;
-          padding: 1rem 0.2rem;
-          &.active {
-            color: $primaryBlue;
-            border-bottom: 1.5px solid $primaryBlue;
-          }
-        }
-        &:nth-child(5) {
-          margin-right: 0;
-        }
-        .navBtn {
-          padding-inline: 2.66667rem;
-        }
-      }
-    }
-  }
-  div{
-    display:none;
-  }
-}
+// // @import "../../variables";
+// .navbar {
+//   padding-inline: 7.5rem;
+//   display: flex;
+//   justify-content: space-between;
+//   align-items: center;
+//   padding-block: 0;
 
-.mobile_nav {
-  display: none;
-}
+//   p {
+//     color: $primaryBlue;
+//     font-weight: 700;
+//     font-size: 1.15556rem;
+//     margin: 0;
+//   }
 
-@media screen and (max-width: 1300px) {
-  .navbar {
-    padding-block: 1.5rem;
-    nav {
-      display: none;
-    }
-    div {
-      display: block;
-    }
-  }
-  .mobile_nav {
-    background-color: $mobileNavBg;
-    ul {
-      list-style-type:none;
-      text-align: center;
-      padding-top: 0.5rem;
-      li {
-        padding-block: 1.5rem;
-        a {
-          text-decoration: none;
-          color: $lighterPrimaryDark;
-          font-weight: 600;
-          font-size: 1.125rem;
-          padding-block: 1.5rem;
-          margin-block: 1rem;
-          &.active {
-            color: $primaryDark;
-          }
-        }
-      }
-    }
-    &.show {
-      display: block;
-    }
-  }
-}
+//   nav {
+//     padding-bottom: 0;
 
-@media screen and (max-width: 1026px) {
-  .navbar {
-    padding-inline: 5rem;
-  }
-}
-@media screen and (max-width: 714px) {
-  .navbar {
-    padding-inline: 2rem;
-  }
-}
+//     ul {
+//       list-style-type: none;
+//       display: flex;
+//       align-items: center;
+//       margin: 0;
+
+//       li {
+//         margin-right: 2.44444rem;
+
+//         a {
+//           text-decoration: none;
+//           color: $lighterPrimaryDark;
+//           font-weight: 600;
+//           font-size: 1rem;
+//           padding: 1rem 0.2rem;
+
+//           &.active {
+//             color: $primaryBlue;
+//             border-bottom: 1.5px solid $primaryBlue;
+//           }
+//         }
+
+//         &:nth-child(5) {
+//           margin-right: 0;
+//         }
+
+//         .navBtn {
+//           padding-inline: 2.66667rem;
+//         }
+//       }
+//     }
+//   }
+
+//   div {
+//     display: none;
+//   }
+// }
+
+// .mobile_nav {
+//   display: none;
+// }
+
+// @media screen and (max-width: 1300px) {
+//   .navbar {
+//     padding-block: 1.5rem;
+
+//     nav {
+//       display: none;
+//     }
+
+//     div {
+//       display: block;
+//     }
+//   }
+
+//   .mobile_nav {
+//     background-color: $mobileNavBg;
+
+//     ul {
+//       list-style-type: none;
+//       text-align: center;
+//       padding-top: 0.5rem;
+
+//       li {
+//         padding-block: 1.5rem;
+
+//         a {
+//           text-decoration: none;
+//           color: $lighterPrimaryDark;
+//           font-weight: 600;
+//           font-size: 1.125rem;
+//           padding-block: 1.5rem;
+//           margin-block: 1rem;
+
+//           &.active {
+//             color: $primaryDark;
+//           }
+//         }
+//       }
+//     }
+
+//     &.show {
+//       display: block;
+//     }
+//   }
+// }
+
+// @media screen and (max-width: 1026px) {
+//   .navbar {
+//     padding-inline: 5rem;
+//   }
+// }
+
+// @media screen and (max-width: 714px) {
+//   .navbar {
+//     padding-inline: 2rem;
+//   }
+// }

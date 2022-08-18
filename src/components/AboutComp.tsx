@@ -1,8 +1,9 @@
+/* eslint-disable @next/next/no-img-element */
 import React from "react";
 
 const AboutComp = () => {
 	return (
-		<div className="about">
+		<div className="about-section" id="about">
 			<section className="about_text_sect">
 				<p>RALONICK</p>
 				<h2>About Us</h2>

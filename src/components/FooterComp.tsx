@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import React from "react";
 import Link from "next/link";
 
@@ -16,13 +17,13 @@ const FooterComp = () => {
 				<p>Company</p>
 				<ul>
 					<li>
-						<Link href="/h">About</Link>
+						<Link href="/">About</Link>
 					</li>
 					<li>
-						<Link href="/i">Projects</Link>
+						<Link href="/">Projects</Link>
 					</li>
 					<li>
-						<Link href="/j">Services</Link>
+						<Link href="/">Services</Link>
 					</li>
 				</ul>
 			</div>
@@ -30,16 +31,16 @@ const FooterComp = () => {
 				<p>Services</p>
 				<ul>
 					<li>
-						<Link href="/k">Dredging</Link>
+						<Link href="/">Dredging</Link>
 					</li>
 					<li>
-						<Link href="/l">Fireproofing</Link>
+						<Link href="/">Fireproofing</Link>
 					</li>
 					<li>
-						<Link href="/m">Constructing</Link>
+						<Link href="/">Constructing</Link>
 					</li>
 				</ul>
-				<Link href="/n">
+				<Link href="/">
 					<a className="footer_arrowlink">
 						See all Services
 						<img src="/assets/footerArrow.png" alt="" />
@@ -66,9 +67,9 @@ const FooterComp = () => {
 					</a>
 				</div>
 				<p>
-					<Link href="/n"> Still Have a Question? </Link>
+					<Link href="/"> Still Have a Question? </Link>
 				</p>
-				<button className="btn1">Send a Message</button>
+				<button className="btn hug bg-danger">Send a Message</button>
 			</div>
 		</footer>
 	);

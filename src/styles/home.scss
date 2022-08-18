@@ -2,14 +2,11 @@
   display: grid;
   min-height: 100vh;
   grid-template-rows: auto 1fr auto;
-  // max-width: 1600px;
-  // margin-inline: auto;
   margin: 0;
 }
 
 .home {
   display: grid;
-  gap: 3rem;
   // grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr; // hero-section
 
   &-hero {
@@ -148,12 +145,16 @@
       gap: 1rem;
       min-height: 60vh;
 
+      &-left {
+        margin-top: 3rem;
+      }
+
 
       @media screen and (min-width:$md) {
         grid-template-columns: 1fr 1fr;
 
         &-left {
-
+          margin-top: 0;
           display: flex;
           align-items: center;
         }
@@ -161,10 +162,11 @@
         &-right {
           position: absolute;
           right: 0;
-          max-width: 580px;
+          max-width: 600px;
+          top: -8.25%;
 
           img {
-            width: 100%;
+            width: 40vmax;
           }
         }
 

@@ -1,7 +1,7 @@
 import type { AppProps } from "next/app";
 import "../styles/index.scss";
 import "../styles/custom.scss";
-import "../styles/App.scss"
+import "../styles/header.scss";
 import "@fortawesome/fontawesome-free/css/all.min.css";
 
 function MyApp({ Component, pageProps }: AppProps) {

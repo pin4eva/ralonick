@@ -1,6 +1,8 @@
 import React from "react";
 import Link from "next/link";
-import NavBar from "./Header";
+import NavBar from "../pages/Header";
+
+
 
 const HeaderComp = () => {
 	return (
@@ -34,25 +36,25 @@ const HeaderComp = () => {
 
 export default HeaderComp;
 
-const navList = [
-	{ name: "Home", link: "/" },
-	{ name: "About", link: "/about" },
-	{ name: "Services", link: "/services" },
-	{ name: "Projects", link: "/projects" },
-];
+// const navList = [
+// 	{ name: "Home", link: "/" },
+// 	{ name: "About", link: "/about" },
+// 	{ name: "Services", link: "/services" },
+// 	{ name: "Projects", link: "/projects" },
+// ];
 
-const MobileNav = () => {
-	return (
-		<div className="mobile-nav">
-			<ul className="nav flex-column">
-				{navList.map((nav, i) => (
-					<li key={i} className="nav-item">
-						<Link href="/">
-							<a className="nav-link">{nav.name}</a>
-						</Link>
-					</li>
-				))}
-			</ul>
-		</div>
-	);
-};
+// const MobileNav = () => {
+// 	return (
+// 		<div className="mobile-nav">
+// 			<ul className="nav flex-column">
+// 				{navList.map((nav, i) => (
+// 					<li key={i} className="nav-item">
+// 						<Link href="/">
+// 							<a className="nav-link">{nav.name}</a>
+// 						</Link>
+// 					</li>
+// 				))}
+// 			</ul>
+// 		</div>
+// 	);
+// };

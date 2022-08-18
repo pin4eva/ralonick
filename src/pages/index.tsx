@@ -8,6 +8,7 @@ import WhyComp from "../components/WhyComp";
 import OurServicesComp from "../components/OurServicesComp";
 import ReviewsComp from "../components/ReviewsComp";
 import ProjectsComp from "../components/ProjectsComp";
+import Link from "next/link";
 
 const Home = () => {
 	return (
@@ -74,11 +75,226 @@ const Home = () => {
 						</div>
 					</div>
 				</section>
-				<WhoComp />
-				<WhyComp />
-				<OurServicesComp />
-				<ReviewsComp />
-				<ProjectsComp />
+				<div className="who">
+					<section className="who_text_section">
+						<p className="who_ralonick">ROLANICK</p>
+						<p>Who We Are...</p>
+						<h2>Transforming With Innovations</h2>
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lacus risus, velit enim semper vestibulum
+							aliquet. Ultricies tempor ac curabitur ornare at nunc facilisis tincidunt nisl. Odio id quis fermentum
+							sapien sem iaculis augue erat. Ut dignissim sapien, nibh dolor malesuada. Est sit vitae urna.
+						</p>
+						<div className="who_info">
+							<div>
+								<p>25</p>
+								<p>Years Experience</p>
+							</div>
+							<div>
+								<p>25</p>
+								<p>Industries served</p>
+							</div>
+							<div>
+								<p>25</p>
+								<p>Factories Built</p>
+							</div>
+						</div>
+					</section>
+					<section className="who_img_section">
+						<img src="/assets/who_img1.png" alt="" />
+					</section>
+				</div>
+				<div className="why">
+					<section className="why_img_section">
+						<img src="/assets/why_img.png" alt="" />
+					</section>
+					<section className="why_text_section">
+						<h2>Why Choose Us</h2>
+						<div className="why_gridbox">
+							<div className="why_gridItem">
+								<div></div>
+								<p>Quality</p>
+								<p>
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lacus risus, velit enim semper vestibulum
+									aliquet. Ultricies tempor ac curabitur ornare at nunc facilisis tincidunt nisl. Odio id quis fermentum
+									sapien sem iaculis augue erat. Ut dignissim sapien, nibh dolor malesuada. Est sit vitae urna.
+								</p>
+							</div>
+							<div className="why_gridItem">
+								<div></div>
+								<p>Integrity</p>
+								<p>
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lacus risus, velit enim semper vestibulum
+									aliquet. Ultricies tempor ac curabitur ornare at nunc facilisis tincidunt nisl. Odio id quis fermentum
+									sapien sem iaculis augue erat. Ut dignissim sapien, nibh dolor malesuada. Est sit vitae urna.
+								</p>
+							</div>
+							<div className="why_gridItem">
+								<div></div>
+								<p>Professionalism</p>
+								<p>
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lacus risus, velit enim semper vestibulum
+									aliquet. Ultricies tempor ac curabitur ornare at nunc facilisis tincidunt nisl. Odio id quis fermentum
+									sapien sem iaculis augue erat. Ut dignissim sapien, nibh dolor malesuada. Est sit vitae urna.
+								</p>
+							</div>
+							<div className="why_gridItem">
+								<div></div>
+								<p>Safety</p>
+								<p>
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lacus risus, velit enim semper vestibulum
+									aliquet. Ultricies tempor ac curabitur ornare at nunc facilisis tincidunt nisl. Odio id quis fermentum
+									sapien sem iaculis augue erat. Ut dignissim sapien, nibh dolor malesuada. Est sit vitae urna.
+								</p>
+							</div>
+						</div>
+					</section>
+				</div>
+				<div className="ourServices">
+					<h2>Our Services</h2>
+					<div className="ourServices_text">
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lacus risus, velit enim semper vestibulum
+							aliquet. Ultricies tempor ac curabitur ornare at nunc facilisis tincidunt nisl. Odio
+						</p>
+						<button className="btn btn-outline-danger hug">All Services</button>
+					</div>
+					<div className="ourServices_gridbox">
+						<div className="ourServices_gridItem">
+							<img src="/assets/services1.png" alt="" />
+							<div>
+								<p>Chemical Research</p>
+								<p>
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis mi sagittis aliquet elementum nunc
+									lectus. Arcu, non ornare commodo, convallis lectus. Proin scelerisque sed massa arcu nunc id ridiculus
+									purus cursus. Luctus dolor et consequat nunc at ut.
+								</p>
+								<p>
+									<Link href="/">
+										<a>
+											Learn More <img src="/assets/learnMoreArrow.png" alt="" />
+										</a>
+									</Link>
+								</p>
+							</div>
+						</div>
+						<div className="ourServices_gridItem">
+							<img src="/assets/services2.png" alt="" />
+							<div>
+								<p>Chemical Research</p>
+								<p>
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis mi sagittis aliquet elementum nunc
+									lectus. Arcu, non ornare commodo, convallis lectus. Proin scelerisque sed massa arcu nunc id ridiculus
+									purus cursus. Luctus dolor et consequat nunc at ut.
+								</p>
+								<p>
+									<Link href="/">
+										<a>
+											Learn More <img src="/assets/learnMoreArrow.png" alt="" />
+										</a>
+									</Link>
+								</p>
+							</div>
+						</div>
+						<div className="ourServices_gridItem">
+							<img src="/assets/services3.png" alt="" />
+							<div>
+								<p>Chemical Research</p>
+								<p>
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis mi sagittis aliquet elementum nunc
+									lectus. Arcu, non ornare commodo, convallis lectus. Proin scelerisque sed massa arcu nunc id ridiculus
+									purus cursus. Luctus dolor et consequat nunc at ut.
+								</p>
+								<p>
+									<Link href="/">
+										<a>
+											Learn More <img src="/assets/learnMoreArrow.png" alt="" />
+										</a>
+									</Link>
+								</p>
+							</div>
+						</div>
+					</div>
+					<div className="services_arrows">
+						<img src="/assets/keyboardArrowLeft.png" alt="" />
+						<img src="/assets/keyboardArrowRight.png" alt="" />
+					</div>
+				</div>
+				<div className="reviews">
+					<h2>Clients Reviews</h2>
+					<p>
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eros vitae vitae dictum mattis risus, ut nec.
+						Rhoncus egestas quis pellentesque risus posuere.facilisis. Enim quisque id sit molestie tincidunt faucibus.
+						Amet, dictum eget egestas dictum non leo cras faucibus egestas. Mattis imperdiet elit nullam adipiscing
+						lobortis fames. Et egestas vitae feugiat nisi, sed sit in pulvinar at. Ultrices tincidunt vel in sit
+						ullamcorper. Sollicitud
+					</p>
+					<div>
+						<img src="/assets/clientPic.png" alt="" />
+						<h3>Cindy Clifford</h3>
+						<p>Rumuodara Interior Designer</p>
+					</div>
+					<img src="/assets/reviewslider.png" alt="" />
+				</div>
+				<div className="projects">
+					<h2>Our Projects</h2>
+					<div className="projects_sub">
+						<img src="/assets/projects1.png" alt="" />
+						<div>
+							<p>Project Name</p>
+							<p>
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis mi sagittis aliquet elementum nunc lectus.
+								Arcu, non ornare commodo, convallis lectus.
+							</p>
+							<p>
+								<Link href="/">
+									<a>
+										More Details <img src="/assets/moreDetailsArrow.png" alt="" />
+									</a>
+								</Link>
+							</p>
+						</div>
+					</div>
+					<div className="projects_sub">
+						<img src="/assets/projects2.png" alt="" />
+						<div>
+							<p>Project Name</p>
+							<p>
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis mi sagittis aliquet elementum nunc lectus.
+								Arcu, non ornare commodo, convallis lectus.
+							</p>
+							<p>
+								<Link href="/">
+									<a>
+										More Details
+										<img src="/assets/moreDetailsArrow.png" alt="" />
+									</a>
+								</Link>
+							</p>
+						</div>
+					</div>
+					<div className="projects_sub">
+						<img src="/assets/projects3.png" alt="" />
+						<div>
+							<p>Project Name</p>
+							<p>
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis mi sagittis aliquet elementum nunc lectus.
+								Arcu, non ornare commodo, convallis lectus.
+							</p>
+							<p>
+								<Link href="/">
+									<a>
+										More Details
+										<img src="/assets/moreDetailsArrow.png" alt="" />
+									</a>
+								</Link>
+							</p>
+						</div>
+					</div>
+					<div className="projects_btn">
+						<button className="btn btn-danger hug">All Services</button>
+					</div>
+				</div>
 			</div>
 		</FrontLayout>
 	);

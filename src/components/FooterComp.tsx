@@ -69,7 +69,7 @@ const FooterComp = () => {
 				<p>
 					<Link href="/"> Still Have a Question? </Link>
 				</p>
-				<button className="btn hug bg-danger">Send a Message</button>
+				<button className="btn hug btn-danger">Send a Message</button>
 			</div>
 		</footer>
 	);

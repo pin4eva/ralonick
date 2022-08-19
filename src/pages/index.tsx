@@ -53,10 +53,14 @@ const Home = () => {
 						</div>
 					</div>
 				</section>
-				<section className="about-section" id="about">
+				<section className="about-section">
 					<div className="about-inner">
-						<div className="about_text_sect about-inner-left">
-							<div className="left-text">
+						<div className=" about-inner-left">
+							<img className="about-img" src="/assets/about_img1.png" alt="" />
+						</div>
+
+						<div className="about_text_sect about-inner-right">
+							<div className="right-text">
 								<p className="text-danger fw-600">RALONICK</p>
 								<h2 className="h1">About Us</h2>
 								<p>
@@ -74,45 +78,44 @@ const Home = () => {
 								<button className="btn btn-outline-danger hug">Learn More</button>
 							</div>
 						</div>
-						<div className=" about-inner-right">
-							<img className="about-img" src="/assets/about_img1.png" alt="" />
+					</div>
+				</section>
+				<section className="home-section-3">
+					<div className="section3-inner">
+						<div className="section3-inner-left">
+							<p className="text-danger">ROLANICK</p>
+							<p>Who We Are...</p>
+							<h2>Transforming With Innovations</h2>
+							<p>
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lacus risus, velit enim semper vestibulum
+								aliquet. Ultricies tempor ac curabitur ornare at nunc facilisis tincidunt nisl. Odio id quis fermentum
+								sapien sem iaculis augue erat. Ut dignissim sapien, nibh dolor malesuada. Est sit vitae urna.
+							</p>
+							<div className="info">
+								<div className="info-sub">
+									<p>25</p>
+									<p>Years Experience</p>
+								</div>
+								<div className="info-sub">
+									<p>25</p>
+									<p>Industries served</p>
+								</div>
+								<div className="info-sub">
+									<p>25</p>
+									<p>Factories Built</p>
+								</div>
+							</div>
+						</div>
+						<div className="section3-inner-right">
+							<img src="/assets/who_img1.png" alt="" />
 						</div>
 					</div>
 				</section>
-				{/* <div className="who">
-					<section className="who_text_section">
-						<p className="who_ralonick">ROLANICK</p>
-						<p>Who We Are...</p>
-						<h2>Transforming With Innovations</h2>
-						<p>
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lacus risus, velit enim semper vestibulum
-							aliquet. Ultricies tempor ac curabitur ornare at nunc facilisis tincidunt nisl. Odio id quis fermentum
-							sapien sem iaculis augue erat. Ut dignissim sapien, nibh dolor malesuada. Est sit vitae urna.
-						</p>
-						<div className="who_info">
-							<div>
-								<p>25</p>
-								<p>Years Experience</p>
-							</div>
-							<div>
-								<p>25</p>
-								<p>Industries served</p>
-							</div>
-							<div>
-								<p>25</p>
-								<p>Factories Built</p>
-							</div>
-						</div>
-					</section>
-					<section className="who_img_section">
-						<img src="/assets/who_img1.png" alt="" />
-					</section>
-				</div>
-				<div className="why">
-					<section className="why_img_section">
+				<section className="home-section-4">
+					<div className="why_img_section">
 						<img src="/assets/why_img.png" alt="" />
-					</section>
-					<section className="why_text_section">
+					</div>
+					<div className="why_text_section">
 						<h2>Why Choose Us</h2>
 						<div className="why_gridbox">
 							<div className="why_gridItem">
@@ -152,9 +155,9 @@ const Home = () => {
 								</p>
 							</div>
 						</div>
-					</section>
-				</div>
-				<div className="ourServices">
+					</div>
+				</section>
+				{/* <div className="ourServices">
 					<h2>Our Services</h2>
 					<div className="ourServices_text">
 						<p>
@@ -223,8 +226,8 @@ const Home = () => {
 						<img src="/assets/keyboardArrowLeft.png" alt="" />
 						<img src="/assets/keyboardArrowRight.png" alt="" />
 					</div>
-				</div>
-				<div className="reviews">
+				</div> */}
+				{/* <div className="reviews">
 					<h2>Clients Reviews</h2>
 					<p>
 						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eros vitae vitae dictum mattis risus, ut nec.
@@ -239,8 +242,8 @@ const Home = () => {
 						<p>Rumuodara Interior Designer</p>
 					</div>
 					<img src="/assets/reviewslider.png" alt="" />
-				</div>
-				<div className="projects">
+				</div> */}
+				{/* <div className="projects">
 					<h2>Our Projects</h2>
 					<div className="projects_sub">
 						<img src="/assets/projects1.png" alt="" />

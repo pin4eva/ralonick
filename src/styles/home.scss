@@ -10,6 +10,7 @@
 	//Hero Section
 	&-hero {
 		display: grid;
+		margin-bottom: 3rem;
 		@media screen and (min-width: $md) {
 			margin-bottom: 27rem;
 		}
@@ -127,28 +128,25 @@
 			gap: 1rem;
 			min-height: 60vh;
 
-			&-left {
-				margin-top: 3rem;
+			&-right {
+				margin-top: 1rem;
 			}
 
 			@media screen and (min-width: $md) {
-				grid-template-columns: 1fr 1fr;
+				display: flex;
 
 				&-left {
-					margin-top: 0;
-					display: flex;
-					align-items: center;
+					width: 50%;
+					img {
+						width: 100%;
+					}
 				}
 
 				&-right {
-					// position: absolute;
-					right: 0;
-					max-width: 600px;
-					top: -8.25%;
-
-					img {
-						width: 40vmax;
-					}
+					width: 50%;
+					margin-top: 0;
+					display: flex;
+					align-items: center;
 				}
 			}
 		}
@@ -156,6 +154,80 @@
 		img {
 			@media screen and (max-width: $md) {
 				width: 100%;
+			}
+		}
+	}
+
+	//3rd section
+	.home-section-3 {
+		margin-top: 3rem;
+		.section3-inner {
+			@media screen and (min-width: $md) {
+				display: flex;
+				justify-content: space-between;
+				&-left {
+					width: 47%;
+				}
+				&-right {
+					width: 47%;
+				}
+			}
+			&-left {
+				h2 {
+					color: $secondary;
+					font-size: 3rem;
+					font-weight: 800;
+					line-height: 3.55556rem;
+				}
+				p {
+					&.text-danger {
+						font-weight: 600;
+					}
+					&:nth-child(2) {
+						color: $secondary;
+					}
+					&:nth-child(4) {
+						margin-block: 1.5rem 2.5rem;
+						font-weight: 500;
+						line-height: 1.77778rem;
+					}
+				}
+				.info {
+					display: flex;
+					text-align: center;
+					margin-bottom: 1.5rem;
+					&-sub {
+						padding: 1% 2%;
+						border: 1px solid $primary;
+						&:nth-child(1),
+						&:nth-child(3) {
+							border-left: none;
+							border-right: none;
+						}
+						p {
+							margin: 0;
+							&:nth-child(1) {
+								font-size: 3rem;
+								font-weight: 600;
+								color: $primary;
+							}
+							&:nth-child(2) {
+								font-size: 1rem;
+								font-weight: 500;
+								color: $secondary;
+							}
+						}
+					}
+				}
+			}
+
+			&-right {
+				height: fit-content;
+				margin-block: auto;
+				img {
+					width: 100%;
+					height: auto;
+				}
 			}
 		}
 	}

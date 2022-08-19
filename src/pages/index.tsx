@@ -87,9 +87,10 @@ const Home = () => {
 							<p>Who We Are...</p>
 							<h2>Transforming With Innovations</h2>
 							<p>
-								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lacus risus, velit enim semper vestibulum
-								aliquet. Ultricies tempor ac curabitur ornare at nunc facilisis tincidunt nisl. Odio id quis fermentum
-								sapien sem iaculis augue erat. Ut dignissim sapien, nibh dolor malesuada. Est sit vitae urna.
+								{`	Ralonick Constructions operates within the framework of commercial and industrial activities, developing
+								and carrying out basic and detailed services in engineering, procurement, construction, equipment
+								leasing and marine. We exceed our clients' trust through the timely delivery of quality, satisfactory
+								products and services.`}
 							</p>
 							<div className="info">
 								<div className="info-sub">
@@ -112,47 +113,53 @@ const Home = () => {
 					</div>
 				</section>
 				<section className="home-section-4">
-					<div className="why_img_section">
-						<img src="/assets/why_img.png" alt="" />
-					</div>
-					<div className="why_text_section">
-						<h2>Why Choose Us</h2>
-						<div className="why_gridbox">
-							<div className="why_gridItem">
-								<div></div>
-								<p>Quality</p>
-								<p>
-									Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lacus risus, velit enim semper vestibulum
-									aliquet. Ultricies tempor ac curabitur ornare at nunc facilisis tincidunt nisl. Odio id quis fermentum
-									sapien sem iaculis augue erat. Ut dignissim sapien, nibh dolor malesuada. Est sit vitae urna.
-								</p>
-							</div>
-							<div className="why_gridItem">
-								<div></div>
-								<p>Integrity</p>
-								<p>
-									Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lacus risus, velit enim semper vestibulum
-									aliquet. Ultricies tempor ac curabitur ornare at nunc facilisis tincidunt nisl. Odio id quis fermentum
-									sapien sem iaculis augue erat. Ut dignissim sapien, nibh dolor malesuada. Est sit vitae urna.
-								</p>
-							</div>
-							<div className="why_gridItem">
-								<div></div>
-								<p>Professionalism</p>
-								<p>
-									Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lacus risus, velit enim semper vestibulum
-									aliquet. Ultricies tempor ac curabitur ornare at nunc facilisis tincidunt nisl. Odio id quis fermentum
-									sapien sem iaculis augue erat. Ut dignissim sapien, nibh dolor malesuada. Est sit vitae urna.
-								</p>
-							</div>
-							<div className="why_gridItem">
-								<div></div>
-								<p>Safety</p>
-								<p>
-									Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lacus risus, velit enim semper vestibulum
-									aliquet. Ultricies tempor ac curabitur ornare at nunc facilisis tincidunt nisl. Odio id quis fermentum
-									sapien sem iaculis augue erat. Ut dignissim sapien, nibh dolor malesuada. Est sit vitae urna.
-								</p>
+					<div className="section4-inner">
+						<div className="section4-inner-img">
+							<img src="/assets/why_img.png" alt="" />
+						</div>
+						<div className="section4-inner-text">
+							<h2>Why Choose Us</h2>
+							<div className="text_gridbox">
+								<div className="text_gridItem">
+									<div></div>
+									<p>Quality</p>
+									<p>
+										Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lacus risus, velit enim semper vestibulum
+										aliquet. Ultricies tempor ac curabitur ornare at nunc facilisis tincidunt nisl. Odio id quis
+										fermentum sapien sem iaculis augue erat. Ut dignissim sapien, nibh dolor malesuada. Est sit vitae
+										urna.
+									</p>
+								</div>
+								<div className="text_gridItem">
+									<div></div>
+									<p>Integrity</p>
+									<p>
+										Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lacus risus, velit enim semper vestibulum
+										aliquet. Ultricies tempor ac curabitur ornare at nunc facilisis tincidunt nisl. Odio id quis
+										fermentum sapien sem iaculis augue erat. Ut dignissim sapien, nibh dolor malesuada. Est sit vitae
+										urna.
+									</p>
+								</div>
+								<div className="text_gridItem">
+									<div></div>
+									<p>Professionalism</p>
+									<p>
+										Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lacus risus, velit enim semper vestibulum
+										aliquet. Ultricies tempor ac curabitur ornare at nunc facilisis tincidunt nisl. Odio id quis
+										fermentum sapien sem iaculis augue erat. Ut dignissim sapien, nibh dolor malesuada. Est sit vitae
+										urna.
+									</p>
+								</div>
+								<div className="text_gridItem">
+									<div></div>
+									<p>Safety</p>
+									<p>
+										Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lacus risus, velit enim semper vestibulum
+										aliquet. Ultricies tempor ac curabitur ornare at nunc facilisis tincidunt nisl. Odio id quis
+										fermentum sapien sem iaculis augue erat. Ut dignissim sapien, nibh dolor malesuada. Est sit vitae
+										urna.
+									</p>
+								</div>
 							</div>
 						</div>
 					</div>

@@ -1,11 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
 import React from "react";
 import FrontLayout from "../layouts/front.layout";
-import HeroComp from "../components/HeroComp";
-import AboutComp from "../components/AboutComp";
-import WhoComp from "../components/WhoComp";
-import WhyComp from "../components/WhyComp";
-import OurServicesComp from "../components/OurServicesComp";
 import ReviewsComp from "../components/ReviewsComp";
 import ProjectsComp from "../components/ProjectsComp";
 import Link from "next/link";
@@ -84,7 +79,7 @@ const Home = () => {
 					<div className="section3-inner">
 						<div className="section3-inner-left">
 							<p className="text-danger">ROLANICK</p>
-							<p>Who We Are...</p>
+							<p className="section3-heading">Who We Are...</p>
 							<h2>Transforming With Innovations</h2>
 							<p className="section3-paragraph1">
 								Ralonick Constructions operates within the framework of commercial and industrial activities, developing
@@ -161,76 +156,75 @@ const Home = () => {
 						</div>
 					</div>
 				</section>
-				{/* <div className="ourServices">
-					<h2>Our Services</h2>
-					<div className="ourServices_text">
-						<p>
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lacus risus, velit enim semper vestibulum
-							aliquet. Ultricies tempor ac curabitur ornare at nunc facilisis tincidunt nisl. Odio
-						</p>
-						<button className="btn btn-outline-danger hug">All Services</button>
-					</div>
-					<div className="ourServices_gridbox">
-						<div className="ourServices_gridItem">
-							<img src="/assets/services1.png" alt="" />
-							<div>
-								<p>Chemical Research</p>
-								<p>
-									Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis mi sagittis aliquet elementum nunc
-									lectus. Arcu, non ornare commodo, convallis lectus. Proin scelerisque sed massa arcu nunc id ridiculus
-									purus cursus. Luctus dolor et consequat nunc at ut.
-								</p>
-								<p>
+				<section className="home-section-5">
+					<div className="section5-inner">
+						<h2>Our Services</h2>
+						<div className="section5-inner-text">
+							<p>
+								{`At Ralonick, we offer a wide range of services from engineering, procurement, construction, to equipment leasing for land & marine.`}
+							</p>
+							<button className="btn btn-outline-danger hug">All Services</button>
+						</div>
+						<div className="section5-inner-gridbox">
+							<div className="section5-gridItem">
+								<img src="/assets/services1.png" alt="" />
+								<div className="section5-gridItem-text">
+									<p className="grid-heading">{`Active & Passive Fire Proofing`}</p>
+									<p className="grid-text">
+										Fire Proofing is a vital component for any structure to ensure safety of lives and minimal financial
+										loss of properties. Ralonick offers professional fire proofing services ranging from cemetitious
+										fire proofing, to Automatic fire suppression, etc.
+									</p>
+
 									<Link href="/">
-										<a>
+										<a className="grid-link">
 											Learn More <img src="/assets/learnMoreArrow.png" alt="" />
 										</a>
 									</Link>
-								</p>
+								</div>
 							</div>
-						</div>
-						<div className="ourServices_gridItem">
-							<img src="/assets/services2.png" alt="" />
-							<div>
-								<p>Chemical Research</p>
-								<p>
-									Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis mi sagittis aliquet elementum nunc
-									lectus. Arcu, non ornare commodo, convallis lectus. Proin scelerisque sed massa arcu nunc id ridiculus
-									purus cursus. Luctus dolor et consequat nunc at ut.
-								</p>
-								<p>
+							<div className="section5-gridItem">
+								<img src="/assets/services2.png" alt="" />
+								<div className="section5-gridItem-text">
+									<p className="grid-heading">Field Joint Coating Services</p>
+									<p className="grid-text">
+										{`This involves the coating of girth weld produce on board the pipe-laying vessels or at any offshore location. Ralonick offers engineering design & fabrication of customized field joint coating equipment which involves liquid applied materials.`}
+									</p>
+
 									<Link href="/">
-										<a>
+										<a className="grid-link">
 											Learn More <img src="/assets/learnMoreArrow.png" alt="" />
 										</a>
 									</Link>
-								</p>
+								</div>
 							</div>
-						</div>
-						<div className="ourServices_gridItem">
-							<img src="/assets/services3.png" alt="" />
-							<div>
-								<p>Chemical Research</p>
-								<p>
-									Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis mi sagittis aliquet elementum nunc
-									lectus. Arcu, non ornare commodo, convallis lectus. Proin scelerisque sed massa arcu nunc id ridiculus
-									purus cursus. Luctus dolor et consequat nunc at ut.
-								</p>
-								<p>
+							<div className="section5-gridItem item3">
+								<img src="/assets/services3.png" alt="" />
+								<div className="section5-gridItem-text">
+									<p className="grid-heading">{`Procurement & Installation of FRP/GRP`}</p>
+									<p className="grid-text">
+										In conjunction with our foreign partners AOCOMM Composite Limited(major manufacturers of FRP and GRP
+										Products) we secure leadership in the area of technical support, procurement and maintenance for
+										upstream and downstream oil and gas refinery.
+									</p>
+
 									<Link href="/">
-										<a>
+										<a className="grid-link">
 											Learn More <img src="/assets/learnMoreArrow.png" alt="" />
 										</a>
 									</Link>
-								</p>
+								</div>
 							</div>
 						</div>
+						<div className="section5-arrows">
+							<div className="arrows">
+								<img src="/assets/keyboardArrowLeft.png" alt="" />
+								<img src="/assets/keyboardArrowRight.png" alt="" />
+							</div>
+							<div className="line"></div>
+						</div>
 					</div>
-					<div className="services_arrows">
-						<img src="/assets/keyboardArrowLeft.png" alt="" />
-						<img src="/assets/keyboardArrowRight.png" alt="" />
-					</div>
-				</div> */}
+				</section>
 				{/* <div className="reviews">
 					<h2>Clients Reviews</h2>
 					<p>

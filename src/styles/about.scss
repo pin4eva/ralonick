@@ -1,74 +1,139 @@
 .about-page {
-    *{
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-    }
-    .first-section {
-        display: flex;
-        gap: 1.5rem;
-        // border: 1px solid red;
-        @media screen and (max-width:$md) {
-            display: block;
-        }
+	* {
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+	}
 
+	.first-section {
+		display: flex;
+		gap: 1.5rem;
+		margin-top: 3.625rem;
 
-        .frame1 {
+		// border: 1px solid red;
+		@media screen and (max-width: $md) {
+			display: block;
+		}
+
+		.frame1 {
+			// border: 1px solid red;
+			width: 60%;
+			height: 10.6875rem;
+			position: relative;
             // border: 1px solid red;
-            width: 45%;
-            height: auto;
-            position: relative;
+			img {
+				width: 100%;
+				height: 100%;
+				@media screen and (max-width: $md) {
+					width: 100%;
+				}
+			}
+			@media screen and (max-width: $md) {
+				width: 95%;
+				height: auto;
+				margin-top: 6rem;
+				display: flex;
+				justify-content: center;
+			}
+		}
+
+		.first-text {
+			color: $primary;
+			font-size: 2.5rem;
+			// border: 1px solid red;
+			width: 50%;
+			padding-top: 3.2rem;
+			display: flex;
+			flex-direction: column;
+			gap: -4rem;
+			margin-bottom: 0;
+			position: relative;
+
+			.p2 {
+				margin-top: 0;
+				margin-bottom: 0;
+			}
+
+			@media screen and (max-width: $md) {
+				// display: none;
+				position: absolute;
+				top: 3rem;
+				width: 50%;
+				font-size: 1.5rem;
+				padding: 0.5rem;
+			}
+		}
+	}
+	//===============END OF FIRST SECTION==================
+
+	//=============begining of the fourth section==============
+
+	.fourth-section {
+		display: grid;
+		grid-template-areas:
+			"a a b"
+			"c . b"
+			"c d d";
+
+            @media screen and (max-width: $md) {
+                
+            }
+            
+
+            span {
+                color: #000000;
+                font-size: 1.125rem;
+                font-weight: 600;
+            }
+
+		.frame3 {
+			grid-area: a;
+            // width: 100%;
+            img {
+                width: 100%;
+            }
+			
+		}
+
+		.fourth-section-text1 {
+            background: rgba(51, 51, 51, 0.02);
+            grid-area: b;
+            // width: 100%;
+            // height: 25rem;
+            width: 25rem;
+
+            padding: 2rem 1.5rem;
+            
+			ul {
+                width: 100%;
+                height: auto;
+                padding-top: 1rem;
+            }
+		}
+        
+		.fourth-section-text2 {
+            background: rgba(51, 51, 51, 0.02);
+            grid-area: c;
+            width: 25rem;
+            // width: 100%;
+            padding: 2rem 1.5rem;
+
+            ul{
+                width: 100%;
+                padding-top: 1rem;
+            }
+		}
+
+		.frame2 {
+            grid-area: d;
+            width: 100%;
+            background-color: red;
+            margin-right: 4rem;
+
             img {
                 width: 100%;
                 height: auto;
-                @media screen and (max-width:$md) {
-                    width: 100%;
-                }
-
             }
-            @media screen and (max-width:$md) {
-                width: 95%;
-                height: auto;
-                margin-top: 6rem;
-                display: flex;
-                justify-content: center;
-                
-            }
-        }
-
-        .first-text {
-            color: $primary;
-            font-size: 3rem;
-            // border: 1px solid red;
-            width: 50%;
-            padding-bottom: 0;
-            display: flex;
-            flex-direction: column;
-            gap: -4rem;
-            margin-bottom: 0;
-            position: relative;
-
-            
-            .p2 {
-                margin-top: 0;
-                margin-bottom: 0;
-            }
-
-            @media screen and (max-width:$md) {
-                // display: none;
-                position: absolute;
-                top: 3rem;
-                width: 50%;
-                font-size: 1.5rem;
-                padding: 0.5rem;
-
-            }
-        }
-    }
-    //===============END OF FIRST SECTION==================
+		}
+	}
 }
-
-        
-
-
-       

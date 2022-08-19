@@ -13,9 +13,9 @@ import Link from "next/link";
 const Home = () => {
 	return (
 		<FrontLayout>
-			<div className="home">
-				<section className="home-hero">
-					<div className="inner container">
+			<div className="home container">
+				<section className="home-hero ">
+					<div className="inner">
 						<div className="left">
 							<div className="inner-left">
 								<div className="hero_img1">
@@ -30,7 +30,10 @@ const Home = () => {
 								</div>
 								<div className="hero-text">
 									<h1>{`Diverse & Flexible Structure `}</h1>
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Gravida facilisi mauris morbi.</p>
+									<p>
+										End to end service in the design, engineering, procurement, fabrication, installation, repair of
+										(GRE), (GRP) and Vinylester Pipe system and products.
+									</p>
 									<button className="btn btn-danger hug">See Projects</button>
 								</div>
 							</div>
@@ -51,21 +54,22 @@ const Home = () => {
 					</div>
 				</section>
 				<section className="about-section" id="about">
-					<div className="about-inner container">
+					<div className="about-inner">
 						<div className="about_text_sect about-inner-left">
 							<div className="left-text">
 								<p className="text-danger fw-600">RALONICK</p>
 								<h2 className="h1">About Us</h2>
+								<p>
+									Ralonick is a fast growing construction company rapidly spreading its frontiers across Nigeria, with
+									sole interest in operation and maintenance of production facilities, local and foreign procurement of
+									oil & gas materials and consultation.
+								</p>
 								<p>
 									Our operation is based on a diverse and flexible structure. We adopt a system of Total quality
 									Management (TQM) at a reasonable cost and within the shortest possible time, in conjunction with our
 									technical partners. We provide end to end service in the design, engineering, procurement,
 									fabrication, installation, repair and support of Glass fiber Reinforced Epoxy (GRE) Polyester (GRP)
 									and Vinylester Pipe system and products.
-								</p>
-								<p>
-									Odio quisque potenti feugiat commodo sit hendrerit cum platea. Turpis neque in turpis commodo egestas
-									turpis auctor ut pharetra. Arcu quam morbi viverra lectus facilisi.
 								</p>
 								<button className="btn btn-outline-danger hug">Learn More</button>
 							</div>
@@ -75,7 +79,7 @@ const Home = () => {
 						</div>
 					</div>
 				</section>
-				<div className="who">
+				{/* <div className="who">
 					<section className="who_text_section">
 						<p className="who_ralonick">ROLANICK</p>
 						<p>Who We Are...</p>
@@ -294,7 +298,7 @@ const Home = () => {
 					<div className="projects_btn">
 						<button className="btn btn-danger hug">All Services</button>
 					</div>
-				</div>
+				</div> */}
 			</div>
 		</FrontLayout>
 	);

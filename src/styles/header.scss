@@ -1,100 +1,91 @@
 .app-header {
-  position: relative;
+	position: relative;
+	margin-block: 0.5rem;
+	a {
+		text-decoration: none;
+		color: inherit;
+	}
 
-  a {
-    text-decoration: none;
-    color: inherit;
-  }
+	.btn {
+		padding: 1vw 3vw;
+		font-weight: 600;
+	}
 
-  .btn {
-    padding: 1vw 3vw;
-    font-weight: 600;
-  }
+	.desktop-nav {
+		display: flex;
+		align-items: center;
 
-  .desktop-nav {
-    display: flex;
-    align-items: center;
+		.logo {
+			font-size: 1.16rem;
+			font-weight: 600;
+			color: $primary;
+			flex: 1;
 
-    .logo {
-      font-size: 1.16rem;
-      font-weight: 600;
-      color: $primary;
-      flex: 1;
+			@media screen and (max-width: $md) {
+				padding-block: 1vw;
+			}
+		}
 
-      @media screen and (max-width:$md) {
-        padding-block: 1vw;
-      }
-    }
+		.app-nav {
+			list-style: none;
+			margin: 0;
+			padding: 0;
+			display: none;
+			align-items: center;
+			gap: 1.5rem;
+			font-weight: 600;
 
-    .app-nav {
-      list-style: none;
-      margin: 0;
-      padding: 0;
-      display: none;
-      align-items: center;
-      gap: 1.5rem;
-      font-weight: 600;
+			@media screen and (min-width: $md) {
+				display: flex;
+			}
+		}
 
+		.bars {
+			@media screen and (min-width: $md) {
+				display: none;
+			}
+		}
+	}
 
+	.mobile-nav {
+		position: absolute;
+		background-color: $gray;
+		z-index: 2;
+		right: 0;
+		left: 0;
+		min-height: 50vh;
+		display: none;
 
-      @media screen and (min-width:$md) {
-        display: flex;
-      }
-    }
+		&.show {
+			display: block;
 
+			@media screen and (min-width: $md) {
+				display: none;
+			}
+		}
 
+		.inner {
+			display: flex;
+			flex-direction: column;
+			font-size: 16px;
+			height: 45vh;
+			justify-content: center;
 
-    .bars {
-      @media screen and (min-width:$md) {
-        display: none;
-      }
-    }
+			ul {
+				list-style: none;
+				margin: 0;
+				padding: 0;
+				align-items: center;
+				display: grid;
+				gap: 4rem;
+				font-weight: 600;
+				place-content: center;
+				text-align: center;
 
-
-  }
-
-  .mobile-nav {
-    position: absolute;
-    background-color: $gray;
-    z-index: 2;
-    right: 0;
-    left: 0;
-    min-height: 50vh;
-    display: none;
-
-    &.show {
-      display: block;
-
-      @media screen and (min-width:$md) {
-        display: none;
-      }
-    }
-
-    .inner {
-      display: flex;
-      flex-direction: column;
-      font-size: 16px;
-      height: 45vh;
-      justify-content: center;
-
-      ul {
-        list-style: none;
-        margin: 0;
-        padding: 0;
-        align-items: center;
-        display: grid;
-        gap: 4rem;
-        font-weight: 600;
-        place-content: center;
-        text-align: center;
-
-        a {
-          color: black;
-        }
-
-      }
-    }
-
-
-  }
+				a {
+					color: black;
+				}
+			}
+		}
+	}
 }

@@ -202,8 +202,13 @@
 						color: $secondary;
 					}
 
-					&:nth-child(4) {
-						margin-block: 1.5rem 2.5rem;
+					&.section3-paragraph1 {
+						margin-block: 1.5rem 0;
+						font-weight: 500;
+						line-height: 1.77778rem;
+					}
+					&.section3-paragraph2 {
+						margin-bottom: 2.5rem;
 						font-weight: 500;
 						line-height: 1.77778rem;
 					}
@@ -213,9 +218,13 @@
 					display: flex;
 					text-align: center;
 					margin-bottom: 1.5rem;
+					@media screen and (max-width: $md) {
+						width: fit-content;
+						margin-inline: auto;
+					}
 
 					&-sub {
-						padding: 1% 2%;
+						padding: 2%;
 						border: 1px solid $primary;
 
 						&:nth-child(1),
@@ -275,10 +284,6 @@
 					display: block;
 					width: 100%;
 				}
-
-				// &-text {
-				// 	width: 68%;
-				// }
 			}
 
 			&-img {
@@ -288,7 +293,6 @@
 			}
 
 			&-text {
-
 				h2 {
 					color: $secondary;
 					font-size: 3rem;
@@ -297,13 +301,10 @@
 				}
 
 				.text_gridbox {
-
-
 					@media screen and (min-width: $md) {
 						display: grid;
 
 						grid-template-columns: 1fr 1fr;
-
 					}
 
 					.text_gridItem {
@@ -312,7 +313,6 @@
 
 						&:hover {
 							border-color: black;
-
 						}
 
 						.empty-box {
@@ -333,22 +333,6 @@
 							font-weight: 600;
 							margin-block: 1rem;
 						}
-
-						// p {
-						// 	&:nth-child(2) {
-						// 		font-weight: 600;
-						// 		font-size: 1.125rem;
-						// 		line-height: 1.5rem;
-						// 		color: $secondary;
-						// 		margin-block: 0.89rem 0.44rem;
-						// 	}
-
-						// 	&:nth-child(3) {
-						// 		font-weight: 500;
-						// 		font-size: 0.875rem;
-						// 		line-height: 1.5rem;
-						// 	}
-						// }
 					}
 				}
 			}

@@ -86,24 +86,24 @@ const Home = () => {
 							<p className="text-danger">ROLANICK</p>
 							<p>Who We Are...</p>
 							<h2>Transforming With Innovations</h2>
-							<p>
-								{`	Ralonick Constructions operates within the framework of commercial and industrial activities, developing
+							<p className="section3-paragraph1">
+								Ralonick Constructions operates within the framework of commercial and industrial activities, developing
 								and carrying out basic and detailed services in engineering, procurement, construction, equipment
-								leasing and marine. We exceed our clients' trust through the timely delivery of quality, satisfactory
-								products and services.`}
+								leasing and marine.
 							</p>
+							<p className="section3-paragraph2">{`We exceed our clients' trust through the timely delivery of quality, satisfactory products and services.`}</p>
 							<div className="info">
 								<div className="info-sub">
-									<p>25</p>
+									<p>25+</p>
+									<p>Trusted Partners</p>
+								</div>
+								<div className="info-sub">
+									<p>50+</p>
+									<p>Satisfied Clients</p>
+								</div>
+								<div className="info-sub">
+									<p>5+</p>
 									<p>Years Experience</p>
-								</div>
-								<div className="info-sub">
-									<p>25</p>
-									<p>Industries served</p>
-								</div>
-								<div className="info-sub">
-									<p>25</p>
-									<p>Factories Built</p>
 								</div>
 							</div>
 						</div>
@@ -124,10 +124,9 @@ const Home = () => {
 									<div className="empty-box"></div>
 									<p className="grid-heading">Quality</p>
 									<p>
-										Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lacus risus, velit enim semper vestibulum
-										aliquet. Ultricies tempor ac curabitur ornare at nunc facilisis tincidunt nisl. Odio id quis
-										fermentum sapien sem iaculis augue erat. Ut dignissim sapien, nibh dolor malesuada. Est sit vitae
-										urna.
+										Great service delivery is incomplete without quality. It is our core value of operation, we achieve
+										this by employing the policy of harnessing available resources, experience (of higly skilled
+										engineers) and technical expertise.
 									</p>
 								</div>
 								<div className="text_gridItem">
@@ -135,30 +134,27 @@ const Home = () => {
 									<p className="grid-heading">Integrity</p>
 
 									<p>
-										Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lacus risus, velit enim semper vestibulum
-										aliquet. Ultricies tempor ac curabitur ornare at nunc facilisis tincidunt nisl. Odio id quis
-										fermentum sapien sem iaculis augue erat. Ut dignissim sapien, nibh dolor malesuada. Est sit vitae
-										urna.
+										Service entails a lot of commitment laced with passion, with years of experience and service
+										provision, we stand for excellent and honest work as we stay true to our words. Maintaining the
+										trust placed in us by all our clients and stakeholders is key to us.
 									</p>
 								</div>
 								<div className="text_gridItem">
 									<div className="empty-box"></div>
 									<p className="grid-heading">Professionalism</p>
 									<p>
-										Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lacus risus, velit enim semper vestibulum
-										aliquet. Ultricies tempor ac curabitur ornare at nunc facilisis tincidunt nisl. Odio id quis
-										fermentum sapien sem iaculis augue erat. Ut dignissim sapien, nibh dolor malesuada. Est sit vitae
-										urna.
+										Skill and competence are as important as practice therefore all staff are highly trained, possess
+										high experiential knowledge in the field, and are highly professional. We value professionalism, to
+										us it means giving clients the best value for their money.
 									</p>
 								</div>
 								<div className="text_gridItem">
 									<div className="empty-box"></div>
 									<p className="grid-heading">Safety</p>
 									<p>
-										Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lacus risus, velit enim semper vestibulum
-										aliquet. Ultricies tempor ac curabitur ornare at nunc facilisis tincidunt nisl. Odio id quis
-										fermentum sapien sem iaculis augue erat. Ut dignissim sapien, nibh dolor malesuada. Est sit vitae
-										urna.
+										As one of our offered service we are not lacking in ensuring that our installations and technical
+										works are properly done. We have zero reservations as regards safety. Our staff are highly trained
+										for personal & on-site safety.
 									</p>
 								</div>
 							</div>

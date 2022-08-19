@@ -121,8 +121,8 @@ const Home = () => {
 							<h2>Why Choose Us</h2>
 							<div className="text_gridbox">
 								<div className="text_gridItem">
-									<div></div>
-									<p>Quality</p>
+									<div className="empty-box"></div>
+									<p className="grid-heading">Quality</p>
 									<p>
 										Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lacus risus, velit enim semper vestibulum
 										aliquet. Ultricies tempor ac curabitur ornare at nunc facilisis tincidunt nisl. Odio id quis
@@ -131,8 +131,9 @@ const Home = () => {
 									</p>
 								</div>
 								<div className="text_gridItem">
-									<div></div>
-									<p>Integrity</p>
+									<div className="empty-box"></div>
+									<p className="grid-heading">Integrity</p>
+
 									<p>
 										Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lacus risus, velit enim semper vestibulum
 										aliquet. Ultricies tempor ac curabitur ornare at nunc facilisis tincidunt nisl. Odio id quis
@@ -141,8 +142,8 @@ const Home = () => {
 									</p>
 								</div>
 								<div className="text_gridItem">
-									<div></div>
-									<p>Professionalism</p>
+									<div className="empty-box"></div>
+									<p className="grid-heading">Professionalism</p>
 									<p>
 										Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lacus risus, velit enim semper vestibulum
 										aliquet. Ultricies tempor ac curabitur ornare at nunc facilisis tincidunt nisl. Odio id quis
@@ -151,8 +152,8 @@ const Home = () => {
 									</p>
 								</div>
 								<div className="text_gridItem">
-									<div></div>
-									<p>Safety</p>
+									<div className="empty-box"></div>
+									<p className="grid-heading">Safety</p>
 									<p>
 										Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lacus risus, velit enim semper vestibulum
 										aliquet. Ultricies tempor ac curabitur ornare at nunc facilisis tincidunt nisl. Odio id quis

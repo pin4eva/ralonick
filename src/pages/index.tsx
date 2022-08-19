@@ -1,7 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
 import React from "react";
 import FrontLayout from "../layouts/front.layout";
-import ReviewsComp from "../components/ReviewsComp";
 import ProjectsComp from "../components/ProjectsComp";
 import Link from "next/link";
 
@@ -167,7 +166,7 @@ const Home = () => {
 						</div>
 						<div className="section5-inner-gridbox">
 							<div className="section5-gridItem">
-								<img src="/assets/services1.png" alt="" />
+								<img className="section5-gridItem-img" src="/assets/services1.png" alt="" />
 								<div className="section5-gridItem-text">
 									<p className="grid-heading">{`Active & Passive Fire Proofing`}</p>
 									<p className="grid-text">
@@ -184,7 +183,7 @@ const Home = () => {
 								</div>
 							</div>
 							<div className="section5-gridItem">
-								<img src="/assets/services2.png" alt="" />
+								<img className="section5-gridItem-img" src="/assets/services2.png" alt="" />
 								<div className="section5-gridItem-text">
 									<p className="grid-heading">Field Joint Coating Services</p>
 									<p className="grid-text">
@@ -199,7 +198,7 @@ const Home = () => {
 								</div>
 							</div>
 							<div className="section5-gridItem item3">
-								<img src="/assets/services3.png" alt="" />
+								<img className="section5-gridItem-img" src="/assets/services3.png" alt="" />
 								<div className="section5-gridItem-text">
 									<p className="grid-heading">{`Procurement & Installation of FRP/GRP`}</p>
 									<p className="grid-text">
@@ -225,22 +224,20 @@ const Home = () => {
 						</div>
 					</div>
 				</section>
-				{/* <div className="reviews">
-					<h2>Clients Reviews</h2>
-					<p>
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eros vitae vitae dictum mattis risus, ut nec.
-						Rhoncus egestas quis pellentesque risus posuere.facilisis. Enim quisque id sit molestie tincidunt faucibus.
-						Amet, dictum eget egestas dictum non leo cras faucibus egestas. Mattis imperdiet elit nullam adipiscing
-						lobortis fames. Et egestas vitae feugiat nisi, sed sit in pulvinar at. Ultrices tincidunt vel in sit
-						ullamcorper. Sollicitud
-					</p>
-					<div>
-						<img src="/assets/clientPic.png" alt="" />
-						<h3>Cindy Clifford</h3>
-						<p>Rumuodara Interior Designer</p>
+				<section className="home-section-6">
+					<div className="section6-inner">
+						<h2>Clients Reviews</h2>
+						<p className="section6-inner-txt1">
+							{`I had been looking to get my shipment and maintenance done but couldn't find the right Construction Company to do so. Rolanick Construction has been exceptional at what they do, from pre-planning, procurement, constructing in itself and maintenance it has been worth it. They understood the job and they delivered! Thank you!`}
+						</p>
+						<div className="section6-inner-profile">
+							<img src="/assets/clientPic.png" alt="" />
+							<h3>Cindy Clifford</h3>
+							<p className="section6-inner-profile_caption">Creative Director Sobaz Oil and gas</p>
+						</div>
+						<img src="/assets/reviewslider.png" alt="" />
 					</div>
-					<img src="/assets/reviewslider.png" alt="" />
-				</div> */}
+				</section>
 				{/* <div className="projects">
 					<h2>Our Projects</h2>
 					<div className="projects_sub">

@@ -16,9 +16,35 @@ const AboutPage = () => {
 				</div>
 				{/*========== END OF SECTION ONE ==========*/}
 
-				<div className="second-section">
-					
+				{/* ================BEGINING OF SECTION TWO============================== */}
+				<div className="second-section container">
+					<div className="second-section-text">
+						<h5 className="fw-600">Top Quality Construction & Engineering Services</h5>
+
+						<p className="text-one fw-500">
+							Ralonick is a fast growing construction company rapidly spreading its frontiers across Nigeria, with sole
+							interest in operation and maintenance of production facilities, local and foreign procurement of oil & gas
+							materials and consultation. It is a registered private limited liability company under the Nigeria Law.
+						</p>
+
+						<p className="text-two fw-500">
+							Our operation is within the framework of commercial and industrial activities, developing and carrying out
+							basic and detailed service in Engineering, Procurement, Construction and Equipment leasing in Land and
+							Marine.
+						</p>
+
+						<p className="text-three fw-500">
+							We adopt a system of Total quality Management (TQM) at a reasonable cost and within the shortest possible
+							time, in conjunction with our technical partners. We provide end to end service in the design,
+							engineering, procurement, fabrication, installation, repair and support of Glass fiber Reinforced Epoxy
+							(GRE) Polyester (GRP) and Vinylester Pipe system and products.
+						</p>
+					</div>
+					<div className="second-section-image">
+						<img src="assets/about_img1.png" alt="sec2" />
+					</div>
 				</div>
+				{/* ============================END OF SECOND SECTION============================= */}
 				<div>3</div>
 
 				{/* ===========beginning of fourth section============= */}
@@ -28,13 +54,26 @@ const AboutPage = () => {
 					</div>
 					<div className="fourth-section-text1">
 						<span>Our Vision:</span>
-						<ul>
-							<li>We aim to be Nigeria’s leading company in Design,  Engineering, Procurement, Fabrication, Construction, Equipment Leasing  and Installation Services in Land & Marine.</li>
+						<ul className="fw-500">
+							<li>
+								We aim to be Nigeria’s leading company in Design, Engineering, Procurement, Fabrication, Construction,
+								Equipment Leasing and Installation Services in Land & Marine.
+							</li>
+							<li>
+								{" "}
+								Continous delivery of excellent innovative values and construction solutions to meeet our clients’
+								requirements.
+							</li>
+							<li>
+								Be the primary preference at all times nationally for excellence and quality in all types of
+								construction.
+							</li>
+							<li>Continually improve the competence of our team & employ innovative and result-oriented persons.</li>
 						</ul>
 					</div>
 					<div className="fourth-section-text2">
 						<span>Our Mission:</span>
-						<ul>
+						<ul className="fw-500">
 							<li>
 								To provide quality service in the fastest possible manner with minimal impact on the environment.{" "}
 							</li>

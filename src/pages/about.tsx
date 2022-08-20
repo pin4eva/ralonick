@@ -87,8 +87,9 @@ const AboutPage = () => {
 						<img src="assets/who_img1.png" alt="this" />
 					</div>
 				</div>
+				{/* =====================END OF SECTION THREE======================= */}
 
-				{/* ===========beginning of fourth section============= */}
+				{/* ===================BEGINNING OF FOURTH SECTION====================== */}
 				<div className="fourth-section container">
 					<div className="frame3">
 						<img src="assets/frame3.png" alt="frame2" />
@@ -136,9 +137,110 @@ const AboutPage = () => {
 						<img src="assets/frame2.png" alt="frame2" />
 					</div>
 				</div>
-				<div>5</div>
-				<div>6</div>
-				<div>7</div>
+				{/* ==============END OF FOURTH SECTION========================== */}
+
+				{/* =======================BEGINNING OF FIFTH SECTION==================== */}
+				<div className="fifth-section">
+					<div className="fifth-image">
+						<img src="assets/why__img.png" alt="" />
+					</div>
+
+					<div className="fifth-section-text">
+						<h1>Why Choose Us</h1>
+						<div className="strict-text">
+							<div>
+								<span>
+									<img src="assets/safety.svg" alt="" />
+								</span>
+								<h5>Quality</h5>
+								<p>
+									Great service delivery is incomplete without quality. It is our core value of operation, we achieve
+									this by employing the policy of harnessing available resources, experience (of higly skilled
+									engineers) and technical expertise.
+								</p>
+							</div>
+							<div>
+								<span>
+									<img src="assets/integrity.svg" alt="" />
+								</span>
+								<h5>Integrity</h5>
+								<p>
+									Service entails a lot of commitment laced with passion, with years of experience and service
+									provision, we stand for excellent and honest work as we stay true to our words. Maintaining the trust
+									placed in us by all our clients and stakeholders is key to us.
+								</p>
+							</div>
+							<div>
+								<span>
+									<img src="assets/quality.svg" alt="" />
+								</span>
+								<h5>Professionalism</h5>
+								<p>
+									Skill and competence are as important as practice therefore all staff are highly trained, possess high
+									experiential knowledge in the field, and are highly professional. We value professionalism, to us it
+									means giving clients the best value for their money.
+								</p>
+							</div>
+							<div>
+								<span>
+									<img src="assets/quality.svg" alt="" />
+								</span>
+								<h5>Safety</h5>
+								<p>
+									As one of our offered service we are not lacking in ensuring that our installations and technical
+									works are properly done. We have zero reservations as regards safety. Our staff are highly trained for
+									personal & on-site safety.{" "}
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				{/* ==================END OF FIFTH SECTION====================== */}
+
+				{/* =========================BEGINNING OF SIXTH SECTION======================= */}
+
+				<div className="sixth-section">
+					<h1>Our Team</h1>
+
+					<div className="sixth-images">
+						<div>
+							<img src="assets/Frame9.png" alt="" />
+							<div>
+								<h5>Joy Julius</h5>
+								<h6>CEO</h6>
+								<span>
+									<i className="fa-brands fa-twitter"></i>
+									<i className="fa-brands fa-instagram"></i>
+								</span>
+							</div>
+						</div>
+
+						<div>
+							<img src="assets/Frame14.png" alt="" />
+							<div>
+								<h5>Joy Julius</h5>
+								<h6>CEO</h6>
+								<span>
+									<i className="fa-brands fa-twitter twi"></i>
+									<i className="fa-brands fa-instagram"></i>
+								</span>
+							</div>
+						</div>
+
+						<div>
+							<img src="assets/Frame15.png" alt="" />
+							<div>
+								<h5>Joy Julius</h5>
+								<h6>CEO</h6>
+								<span>
+									<i className="fa-brands fa-twitter"></i>
+									<i className="fa-brands fa-instagram"></i>
+								</span>
+							</div>
+						</div>
+					</div>
+				</div>
+				{/* <div>7</div> */}
 			</div>
 		</FrontLayout>
 	);

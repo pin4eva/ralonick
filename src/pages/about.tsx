@@ -45,7 +45,48 @@ const AboutPage = () => {
 					</div>
 				</div>
 				{/* ============================END OF SECOND SECTION============================= */}
-				<div>3</div>
+
+				{/* ================BEGINNING OF SECTION THREE===================== */}
+				<div className="third-section container">
+					<div className="third-section-text">
+						<h1 className="fw-800">Transforming With Innovations</h1>
+						<div className="third-section-text_1">
+							<p className="fw-500">
+								Ralonick Constructions operates within the framework of commercial and industrial activities, developing
+								and carrying out basic and detailed services in engineering, procurement, construction, equipment
+								leasing and marine. We exceed our clients' trust through the timely delivery of quality, satisfactory
+								products and services.
+							</p>
+						</div>
+
+						<div className="main-stats">
+							<div>
+								<p className="blue-text ">
+									25 <span>+</span>
+								</p>
+								<p className="black-text">Trusted Partners</p>
+							</div>
+
+							<div>
+								<p className="blue-text">
+									50 <span>+</span>
+								</p>
+								<p className="black-text">Satisfied Clients</p>
+							</div>
+
+							<div>
+								<p className="blue-text">
+									5 <span>+</span>
+								</p>
+								<p className="black-text">Years Experience</p>
+							</div>
+						</div>
+					</div>
+
+					<div className="third-section-image">
+						<img src="assets/who_img1.png" alt="this" />
+					</div>
+				</div>
 
 				{/* ===========beginning of fourth section============= */}
 				<div className="fourth-section container">

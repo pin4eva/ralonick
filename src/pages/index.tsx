@@ -1,7 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
 import React from "react";
 import FrontLayout from "../layouts/front.layout";
-import ProjectsComp from "../components/ProjectsComp";
 import Link from "next/link";
 
 const Home = () => {
@@ -238,65 +237,64 @@ const Home = () => {
 						<img src="/assets/reviewslider.png" alt="" />
 					</div>
 				</section>
-				{/* <div className="projects">
-					<h2>Our Projects</h2>
-					<div className="projects_sub">
-						<img src="/assets/projects1.png" alt="" />
-						<div>
-							<p>Project Name</p>
-							<p>
-								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis mi sagittis aliquet elementum nunc lectus.
-								Arcu, non ornare commodo, convallis lectus.
-							</p>
-							<p>
-								<Link href="/">
-									<a>
+				<section className="home-section-7">
+					<div className="section7-inner">
+						<h2>Our Projects</h2>
+						<div className="section7-inner-sub">
+							<img src="/assets/projects1.png" alt="" className="large-img" />
+							<div className="section7-inner-sub_text">
+								<p className="text-heading">Project Name</p>
+								<p className="inner-text-body">
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis mi sagittis aliquet elementum nunc
+									lectus. Arcu, non ornare commodo, convallis lectus.
+								</p>
+
+								<Link href="/" className="text-link">
+									<a className="text-link_link">
 										More Details <img src="/assets/moreDetailsArrow.png" alt="" />
 									</a>
 								</Link>
-							</p>
+							</div>
 						</div>
-					</div>
-					<div className="projects_sub">
-						<img src="/assets/projects2.png" alt="" />
-						<div>
-							<p>Project Name</p>
-							<p>
-								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis mi sagittis aliquet elementum nunc lectus.
-								Arcu, non ornare commodo, convallis lectus.
-							</p>
-							<p>
-								<Link href="/">
-									<a>
+						<div className="section7-inner-sub sub-2">
+							<img src="/assets/projects2.png" alt="" className="large-img" />
+							<div className="section7-inner-sub_text sub-2_text">
+								<p className="text-heading">Project Name</p>
+								<p className="inner-text-body">
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis mi sagittis aliquet elementum nunc
+									lectus. Arcu, non ornare commodo, convallis lectus.
+								</p>
+
+								<Link href="/" className="text-link">
+									<a className="text-link_link">
 										More Details
 										<img src="/assets/moreDetailsArrow.png" alt="" />
 									</a>
 								</Link>
-							</p>
+							</div>
 						</div>
-					</div>
-					<div className="projects_sub">
-						<img src="/assets/projects3.png" alt="" />
-						<div>
-							<p>Project Name</p>
-							<p>
-								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis mi sagittis aliquet elementum nunc lectus.
-								Arcu, non ornare commodo, convallis lectus.
-							</p>
-							<p>
-								<Link href="/">
-									<a>
+						<div className="section7-inner-sub">
+							<img src="/assets/projects3.png" alt="" className="large-img" />
+							<div className="section7-inner-sub_text">
+								<p className="text-heading">Project Name</p>
+								<p className="inner-text-body">
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis mi sagittis aliquet elementum nunc
+									lectus. Arcu, non ornare commodo, convallis lectus.
+								</p>
+
+								<Link href="/" className="text-link">
+									<a className="text-link_link">
 										More Details
 										<img src="/assets/moreDetailsArrow.png" alt="" />
 									</a>
 								</Link>
-							</p>
+							</div>
+						</div>
+						<div className="section7-inner-btn">
+							<button className="btn btn-danger hug">All Services</button>
 						</div>
 					</div>
-					<div className="projects_btn">
-						<button className="btn btn-danger hug">All Services</button>
-					</div>
-				</div> */}
+				</section>
 			</div>
 		</FrontLayout>
 	);

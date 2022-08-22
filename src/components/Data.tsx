@@ -80,23 +80,25 @@ export const Why=[
     {
         id:1,
         head:"Quality",
-        img: <img src={"/images/Helmet.png"} alt="" />,
+        img: <img src={"/images/Badge.png"} alt="" />,
         body:"Great service delivery is incomplete without quality. It is our core value of operation, we achieve this by employing the policy of harnessing available resources, experience (of higly skilled engineers) and technical expertise."
     },
     {
         id:2,
         head:"Integrity",
+        img: <img src={"/images/Union.png"} alt="" />,
         body:"Service entails a lot of commitment laced with passion, with years of experience and service provision, we stand for excellent and honest work as we stay true to our words.Maintaining the trust placed in us by all our clients and stakeholders is key to us."
     },
     {
         id:3,
         head:"Professionalism",
+        img: <img src={"/images/Bag.png"} alt="" />,
         body:"Skill and competence are as important as practice therefore all staff are highly trained, possess high experiential knowledge in the field, and are highly professional.We value professionalism, to us it means giving clients the best value for their money."
     },
     {
         id:4,
         head:"Safety",
-        img: <img src={"/images/Badge.png"} alt="" />,
+        img: <img src={"/images/Helmet.png"} alt="" />,
         body:"As one of our offered service we are not lacking in ensuring that our installations and technical works are properly done.We have zero reservations as regards safety. Our staff are highly trained for personal & on-site safety. "
     }  
 ]
@@ -107,7 +109,7 @@ export const Workers=[
         name:"Joy Julius",
         ceo:"CEO",
         iconinstagram:<i class="fa-brands fa-instagram"></i>,
-        icontwitter:	<img src={("./images/twitter.png")} alt="" />
+        icontwitter:	<i class="fa-brands fa-twitter" />
     },
     {
         id:2,
@@ -115,7 +117,7 @@ export const Workers=[
         name:"Gabriel Zaa",
         ceo:"CEO",
         iconinstagram:<i class="fa-brands fa-instagram"></i>,
-        icontwitter:	<img src={("./images/twitter.png")} alt="" />
+        icontwitter:<i class="fa-brands fa-twitter" />
     },
     {
         id:3,
@@ -123,7 +125,7 @@ export const Workers=[
         name:"Gabriel Zaa",
         ceo:"CEO",
         iconinstagram:<i class="fa-brands fa-instagram"></i>,
-        icontwitter:	<img src={("./images/twitter.png")} alt="" />
+        icontwitter:	<i class="fa-brands fa-twitter" />
     }
 
 

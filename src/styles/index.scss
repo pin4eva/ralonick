@@ -370,6 +370,7 @@
         grid-template-columns: 1fr 1fr;
         gap: 4rem;
 
+
         .text {
             margin-top: 9.5rem;
             // &-inner{
@@ -422,6 +423,7 @@
 
     .fourthSection {
         margin-top: 15.9375rem;
+        padding: 0rem;
 
         .our-section-1-inner-upper {
             display: flex;
@@ -469,16 +471,26 @@
             padding-top: 4rem;
         }
 
-        .inner-text-box {
+        .text-box {
             display: grid;
             grid-template-columns: 1fr 1fr;
 
             // grid-template-rows: 1fr 1fr;
-            .text-box {
+            .inner-text-box {
                 padding: 1.7rem;
                 border: 1px solid $secondary;
                 width: 20rem;
                 height: auto;
+
+                .inner-inner-inner-text-box {
+                    img {
+                        :nth-child(2) {
+                            width: 56px;
+                            height: 36px;
+                            display: none;
+                        }
+                    }
+                }
 
                 h2 {
                     margin: 0.7rem;
@@ -488,7 +500,7 @@
     }
 
     .sixthSection {
-        margin: 5rem 0rem 1.8rem 0rem;
+        margin: 7rem 0rem 1.8rem 0rem;
 
         h1 {
             margin-bottom: 1rem;
@@ -497,6 +509,9 @@
         .profile {
             display: grid;
             grid-template-columns: 1fr 1fr 1fr;
+            i{
+             color: white;
+            }
         }
 
     }
@@ -525,8 +540,9 @@
         }
     }
 
-    @media screen and (max-width:1199px) {
+    @media screen and (max-width:500px) {
         .thirdSection {
+           
             display: flex;
             flex-direction: column;
 
@@ -540,7 +556,7 @@
         }
     }
 
-    @media screen and (max-width:1199px) {
+    @media screen and (max-width:500px) {
         .fourthSection {
             .our-section-1-inner-upper {
                 display: flex;
@@ -585,13 +601,6 @@
 
     @media screen and (max-width:1199px) {
         .firthSection {
-            display: flex;
-            flex-direction: column;
-
-            .img {
-                display: none;
-            }
-
             h1 {
                 text-align: center;
             }
@@ -600,42 +609,21 @@
 
     @media screen and (max-width:500px) {
         .firthSection {
-            .inner-text-box {
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-
-                .text-box {
-                    padding: 1rem;
-                    border: 1px solid $secondary;
-
-                    //    width: 100%;
-                    //    height: auto;
-                    h2 {
-                        margin: 0.7rem;
-                    }
-                }
-            }
-        }
-    }
-
-    @media screen and (max-width:1199px) {
-        .firthSection {
             align-items: center;
-
-            .inner-text-box {
-
+            .img {
+                display: none;
+            }
+            .text-box {
                 display: flex;
                 flex-direction: column;
                 align-items: center;
 
-                .text-box {
+                .inner-text-box {
                     padding: 1rem;
                     border: 1px solid $secondary;
                     width: 70%;
                     //    height: auto;
                     align-items: center;
-
                     h2 {
                         margin: 0.7rem;
                     }
@@ -644,7 +632,8 @@
         }
     }
 
-    @media screen and (max-width:1199px) {
+
+    @media screen and (max-width:500px) {
         .sixthSection {
             h1 {
                 text-align: center;

@@ -4,7 +4,7 @@ import { Options, OurSection1, OurSection2, Project, Research, Why, Workers } fr
 
 function About() {
     return (
-        <div className="about">
+        <div className="about container">
 
             <section className="firstSection">
                 <div className="img">
@@ -68,56 +68,54 @@ function About() {
                 </div>
             </section>
             <section className="fourthSection">
-<div className="our-section-1">
-    {
-        OurSection1.map((item)=>
-        {
-            return(
-                <div className="our-section-1-inner-upper" key={item.id}>
+                <div className="our-section-1">
+                    {
+                        OurSection1.map((item) => {
+                            return (
+                                <div className="our-section-1-inner-upper" key={item.id}>
 
-                    <div className="our-section-1-inner-upper-img">
-                          {item.img}
-                    </div>
-                    <div className="our-section-1-inner-upper-text">
-                    <h2>{item.head}</h2>
-                    <ul>
-    <li><p>We aim to be Nigeria’s leading company in Design,  Engineering, Procurement, Fabrication, Construction, Equipment Leasing  and Installation Services in Land & Marine.</p></li>
-    <li><p>Continous delivery of excellent innovative values and construction solutions to meeet our clients’  requirements. </p></li>
-    <li><p>Be the primary preference at all times nationally for excellence and quality in all types of construction.</p></li>
-    <li><p>Continually improve the competence of our team & employ innovative and result-oriented persons.</p></li>
-</ul>
-                    </div>
-                    
-                </div>
-                
-            )
-        })
-    }
-</div>
-<div className="our-section-2">
-    {
-        OurSection2.map((item)=>
-        {
-            return(
-                <div className="our-section-2-inner" key={item.id}>
-                
-<div className="our-section-2-inner-text">
-    <h2>{item.head}</h2>
-    <ul>
-        <li><p>To provide quality service in the fastest possible manner with minimal impact on the environment.</p></li>
-        <li><p>To exceed our clients' trust through the delivery of quality and exclusive world class satisfactory products & services.</p></li>
-        <li><p>To utilize the latest specialized equipment and experience personnel and tackle all land & marine constructions.</p></li>
-        <li><p>To ensure minimal safety hazards on-site for personnels through the use of suitable equipments, experts and safety equipments & measures.</p></li>
-    </ul>
-</div>    <div className="our-section-2-inner-img">
-                    {item.img}
-                    </div>
+                                    <div className="our-section-1-inner-upper-img">
+                                        {item.img}
+                                    </div>
+                                    <div className="our-section-1-inner-upper-text">
+                                        <h2>{item.head}</h2>
+                                        <ul>
+                                            <li><p>We aim to be Nigeria’s leading company in Design,  Engineering, Procurement, Fabrication, Construction, Equipment Leasing  and Installation Services in Land & Marine.</p></li>
+                                            <li><p>Continous delivery of excellent innovative values and construction solutions to meeet our clients’  requirements. </p></li>
+                                            <li><p>Be the primary preference at all times nationally for excellence and quality in all types of construction.</p></li>
+                                            <li><p>Continually improve the competence of our team & employ innovative and result-oriented persons.</p></li>
+                                        </ul>
+                                    </div>
 
+                                </div>
+
+                            )
+                        })
+                    }
                 </div>
-            )
-        })
-    }
-</div>
+                <div className="our-section-2">
+                    {
+                        OurSection2.map((item) => {
+                            return (
+                                <div className="our-section-2-inner" key={item.id}>
+
+                                    <div className="our-section-2-inner-text">
+                                        <h2>{item.head}</h2>
+                                        <ul>
+                                            <li><p>To provide quality service in the fastest possible manner with minimal impact on the environment.</p></li>
+                                            <li><p>To exceed our clients' trust through the delivery of quality and exclusive world class satisfactory products & services.</p></li>
+                                            <li><p>To utilize the latest specialized equipment and experience personnel and tackle all land & marine constructions.</p></li>
+                                            <li><p>To ensure minimal safety hazards on-site for personnels through the use of suitable equipments, experts and safety equipments & measures.</p></li>
+                                        </ul>
+                                    </div>    <div className="our-section-2-inner-img">
+                                        {item.img}
+                                    </div>
+
+                                </div>
+                            )
+                        })
+                    }
+                </div>
             </section>
             <section className="firthSection">
                 <div className="img">
@@ -125,51 +123,49 @@ function About() {
                 </div>
                 <div className="text ">
                     <h1>Why Choose Us</h1>
-<div className="inner-text-box">
-                    {
-                        Why.map((item)=>
+                    <div className="text-box">
                         {
-                            return(
-                                <div key={item.id} className="text-box">
-<div className="inner-inner-inner-text-box">
-    {item.img}
-</div>
-<div className="inner-text-text">
-<h2 className="h2">{item.head}</h2>
-<p>{item.body}</p>
-</div>
+                            Why.map((item) => {
+                                return (
+                                    <div key={item.id} className="inner-text-box">
+                                        <div className="inner-inner-inner-text-box">
+                                            {item.img}
+                                        </div>
+                                        <div className="inner-text-text">
+                                            <h2 className="h2">{item.head}</h2>
+                                            <p>{item.body}</p>
+                                        </div>
 
-                                </div>
-                            )
-                        })
-                    }
+                                    </div>
+                                )
+                            })
+                        }
                     </div>
                 </div>
             </section>
             <section className="sixthSection">
                 <h1>Our Team</h1>
-<div className="profile">
-             {
-                Workers.map((item)=>
-                {
-                    return(
-                <div className="inner-profile" key={item.id}>
-                    <div className="Portrait">
-                        {item.img}
-                    </div>
-                    <div className="info">
-<h2 className="h2 profile-h2">{item.name}</h2>
-<p className="profile-p">{item.ceo}</p>
-<div className="icons">
-    {item.iconinstagram}
-    {item.icontwitter}
-</div>
-                    </div>
+                <div className="profile">
+                    {
+                        Workers.map((item) => {
+                            return (
+                                <div className="inner-profile" key={item.id}>
+                                    <div className="Portrait">
+                                        {item.img}
+                                    </div>
+                                    <div className="info">
+                                        <h2 className="h2 profile-h2">{item.name}</h2>
+                                        <p className="profile-p">{item.ceo}</p>
+                                        <div className="icons">
+                                            {item.iconinstagram}
+                                            {item.icontwitter}
+                                        </div>
+                                    </div>
+                                </div>
+                            )
+                        })
+                    }
                 </div>
-                    )
-                })
-             }
-             </div>
             </section>
         </div>
     )

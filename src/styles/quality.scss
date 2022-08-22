@@ -1,0 +1,43 @@
+.quality {
+	display: flex;
+	padding-top: 4rem;
+    padding-bottom: 4rem;
+    gap: 1.3rem;
+    height: 38.81rem;
+	.top {
+        // width: 39.75rem;
+        padding-top: 0.6rem;
+
+        h3 {
+            font-family: "Raleway";
+            font-style: normal;
+            font-weight: 600;
+            font-size: 1.5rem;
+            line-height: 2.375rem;
+            color: $primaryDark;
+        }
+        p {
+            font-family: "Raleway";
+            font-style: normal;
+            font-weight: 500;
+            font-size: 0.85rem;
+            line-height: 2rem;
+            color: $primaryDark;
+            
+        }
+    }
+ 
+
+    @media screen and (max-width:$mobile) {
+        flex-direction: column;
+        font-size: 0.875rem;
+
+        .point {
+            img {
+                width: 100%;
+                // max-width: 32.75rem;
+            }
+        }
+        
+    }
+}

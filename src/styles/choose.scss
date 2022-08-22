@@ -1,0 +1,121 @@
+.choose {
+	display: flex;
+	gap: 2.5rem;
+
+   
+
+	.box {
+		padding: 2rem 0rem;
+
+		h3 {
+			font-family: "Raleway";
+			font-style: normal;
+			font-weight: 800;
+			font-size: 3rem;
+			line-height: 4rem;
+			color: $secondary;
+		}
+		.table {
+			.ity {
+				display: flex;
+                h5 {
+                    font-family: "Raleway";
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 1.125rem;
+                    line-height: 1.5rem;
+                    color: $secondary;
+                }
+                p {
+                    font-family: "Raleway";
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 0.8rem;
+                    line-height: 1.5rem;
+                    color: $secondary;
+                }
+
+                .great {
+                    border: 1px solid $gridBorder;
+                     padding-right: 3.5rem;
+                    // padding-left: 1rem;
+                    text-align: justify;
+                    .bd {
+                        border: 1px solid black;
+                        height: 2.8rem;
+                        width: 2.8em;
+                        border-radius: 0.5rem;
+                        margin-top: 1rem;
+                        margin-left: 1rem;
+                    }
+                   
+                }
+                .serv {
+                    border: 1px solid $gridBorder;
+                    .bd {
+                        border: 1px solid black;
+                        height: 2.8rem;
+                        width: 2.8em;
+                        border-radius: 0.5rem;
+                        margin-top: 1rem;
+                        margin-left: 1rem;
+                    }
+                   
+                }
+
+			}
+			.sm {
+				display: flex;
+                h5 {
+                    font-family: "Raleway";
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 1.125rem;
+                    line-height: 1.5rem;
+                    color: $secondary;
+                }
+                p {
+                    font-family: "Raleway";
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 0.8rem;
+                    line-height: 1.5rem;
+                    color: $secondary;
+                }
+
+                .pro {
+                    border: 1px solid $gridBorder; 
+                    .bd {
+                        border: 1px solid black;
+                        height: 2.8rem;
+                        width: 2.8em;
+                        border-radius: 0.5rem;
+                        margin-top: 1rem;
+                        margin-left: 1rem;
+                    }
+                }
+                .safe {
+                    border: 1px solid $gridBorder;
+                    .bd {
+                        border: 1px solid black;
+                        height: 2.8rem;
+                        width: 2.8em;
+                        border-radius: 0.5rem;
+                        margin-top: 1rem;
+                        margin-left: 1rem;
+                    }
+                }
+			}
+
+		}
+	}
+
+    @media screen and (max-width:$mobile) {
+        flex-direction: column;
+         .reff {
+        img {
+            width: 100%;
+        }
+    }
+    }
+}

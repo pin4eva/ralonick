@@ -1,0 +1,27 @@
+.ral {
+	display: flex;
+    gap: 1.5rem;
+    padding-top: 5rem;
+    padding-bottom: 3rem;
+    .pic1 {
+        img {
+            width: 100%;
+        }
+    }
+	.ltd {
+		h2 {
+			font-family: "Raleway";
+			font-style: normal;
+			font-weight: 800;
+			font-size: 48px;
+			line-height: 64px;
+			color: $primary;
+		}
+	}
+}
+@media screen and (max-width: 768px) {
+   .ral {
+    flex-direction: column;
+    font-size: 0.875rem;
+   }
+}

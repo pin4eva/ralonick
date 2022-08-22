@@ -1,0 +1,116 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+.vision {
+	padding: 7.9rem 0;
+	display: grid;
+	// height: 50vh;
+	// grid-template-columns: 40% auto 40%;
+	// grid-template-rows: 40% auto 40%;
+	grid-template-areas:
+		"h h a"
+		"s . a"
+		"s f f";
+
+	@media screen and (max-width: $mobile) {
+		grid-template-areas:
+			"h h h"
+			"a a a"
+			"s s s"
+			"f f f";
+		gap: 0.5rem;
+	}
+
+	.hd {
+		width: 37.5rem;
+		height: 15.375rem;
+		grid-area: h;
+		img {
+			width: 100%;
+		}
+		@media screen and (max-width: $mobile) {
+			width: 100%;
+		}
+	}
+	.as {
+		width: 25rem;
+		height: 28.7rem;
+		grid-area: a;
+		margin: auto;
+		// margin-left: 1.5rem;
+		margin-right: 10rem;
+		font-size: 0.875rem;
+        background: rgba(51, 51, 51, 0.02);
+        padding-left: 1.5rem;
+		h5 {
+			font-family: "Raleway";
+			font-style: normal;
+			font-weight: 600;
+			font-size: 1.125rem;
+			line-height: 1.5rem;
+            padding-top: 2rem;
+          
+		}
+		.t1 {
+			width: 22rem;
+			height: 19.5rem;
+			font-family: "Raleway";
+			font-style: normal;
+			font-weight: 500;
+			font-size: 0.875rem;
+			line-height: 1.625rem;
+		}
+		@media screen and (max-width: $mobile) {
+			width: 100%;
+            // padding-left: 2rem;
+           
+		}
+	}
+	.se {
+		// margin-top: -3.25rem;
+		width: 25rem;
+		height: 26.5rem;
+		grid-area: s;
+		// margin-left: 1.5rem;
+		font-size: 0.9rem;
+        background: rgba(51, 51, 51, 0.1);
+        h5 {
+			font-family: "Raleway";
+			font-style: normal;
+			font-weight: 600;
+			font-size: 1.125rem;
+			line-height: 1.5rem;
+            padding-top: 2rem;
+            padding-left: 1.5rem;
+		}
+		.t2 {
+			width: 22rem;
+			height: 19.5rem;
+			font-family: "Raleway";
+			font-style: normal;
+			font-weight: 500;
+			font-size: 0.872rem;
+			line-height: 1.625rem;
+		}
+		@media screen and (max-width: $mobile) {
+			width: 100%;
+		}
+	}
+
+	.ft {
+		margin-top: -2.5rem;
+		// margin-left: 0.3rem;
+		width: 37.5rem;
+		height: 15.375rem;
+		grid-area: f;
+		img {
+			width: 100%;
+		}
+		@media screen and (max-width: $mobile) {
+			width: 100%;
+		}
+	}
+}

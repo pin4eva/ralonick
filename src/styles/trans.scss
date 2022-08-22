@@ -1,0 +1,139 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.trans {
+	display: flex;
+	padding-top: 10.25rem;
+	gap: 2.5rem;
+
+	.form {
+		padding-top: 2rem;
+		h3 {
+			font-family: "Raleway";
+			font-style: normal;
+			font-weight: 800;
+			font-size: 2.7rem;
+			line-height: 3.5rem;
+			color: $lighterPrimaryDark;
+		}
+		p {
+			padding-top: 1.2rem;
+			font-family: "Raleway";
+			font-style: normal;
+			font-weight: 500;
+			font-size: 0.9rem;
+			line-height: 2rem;
+			color: $primaryDark;
+			// text-align: justify;
+		}
+		.grid-n {
+            margin-top: 2.6rem;
+			display: grid;
+			grid-template-columns: 1fr 1fr 1fr;
+            border-top: 1px solid blue;
+            border-bottom: 1px solid blue;
+
+
+			.no1 {
+                padding-top: 1.5rem;
+                padding-bottom: 0.8rem;
+                border-right: 1px solid blue;
+
+				h4 {
+					font-family: "Raleway";
+					font-style: normal;
+					font-weight: 600;
+					font-size: 2.5rem;
+					line-height: 1.8rem;
+					text-align: center;
+					color: $primary;
+				}
+				p {
+                    padding-top: -2rem;
+					font-family: "Raleway";
+					font-style: normal;
+					font-weight: 500;
+					font-size: 16px;
+					line-height: 1px;
+					text-align: center;
+					color: $lighterPrimaryDark;
+				}
+			}
+            .no2 {
+                padding-top: 1.5rem;
+                padding-bottom: 0.8rem;
+                border-right: 1px solid blue;
+                h4 {
+					font-family: "Raleway";
+					font-style: normal;
+					font-weight: 600;
+					font-size: 2.5rem;
+					line-height: 1.8rem;
+					text-align: center;
+					color: $primary;
+				}
+				p {
+                    padding-top: -2rem;
+					font-family: "Raleway";
+					font-style: normal;
+					font-weight: 500;
+					font-size: 16px;
+					line-height: 1px;
+					text-align: center;
+					color: $lighterPrimaryDark;
+				}
+            }
+            .no3 {
+                padding-top: 1.5rem;
+                padding-bottom: 0.8rem;
+               
+                h4 {
+					font-family: "Raleway";
+					font-style: normal;
+					font-weight: 600;
+					font-size: 2.5rem;
+					line-height: 1.8rem;
+					text-align: center;
+					color: $primary;
+				}
+				p {
+                    padding-top: -2rem;
+					font-family: "Raleway";
+					font-style: normal;
+					font-weight: 500;
+					font-size: 16px;
+					line-height: 1px;
+					text-align: center;
+					color: $lighterPrimaryDark;
+				}
+            }
+
+            @media screen and (max-width: $md) {
+                display: grid;
+                // grid-template-columns: 3fr;
+            }
+		}
+        
+	}
+
+}
+
+@media screen and (max-width:$mobile) {
+    .trans {
+        flex-direction: column;
+        gap: 1.5rem;
+        padding-top: 50rem;
+        font-size: 00.875rem;
+        width: 90%;
+
+        .top {
+            img {
+                width: 100%;
+            }
+           
+        }
+
+    }
+}

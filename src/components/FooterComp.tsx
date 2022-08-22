@@ -9,9 +9,9 @@ const FooterComp = () => {
 				<p>RALONICK LTD.</p>
 				<p>
 					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dolor, ultrices aliquam, quis nunc erat. Amet nullam
-					elementum eget nec.{" "}
+					elementum eget nec.
 				</p>
-				<button className="btn2">About Ralonik</button>
+				<button className="btn btn-outline-danger hug">About Ralonik</button>
 			</div>
 			<div>
 				<p>Company</p>

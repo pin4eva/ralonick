@@ -172,10 +172,10 @@ const AboutPage = () => {
 							</div>
 							<div>
 								<span>
-									<img src="assets/quality.svg" alt="" />
+									<img src="assets/proffesion.svg" alt="" />
 								</span>
-								<h5>Professionalism</h5>
-								<p>
+								<h5 className="proffesion">Professionalism</h5>
+								<p className="proffesion">
 									Skill and competence are as important as practice therefore all staff are highly trained, possess high
 									experiential knowledge in the field, and are highly professional. We value professionalism, to us it
 									means giving clients the best value for their money.

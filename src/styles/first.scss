@@ -1,0 +1,45 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.first-part {
+	display: flex;
+	gap: 1.5rem;
+	margin-top: 3.625rem;
+
+	@media screen and (max-width: $md) {
+		
+        display: block;
+        
+	}
+	.image {
+        width: 100%;
+        height: 10.6875rem;
+        // position: relative;
+
+        img {
+            width: 100%;
+            height: 100%;
+
+            @media screen and (max-width: $md) {
+                width: 100%;
+            }
+        }
+       
+	}
+
+	.ltd {
+		font-family: "Raleway";
+		font-style: normal;
+		font-weight: 800;
+		font-size: 2.5rem;
+        padding-top: 3.2rem;
+		line-height: 4rem;
+		color: $primary;
+
+        @media screen and (max-width: $md) {
+            font-size: 2rem;
+        }
+	}
+}

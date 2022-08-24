@@ -54,7 +54,7 @@ const AboutPage = () => {
 							<p className="fw-500">
 								Ralonick Constructions operates within the framework of commercial and industrial activities, developing
 								and carrying out basic and detailed services in engineering, procurement, construction, equipment
-								leasing and marine. We exceed our clients' trust through the timely delivery of quality, satisfactory
+								leasing and marine. We exceed our clients trust through the timely delivery of quality, satisfactory
 								products and services.
 							</p>
 						</div>
@@ -120,7 +120,7 @@ const AboutPage = () => {
 								To provide quality service in the fastest possible manner with minimal impact on the environment.{" "}
 							</li>
 							<li>
-								To exceed our clients' trust through the delivery of quality and exclusive world class satisfactory
+								To exceed our clients trust through the delivery of quality and exclusive world class satisfactory
 								products & services.{" "}
 							</li>
 							<li>

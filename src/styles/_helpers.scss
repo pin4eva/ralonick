@@ -1,48 +1,60 @@
 // Font weights
 .fw-300 {
-  font-weight: 300;
+	font-weight: 300;
 }
 
 .fw-400 {
-  font-weight: 400;
+	font-weight: 400;
 }
 
 .fw-500 {
-  font-weight: 500;
+	font-weight: 500;
 }
 
 .fw-600 {
-  font-weight: 600;
+	font-weight: 600;
 }
 
 .fw-700 {
-  font-weight: 700;
+	font-weight: 700;
 }
 
 .fw-800 {
-  font-weight: 800;
+	font-weight: 800;
 }
 
 // font sizes
 
 .fs-14 {
-  font-size: 0.875rem;
+	font-size: 0.875rem;
 }
 
 .fs-16 {
-  font-size: 1rem;
+	font-size: 1rem;
 }
 
 .fs-18 {
-  font-size: 1.125rem;
+	font-size: 1.125rem;
 }
 
 .fs-20 {
-  font-size: 1.25rem;
+	font-size: 1.25rem;
 }
 
 // Text colors
 
 .text-muted {
-  color: rgba(#000000, 0.5)
+	color: rgba(#000000, 0.5);
+}
+
+.c-pointer {
+	cursor: pointer;
+}
+
+.theme-padding {
+	padding-inline: 1.5rem;
+
+	@media screen and (min-width: 992px) {
+		padding-inline: 7.5rem;
+	}
 }

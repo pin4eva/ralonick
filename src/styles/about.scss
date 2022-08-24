@@ -1,0 +1,473 @@
+.about-page {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  .first-section {
+    display: flex;
+    gap: 1.5rem;
+    margin-top: 3.625rem;
+
+    // border: 1px solid red;
+    @media screen and (max-width: $md) {
+      display: block;
+    }
+
+    .frame1 {
+      // border: 1px solid red;
+      width: 60%;
+      height: 10.6875rem;
+      position: relative;
+
+      // border: 1px solid red;
+      img {
+        width: 100%;
+        height: 100%;
+
+        @media screen and (max-width: $md) {
+          width: 100%;
+        }
+      }
+
+      @media screen and (max-width: $md) {
+        width: 95%;
+        height: auto;
+        margin-top: 6rem;
+        display: flex;
+        justify-content: center;
+      }
+    }
+
+    .first-text {
+      color: $primary;
+      font-size: 2.5rem;
+      // border: 1px solid red;
+      width: 50%;
+      padding-top: 3.2rem;
+      display: flex;
+      flex-direction: column;
+      gap: -4rem;
+      margin-bottom: 0;
+      position: relative;
+
+      .p2 {
+        margin-top: 0;
+        margin-bottom: 0;
+      }
+
+      @media screen and (max-width: $md) {
+        // display: none;
+        position: absolute;
+        top: 3rem;
+        width: 50%;
+        font-size: 1.5rem;
+        padding: 0.5rem;
+      }
+    }
+  }
+
+  //===============END OF FIRST SECTION==================
+
+  //=================BEGINING OF SECTION TWO================
+  .second-section {
+    display: flex;
+    gap: 2.5rem;
+    margin-top: 6.25rem;
+
+    @media screen and (max-width: $md) {
+      display: block;
+    }
+
+    .second-section-text {
+      width: 50%;
+      padding-top: 1.5rem;
+
+      h5 {
+        font-size: 24px;
+        width: 100%;
+      }
+
+      p {
+        margin-top: 29px;
+        font-size: 18px;
+        width: 100%;
+      }
+
+      @media screen and (max-width: $md) {
+        width: 100%;
+        text-align: center;
+      }
+    }
+
+    .second-section-image {
+      width: 42%;
+      height: 30.81rem;
+      margin-right: -5rem;
+
+      //    border: 1px solid green;
+      // height: auto;
+      img {
+        width: 100%;
+        height: 100%;
+      }
+
+      @media screen and (max-width: $md) {
+        width: 80%;
+        margin: auto;
+      }
+
+      @media screen and (max-width: 1165px) {
+        margin-top: 3rem;
+      }
+    }
+  }
+
+  //============END OF SECTION TWO===================
+
+  //==============BEGINNING OF SECTION THREE================
+  .third-section {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 4.125rem;
+    background: #fcfdff;
+
+    @media screen and (max-width: 1200px) {
+      display: block;
+      // margin-top: 3rem;
+    }
+
+    .third-section-text {
+      width: 45%;
+
+      @media screen and (max-width: 1200px) {
+        width: 100%;
+        // text-align: center;
+        margin: auto;
+      }
+
+      h1 {
+        font-size: 3rem;
+        margin-top: 10rem;
+      }
+
+      .third-section-text_1 {
+        margin-top: 1.5rem;
+
+        p {
+          font-size: 1.125rem;
+        }
+      }
+
+      .main-stats {
+        border: 1px solid $primary;
+        border-left: none;
+        border-right: none;
+        display: flex;
+        margin-top: 3rem;
+        width: 100%;
+
+        @media screen and (max-width: 1200px) {
+          width: 70%;
+          margin: auto;
+          margin-top: 2rem;
+        }
+
+        @media screen and (max-width: $md) {
+          width: 90%;
+        }
+
+        div {
+          &:nth-child(2) {
+            border-left: 1px solid $primary;
+            border-right: 1px solid $primary;
+          }
+
+          display: flex;
+          flex-direction: column;
+          // border: 1px solid $primary;
+          width: 14rem;
+          align-items: center;
+
+          .black-text {
+            font-weight: 500;
+            font-size: 1rem;
+            margin-bottom: 1.5rem;
+          }
+
+          .blue-text {
+            font-weight: 600;
+            font-size: 3.5rem;
+            color: $primary;
+            display: flex;
+            text-align: center;
+
+            span {
+              margin-top: 0;
+            }
+          }
+        }
+      }
+    }
+
+    .third-section-image {
+      width: 50%;
+      height: 41rem;
+      margin-top: 7.6875rem;
+
+      img {
+        width: 100%;
+      }
+
+      @media screen and (max-width: 1200px) {
+        display: none;
+      }
+    }
+  }
+
+  // ===================END OF THE THIRD SECTION=========================
+
+  //===========================BEGINNING OF FOURTH SECTION================
+
+  .fourth-section {
+    display: grid;
+    margin-top: 12.9375rem;
+    grid-template-areas:
+      "a a b"
+      "c . b"
+      "c d d";
+
+    @media screen and (max-width: $md) {
+      grid-template-areas:
+        "a a a"
+        "b b b"
+        "c c c"
+        "d d d";
+    }
+
+    span {
+      color: #000000;
+      font-size: 1.125rem;
+      font-weight: 600;
+    }
+
+    .frame3 {
+      grid-area: a;
+
+      @media screen and (max-width: $mobile) {
+        width: 80%;
+        margin: auto;
+      }
+
+      img {
+        width: 100%;
+      }
+    }
+
+    .fourth-section-text1 {
+      background: rgba(51, 51, 51, 0.02);
+      grid-area: b;
+      width: 25rem;
+      padding: 2rem 1.5rem;
+      height: 25rem;
+
+      @media screen and (max-width: $md) {
+        width: 100%;
+      }
+
+      @media screen and (max-width: $mobile) {
+        width: 80%;
+        margin: auto;
+      }
+
+      ul {
+        width: 100%;
+        height: auto;
+        padding-top: 1rem;
+      }
+    }
+
+    .fourth-section-text2 {
+      background: rgba(51, 51, 51, 0.02);
+      grid-area: c;
+      width: 25rem;
+      padding: 2rem 1.5rem;
+      height: 25rem;
+
+      @media screen and (max-width: $md) {
+        width: 100%;
+        margin-top: 2rem;
+      }
+
+      @media screen and (max-width: $mobile) {
+        width: 80%;
+        margin: auto;
+        margin-top: 1rem;
+      }
+
+      ul {
+        width: 100%;
+        padding-top: 1rem;
+      }
+    }
+
+    .frame2 {
+      grid-area: d;
+      width: 100%;
+      margin-right: 14rem;
+
+      @media screen and (max-width: $mobile) {
+        width: 80%;
+        margin: auto;
+      }
+
+      img {
+        width: 100%;
+        height: auto;
+      }
+    }
+  }
+
+  //==============END OF FOURTH SECTION==============
+
+  //===================BEGINNING OF FIFTH SECTION=======================
+  .fifth-section {
+    display: flex;
+    gap: 2rem;
+    padding-top: 5rem;
+    justify-content: space-between;
+
+    .fifth-image {
+      @media screen and (max-width: $md) {
+        display: none;
+      }
+
+      @media screen and (max-width: 1400px) {
+        margin-top: 6rem;
+      }
+
+      width: 40%;
+      // height: auto;
+
+      img {
+        width: 100%;
+      }
+    }
+
+    .fifth-section-text {
+      width: 50%;
+      margin-top: 3.5rem;
+
+      @media screen and (max-width: $md) {
+        width: 80%;
+        margin: auto;
+      }
+
+      @media screen and (max-width: $md) {
+        width: 80%;
+      }
+
+      .strict-text {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 20rem 20rem;
+        margin-top: 1rem;
+
+        @media screen and (max-width: $md) {
+          grid-template-columns: 1fr;
+        }
+
+        div {
+          border: 1px solid $secondary;
+          padding: 1.5rem 1rem 2rem 1rem;
+
+          span {
+            border: 1px solid $secondary;
+            // width: 50%;
+            padding: 1.1rem;
+            margin-top: 30rem;
+            border-radius: 15px;
+          }
+
+          h5 {
+            font-weight: 600;
+            font-size: 18px;
+            margin-top: 1.5rem;
+
+            @media screen and (max-width: $md) {
+              // margin-top: 3rem;
+              font-size: 18px;
+              font-weight: 700;
+            }
+          }
+
+          p {
+            font-weight: 500;
+            font-size: 14px;
+            margin-top: 1.5rem;
+
+            @media screen and (max-width: $md) {
+              // font-size: 18px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  //================END OF FITH SECTION=================
+
+  //BEGINNING OF SIXTH SECTION=======================
+
+  .sixth-section {
+    // height: 80vh;
+    padding-top: 3.5rem;
+
+    .sixth-images {
+      display: flex;
+      justify-content: space-between;
+      padding-top: 3rem;
+
+      @media screen and (max-width: $mobile) {
+        display: grid;
+        grid-template-columns: 100%;
+        gap: 1rem;
+
+      }
+
+      div {
+        color: white;
+        width: 30%;
+        text-align: center;
+        padding-block: 1rem;
+
+        @media screen and (max-width: $mobile) {
+          width: 80%;
+          margin: auto;
+        }
+
+        img,
+        div {
+          width: 100%;
+        }
+
+        &>div {
+          display: flex;
+          height: 7.8375rem;
+          flex-direction: column;
+          gap: 1rem;
+          background: #000000;
+
+          span {
+            display: flex;
+            gap: 1rem;
+            margin: auto;
+
+          }
+        }
+
+      }
+    }
+  }
+}

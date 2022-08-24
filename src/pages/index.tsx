@@ -1,19 +1,12 @@
 /* eslint-disable @next/next/no-img-element */
 import React from "react";
-import FrontLayout from "../layouts/front.layout";
-import About from "./AboutComp";
-
 
 import Link from "next/link";
 
-
 const Home = () => {
 	return (
-		<FrontLayout>
 
-			<div className="container">
-		<About/>
-			{/* <div className="home container">
+			<div className="home container">
 				<section className="home-hero ">
 					<div className="inner">
 						<div className="left">
@@ -300,11 +293,9 @@ const Home = () => {
 						<div className="section7-inner-btn">
 							<button className="btn btn-danger hug">All Services</button>
 						</div>
-					</div> */}
-				{/* </section> */}
-
+					</div>
+				</section>
 			</div>
-		</FrontLayout>
 	);
 };
 

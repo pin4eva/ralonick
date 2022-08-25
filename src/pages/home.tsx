@@ -28,7 +28,8 @@ const Home = () => {
 										End to end service in the design, engineering, procurement, fabrication, installation, repair of
 										(GRE), (GRP) and Vinylester Pipe system and products.
 									</p>
-									<button className="btn btn-danger hug">See Projects</button>
+
+									<Link href="/projects"><button className="btn btn-danger hug">See Projects</button></Link>
 								</div>
 							</div>
 						</div>
@@ -69,7 +70,8 @@ const Home = () => {
 									fabrication, installation, repair and support of Glass fiber Reinforced Epoxy (GRE) Polyester (GRP)
 									and Vinylester Pipe system and products.
 								</p>
-								<button className="btn btn-outline-danger hug">Learn More</button>
+
+								<Link href="/about"><button className="btn btn-outline-danger hug">Learn More</button></Link>
 							</div>
 						</div>
 					</div>

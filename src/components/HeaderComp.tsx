@@ -25,7 +25,7 @@ const HeaderComp = () => {
 		<React.Fragment>
 			<header className="app-header">
 				<nav className="desktop-nav container ">
-					<Link href="/">
+					<Link href="/home">
 						<a className="logo">Ralonick LTD.</a>
 					</Link>
 					<ul className="app-nav">

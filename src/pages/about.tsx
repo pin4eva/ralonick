@@ -1,9 +1,12 @@
 import React from "react";
 // import Link from "next/link";
 import {OurSection1, OurSection2, Project, Research, Why, Workers } from "../components/Data";
+import FrontLayout from "../layouts/front.layout";
 
 function About() {
+
     return (
+		<FrontLayout>
         <div className="about container">
 
             <section className="firstSection">
@@ -167,7 +170,10 @@ function About() {
                     }
                 </div>
             </section>
+		
         </div>
+		</FrontLayout>
     )
+	
 }
 export default About

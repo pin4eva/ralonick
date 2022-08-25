@@ -19,6 +19,28 @@ export const Research = [
         text: "Factories Built"
     }
 ]
+export const Research2 = [
+    {
+        id: 1,
+        number: "25+",
+        text: "Completed Projects"
+    },
+    {
+        id: 2,
+        number: "25+",
+        text: "Trusted Partners"
+    },
+    {
+        id: 2,
+        number: "50+",
+        text: "Satisfied Clients"
+    },
+    {
+        id: 3,
+        number: "5+",
+        text: "Years Experience"
+    }
+]
 export const Project = [
     {
         id: 1,

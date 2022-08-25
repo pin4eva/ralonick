@@ -1,17 +1,13 @@
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
+// * {
+//   box-sizing: border-box;
+//   margin: 0;
+//   padding: 0;
+// }
 
 h1 {
   font-size: 3em;
   color: $secondary;
-  font-weight: 800;
-}
-
-.h1 {
-  @extend h1
+  font-weight: 700;
 }
 
 .btn {
@@ -22,4 +18,69 @@ h1 {
     font-size: 1.125rem;
     font-weight: 600;
   }
+
+}
+.h1{
+  color: $primary;
+  font-size: 3em;
+color: $primary;
+font-weight: 800;
+}
+h2{
+  font-weight: 600;
+font-size: 18px;
+color: $pagraph;
+}
+.h2{
+  font-weight: 600;
+font-size: 18px;
+// color: $name;
+}
+h3{
+  font-weight: 600;
+  font-size: 24px;
+  color: $pagraph;
+}
+.about{
+  font-family: 'Raleway', sans-serif;
+}
+p{
+  font-weight: 500;
+font-size: 14px;
+line-height: 26px;
+color: $pagraph;
+}
+.profile-h2{
+  color: $name;
+}
+.icons{
+  :first-child{
+    margin-right: 1rem;
+  }
+}
+
+.profile-p{
+  font-weight: 500;
+font-size: 14px;
+line-height: 26px;
+color: $name;
+}
+.p{
+  font-weight: 500;
+font-size: 18px;
+color: $pagraph;
+margin-top: 24px;
+}
+.inner-inner-inner-text-box{
+  border: 1px solid $secondary;
+border-radius: 1rem;
+  width: 5rem;
+  height: 5rem;
+  padding: 1rem;
+}
+.info{
+  background-color: $secondary;
+  width: 379px;
+text-align: center;
+padding: 1rem 0rem 1rem 0rem;
 }

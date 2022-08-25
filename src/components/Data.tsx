@@ -47,11 +47,11 @@ export const Project = [
 img: <img src={"/images/Rectangle1.png"} alt="" />
     },
     {
-        id: 1,
+        id: 2,
 img: <img src={"/images/Rectangle2.png"} alt="" />
     },
     {
-        id: 1,
+        id: 3,
         img: <img src={"/images/Rectangle3.png"} alt="" />
     }
 ]
@@ -120,5 +120,31 @@ export const Workers=[
         ceo:"CEO",
         iconinstagram:<i class="fa-brands fa-instagram"></i>,
         icontwitter:	<i class="fa-brands fa-twitter" />
+    }
+]
+export const Projects=[
+    {
+        id:1,
+        header:"Project Name",
+        text:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis mi sagittis aliquet elementum nunc lectus. Arcu, non ornare commodo, convallis lectus.",
+        link:"More Details",
+        arrow: <img src={"./images/VectorWhite.png"} alt="" />
+
+    },
+    {
+        id:2,
+        header:"Project Name",
+        text:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis mi sagittis aliquet elementum nunc lectus. Arcu, non ornare commodo, convallis lectus.",
+        link:"More Details",
+        arrow: <img src={"./images/VectorWhite.png"} alt="" />
+
+    },
+    {
+        id:3,
+        header:"Project Name",
+        text:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis mi sagittis aliquet elementum nunc lectus. Arcu, non ornare commodo, convallis lectus.",
+        link:"More Details",
+        arrow: <img src={"./images/VectorWhite.png"} alt="" />
+
     }
 ]

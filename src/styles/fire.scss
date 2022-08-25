@@ -1,0 +1,123 @@
+.fire {
+	
+
+	.proofing {
+		padding-left: 5.5rem;
+		h2 {
+			font-family: "Raleway";
+			font-style: normal;
+			font-weight: 800;
+			font-size: 3rem;
+			line-height: 4rem;
+			columns: $secondary;
+
+			@media screen and (max-width: $md) {
+				// text-align: center;
+				font-size: 1.54rem;
+				line-height: 2.5rem;
+			}
+		}
+		.prof {
+			width: 89.931%;
+            text-align: justify;
+			p {
+				font-family: "Raleway";
+				font-style: normal;
+				font-weight: 500;
+				font-size: 1.125em;
+				line-height: 2rem;
+				color: black;
+
+				@media screen and (max-width: $md) {
+					font-size: 0.97rem;
+					width: 88%;
+					line-height: 1.9rem;
+				}
+			}
+			h4 {
+				font-family: "Raleway";
+				font-style: normal;
+				font-weight: 600;
+				font-size: 1.5rem;
+				line-height: 1.75rem;
+				color: black;
+
+                @media screen and (max-width: $md) {
+                    font-size: 1.32rem;
+                }
+			}
+            p {
+				font-family: "Raleway";
+				font-style: normal;
+				font-weight: 500;
+				font-size: 1.125em;
+				line-height: 2rem;
+				color: black;   
+
+				@media screen and (max-width: $md) {
+					font-size: 0.97rem;
+					width: 88%;
+					line-height: 1.9rem;
+				}
+			}
+		}
+        .build {
+                display: grid;
+                gap: 1rem;
+                grid-template-columns: 1fr 1fr 1fr;
+                grid-template-rows: 1fr 1fr;
+                padding-right: 5.35rem;
+                margin: 4.5rem 0rem;
+                @media screen and (max-width: $md) {
+                    display: block;
+                    gap: 1rem;
+                    width: 100%;
+                    padding-right: 5.35rem;
+                   
+                }
+
+                .rod {
+                    grid-column: 1/2;
+                    grid-row: 1/3;
+                    img {
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+                .tall {
+                    grid-column: 2/3;
+                    grid-row: 1/2;
+                    img {
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+                .steel {
+                    grid-column: 3/4;
+                    grid-row: 1/2;
+                    img {
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+                .block{
+                    grid-column: 2/4;
+                    grid-row: 2/3;
+                    img {
+                        width: 100%;
+                        height: 100%;
+                    }
+                    
+                }
+
+
+        }
+        .bb {
+            text-align: center;
+            padding-bottom: 2.5rem;
+            margin-right: 4.6rem;
+        }
+	}
+
+    
+}

@@ -1,7 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 import React from "react";
-import FrontLayout from "../layouts/front.layout";
-import Data from "../components/data.json";
+import FrontLayout from "../../layouts/front.layout";
+import Data from "../../components/data.json";
 import Link from "next/link";
 
 const Services = () => {
@@ -35,7 +35,7 @@ const Services = () => {
 											<div className="texts">{item.text}</div>
 											<div className="read">
 												<div className="point">
-													<Link href="/">
+													<Link href="/services/jgjj">
 														<a>{item.learn}</a>
 													</Link>
 												</div>
@@ -52,10 +52,10 @@ const Services = () => {
 								);
 							})}
 						</div>
-            <div className="arr">
-              <img src="/assets/keyboardArrowLeft.png" alt="lt" />
-              <img src="/assets/keyboardArrowRight.png" alt="rt" />
-            </div>
+						<div className="arr">
+							<img src="/assets/keyboardArrowLeft.png" alt="lt" />
+							<img src="/assets/keyboardArrowRight.png" alt="rt" />
+						</div>
 					</div>
 				</section>
 
@@ -64,27 +64,27 @@ const Services = () => {
 						<p>Still have a question(s) ?</p>
 						<button className="btn btn-outline-danger hug">Contact Us</button>
 					</div>
-          <div className="grid-con">
-              <div className="grid-item">
-                <p className="no">25+</p>
-                <p className="letter">Completed Projects</p>
-              </div>
-              <div className="grid-item">
-                <p className="no">25+</p>
-                <p className="letter">Completed Projects</p>
-              </div>
-              <div className="grid-item">
-                <p className="no">25+</p>
-                <p className="letter">Completed Projects</p>
-              </div>
-              <div className="grid-item">
-                <p className="no">25+</p>
-                <p className="letter">Completed Projects</p>
-              </div>
-          </div>
+					<div className="grid-con">
+						<div className="grid-item">
+							<p className="no">25+</p>
+							<p className="letter">Completed Projects</p>
+						</div>
+						<div className="grid-item">
+							<p className="no">25+</p>
+							<p className="letter">Completed Projects</p>
+						</div>
+						<div className="grid-item">
+							<p className="no">25+</p>
+							<p className="letter">Completed Projects</p>
+						</div>
+						<div className="grid-item">
+							<p className="no">25+</p>
+							<p className="letter">Completed Projects</p>
+						</div>
+					</div>
 				</section>
 
-        <section className="home-section-6">
+				<section className="home-section-6">
 					<div className="section6-inner">
 						<h2>Clients Reviews</h2>
 						<p className="section6-inner-txt1">

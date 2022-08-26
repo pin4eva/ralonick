@@ -8,11 +8,13 @@ const Services = () => {
 	return (
 		<FrontLayout>
 			<div className="service-section">
-				<section className="first-part container">
-					<div className="image">
-						<img src="/assets/about1.png" alt="about" />
+				<section className="service-section-hero ">
+					<div className="inner container">
+						<div className="service-section-hero-image">
+							<img src="/assets/about1.png" alt="about" />
+						</div>
+						<div className="service-section-hero-text">Ralonik LTD. Services</div>
 					</div>
-					<div className="ltd">Ralonik LTD. Services</div>
 				</section>
 				<section className="second-part container">
 					<div className="solution">
@@ -28,7 +30,7 @@ const Services = () => {
 						<div className="services">
 							{Data.map((item) => {
 								return (
-									<div key={item.id} className="items">
+									<div key={item.id} className="services-items">
 										<img src={item.image} alt="ig" />
 										<div className="tt">
 											<p>{item.sub}</p>

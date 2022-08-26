@@ -23,6 +23,53 @@
 			}
 		}
 
+		.third-section {
+			margin-left: 4rem;
+
+			.inner {
+				.inner-inner {
+					
+					.inner_text {
+
+					.inner-inner_text{
+						
+				
+							margin-left: -8rem;
+							width: 306px;
+							height: 130px;
+							padding: 0.7rem;
+							border: 1px solid;
+							position: absolute;
+							background: rgba(51, 51, 51, 0.65);
+							backdrop-filter: blur(34px);
+
+							h6 {
+								margin: 0rem;
+								font-weight: 700;
+								font-size: 12px;
+							}
+
+							p {
+								font-weight: 400;
+								font-size: 10px;
+								margin: 0rem;
+							}
+
+							.p {
+								font-weight: 600;
+								font-size: 10px;
+								margin: 0rem;
+							}
+						}
+					}
+					
+
+				}
+
+			}
+
+		}
+
 		.fourth-section {
 
 			.box {
@@ -132,7 +179,7 @@
 		}
 
 		.firth-section {
-	
+
 			margin: 7rem 0rem 1.8rem 0rem;
 
 			h1 {
@@ -142,16 +189,18 @@
 			.profile {
 				display: grid;
 				grid-template-columns: 1fr 1fr 1fr;
-gap: 1rem;
+				gap: 1rem;
+
 				i {
 					color: white;
 				}
 			}
-			
+
 		}
-		@media screen and (max-width:992px){
-			.firth-section{
-				.profile{
+
+		@media screen and (max-width:992px) {
+			.firth-section {
+				.profile {
 					display: flex;
 					flex-direction: column;
 				}

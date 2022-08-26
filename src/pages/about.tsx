@@ -1,6 +1,6 @@
 import React from "react";
 // import Link from "next/link";
-import {OurSection1, OurSection2, Project, Research, Why, Workers } from "../components/Data";
+import {OurSection1, OurSection2, Research, Transforming, Why, Workers } from "../components/Data";
 import FrontLayout from "../layouts/front.layout";
 
 function About() {
@@ -61,7 +61,7 @@ function About() {
                     </div>
                 </div>
                 <div className="img">
-                    {Project.map((item) => {
+                    {Transforming.map((item) => {
                         return (
                             <div key={item.id}>
                                 {item.img}

@@ -1,7 +1,8 @@
 import React from "react";
 import FrontLayout from "../../layouts/front.layout";
 import Link from "next/link";
-import { Research, Research2, Workers } from "../../components/Data";
+
+import { Projects, Research, Research2, Workers } from "../../components/Data";
 function Project() {
     return (
         <FrontLayout>
@@ -32,9 +33,28 @@ function Project() {
                         <button className="button-hug">Book Services</button>
                     </div>
                 </section>
-<section className="ralonick-project">
-  .  
-</section>
+                <section className="third-section">
+                    <div className="inner">
+                        {Projects.map((item) => {
+                            return (
+                                <div className="inner-inner" key={item.id}>
+                                    <div className="inner_text">
+                                        <div className="inner-inner_text">
+                                            <h6>{item.header}</h6>
+                                            <p>{item.text}</p>
+                                            <Link as={"/projects/{$[id]}"} href="/projects/{$[id]}" className="p">{item.link}</Link>
+                                            <Link as={"/projects/{$[id]}"} href="/projects/{$[id]}">{item.arrow}</Link>
+                                        </div>
+                                    </div>
+
+                                    <div className="inner_img">
+                                        {item.img}
+                                    </div>
+                                </div>
+                            )
+                        })}
+                    </div>
+                </section>
                 <section className="fourth-section">
                     <div className="box">
                         <div className="box-inner">

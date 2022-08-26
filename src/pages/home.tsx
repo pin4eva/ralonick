@@ -3,12 +3,12 @@ import React from "react";
 import FrontLayout from "../layouts/front.layout";
 import Link from "next/link";
 import { Research } from "../components/Data";
-import { Project } from "../components/Data";
+import { Transforming } from "../components/Data";
 const Home = () => {
 	return (
 		<FrontLayout>
 			<div className="home container">
-				<section className="home-hero ">
+				<section className="home-hero">
 					<div className="inner">
 						<div className="left">
 							<div className="inner-left">
@@ -106,7 +106,7 @@ const Home = () => {
                     </div>
                 </div>
                 <div className="img">
-                    {Project.map((item) => {
+                    {Transforming.map((item) => {
                         return (
                             <div key={item.id}>
                                 {item.img}

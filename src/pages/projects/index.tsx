@@ -33,7 +33,7 @@ function Project() {
                         <button className="button-hug">Book Services</button>
                     </div>
                 </section>
-                <section className="third-section">
+                {/* <section className="third-section">
                     <div className="inner">
                         {Projects.map((item) => {
                             return (
@@ -54,7 +54,63 @@ function Project() {
                             )
                         })}
                     </div>
-                </section>
+                </section> */}
+                <section className="home-section-7">
+					<div className="section7-inner">
+						<div className="section7-inner-sub">
+							<img src="/assets/projects1.png" alt="" className="large-img" />
+							<div className="section7-inner-sub_text">
+								<p className="text-heading">Project Name</p>
+								<p className="inner-text-body">
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis mi sagittis aliquet elementum nunc
+									lectus. Arcu, non ornare commodo, convallis lectus.
+								</p>                                       
+								<Link   as={"/projects/{$[id]}"} href="/projects/{$[id]}"className="text-link">
+									<a className="text-link_link">
+										More Details <img src="/assets/moreDetailsArrow.png" alt="" />
+									</a>
+								</Link>
+							</div>
+						</div>
+						<div className="section7-inner-sub sub-2">
+							<img src="/assets/projects2.png" alt="" className="large-img" />
+							<div className="section7-inner-sub_text sub-2_text">
+								<p className="text-heading">Project Name</p>
+								<p className="inner-text-body">
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis mi sagittis aliquet elementum nunc
+									lectus. Arcu, non ornare commodo, convallis lectus.
+								</p>
+
+								<Link   as={"/projects/{$[id]}"} href="/projects/{$[id]}" className="text-link">
+									<a className="text-link_link">
+										More Details
+										<img src="/assets/moreDetailsArrow.png" alt="" />
+									</a>
+								</Link>
+							</div>
+						</div>
+						<div className="section7-inner-sub">
+							<img src="/assets/projects3.png" alt="" className="large-img" />
+							<div className="section7-inner-sub_text">
+								<p className="text-heading">Project Name</p>
+								<p className="inner-text-body">
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis mi sagittis aliquet elementum nunc
+									lectus. Arcu, non ornare commodo, convallis lectus.
+								</p>
+
+								<Link   as={"/projects/{$[id]}"} href="/projects/{$[id]}" className="text-link">
+									<a className="text-link_link">
+										More Details
+										<img src="/assets/moreDetailsArrow.png" alt="" />
+									</a>
+								</Link>
+							</div>
+						</div>
+						<div className="section7-inner-btn">
+							<button className="btn btn-danger hug">All Services</button>
+						</div>
+					</div>
+				</section>
                 <section className="fourth-section">
                     <div className="box">
                         <div className="box-inner">

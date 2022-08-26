@@ -1,45 +1,53 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+.service-section{
+   
+
 .first-part {
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
 	display: flex;
-	gap: 1.5rem;
-	margin-top: 3.625rem;
+    gap: 1rem;
+    // justify-content: space-between;
+	padding-top: 3.625rem;
+    position: relative;
 
 	@media screen and (max-width: $md) {
-		
-        display: block;
-        
+		display: block;    
 	}
 	.image {
-        width: 100%;
-        height: 10.6875rem;
-        // position: relative;
+        width: 70%;
 
+        @media screen and (max-width: $md) {
+            width: 100%;
+            text-align: center;
+            padding-top: 1rem;
+        }
         img {
             width: 100%;
-            height: 100%;
-
-            @media screen and (max-width: $md) {
-                width: 100%;
-            }
         }
        
 	}
 
 	.ltd {
+        width: 30%;
 		font-family: "Raleway";
 		font-style: normal;
 		font-weight: 800;
 		font-size: 2.5rem;
-        padding-top: 3.2rem;
-		line-height: 4rem;
+        padding-top: 2.4rem;
+		// line-height: 4rem;
 		color: $primary;
 
         @media screen and (max-width: $md) {
-            font-size: 2rem;
+            font-size: 1.4rem;
+            padding-top: 0;
+            position: absolute;
+            top: 0;
+            text-align: center;
+            left: 30%;
         }
 	}
+}
 }

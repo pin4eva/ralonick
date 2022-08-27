@@ -1,5 +1,5 @@
 import React from "react";
-import { Project } from "../../../components/Data";
+import { Project1, Projects } from "../../../components/Data";
 import { useRouter } from "next/router";
 import FrontLayout from "../../../layouts/front.layout";
 function SingleProjects(){
@@ -9,7 +9,7 @@ function SingleProjects(){
        
         <FrontLayout>
         <div>
-            {Project.map((item)=>{
+            {Projects.map((item)=>{
                 return(
                     <div key={item.id}>
              

@@ -148,7 +148,7 @@ export const Projects = [
         img: <img src={"./images/Project2.png"} alt="" />
     }
 ]
-export const Project= [
+export const Project1= [
     {
         id: 1,
         img: <img src={"./images/Project1.png"} alt="" />,
@@ -157,18 +157,22 @@ export const Project= [
         link: "More Details",
         arrow: <i class="fa-solid fa-square-arrow-up-right"></i>
     
-    },
+    }
+]
+export const Project2=[
     {
-        id: 2,
+        id: 1,
         img: <img src={"./images/Project3.png"} alt="" />,
         header: "Project Name",
         text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis mi sagittis aliquet elementum nunc lectus. Arcu, non ornare commodo, convallis lectus.",
         link: "More Details",
         arrow: <i class="fa-solid fa-arrow-up-right"></i>
         
-    },
+    }
+]
+export const Project3=[
     {
-        id: 3,
+        id: 1,
         img: <img src={"./images/Project2.png"} alt="" />,
         header: "Project Name",
         text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis mi sagittis aliquet elementum nunc lectus. Arcu, non ornare commodo, convallis lectus.",

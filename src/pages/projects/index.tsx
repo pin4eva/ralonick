@@ -24,14 +24,16 @@ function Project() {
                                 Transforming
                                 With Innovations
                             </h1>
-                            <div className="inner-second">
+                          
+                        </div>  
+                        <div className="inner-second">
                                 <p className="p">Ralonick constructions operates within the framework of commercial and industrial activities, developing and carrying basic & and detailed services in engineering.</p>
+                                
+                        <button className=" btn btn-danger hug">Book Services</button>
+                   
                             </div>
-                        </div>
                     </div>
-                    <div className="button-hug">
-                        <button className="button-hug">Book Services</button>
-                    </div>
+                
                 </section>
                 {/* <section className="third-section">
                     <div className="inner">
@@ -81,7 +83,7 @@ function Project() {
 									lectus. Arcu, non ornare commodo, convallis lectus.
 								</p>
 
-								<Link   as={"/projects/{$[id]}"} href="/projects/{$[id]}" className="text-link">
+								<Link   as={"/projects/second"} href="/projects/[id]/" className="text-link">
 									<a className="text-link_link">
 										More Details
 										<img src="/assets/moreDetailsArrow.png" alt="" />
@@ -98,7 +100,7 @@ function Project() {
 									lectus. Arcu, non ornare commodo, convallis lectus.
 								</p>
 
-								<Link   as={"/projects/{$[id]}"} href="/projects/{$[id]}" className="text-link">
+								<Link   as={"/projects/third"} href="/projects/{$[id]}" className="text-link">
 									<a className="text-link_link">
 										More Details
 										<img src="/assets/moreDetailsArrow.png" alt="" />
@@ -106,9 +108,13 @@ function Project() {
 								</Link>
 							</div>
 						</div>
-						<div className="section7-inner-btn">
-							<button className="btn btn-danger hug">All Services</button>
+                        <div className="last-part">
+                            
+                        <div className="section7-inner-btn">
+							<button className="button hug">Contact Us</button>
 						</div>
+                        </div>
+						
 					</div>
 				</section>
                 <section className="fourth-section">

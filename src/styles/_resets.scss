@@ -5,12 +5,13 @@ h1 {
 }
 .button{
   border-radius: 0;
-
+border: 1px $danger solid;
+color:$danger;
   &.hug {
     padding: 1.5vw 3vw;
     font-size: 1.125rem;
     font-weight: 600;
-    background-color: $danger;
+   
   }
 
 }

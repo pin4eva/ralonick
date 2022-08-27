@@ -110,16 +110,16 @@ export const Workers = [
         img: <img src={"/images/Portrait3.png"} alt="" />,
         name: "Gabriel Zaa",
         ceo: "CEO",
-        iconinstagram: <i class="fa-brands fa-instagram"></i>,
-        icontwitter: <i class="fa-brands fa-twitter" />
+        iconinstagram: <i className="fa-brands fa-instagram"></i>,
+        icontwitter: <i className="fa-brands fa-twitter" />
     },
     {
         id: 3,
         img: <img src={"/images/Portrait2.png"} alt="" />,
         name: "Gabriel Zaa",
         ceo: "CEO",
-        iconinstagram: <i class="fa-brands fa-instagram"></i>,
-        icontwitter: <i class="fa-brands fa-twitter" />
+        iconinstagram: <i className="fa-brands fa-instagram"></i>,
+        icontwitter: <i className="fa-brands fa-twitter" />
     }
 ]
 export const Projects = [

@@ -1,8 +1,8 @@
 import React from "react";
 import FrontLayout from "../../layouts/front.layout";
 import Link from "next/link";
+import { Research2, Workers } from "../../components/Data";
 
-import { Projects, Research, Research2, Workers } from "../../components/Data";
 function Project() {
     return (
         <FrontLayout>
@@ -67,7 +67,7 @@ function Project() {
 									Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis mi sagittis aliquet elementum nunc
 									lectus. Arcu, non ornare commodo, convallis lectus.
 								</p>                                       
-								<Link   as={"/projects/{$[id]}"} href="/projects/{$[id]}"className="text-link">
+								<Link href="/projects/jrj"className="text-link">
 									<a className="text-link_link">
 										More Details <img src="/assets/moreDetailsArrow.png" alt="" />
 									</a>
@@ -83,7 +83,7 @@ function Project() {
 									lectus. Arcu, non ornare commodo, convallis lectus.
 								</p>
 
-								<Link   as={"/projects/second"} href="/projects/[id]/" className="text-link">
+								<Link href="/projects/jff" className="text-link">
 									<a className="text-link_link">
 										More Details
 										<img src="/assets/moreDetailsArrow.png" alt="" />
@@ -100,7 +100,7 @@ function Project() {
 									lectus. Arcu, non ornare commodo, convallis lectus.
 								</p>
 
-								<Link   as={"/projects/third"} href="/projects/{$[id]}" className="text-link">
+								<Link href="/projects/jjj" className="text-link">
 									<a className="text-link_link">
 										More Details
 										<img src="/assets/moreDetailsArrow.png" alt="" />

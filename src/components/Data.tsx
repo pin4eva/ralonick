@@ -148,18 +148,20 @@ export const Projects = [
         img: <img src={"./images/Project2.png"} alt="" />
     }
 ]
-export const Project1= [
+export const Project1 = [
     {
         id: 1,
-        img: <img src={"./images/Project1.png"} alt="" />,
-        header: "Project Name",
-        text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis mi sagittis aliquet elementum nunc lectus. Arcu, non ornare commodo, convallis lectus.",
+        img: <img src="/images/Project1.png" alt="" />,
+        header: "SPDC Regional Pipeline Installation for Rivers/Uyo 2020",
+        paragraph1: "Ralonick is a professional fire proofing company offering clients’ a one-stop for all their fire proofing needs be it passive or active fire proofing. Fire Proofing is applied to Building, Steel Decking, Structural Beams, Siding System.",
+        paragraph2: "Passive Fire Proofing is a vital component for any structure of building to safeguard lives and limit financial impact of damage to building and their content. We offer Cementitious Fire Proofing, Mineral Fibre Fire Proofing, Itumescent Paint Fire Proofing under Passive Fire Proofing.",
+        paragraph3: "Active Fire Proofing (AFP) is an integral part of fire protection characterized by items and systems which require a certain amount of motion and response in order to work. We offer Manual Fire Suppression & Automatic Fire Suppression.",
         link: "More Details",
         arrow: <i className="fa-solid fa-square-arrow-up-right"></i>
-    
+
     }
 ]
-export const Project2=[
+export const Project2 = [
     {
         id: 1,
         img: <img src={"./images/Project3.png"} alt="" />,
@@ -167,10 +169,10 @@ export const Project2=[
         text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis mi sagittis aliquet elementum nunc lectus. Arcu, non ornare commodo, convallis lectus.",
         link: "More Details",
         arrow: <i className="fa-solid fa-arrow-up-right"></i>
-        
+
     }
 ]
-export const Project3=[
+export const Project3 = [
     {
         id: 1,
         img: <img src={"./images/Project2.png"} alt="" />,
@@ -178,6 +180,6 @@ export const Project3=[
         text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis mi sagittis aliquet elementum nunc lectus. Arcu, non ornare commodo, convallis lectus.",
         link: "More Details",
         arrow: <i className="fa-solid fa-arrow-up-right"></i>
-        
+
     }
 ]

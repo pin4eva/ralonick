@@ -102,8 +102,8 @@ export const Workers = [
         img: <img src={"/images/Portrait1.png"} alt="" />,
         name: "Joy Julius",
         ceo: "CEO",
-        iconinstagram: <i class="fa-brands fa-instagram"></i>,
-        icontwitter: <i class="fa-brands fa-twitter" />
+        iconinstagram: <i className="fa-brands fa-instagram"></i>,
+        icontwitter: <i className="fa-brands fa-twitter" />
     },
     {
         id: 2,
@@ -128,7 +128,7 @@ export const Projects = [
         header: "Project Name",
         text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis mi sagittis aliquet elementum nunc lectus. Arcu, non ornare commodo, convallis lectus.",
         link: "More Details",
-        arrow: <i class="fa-solid fa-square-arrow-up-right"></i>,
+        arrow: <i className="fa-solid fa-square-arrow-up-right"></i>,
         img: <img src={"./images/Project1.png"} alt="" />
     },
     {
@@ -136,7 +136,7 @@ export const Projects = [
         header: "Project Name",
         text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis mi sagittis aliquet elementum nunc lectus. Arcu, non ornare commodo, convallis lectus.",
         link: "More Details",
-        arrow: <i class="fa-solid fa-square-arrow-up-right"></i>,
+        arrow: <i className="fa-solid fa-square-arrow-up-right"></i>,
         img: <img src={"./images/Project3.png"} alt="" />
     },
     {
@@ -144,7 +144,7 @@ export const Projects = [
         header: "Project Name",
         text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis mi sagittis aliquet elementum nunc lectus. Arcu, non ornare commodo, convallis lectus.",
         link: "More Details",
-        arrow: <i class="fa-solid fa-square-arrow-up-right"></i>,
+        arrow: <i className="fa-solid fa-square-arrow-up-right"></i>,
         img: <img src={"./images/Project2.png"} alt="" />
     }
 ]
@@ -155,7 +155,7 @@ export const Project1= [
         header: "Project Name",
         text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis mi sagittis aliquet elementum nunc lectus. Arcu, non ornare commodo, convallis lectus.",
         link: "More Details",
-        arrow: <i class="fa-solid fa-square-arrow-up-right"></i>
+        arrow: <i className="fa-solid fa-square-arrow-up-right"></i>
     
     }
 ]
@@ -166,7 +166,7 @@ export const Project2=[
         header: "Project Name",
         text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis mi sagittis aliquet elementum nunc lectus. Arcu, non ornare commodo, convallis lectus.",
         link: "More Details",
-        arrow: <i class="fa-solid fa-arrow-up-right"></i>
+        arrow: <i className="fa-solid fa-arrow-up-right"></i>
         
     }
 ]
@@ -177,7 +177,7 @@ export const Project3=[
         header: "Project Name",
         text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis mi sagittis aliquet elementum nunc lectus. Arcu, non ornare commodo, convallis lectus.",
         link: "More Details",
-        arrow: <i class="fa-solid fa-arrow-up-right"></i>
+        arrow: <i className="fa-solid fa-arrow-up-right"></i>
         
     }
 ]

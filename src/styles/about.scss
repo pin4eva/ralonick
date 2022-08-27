@@ -180,7 +180,7 @@ justify-content: center;
 
     }
 
-    @media screen and (max-width:1199px) {
+    @media screen and (max-width:$mobile) {
         .firstSection {
             display: flex;
             flex-direction: column;
@@ -192,7 +192,7 @@ justify-content: center;
         }
     }
 
-    @media screen and (max-width:1199px) {
+    @media screen and (max-width:$mobile) {
         .secondSection {
             display: flex;
             flex-direction: column-reverse;
@@ -204,7 +204,7 @@ justify-content: center;
         }
     }
 
-    @media screen and (max-width:500px) {
+    @media screen and (max-width:$mobile) {
         .thirdSection {
 
             display: flex;
@@ -220,7 +220,7 @@ justify-content: center;
         }
     }
 
-    @media screen and (max-width:500px) {
+    @media screen and (max-width:$mobile) {
         .fourthSection {
             .our-section-1-inner-upper {
                 display: flex;
@@ -263,7 +263,7 @@ justify-content: center;
 
     }
 
-    @media screen and (max-width:1199px) {
+    @media screen and (max-width:$mobile) {
         .firthSection {
             h1 {
                 text-align: center;
@@ -271,7 +271,7 @@ justify-content: center;
         }
     }
 
-    @media screen and (max-width:500px) {
+    @media screen and (max-width:$mobile) {
         .firthSection {
             align-items: center;
 
@@ -300,7 +300,7 @@ justify-content: center;
     }
 
 
-    @media screen and (max-width:500px) {
+    @media screen and (max-width:$mobile) {
         .sixthSection {
             h1 {
                 text-align: center;

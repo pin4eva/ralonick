@@ -7,9 +7,9 @@ function SingleProjects() {
 
         <FrontLayout>
             <div className="single-project container">
-                <section className="first-section">
+                <section className="single-project-first-section">
                     
-                </section>
+               
                 {
                     Project1.map((item) => {
                         return (
@@ -34,7 +34,17 @@ function SingleProjects() {
                         )
                     })
                 }
-                <div className="second-section">
+                <div className="first-section_grid">
+                    <div className="first-section_grid-item">
+                        <img src={"/images/GridFrame1.png"} className="a" alt="" />
+                        <img src={"/images/GridFrame2.png"} className="b" alt="" />
+                        <img src={"/images/GridFrame3.png"} className="c" alt="" />
+                        <img src={"/images/GridFrame4.png"} className="d" alt="" />
+
+                    </div>
+                </div>
+ </section>
+                <div className="single-project-second-section">
 
                 </div>
             </div>

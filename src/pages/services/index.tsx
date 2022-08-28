@@ -17,9 +17,9 @@ const Services = () => {
 					</div>
 				</section>
 				<section className="second-part container">
-					<div className="solution">
+					<div className="second-part-inner">
 						<h2>We build Solutions</h2>
-						<div className="book">
+						<div className="services-offer">
 							<p>
 								At Ralonick, we offer a wide range of services from engineering, procurement, construction, to equipment
 								leasing for land & marine.
@@ -32,21 +32,19 @@ const Services = () => {
 								return (
 									<div key={item.id} className="services-items">
 										<img src={item.image} alt="ig" />
-										<div className="tt">
+										<div className="content">
 											<p>{item.sub}</p>
 											<div className="texts">{item.text}</div>
-											<div className="read">
-												<div className="point">
+											<div className="services-info">
+												<div className="services-info-list">
 													<Link href="/services/jgjj">
 														<a>{item.learn}</a>
 													</Link>
 												</div>
-												<div className="row">
-													<Link href="/">
-														<a>
-															<img src={item.btn} alt="arrow" />
-														</a>
-													</Link>
+												<div className="services-info-pointer">
+													<a href="/services/jgjj">
+														<img src={item.btn} alt="arrow" />
+													</a>
 												</div>
 											</div>
 										</div>
@@ -54,7 +52,7 @@ const Services = () => {
 								);
 							})}
 						</div>
-						<div className="arr">
+						<div className="second-part-inner-bottom-arrow">
 							<img src="/assets/keyboardArrowLeft.png" alt="lt" />
 							<img src="/assets/keyboardArrowRight.png" alt="rt" />
 						</div>
@@ -62,42 +60,44 @@ const Services = () => {
 				</section>
 
 				<section className="third-part container">
-					<div className="quest">
-						<p>Still have a question(s) ?</p>
-						<button className="btn btn-outline-danger hug">Contact Us</button>
-					</div>
-					<div className="grid-con">
-						<div className="grid-item">
-							<p className="no">25+</p>
-							<p className="letter">Completed Projects</p>
+					<div className="third-part-inner">
+						<div className="third-part-inner-top-info">
+							<p>Still have a question(s) ?</p>
+							<button className="btn btn-outline-danger hug">Contact Us</button>
 						</div>
-						<div className="grid-item">
-							<p className="no">25+</p>
-							<p className="letter">Completed Projects</p>
-						</div>
-						<div className="grid-item">
-							<p className="no">25+</p>
-							<p className="letter">Completed Projects</p>
-						</div>
-						<div className="grid-item">
-							<p className="no">25+</p>
-							<p className="letter">Completed Projects</p>
+						<div className="third-part-inner-bottom-info">
+							<div className="third-part-inner-bottom-info-collation">
+								<p className="years">25 <sup>+</sup></p>
+								<p className="data">Completed Projects</p>
+							</div>
+							<div className="third-part-inner-bottom-info-collation">
+								<p className="years">25 <sup>+</sup></p>
+								<p className="data">Trusted Partners</p>
+							</div>
+							<div className="third-part-inner-bottom-info-collation">
+								<p className="years">50 <sup>+</sup></p>
+								<p className="data">Satisfied Clients</p>
+							</div>
+							<div className="third-part-inner-bottom-info-collation">
+								<p className="years">5 <sup>+</sup></p>
+								<p className="data">Years Experience</p>
+							</div>
 						</div>
 					</div>
 				</section>
 
-				<section className="home-section-6">
-					<div className="section6-inner">
+				<section className="fourth-part container">
+					<div className="fourth-part-inner">
 						<h2>Clients Reviews</h2>
-						<p className="section6-inner-txt1">
+						<p className="fourth-part-inner-txt1">
 							{`I had been looking to get my shipment and maintenance done but couldn't find the right Construction Company to do so. Rolanick Construction has been exceptional at what they do, from pre-planning, procurement, constructing in itself and maintenance it has been worth it. They understood the job and they delivered! Thank you!`}
 						</p>
-						<div className="section6-inner-profile">
+						<div className="fourth-part-inner-profile">
 							<img src="/assets/clientPic.png" alt="" />
 							<h3>Cindy Clifford</h3>
-							<p className="section6-inner-profile_caption">Creative Director Sobaz Oil and gas</p>
+							<p className="fourth-part-inner-profile_caption">Creative Director Sobaz Oil and gas</p>
 						</div>
-						<img src="/assets/reviewslider.png" alt="" />
+						<img src="/assets/reviewslider2.png" alt="" />
 					</div>
 				</section>
 			</div>

@@ -4,16 +4,18 @@ import FrontLayout from "../../layouts/front.layout";
 
 const singleservice = () => {
 	return (
-		<div className="proofing">
-			<section className="image">
-				<img src="/assets/Frame 50.png" alt="bg" />
+		<div className="single-service-section">
+			<section className="single-service-hero">
+				<div className="single-service-hero-image">
+					<img src="/assets/Frame 50.png" alt="bg" />
+				</div>
 			</section>
 
-			<section className="fire container">
-				<div className="proofing">
+			<section className="single-service-1 container">
+				<div className="single-service-1-inner">
 					<h2>Active & Passive Fire Proofing</h2>
 
-					<div className="prof">
+					<div className="single-service-1-inner-text">
 						<p>
 							Ralonick is a professional fire proofing company offering clients’ a one-stop for all their fire proofing
 							needs be it passive or active fire proofing. Fire Proofing is applied to Building, Steel Decking,
@@ -34,71 +36,81 @@ const singleservice = () => {
 						</p>
 					</div>
 
-					<div className="build">
-						<div className="rod">
-							<img src="/assets/b1.png" alt="rodd" />
+					<div className="single-service-1-inner-images">
+						<div className="single-service-1-inner-images-1">
+							<img src="/assets/b1.png" alt="b1" />
 						</div>
-						<div className="tall">
-							<img src="/assets/b2.png" alt="tll" />
+						<div className="single-service-1-inner-images-2">
+							<img src="/assets/b2.png" alt="b2" />
 						</div>
-						<div className="steel">
-							<img src="/assets/b3.png" alt="sl" />
+						<div className="single-service-1-inner-images-3">
+							<img src="/assets/b3.png" alt="b3" />
 						</div>
-						<div className="block">
-							<img src="/assets/b4.png" alt="bk" />
+						<div className="single-service-1-inner-images-4">
+							<img src="/assets/b4.png" alt="b4" />
 						</div>
 					</div>
-					<div className="bb">
+					<div className="single-service-1-inner-button">
 						<button className="btn btn-danger hug">Book Service</button>
 					</div>
 				</div>
 			</section>
 
-			<section className="content container">
-				<div className="grid ">
-					<div className="grid-item">
-						<p className="no">25+</p>
-						<p className="letter">Completed Projects</p>
-					</div>
-					<div className="grid-item">
-						<p className="no">25+</p>
-						<p className="letter">Completed Projects</p>
-					</div>
-					<div className="grid-item">
-						<p className="no">25+</p>
-						<p className="letter">Completed Projects</p>
-					</div>
-					<div className="grid-item">
-						<p className="no">25+</p>
-						<p className="letter">Completed Projects</p>
-					</div>
-				</div>
-				<div className="reason">
-					<h3>Why Choose Us</h3>
-					<div className="why">
-						<div className="pics">
-							<div className="icon">
-								<img src="/assets/img1.png" alt="p1" />
-							</div>
-							<p>Quality</p>
+			<section className="single-service-2 container">
+				<div className="single-service-2-inner">
+					<div className="single-service-2-inner-top">
+						<div className="single-service-2-inner-top-item">
+							<p className="years">
+								25 <sup>+</sup>
+							</p>
+							<p className="info">Completed Projects</p>
 						</div>
-						<div className="pics">
-							<div className="icon">
-								<img src="/assets/img2.png" alt="p1" />
-							</div>
-							<p>Integrity</p>
+						<div className="single-service-2-inner-top-item">
+							<p className="years">
+								25<sup> +</sup>
+							</p>
+							<p className="info">Trusted Partners</p>
 						</div>
-						<div className="pics">
-							<div className="icon">
-								<img src="/assets/img3.png" alt="p1" />
-							</div>
-							<p>Safety</p>
+						<div className="single-service-2-inner-top-item">
+							<p className="years">
+								25<sup> +</sup>
+							</p>
+							<p className="info">Satisfied Clients</p>
 						</div>
-						<div className="pics">
-							<div className="icon">
-								<img src="/assets/img4.png" alt="p1" />
+						<div className="single-service-2-inner-top-item">
+							<p className="years">
+								25<sup> +</sup>
+							</p>
+							<p className="info">Years Experience</p>
+						</div>
+					</div>
+					<div className="single-service-2-inner-heading">
+						<h3>Why Choose Us</h3>
+						<div className="single-service-2-inner-bottom">
+							<div className="single-service-2-inner-bottom-item">
+								<div className="icon">
+									<img src="/assets/img1.png" alt="p1" />
+								</div>
+								<p>Quality</p>
 							</div>
-							<p>Professionalism</p>
+							<div className="single-service-2-inner-bottom-item">
+								<div className="icon">
+									<img src="/assets/img2.png" alt="p1" />
+								</div>
+								<p>Integrity</p>
+							</div>
+							<div className="single-service-2-inner-bottom-item">
+								<div className="icon">
+									<img src="/assets/img3.png" alt="p1" />
+								</div>
+								<p>Safety</p>
+							</div>
+							<div className="single-service-2-inner-bottom-item">
+								<div className="icon">
+									<img src="/assets/img4.png" alt="p1" />
+								</div>
+								<p>Professionalism</p>
+							</div>
 						</div>
 					</div>
 				</div>

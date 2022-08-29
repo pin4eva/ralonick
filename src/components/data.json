@@ -1,0 +1,74 @@
+[
+    {
+        "id": 1,
+        "image": "/assets/services1.png",
+        "sub": "Active & Passive Fire Proofing",
+        "text": "Fire Proofing is a vital component for any structure to ensure safety of lives and minimal financial loss of properties. Ralonick offers professional fire proofing services ranging from cemetitious fire proofing, to Automatic fire suppression, etc.",
+        "learn": "Learn More",
+        "btn": "/assets/learnMoreArrow.png"
+    },
+    {
+        "id": 2,
+        "image": "/assets/services2.png",
+        "sub": "Field Joint Coating Services",
+        "text": "This involves the coating of girth weld produce on board the pipe-laying vessels or at any offshore location. Ralonick offers engineering design & fabrication of customized field joint coating equipment which involves liquid applied materials.",
+        "learn": "Learn More",
+        "btn": "/assets/learnMoreArrow.png"
+    },
+    {
+        "id": 3,
+        "image": "/assets/services3.png",
+        "sub": "Procurement & Installation of FRP/GRP",
+        "text": "In conjunction with our foreign partners AOCOMM Composite Limited(major manufacturers of FRP and GRP Products) we secure leadership in the area of technical support, procurement and maintenance for upstream and downstream oil and gas refinery.",
+        "learn": "Learn More",
+        "btn": "/assets/learnMoreArrow.png"
+    },
+    {
+        "id": 4,
+        "image": "/assets/services1.png",
+        "sub": "Active & Passive Fire Proofing",
+        "text": "Fire Proofing is a vital component for any structure to ensure safety of lives and minimal financial loss of properties. Ralonick offers professional fire proofing services ranging from cemetitious fire proofing, to Automatic fire suppression, etc.",
+        "learn": "Learn More",
+        "btn": "/assets/learnMoreArrow.png"
+    },
+    {
+        "id": 5,
+        "image": "/assets/services2.png",
+        "sub": "Field Joint Coating Services",
+        "text": "This involves the coating of girth weld produce on board the pipe-laying vessels or at any offshore location. Ralonick offers engineering design & fabrication of customized field joint coating equipment which involves liquid applied materials.",
+        "learn": "Learn More",
+        "btn": "/assets/learnMoreArrow.png"
+    },
+    {
+        "id": 6,
+        "image": "/assets/services3.png",
+        "sub": "Procurement & Installation of FRP/GRP",
+        "text": "In conjunction with our foreign partners AOCOMM Composite Limited(major manufacturers of FRP and GRP Products) we secure leadership in the area of technical support, procurement and maintenance for upstream and downstream oil and gas refinery.",
+        "learn": "Learn More",
+        "btn": "/assets/learnMoreArrow.png"
+    },
+    {
+        "id": 7,
+        "image": "/assets/services1.png",
+        "sub": "Active & Passive Fire Proofing",
+        "text": "Fire Proofing is a vital component for any structure to ensure safety of lives and minimal financial loss of properties. Ralonick offers professional fire proofing services ranging from cemetitious fire proofing, to Automatic fire suppression, etc.",
+        "learn": "Learn More",
+        "btn": "/assets/learnMoreArrow.png"
+    },
+    {
+        "id": 8,
+        "image": "/assets/services2.png",
+        "sub": "Field Joint Coating Services",
+        "text": "This involves the coating of girth weld produce on board the pipe-laying vessels or at any offshore location. Ralonick offers engineering design & fabrication of customized field joint coating equipment which involves liquid applied materials.",
+        "learn": "Learn More",
+        "btn": "/assets/learnMoreArrow.png"
+    },
+    {
+        "id": 9,
+        "image": "/assets/services3.png",
+        "sub": "Procurement & Installation of FRP/GRP",
+        "text": "In conjunction with our foreign partners AOCOMM Composite Limited(major manufacturers of FRP and GRP Products) we secure leadership in the area of technical support, procurement and maintenance for upstream and downstream oil and gas refinery.",
+        "learn": "Learn More",
+        "btn": "/assets/learnMoreArrow.png"
+    }
+]

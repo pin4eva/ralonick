@@ -1,0 +1,23 @@
+.single-project-first-section{
+    .a{    grid-area: a;
+        // margin-right: -3rem;
+        }
+        
+          .b{
+            // margin-left: -3rem;
+            grid-area: b;
+          }
+           .c{
+            grid-area: c;
+            // margin-left: -4rem;
+           }
+           .d{
+            // margin-left: -3rem;
+            grid-area: d;
+           }
+            .first-section_grid-item{
+                display: grid;
+                grid-template-areas: 'a b c'
+                'a d d';
+            }  
+}

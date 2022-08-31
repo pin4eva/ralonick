@@ -163,21 +163,31 @@ justify-content: center;
     }
 
     .sixthSection {
-        margin: 7rem 0rem 1.8rem 0rem;
+      
+			
+			margin: 7rem 0rem 1.8rem 0rem;
+			img{
+				width: 100%;
+			}
+			h1 {
+				margin-bottom: 1rem;
+			}
 
-        h1 {
-            margin-bottom: 1rem;
-        }
+			.profile {
+				display: grid;
+				grid-template-columns: 1fr 1fr 1fr;
+				gap: 1rem;
+				
+				.inner-profile{
+				
+					i {
+						color: white;
+					}
+				}
+			
+			
 
-        .profile {
-            display: grid;
-            grid-template-columns: 1fr 1fr 1fr;
-
-            i {
-                color: white;
-            }
-        }
-
+		}
     }
 
     @media screen and (max-width:$mobile) {
@@ -300,20 +310,6 @@ justify-content: center;
     }
 
 
-    @media screen and (max-width:$mobile) {
-        .sixthSection {
-            h1 {
-                text-align: center;
-            }
-
-            .profile {
-                gap: 1rem;
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-
-            }
-
-        }
-    }
+  
+    
 }

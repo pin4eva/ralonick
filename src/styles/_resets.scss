@@ -55,7 +55,6 @@ h3{
 p{
   font-weight: 500;
 font-size: 14px;
-line-height: 26px;
 color: $pagraph;
 }
 .profile-h2{
@@ -70,14 +69,12 @@ color: $pagraph;
 .profile-p{
   font-weight: 500;
 font-size: 14px;
-line-height: 26px;
 color: $name;
 }
 .p{
   font-weight: 500;
 font-size: 18px;
 color: $pagraph;
-margin-top: 24px;
 }
 .inner-inner-inner-text-box{
   border: 1px solid $secondary;
@@ -88,7 +85,7 @@ border-radius: 1rem;
 }
 .info{
   background-color: $secondary;
-  width: 379px;
+  // width: 379px;
 text-align: center;
 padding: 1rem 0rem 1rem 0rem;
 }

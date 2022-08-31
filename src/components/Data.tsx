@@ -164,11 +164,11 @@ export const Project1 = [
 export const Project2 = [
     {
         id: 1,
-        img: <img src={"./images/Project3.png"} alt="" />,
+        img: <img src={"/images/Project3.png"} alt="" />,
         header: "Project Name",
         text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis mi sagittis aliquet elementum nunc lectus. Arcu, non ornare commodo, convallis lectus.",
-        link: "More Details",
-        arrow: <i className="fa-solid fa-arrow-up-right"></i>
+        link: <p>More Details</p>,
+        arrow: <img src={"/images/VectorWhite.png"} alt="" />
 
     }
 ]

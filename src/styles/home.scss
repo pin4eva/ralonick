@@ -176,32 +176,22 @@
         grid-template-columns: 1fr 1fr;
         gap: 4rem;
 
-
         .text {
             margin-top: 9.5rem;
-            // &-inner{
-            //     // .h2{
-            //     //     color: $danger;
-            //     // }
-            // }
         }
 
         .box {
             margin-top: 2.25rem;
-
             &-inner {
                 display: grid;
                 grid-template-columns: 1fr 1fr 1fr;
-
                 .box-inner-in {
                     border: 1px solid $primary;
                     text-align: center;
                 }
-
                 :nth-child(1) {
                     border-left: none;
                 }
-
                 :last-child {
                     border-right: none;
                 }
@@ -212,7 +202,9 @@
             display: grid;
             grid-template-columns: 1fr 1fr 1fr;
             gap: 2rem;
-
+img{
+	width: 100%;
+}
             :nth-child(2) {
                 margin-top: 5rem;
             }
@@ -551,7 +543,7 @@
 			}
 		}
 	}
-	@media screen and (max-width:500px) {
+	@media screen and (max-width:1200px) {
         .thirdSection {
 
             display: flex;

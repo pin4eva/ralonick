@@ -77,44 +77,41 @@ const Home = () => {
 					</div>
 				</section>
 				<section className="home-section-3">
-				<section className="thirdSection">
-                <div className="text">
-                    <div className="text-inner">
-                        {/* <h2 className="h2">ROLANIK
-                        </h2>
-                        <h2>Who We Are ...</h2> */}
-                        <h1>
-                            Transforming
-                            With Innovations
-                        </h1>
-                        <p className="p">Ralonick Constructions operates within the framework of commercial and industrial activities, developing and carrying out basic and detailed services in engineering, procurement, construction, equipment leasing and marine.
-                            We exceed our clients' trust through the timely delivery of quality, satisfactory products and services.</p>
-                    </div>
-                    <div className="box">
-                        <div className="box-inner">
-                            {Research.map((item) => {
-                                return (
-                                    <div key={item.id} className="box-inner-in">
-                                        <h1 className="h1">{item.number}</h1>
-                                        <h1><p>{item.text}</p></h1>
+					<section className="thirdSection">
+						<div className="text">
+							<div className="text-inner">
+								<h1>
+									Transforming
+									With Innovations
+								</h1>
+								<p className="p">Ralonick Constructions operates within the framework of commercial and industrial activities, developing and carrying out basic and detailed services in engineering, procurement, construction, equipment leasing and marine.
+									We exceed our clients' trust through the timely delivery of quality, satisfactory products and services.</p>
+							</div>
+							<div className="box">
+								<div className="box-inner">
+									{Research.map((item) => {
+										return (
+											<div key={item.id} className="box-inner-in">
+												<h1 className="h1">{item.number}</h1>
+												<h1><p>{item.text}</p></h1>
 
-                                    </div>
-                                )
-                            })}
+											</div>
+										)
+									})}
 
-                        </div>
-                    </div>
-                </div>
-                <div className="img">
-                    {Transforming.map((item) => {
-                        return (
-                            <div key={item.id}>
-                                {item.img}
-                            </div>
-                        )
-                    })}
-                </div>
-            </section>
+								</div>
+							</div>
+						</div>
+						<div className="img">
+							{Transforming.map((item) => {
+								return (
+									<div key={item.id}>
+										{item.img}
+									</div>
+								)
+							})}
+						</div>
+					</section>
 				</section>
 				<section className="home-section-4">
 					<div className="section4-inner">

@@ -1,7 +1,7 @@
 import React from "react";
 import FrontLayout from "../layouts/front.layout";
 
-const AboutPage = () => {
+const AboutPage= () => {
 	return (
 		<FrontLayout>
 			<div className="about-page container">

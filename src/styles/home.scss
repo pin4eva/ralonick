@@ -301,6 +301,7 @@
 				}
 
 				.text_gridbox {
+					margin-top: 3rem;
 					@media screen and (min-width: $md) {
 						display: grid;
 						grid-template-columns: 1fr 1fr;

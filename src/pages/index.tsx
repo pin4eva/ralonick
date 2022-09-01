@@ -4,7 +4,15 @@ import FrontLayout from "../layouts/front.layout";
 import Link from "next/link";
 import ClientComp from "../components/ClientComp";
 
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
+
 const Home = () => {
+	useEffect(() => {
+		AOS.init();
+		AOS.refresh();
+	}, []);
 	return (
 		<FrontLayout>
 			<div className="home container">
@@ -13,7 +21,15 @@ const Home = () => {
 						<div className="left">
 							<div className="inner-left">
 								<div className="hero_img1">
-									<img className="img1" src="/assets/hero_img1.png" alt="hero" />
+									<img
+										className="img1"
+										src="/assets/hero_img1.png"
+										alt="hero"
+										data-aos="fade-right"
+										data-aos-offset="300"
+										data-aos-easing="ease-in-sine"
+										data-aos-duration="1500"
+									/>
 									<div className="hero-arrows">
 										<div className="line"></div>
 										<div className="arrow-img">
@@ -22,7 +38,7 @@ const Home = () => {
 										</div>
 									</div>
 								</div>
-								<div className="hero-text">
+								<div className="hero-text" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
 									<h1>{`Diverse & Flexible Structure `}</h1>
 									<p>
 										End to end service in the design, engineering, procurement, fabrication, installation, repair of
@@ -33,7 +49,7 @@ const Home = () => {
 							</div>
 						</div>
 
-						<div className="inner-right">
+						<div className="inner-right" data-aos="fade-up" data-aos-duration="3000" ease-in-out-quart>
 							<div className="video-desc">
 								<div className="video-desc-inner">
 									<img src="/assets/PlayArrow.png" alt="" />
@@ -49,11 +65,21 @@ const Home = () => {
 				</section>
 				<section className="about-section">
 					<div className="about-inner">
-						<div className=" about-inner-left">
+						<div
+							className=" about-inner-left"
+							data-aos="flip-left"
+							data-aos-easing="ease-out-cubic"
+							data-aos-duration="2000"
+						>
 							<img className="about-img" src="/assets/about_img1.png" alt="" />
 						</div>
 
-						<div className="about_text_sect about-inner-right">
+						<div
+							className="about_text_sect about-inner-right"
+							data-aos="flip-right"
+							data-aos-easing="ease-out-cubic"
+							data-aos-duration="1000"
+						>
 							<div className="right-text">
 								<p className="text-danger fw-600">RALONICK</p>
 								<h2 className="h1">About Us</h2>
@@ -69,14 +95,21 @@ const Home = () => {
 									fabrication, installation, repair and support of Glass fiber Reinforced Epoxy (GRE) Polyester (GRP)
 									and Vinylester Pipe system and products.
 								</p>
-								<button className="btn btn-outline-danger hug">Learn More</button>
+								<button
+									className="btn btn-outline-danger hug"
+									data-aos="flip-left"
+									data-aos-easing="ease-out-cubic"
+									data-aos-duration="1500"
+								>
+									Learn More
+								</button>
 							</div>
 						</div>
 					</div>
 				</section>
 				<section className="home-section-3">
 					<div className="section3-inner">
-						<div className="section3-inner-left">
+						<div className="section3-inner-left" data-aos="flip-up"  data-aos-duration="3000">
 							<p className="text-danger">ROLANICK</p>
 							<p className="section3-heading">Who We Are...</p>
 							<h2>Transforming With Innovations</h2>
@@ -86,7 +119,7 @@ const Home = () => {
 								leasing and marine.
 							</p>
 							<p className="section3-paragraph2">{`We exceed our clients' trust through the timely delivery of quality, satisfactory products and services.`}</p>
-							<div className="info">
+							<div className="info" data-aos="flip-right" data-aos-easing="ease-in-quad" data-aos-duration="1500">
 								<div className="info-sub">
 									<p>25+</p>
 									<p>Trusted Partners</p>
@@ -101,7 +134,7 @@ const Home = () => {
 								</div>
 							</div>
 						</div>
-						<div className="section3-inner-right">
+						<div className="section3-inner-right" data-aos="flip-down"  data-aos-duration="2500">
 							<img src="/assets/who_img1.png" alt="" />
 						</div>
 					</div>
@@ -113,7 +146,7 @@ const Home = () => {
 						</div>
 						<div className="section4-inner-text">
 							<h2>Why Choose Us</h2>
-							<div className="text_gridbox">
+							<div className="text_gridbox" data-aos="fade-up" data-aos-duration="3000" ease-in-out-quart>
 								<div className="text_gridItem">
 									<div className="empty-box"></div>
 									<p className="grid-heading">Quality</p>
@@ -225,7 +258,7 @@ const Home = () => {
 					</div>
 				</section>
 				<ClientComp />
-				
+
 				<section className="home-section-7">
 					<div className="section7-inner">
 						<h2>Our Projects</h2>

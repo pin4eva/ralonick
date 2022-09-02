@@ -3,10 +3,14 @@ import React from "react";
 import FrontLayout from "../layouts/front.layout";
 import Link from "next/link";
 import ClientComp from "../components/ClientComp";
-
+import ServiceComp from "../components/ServiceComp";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
+import { SwiperSlide, Swiper } from "swiper/react";
+import { Navigation } from "swiper";
+import "swiper/css/navigation";
+import { Autoplay } from "swiper";
 
 const Home = () => {
 	useEffect(() => {
@@ -15,29 +19,41 @@ const Home = () => {
 	}, []);
 	return (
 		<FrontLayout>
-			<div className="home container">
-				<section className="home-hero ">
+			<div className="home">
+				<section className="home-hero container">
 					<div className="inner">
 						<div className="left">
 							<div className="inner-left">
-								<div className="hero_img1">
-									<img
-										className="img1"
-										src="/assets/hero_img1.png"
-										alt="hero"
-										data-aos="fade-right"
-										data-aos-offset="300"
-										data-aos-easing="ease-in-sine"
-										data-aos-duration="1500"
-									/>
+								<Swiper
+									className="hero_img1 container"
+									modules={[Navigation, Autoplay]}
+									spaceBetween={50}
+									slidesPerView={1}
+									navigation
+									autoplay={{
+										delay: 3000,
+										disableOnInteraction: false,
+									}}
+									loop={true}
+									loopFillGroupWithBlank={true}
+									speed={1000}>
+									<SwiperSlide>
+										<img className="img1" src="/assets/hero_img1.png" alt="hero" />
+									</SwiperSlide>
+									<SwiperSlide>
+										<img className="img1" src="/assets/hero_img1.png" alt="hero" />
+									</SwiperSlide>
+									<SwiperSlide>
+										<img className="img1" src="/assets/hero_img1.png" alt="hero" />
+									</SwiperSlide>
 									<div className="hero-arrows">
 										<div className="line"></div>
 										<div className="arrow-img">
-											<img src="/assets/keyboardArrowLeft.png" alt="" />
+											<img src="/assets/keyboardArrowLeft.png" className="" alt="" />
 											<img src="/assets/keyboardArrowRight.png" alt="" />
 										</div>
 									</div>
-								</div>
+								</Swiper>
 								<div className="hero-text" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
 									<h1>{`Diverse & Flexible Structure `}</h1>
 									<p>
@@ -63,22 +79,19 @@ const Home = () => {
 						</div>
 					</div>
 				</section>
-				<section className="about-section">
+
+				<section className="about-section container">
 					<div className="about-inner">
-						<div
-							className=" about-inner-left"
-							data-aos="flip-left"
-							data-aos-easing="ease-out-cubic"
-							data-aos-duration="2000"
-						>
+						<div className=" about-inner-left" data-aos="fade-up" data-aos-duration="3000" ease-in-out-quart>
 							<img className="about-img" src="/assets/about_img1.png" alt="" />
 						</div>
 
 						<div
 							className="about_text_sect about-inner-right"
-							data-aos="flip-right"
 							data-aos-easing="ease-out-cubic"
-							data-aos-duration="1000"
+							data-aos="fade-down"
+							data-aos-duration="3000"
+							ease-in-out-quart
 						>
 							<div className="right-text">
 								<p className="text-danger fw-600">RALONICK</p>
@@ -107,9 +120,10 @@ const Home = () => {
 						</div>
 					</div>
 				</section>
-				<section className="home-section-3">
+
+				<section className="home-section-3 container">
 					<div className="section3-inner">
-						<div className="section3-inner-left" data-aos="flip-up"  data-aos-duration="3000">
+						<div className="section3-inner-left " data-aos="zoom-in-up" data-aos-duration="3000">
 							<p className="text-danger">ROLANICK</p>
 							<p className="section3-heading">Who We Are...</p>
 							<h2>Transforming With Innovations</h2>
@@ -119,7 +133,7 @@ const Home = () => {
 								leasing and marine.
 							</p>
 							<p className="section3-paragraph2">{`We exceed our clients' trust through the timely delivery of quality, satisfactory products and services.`}</p>
-							<div className="info" data-aos="flip-right" data-aos-easing="ease-in-quad" data-aos-duration="1500">
+							<div className="info" fade-up-left data-aos-easing="ease-in-quad" data-aos-duration="1500">
 								<div className="info-sub">
 									<p>25+</p>
 									<p>Trusted Partners</p>
@@ -134,15 +148,16 @@ const Home = () => {
 								</div>
 							</div>
 						</div>
-						<div className="section3-inner-right" data-aos="flip-down"  data-aos-duration="2500">
+						<div className="section3-inner-right" data-aos="zoom-in-down" data-aos-duration="2500">
 							<img src="/assets/who_img1.png" alt="" />
 						</div>
 					</div>
 				</section>
-				<section className="home-section-4">
+
+				<section className="home-section-4 container">
 					<div className="section4-inner">
-						<div className="section4-inner-img">
-							<img src="/assets/why_img.png" alt="" />
+						<div className="section4-inner-img" data-aos="fade-down" data-aos-duration="3000" ease-in-out-quart>
+							<img src="/assets/why__img.png" alt="" />
 						</div>
 						<div className="section4-inner-text">
 							<h2>Why Choose Us</h2>
@@ -188,7 +203,8 @@ const Home = () => {
 						</div>
 					</div>
 				</section>
-				<section className="home-section-5">
+				<ServiceComp />
+				<section className="home-section-5 container">
 					<div className="section5-inner">
 						<h2>Our Services</h2>
 						<div className="section5-inner-text">
@@ -197,7 +213,8 @@ const Home = () => {
 							</p>
 							<button className="btn btn-outline-danger hug">All Services</button>
 						</div>
-						<div className="section5-inner-gridbox">
+						
+						{/* <div className="section5-inner-gridbox">
 							<div className="section5-gridItem">
 								<img className="section5-gridItem-img" src="/assets/services1.png" alt="" />
 								<div className="section5-gridItem-text">
@@ -247,7 +264,7 @@ const Home = () => {
 									</Link>
 								</div>
 							</div>
-						</div>
+						</div> */}
 						<div className="section5-arrows">
 							<div className="arrows">
 								<img src="/assets/keyboardArrowLeft.png" alt="" />
@@ -257,13 +274,19 @@ const Home = () => {
 						</div>
 					</div>
 				</section>
+
+				{/* ============TESTIMONIAL COMPONENT=========== */}
 				<ClientComp />
 
-				<section className="home-section-7">
+				<section className="home-section-7 container">
 					<div className="section7-inner">
 						<h2>Our Projects</h2>
 						<div className="section7-inner-sub">
-							<img src="/assets/projects1.png" alt="" className="large-img" />
+							<img
+								src="/assets/projects1.png"
+								alt=""
+								className="large-img"/>
+
 							<div className="section7-inner-sub_text">
 								<p className="text-heading">Project Name</p>
 								<p className="inner-text-body">
@@ -279,7 +302,9 @@ const Home = () => {
 							</div>
 						</div>
 						<div className="section7-inner-sub sub-2">
-							<img src="/assets/projects2.png" alt="" className="large-img" />
+
+							<img src="/assets/projects2.png" alt="" className="large-img"/>
+
 							<div className="section7-inner-sub_text sub-2_text">
 								<p className="text-heading">Project Name</p>
 								<p className="inner-text-body">
@@ -296,7 +321,8 @@ const Home = () => {
 							</div>
 						</div>
 						<div className="section7-inner-sub">
-							<img src="/assets/projects3.png" alt="" className="large-img" />
+							<img src="/assets/projects3.png" alt="" className="large-img"/>
+
 							<div className="section7-inner-sub_text">
 								<p className="text-heading">Project Name</p>
 								<p className="inner-text-body">

@@ -19,7 +19,7 @@ const ClientComp = () => {
           }}
           loop={true}
         loopFillGroupWithBlank={true}
-        speed={3000}
+        speed={1000}
           >
 			{ClientReviews.map((item) => {
 				return (

@@ -25,7 +25,7 @@ export const ClientReviews = [
     }
 ]
 
-export const Swipers = [
+export const SwiperData = [
     {
         id: 1,
         image: "/assets/hero_img1.png"

@@ -13,7 +13,7 @@ const ServiceComp = () => {
 			className="services container"
 			modules={[Navigation, Autoplay]}
 			spaceBetween={10}
-			slidesPerView={1}
+			slidesPerView={3}
 			navigation
 			autoplay={{
 				delay: 3000,
@@ -22,6 +22,21 @@ const ServiceComp = () => {
 			loop={true}
 			loopFillGroupWithBlank={true}
 			speed={1000}
+			breakpoints={{
+				1161: {
+					slidesPerView:3
+				},
+				890: {
+					slidesPerView:2
+				},
+				768: {
+					slidesPerView:1
+				},
+				200: {
+					slidesPerView:1,
+					spaceBetween:30
+				}
+			}}
 		>
 			{Data.map((item) => {
 				return (
@@ -30,7 +45,7 @@ const ServiceComp = () => {
 						<div className="content">
 							<p>{item.sub}</p>
 							<div className="texts">{item.text}</div>
-							<div className="services-info">
+							{/* <div className="services-info">
 								<div className="services-info-list">
 									<Link href="/services/jgjj">
 										<a>{item.learn}</a>
@@ -41,7 +56,7 @@ const ServiceComp = () => {
 										<img src={item.btn} alt="arrow" />
 									</a>
 								</div>
-							</div>
+							</div> */}
 						</div>
 					</SwiperSlide>
 				);

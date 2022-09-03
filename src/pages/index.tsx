@@ -1,5 +1,5 @@
 /* eslint-disable @next/next/no-img-element */
-import React from "react";
+import { useSwiper } from "swiper/react";
 import FrontLayout from "../layouts/front.layout";
 import Link from "next/link";
 import ClientComp from "../components/ClientComp";
@@ -11,12 +11,31 @@ import { SwiperSlide, Swiper } from "swiper/react";
 import { Navigation } from "swiper";
 import "swiper/css/navigation";
 import { Autoplay } from "swiper";
+import { SwiperData } from "../components/Data";
 
 const Home = () => {
 	useEffect(() => {
 		AOS.init();
 		AOS.refresh();
 	}, []);
+
+	const SwiperButtonNext = () => {
+		const swiper = useSwiper();
+		// const myData = SwiperData;
+
+		return (
+			<div>
+				{" "}
+				<button onClick={() => swiper.slidePrev()}>
+					<i className="fa-solid fa-chevron-left"></i>
+				</button>
+				<button onClick={() => swiper.slideNext()}>
+					<i className="fa-solid fa-chevron-right"></i>
+				</button>
+			</div>
+		);
+	};
+
 	return (
 		<FrontLayout>
 			<div className="home">
@@ -36,24 +55,25 @@ const Home = () => {
 									// }}
 									// loop={true}
 									// loopFillGroupWithBlank={true}
-									speed={1000}>
-									<SwiperSlide>
-										<img className="img1" src="/assets/hero_img1.png" alt="hero" />
-									</SwiperSlide>
-									<SwiperSlide>
-										<img className="img1" src="/assets/hero_img1.png" alt="hero" />
-									</SwiperSlide>
-									<SwiperSlide>
-										<img className="img1" src="/assets/hero_img1.png" alt="hero" />
-									</SwiperSlide>
+									speed={1000}
+								>
+									{SwiperData.map((data) => {
+										return (
+											<SwiperSlide key={data.id}>
+												<img className="img1" src={data.image} alt="hero" />
+											</SwiperSlide>
+										);
+									})}
 									<div className="hero-arrows">
 										<div className="line"></div>
 										<div className="arrow-img">
+											{/* <SwiperButtonNext /> */}
 											<img src="/assets/keyboardArrowLeft.png" className="" alt="" />
 											<img src="/assets/keyboardArrowRight.png" alt="" />
 										</div>
 									</div>
 								</Swiper>
+
 								<div className="hero-text" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
 									<h1>{`Diverse & Flexible Structure `}</h1>
 									<p>
@@ -203,7 +223,7 @@ const Home = () => {
 						</div>
 					</div>
 				</section>
-				
+
 				<section className="home-section-5 container">
 					<div className="section5-inner">
 						<h2>Our Services</h2>
@@ -213,18 +233,20 @@ const Home = () => {
 							</p>
 							<button className="btn btn-outline-danger hug">All Services</button>
 						</div>
-						
-						<div className="section5-arrows">
+
+						{/* <div className="section5-arrows">
 							<div className="arrows">
 								<img src="/assets/keyboardArrowLeft.png" alt="" />
 								<img src="/assets/keyboardArrowRight.png" alt="" />
 							</div>
 							<div className="line"></div>
-						</div>
+						</div> */}
 					</div>
 				</section>
+
 				<ServiceComp />
 				{/* ============TESTIMONIAL COMPONENT=========== */}
+
 				<ClientComp />
 
 				<section className="home-section-7 container">
@@ -234,9 +256,18 @@ const Home = () => {
 							<img
 								src="/assets/projects1.png"
 								alt=""
-								className="large-img"/>
+								className="large-img"
+								data-aos="fade-left"
+								data-aos-offset="200"
+								data-aos-duration="500"
+							/>
 
-							<div className="section7-inner-sub_text">
+							<div
+								className="section7-inner-sub_text"
+								data-aos="fade-right"
+								data-aos-offset="200"
+								data-aos-duration="500"
+							>
 								<p className="text-heading">Project Name</p>
 								<p className="inner-text-body">
 									Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis mi sagittis aliquet elementum nunc
@@ -251,10 +282,21 @@ const Home = () => {
 							</div>
 						</div>
 						<div className="section7-inner-sub sub-2">
+							<img
+								src="/assets/projects2.png"
+								alt=""
+								className="large-img"
+								data-aos="fade-right"
+								data-aos-offset="200"
+								data-aos-duration="500"
+							/>
 
-							<img src="/assets/projects2.png" alt="" className="large-img"/>
-
-							<div className="section7-inner-sub_text sub-2_text">
+							<div
+								className="section7-inner-sub_text sub-2_text"
+								data-aos="fade-left"
+								data-aos-offset="200"
+								data-aos-duration="500"
+							>
 								<p className="text-heading">Project Name</p>
 								<p className="inner-text-body">
 									Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis mi sagittis aliquet elementum nunc
@@ -270,9 +312,21 @@ const Home = () => {
 							</div>
 						</div>
 						<div className="section7-inner-sub">
-							<img src="/assets/projects3.png" alt="" className="large-img"/>
+							<img
+								src="/assets/projects3.png"
+								alt=""
+								className="large-img"
+								data-aos="fade-right"
+								data-aos-offset="200"
+								data-aos-duration="500"
+							/>
 
-							<div className="section7-inner-sub_text">
+							<div
+								className="section7-inner-sub_text"
+								data-aos="fade-left"
+								data-aos-offset="200"
+								data-aos-duration="500"
+							>
 								<p className="text-heading">Project Name</p>
 								<p className="inner-text-body">
 									Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis mi sagittis aliquet elementum nunc
@@ -298,6 +352,3 @@ const Home = () => {
 };
 
 export default Home;
-
-
-

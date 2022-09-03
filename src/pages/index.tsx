@@ -26,16 +26,16 @@ const Home = () => {
 							<div className="inner-left">
 								<Swiper
 									className="hero_img1 container"
-									modules={[Navigation, Autoplay]}
+									modules={[Navigation]}
 									spaceBetween={50}
 									slidesPerView={1}
 									navigation
-									autoplay={{
-										delay: 3000,
-										disableOnInteraction: false,
-									}}
-									loop={true}
-									loopFillGroupWithBlank={true}
+									// autoplay={{
+									// 	delay: 3000,
+									// 	disableOnInteraction: false,
+									// }}
+									// loop={true}
+									// loopFillGroupWithBlank={true}
 									speed={1000}>
 									<SwiperSlide>
 										<img className="img1" src="/assets/hero_img1.png" alt="hero" />
@@ -203,7 +203,7 @@ const Home = () => {
 						</div>
 					</div>
 				</section>
-				<ServiceComp />
+				
 				<section className="home-section-5 container">
 					<div className="section5-inner">
 						<h2>Our Services</h2>
@@ -214,57 +214,6 @@ const Home = () => {
 							<button className="btn btn-outline-danger hug">All Services</button>
 						</div>
 						
-						{/* <div className="section5-inner-gridbox">
-							<div className="section5-gridItem">
-								<img className="section5-gridItem-img" src="/assets/services1.png" alt="" />
-								<div className="section5-gridItem-text">
-									<p className="grid-heading">{`Active & Passive Fire Proofing`}</p>
-									<p className="grid-text">
-										Fire Proofing is a vital component for any structure to ensure safety of lives and minimal financial
-										loss of properties. Ralonick offers professional fire proofing services ranging from cemetitious
-										fire proofing, to Automatic fire suppression, etc.
-									</p>
-
-									<Link href="/">
-										<a className="grid-link">
-											Learn More <img src="/assets/learnMoreArrow.png" alt="" />
-										</a>
-									</Link>
-								</div>
-							</div>
-							<div className="section5-gridItem">
-								<img className="section5-gridItem-img" src="/assets/services2.png" alt="" />
-								<div className="section5-gridItem-text">
-									<p className="grid-heading">Field Joint Coating Services</p>
-									<p className="grid-text">
-										{`This involves the coating of girth weld produce on board the pipe-laying vessels or at any offshore location. Ralonick offers engineering design & fabrication of customized field joint coating equipment which involves liquid applied materials.`}
-									</p>
-
-									<Link href="/">
-										<a className="grid-link">
-											Learn More <img src="/assets/learnMoreArrow.png" alt="" />
-										</a>
-									</Link>
-								</div>
-							</div>
-							<div className="section5-gridItem item3">
-								<img className="section5-gridItem-img" src="/assets/services3.png" alt="" />
-								<div className="section5-gridItem-text">
-									<p className="grid-heading">{`Procurement & Installation of FRP/GRP`}</p>
-									<p className="grid-text">
-										In conjunction with our foreign partners AOCOMM Composite Limited(major manufacturers of FRP and GRP
-										Products) we secure leadership in the area of technical support, procurement and maintenance for
-										upstream and downstream oil and gas refinery.
-									</p>
-
-									<Link href="/">
-										<a className="grid-link">
-											Learn More <img src="/assets/learnMoreArrow.png" alt="" />
-										</a>
-									</Link>
-								</div>
-							</div>
-						</div> */}
 						<div className="section5-arrows">
 							<div className="arrows">
 								<img src="/assets/keyboardArrowLeft.png" alt="" />
@@ -274,7 +223,7 @@ const Home = () => {
 						</div>
 					</div>
 				</section>
-
+				<ServiceComp />
 				{/* ============TESTIMONIAL COMPONENT=========== */}
 				<ClientComp />
 
@@ -349,3 +298,6 @@ const Home = () => {
 };
 
 export default Home;
+
+
+

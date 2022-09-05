@@ -3,6 +3,7 @@ import React from "react";
 import FrontLayout from "../../layouts/front.layout";
 import Data from "../../components/data.json";
 import Link from "next/link";
+import ClientComp from "../../components/ClientComp";
 
 const Services = () => {
 	return (
@@ -87,7 +88,9 @@ const Services = () => {
 					</div>
 				</section>
 
-				<section className="fourth-part container">
+				<ClientComp />
+
+				{/* <section className="fourth-part container">
 					<div className="fourth-part-inner">
 						<h2>Clients Reviews</h2>
 						<p className="fourth-part-inner-txt1">
@@ -100,7 +103,7 @@ const Services = () => {
 						</div>
 						<img src="/assets/reviewslider2.png" alt="" />
 					</div>
-				</section>
+				</section> */}
 			</div>
 		</FrontLayout>
 	);

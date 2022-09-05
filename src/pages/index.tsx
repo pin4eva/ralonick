@@ -80,7 +80,7 @@ const Home = () => {
 										End to end service in the design, engineering, procurement, fabrication, installation, repair of
 										(GRE), (GRP) and Vinylester Pipe system and products.
 									</p>
-									<button className="btn btn-danger hug">See Projects</button>
+									<Link href="/projects"><button className="btn btn-danger hug">See Projects</button></Link>
 								</div>
 							</div>
 						</div>
@@ -128,14 +128,16 @@ const Home = () => {
 									fabrication, installation, repair and support of Glass fiber Reinforced Epoxy (GRE) Polyester (GRP)
 									and Vinylester Pipe system and products.
 								</p>
-								<button
-									className="btn btn-outline-danger hug"
-									data-aos="flip-left"
-									data-aos-easing="ease-out-cubic"
-									data-aos-duration="1500"
-								>
-									Learn More
-								</button>
+								<Link href="/about">
+									<button
+										className="btn btn-outline-danger hug"
+										data-aos="flip-left"
+										data-aos-easing="ease-out-cubic"
+										data-aos-duration="1500"
+									>
+										Learn More
+									</button>
+								</Link>
 							</div>
 						</div>
 					</div>
@@ -231,7 +233,7 @@ const Home = () => {
 							<p>
 								{`At Ralonick, we offer a wide range of services from engineering, procurement, construction, to equipment leasing for land & marine.`}
 							</p>
-							<button className="btn btn-outline-danger hug">All Services</button>
+							<Link href="/services"><button className="btn btn-outline-danger hug">All Services</button></Link>
 						</div>
 
 						{/* <div className="section5-arrows">
@@ -316,14 +318,14 @@ const Home = () => {
 								src="/assets/projects3.png"
 								alt=""
 								className="large-img"
-								data-aos="fade-right"
+								data-aos="fade-left"
 								data-aos-offset="200"
 								data-aos-duration="500"
 							/>
 
 							<div
 								className="section7-inner-sub_text"
-								data-aos="fade-left"
+								data-aos="fade-right"
 								data-aos-offset="200"
 								data-aos-duration="500"
 							>
@@ -333,7 +335,7 @@ const Home = () => {
 									lectus. Arcu, non ornare commodo, convallis lectus.
 								</p>
 
-								<Link href="/" className="text-link">
+								<Link href="/projects" className="text-link">
 									<a className="text-link_link">
 										More Details
 										<img src="/assets/moreDetailsArrow.png" alt="" />

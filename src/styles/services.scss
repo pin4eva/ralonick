@@ -45,7 +45,9 @@
 			.services-offer {
 				@media screen and (min-width: $md) {
 					display: grid;
-					grid-template-columns: 1fr auto;
+					grid-template-columns: 60% 20%;
+					justify-content: space-between;
+
 				}
 
 				p {
@@ -59,7 +61,8 @@
 				.btn {
 					height: 4.1rem;
 				}
-			}
+		}
+						
 
 			.services {
 				display: grid;
@@ -197,6 +200,63 @@
 					@media screen and (max-width: $md) {
 						border-right: none;
 					}	
+				}
+			}
+		}
+	}
+
+	.home-section-6 {
+		width: 80%;
+		margin-top: 3.5rem;
+
+		.swiper-pagination-clickable .swiper-pagination-bullet {
+			background: $primary;
+			width: 1rem;
+			height: 1rem;
+			border-radius: 50%;
+		}
+		h2 {
+			color: $secondary;
+			font-size: 3rem;
+			font-weight: 800;
+			line-height: 4rem;
+			text-align: center;
+		}
+
+		.section6-inner {
+			text-align: center;
+			margin-inline: auto;
+			
+			width: 100%;
+			
+			.section6-inner-txt1 {
+				color: #000;
+				font-size: 1.125rem;
+				font-weight: 400;
+				line-height: 2rem;
+				margin-block: 1.8125rem 3rem;
+				font-style: italic;
+				@media screen and (min-width: $md) {
+					width: 65%;
+					margin-inline: auto;
+				}
+			}
+			.section6-inner-profile {
+				color: #000;
+				line-height: 1.76125rem;
+
+				img {
+					border-radius: 50%;
+				}
+				h3 {
+					font-size: 1.5rem;
+					font-weight: 600;
+					margin-block: 1.5rem 0.5rem;
+				}
+				&_caption {
+					font-size: 1.125rem;
+					font-weight: 500;
+					margin-bottom: 2.5rem;
 				}
 			}
 		}

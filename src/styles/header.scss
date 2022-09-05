@@ -88,6 +88,13 @@
 				font-weight: 600;
 				place-content: center;
 				text-align: center;
+			transition: all 400ms ease-out;
+
+			@media screen and (min-width: $mobile){
+				margin-top: 2rem;
+				gap: 3rem;
+			}
+				
 
 				a {
 					color: black;

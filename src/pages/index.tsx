@@ -190,7 +190,9 @@ const Home = () => {
 							<h2>Why Choose Us</h2>
 							<div className="text_gridbox" data-aos="fade-up" data-aos-duration="3000" ease-in-out-quart>
 								<div className="text_gridItem">
-									<div className="empty-box"></div>
+									<div className="empty-box">
+										<img src="images/Bag.png" alt="" />
+									</div>
 									<p className="grid-heading">Quality</p>
 									<p>
 										Great service delivery is incomplete without quality. It is our core value of operation, we achieve
@@ -199,7 +201,9 @@ const Home = () => {
 									</p>
 								</div>
 								<div className="text_gridItem">
-									<div className="empty-box"></div>
+									<div className="empty-box">
+										<img src="assets/integrity.svg" alt="" />
+									</div>
 									<p className="grid-heading">Integrity</p>
 
 									<p>
@@ -209,7 +213,9 @@ const Home = () => {
 									</p>
 								</div>
 								<div className="text_gridItem">
-									<div className="empty-box"></div>
+									<div className="empty-box">
+										<img src="assets/safety.svg" alt="" />
+									</div>
 									<p className="grid-heading">Professionalism</p>
 									<p>
 										Skill and competence are as important as practice therefore all staff are highly trained, possess
@@ -218,7 +224,9 @@ const Home = () => {
 									</p>
 								</div>
 								<div className="text_gridItem">
-									<div className="empty-box"></div>
+									<div className="empty-box">
+										<img src="images/Helmet.png" alt="" />
+									</div>
 									<p className="grid-heading">Safety</p>
 									<p>
 										As one of our offered service we are not lacking in ensuring that our installations and technical

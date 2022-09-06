@@ -186,7 +186,7 @@ const AboutPage = () => {
 							</div>
 							<div>
 								<span>
-									<img src="assets/quality.svg" alt="" />
+									<img src="images/Bag.png" alt="" />
 								</span>
 								<h5>Safety</h5>
 								<p>

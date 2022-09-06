@@ -14,8 +14,8 @@ import { Autoplay } from "swiper";
 const Services = () => {
 	return (
 		<FrontLayout>
-			<div className="service-section">
-				<section className="service-section-hero container">
+			<div className="service-section container">
+				<section className="service-section-hero">
 					<div className="inner container">
 						<div className="service-section-hero-image">
 							<img src="/assets/about1.png" alt="about" />

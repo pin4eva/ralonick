@@ -41,7 +41,7 @@
 				display: flex;
 			}
 
-			.active{
+			.active {
 				border-bottom: 2px solid $primary;
 				padding-bottom: 0.6rem;
 			}
@@ -60,7 +60,7 @@
 		z-index: 2;
 		right: 0;
 		left: 0;
-		min-height: 50vh;
+		min-height: 100vh;
 		display: none;
 
 		&.show {
@@ -88,13 +88,12 @@
 				font-weight: 600;
 				place-content: center;
 				text-align: center;
-			transition: all 400ms ease-out;
+				transition: all 400ms ease-out;
 
-			@media screen and (min-width: $mobile){
-				margin-top: 2rem;
-				gap: 3rem;
-			}
-				
+				@media screen and (min-width: $mobile) {
+					margin-top: 2rem;
+					gap: 3rem;
+				}
 
 				a {
 					color: black;

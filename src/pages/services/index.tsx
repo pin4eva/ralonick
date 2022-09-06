@@ -14,7 +14,7 @@ import { Autoplay } from "swiper";
 const Services = () => {
 	return (
 		<FrontLayout>
-			<div className="service-section contain">
+			<div className="service-section">
 				<section className="service-section-hero container">
 					<div className="inner container">
 						<div className="service-section-hero-image">
@@ -102,50 +102,6 @@ const Services = () => {
 					</div>
 				</section>
 				<ClientComp />
-				{/* <Swiper
-					className="home-section-6 container"
-					modules={[Pagination, Autoplay]}
-					spaceBetween={50}
-					slidesPerView={1}
-					pagination={{ clickable: true }}
-					autoplay={{
-						delay: 3000,
-						disableOnInteraction: false,
-					}}
-					loop={true}
-					loopFillGroupWithBlank={true}
-					speed={1000}
-				>
-					{ClientReviews.map((item) => {
-						return (
-							<SwiperSlide className="section6-inner" key={item.id}>
-								<h2>Clients Reviews</h2>
-
-								<p className="section6-inner-txt1">{item.text}</p>
-								<div className="section6-inner-profile">
-									<img src={item.image} alt="" />
-									<h3>{item.names}</h3>
-									<p className="section6-inner-profile_caption">{item.position}</p>
-								</div>
-							</SwiperSlide>
-						);
-					})}
-				</Swiper> */}
-
-				{/* <section className="fourth-part container">
-					<div className="fourth-part-inner">
-						<h2>Clients Reviews</h2>
-						<p className="fourth-part-inner-txt1">
-							{`I had been looking to get my shipment and maintenance done but couldn't find the right Construction Company to do so. Rolanick Construction has been exceptional at what they do, from pre-planning, procurement, constructing in itself and maintenance it has been worth it. They understood the job and they delivered! Thank you!`}
-						</p>
-						<div className="fourth-part-inner-profile">
-							<img src="/assets/clientPic.png" alt="" />
-							<h3>Cindy Clifford</h3>
-							<p className="fourth-part-inner-profile_caption">Creative Director Sobaz Oil and gas</p>
-						</div>
-						<img src="/assets/reviewslider2.png" alt="" />
-					</div>
-				</section> */}
 			</div>
 		</FrontLayout>
 	);

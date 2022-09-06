@@ -40,6 +40,11 @@
 			@media screen and (min-width: $md) {
 				display: flex;
 			}
+
+			.active{
+				border-bottom: 2px solid $primary;
+				padding-bottom: 0.6rem;
+			}
 		}
 
 		.bars {

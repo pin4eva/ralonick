@@ -12,6 +12,7 @@
 	&-hero {
 		display: grid;
 		margin-bottom: 3rem;
+		margin-top: 1.5rem;
 
 		@media screen and (min-width: $md) {
 			margin-bottom: 27rem;
@@ -41,6 +42,53 @@
 				display: grid;
 				gap: 3rem;
 
+				.hero_img1 {
+					width: 90%;
+
+			//============ styling for the navigation buttons on the HERO SECCTION=============
+					.swiper-button-prev {
+						left: 63%;
+						top: 96%;
+						width: 1rem;
+						@media screen and (max-width: $md){
+							display: none;
+						}
+
+						&::after {
+							font-size: 0.8rem;
+							border: 1px solid #A00107;
+							color: #A00107;
+							background: #F5E5E6;
+							border-radius: 50%;
+							padding: 0.5rem 0.7rem;
+						}
+					}
+					.swiper-button-next{
+						right: 9%;
+						top: 96%;
+						width: 2rem;
+						@media screen and (max-width: $md){
+							display: none;
+						}
+						&::after{
+							font-size: 0.8rem;
+							border: 1px solid #A00107;
+							color: #A00107;
+							background: #F5E5E6;
+							border-radius: 50%;
+							padding: 0.5rem 0.7rem;
+						}
+					}
+
+					@media screen and (max-width: $mobile) {
+						width: 100%;
+						margin: 0 auto;
+					}
+					img {
+						width: 100%;
+					}
+				}
+
 				.hero-arrows {
 					margin-top: 1.5rem;
 					position: relative;
@@ -49,6 +97,9 @@
 					left: -10%;
 					align-items: center;
 					gap: 1rem;
+					@media screen and (max-width: $md){
+						display: none;
+					}
 
 					.line {
 						height: 0.8px;
@@ -59,6 +110,7 @@
 					.arrow-img {
 						display: flex;
 						gap: 1rem;
+						opacity: 0;
 					}
 				}
 
@@ -131,6 +183,7 @@
 	// About section
 	.about-section {
 		position: relative;
+		margin-top: 3rem;
 
 		.about-inner {
 			display: grid;
@@ -169,73 +222,177 @@
 	}
 
 	//3rd section
+	.home-section-3 {
+		margin-top: 3rem;
 
-    .thirdSection {
-        margin-top: 7.6875rem;
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 4rem;
+		@media screen and (max-width: $mobile) {
+			width: 90%;
+			margin: 3rem auto;
+		}
 
-        .text {
-            margin-top: 9.5rem;
-        }
+// <<<<<<< HEAD
+//         .text {
+//             margin-top: 9.5rem;
+//         }
 
-        .box {
-            margin-top: 2.25rem;
-            &-inner {
-                display: grid;
-                grid-template-columns: 1fr 1fr 1fr;
-                .box-inner-in {
-                    border: 1px solid $primary;
-                    text-align: center;
-                }
-                :nth-child(1) {
-                    border-left: none;
-                }
-                :last-child {
-                    border-right: none;
-                }
-            }
-        }
+//         .box {
+//             margin-top: 2.25rem;
+//             &-inner {
+//                 display: grid;
+//                 grid-template-columns: 1fr 1fr 1fr;
+//                 .box-inner-in {
+//                     border: 1px solid $primary;
+//                     text-align: center;
+//                 }
+//                 :nth-child(1) {
+//                     border-left: none;
+//                 }
+//                 :last-child {
+//                     border-right: none;
+//                 }
+//             }
+//         }
 
-        .img {
-            display: grid;
-            grid-template-columns: 1fr 1fr 1fr;
-            gap: 2rem;
-img{
-	width: 100%;
-}
-            :nth-child(2) {
-                margin-top: 5rem;
-            }
+//         .img {
+//             display: grid;
+//             grid-template-columns: 1fr 1fr 1fr;
+//             gap: 2rem;
+// img{
+// 	width: 100%;
+// }
+//             :nth-child(2) {
+//                 margin-top: 5rem;
+//             }
+// =======
+		@media screen and (max-width: $md) {
+			width: 90%;
+			margin: 3rem auto;
+		}
 
-            :last-child {
-                margin-top: 2.5rem;
-            }
-        }
+		.section3-inner {
+			@media screen and (min-width: $md) {
+				display: flex;
+				justify-content: space-between;
 
-        .h1 {
-            font-weight: 600;
-        }
-		
-    
+				&-left {
+					width: 47%;
+				}
+
+				&-right {
+					width: 47%;
+				}
+			}
+
+			&-left {
+				// @media screen and (max-width: $mobile) {
+				// 	width: 90%;
+				// 	margin: 0 auto;
+				// 	text-align: center;
+				// }
+				@media screen and (max-width: $md) {
+					width: 90%;
+					margin: 0 auto;
+					text-align: center;
+				}
+				h2 {
+					color: $secondary;
+					font-size: 3rem;
+					font-weight: 800;
+					line-height: 3.55556rem;
+				}
+
+				p {
+					&.text-danger {
+						font-weight: 600;
+					}
+
+					&.section3-heading {
+						color: $secondary;
+					}
+
+					&.section3-paragraph1 {
+						margin-block: 1.5rem 0;
+						font-weight: 500;
+						line-height: 1.77778rem;
+					}
+					&.section3-paragraph2 {
+						margin-bottom: 2.5rem;
+						font-weight: 500;
+						line-height: 1.77778rem;
+					}
+				}
+
+				.info {
+					display: flex;
+					text-align: center;
+					margin-bottom: 1.5rem;
+
+
+					@media screen and (max-width: $md) {
+						justify-content: center;
+					}
+
+					&-sub {
+						padding: 2%;
+						border: 1px solid $primary;
+
+						&:nth-child(1),
+						&:nth-child(3) {
+							border-left: none;
+							border-right: none;
+						}
+
+						p {
+							margin: 0;
+
+							&:nth-child(1) {
+								font-size: 3rem;
+								font-weight: 600;
+								color: $primary;
+							}
+
+							&:nth-child(2) {
+								font-size: 1rem;
+								font-weight: 500;
+								color: $secondary;
+							}
+						}
+					}
+				}
+			}
+
+			&-right {
+				height: fit-content;
+				margin-block: auto;
+
+				img {
+					width: 100%;
+					height: auto;
+				}
+			}
+		}
 	}
 
 	//4th section
 	.home-section-4 {
 		margin-top: 5rem;
+		
+		@media screen and (min-width: $lg) {
+			width: 100%;
+			margin: 5rem auto;
+		}
 
 		.section4-inner {
 			display: grid;
-			gap: 1.8rem;
+			gap: 2rem;
 
 			&-img {
 				display: none;
 			}
 
 			@media screen and (min-width: $lg) {
-				grid-template-columns: auto 1fr;
-				align-items: center;
+				grid-template-columns: 1fr 1fr;
+				// align-items: center;
 
 				&-img {
 					display: block;
@@ -258,6 +415,7 @@ img{
 				}
 
 				.text_gridbox {
+					margin-top: 2rem;
 					@media screen and (min-width: $md) {
 						display: grid;
 						grid-template-columns: 1fr 1fr;
@@ -296,8 +454,11 @@ img{
 
 	//5th section
 	.home-section-5 {
+		width: 100%;
 		.section5-inner {
+			// background: red;
 			margin-top: 5rem;
+			width: 100%;
 			h2 {
 				color: $secondary;
 				font-size: 3rem;
@@ -322,67 +483,7 @@ img{
 					margin-block: 1.8125rem 3rem;
 				}
 			}
-			&-gridbox {
-				display: grid;
-				gap: 1rem;
-				place-content: center;
-				@media screen and (min-width: $md) {
-					grid-template-columns: repeat(2, 21.33rem);
-					justify-content: space-between;
-					.item3 {
-						grid-column: 1/3;
-						justify-self: center;
-					}
-
-					@media screen and (min-width: $lg) {
-						grid-template-columns: repeat(3, 21.33rem);
-						.item3 {
-							grid-column: 3/4;
-						}
-					}
-				}
-				.section5-gridItem {
-					&-img {
-						width: 100%;
-					}
-					&-text {
-						background-color: $paleGreyBg;
-						padding-inline: 1rem;
-						max-width: 384px;
-						padding-bottom: 1rem;
-						p {
-							line-height: 1.5rem;
-
-							&.grid-heading {
-								font-weight: 600;
-								font-size: 1.2rem;
-								color: $secondary;
-								padding-top: 1.5rem;
-							}
-							&.grid-text {
-								font-weight: 500;
-								font-size: 14px;
-								color: $secondary;
-								padding-block: 0.5rem;
-							}
-						}
-						.grid-link {
-							text-decoration: none;
-							font-weight: 500;
-							font-size: 14px;
-							color: #000;
-							line-height: 1rem;
-
-							&:hover {
-								color: $primary;
-							}
-							img {
-								margin-left: 0.5rem;
-							}
-						}
-					}
-				}
-			}
+			
 			.section5-arrows {
 				margin-top: 1.5rem;
 				display: flex;
@@ -405,18 +506,107 @@ img{
 		}
 	}
 
+	//===========services styles from service========
+	.services {
+		display: grid;
+		gap: 1rem;
+		margin-top: 2rem;
+		width: 90%;
+
+		.swiper-button-prev, .swiper-button-next{
+			display: none;
+		}
+		
+
+
+		@media screen and (min-width: $md) {
+			grid-template-columns: 1fr 1fr 1fr;
+		}
+
+		&-items {
+			display: grid;
+			grid-template-rows: auto 1fr;
+
+			img {
+				width: 100%;
+			}
+
+			.content {
+				display: grid;
+				grid-template-rows: 0.4fr 1fr auto;
+				padding: 1.5rem 1.125rem;
+				gap: 0.625rem;
+				background: rgba(51, 51, 51, 0.04);
+				backdrop-filter: blur(34px);
+				-webkit-backdrop-filter: blur(34px);
+
+				p {
+					font-family: "Raleway";
+					font-style: normal;
+					font-weight: 600;
+					font-size: 1.125rem;
+					line-height: 1.5rem;
+					color: $secondary;
+				}
+
+				.texts {
+					font-family: "Raleway";
+					font-style: normal;
+					font-weight: 500;
+					font-size: 0.875rem;
+					line-height: 1.5rem;
+					color: $secondary;
+				}
+
+				.services-info {
+					display: flex;
+
+					&-list {
+						Link {
+							cursor: pointer;
+						}
+					}
+
+					&-pointer {
+						margin-left: 0.4rem;
+
+						img {
+							width: 100%;
+							height: 27%;
+						}
+					}
+				}
+			}
+		}
+	}
+
+
+
 	//6th section
 	.home-section-6 {
+		width: 80%;
+		margin-top: 3.5rem;
+
+		.swiper-pagination-clickable .swiper-pagination-bullet {
+			background: $primary;
+			width: 1rem;
+			height: 1rem;
+			border-radius: 50%;
+		}
+		h2 {
+			color: $secondary;
+			font-size: 3rem;
+			font-weight: 800;
+			line-height: 4rem;
+			text-align: center;
+		}
+
 		.section6-inner {
 			text-align: center;
 			margin-inline: auto;
-			margin-top: 5rem;
-			h2 {
-				color: $secondary;
-				font-size: 3rem;
-				font-weight: 800;
-				line-height: 4rem;
-			}
+			
+			width: 100%;
+			
 			.section6-inner-txt1 {
 				color: #000;
 				font-size: 1.125rem;
@@ -452,7 +642,9 @@ img{
 
 	//7th section
 	.home-section-7 {
+	
 		.section7-inner {
+			overflow: hidden;
 			margin-top: 5rem;
 			display: grid;
 			gap: 1.5rem;
@@ -536,26 +728,25 @@ img{
 			&-btn {
 				text-align: center;
 				margin-top: 3rem;
-				button{
-					color: white;
-				}
-
 			}
 		}
 	}
-	@media screen and (max-width:1200px) {
-        .thirdSection {
+// <<<<<<< HEAD
+// 	@media screen and (max-width:1200px) {
+//         .thirdSection {
 
-            display: flex;
-            flex-direction: column;
+//             display: flex;
+//             flex-direction: column;
 
-            .img {
-                display: flex;
-                gap: 1rem;
-                justify-content: center;
-                width: 100%;
-                height: auto;
-            }
-        }
-    }
+//             .img {
+//                 display: flex;
+//                 gap: 1rem;
+//                 justify-content: center;
+//                 width: 100%;
+//                 height: auto;
+//             }
+//         }
+//     }
+// =======
+
 }

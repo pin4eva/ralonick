@@ -4,7 +4,7 @@ import Link from "next/link";
 
 const FooterComp = () => {
 	return (
-		<footer className="footer" >
+		<footer className="footer">
 			<div>
 				<p>RALONICK LTD.</p>
 				<p>
@@ -17,13 +17,13 @@ const FooterComp = () => {
 				<p>Company</p>
 				<ul>
 					<li>
-						<Link href="/">About</Link>
+						<Link href="/about">About</Link>
 					</li>
 					<li>
-						<Link href="/">Projects</Link>
+						<Link href="/projects">Projects</Link>
 					</li>
 					<li>
-						<Link href="/">Services</Link>
+						<Link href="/services">Services</Link>
 					</li>
 				</ul>
 			</div>
@@ -40,10 +40,12 @@ const FooterComp = () => {
 						<Link href="/">Constructing</Link>
 					</li>
 				</ul>
-				<Link href="/">
+				<Link href="/services">
 					<a className="footer_arrowlink">
 						See all Services
-						<img src="/assets/footerArrow.png" alt="" />
+						<Link href="/services">
+							<img src="/assets/footerArrow.png" alt="" />
+						</Link>
 					</a>
 				</Link>
 			</div>

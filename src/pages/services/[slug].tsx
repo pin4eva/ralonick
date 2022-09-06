@@ -6,7 +6,7 @@ const singleservice = () => {
 	return (
 		<FrontLayout>
 			<div className="single-service-section">
-				<section className="single-service-hero">
+				<section className="single-service-hero container">
 					<div className="single-service-hero-image">
 						<img src="/assets/Frame 50.png" alt="bg" />
 					</div>

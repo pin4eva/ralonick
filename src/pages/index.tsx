@@ -48,16 +48,16 @@ const Home = () => {
 							<div className="inner-left">
 								<Swiper
 									className="hero_img1 container"
-									modules={[Navigation]}
+									modules={[Navigation, Autoplay]}
 									spaceBetween={50}
 									slidesPerView={1}
 									navigation
-									// autoplay={{
-									// 	delay: 3000,
-									// 	disableOnInteraction: false,
-									// }}
-									// loop={true}
-									// loopFillGroupWithBlank={true}
+									autoplay={{
+										delay: 5000,
+										disableOnInteraction: false,
+									}}
+									loop={true}
+									loopFillGroupWithBlank={true}
 									speed={1000}
 								>
 									{SwiperData.map((data) => {
@@ -181,63 +181,61 @@ const Home = () => {
 					</div>
 				</section>
 
-				<section className="home-section-4 container">
-					<div className="section4-inner">
-						<div className="section4-inner-img" data-aos="fade-down" data-aos-duration="3000" ease-in-out-quart>
-							<img src="/assets/why__img.png" alt="" />
-						</div>
-						<div className="section4-inner-text">
-							<h2>Why Choose Us</h2>
-							<div className="text_gridbox" data-aos="fade-up" data-aos-duration="3000" ease-in-out-quart>
-								<div className="text_gridItem">
-									<div className="empty-box">
-										<img src="images/Bag.png" alt="" />
-									</div>
-									<p className="grid-heading">Quality</p>
-									<p>
-										Great service delivery is incomplete without quality. It is our core value of operation, we achieve
-										this by employing the policy of harnessing available resources, experience (of higly skilled
-										engineers) and technical expertise.
-									</p>
-								</div>
-								<div className="text_gridItem">
-									<div className="empty-box">
-										<img src="assets/integrity.svg" alt="" />
-									</div>
-									<p className="grid-heading">Integrity</p>
+				<div className="home-section-41 container">
+					<div className="fifth-image" data-aos="zoom-in-down" data-aos-duration="2500">
+						<img src="assets/why__img.png" alt="" />
+					</div>
 
-									<p>
-										Service entails a lot of commitment laced with passion, with years of experience and service
-										provision, we stand for excellent and honest work as we stay true to our words. Maintaining the
-										trust placed in us by all our clients and stakeholders is key to us.
-									</p>
-								</div>
-								<div className="text_gridItem">
-									<div className="empty-box">
-										<img src="assets/safety.svg" alt="" />
-									</div>
-									<p className="grid-heading">Professionalism</p>
-									<p>
-										Skill and competence are as important as practice therefore all staff are highly trained, possess
-										high experiential knowledge in the field, and are highly professional. We value professionalism, to
-										us it means giving clients the best value for their money.
-									</p>
-								</div>
-								<div className="text_gridItem">
-									<div className="empty-box">
-										<img src="images/Helmet.png" alt="" />
-									</div>
-									<p className="grid-heading">Safety</p>
-									<p>
-										As one of our offered service we are not lacking in ensuring that our installations and technical
-										works are properly done. We have zero reservations as regards safety. Our staff are highly trained
-										for personal & on-site safety.
-									</p>
-								</div>
+					<div className="fifth-section-text">
+						<h1>Why Choose Us</h1>
+						<div className="strict-text" data-aos="zoom-in-up" data-aos-duration="3000">
+							<div>
+								<span>
+									<img src="assets/safety.svg" alt="" />
+								</span>
+								<h5>Quality</h5>
+								<p>
+									Great service delivery is incomplete without quality. It is our core value of operation, we achieve
+									this by employing the policy of harnessing available resources, experience (of higly skilled
+									engineers) and technical expertise.
+								</p>
+							</div>
+							<div>
+								<span>
+									<img src="assets/integrity.svg" alt="" />
+								</span>
+								<h5>Integrity</h5>
+								<p>
+									Service entails a lot of commitment laced with passion, with years of experience and service
+									provision, we stand for excellent and honest work as we stay true to our words. Maintaining the trust
+									placed in us by all our clients and stakeholders is key to us.
+								</p>
+							</div>
+							<div>
+								<span>
+									<img src="assets/quality.svg" alt="" />
+								</span>
+								<h5>Professionalism</h5>
+								<p>
+									Skill and competence are as important as practice therefore all staff are highly trained, possess high
+									experiential knowledge in the field, and are highly professional. We value professionalism, to us it
+									means giving clients the best value for their money.
+								</p>
+							</div>
+							<div>
+								<span>
+									<img src="images/Bag.png" alt="" />
+								</span>
+								<h5>Safety</h5>
+								<p>
+									As one of our offered service we are not lacking in ensuring that our installations and technical
+									works are properly done. We have zero reservations as regards safety. Our staff are highly trained for
+									personal & on-site safety.{" "}
+								</p>
 							</div>
 						</div>
 					</div>
-				</section>
+				</div>
 
 				<section className="home-section-5 container">
 					<div className="section5-inner">
@@ -250,26 +248,10 @@ const Home = () => {
 								<button className="btn btn-outline-danger hug">All Services</button>
 							</Link>
 						</div>
-
-						{/* <div className="section5-arrows">
-							<div className="arrows">
-								<img src="/assets/keyboardArrowLeft.png" alt="" />
-								<img src="/assets/keyboardArrowRight.png" alt="" />
-							</div>
-							<div className="line"></div>
-						</div> */}
 					</div>
 				</section>
 
 				<ServiceComp />
-				{/* <SwiperButtonNext /> */}
-				{/* <div className="section5-arrows">
-					<div className="arrows">
-						<img src="/assets/keyboardArrowLeft.png" alt="" />
-						<img src="/assets/keyboardArrowRight.png" alt="" />
-					</div>
-					<div className="line"></div>
-				</div> */}
 
 				<ClientComp />
 

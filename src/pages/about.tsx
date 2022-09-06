@@ -142,6 +142,17 @@ const AboutPage = () => {
 				</div>
 				{/* ==============END OF FOURTH SECTION========================== */}
 
+				<div className="background">
+					<h1>Background</h1>
+					<p>
+						<span>RALONICK SERVICES LTD.</span> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quia illo
+						culpa similique quidem dolor, sint saepe id, blanditiis iusto perferendis distinctio? Rerum aut architecto
+						laudantium deserunt minima ea sequi totam eaque quisquam iusto itaque veritatis iste temporibus, rem
+						accusamus dignissimos! Repellendus, quos pariatur deleniti porro quod cupiditate, perspiciatis suscipit
+						reprehenderit similique aperiam, distinctio laboriosam eos! Repudiandae officia aliquam aperiam fugit.
+					</p>
+				</div>
+
 				{/* =======================BEGINNING OF FIFTH SECTION==================== */}
 				<div className="fifth-section">
 					<div className="fifth-image">
@@ -188,7 +199,7 @@ const AboutPage = () => {
 								<span>
 									<img src="images/Bag.png" alt="" />
 								</span>
-								<h5>Safety</h5>
+								<h5>Resilience Safety</h5>
 								<p>
 									As one of our offered service we are not lacking in ensuring that our installations and technical
 									works are properly done. We have zero reservations as regards safety. Our staff are highly trained for

@@ -13,28 +13,31 @@ import "swiper/css/navigation";
 import { Autoplay } from "swiper";
 import { SwiperData } from "../components/Data";
 
+const SwiperButtonControl = () => {
+	const swiper = useSwiper();
+	// const myData = SwiperData;
+
+	return (
+		<div className="hero-arrows">
+			{" "}
+			<div className="line"></div>
+			<div className="arrow-img">
+				<button onClick={() => swiper.slidePrev()} className="left">
+					<i className="fa-solid fa-chevron-left"></i>
+				</button>
+				<button onClick={() => swiper.slideNext()} className="right">
+					<i className="fa-solid fa-chevron-right"></i>
+				</button>
+			</div>
+		</div>
+	);
+};
+
 const Home = () => {
 	useEffect(() => {
 		AOS.init();
 		AOS.refresh();
 	}, []);
-
-	const SwiperButtonNext = () => {
-		const swiper = useSwiper();
-		// const myData = SwiperData;
-
-		return (
-			<div>
-				{" "}
-				<button onClick={() => swiper.slidePrev()}>
-					<i className="fa-solid fa-chevron-left"></i>
-				</button>
-				<button onClick={() => swiper.slideNext()}>
-					<i className="fa-solid fa-chevron-right"></i>
-				</button>
-			</div>
-		);
-	};
 
 	return (
 		<FrontLayout>
@@ -64,14 +67,14 @@ const Home = () => {
 											</SwiperSlide>
 										);
 									})}
-									<div className="hero-arrows">
+									<SwiperButtonControl />
+									{/* <div className="hero-arrows">
 										<div className="line"></div>
 										<div className="arrow-img">
-											{/* <SwiperButtonNext /> */}
 											<img src="/assets/keyboardArrowLeft.png" className="" alt="" />
 											<img src="/assets/keyboardArrowRight.png" alt="" />
 										</div>
-									</div>
+									</div> */}
 								</Swiper>
 
 								<div className="hero-text" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
@@ -80,7 +83,9 @@ const Home = () => {
 										End to end service in the design, engineering, procurement, fabrication, installation, repair of
 										(GRE), (GRP) and Vinylester Pipe system and products.
 									</p>
-									<Link href="/projects"><button className="btn btn-danger hug">See Projects</button></Link>
+									<Link href="/projects">
+										<button className="btn btn-danger hug">See Projects</button>
+									</Link>
 								</div>
 							</div>
 						</div>
@@ -233,7 +238,9 @@ const Home = () => {
 							<p>
 								{`At Ralonick, we offer a wide range of services from engineering, procurement, construction, to equipment leasing for land & marine.`}
 							</p>
-							<Link href="/services"><button className="btn btn-outline-danger hug">All Services</button></Link>
+							<Link href="/services">
+								<button className="btn btn-outline-danger hug">All Services</button>
+							</Link>
 						</div>
 
 						{/* <div className="section5-arrows">
@@ -247,7 +254,14 @@ const Home = () => {
 				</section>
 
 				<ServiceComp />
-				{/* ============TESTIMONIAL COMPONENT=========== */}
+				{/* <SwiperButtonNext /> */}
+				{/* <div className="section5-arrows">
+					<div className="arrows">
+						<img src="/assets/keyboardArrowLeft.png" alt="" />
+						<img src="/assets/keyboardArrowRight.png" alt="" />
+					</div>
+					<div className="line"></div>
+				</div> */}
 
 				<ClientComp />
 

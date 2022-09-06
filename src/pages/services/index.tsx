@@ -4,12 +4,18 @@ import FrontLayout from "../../layouts/front.layout";
 import Data from "../../components/data.json";
 import Link from "next/link";
 import ClientComp from "../../components/ClientComp";
+import { ClientReviews } from "../../components/Data";
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
+import { Pagination } from "swiper";
+import "swiper/css/pagination";
+import { Autoplay } from "swiper";
 
 const Services = () => {
 	return (
 		<FrontLayout>
-			<div className="service-section">
-				<section className="service-section-hero ">
+			<div className="service-section contain">
+				<section className="service-section-hero container">
 					<div className="inner container">
 						<div className="service-section-hero-image">
 							<img src="/assets/about1.png" alt="about" />
@@ -17,7 +23,7 @@ const Services = () => {
 						<div className="service-section-hero-text">Ralonik LTD. Services</div>
 					</div>
 				</section>
-				
+
 				<section className="second-part container">
 					<div className="second-part-inner">
 						<h2>We build Solutions</h2>
@@ -69,26 +75,62 @@ const Services = () => {
 						</div>
 						<div className="third-part-inner-bottom-info">
 							<div className="third-part-inner-bottom-info-collation">
-								<p className="years">25 <sup>+</sup></p>
+								<p className="years">
+									25 <sup>+</sup>
+								</p>
 								<p className="data">Completed Projects</p>
 							</div>
 							<div className="third-part-inner-bottom-info-collation">
-								<p className="years">25 <sup>+</sup></p>
+								<p className="years">
+									25 <sup>+</sup>
+								</p>
 								<p className="data">Trusted Partners</p>
 							</div>
 							<div className="third-part-inner-bottom-info-collation">
-								<p className="years">50 <sup>+</sup></p>
+								<p className="years">
+									50 <sup>+</sup>
+								</p>
 								<p className="data">Satisfied Clients</p>
 							</div>
 							<div className="third-part-inner-bottom-info-collation">
-								<p className="years">5 <sup>+</sup></p>
+								<p className="years">
+									5 <sup>+</sup>
+								</p>
 								<p className="data">Years Experience</p>
 							</div>
 						</div>
 					</div>
 				</section>
-
 				<ClientComp />
+				{/* <Swiper
+					className="home-section-6 container"
+					modules={[Pagination, Autoplay]}
+					spaceBetween={50}
+					slidesPerView={1}
+					pagination={{ clickable: true }}
+					autoplay={{
+						delay: 3000,
+						disableOnInteraction: false,
+					}}
+					loop={true}
+					loopFillGroupWithBlank={true}
+					speed={1000}
+				>
+					{ClientReviews.map((item) => {
+						return (
+							<SwiperSlide className="section6-inner" key={item.id}>
+								<h2>Clients Reviews</h2>
+
+								<p className="section6-inner-txt1">{item.text}</p>
+								<div className="section6-inner-profile">
+									<img src={item.image} alt="" />
+									<h3>{item.names}</h3>
+									<p className="section6-inner-profile_caption">{item.position}</p>
+								</div>
+							</SwiperSlide>
+						);
+					})}
+				</Swiper> */}
 
 				{/* <section className="fourth-part container">
 					<div className="fourth-part-inner">

@@ -334,7 +334,30 @@
 		}
 	}
 	//==============END OF FOURTH SECTION==============
+	.background {
+		width: 70%;
+		margin: 2rem auto;
+		text-align: center;
+		padding-top: 2rem;
+		padding-inline: 1rem;
+		box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+		transition: all 500ms ease-in-out;
 
+		&:hover {
+			transform: scale(1.05);
+		}
+
+		p {
+			font-style: italic;
+			width: 100%;
+
+			span {
+				color: $primary;
+				// font-size: 2rem;
+				font-weight: 700;
+			}
+		}
+	}
 	//===================BEGINNING OF FIFTH SECTION=======================
 	.fifth-section {
 		display: flex;

@@ -4,12 +4,6 @@ import FrontLayout from "../../layouts/front.layout";
 import Data from "../../components/data.json";
 import Link from "next/link";
 import ClientComp from "../../components/ClientComp";
-import { ClientReviews } from "../../components/Data";
-import { Swiper, SwiperSlide } from "swiper/react";
-import "swiper/css";
-import { Pagination } from "swiper";
-import "swiper/css/pagination";
-import { Autoplay } from "swiper";
 
 const Services = () => {
 	return (
@@ -41,8 +35,8 @@ const Services = () => {
 									<div key={i} className="services-items">
 										<img src={item?.image} alt="ig" />
 										<div className="content">
-											<p>{item.sub}</p>
-											<div className="texts">{item.text}</div>
+											<p>{item.title}</p>
+											<div className="texts">{item.text.slice(0, 210)}</div>
 											<div className="services-info">
 												<div className="services-info-list">
 													<Link href="/services/jgjj">
@@ -50,11 +44,9 @@ const Services = () => {
 													</Link>
 												</div>
 												<div className="services-info-pointer">
-													<Link href="/services/jsjsjs">
-														<a>
-															<img src={item.btn} alt="arrow" />
-														</a>
-													</Link>
+													<a href={`/services/${item.id}`}>
+														<img src={item.btn} alt="arrow" />
+													</a>
 												</div>
 											</div>
 										</div>

@@ -78,6 +78,10 @@
 				&-items {
 					display: grid;
 					grid-template-rows: auto 1fr;
+					transition: all 500ms ease-in-out;
+					&:hover {
+						transform: scale(1.05);
+					}
 
 					img {
 						width: 100%;
@@ -113,8 +117,12 @@
 							display: flex;
 
 							&-list {
+								a {
+									text-decoration: none;
+								}
 								Link {
 									cursor: pointer;
+									text-decoration: none;
 								}
 							}
 
@@ -131,7 +139,7 @@
 				}
 			}
 			&-bottom-arrow {
-				display: flex;
+				display: none;
 				justify-content: flex-end;
 				gap: 0.8rem;
 				margin-right: 3rem;

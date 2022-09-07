@@ -42,9 +42,9 @@ const Services = () => {
 													</Link>
 												</div>
 												<div className="services-info-pointer">
-													<a href="/services/jgjj">
+													<Link href="/services/jgjj">
 														<img src={item.btn} alt="arrow" />
-													</a>
+													</Link>
 												</div>
 											</div>
 										</div>

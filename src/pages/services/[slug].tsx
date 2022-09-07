@@ -1,8 +1,12 @@
 /* eslint-disable @next/next/no-img-element */
 import React from "react";
 import FrontLayout from "../../layouts/front.layout";
+import Data from "../../components/data.json";
+import { useRouter } from "next/router";
 
 const singleservice = () => {
+	const path = useRouter();
+
 	return (
 		<FrontLayout>
 			<div className="single-service-section">
@@ -11,6 +15,14 @@ const singleservice = () => {
 						<img src="/assets/Frame 50.png" alt="bg" />
 					</div>
 				</section>
+				{/* 
+				{ Data.map((item) => {
+					return(
+						<div>{item.title1}</div>
+					)
+				})
+
+				} */}
 
 				<section className="single-service-1 container">
 					<div className="single-service-1-inner">

@@ -4,8 +4,14 @@ import FrontLayout from "../../layouts/front.layout";
 import Data from "../../components/data.json";
 import Link from "next/link";
 import ClientComp from "../../components/ClientComp";
+import { createSlug } from "../../utils/string.utils";
 
 const Services = () => {
+	const services = Data.map((service) => ({
+		...service,
+		slug: createSlug(service.title),
+	}));
+
 	return (
 		<FrontLayout>
 			<div className="service-section container">
@@ -18,8 +24,8 @@ const Services = () => {
 					</div>
 				</section>
 
-				<section className="second-part container">
-					<div className="second-part-inner">
+				<section className="services-intro container">
+					<div className="services-intro-inner">
 						<h2>We build Solutions</h2>
 						<div className="services-offer">
 							<p>
@@ -29,34 +35,10 @@ const Services = () => {
 							<button className="btn btn-danger hug">Book Service</button>
 						</div>
 
-						<div className="services">
-							{Data.map((item, i) => {
-								return (
-									<div key={i} className="services-items">
-										<img src={item?.image} alt="ig" />
-										<div className="content">
-											<p>{item.title}</p>
-											<div className="texts">{item.text.slice(0, 210)}</div>
-											<div className="services-info">
-												<div className="services-info-list">
-													<Link href="/services/jgjj">
-														<a>{item.learn}</a>
-													</Link>
-												</div>
-												<div className="services-info-pointer">
-													<a href={`/services/${item.id}`}>
-														<img src={item.btn} alt="arrow" />
-													</a>
-												</div>
-											</div>
-										</div>
-									</div>
-								);
-							})}
-						</div>
-						<div className="second-part-inner-bottom-arrow">
-							<img src="/assets/keyboardArrowLeft.png" alt="lt" />
-							<img src="/assets/keyboardArrowRight.png" alt="rt" />
+						<div className="services-list">
+							{services.map((item, i) => (
+								<ServiceItemComp key={i} />
+							))}
 						</div>
 					</div>
 				</section>
@@ -102,3 +84,32 @@ const Services = () => {
 };
 
 export default Services;
+
+const ServiceItemComp = () => (
+	<div className="services-items">
+		<div className="service-item-inner">
+			<div className="services-item-image">
+				<img src="/images/services/steel1.png" alt="ig" />
+			</div>
+			<div className="content">
+				<p>Title</p>
+				<div className="texts">
+					Ralonick Service Limited Offer a complete range of advanced insulation solutions for the oil and gas and food
+					and beverages industries. Our products range covers various insulation requirements for piping and equipment
+					systems, and insulation of subsea systems. Or uproducts range meets demanding NORSOK requirement and suited
+					for tough environmental conditions
+				</div>
+				<div className="services-info">
+					<div className="services-info-list">
+						<Link href={`/services/jdjdj`}>
+							<a className="d-flex align-items-center gap-2">
+								Learn More
+								<img style={{ width: "0.5rem", height: "0.5rem" }} src="/assets/learnMoreArrow.png" alt="arrow" />
+							</a>
+						</Link>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+);

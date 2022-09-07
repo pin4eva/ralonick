@@ -31,7 +31,7 @@ const Home = () => {
 						<div className="left">
 							<div className="inner-left">
 								<Swiper
-									className="hero_img1 container"
+									className="hero_img1"
 									spaceBetween={50}
 									slidesPerView={1}
 									navigation
@@ -63,7 +63,8 @@ const Home = () => {
 						</div>
 
 						<div className="inner-right" data-aos="fade-up" data-aos-duration="3000" ease-in-out-quart="true">
-							<div className="video-desc">
+							<img src="/assets/hero_img2.png" alt="" />
+							{/* <div className="video-desc">
 								<div className="video-desc-inner">
 									<img src="/assets/PlayArrow.png" alt="" />
 									<div>
@@ -71,17 +72,16 @@ const Home = () => {
 										<p className="duration mb-0">5:15 min</p>
 									</div>
 								</div>
-							</div>
-							<img className="img2" src="/assets/hero_img2.png" alt="" />
+							</div> */}
 						</div>
 					</div>
 				</section>
 
 				<section className="about-section container">
 					<div className="about-inner">
-						<div className=" about-inner-left" data-aos="fade-up" data-aos-duration="3000" ease-in-out-quart="true">
+						{/* <div className=" about-inner-left" data-aos="fade-up" data-aos-duration="3000" ease-in-out-quart="true">
 							<img className="about-img" src="/assets/about_img1.png" alt="" />
-						</div>
+						</div> */}
 
 						<div
 							className="about_text_sect about-inner-right"
@@ -90,7 +90,7 @@ const Home = () => {
 							data-aos-duration="3000"
 							ease-in-out-quart="true"
 						>
-							<div className="right-text">
+							{/* <div className="right-text">
 								<p className="text-danger fw-600">RALONICK</p>
 								<h2 className="h1">About Us</h2>
 								<p>
@@ -115,7 +115,7 @@ const Home = () => {
 										Learn More
 									</button>
 								</Link>
-							</div>
+							</div> */}
 						</div>
 					</div>
 				</section>
@@ -340,7 +340,7 @@ const SwiperButtonControl: React.FC<{ disableNext: boolean; disablePrev: boolean
 	return (
 		<div className="hero-arrows">
 			<div className="line"></div>
-			<div className="arrow-img">
+			<div className="control-arrows">
 				<button disabled={disablePrev} onClick={() => swiper.slidePrev()} className="controls">
 					<i className="fa-solid fa-chevron-left"></i>
 				</button>

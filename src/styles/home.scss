@@ -1,1 +1,99 @@
+.home {
+	&-hero {
+		display: grid;
+		margin-bottom: 3rem;
+		margin-top: 1.5rem;
 
+		.inner {
+			display: grid;
+			gap: 1rem;
+			// position: relative;
+
+			&-left {
+				display: grid;
+				gap: 3rem;
+
+				.hero_img1 {
+					width: 90%;
+
+					//============ styling for the navigation buttons on the HERO SECCTION=============
+					.swiper-button-prev {
+						display: none;
+					}
+					.swiper-button-next {
+						display: none;
+					}
+
+					@media screen and (max-width: $mobile) {
+						width: 100%;
+						margin: 0 auto;
+					}
+					img {
+						width: 100%;
+					}
+
+					.hero-arrows {
+						margin-top: 1.5rem;
+						bottom: 0;
+						display: flex;
+						left: -10%;
+						align-items: center;
+						gap: 1rem;
+
+						.line {
+							height: 0.8px;
+							background: #adadad;
+							flex: 1;
+						}
+
+						.control-arrows {
+							display: flex;
+							gap: 1rem;
+
+							.controls {
+								border: 1px solid #a00107;
+								color: #a00107;
+								background: #f5e5e6;
+								border-radius: 50%;
+								padding: 0.3rem 0.7rem;
+							}
+						}
+					}
+				}
+
+				.hero-text {
+					h1 {
+						font-size: 48px;
+						color: $primary;
+						font-weight: 800;
+					}
+
+					p {
+						font-size: 18px;
+						font-weight: 500;
+						margin-bottom: 1.5rem;
+					}
+				}
+
+				@media screen and (min-width: $mobile) {
+					max-width: 827px;
+					grid-template-columns: auto auto;
+					align-items: center;
+				}
+			}
+
+			.inner-right {
+				width: 100%;
+				background: green;
+				@media screen and (min-width: $mobile) {
+					width: 60%;
+					display: flex;
+					justify-self: end;
+				}
+				img {
+					width: 100%;
+				}
+			}
+		}
+	}
+}

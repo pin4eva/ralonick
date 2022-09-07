@@ -1,5 +1,4 @@
 /* eslint-disable @next/next/no-img-element */
-
 import { useSwiper } from "swiper/react";
 import FrontLayout from "../layouts/front.layout";
 import Link from "next/link";
@@ -11,7 +10,7 @@ import { useEffect } from "react";
 import { SwiperSlide, Swiper } from "swiper/react";
 import { Navigation } from "swiper";
 import "swiper/css/navigation";
-import { Autoplay } from "swiper";
+// import { Autoplay } from "swiper";
 import { SwiperData } from "../components/Data";
 
 const Home = () => {

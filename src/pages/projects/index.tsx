@@ -28,35 +28,10 @@ function Project() {
                         </div>  
                         <div className="inner-second">
                                 <p className="p">Ralonick constructions operates within the framework of commercial and industrial activities, developing and carrying basic & and detailed services in engineering.</p>
-                                
                         <button className=" btn btn-danger hug">Book Services</button>
-                   
                             </div>
                     </div>
-                
                 </section>
-                {/* <section className="third-section">
-                    <div className="inner">
-                        {Projects.map((item) => {
-                            return (
-                                <div className="inner-inner" key={item.id}>
-                                    <div className="inner_text">
-                                        <div className="inner-inner_text">
-                                            <h6>{item.header}</h6>
-                                            <p>{item.text}</p>
-                                            <Link as={"/projects/{$[id]}"} href="/projects/{$[id]}" className="p">{item.link}</Link>
-                                            <Link as={"/projects/{$[id]}"} href="/projects/{$[id]}">{item.arrow}</Link>
-                                        </div>
-                                    </div>
-
-                                    <div className="inner_img">
-                                        {item.img}
-                                    </div>
-                                </div>
-                            )
-                        })}
-                    </div>
-                </section> */}
                 <section className="home-section-7">
 					<div className="section7-inner">
 						<div className="section7-inner-sub">
@@ -153,6 +128,7 @@ function Project() {
                 <section className="firth-section">
                     <h1>Our Team</h1>
                     <div className="profile">
+                        <div className="profile-card">
                         {
                             Workers.map((item) => {
                                 return (
@@ -161,7 +137,7 @@ function Project() {
                                             {item.img}
                                         </div>
                                         <div className="info">
-                                            <h2 className="h2 profile-h2">{item.name}</h2>
+                                            <h2 className="profile-h2">{item.name}</h2>
                                             <p className="profile-p">{item.ceo}</p>
                                             <div className="icons">
                                                 {item.iconinstagram}
@@ -172,6 +148,8 @@ function Project() {
                                 )
                             })
                         }
+                        </div>
+                       
                     </div>
                 </section>
             </div >

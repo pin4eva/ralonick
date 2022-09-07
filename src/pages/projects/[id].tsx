@@ -45,30 +45,30 @@ function SingleProjects() {
                         <div className="first-section_grid">
                             <div className="first-section_grid-item">
                                 <div className="a">
-                                <img src={"/images/GridFrame1.png"} alt="" />    
+                                    <img src={"/images/GridFrame1.png"} alt="" />
                                 </div>
-                           <div className="b"> <img src={"/images/GridFrame2.png"} alt="b" /></div>
-                           <div className="c"> <img src={"/images/GridFrame3.png"} alt="c" /></div>
-                           <div className="d"> <img src={"/images/GridFrame4.png"}  alt="" /></div>      
+                                <div className="b"> <img src={"/images/GridFrame2.png"} alt="b" /></div>
+                                <div className="c"> <img src={"/images/GridFrame3.png"} alt="c" /></div>
+                                <div className="d"> <img src={"/images/GridFrame4.png"} alt="" /></div>
                             </div>
                         </div>
 
                     </section>
                     <section className="single-second-section">
-                        <div className="box">
-                            <div className="box-inner">
-                                {Research2.map((item) => {
-                                    return (
-                                        <div key={item.id} className="box-inner-in">
-                                            <h1 className="h1">{item.number}</h1>
-                                            <h1><p>{item.text}</p></h1>
-                                        </div>
-                                    )
-                                })}
+                    <div className="box">
+                        <div className="box-inner">
+                            {Research2.map((item) => {
+                                return (
+                                    <div key={item.id} className="box-inner-in">
+                                        <h1 className="h1">{item.number}</h1>
+                                        <p>{item.text}</p>
+                                    </div>
+                                )
+                            })}
 
-                            </div>
                         </div>
-                    </section>
+                    </div>
+                </section>
                     <section className="single-third-section">
                         <h1>Why Choose Us</h1>
                         <div className="box">
@@ -90,141 +90,61 @@ function SingleProjects() {
                         </div>
 
                     </section>
-                    {/* <section className="single-fourth-section">
-                        <div className="fourth-section_header">
-                            {/* <section className="third-section">
-                    <div className="inner">
-                        {Projects.map((item) => {
-                            return (
-                                <div className="inner-inner" key={item.id}>
-                                    <div className="inner_text">
-                                        <div className="inner-inner_text">
-                                            <h6>{item.header}</h6>
-                                            <p>{item.text}</p>
-                                            <Link as={"/projects/{$[id]}"} href="/projects/{$[id]}" className="p">{item.link}</Link>
-                                            <Link as={"/projects/{$[id]}"} href="/projects/{$[id]}">{item.arrow}</Link>
-                                        </div>
-                                    </div>
-
-                                    <div className="inner_img">
-                                        {item.img}
-                                    </div>
-                                </div>
-                            )
-                        })}
-                    </div>
-                </section> */}
-                            {/* <h1>View More Projects</h1>
-                        </div>
-                        {
-                            Project2.map((item) => {
-                                return (
-                                    <div className="fourth-section-inner">
-                                        <div className="inner-text_box">
-                                            <h6>{item.header}</h6>
-                                            <p>{item.text}</p>
-                                            <div className="inner-text_link">
-                                              <Link href="/projects"><a>{item.link}</a></Link>
-                                              <Link href="/projects"><a>{item.arrow}</a></Link>
-                                            </div>
-                                          
-                                        </div>
-                                        <div className="inner-img">
-                                                {item.img}
-                                            </div>
-                                    </div>
-                                )
-                            })
-                        }
-                    </section> */}
-              
                 </div>
                 <section className="home-section-7">
-					<div className="section7-inner">
-						<div className="section7-inner-sub">
-							<img src="/assets/projects1.png" alt="" className="large-img" />
-							<div className="section7-inner-sub_text">
-								<p className="text-heading">Project Name</p>
-								<p className="inner-text-body">
-									Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis mi sagittis aliquet elementum nunc
-									lectus. Arcu, non ornare commodo, convallis lectus.
-								</p>                                       
-								<Link href="/projects/jrj"className="text-link">
-									<a className="text-link_link">
-										More Details <img src="/assets/moreDetailsArrow.png" alt="" />
-									</a>
-								</Link>
-							</div>
-						</div>
-						{/* <div className="section7-inner-sub sub-2">
-							<img src="/assets/projects2.png" alt="" className="large-img" />
-							<div className="section7-inner-sub_text sub-2_text">
-								<p className="text-heading">Project Name</p>
-								<p className="inner-text-body">
-									Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis mi sagittis aliquet elementum nunc
-									lectus. Arcu, non ornare commodo, convallis lectus.
-								</p>
-
-								<Link href="/projects/jff" className="text-link">
-									<a className="text-link_link">
-										More Details
-										<img src="/assets/moreDetailsArrow.png" alt="" />
-									</a>
-								</Link>
-							</div>
-						</div>
-						<div className="section7-inner-sub">
-							<img src="/assets/projects3.png" alt="" className="large-img" />
-							<div className="section7-inner-sub_text">
-								<p className="text-heading">Project Name</p>
-								<p className="inner-text-body">
-									Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis mi sagittis aliquet elementum nunc
-									lectus. Arcu, non ornare commodo, convallis lectus.
-								</p>
-
-								<Link href="/projects/jjj" className="text-link">
-									<a className="text-link_link">
-										More Details
-										<img src="/assets/moreDetailsArrow.png" alt="" />
-									</a>
-								</Link>
-							</div>
-						</div> */}
-                        <div className="last-part">
-                            
-                        <div className="section7-inner-btn">
-							<button className="button hug">Contact Us</button>
-						</div>
+                    <div className="section7-inner">
+                        <div className="section7-inner-sub">
+                            <img src="/assets/projects1.png" alt="" className="large-img" />
+                            <div className="section7-inner-sub_text">
+                                <p className="text-heading">Project Name</p>
+                                <p className="inner-text-body">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis mi sagittis aliquet elementum nunc
+                                    lectus. Arcu, non ornare commodo, convallis lectus.
+                                </p>
+                                <Link href="/projects/jrj" className="text-link">
+                                    <a className="text-link_link">
+                                        More Details <img src="/assets/moreDetailsArrow.png" alt="" />
+                                    </a>
+                                </Link>
+                            </div>
                         </div>
-						
-					</div>
-				</section>
-<section className="single-project-firth-section">
+                        <div className="last-part">
+
+                            <div className="section7-inner-btn">
+                                <button className="button hug">Contact Us</button>
+                            </div>
+                        </div>
+
+                    </div>
+                </section>
+                <section className="single-project-firth-section">
 
                     <h1>Our Team</h1>
                     <div className="profile">
-                        {
-                            Workers.map((item) => {
-                                return (
-                                    <div className="inner-profile" key={item.id}>
-                                        <div className="Portrait">
-                                            {item.img}
-                                        </div>
-                                        <div className="info">
-                                            <h2 className="h2 profile-h2">{item.name}</h2>
-                                            <p className="profile-p">{item.ceo}</p>
-                                            <div className="icons">
-                                                {item.iconinstagram}
-                                                {item.icontwitter}
+                        <div className="profile-card">
+                            {
+                                Workers.map((item) => {
+                                    return (
+                                        <div className="inner-profile" key={item.id}>
+                                            <div className="Portrait">
+                                                {item.img}
+                                            </div>
+                                            <div className="info">
+                                                <h2 className="profile-h2">{item.name}</h2>
+                                                <p className="profile-p">{item.ceo}</p>
+                                                <div className="icons">
+                                                    {item.iconinstagram}
+                                                    {item.icontwitter}
+                                                </div>
                                             </div>
                                         </div>
-                                    </div>
-                                )
-                            })
-                        }
+                                    )
+                                })
+                            }
+                        </div>
                     </div>
-             
-</section>
+
+                </section>
             </div>
         </FrontLayout>
     )

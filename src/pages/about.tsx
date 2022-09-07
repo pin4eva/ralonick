@@ -242,7 +242,6 @@ const AboutPage= () => {
 						</div>
 					</div>
 				</div>
-				{/* <div>7</div> */}
 			</div>
 		</FrontLayout>
 	);

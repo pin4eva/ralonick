@@ -2,7 +2,7 @@ import React from "react";
 import FrontLayout from "../../layouts/front.layout";
 import Link from "next/link";
 import { Research2, Workers } from "../../components/Data";
-
+import ClientComp from "../../components/ClientComp";
 function Project() {
     return (
         <FrontLayout>
@@ -107,7 +107,8 @@ function Project() {
                         </div>
                     </div>
                 </section>
-                <section className="home-section-6">
+                <ClientComp/>
+                {/* <section className="home-section-6">
                     <div className="section6-inner">
                         <h2>Clients Reviews</h2>
                         <p className="section6-inner-txt1">
@@ -124,7 +125,7 @@ function Project() {
                             <div className="slider3"></div>
                         </div>
                     </div>
-                </section>
+                </section> */}
                 <section className="firth-section">
                     <h1>Our Team</h1>
                     <div className="profile">

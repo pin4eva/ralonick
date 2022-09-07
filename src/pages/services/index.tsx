@@ -4,12 +4,12 @@ import FrontLayout from "../../layouts/front.layout";
 import Data from "../../components/data.json";
 import Link from "next/link";
 import ClientComp from "../../components/ClientComp";
-import { ClientReviews } from "../../components/Data";
-import { Swiper, SwiperSlide } from "swiper/react";
-import "swiper/css";
-import { Pagination } from "swiper";
-import "swiper/css/pagination";
-import { Autoplay } from "swiper";
+// import { ClientReviews } from "../../components/Data";
+// import { Swiper, SwiperSlide } from "swiper/react";
+// import "swiper/css";
+// import { Pagination } from "swiper";
+// import "swiper/css/pagination";
+// import { Autoplay } from "swiper";
 
 const Services = () => {
 	return (

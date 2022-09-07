@@ -36,10 +36,10 @@ const Services = () => {
 						</div>
 
 						<div className="services">
-							{Data.map((item) => {
+							{Data.map((item, i) => {
 								return (
-									<div key={item.id} className="services-items">
-										<img src={item.image} alt="ig" />
+									<div key={i} className="services-items">
+										<img src={item?.image} alt="ig" />
 										<div className="content">
 											<p>{item.sub}</p>
 											<div className="texts">{item.text}</div>
@@ -50,9 +50,11 @@ const Services = () => {
 													</Link>
 												</div>
 												<div className="services-info-pointer">
-													<a href="/services/jgjj">
-														<img src={item.btn} alt="arrow" />
-													</a>
+													<Link href="/services/jsjsjs">
+														<a>
+															<img src={item.btn} alt="arrow" />
+														</a>
+													</Link>
 												</div>
 											</div>
 										</div>

@@ -6,37 +6,21 @@ import ClientComp from "../components/ClientComp";
 import ServiceComp from "../components/ServiceComp";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { SwiperSlide, Swiper } from "swiper/react";
-import { Navigation } from "swiper";
+
 import "swiper/css/navigation";
-import { Autoplay } from "swiper";
+
 import { SwiperData } from "../components/Data";
 
-const SwiperButtonControl = () => {
-	const swiper = useSwiper();
-	// const myData = SwiperData;
-
-	return (
-		<div className="hero-arrows">
-			{" "}
-			<div className="line"></div>
-			<div className="arrow-img">
-				<button onClick={() => swiper.slidePrev()} className="left">
-					<i className="fa-solid fa-chevron-left"></i>
-				</button>
-				<button onClick={() => swiper.slideNext()} className="right">
-					<i className="fa-solid fa-chevron-right"></i>
-				</button>
-			</div>
-		</div>
-	);
-};
-
 const Home = () => {
+	const [disableNext, setDisableNext] = useState(false);
+	const [disablePrev, setDisablePrev] = useState(true);
 	useEffect(() => {
-		AOS.init();
-		AOS.refresh();
+		if (typeof window !== undefined) {
+			AOS.init();
+			AOS.refresh();
+		}
 	}, []);
 
 	return (
@@ -48,33 +32,21 @@ const Home = () => {
 							<div className="inner-left">
 								<Swiper
 									className="hero_img1 container"
-									modules={[Navigation]}
 									spaceBetween={50}
 									slidesPerView={1}
 									navigation
-									// autoplay={{
-									// 	delay: 3000,
-									// 	disableOnInteraction: false,
-									// }}
-									// loop={true}
-									// loopFillGroupWithBlank={true}
 									speed={1000}
+									onSlideChange={(e) => {
+										e.isBeginning ? setDisablePrev(true) : setDisablePrev(false);
+										e.isEnd ? setDisableNext(true) : setDisableNext(false);
+									}}
 								>
-									{SwiperData.map((data) => {
-										return (
-											<SwiperSlide key={data.id}>
-												<img className="img1" src={data.image} alt="hero" />
-											</SwiperSlide>
-										);
-									})}
-									<SwiperButtonControl />
-									{/* <div className="hero-arrows">
-										<div className="line"></div>
-										<div className="arrow-img">
-											<img src="/assets/keyboardArrowLeft.png" className="" alt="" />
-											<img src="/assets/keyboardArrowRight.png" alt="" />
-										</div>
-									</div> */}
+									{SwiperData.map((data, i) => (
+										<SwiperSlide key={i}>
+											<img className="img1" src={data} alt="hero" />
+										</SwiperSlide>
+									))}
+									<SwiperButtonControl disableNext={disableNext} disablePrev={disablePrev} />
 								</Swiper>
 
 								<div className="hero-text" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
@@ -90,7 +62,7 @@ const Home = () => {
 							</div>
 						</div>
 
-						<div className="inner-right" data-aos="fade-up" data-aos-duration="3000" ease-in-out-quart>
+						<div className="inner-right" data-aos="fade-up" data-aos-duration="3000" ease-in-out-quart="true">
 							<div className="video-desc">
 								<div className="video-desc-inner">
 									<img src="/assets/PlayArrow.png" alt="" />
@@ -107,7 +79,7 @@ const Home = () => {
 
 				<section className="about-section container">
 					<div className="about-inner">
-						<div className=" about-inner-left" data-aos="fade-up" data-aos-duration="3000" ease-in-out-quart>
+						<div className=" about-inner-left" data-aos="fade-up" data-aos-duration="3000" ease-in-out-quart="true">
 							<img className="about-img" src="/assets/about_img1.png" alt="" />
 						</div>
 
@@ -116,7 +88,7 @@ const Home = () => {
 							data-aos-easing="ease-out-cubic"
 							data-aos="fade-down"
 							data-aos-duration="3000"
-							ease-in-out-quart
+							ease-in-out-quart="true"
 						>
 							<div className="right-text">
 								<p className="text-danger fw-600">RALONICK</p>
@@ -160,7 +132,7 @@ const Home = () => {
 								leasing and marine.
 							</p>
 							<p className="section3-paragraph2">{`We exceed our clients' trust through the timely delivery of quality, satisfactory products and services.`}</p>
-							<div className="info" fade-up-left data-aos-easing="ease-in-quad" data-aos-duration="1500">
+							<div className="info" fade-up-left="true" data-aos-easing="ease-in-quad" data-aos-duration="1500">
 								<div className="info-sub">
 									<p>25+</p>
 									<p>Trusted Partners</p>
@@ -183,12 +155,12 @@ const Home = () => {
 
 				<section className="home-section-4 container">
 					<div className="section4-inner">
-						<div className="section4-inner-img" data-aos="fade-down" data-aos-duration="3000" ease-in-out-quart>
+						<div className="section4-inner-img" data-aos="fade-down" data-aos-duration="3000" ease-in-out-quart="true">
 							<img src="/assets/why__img.png" alt="" />
 						</div>
 						<div className="section4-inner-text">
 							<h2>Why Choose Us</h2>
-							<div className="text_gridbox" data-aos="fade-up" data-aos-duration="3000" ease-in-out-quart>
+							<div className="text_gridbox" data-aos="fade-up" data-aos-duration="3000" ease-in-out-quart="true">
 								<div className="text_gridItem">
 									<div className="empty-box">
 										<img src="images/Bag.png" alt="" />
@@ -250,26 +222,10 @@ const Home = () => {
 								<button className="btn btn-outline-danger hug">All Services</button>
 							</Link>
 						</div>
-
-						{/* <div className="section5-arrows">
-							<div className="arrows">
-								<img src="/assets/keyboardArrowLeft.png" alt="" />
-								<img src="/assets/keyboardArrowRight.png" alt="" />
-							</div>
-							<div className="line"></div>
-						</div> */}
 					</div>
 				</section>
 
 				<ServiceComp />
-				{/* <SwiperButtonNext /> */}
-				{/* <div className="section5-arrows">
-					<div className="arrows">
-						<img src="/assets/keyboardArrowLeft.png" alt="" />
-						<img src="/assets/keyboardArrowRight.png" alt="" />
-					</div>
-					<div className="line"></div>
-				</div> */}
 
 				<ClientComp />
 
@@ -376,3 +332,24 @@ const Home = () => {
 };
 
 export default Home;
+
+const SwiperButtonControl: React.FC<{ disableNext: boolean; disablePrev: boolean }> = ({
+	disableNext,
+	disablePrev,
+}) => {
+	const swiper = useSwiper();
+
+	return (
+		<div className="hero-arrows">
+			<div className="line"></div>
+			<div className="arrow-img">
+				<button disabled={disablePrev} onClick={() => swiper.slidePrev()} className="controls">
+					<i className="fa-solid fa-chevron-left"></i>
+				</button>
+				<button disabled={disableNext} onClick={() => swiper.slideNext()} className="controls">
+					<i className="fa-solid fa-chevron-right"></i>
+				</button>
+			</div>
+		</div>
+	);
+};

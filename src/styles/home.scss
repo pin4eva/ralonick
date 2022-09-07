@@ -49,6 +49,7 @@
 					.swiper-button-prev {
 						display: none;
 					}
+
 					.swiper-button-next {
 						display: none;
 					}
@@ -57,6 +58,7 @@
 						width: 100%;
 						margin: 0 auto;
 					}
+
 					img {
 						width: 100%;
 					}
@@ -84,13 +86,18 @@
 							display: flex;
 							gap: 1rem;
 
-							.left,
-							.right {
-								border: 1px solid #a00107;
-								color: #a00107;
+							.controls {
+								border: 1px solid $danger;
+								color: $danger;
 								background: #f5e5e6;
 								border-radius: 50%;
 								padding: 0.3rem 0.7rem;
+
+								&:disabled {
+									color: #ADADAD;
+									background-color: white;
+									border: 1px solid #ADADAD;
+								}
 							}
 						}
 					}
@@ -231,6 +238,7 @@
 			}
 
 			&-left {
+
 				// @media screen and (max-width: $mobile) {
 				// 	width: 90%;
 				// 	margin: 0 auto;
@@ -241,6 +249,7 @@
 					margin: 0 auto;
 					text-align: center;
 				}
+
 				h2 {
 					color: $secondary;
 					font-size: 3rem;
@@ -262,6 +271,7 @@
 						font-weight: 500;
 						line-height: 1.77778rem;
 					}
+
 					&.section3-paragraph2 {
 						margin-bottom: 2.5rem;
 						font-weight: 500;
@@ -362,6 +372,7 @@
 
 				.text_gridbox {
 					margin-top: 2rem;
+
 					@media screen and (min-width: $md) {
 						display: grid;
 						grid-template-columns: 1fr 1fr;
@@ -370,6 +381,7 @@
 					.text_gridItem {
 						padding: 1.5rem;
 						border: 1px solid #adadad;
+
 						&:hover {
 							border-color: black;
 						}
@@ -400,26 +412,32 @@
 	//5th section
 	.home-section-5 {
 		width: 100%;
+
 		.section5-inner {
 			// background: red;
 			margin-top: 5rem;
 			width: 100%;
+
 			h2 {
 				color: $secondary;
 				font-size: 3rem;
 				font-weight: 800;
 				line-height: 4rem;
 			}
+
 			&-text {
 				margin-bottom: 3rem;
+
 				@media screen and (min-width: $md) {
 					display: flex;
 					justify-content: space-between;
 					align-items: center;
+
 					p {
 						width: 60%;
 					}
 				}
+
 				p {
 					color: #000;
 					font-size: 1.125rem;
@@ -463,6 +481,7 @@
 		.swiper-button-next {
 			display: none;
 		}
+
 		.swiper-button-prev {
 			left: 63%;
 			top: 100%;
@@ -480,13 +499,16 @@
 				padding: 0.5rem 0.7rem;
 			}
 		}
+
 		.swiper-button-next {
 			right: 9%;
 			top: 96%;
 			width: 2rem;
+
 			@media screen and (max-width: $md) {
 				display: none;
 			}
+
 			&::after {
 				font-size: 0.8rem;
 				border: 1px solid #a00107;
@@ -555,6 +577,7 @@
 				}
 			}
 		}
+
 		.section5-arrows {
 			margin-top: 1rem;
 			display: flex;
@@ -601,6 +624,7 @@
 			height: 1rem;
 			border-radius: 50%;
 		}
+
 		h2 {
 			color: $secondary;
 			font-size: 3rem;
@@ -622,11 +646,13 @@
 				line-height: 2rem;
 				margin-block: 1.8125rem 3rem;
 				font-style: italic;
+
 				@media screen and (min-width: $md) {
 					width: 65%;
 					margin-inline: auto;
 				}
 			}
+
 			.section6-inner-profile {
 				color: #000;
 				line-height: 1.76125rem;
@@ -634,11 +660,13 @@
 				img {
 					border-radius: 50%;
 				}
+
 				h3 {
 					font-size: 1.5rem;
 					font-weight: 600;
 					margin-block: 1.5rem 0.5rem;
 				}
+
 				&_caption {
 					font-size: 1.125rem;
 					font-weight: 500;
@@ -655,6 +683,7 @@
 			margin-top: 5rem;
 			display: grid;
 			gap: 1.5rem;
+
 			h2 {
 				color: $secondary;
 				font-size: 3rem;
@@ -667,16 +696,19 @@
 			&-sub {
 				position: relative;
 				height: 260px;
+
 				.large-img {
 					width: 100%;
 					height: 100%;
 					object-fit: cover;
 					object-position: center;
+
 					@media screen and (min-width: $md) {
 						width: 85%;
 						margin-left: 15%;
 					}
 				}
+
 				&_text {
 					position: absolute;
 					width: 85%;
@@ -686,17 +718,21 @@
 					padding: 1rem;
 					display: grid;
 					gap: 1rem;
+
 					@media screen and (min-width: $md) {
 						width: 35%;
 					}
+
 					p {
 						margin: 0;
 						color: #fff;
+
 						&.text-heading {
 							font-size: 12px;
 							font-weight: 700;
 							line-height: 0.880625rem;
 						}
+
 						&.inner-text-body {
 							font-size: 10px;
 							font-weight: 400;
@@ -704,6 +740,7 @@
 							// margin-block: 0.5rem 0.625rem;
 						}
 					}
+
 					.text-link {
 						&_link {
 							color: #fff;
@@ -711,6 +748,7 @@
 							font-size: 10px;
 							font-weight: 600;
 							line-height: 0.73375rem;
+
 							img {
 								margin-left: 0.5rem;
 							}
@@ -722,8 +760,10 @@
 					.large-img {
 						margin-left: 0;
 					}
+
 					.sub-2_text {
 						right: 0;
+
 						@media screen and (min-width: $md) {
 							background-color: $danger;
 						}

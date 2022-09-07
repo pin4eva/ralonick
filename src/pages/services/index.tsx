@@ -35,7 +35,7 @@ const Services = () => {
 									<div key={item.id} className="services-items">
 										<img src={item.image} alt="ig" />
 										<div className="content">
-											<p>{item.sub}</p>
+											<p>{item.title1}</p>
 											<div className="texts">{item.text.slice(0, 210)}</div>
 											<div className="services-info">
 												<div className="services-info-list">

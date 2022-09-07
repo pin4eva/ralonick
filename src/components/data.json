@@ -2,7 +2,7 @@
     {
         "id": 1,
         "image": "/contentPics/fireproofing.png",
-        "sub": "PASSIVE AND ACTIVE FIRE PROOFING",
+        "title1": "PASSIVE AND ACTIVE FIRE PROOFING",
         "image2": "/contentPics/subimage.png",
         "image3": "/contentPics/imag3.png",
         "text": "Ralonick Services Limited is a professional fire proofing company, offering customer a one stop shop for all their fire proofing needs be it passive or active fire proofing. Passive fire proofing is a vital component of a strategy into the structure of building to safeguard peoples life and limit financial impact of damage to building and their content.",
@@ -13,7 +13,7 @@
     {
         "id": 2,
         "image": "/contentPics/feild1.png",
-        "sub": "FIELD JOINT COATING SERVICES",
+        "title1": "FIELD JOINT COATING SERVICES",
         "image2":"/contentPics/feild2.png",
         "image3":"/contentPics/feild3.png",
         "text": "This involves the coating of girth weld produce on board the pipe-laying vessels or at any offshore location. Ralonick offers engineering design & fabrication of customized field joint coating equipment which involves liquid applied materials.",
@@ -24,7 +24,7 @@
     {
         "id": 3,
         "image": "/contentPics/glassfiber2.png",
-        "sub": "GLASSFIBER REINFORCED EPOXY (GRE) & POLYESTER (GRP) PIPE SYSTEM",
+        "title1": "GLASSFIBER REINFORCED EPOXY (GRE) & POLYESTER (GRP) PIPE SYSTEM",
         "text": "Ralonick Service Limited offer solutions for Glass reinforced Epoxy pipes(GRP & FRP) in the upstream, downstream of the Oil and gas,refinery, Petrochemical, power plant and other industries. We procure, fabricate and install glass reinforcement epoxy pipes as per Flow and Crude oil line, Scrubber lines, Drinking water lines, Sanitary & wastes lines, inert gas and condensate lines, Fire fighting lines, Chemical and injection lines",
         "image2":"/contentPics/glassfiber2.png",
         "image3":"/contentPics/glassfiber3.png",
@@ -35,7 +35,7 @@
     {
         "id": 4,
         "image":"/contentPics/polyprop1.png",
-        "sub": "POLYPROPYLENE RANDOM PIPES (PPR)",
+        "title1": "POLYPROPYLENE RANDOM PIPES (PPR)",
         "text": "Ralonick Service Limited Polypropylene (PP- R) Pipes for the offshore and onshore of the oil and gas, food and beverage processing heating & cooling, potable water, compressed air, fire protection, gray water and other industrial applications.",
         "image2":"/contentPics/polyprop2.png",
         "image3":"",
@@ -46,7 +46,7 @@
     {
         "id": 5,
         "image":"/contentPics/procurement1.png",
-        "sub": "PROCUREMENT AND INSTALLATION OF FRP/GRP PRODUCTS",
+        "title1": "PROCUREMENT AND INSTALLATION OF FRP/GRP PRODUCTS",
         "text": "Ralonick Service Limited provides procurement& installation of FRP/GRP product.We services, supply and installs all kinds of FRP/GRP products for upstream and downstream oil & gas refinery petrochemical and other industrial application.",
         "image2":"/contentPics/procurement2.png",
         "image3":"/contentPics/procurement2.png",
@@ -57,7 +57,7 @@
     {
         "id": 6,
         "image":"/contentPics/steel1.png",
-        "sub": "STEEL STRUCTURES AND PIPES FABRICATION & INSTALLATION",
+        "title1": "STEEL STRUCTURES AND PIPES FABRICATION & INSTALLATION",
         "text": "Ralonick Service Limited provides Steel structures and pipes fabrication & installation with expertise in construction capabilities and project management Ralonick delivers solutions by providing competent personnel that has the knowledge in all kinds of fabrication and installation works.",
         "image2":"/contentPics/steel2.png",
         "image3":"",
@@ -68,24 +68,49 @@
     {
         "id": 7,
         "image": "https://media-exp1.licdn.com/dms/image/C4D12AQHrMuveWUWxwg/article-cover_image-shrink_600_2000/0/1584799834221?e=2147483647&v=beta&t=xIw3p9RkYq0nf6YZFNdwdAnAQFhZxkr_kDx7TjAa1xY",
-        "sub": "PIPELINE CONSTRUCTION & REPAIR SERVICES",
-        "text": "Fire Proofing is a vital component for any structure to ensure safety of lives and minimal financial loss of properties. Ralonick offers professional fire proofing services ranging from cemetitious fire proofing, to Automatic fire suppression, etc.",
+        "title1": "PIPELINE CONSTRUCTION & REPAIR SERVICES",
+        "text": "Ralonick Service Limited provides Steel structures and pipes fabrication & installation with expertise in construction capabilitie an project managemen Ralonick delivers solutions by providing values for our customers through: Improved HSE achievement Increased efficiency and production Reduced operational costs Ralonick Service Limited undertakes complete pipeline construction, replacement and repairs",
+        "image2": "https://i0.wp.com/businessday.ng/wp-content/uploads/2020/07/AKK-Pipeline-project.png?fit=500%2C300&ssl=1",
+        "image3": "/contentPics/pipeline3.png",
+        "subtitle": "FLANGE MANAGEMENT AND TORQUING SERVICES",
+        "subtext": "Ralonick Service Limited provides flange management and touring services to the oil & gas processing industry. We are able to select and use the correct flange, valves, gaskets & bolt using our procedures and method for the management of client facility. We have experienced technicians and touring equipment for project delivery. Our flange & Torquing Services Included: Joint Data Management, Manual Bolt Torquing, Hydraulic Bolt Tensioning",
         "learn": "Learn More",
         "btn": "/assets/learnMoreArrow.png"
     },
     {
         "id": 8,
-        "image": "/assets/services2.png",
-        "sub": "Field Joint Coating Services",
-        "text": "This involves the coating of girth weld produce on board the pipe-laying vessels or at any offshore location. Ralonick offers engineering design & fabrication of customized field joint coating equipment which involves liquid applied materials.",
+        "image": "https://gemstone-ge.com/wp-content/uploads/insulation-serv.jpg",
+        "title1": "INSULATION SERVICES",
+        "text": "Ralonick Service Limited Offer a complete range of advanced insulation solutions for the oil and gas and food and beverages industries. Our products range covers various insulation requirements for piping and equipment systems, and insulation of subsea systems. Or uproducts range meets demanding NORSOK requirement and suited for tough environmental conditions",
+        "image2": "https://i0.wp.com/businessday.ng/wp-content/uploads/2020/07/AKK-Pipeline-project.png?fit=500%2C300&ssl=1",
+        "image3": "/contentPics/scaffold3.png",
+        "subtitle": "SCAFFOLDING SERVICES",
+        "subtext": "Ralonick Service Limited provides specialist scaffolding services to the offshore and onshore of the Oil and Gas, refinery petrochemical, chemical and for other industrial applications.Our skilled workforces are known for competency and strict adherenceto safety. At Ralonick Service Limited, we believe in continually improving skill of all scaffold erectors. All our scaffold workers are certified and fully trained in every area of health and safety",
+        "learn": "Learn More",
+        "btn": "/assets/learnMoreArrow.png"
+    },
+   
+    {
+        "id": 9,
+        "image": "https://stshabitat.com/wp-content/uploads/sts-580x316.jpg",
+        "title1": "PROVISION OF WELDING HABITAT SERVICES",
+        "text": "Ralonick Service Limited provides welding habitats services in order to provide safe enclosure for welders to carry out repairs or replacement of process pipe work and equipment, removal and replacement of deck plates hands rails , walkways, vessel internal and external nozzle repairs, crane boom structural repairs and refurbishment, housing of non IS equipment, riser and caisson installation and applying specialist coatings or removing insulations which requires temperature controlled enclosures and as required in other application which requires temperature controlled enclosures and as required in other application",
+        "image2": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBEcSUR-YFySn_ciuoe61IDIQde1uy_wHTFFZDV7i7SHiXJACH9K8f-1IiIKrUvNBugAU&usqp=CAU",
+        "image3": "/contentPics/welding3.png",
+        "subtitle": "VESSELS TUBE CLEANING & INSPECTION",
+        "subtext": "Ralonick Service Limited provides cleaning and inspection services for vessel, storage tanks and heat exchangers of all sizes for the oil and gas industries and refineries.Ralonick Service Limited has developed a range of technologies and methods to safety clean tanks and vessels using personnel with adequate procedure and methods for the removal of wet or dry bulk muds, brines, sand and sludge deposits",
         "learn": "Learn More",
         "btn": "/assets/learnMoreArrow.png"
     },
     {
-        "id": 9,
-        "image": "/assets/services3.png",
-        "sub": "Procurement & Installation of FRP/GRP",
-        "text": "In conjunction with our foreign partners AOCOMM Composite Limited(major manufacturers of FRP and GRP Products) we secure leadership in the area of technical support, procurement and maintenance for upstream and downstream oil and gas refinery.",
+        "id": 10,
+        "image": "https://stshabitat.com/wp-content/uploads/sts-580x316.jpg",
+        "title1": "PROVISION OF WELDING HABITAT SERVICES",
+        "text": "Ralonick Service Limited provides welding habitats services in order to provide safe enclosure for welders to carry out repairs or replacement of process pipe work and equipment, removal and replacement of deck plates hands rails , walkways, vessel internal and external nozzle repairs, crane boom structural repairs and refurbishment, housing of non IS equipment, riser and caisson installation and applying specialist coatings or removing insulations which requires temperature controlled enclosures and as required in other application which requires temperature controlled enclosures and as required in other application",
+        "image2": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBEcSUR-YFySn_ciuoe61IDIQde1uy_wHTFFZDV7i7SHiXJACH9K8f-1IiIKrUvNBugAU&usqp=CAU",
+        "image3": "/contentPics/welding3.png",
+        "subtitle": "VESSELS TUBE CLEANING & INSPECTION",
+        "subtext": "Ralonick Service Limited provides cleaning and inspection services for vessel, storage tanks and heat exchangers of all sizes for the oil and gas industries and refineries.Ralonick Service Limited has developed a range of technologies and methods to safety clean tanks and vessels using personnel with adequate procedure and methods for the removal of wet or dry bulk muds, brines, sand and sludge deposits",
         "learn": "Learn More",
         "btn": "/assets/learnMoreArrow.png"
     }

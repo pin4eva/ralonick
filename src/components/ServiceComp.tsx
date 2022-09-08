@@ -6,7 +6,7 @@ import Data from "./data.json";
 
 import { useSwiper } from "swiper/react";
 
-export const SwiperButtonNext = () => {
+export const SwiperButtons = () => {
 	const swiper = useSwiper();
 
 	return (
@@ -65,7 +65,7 @@ const ServiceComp = () => {
 				);
 			})}
 
-			<SwiperButtonNext />
+			<SwiperButtons />
 		</Swiper>
 	);
 };

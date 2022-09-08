@@ -5,6 +5,11 @@ import Data from "../../components/data.json";
 import Link from "next/link";
 import ClientComp from "../../components/ClientComp";
 import { createSlug } from "../../utils/string.utils";
+import "swiper/css";
+import "swiper/css/navigation";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { SwiperButtons } from "../../components/ServiceComp";
+import { SwiperButtonControl } from "..";
 
 const Services = () => {
 	const services = Data.map((service) => ({
@@ -33,11 +38,38 @@ const Services = () => {
 							<button className="btn btn-danger hug">Book Service</button>
 						</div>
 
-						<div className="services-list">
+						<Swiper
+							className="services-list"
+							spaceBetween={5}
+							slidesPerView={2}
+							navigation
+							loopFillGroupWithBlank={true}
+							speed={1000}
+							breakpoints={{
+								1370: {
+									slidesPerView: 3,
+								},
+								1161: {
+									slidesPerView: 2,
+								},
+								890: {
+									slidesPerView: 2,
+								},
+								768: {
+									slidesPerView: 1,
+								},
+								200: {
+									slidesPerView: 1,
+								},
+							}}
+						>
 							{services.map((item, i) => (
-								<ServiceItemComp key={i} />
+								<SwiperSlide>
+									<ServiceItemComp key={i} />
+								</SwiperSlide>
 							))}
-						</div>
+							<SwiperButtons />
+						</Swiper>
 					</div>
 				</section>
 
@@ -83,22 +115,20 @@ const ServiceItemComp = () => (
 				<img src="/images/services/steel1.png" alt="ig" />
 			</div>
 			<div className="content">
-				<p>Title</p>
+				<p className="title">Title</p>
 				<div className="texts">
 					Ralonick Service Limited Offer a complete range of advanced insulation solutions for the oil and gas and food
 					and beverages industries. Our products range covers various insulation requirements for piping and equipment
 					systems, and insulation of subsea systems. Or uproducts range meets demanding NORSOK requirement and suited
 					for tough environmental conditions
 				</div>
-				<div className="services-info">
-					<div className="services-info-list">
-						<Link href={`/services/jdjdj`}>
-							<a className="d-flex align-items-center gap-2">
-								Learn More
-								<img style={{ width: "0.5rem", height: "0.5rem" }} src="/assets/learnMoreArrow.png" alt="arrow" />
-							</a>
-						</Link>
-					</div>
+				<div className="single-service-link">
+					<Link href={`/services/jdjdj`}>
+						<a className="text-on-click">
+							Learn More
+							<img src="/assets/learnMoreArrow.png" alt="arrow" />
+						</a>
+					</Link>
 				</div>
 			</div>
 		</div>

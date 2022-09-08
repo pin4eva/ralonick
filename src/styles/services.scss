@@ -20,6 +20,7 @@
 	//==========END OF SERVICE HERO SECTION========
 
 	.services-intro {
+		margin-top: 3rem;
 		.services-intro-inner {
 			display: grid;
 			.services-intro-description {
@@ -39,14 +40,51 @@
 			}
 
 			.services-list {
-				display: grid;
-				grid-template-columns: repeat(2, 1fr);
-				background: green;
+				width: 100%;
+
+				.swiper-clicks {
+					margin-top: 1rem;
+					display: flex;
+					align-items: center;
+					gap: 1rem;
+					z-index: 3;
+					width: 9%;
+
+					.line {
+						max-width: 150px;
+						height: 1px;
+						background: #adadad;
+						flex: 1;
+					}
+
+					.arrows {
+						display: flex;
+						gap: 1rem;
+
+						.swiper-control {
+							border: 1px solid #a00107;
+							color: #a00107;
+							background: #f5e5e6;
+							border-radius: 50%;
+							padding: 0.5rem 0.8rem;
+							width: 2.5rem;
+						}
+					}
+				}
+
+				.swiper-button-prev {
+					display: none;
+				}
+				.swiper-button-next {
+					display: none;
+				}
 				.services-items {
+					width: 100%;
 					.service-item-inner {
 						height: 40rem;
-						width: 50%;
-						border: 1px solid red;
+						width: 90%;
+						gap: 2rem;
+						margin: 4rem auto;
 
 						.services-item-image {
 							height: 40%;
@@ -55,12 +93,43 @@
 								height: 100%;
 							}
 						}
+
+						.content {
+							padding: 1.5rem 1.125rem;
+							background: rgba(51, 51, 51, 0.04);
+
+							.title {
+								font-weight: 600;
+								font-size: 1.125rem;
+								color: $secondary;
+							}
+							.texts {
+								margin-top: 4.5rem;
+								font-weight: 500;
+								font-size: 0.875rem;
+								color: $secondary;
+							}
+
+							.single-service-link {
+								display: flex;
+								margin-top: 3rem;
+								.text-on-click {
+									display: flex;
+									align-items: center;
+									gap: 2px;
+									img {
+										width: 0.5rem;
+										aspect-ratio: 1/1;
+									}
+								}
+							}
+						}
 					}
 				}
 			}
 		}
 	}
-	//==============CONTINUE SERVICE INTRO==============
+	//==============END OF SERVICE SWIPER==============
 
 	.more-details-wrapper {
 		text-align: center;

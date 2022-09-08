@@ -8,12 +8,10 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect, useState } from "react";
 import { SwiperSlide, Swiper } from "swiper/react";
-
 import "swiper/css/navigation";
-
 import { SwiperData } from "../components/Data";
 
-const Home = () => {
+export const Home = () => {
 	const [disableNext, setDisableNext] = useState(false);
 	const [disablePrev, setDisablePrev] = useState(true);
 	useEffect(() => {
@@ -330,9 +328,9 @@ const Home = () => {
 	);
 };
 
-export default Home;
+// export default Home;
 
-const SwiperButtonControl: React.FC<{ disableNext: boolean; disablePrev: boolean }> = ({
+export const SwiperButtonControl: React.FC<{ disableNext: boolean; disablePrev: boolean }> = ({
 	disableNext,
 	disablePrev,
 }) => {

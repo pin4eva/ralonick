@@ -78,21 +78,21 @@ const Home = () => {
 				</section>
 
 				<section className="about-section container">
-					<div className="about-inner">
-						{/* <div className=" about-inner-left" data-aos="fade-up" data-aos-duration="3000" ease-in-out-quart="true">
+					<div className="about-section-inner">
+						<div className=" about-inner-left" data-aos="fade-up" data-aos-duration="3000" ease-in-out-quart="true">
 							<img className="about-img" src="/assets/about_img1.png" alt="" />
-						</div> */}
+						</div>
 
 						<div
-							className="about_text_sect about-inner-right"
+							className="about-inner-right"
 							data-aos-easing="ease-out-cubic"
 							data-aos="fade-down"
 							data-aos-duration="3000"
 							ease-in-out-quart="true"
 						>
-							{/* <div className="right-text">
+							<div className="right-text">
 								<p className="text-danger fw-600">RALONICK</p>
-								<h2 className="h1">About Us</h2>
+								<h1>About Us</h1>
 								<p>
 									Ralonick is a fast growing construction company rapidly spreading its frontiers across Nigeria, with
 									sole interest in operation and maintenance of production facilities, local and foreign procurement of
@@ -115,7 +115,7 @@ const Home = () => {
 										Learn More
 									</button>
 								</Link>
-							</div> */}
+							</div>
 						</div>
 					</div>
 				</section>
@@ -153,7 +153,7 @@ const Home = () => {
 					</div>
 				</section>
 
-				<div className="home-section-41 container">
+				{/* <div className="home-section-41 container">
 					<div className="fifth-image" data-aos="zoom-in-down" data-aos-duration="2500">
 						<img src="assets/why__img.png" alt="" />
 					</div>
@@ -207,9 +207,9 @@ const Home = () => {
 							</div>
 						</div>
 					</div>
-				</div>
+				</div>  */}
 
-				<section className="home-section-5 container">
+				{/* <section className="home-section-5 container">
 					<div className="section5-inner">
 						<h2>Our Services</h2>
 						<div className="section5-inner-text">
@@ -221,13 +221,13 @@ const Home = () => {
 							</Link>
 						</div>
 					</div>
-				</section>
+				</section> */}
 
 				<ServiceComp />
 
 				<ClientComp />
 
-				<section className="home-section-7 container">
+				{/* <section className="home-section-7 container">
 					<div className="section7-inner">
 						<h2>Our Projects</h2>
 						<div className="section7-inner-sub">
@@ -323,7 +323,7 @@ const Home = () => {
 							<button className="btn btn-danger hug">All Services</button>
 						</div>
 					</div>
-				</section>
+				</section> */}
 			</div>
 		</FrontLayout>
 	);

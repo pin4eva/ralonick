@@ -250,8 +250,12 @@
 				padding: 1rem;
 				margin-top: 2.25rem;
 				width: 100%;
+				@media screen and (max-width:576px){
+					padding: 0rem;
+				}
 
 				&-inner {
+					
 					border: 1px;
 					padding: 1rem;
 					width: 100%;

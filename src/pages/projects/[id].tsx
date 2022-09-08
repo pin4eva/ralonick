@@ -6,7 +6,7 @@ function SingleProjects() {
     return (
 
         <FrontLayout>
-            <div className="single-project container animate__animated animate__zoomInDown">
+            <div className="single-project container animate__animated animate__zoomInup">
                 <section className="single-project_hero">
                     {
                         Project1.map((item) => {

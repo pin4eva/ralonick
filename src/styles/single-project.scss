@@ -1,13 +1,15 @@
 .single-project {
-  
-  @media screen and (max-width:576px){
-    h1{
+
+  @media screen and (max-width:576px) {
+    h1 {
       font-size: xx-large;
     }
-    .p{
+
+    .p {
       font-size: large;
     }
   }
+
   .h1 {
     color: $primary;
     font-size: 3em;
@@ -59,6 +61,7 @@
     height: 5rem;
     padding: 1rem;
   }
+
   align-items: center;
 
   .hero-img {
@@ -67,14 +70,16 @@
     }
   }
 
-  @media screen and (max-width:$mobile) {
-    .single-project-inner {
-      width: 100vw;
-    }
-  }
+
 
   .single-project-inner {
-    width: 70vw;
+    width: 85%;
+
+    @media screen and (max-width:$mobile) {
+
+      width: 100%;
+
+    }
 
     //SINGLE-PROJECT-FIRST-SECTION
     .single-project-first-section {
@@ -82,7 +87,7 @@
 
       .first-section_grid {
         margin: 4rem 0rem 4rem 0rem;
-     
+
 
         img {
           width: 100%;
@@ -115,7 +120,7 @@
         }
       }
 
-  
+
     }
 
     //SINGLE-PROJECT-SECOND-SECTION
@@ -135,14 +140,15 @@
             border: 1px solid $primary;
             text-align: center;
             padding: 1rem;
-            h1{
-              @media screen and (max-width:576px){
+
+            h1 {
+              @media screen and (max-width:576px) {
 
                 font-size: xx-large;
               }
             }
-          
-    
+
+
           }
 
           :nth-child(1) {
@@ -182,10 +188,11 @@
             padding: 2rem 1rem 0rem 1rem;
 
             h2 {
-              @media screen and (max-width:576px){
-              
+              @media screen and (max-width:576px) {
+
                 font-size: small;
               }
+
               margin: 1rem 0rem 1.5rem 0rem;
             }
 
@@ -322,8 +329,8 @@
 }
 
 .single-project-firth-section {
-border: 1px;
-padding: 1rem;
+  border: 1px;
+  padding: 1rem;
 
   h1 {
     @media screen and (max-width:1199px) {
@@ -335,7 +342,7 @@ padding: 1rem;
 
   h1 {
     margin-bottom: 1rem;
-    
+
   }
 
   .profile {
@@ -343,53 +350,56 @@ padding: 1rem;
     padding: 1rem;
     width: 100%;
     height: auto;
-.profile-card{
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  gap: 1rem;
-width: 100%;
 
-  img{
-    width: 100%;
-  }
-  .info {
-    background-color: $secondary;
-    width: 379px;
-    text-align: center;
-    width: 100%;
-    height: auto;
-   padding: 1rem;
-    .profile-h2 {
-      color: $name;
-      border: 1px;
-      @media screen and (max-width:576px){
-        font-size: small;
+    .profile-card {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 1rem;
+      width: 100%;
+
+      img {
+        width: 100%;
       }
-    }
-  .icons{
-    border: 1px;
- 
-    i {
-      color: #fff;
-    
-    }
-    :first-child {
-      margin-right: 1rem;
-    }
-  }
+
+      .info {
+        background-color: $secondary;
+        border: 1px;
+    align-items: center;
+        width: 100%;
 
 
-    .profile-p { 
-  border: 1px;
-      font-weight: 500;
-      font-size: 14px;
-      line-height: 26px;
-      color: $name;
+        .profile-h2 {
+          color: $name;
+          border: 1px;
+
+          @media screen and (max-width:576px) {
+            font-size: small;
+          }
+        }
+
+        .icons {
+          border: 1px;
+
+          i {
+            color: #fff;
+
+          }
+
+          :first-child {
+            margin-right: 1rem;
+          }
+        }
+
+
+        .profile-p {
+color: white;
+          border: 1px;
+          font-weight: 500;
+          font-size: 14px;
+          line-height: 26px;
+          color: $name;
+        }
+      }
     }
   }
 }
-    }
-  }
-
-
-  

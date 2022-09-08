@@ -255,7 +255,7 @@
 				}
 
 				&-inner {
-					
+
 					border: 1px;
 					padding: 1rem;
 					width: 100%;
@@ -454,11 +454,12 @@
 
 					.info {
 						background-color: $secondary;
-						width: 379px;
-						text-align: center;
+				
+						// text-align: center;
+						align-items: center;
 						width: 100%;
-						height: auto;
-						padding: 1rem;
+					
+					
 
 						.profile-h2 {
 							color: $name;

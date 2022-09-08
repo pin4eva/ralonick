@@ -9,7 +9,7 @@ import { Autoplay } from "swiper";
 const ClientComp = () => {
 	return (
 		<Swiper
-			className="home-section-6 container"
+			className="client-reviews-wrapper container"
 			modules={[Pagination, Autoplay]}
 			spaceBetween={50}
 			slidesPerView={1}
@@ -24,14 +24,14 @@ const ClientComp = () => {
 		>
 			{ClientReviews.map((item) => {
 				return (
-					<SwiperSlide className="section6-inner" key={item.id}>
-						<h2>Clients Reviews</h2>
+					<SwiperSlide className="client-reviews-inner" key={item.id}>
+						{/* <h2>Clients Reviews</h2> */}
 
-						<p className="section6-inner-txt1">{item.text}</p>
-						<div className="section6-inner-profile">
+						<p className="client-reviews-inner-text">{item.text}</p>
+						<div className="client-reviews-profile">
 							<img src={item.image} alt="" />
 							<h3>{item.names}</h3>
-							<p className="section6-inner-profile_caption">{item.position}</p>
+							<p className="client-position">{item.position}</p>
 						</div>
 					</SwiperSlide>
 				);

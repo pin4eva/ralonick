@@ -23,7 +23,7 @@
 				.hero_img1 {
 					width: 90%;
 					height: 100%;
-					border: 1px solid red;
+					// border: 1px solid red;
 					@media screen and (max-width: 576px) {
 						width: 90vw;
 					}
@@ -35,13 +35,8 @@
 						display: none;
 					}
 
-					// @media screen and (max-width: $mobile) {
-					// 	width: 100%;
-					// 	margin: 0 auto;
-					// }
 					img {
 						width: 100%;
-						// height: 100%;
 					}
 
 					.hero-arrows {
@@ -116,7 +111,6 @@
 		.about-section-inner {
 			display: grid;
 			gap: 1rem;
-			// min-height: 60vh;
 			@media screen and (min-width: $md) {
 				display: flex;
 			}
@@ -145,114 +139,277 @@
 			}
 		}
 	}
+	//================END OF ABOUT SECTION==================
 
-	.services {
-		display: grid;
-		gap: 2rem;
-		margin-top: 2rem;
-		width: 90%;
-		@media screen and (max-width: 576px) {
-			width: 90vw;
-		}
-		// background: red;
+	.transforming {
+		margin-top: 3rem;
 
-		.swiper-button-prev,
-		.swiper-button-next {
-			display: none;
-		}
+		.transforming-inner {
+			width: 90%;
+			margin: 0 auto;
 
-		&-items {
-			display: grid;
-			grid-template-rows: auto 1fr;
-
-			img {
+			@media screen and (min-width: $md) {
 				width: 100%;
+				display: flex;
+				justify-content: space-between;
+
+				&-left {
+					width: 47%;
+				}
+
+				&-right {
+					width: 47%;
+					height: fit-content;
+
+					img {
+						width: 100%;
+					}
+				}
 			}
 
-			.content {
-				display: grid;
-				grid-template-rows: 0.4fr 1fr auto;
-				padding: 1.5rem 1.125rem;
-				gap: 0.625rem;
-				background: rgba(51, 51, 51, 0.04);
-				backdrop-filter: blur(34px);
+			&-left {
+				text-align: center;
+				h2 {
+					color: $secondary;
+					font-size: 3rem;
+					font-weight: 800;
+				}
 
-				p {
-					font-family: "Raleway";
-					font-style: normal;
+				&.text-danger {
 					font-weight: 600;
-					font-size: 1.125rem;
-					line-height: 1.5rem;
+				}
+
+				.transforming-heading {
 					color: $secondary;
 				}
 
-				.texts {
-					font-family: "Raleway";
-					font-style: normal;
+				.transforming-paragraph {
+					margin-block: 1.5rem 0;
 					font-weight: 500;
-					font-size: 0.875rem;
-					line-height: 1.5rem;
-					color: $secondary;
+				}
+				.transforming-sub-text {
+					margin-bottom: 2.5rem;
+					font-weight: 500;
 				}
 
-				.services-info {
+				.statistics {
 					display: flex;
+					text-align: center;
+					margin-bottom: 1.5rem;
 
-					&-list {
-						Link {
-							cursor: pointer;
-						}
+					@media screen and (max-width: $md) {
+						justify-content: center;
 					}
 
-					&-pointer {
-						margin-left: 0.4rem;
+					.statistics-info {
+						padding: 2%;
+						border: 1px solid $primary;
+					}
+					.border-none {
+						border-left: none;
+						border-right: none;
+					}
 
-						img {
-							width: 100%;
-							height: 27%;
-						}
+					.primary-bold {
+						font-size: 3rem;
+						font-weight: 600;
+						color: $primary;
+					}
+
+					.primary-light {
+						font-size: 1rem;
+						font-weight: 500;
+						color: $secondary;
+					}
+				}
+			}
+			&-right {
+				height: 100%;
+				display: none;
+				@media screen and (min-width: $md) {
+					display: block;
+					margin-top: 3rem;
+				}
+				img {
+					height: 100%;
+				}
+			}
+		}
+	}
+	//=========END OF TRANFORMING SECTION===============
+
+	.quality-container {
+		@media screen and (min-width: $md) {
+			display: flex;
+			justify-content: space-between;
+			margin-top: 3rem;
+		}
+		.quality-container-image {
+			display: none;
+			@media screen and (min-width: $md) {
+				display: block;
+				width: 40%;
+				border: 1px solid green;
+				// height: auto;
+				height: 800px;
+				margin-top: 3.5rem;
+
+				img {
+					width: 100%;
+					height: 100%;
+				}
+			}
+		}
+
+		.quality-container-text {
+			width: 80%;
+			margin: 3rem auto;
+			@media screen and (min-width: $md) {
+				width: 50%;
+				margin-top: 0;
+			}
+
+			&-inner {
+				display: grid;
+				grid-template-columns: 1fr;
+				margin-top: 1.5rem;
+				@media screen and (min-width: $md) {
+					grid-template-columns: 1fr 1fr;
+				}
+
+				.text-grid {
+					border: 1px solid $secondary;
+					padding: 1.5rem 1rem 2rem 1rem;
+
+					h5 {
+						font-size: 18px;
+						font-weight: 700;
+						margin-top: 1.5rem;
+					}
+
+					p {
+						font-weight: 500;
+						font-size: 14px;
+						margin-top: 1.5rem;
 					}
 				}
 			}
 		}
-		.section5-arrows {
-			margin-top: 1rem;
-			display: flex;
-			align-items: center;
-			gap: 1rem;
-			// border: 1px solid red;
-			z-index: 3;
-			width: 9%;
+	}
+	//============END OF QUALITY SECTION===============
 
-			.line {
-				max-width: 150px;
-				height: 1px;
-				background: #adadad;
-				flex: 1;
+	.service-container {
+		width: 100%;
+		.service-container-inner {
+			margin-top: 5rem;
+			width: 100%;
+
+			&_text {
+				@media screen and (min-width: $md) {
+					display: flex;
+					justify-content: space-between;
+					align-items: center;
+				}
+				.service-desc {
+					font-size: 1.125rem;
+					@media screen and (min-width: $md) {
+						width: 60%;
+						margin-block: auto;
+					}
+				}
+			}
+		}
+
+		.service-swiper-card {
+			display: grid;
+			gap: 2rem;
+			margin-top: 2rem;
+			width: 100%;
+			// border: 1px solid red;
+
+			@media screen and (max-width: 576px) {
+				width: 90vw;
 			}
 
-			.arrows {
-				display: flex;
-				gap: 1rem;
-				// margin-left: auto;
-				// border: 1px solid green;
+			.swiper-button-prev,
+			.swiper-button-next {
+				display: none;
+			}
 
-				.prev,
-				.next {
-					border: 1px solid #a00107;
-					color: #a00107;
-					background: #f5e5e6;
-					border-radius: 50%;
-					padding: 0.5rem 0.8rem;
-					width: 2.5rem;
+			&-items {
+				background: rgba(51, 51, 51, 0.04);
+
+				img {
+					width: 100%;
+					height: 55%;
+				}
+
+				.title {
+					font-size: 1rem;
+					color: $secondary;
+
+					p {
+						padding: 1.5rem 1.125rem;
+					}
+				}
+
+				.description {
+					font-weight: 500;
+					font-size: 0.8rem;
+					color: $secondary;
+					background: red;
+					p {
+						padding: 1.5rem 1.125rem;
+					}
+					@media screen and (min-width: $md) {
+						margin-top: 3rem;
+					}
+				}
+			}
+
+			.swiper-clicks {
+				margin-top: 1rem;
+				display: flex;
+				align-items: center;
+				gap: 1rem;
+
+				z-index: 3;
+				width: 9%;
+
+				.line {
+					max-width: 150px;
+					height: 1px;
+					background: #adadad;
+					flex: 1;
+				}
+
+				.arrows {
+					display: flex;
+					gap: 1rem;
+
+					.swiper-control {
+						border: 1px solid #a00107;
+						color: #a00107;
+						background: #f5e5e6;
+						border-radius: 50%;
+						padding: 0.5rem 0.8rem;
+						width: 2.5rem;
+					}
 				}
 			}
 		}
 	}
 
-	.home-section-6 {
+	.testimonial-head {
+		text-align: center;
+		font-size: 3rem;
+		font-weight: 800;
+		margin-top: 3rem;
+	}
+
+	.client-reviews-wrapper {
 		width: 100%;
-		margin-top: 3.5rem;
+		margin-top: 1rem;
 		@media screen and (max-width: 576px) {
 			width: 90vw;
 		}
@@ -271,13 +428,13 @@
 			text-align: center;
 		}
 
-		.section6-inner {
+		.client-reviews-inner {
 			text-align: center;
 			margin-inline: auto;
 
 			width: 100%;
 
-			.section6-inner-txt1 {
+			.client-reviews-inner-text {
 				color: #000;
 				font-size: 1.125rem;
 				font-weight: 400;
@@ -289,9 +446,8 @@
 					margin-inline: auto;
 				}
 			}
-			.section6-inner-profile {
+			.client-reviews-profile {
 				color: #000;
-				line-height: 1.76125rem;
 
 				img {
 					border-radius: 50%;
@@ -301,7 +457,7 @@
 					font-weight: 600;
 					margin-block: 1.5rem 0.5rem;
 				}
-				&_caption {
+				.client-position {
 					font-size: 1.125rem;
 					font-weight: 500;
 					margin-bottom: 2.5rem;

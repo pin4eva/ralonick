@@ -120,48 +120,49 @@ const Home = () => {
 					</div>
 				</section>
 
-				<section className="home-section-3 container">
-					<div className="section3-inner">
-						<div className="section3-inner-left " data-aos="zoom-in-up" data-aos-duration="3000">
+				<section className="transforming container">
+					<div className="transforming-inner">
+						<div className="transforming-inner-left " data-aos="zoom-in-up" data-aos-duration="3000">
 							<p className="text-danger">ROLANICK</p>
-							<p className="section3-heading">Who We Are...</p>
+							<p className="transforming-heading">Who We Are...</p>
 							<h2>Transforming With Innovations</h2>
-							<p className="section3-paragraph1">
+							<p className="transforming-paragraph">
 								Ralonick Constructions operates within the framework of commercial and industrial activities, developing
 								and carrying out basic and detailed services in engineering, procurement, construction, equipment
 								leasing and marine.
 							</p>
-							<p className="section3-paragraph2">{`We exceed our clients' trust through the timely delivery of quality, satisfactory products and services.`}</p>
-							<div className="info" fade-up-left="true" data-aos-easing="ease-in-quad" data-aos-duration="1500">
-								<div className="info-sub">
-									<p>25+</p>
-									<p>Trusted Partners</p>
+							<p className="transforming-sub-text">{`We exceed our clients' trust through the timely delivery of quality, satisfactory products and services.`}</p>
+
+							<div className="statistics" fade-up-left="true" data-aos-easing="ease-in-quad" data-aos-duration="1500">
+								<div className="border-none statistics-info">
+									<p className="primary-bold">25+</p>
+									<p className="primary-light">Trusted Partners</p>
 								</div>
-								<div className="info-sub">
-									<p>50+</p>
-									<p>Satisfied Clients</p>
+								<div className="statistics-info">
+									<p className="primary-bold">50+</p>
+									<p className="primary-light">Satisfied Clients</p>
 								</div>
-								<div className="info-sub">
-									<p>5+</p>
-									<p>Years Experience</p>
+								<div className="border-none statistics-info ">
+									<p className="primary-bold">5+</p>
+									<p className="primary-light">Years Experience</p>
 								</div>
 							</div>
 						</div>
-						<div className="section3-inner-right" data-aos="zoom-in-down" data-aos-duration="2500">
+						<div className="transforming-inner-right" data-aos="zoom-in-down" data-aos-duration="2500">
 							<img src="/assets/who_img1.png" alt="" />
 						</div>
 					</div>
 				</section>
 
-				{/* <div className="home-section-41 container">
-					<div className="fifth-image" data-aos="zoom-in-down" data-aos-duration="2500">
+				<div className="quality-container container">
+					<div className="quality-container-image" data-aos="zoom-in-down" data-aos-duration="2500">
 						<img src="assets/why__img.png" alt="" />
 					</div>
 
-					<div className="fifth-section-text">
+					<div className="quality-container-text">
 						<h1>Why Choose Us</h1>
-						<div className="strict-text" data-aos="zoom-in-up" data-aos-duration="3000">
-							<div>
+						<div className="quality-container-text-inner" data-aos="zoom-in-up" data-aos-duration="3000">
+							<div className="text-grid">
 								<span>
 									<img src="assets/safety.svg" alt="" />
 								</span>
@@ -172,7 +173,7 @@ const Home = () => {
 									engineers) and technical expertise.
 								</p>
 							</div>
-							<div>
+							<div className="text-grid">
 								<span>
 									<img src="assets/integrity.svg" alt="" />
 								</span>
@@ -183,7 +184,7 @@ const Home = () => {
 									placed in us by all our clients and stakeholders is key to us.
 								</p>
 							</div>
-							<div>
+							<div className="text-grid">
 								<span>
 									<img src="assets/quality.svg" alt="" />
 								</span>
@@ -194,7 +195,7 @@ const Home = () => {
 									means giving clients the best value for their money.
 								</p>
 							</div>
-							<div>
+							<div className="text-grid">
 								<span>
 									<img src="images/Bag.png" alt="" />
 								</span>
@@ -207,13 +208,13 @@ const Home = () => {
 							</div>
 						</div>
 					</div>
-				</div>  */}
+				</div>
 
-				{/* <section className="home-section-5 container">
-					<div className="section5-inner">
-						<h2>Our Services</h2>
-						<div className="section5-inner-text">
-							<p>
+				<section className="service-container container">
+					<div className="service-container-inner">
+						<h1>Our Services</h1>
+						<div className="service-container-inner_text">
+							<p className="fw-500 service-desc">
 								{`At Ralonick, we offer a wide range of services from engineering, procurement, construction, to equipment leasing for land & marine.`}
 							</p>
 							<Link href="/services">
@@ -221,10 +222,10 @@ const Home = () => {
 							</Link>
 						</div>
 					</div>
-				</section> */}
+					<ServiceComp />
+				</section>
 
-				<ServiceComp />
-
+				<h1 className="testimonial-head">Client Reviews</h1>
 				<ClientComp />
 
 				{/* <section className="home-section-7 container">

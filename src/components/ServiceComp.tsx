@@ -10,14 +10,14 @@ export const SwiperButtonNext = () => {
 	const swiper = useSwiper();
 
 	return (
-		<div className="section5-arrows">
+		<div className="swiper-clicks">
 			{" "}
 			<div className="line"></div>
 			<div className="arrows">
-				<button onClick={() => swiper.slidePrev()} className="prev">
+				<button onClick={() => swiper.slidePrev()} className="swiper-control">
 					<i className="fa-solid fa-chevron-left"></i>
 				</button>
-				<button onClick={() => swiper.slideNext()} className="next">
+				<button onClick={() => swiper.slideNext()} className="swiper-control">
 					<i className="fa-solid fa-chevron-right"></i>
 				</button>
 			</div>
@@ -28,8 +28,8 @@ export const SwiperButtonNext = () => {
 const ServiceComp = () => {
 	return (
 		<Swiper
-			className="services container"
-			spaceBetween={10}
+			className="service-swiper-card"
+			spaceBetween={5}
 			slidesPerView={3}
 			navigation
 			loopFillGroupWithBlank={true}
@@ -37,6 +37,7 @@ const ServiceComp = () => {
 			breakpoints={{
 				1161: {
 					slidesPerView: 3,
+					spaceBetween: 5,
 				},
 				890: {
 					slidesPerView: 2,
@@ -50,13 +51,15 @@ const ServiceComp = () => {
 				},
 			}}
 		>
-			{Data.map((item) => {
+			{Data.map((item, i) => {
 				return (
-					<SwiperSlide key={item.id} className="services-items">
-						<img src={item.image} alt="ig" />
-						<div className="content">
-							<p>{item.title}</p>
-							<div className="texts">{item.text}</div>
+					<SwiperSlide key={i} className="service-swiper-card-items">
+						<img src={item.image} alt="" />
+						<div className="title">
+							<p className=" fw-600">{item.title}</p>
+						</div>
+						<div className="description">
+							<p>{item.text.slice(0, 200)}</p>
 						</div>
 					</SwiperSlide>
 				);

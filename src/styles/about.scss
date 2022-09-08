@@ -1,1 +1,383 @@
+.about-page {
+	.about-hero-section {
+		@media screen and (min-width: $md) {
+			display: flex;
+			gap: 2rem;
+		}
 
+		.hero-image {
+			width: 100%;
+			@media screen and (min-width: $md) {
+				width: 50%;
+			}
+			img {
+				width: 100%;
+				height: 100%;
+			}
+		}
+
+		.hero-text {
+			margin: 0;
+			padding: 0;
+			color: $primary;
+			font-size: 2.5rem;
+			display: flex;
+			flex-direction: column;
+			gap: -4rem;
+			justify-content: flex-end;
+			@media screen and (min-width: $md) {
+				width: 30%;
+			}
+		}
+	}
+	//===========END OF ABOUT HERO==========
+
+	.about-description {
+		width: 100%;
+		margin-top: 2rem;
+		@media screen and (min-width: $md) {
+			display: flex;
+			justify-content: space-between;
+		}
+		&-text {
+			width: 100%;
+			p {
+				margin-top: 1rem;
+			}
+			@media screen and (min-width: $md) {
+				width: 50%;
+			}
+		}
+
+		&-image {
+			width: 100%;
+			img {
+				width: 100%;
+				height: 100%;
+			}
+			@media screen and (min-width: $md) {
+				width: 45%;
+				max-height: 35.81rem;
+			}
+		}
+	}
+
+	//=============END OF ABOUT DESCRIPTION===========
+
+	.transforming {
+		margin-top: 3rem;
+
+		.transforming-inner {
+			width: 90%;
+			margin: 0 auto;
+
+			@media screen and (min-width: $md) {
+				width: 100%;
+				display: flex;
+				justify-content: space-between;
+			}
+
+			&-left {
+				width: 90%;
+				text-align: center;
+				margin: 0 auto;
+
+				@media screen and (min-width: 1200px) {
+					width: 47%;
+				}
+				h2 {
+					color: $secondary;
+					font-size: 3rem;
+					font-weight: 800;
+				}
+
+				&.text-danger {
+					font-weight: 600;
+				}
+
+				.transforming-heading {
+					color: $secondary;
+				}
+
+				.transforming-paragraph {
+					margin-block: 1.5rem 0;
+					font-weight: 500;
+				}
+				.transforming-sub-text {
+					margin-bottom: 2.5rem;
+					font-weight: 500;
+				}
+
+				.statistics {
+					display: flex;
+					text-align: center;
+					justify-content: center;
+
+					@media screen and (max-width: $md) {
+						justify-content: center;
+					}
+
+					.statistics-info {
+						padding: 2%;
+						border: 1px solid $primary;
+					}
+					.border-none {
+						border-left: none;
+						border-right: none;
+					}
+
+					.primary-bold {
+						font-size: 3rem;
+						font-weight: 600;
+						color: $primary;
+					}
+
+					.primary-light {
+						font-size: 1rem;
+						font-weight: 500;
+						color: $secondary;
+					}
+				}
+			}
+			&-right {
+				display: none;
+				@media screen and (min-width: 1200px) {
+					display: block;
+					margin-top: 3rem;
+					width: 50%;
+					height: 100%;
+				}
+				img {
+					height: 100%;
+				}
+			}
+		}
+	}
+
+	//===========END OF TRANSFORMING=============
+
+	.misson-vision-container {
+		display: grid;
+		margin-top: 3.9375rem;
+
+		grid-template-areas:
+			"a a a"
+			"b b b"
+			"c c c"
+			"d d d";
+
+		span {
+			color: #000000;
+			font-size: 1.125rem;
+			font-weight: 600;
+		}
+
+		@media screen and (min-width: $md) {
+			grid-template-areas:
+				"a a b"
+				"c . b"
+				"c d d";
+		}
+
+		.vision-frame {
+			grid-area: a;
+			width: 80%;
+			margin: auto;
+			@media screen and (min-width: $md) {
+				width: 100%;
+				margin: 0;
+			}
+
+			img {
+				width: 100%;
+			}
+		}
+
+		.vision-description {
+			width: 80%;
+			margin: auto;
+			height: fit-content;
+			background: rgba(51, 51, 51, 0.02);
+			grid-area: b;
+			padding: 2rem 1.5rem;
+
+			@media screen and (min-width: $md) {
+				width: 25rem;
+				height: 100%;
+				margin: 0;
+			}
+			ul {
+				width: 100%;
+				padding-top: 1rem;
+			}
+		}
+
+		.mission-description {
+			background: rgba(51, 51, 51, 0.02);
+			grid-area: c;
+			margin: 1rem auto 0 auto;
+			height: fit-content;
+			width: 80%;
+			padding: 2rem 1.5rem;
+			@media screen and (min-width: $md) {
+				width: 25rem;
+				height: 100%;
+				margin: 0;
+			}
+			ul {
+				width: 100%;
+				padding-top: 1rem;
+			}
+		}
+
+		.mission-frame {
+			grid-area: d;
+			width: 80%;
+			margin: auto;
+			@media screen and (min-width: $md) {
+				width: 100%;
+				margin: 0;
+				margin-right: 2rem;
+			}
+
+			img {
+				width: 100%;
+				height: auto;
+			}
+		}
+	}
+	//======END OF MISSION VISION CONTAINER====
+
+	.background {
+		width: 70%;
+		margin: 2rem auto;
+		text-align: center;
+		padding-top: 2rem;
+		padding-inline: 1rem;
+		box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+		transition: all 500ms ease-in-out;
+
+		&:hover {
+			transform: scale(1.05);
+		}
+
+		p {
+			font-style: italic;
+			width: 100%;
+
+			span {
+				color: $primary;
+				font-weight: 700;
+			}
+		}
+	}
+	//=======END OF BACKGROUND============
+
+	.quality-container {
+		@media screen and (min-width: $md) {
+			display: flex;
+			justify-content: space-between;
+			margin-top: 3rem;
+		}
+		.quality-container-image {
+			display: none;
+			@media screen and (min-width: $md) {
+				display: block;
+				width: 40%;
+				border: 1px solid green;
+				height: 800px;
+				max-height: 900px;
+				margin-top: 3.5rem;
+
+				img {
+					width: 100%;
+					height: 100%;
+				}
+			}
+		}
+
+		.quality-container-text {
+			width: 80%;
+			margin: 3rem auto;
+			@media screen and (min-width: $md) {
+				width: 50%;
+				margin-top: 0;
+			}
+
+			&-inner {
+				display: grid;
+				grid-template-columns: 1fr;
+				margin-top: 1.5rem;
+				@media screen and (min-width: $md) {
+					grid-template-columns: 1fr 1fr;
+				}
+
+				.text-grid {
+					border: 1px solid $secondary;
+					padding: 1.5rem 1rem 2rem 1rem;
+
+					h5 {
+						font-size: 18px;
+						font-weight: 700;
+						margin-top: 1.5rem;
+					}
+
+					p {
+						font-weight: 500;
+						font-size: 14px;
+						margin-top: 1.5rem;
+					}
+				}
+			}
+		}
+	}
+
+	.team-card-container {
+		margin-top: 1rem;
+		.team-card {
+			display: grid;
+			grid-template-columns: 100%;
+			gap: 1rem;
+			margin-top: -2rem;
+			@media screen and (min-width: $mobile) {
+				display: flex;
+				justify-content: space-between;
+				padding-top: 3rem;
+			}
+
+			.team-card-single {
+				width: 80%;
+				margin: auto;
+				color: white;
+				padding-block: 1rem;
+				@media screen and (min-width: $mobile) {
+					width: 30%;
+					text-align: center;
+				}
+
+				.full-width {
+					width: 100%;
+				}
+
+				.card-details {
+					display: flex;
+					height: 7.8375rem;
+					flex-direction: column;
+					gap: 0.8rem;
+					background: #000000;
+					align-items: center;
+
+					span {
+						display: flex;
+						gap: 1rem;
+						margin: auto;
+						padding-bottom: 1rem;
+					}
+					h5 {
+						padding-top: 1rem;
+					}
+				}
+			}
+		}
+	}
+}

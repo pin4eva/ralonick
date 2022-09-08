@@ -14,21 +14,19 @@ const Services = () => {
 
 	return (
 		<FrontLayout>
-			<div className="service-section container">
-				<section className="service-section-hero">
-					<div className="inner container">
-						<div className="service-section-hero-image">
-							<img src="/assets/about1.png" alt="about" />
-						</div>
-						<div className="service-section-hero-text">Ralonik LTD. Services</div>
+			<div className="service-wrapper container">
+				<section className="service-hero-section">
+					<div className="image-wrapper">
+						<img src="/assets/about1.png" alt="about" />
 					</div>
+					<p className="text-wrapper">Ralonik LTD. Services</p>
 				</section>
 
-				<section className="services-intro container">
+				<section className="services-intro">
 					<div className="services-intro-inner">
-						<h2>We build Solutions</h2>
-						<div className="services-offer">
-							<p>
+						<h1>We build Solutions</h1>
+						<div className="services-intro-description">
+							<p className="description-text fw-500">
 								At Ralonick, we offer a wide range of services from engineering, procurement, construction, to equipment
 								leasing for land & marine.
 							</p>
@@ -43,40 +41,33 @@ const Services = () => {
 					</div>
 				</section>
 
-				<section className="third-part container">
-					<div className="third-part-inner">
-						<div className="third-part-inner-top-info">
+				<section className="more-details-wrapper container">
+					<div className="more-details-inner">
+						<div className="more-details-inner_top">
 							<p>Still have a question(s) ?</p>
 							<button className="btn btn-outline-danger hug">Contact Us</button>
 						</div>
-						<div className="third-part-inner-bottom-info">
-							<div className="third-part-inner-bottom-info-collation">
-								<p className="years">
-									25 <sup>+</sup>
-								</p>
-								<p className="data">Completed Projects</p>
+						<div className="statistics">
+							<div className="border-none statistics-info">
+								<p className="primary-bold">25+</p>
+								<p className="primary-light">Completed Projects</p>
 							</div>
-							<div className="third-part-inner-bottom-info-collation">
-								<p className="years">
-									25 <sup>+</sup>
-								</p>
-								<p className="data">Trusted Partners</p>
+							<div className="statistics-info">
+								<p className="primary-bold">25+</p>
+								<p className="primary-light">Trusted Partners</p>
 							</div>
-							<div className="third-part-inner-bottom-info-collation">
-								<p className="years">
-									50 <sup>+</sup>
-								</p>
-								<p className="data">Satisfied Clients</p>
+							<div className="statistics-info">
+								<p className="primary-bold">50+</p>
+								<p className="primary-light">Satisfied Clients</p>
 							</div>
-							<div className="third-part-inner-bottom-info-collation">
-								<p className="years">
-									5 <sup>+</sup>
-								</p>
-								<p className="data">Years Experience</p>
+							<div className="border-none statistics-info ">
+								<p className="primary-bold">5+</p>
+								<p className="primary-light">Years Experience</p>
 							</div>
 						</div>
 					</div>
 				</section>
+				<h1 className="testimonial-head">Client Reviews</h1>
 				<ClientComp />
 			</div>
 		</FrontLayout>

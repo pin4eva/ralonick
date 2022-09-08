@@ -9,7 +9,6 @@ import "swiper/css";
 import "swiper/css/navigation";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { SwiperButtons } from "../../components/ServiceComp";
-import { SwiperButtonControl } from "..";
 
 const Services = () => {
 	const services = Data.map((service) => ({

@@ -11,7 +11,7 @@ import { SwiperSlide, Swiper } from "swiper/react";
 import "swiper/css/navigation";
 import { SwiperData } from "../components/Data";
 
-export const Home = () => {
+const Home = () => {
 	const [disableNext, setDisableNext] = useState(false);
 	const [disablePrev, setDisablePrev] = useState(true);
 	useEffect(() => {
@@ -328,9 +328,9 @@ export const Home = () => {
 	);
 };
 
-// export default Home;
+export default Home;
 
-export const SwiperButtonControl: React.FC<{ disableNext: boolean; disablePrev: boolean }> = ({
+const SwiperButtonControl: React.FC<{ disableNext: boolean; disablePrev: boolean }> = ({
 	disableNext,
 	disablePrev,
 }) => {

@@ -4,57 +4,49 @@ import FrontLayout from "../../layouts/front.layout";
 const singleservice = () => {
 	return (
 		<FrontLayout>
-			<div className="single-service-section">
+			<div className="single-service-wrapper">
 				<section className="single-service-hero container">
 					<div className="single-service-hero-image">
 						<img src="/assets/Frame 50.png" alt="bg" />
 					</div>
 				</section>
-				{/*
-				{ Data.map((item) => {
-					return(
-						<div>{item.title1}</div>
-					)
-				})
 
-				} */}
+				<section className="single-service-description container">
+					<div className="single-service-description_inner">
+						<h1 className="title">Active & Passive Fire Proofing</h1>
 
-				<section className="single-service-1 container">
-					<div className="single-service-1-inner">
-						<h2>Active & Passive Fire Proofing</h2>
-
-						<div className="single-service-1-inner-text">
-							<p>
+						<div className="single-service-description_item">
+							<p className="description-text">
 								Ralonick is a professional fire proofing company offering clients’ a one-stop for all their fire
 								proofing needs be it passive or active fire proofing. Fire Proofing is applied to Building, Steel
 								Decking, Structural Beams, Siding System.
 							</p>
-							<h4>Passive Fire Proofing:</h4>
-							<p>
+							<h4 className="description-subitle">Passive Fire Proofing:</h4>
+							<p className="description-text">
 								Passive Fire Proofing is a vital component for any structure of building to safeguard lives and limit
 								financial impact of damage to building and their content. We offer Cementitious Fire Proofing, Mineral
 								Fibre Fire Proofing, Itumescent Paint Fire Proofing under Passive Fire Proofing.
 							</p>
 
-							<h4>Active Fire Proofing:</h4>
-							<p>
+							<h4 className="description-subitle">Active Fire Proofing:</h4>
+							<p className="description-text">
 								Active Fire Proofing (AFP) is an integral part of fire protection characterized by items and systems
 								which require a certain amount of motion and response in order to work. We offer Manual Fire Suppression
 								& Automatic Fire Suppression.
 							</p>
 						</div>
 
-						<div className="single-service-1-inner-images">
-							<div className="single-service-1-inner-images-1">
+						<div className="single-service-image_wrapper">
+							<div className="single-service-image-1">
 								<img src="/assets/b1.png" alt="b1" />
 							</div>
-							<div className="single-service-1-inner-images-2">
+							<div className="single-service-image-2">
 								<img src="/assets/b2.png" alt="b2" />
 							</div>
-							<div className="single-service-1-inner-images-3">
+							<div className="single-service-image-3">
 								<img src="/assets/b3.png" alt="b3" />
 							</div>
-							<div className="single-service-1-inner-images-4">
+							<div className="single-service-image-4">
 								<img src="/assets/b4.png" alt="b4" />
 							</div>
 						</div>
@@ -63,7 +55,7 @@ const singleservice = () => {
 						</div>
 					</div>
 				</section>
-
+				{/* 
 				<section className="single-service-2 container">
 					<div className="single-service-2-inner">
 						<div className="single-service-2-inner-top">
@@ -122,7 +114,7 @@ const singleservice = () => {
 							</div>
 						</div>
 					</div>
-				</section>
+				</section> */}
 			</div>
 		</FrontLayout>
 	);

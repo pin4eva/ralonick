@@ -3,11 +3,12 @@ import FrontLayout from "../../layouts/front.layout";
 import Link from "next/link";
 import { Research2, Workers } from "../../components/Data";
 import ClientComp from "../../components/ClientComp";
+import 'animate.css'
 function Project() {
     return (
         <FrontLayout>
 
-            <div className="projects container">
+            <div className="projects container animate__animated animate__zoomInDown">
                 <section className="firstSection">
                     <div className="img">
                         <img src={'/images/Frame99.png'} alt="" className=""></img>
@@ -20,7 +21,7 @@ function Project() {
                 <section className="second-section">
                     <div className="text">
                         <div className="inner-first">
-                            <h1>
+                            <h1 className="">
                                 Transforming
                                 With Innovations
                             </h1>

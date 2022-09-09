@@ -29,14 +29,18 @@ const ServiceComp = () => {
 	return (
 		<Swiper
 			className="service-swiper-card"
-			spaceBetween={5}
-			slidesPerView={3}
+			spaceBetween={10}
+			slidesPerView={2}
 			navigation
 			loopFillGroupWithBlank={true}
 			speed={1000}
 			breakpoints={{
-				1161: {
+				1400: {
 					slidesPerView: 3,
+					spaceBetween: 5,
+				},
+				1161: {
+					slidesPerView: 2,
 					spaceBetween: 5,
 				},
 				890: {
@@ -55,11 +59,13 @@ const ServiceComp = () => {
 				return (
 					<SwiperSlide key={i} className="service-swiper-card-items">
 						<img src={item.image} alt="" />
-						<div className="title">
-							<p className=" fw-600">{item.title}</p>
-						</div>
-						<div className="description">
-							<p>{item.text.slice(0, 200)}</p>
+						<div className="content">
+							<div className="title">
+								<p className=" fw-600">{item.title}</p>
+							</div>
+							<div className="description">
+								<p>{item.text.slice(0, 200)}</p>
+							</div>
 						</div>
 					</SwiperSlide>
 				);

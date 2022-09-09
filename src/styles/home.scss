@@ -22,15 +22,13 @@
 
 				.hero_img1 {
 					width: 90%;
-					height: 100%;
+					height: 90%;
 					// border: 1px solid red;
 					@media screen and (max-width: 576px) {
 						width: 90vw;
 					}
 					//============ styling for the navigation buttons on the HERO SECCTION=============
-					.swiper-button-prev {
-						display: none;
-					}
+					.swiper-button-prev,
 					.swiper-button-next {
 						display: none;
 					}
@@ -47,11 +45,12 @@
 						align-items: center;
 						gap: 1rem;
 						background: red;
+						border: 1px solid red;
 
 						.line {
 							height: 0.8px;
 							background: #adadad;
-							flex: 1;
+							// flex: 1;
 						}
 
 						.control-arrows {
@@ -92,7 +91,7 @@
 
 			.inner-right {
 				width: 100%;
-				background: green;
+				// background: green;
 				@media screen and (min-width: $mobile) {
 					width: 60%;
 					display: flex;
@@ -117,7 +116,6 @@
 
 			.about-inner-left {
 				width: 100%;
-				border: 1px solid green;
 
 				img {
 					width: 100%;
@@ -325,7 +323,7 @@
 			gap: 2rem;
 			margin-top: 2rem;
 			width: 100%;
-			// border: 1px solid red;
+			// height: 40rem;
 
 			@media screen and (max-width: 576px) {
 				width: 90vw;
@@ -341,28 +339,31 @@
 
 				img {
 					width: 100%;
-					height: 55%;
+					height: 40%;
 				}
+				.content {
+					display: flex;
+					// justify-content: space-between;
+					flex-direction: column;
+					.title {
+						font-size: 1rem;
+						color: $secondary;
 
-				.title {
-					font-size: 1rem;
-					color: $secondary;
-
-					p {
-						padding: 1.5rem 1.125rem;
+						p {
+							padding: 1.5rem 1.125rem;
+						}
 					}
-				}
 
-				.description {
-					font-weight: 500;
-					font-size: 0.8rem;
-					color: $secondary;
-					background: red;
-					p {
-						padding: 1.5rem 1.125rem;
-					}
-					@media screen and (min-width: $md) {
-						margin-top: 3rem;
+					.description {
+						font-weight: 500;
+						font-size: 0.9rem;
+						color: $secondary;
+						p {
+							padding: 1.5rem 1.125rem;
+						}
+						// @media screen and (min-width: $md) {
+						// 	margin-top: 3rem;
+						// }
 					}
 				}
 			}

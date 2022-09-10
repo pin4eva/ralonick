@@ -20,7 +20,7 @@ const About = () => {
                     </section>
 
                     <section className="about-first-section">
-                        <div className="about-first-section_inner">
+                        <div className="about-first-section-inner">
                             <div className="about-first-section_inner-left">
                                 <div className="about-first-section_inner-left-text">
                                     <div className="about-first-section_inner-left-text_upper">
@@ -39,59 +39,65 @@ const About = () => {
                                 </div>
                             </div>
                             <div className="about-first-section_inner-right">
-                                <div className="about-first-section_inner-right_img">
+                                <div className="about-first-section_inner-right_image">
                                     <img src="./images/twohelmet.png" alt="" />
                                 </div>
                             </div>
                         </div>
                     </section>
                     <section className="about-second-section">
-                        <div className="about-second-section_inner">
-                            <div className="about-second-section_inner_left">
-                                <div className="about-second-section_inner-left_text">
-                                    <div className="about-second-section_inner-left_text_upper">
-                                        <h3>ROLANIK</h3>
-                                        <h3>Who We Are ...</h3>
-                                    </div>
-                                    <div className="about-second-section-_inner-left_text_second-line">
-                                        <h1>Transforming
-                                            With Innovations</h1>
-                                    </div>
-                                    <div className="about-second-section_inner-left_text_lower">
-                                        <p>Ralonick Constructions operates within the framework of commercial and industrial activities, developing and carrying out basic and detailed services in engineering, procurement, construction, equipment leasing and marine. </p>
-                                        <p>We exceed our clients' trust through the timely delivery of quality, satisfactory products and services.</p>
-                                    </div>
-                                </div>
-                                <div className="about-second-section_inner-left_box">
-                                    <div className="about-second-section_inner-left_box_inner">
-                                        <div className="about-second-section_inner-left_box_inner-text">
+						<div className="about-second-section_inner">
+							<div className="about-second-section_inner_left">
+								<div className="about-second-section_inner-left_text">
+									<div className="aboutsecond-section_inner-left_text_upper">
+										<h3>ROLANIK</h3>
+										<h3>Who We Are ...</h3>
+									</div>
+									<div className="about-second-section-_inner-left_text_second-line">
+										<h1>Transforming
+											With Innovations</h1>
+									</div>
+									<div className="about-second-section_inner-left_text_lower">
+										<p>Ralonick Constructions operates within the framework of commercial and industrial activities, developing and carrying out basic and detailed services in engineering, procurement, construction, equipment leasing and marine. </p>
+										<p>We exceed our clients' trust through the timely delivery of quality, satisfactory products and services.</p>
+									</div>
+								</div>
+								<div className="about-second-section_inner-left_box">
+									<div className="about-second-section_inner-left_box_inner">
+										<div className="about-second-section_inner-left_box_inner-text first">
 
-                                            <h1>25+</h1>
-                                            <p>Trusted Partners</p>
+											<h1>25+</h1>
+											<p>Trusted Partners</p>
 
-                                        </div>
-                                        <div className="about-second-section_inner-left_box_inner-text">
-                                            <h1>50+</h1>
-                                            <p>Satisfied Clients</p>
+										</div>
+										<div className="about-second-section_inner-left_box_inner-text second">
+											<h1>50+</h1>
+											<p>Satisfied Clients</p>
 
-                                        </div>
-                                        <div className="about-second-section_inner-left_box_inner-text">
-                                            <h1>5+</h1>
-                                            <p>Years Experience</p>
+										</div>
+										<div className="about-second-section_inner-left_box_inner-text third">
+											<h1>5+</h1>
+											<p>Years Experience</p>
 
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="about-second-section-inner_right">
-                                <div className="about-second-section_inner_right-image">
-                                    <img src="./images/rectangle1.png" alt="" />
-                                    <img src="./images/rectangle2.png" alt="" />
-                                    <img src="./images/rectangle3.png" alt="" />
-                                </div>
-                            </div>
-                        </div>
-                    </section>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div className="about-second-section-inner_right">
+								<div className="about-second-section_inner_right-inner">
+									<div className="about-second-section_inner-right-inner-one">
+										<img src="./images/rectangle1.png" alt="" />
+									</div>
+									<div className="about-second-section_inner-right-inner-two">
+										<img src="./images/rectangle2.png" alt="" />
+									</div>
+									<div className="about-second-section_inner-right-inner-third">
+										<img src="./images/rectangle3.png" alt="" />
+									</div>
+								</div>
+							</div>
+						</div>
+					</section>
                     <section className="about-third-section">
                         <div className="about-third-section_inner">
                             <div className="about-third-section_inner-upper">
@@ -136,15 +142,15 @@ const About = () => {
                             </div>
                         </div>
                     </section>
-                    <section className="home-third-section">
-                        <div className="home-third-section_inner">
-                            <div className="home-third-section_inner_left">
-                                <div className="home-third-section_inner_left-image">
+                    <section className="about-fourth-section">
+                        <div className="about-fourth-section_inner">
+                            <div className="about-fourth-section_inner_left">
+                                <div className="about-fourth-section_inner_left-image">
                                     <img src="./images/rectangle4.png" alt="" />
                                 </div>
                             </div>
-                            <div className="home-third-section-inner-right">
-                                <div className="home-third-section-inner-right-header">
+                            <div className="about-fourth-section-inner-right">
+                                <div className="about-fourth-section-inner-right-header">
                                     <h1>Why Choose Us</h1>
                                 </div>
                                 <div className="about-fourth-section-inner-right_box-table">

@@ -155,53 +155,53 @@ const Home = () => {
 								<div className="home-third-section-inner-right_box">
 									<div className="home-third-section-inner-right_box-table">
 
-											<div className="home-third-section-inner-right_box-table-inner one">
-												<div className="home-third-section-inner-right-box-table-inner_img">
-													<img src="./images/badge.png" alt="" />
-												</div>
-												<div className="home-third-section-inner-right_box-table_inner_text">
-													<h3>Quality</h3>
-													<p>
-														Great service delivery is incomplete without quality. It is our core value of operation, we achieve this by employing the policy of harnessing available resources, experience (of higly skilled engineers) and technical expertise.
-													</p>
-												</div>
+										<div className="home-third-section-inner-right_box-table-inner one">
+											<div className="home-third-section-inner-right-box-table-inner_img">
+												<img src="./images/badge.png" alt="" />
 											</div>
-											<div className="home-third-section-inner-right_box-table-inner two">
-												<div className="home-third-section-inner-right-box-table-inner_img">
-													<img src="./images/union.png" alt="" />
-												</div>
-												<div className="home-third-section-inner-right_box-table_inner_text">
-													<h3>Integrity</h3>
-													<p>
-														Service entails a lot of commitment laced with passion, with years of experience and service provision, we stand for excellent and honest work as we stay true to our words.
-														Maintaining the trust placed in us by all our clients and stakeholders is key to us.
-													</p>
-												</div>
+											<div className="home-third-section-inner-right_box-table_inner_text">
+												<h3>Quality</h3>
+												<p>
+													Great service delivery is incomplete without quality. It is our core value of operation, we achieve this by employing the policy of harnessing available resources, experience (of higly skilled engineers) and technical expertise.
+												</p>
 											</div>
-											<div className="home-third-section-inner-right_box-table-inner third">
-												<div className="home-third-section-inner-right-box-table-inner_img">
-													<img src="./images/bag.png" alt="" />
-												</div>
-												<div className="home-third-section-inner-right_box-table_inner_text">
-													<h3>Professionalism</h3>
-													<p>
-														Skill and competence are as important as practice therefore all staff are highly trained, possess high experiential knowledge in the field, and are highly professional.
-														We value professionalism, to us it means giving clients the best value for their money.
-													</p>
-												</div>
+										</div>
+										<div className="home-third-section-inner-right_box-table-inner two">
+											<div className="home-third-section-inner-right-box-table-inner_img">
+												<img src="./images/union.png" alt="" />
 											</div>
-											<div className="home-third-section-inner-right_box-table-inner fourth">
-												<div className="home-third-section-inner-right-box-table-inner_img">
-													<img src="./images/helmet.png" alt="" />
-												</div>
-												<div className="home-third-section-inner-right_box-table_inner_text">
-													<h3>Safety</h3>
-													<p>
-														As one of our offered service we are not lacking in ensuring that our installations and technical works are properly done.
-														We have zero reservations as regards safety. Our staff are highly trained for personal & on-site safety.
-													</p>
-												</div>
+											<div className="home-third-section-inner-right_box-table_inner_text">
+												<h3>Integrity</h3>
+												<p>
+													Service entails a lot of commitment laced with passion, with years of experience and service provision, we stand for excellent and honest work as we stay true to our words.
+													Maintaining the trust placed in us by all our clients and stakeholders is key to us.
+												</p>
 											</div>
+										</div>
+										<div className="home-third-section-inner-right_box-table-inner third">
+											<div className="home-third-section-inner-right-box-table-inner_img">
+												<img src="./images/bag.png" alt="" />
+											</div>
+											<div className="home-third-section-inner-right_box-table_inner_text">
+												<h3>Professionalism</h3>
+												<p>
+													Skill and competence are as important as practice therefore all staff are highly trained, possess high experiential knowledge in the field, and are highly professional.
+													We value professionalism, to us it means giving clients the best value for their money.
+												</p>
+											</div>
+										</div>
+										<div className="home-third-section-inner-right_box-table-inner fourth">
+											<div className="home-third-section-inner-right-box-table-inner_img">
+												<img src="./images/helmet.png" alt="" />
+											</div>
+											<div className="home-third-section-inner-right_box-table_inner_text">
+												<h3>Safety</h3>
+												<p>
+													As one of our offered service we are not lacking in ensuring that our installations and technical works are properly done.
+													We have zero reservations as regards safety. Our staff are highly trained for personal & on-site safety.
+												</p>
+											</div>
+										</div>
 									</div>
 								</div>
 							</div>
@@ -210,48 +210,55 @@ const Home = () => {
 					<section className="home-fourth-section">
 						<div className="home-fourth-section-inner">
 							<div className="home-fourth-section-inner_top">
-								<div className="home-fourth-section-inner_top_text">
-									<div className="home-fourth-section-inner_top_text_header">
-										<h1>Our Services</h1>
-									</div>
+								<h1>Our Services</h1>
+								<div className="home-fourth-section-inner-top-text">
 									<p>At Ralonick, we offer a wide range of services from engineering, procurement, construction, to equipment leasing for land & marine.</p>
+									<div className="home-fourth-section-inner_top_button">
+										<button className="button hug">All Services</button>
+									</div>
 								</div>
-								<div className="home-fourth-section-inner_top_button">
-									<button className="button hug">All Services</button>
-								</div>
+
 							</div>
 							<div className="home-fourth-section-inner_card">
 								<div className="home-fourth-section-inner_card-inner">
-									<div className="home-fourth-section-inner_card-inner_image">
-										<img src="./images/frame44.png" alt="" />
+									<div className="home-fourth-section_inner-card-inner one">
+										<div className="home-fourth-section-inner_card-inner_image">
+											<img src="./images/frame44.png" alt="" />
+										</div>
+										<div className="home-fourth-section-inner_card-inner_text">
+											<h3>Active & Passive Fire Proofing</h3>
+											<p>Fire Proofing is a vital component for any structure to ensure safety of lives and minimal financial loss of properties. Ralonick offers professional fire proofing services ranging from cemetitious fire proofing, to Automatic fire suppression, etc.</p>
+											<Link href={'/services/single-service'}>
+												<a>Learn More <img src="./images/vector2.png" alt="" /></a>
+											</Link>
+										</div>
 									</div>
-									<div className="home-fourth-section-inner_card-inner_text">
-										<h3>Active & Passive Fire Proofing</h3>
-										<p>Fire Proofing is a vital component for any structure to ensure safety of lives and minimal financial loss of properties. Ralonick offers professional fire proofing services ranging from cemetitious fire proofing, to Automatic fire suppression, etc.</p>
-										<Link href={'/services/single-service'}>
-											<a>Learn More <img src="./images/vector2.png" alt="" /></a>
-										</Link>
+									<div className="home-fourth-section_inner-card-inner one">
+										<div className="home-fourth-section-inner_card-inner_image">
+											<img src="./images/frame46.png" alt="" />
+										</div>
+										<div className="home-fourth-section-inner_card-inner_text">
+											<h3>Field Joint Coating Services</h3>
+											<p>This involves the coating of girth weld produce on board the pipe-laying vessels or at any offshore location. Ralonick offers engineering design & fabrication of customized field joint coating equipment which involves liquid applied materials.</p>
+											<Link href={'/services/single-service'}>
+												<a>Learn More <img src="./images/vector2.png" alt="" /></a>
+											</Link>
+										</div>
 									</div>
-									<div className="home-fourth-section-inner_card-inner_image">
-										<img src="./images/frame46.png" alt="" />
+									<div className="home-fourth-section_inner-card-inner one">
+										<div className="home-fourth-section-inner_card-inner_image">
+											<img src="./images/frame45.png" alt="" />
+										</div>
+										<div className="home-fourth-section-inner_card-inner_text">
+											<h3>Procurement & Installation of FRP/GRP</h3>
+											<p>In conjunction with our foreign partners AOCOMM Composite Limited(major manufacturers of FRP and GRP Products) we secure leadership in the area of technical support, procurement and maintenance for upstream and downstream oil and gas refinery.</p>
+											<Link href={'/services/single-service'}>
+												<a>Learn More <img src="./images/vector2.png" alt="" /></a>
+											</Link>
+										</div>
 									</div>
-									<div className="home-fourth-section-inner_card-inner_text">
-										<h3>Field Joint Coating Services</h3>
-										<p>This involves the coating of girth weld produce on board the pipe-laying vessels or at any offshore location. Ralonick offers engineering design & fabrication of customized field joint coating equipment which involves liquid applied materials.</p>
-										<Link href={'/services/single-service'}>
-											<a>Learn More <img src="./images/vector2.png" alt="" /></a>
-										</Link>
-									</div>
-									<div className="home-fourth-section-inner_card-inner_image">
-										<img src="./images/frame45.png" alt="" />
-									</div>
-									<div className="home-fourth-section-inner_card-inner_text">
-										<h3>Procurement & Installation of FRP/GRP</h3>
-										<p>In conjunction with our foreign partners AOCOMM Composite Limited(major manufacturers of FRP and GRP Products) we secure leadership in the area of technical support, procurement and maintenance for upstream and downstream oil and gas refinery.</p>
-										<Link href={'/services/single-service'}>
-											<a>Learn More <img src="./images/vector2.png" alt="" /></a>
-										</Link>
-									</div>
+
+
 								</div>
 							</div>
 						</div>
@@ -295,42 +302,50 @@ const Home = () => {
 							<div className="home-sixth-section-inner_magazine">
 
 								<div className="home-sixth-ssection-inner_magazine-inner">
-									<div className="home-sixth-section-inner_magazine-inner-box">
-										<div className="home-sixth-section-inner_magazine-inner-box_text-box">
-											<h3>Project Name</h3>
-											<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis mi sagittis aliquet elementum nunc lectus. Arcu, non ornare commodo, convallis lectus.</p>
-											<Link href={'/projects'}>
-												<a>More Details <img src="./images/vectorwhite.png" alt="" /></a>
-											</Link>
+									<div className="home-sixth-section-inner_magazine-inner-part one">
+										<div className="home-sixth-section-inner_magazine-inner-box">
+											<div className="home-sixth-section-inner_magazine-inner-box_text-box">
+												<h3>Project Name</h3>
+												<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis mi sagittis aliquet elementum nunc lectus. Arcu, non ornare commodo, convallis lectus.</p>
+												<Link href={'/projects'}>
+													<a>More Details <img src="./images/vectorwhite.png" alt="" /></a>
+												</Link>
+											</div>
+										</div>
+										<div className="home-sixth-section-inner_magazine-inner-image">
+											<img src="./images/project1.png" alt="" />
 										</div>
 									</div>
-									<div className="home-sixth-section-inner_magazine-inner-image">
-										<img src="./images/project1.png" alt="" />
-									</div>
-									<div className="home-sixth-section-inner_magazine-inner-box">
-										<div className="home-sixth-section-inner_magazine-inner-box_text-box">
-											<h3>Project Name</h3>
-											<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis mi sagittis aliquet elementum nunc lectus. Arcu, non ornare commodo, convallis lectus.</p>
-											<Link href={'/projects'}>
-												<a>More Details <img src="./images/vectorwhite.png" alt="" /></a>
-											</Link>
+									<div className="home-sixth-section-inner_magazine-inner-part two">
+										<div className="home-sixth-section-inner_magazine-inner-box">
+											<div className="home-sixth-section-inner_magazine-inner-box_text-box">
+												<h3>Project Name</h3>
+												<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis mi sagittis aliquet elementum nunc lectus. Arcu, non ornare commodo, convallis lectus.</p>
+												<Link href={'/projects'}>
+													<a>More Details <img src="./images/vectorwhite.png" alt="" /></a>
+												</Link>
+											</div>
+										</div>
+										<div className="home-sixth-section-inner_magazine-inner-image">
+											<img src="./images/project2.png" alt="" />
 										</div>
 									</div>
-									<div className="home-sixth-section-inner_magazine-inner-image">
-										<img src="./images/project2.png" alt="" />
-									</div>
-									<div className="home-sixth-section-inner_magazine-inner-box">
-										<div className="home-sixth-section-inner_magazine-inner-box_text-box">
-											<h3>Project Name</h3>
-											<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis mi sagittis aliquet elementum nunc lectus. Arcu, non ornare commodo, convallis lectus.</p>
-											<Link href={'/projects'}>
-												<a>More Details <img src="./images/vectorwhite.png" alt="" /></a>
-											</Link>
+									<div className="home-sixth-section-inner_magazine-inner-part three">
+										<div className="home-sixth-section-inner_magazine-inner-box">
+											<div className="home-sixth-section-inner_magazine-inner-box_text-box">
+												<h3>Project Name</h3>
+												<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis mi sagittis aliquet elementum nunc lectus. Arcu, non ornare commodo, convallis lectus.</p>
+												<Link href={'/projects'}>
+													<a>More Details <img src="./images/vectorwhite.png" alt="" /></a>
+												</Link>
+											</div>
+										</div>
+										<div className="home-sixth-section-inner_magazine-inner-image">
+											<img src="./images/project3.png" alt="" />
 										</div>
 									</div>
-									<div className="home-sixth-section-inner_magazine-inner-image">
-										<img src="./images/project3.png" alt="" />
-									</div>
+
+
 								</div>
 							</div>
 							<div className="home-sixth-section-inner-button">

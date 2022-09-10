@@ -1,0 +1,140 @@
+.about-page {
+    .about-first-section {
+        height: 200vh;
+        // border: 1px solid;
+
+        .about-first-section-inner {
+            @media screen and (min-width:992px) {
+
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                gap: 1rem;
+            }
+
+            .about-first-section_inner-right {
+                border: 1px;
+                padding: 1rem;
+
+                .about-first-section_inner-right_image {
+                    border: 1px;
+                    padding: 1rem;
+
+                    img {
+                        height: auto;
+                        width: 100%;
+                    }
+                }
+            }
+
+            .about-first-section-inner-right {
+                .about-first-section_inner-right_text {
+                    @media screen and (min-width:1200px) {
+                        margin-top: 4rem;
+                    }
+
+                    .about-first-section_inner-right_text_upper {
+                        h3 {
+                            color: $danger;
+                            font-style: normal;
+                            font-weight: 600;
+                            font-size: 18px;
+                        }
+
+                        h1 {
+                            color: $secondary;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .about-second-section {
+        height: 250vh;
+
+        .about-second-section_inner {
+            @media screen and (min-width:992px) {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                gap: 1rem;
+            }
+
+            .about-second-section_inner_left {
+                @media screen and (min-width:992px) {
+                    margin-top: -4rem;
+                }
+
+                @media screen and (min-width:1200px) {
+                    margin-top: 4rem;
+                }
+
+                .about-second-section_inner-left_text {
+                    .aboutsecond-section_inner-left_text_upper {
+                        h3 {
+                            font-weight: 600;
+                            font-size: 18px;
+                        }
+
+                        :nth-child(1) {
+                            color: $danger;
+                        }
+                    }
+                }
+
+
+                .about-second-section_inner-left_box {
+
+                    .about-second-section_inner-left_box_inner {
+                        display: grid;
+                        grid-template-columns: 1fr 1fr 1fr;
+
+                        .about-second-section_inner-left_box_inner-text {
+                            border: 1px solid $primary;
+                            text-align: center;
+
+                            &.first {
+                                border-left: none;
+                            }
+
+                            &.third {
+                                border-right: none;
+                            }
+
+                            h1 {
+                                color: $primary;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .about-second-section-inner_right {
+                margin-top: 2rem;
+
+                @media screen and (min-width:768px) {
+                    margin: 0rem;
+                }
+
+                .about-second-section_inner_right-inner {
+                    display: grid;
+                    grid-template-columns: 1fr 1fr 1fr;
+                    gap: 1rem;
+
+                    img {
+                        width: 100%;
+                    }
+
+                    .about-second-section_inner-right-inner-two {
+                        position: relative;
+                        margin-top: 43%;
+                    }
+
+                    .about-second-section_inner-right-inner-third {
+                        position: relative;
+                        margin-top: 2.3rem;
+                    }
+                }
+            }
+        }
+    }
+}

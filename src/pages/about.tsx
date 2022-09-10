@@ -86,50 +86,52 @@ const AboutPage = () => {
 
 				{/* ===================BEGINNING OF FOURTH SECTION====================== */}
 				<div className="misson-vision-container container">
-					<div className="vision-frame">
-						<img src="assets/frame3.png" alt="frame2" />
-					</div>
-					<div className="vision-description">
-						<span>Our Vision:</span>
-						<ul className="fw-500">
-							<li>
-								We aim to be Nigeria’s leading company in Design, Engineering, Procurement, Fabrication, Construction,
-								Equipment Leasing and Installation Services in Land & Marine.
-							</li>
-							<li>
-								{" "}
-								Continous delivery of excellent innovative values and construction solutions to meeet our clients’
-								requirements.
-							</li>
-							<li>
-								Be the primary preference at all times nationally for excellence and quality in all types of
-								construction.
-							</li>
-							<li>Continually improve the competence of our team & employ innovative and result-oriented persons.</li>
-						</ul>
-					</div>
-					<div className="mission-description">
-						<span>Our Mission:</span>
-						<ul className="fw-500">
-							<li>
-								To provide quality service in the fastest possible manner with minimal impact on the environment.{" "}
-							</li>
-							<li>
-								To exceed our clients trust through the delivery of quality and exclusive world class satisfactory
-								products & services.{" "}
-							</li>
-							<li>
-								To utilize the latest specialized equipment and experience personnel and tackle all land & marine
-								constructions.
-							</li>
-							<li>
-								To ensure minimal safety hazards on-site for personnels through the use of suitable equipments, experts
-								and safety equipments & measures.
-							</li>
-						</ul>
-					</div>
-					<div className="mission-frame">
-						<img src="assets/frame2.png" alt="frame2" />
+					<div className="mission-vision-container_inner">
+						<div className="vision-frame">
+							<img src="assets/frame2.png" alt="frame2" />
+						</div>
+						<div className="vision-description">
+							<span>Our Vision:</span>
+							<ul className="fw-500">
+								<li>
+									We aim to be Nigeria’s leading company in Design, Engineering, Procurement, Fabrication, Construction,
+									Equipment Leasing and Installation Services in Land & Marine.
+								</li>
+								<li>
+									{" "}
+									Continous delivery of excellent innovative values and construction solutions to meeet our clients’
+									requirements.
+								</li>
+								<li>
+									Be the primary preference at all times nationally for excellence and quality in all types of
+									construction.
+								</li>
+								<li>Continually improve the competence of our team & employ innovative and result-oriented persons.</li>
+							</ul>
+						</div>
+						<div className="mission-description">
+							<span>Our Mission:</span>
+							<ul className="fw-500">
+								<li>
+									To provide quality service in the fastest possible manner with minimal impact on the environment.{" "}
+								</li>
+								<li>
+									To exceed our clients trust through the delivery of quality and exclusive world class satisfactory
+									products & services.{" "}
+								</li>
+								<li>
+									To utilize the latest specialized equipment and experience personnel and tackle all land & marine
+									constructions.
+								</li>
+								<li>
+									To ensure minimal safety hazards on-site for personnels through the use of suitable equipments,
+									experts and safety equipments & measures.
+								</li>
+							</ul>
+						</div>
+						<div className="mission-frame">
+							<img src="assets/frame3.png" alt="frame2" />
+						</div>
 					</div>
 				</div>
 				{/* ==============END OF FOURTH SECTION========================== */}
@@ -137,11 +139,19 @@ const AboutPage = () => {
 				<div className="background">
 					<h1>Background</h1>
 					<p>
-						<span>RALONICK SERVICES LTD.</span> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quia illo
-						culpa similique quidem dolor, sint saepe id, blanditiis iusto perferendis distinctio? Rerum aut architecto
-						laudantium deserunt minima ea sequi totam eaque quisquam iusto itaque veritatis iste temporibus, rem
-						accusamus dignissimos! Repellendus, quos pariatur deleniti porro quod cupiditate, perspiciatis suscipit
-						reprehenderit similique aperiam, distinctio laboriosam eos! Repudiandae officia aliquam aperiam fugit.
+						<span>RALONICK SERVICES LTD.</span> was established in 2018 with her head office in Port Harcourt, Nigeria.
+						It is registered as a private limited liability Company under the Nigeria law. It is an indigenious Company
+						operating within the framework of commercial and Industrial activities, developing and carrying out basic
+						and detailed services in Engineering, procurement, construction, Equipment leasing and Marine.We strongly
+						believe that Equipment is useless without people with experience to operate them for maximum performance.
+						Our strength is drawn from the combination of these elements in our operations. By employing a policy of
+						harnessing available resources, experience and technical expertise, we are able to provide quality service
+						in the fastest possible manner with minimal impact on the environment. Our clients take pride in the work we
+						do because we do it well. We know our job and what it takes to handle difficult situations. And that
+						includes everyone from supervisor to laborer carrying out his or her responsibilities. What other companies
+						consider a difficult or impossible job; we consider it a challenge. Where we find challenges we find
+						solutions. Utilizing the latest specialized equipment and experienced personnel we tackle all forms of
+						difficult land marine constructions.
 					</p>
 				</div>
 

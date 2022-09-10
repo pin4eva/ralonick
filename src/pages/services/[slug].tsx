@@ -38,16 +38,16 @@ const singleservice = () => {
 
 						<div className="single-service-image_wrapper">
 							<div className="grid-image">
-								<img src="/assets/b1.png" alt="b1" />
+								<img src="/assets/b4.png" alt="b1" />
 							</div>
 							<div className="grid-image">
-								<img src="/assets/b2.png" alt="b2" />
+								<img src="/assets/b3.png" alt="b2" />
 							</div>
 							<div className="grid-image">
-								<img src="/assets/b3.png" alt="b3" />
+								<img src="/assets/b2.png" alt="b3" />
 							</div>
 							<div className="grid-image">
-								<img src="/assets/b4.png" alt="b4" />
+								<img src="/assets/b1.png" alt="b4" />
 							</div>
 						</div>
 						<div className="order-button">

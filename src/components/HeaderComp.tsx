@@ -37,7 +37,9 @@ const HeaderComp = () => {
 							</li>
 						))}
 						<li>
-							<button className="btn btn-danger">Contact Us</button>
+							<Link href="/contact">
+								<button className="btn btn-danger">Contact Us</button>
+							</Link>
 						</li>
 					</ul>
 					<div className="bars">
@@ -59,7 +61,9 @@ const HeaderComp = () => {
 								</li>
 							))}
 							<li>
-								<Link href="/contact"><button className="btn btn-danger">Contact Us</button></Link>
+								<Link href="/contact">
+									<button className="btn btn-danger">Contact Us</button>
+								</Link>
 							</li>
 						</ul>
 					</div>

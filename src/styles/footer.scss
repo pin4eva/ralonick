@@ -21,6 +21,10 @@
 		margin-top: 3rem;
 		text-align: center;
 		grid-area: a;
+		@media screen and (min-width: $md) {
+			width: 60%;
+			margin-inline: auto;
+		}
 		@media screen and (min-width: 1300px) {
 			margin-top: 1rem;
 			width: 90%;
@@ -35,6 +39,9 @@
 			font-size: 0.875rem;
 			width: 90%;
 			margin-inline: auto;
+			@media screen and (min-width: 1300px) {
+				text-align: left;
+			}
 		}
 	}
 
@@ -139,6 +146,7 @@
 		margin-top: 1rem;
 		@media screen and (min-width: $md) {
 			padding-top: 2rem;
+			margin-top: 3rem;
 		}
 		.footer_icons {
 			display: flex;
@@ -156,10 +164,18 @@
 
 		.more-details {
 			margin-top: 3rem;
+			@media screen and (min-width: $md) {
+				margin-top: 4rem;
+			}
 			a {
 				text-decoration: none;
 				font-size: 0.875rem;
 				color: #000;
+			}
+		}
+		.btn {
+			@media screen and (min-width: $md) {
+				margin-top: 2rem;
 			}
 		}
 	}

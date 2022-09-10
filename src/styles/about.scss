@@ -1,466 +1,269 @@
 .about-page {
-	* {
-		margin: 0;
-		padding: 0;
-		box-sizing: border-box;
-	}
-
 	.first-section {
-		display: flex;
-		gap: 1.5rem;
-		margin-top: 3.625rem;
+		display: grid;
+		margin: 2rem 0;
+		gap: 1rem;
 
-		// border: 1px solid red;
-		@media screen and (max-width: $md) {
-			display: block;
+		@media screen and (min-width: $md) {
+			grid-template-columns: 50% 50%;
 		}
-
-		.frame1 {
-			// border: 1px solid red;
-			width: 60%;
-			height: 10.6875rem;
-			position: relative;
-			// border: 1px solid red;
+		&-image {
 			img {
 				width: 100%;
-				height: 100%;
-				@media screen and (max-width: $md) {
-					width: 100%;
-				}
-			}
-			@media screen and (max-width: $md) {
-				width: 95%;
-				height: auto;
-				margin-top: 6rem;
-				display: flex;
-				justify-content: center;
 			}
 		}
-
-		.first-text {
+		&-text {
+			font-family: "Raleway";
+			font-style: normal;
+			font-weight: 800;
+			font-size: 2rem;
+			line-height: 3rem;
 			color: $primary;
-			font-size: 2.5rem;
-			// border: 1px solid red;
-			width: 50%;
-			padding-top: 3.2rem;
-			display: flex;
-			flex-direction: column;
-			gap: -4rem;
-			margin-bottom: 0;
-			position: relative;
-
-			.p2 {
-				margin-top: 0;
-				margin-bottom: 0;
-			}
-
-			@media screen and (max-width: $md) {
-				// display: none;
-				position: absolute;
-				top: 3rem;
-				width: 50%;
-				font-size: 1.5rem;
-				padding: 0.5rem;
+			@media screen and (min-width: $md) {
+				font-size: 2.5rem;
+				padding-top: 1.8rem;
 			}
 		}
 	}
-	//===============END OF FIRST SECTION==================
 
-	//=================BEGINING OF SECTION TWO================
 	.second-section {
-		display: flex;
-		gap: 2.5rem;
-		margin-top: 6.25rem;
+		padding: 2rem 0;
 
-		@media screen and (max-width: $md) {
-			display: block;
-		}
+		&-inner {
+			display: grid;
+			gap: 1.5rem;
 
-		.second-section-text {
-			width: 50%;
-			padding-top: 1.5rem;
-			h5 {
-				font-size: 24px;
-				width: 100%;
-				@media screen and (max-width: $mobile) {
-					text-align: center;
+			@media screen and (min-width: $md) {
+				grid-template-columns: 1fr 1fr;
+			}
+			.inner-left {
+				h5 {
+					font-family: "Raleway";
+					font-style: normal;
+					font-weight: 600;
+					font-size: 1.5rem;
+					line-height: 2.375rem;
+					color: $pagraph;
+				}
+				p {
+					font-family: "Raleway";
+					font-style: normal;
+					font-weight: 500;
+					font-size: 1.1rem;
+					line-height: 2rem;
+					color: $pagraph;
 				}
 			}
-
-			p {
-				margin-top: 29px;
-				font-size: 18px;
-				width: 100%;
-			}
-			@media screen and (max-width: $md) {
-				width: 100%;
-				text-align: center;
-			}
-			@media screen and (max-width: $mobile) {
-				width: 90%;
-				text-align: center;
-				margin: 0 auto;
-			}
-		}
-
-		.second-section-image {
-			width: 42%;
-			height: 30.81rem;
-			margin-right: -5rem;
-			//    border: 1px solid green;
-			// height: auto;
-			img {
-				width: 100%;
-				height: 100%;
-			}
-			@media screen and (max-width: $md) {
-				width: 80%;
-				margin: auto;
-			}
-			@media screen and (max-width: $mobile) {
-				width: 100%;
-			}
-
-			@media screen and (max-width: 1165px) {
-				margin-top: 3rem;
-			}
-		}
-	}
-	//============END OF SECTION TWO===================
-
-	//==============BEGINNING OF SECTION THREE================
-	.third-section {
-		background: #fcfdff;
-
-		.third-section-inner {
-			display: flex;
-			justify-content: space-between;
-			margin-top: 4.125rem;
-
-			@media screen and (max-width: 1200px) {
-				display: block;
-				// margin-top: 3rem;
-			}
-
-			.third-section-text {
-				width: 45%;
-				@media screen and (max-width: 1200px) {
-					width: 100%;
-					// text-align: center;
-					margin: auto;
-				}
-				h1 {
-					font-size: 3rem;
-					margin-top: 10rem;
-					@media screen and (max-width: $mobile) {
-						text-align: center;
-					}
-				}
-				.third-section-text_1 {
-					margin-top: 1.5rem;
-					p {
-						font-size: 1.125rem;
-					}
-					@media screen and (max-width: $mobile) {
-						width: 80%;
-						margin: 0 auto;
-						text-align: center;
-					}
-				}
-
-				.main-stats {
-					border: 1px solid $primary;
-					border-left: none;
-					border-right: none;
-					display: flex;
-					margin-top: 3rem;
-					width: 100%;
-					@media screen and (max-width: 1200px) {
-						width: 70%;
-						margin: auto;
-						margin-top: 2rem;
-					}
-					@media screen and (max-width: $md) {
-						width: 90%;
-					}
-					@media screen and (max-width: $mobile) {
-						width: 50%;
-						display: none;
-						background: red;
-						margin: 0 auto;
-					}
-					div {
-						&:nth-child(2) {
-							border-left: 1px solid $primary;
-							border-right: 1px solid $primary;
-						}
-						display: flex;
-						flex-direction: column;
-						// border: 1px solid $primary;
-						width: 14rem;
-						align-items: center;
-
-						.black-text {
-							font-weight: 500;
-							font-size: 1rem;
-							margin-bottom: 1.5rem;
-						}
-
-						.blue-text {
-							font-weight: 600;
-							font-size: 3.5rem;
-							color: $primary;
-							display: flex;
-							text-align: center;
-
-							span {
-								margin-top: 0;
-							}
-						}
-					}
-				}
-			}
-
-			.third-section-image {
-				width: 50%;
-				height: 41rem;
-				margin-top: 7.6875rem;
+			.inner-right {
 				img {
 					width: 100%;
 				}
-				@media screen and (max-width: 1200px) {
-					display: none;
+			}
+		}
+	}
+
+	.third-section {
+		padding: 3rem 0rem;
+
+		.transform {
+			display: grid;
+			gap: 1.5rem;
+
+			@media screen and (min-width: $md) {
+				grid-template-columns: 50% 50%;
+			}
+
+			&-text {
+				h2 {
+					font-family: "Raleway";
+					font-style: normal;
+					font-weight: 800;
+					font-size: 3rem;
+					line-height: 4rem;
+					color: $secondary;
+					margin-top: 2rem;
+				}
+				p {
+					font-family: "Raleway";
+					font-style: normal;
+					font-weight: 500;
+					font-size: 1.1rem;
+					line-height: 2rem;
+					color: $pagraph;
+				}
+				.record {
+					display: grid;
+					grid-template-columns: 1fr 1fr 1fr;
+					margin-top: 2rem;
+					border-top: 1px solid blue;
+					border-bottom: 1px solid blue;
+
+					&-grid {
+						h5 {
+							font-family: "Raleway";
+							font-style: normal;
+							font-weight: 600;
+							font-size: 3rem;
+							line-height: 3.5rem;
+							text-align: center;
+							color: $primary;
+							padding-top: 1rem;
+						}
+						p {
+							font-family: "Raleway";
+							font-style: normal;
+							font-weight: 500;
+							font-size: 1rem;
+							line-height: 1.2rem;
+							text-align: center;
+							color: $secondary;
+						}
+						&:first-child {
+							border-right: 1px solid blue;
+						}
+						&:nth-child(2) {
+							border-right: 1px solid blue;
+						}
+					}
+				}
+			}
+			&-image {
+				img {
+					width: 100%;
 				}
 			}
 		}
 	}
-	// ===================END OF THE THIRD SECTION=========================
-
-	//===========================BEGINNING OF FOURTH SECTION================
 
 	.fourth-section {
-		display: grid;
-		margin-top: 3.9375rem;
-		grid-template-areas:
-			"a a b"
-			"c . b"
-			"c d d";
-
-		@media screen and (max-width: $md) {
+		padding: 4rem 0rem;
+		.image-wrapper {
+			display: grid;
 			grid-template-areas:
 				"a a a"
 				"b b b"
 				"c c c"
 				"d d d";
-		}
-
-		span {
-			color: #000000;
-			font-size: 1.125rem;
-			font-weight: 600;
-		}
-
-		.frame3 {
-			grid-area: a;
-			@media screen and (max-width: $mobile) {
-				width: 80%;
-				margin: auto;
-			}
-			img {
-				width: 100%;
-			}
-		}
-
-		.fourth-section-text1 {
-			background: rgba(51, 51, 51, 0.02);
-			grid-area: b;
-			width: 25rem;
-			padding: 2rem 1.5rem;
-			height: 25rem;
-
-			@media screen and (max-width: $md) {
-				width: 100%;
-			}
-			@media screen and (max-width: $mobile) {
-				width: 80%;
-				margin: auto;
-				height: fit-content;
+			@media screen and (min-width: $md) {
+				grid-template-columns: 1fr 0.5fr 1fr;
+				grid-template-areas:
+					"a a b"
+					"c . b"
+					"c d d";
 			}
 
-			ul {
-				width: 100%;
-				height: auto;
-				padding-top: 1rem;
-			}
-		}
-
-		.fourth-section-text2 {
-			background: rgba(51, 51, 51, 0.02);
-			grid-area: c;
-			width: 25rem;
-			padding: 2rem 1.5rem;
-			height: 25rem;
-
-			@media screen and (max-width: $md) {
-				width: 100%;
-				margin-top: 2rem;
-			}
-			@media screen and (max-width: $mobile) {
-				width: 80%;
-				margin: auto;
-				margin-top: 1rem;
-				height: fit-content;
-			}
-
-			ul {
-				width: 100%;
-				padding-top: 1rem;
-			}
-		}
-
-		.frame2 {
-			grid-area: d;
-			width: 100%;
-			margin-right: 14rem;
-			@media screen and (max-width: $mobile) {
-				width: 80%;
-				margin: auto;
-			}
-
-			img {
-				width: 100%;
-				height: auto;
-			}
-		}
-	}
-	//==============END OF FOURTH SECTION==============
-
-	//===================BEGINNING OF FIFTH SECTION=======================
-	.fifth-section {
-		display: flex;
-		gap: 2rem;
-		padding-top: 5rem;
-		justify-content: space-between;
-
-		.fifth-image {
-			@media screen and (max-width: $md) {
-				display: none;
-			}
-			@media screen and (max-width: 1400px) {
-				margin-top: 6rem;
-			}
-
-			width: 40%;
-			// height: auto;
-
-			img {
-				width: 100%;
-			}
-		}
-
-		.fifth-section-text {
-			width: 50%;
-			margin-top: 3.5rem;
-			@media screen and (max-width: $md) {
-				width: 80%;
-				margin: auto;
-			}
-			@media screen and (max-width: $md) {
-				width: 80%;
-			}
-
-			.strict-text {
-				display: grid;
-				grid-template-columns: 1fr 1fr;
-				grid-template-rows: 20rem 20rem;
-				margin-top: 1rem;
-
-				@media screen and (max-width: $md) {
-					grid-template-columns: 1fr;
-				}
-
-				div {
-					border: 1px solid $secondary;
-					padding: 1.5rem 1rem 2rem 1rem;
-					@media screen and (max-width: $mobile) {
-						// height: 100%;
-					}
-
-					span {
-						// border: 1px solid $secondary;
-						// // width: 50%;
-						// padding: 1.1rem;
-						// margin-top: 30rem;
-						// border-radius: 15px;
-					}
-
-					h5 {
-						font-weight: 600;
-						font-size: 18px;
-						margin-top: 1.5rem;
-						@media screen and (max-width: $md) {
-							// margin-top: 3rem;
-							font-size: 18px;
-							font-weight: 700;
-						}
-					}
-
-					p {
-						font-weight: 500;
-						font-size: 14px;
-						margin-top: 1.5rem;
-						@media screen and (max-width: $mobile) {
-							// height: fit-content;
-						}
-					}
-				}
-			}
-		}
-	}
-	//================END OF FITH SECTION=================
-
-	//BEGINNING OF SIXTH SECTION=======================
-
-	.sixth-section {
-		// height: 80vh;
-		padding-top: 3.5rem;
-
-		.sixth-images {
-			display: flex;
-			justify-content: space-between;
-			padding-top: 3rem;
-			@media screen and (max-width: $mobile) {
-				display: grid;
-				grid-template-columns: 100%;
-				gap: 1rem;
-			}
-
-			div {
-				color: white;
-				width: 30%;
-				text-align: center;
-				padding-block: 1rem;
-				@media screen and (max-width: $mobile) {
-					width: 80%;
-					margin: auto;
-				}
-
-				img,
-				div {
+			.image-1 {
+				grid-area: a;
+				img {
 					width: 100%;
 				}
+			}
+			.image-2 {
+				grid-area: b;
+				padding: 1rem 0.5rem;
+				background: rgba(51, 51, 51, 0.02);
+			}
+			.image-3 {
+				grid-area: c;
+				padding: 1rem 0.5rem;
+				background: rgba(51, 51, 51, 0.1);
+			}
+			.image-4 {
+				grid-area: d;
+				img {
+					width: 100%;
+				}
+			}
+		}
+	}
 
-				& > div {
-					display: flex;
-					height: 7.8375rem;
-					flex-direction: column;
-					gap: 1rem;
-					background: #000000;
+	.fifth-section {
+		margin: 2rem 0rem;
+		display: grid;
+		gap: 2rem;
 
-					span {
+		@media screen and (min-width: $md) {
+			grid-template-columns: 0.45fr 0.55fr;
+		}
+		.section5-image {
+			img {
+				width: 100%;
+				height: 100%;
+			}
+		}
+		.section5-text {
+			h3 {
+				font-family: "Raleway";
+				font-style: normal;
+				font-weight: 800;
+				font-size: 3rem;
+				line-height: 4rem;
+				color: $secondary;
+				padding-top: 2rem;
+			}
+			.section5-grid {
+				padding: 1rem 0;
+				display: grid;
+				@media screen and (min-width: $md) {
+					grid-template-columns: 1fr 1fr;
+				}
+				.grid-box {
+					padding: 1rem 0.8rem;
+					border: 1px solid $paleGreyBg;
+					h5 {
+						padding-top: 1rem;
+					}
+					&:nth-child(2) {
+						padding-top: 2rem;
+						h5 {
+							padding-top: 1.9rem;
+						}
+					}
+				}
+			}
+		}
+	}
+
+	.sixth-section {
+		h2 {
+			padding: 2rem 0;
+			font-family: "Raleway";
+			font-style: normal;
+			font-weight: 800;
+			font-size: 3rem;
+			line-height: 4rem;
+			color: $secondary;
+		}
+
+		.team-card {
+			display: grid;
+			grid-template-columns: 1fr;
+			gap: 1rem;
+			@media screen and (min-width: $md) {
+				grid-template-columns: 1fr 1fr 1fr;
+			}
+
+			.team {
+				&-images {
+					img {
+						width: 100%;
+					}
+				}
+				&-info {
+					h5 {
+						padding-top: 1rem;
+					}
+					text-align: center;
+					background: $secondary;
+					color: white;
+					width: inherit;
+					height: 7.55rem;
+					
+
+					.media-icons {
 						display: flex;
+						justify-content: center;
 						gap: 1rem;
-						margin: auto;
 					}
 				}
 			}

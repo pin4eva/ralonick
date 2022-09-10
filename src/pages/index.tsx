@@ -32,7 +32,6 @@ const Home = () => {
 									className="hero_img1"
 									spaceBetween={50}
 									slidesPerView={1}
-									navigation
 									speed={1000}
 									onSlideChange={(e) => {
 										e.isBeginning ? setDisablePrev(true) : setDisablePrev(false);

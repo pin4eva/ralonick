@@ -1,2 +1,166 @@
 .footer {
+	width: 100%;
+	margin-block: 2rem;
+	@media screen and (min-width: $mobile) {
+		display: grid;
+		grid-template-areas:
+			"a a a"
+			"b c d"
+			"e e e";
+	}
+	@media screen and (min-width: $md) {
+		grid-template-areas:
+			"a a a a"
+			"b c d e";
+	}
+	@media screen and (min-width: 1300px) {
+		grid-template-areas: "a b c d e";
+	}
+
+	.footer-about-container {
+		margin-top: 3rem;
+		text-align: center;
+		grid-area: a;
+		@media screen and (min-width: 1300px) {
+			margin-top: 1rem;
+			width: 90%;
+		}
+		.footer-about-logo {
+			color: #000;
+			font-size: 1.3rem;
+		}
+
+		.footer-about-description {
+			color: rgba(0, 0, 0, 0.5);
+			font-size: 0.875rem;
+			width: 90%;
+			margin-inline: auto;
+		}
+	}
+
+	.footer-navlinks {
+		text-align: center;
+		margin-top: 1rem;
+		grid-area: b;
+		@media screen and (min-width: $md) {
+			padding-left: 1rem;
+		}
+
+		.footer-links-title {
+			font-size: 0.875rem;
+			color: #000;
+		}
+		ul {
+			text-align: center;
+			li {
+				@media screen and (min-width: $mobile) {
+					margin-bottom: 1rem;
+				}
+				a {
+					font-weight: 400;
+					font-size: 1rem;
+					color: rgba(0, 0, 0, 0.5);
+					text-decoration: none;
+				}
+			}
+		}
+	}
+
+	.footer-service-links {
+		text-align: center;
+		margin-top: 1rem;
+		grid-area: c;
+		@media screen and (min-width: $mobile) {
+			margin-left: 4.5rem;
+			padding-left: 2rem;
+		}
+		@media screen and (min-width: $md) {
+			padding-left: 0;
+			margin-left: 3rem;
+		}
+
+		.footer-service-links-title {
+			font-size: 0.875rem;
+			color: #000;
+		}
+		ul {
+			text-align: center;
+			li {
+				@media screen and (min-width: $mobile) {
+					margin-bottom: 1rem;
+				}
+				a {
+					font-weight: 400;
+					font-size: 1rem;
+					color: rgba(0, 0, 0, 0.5);
+					text-decoration: none;
+				}
+			}
+		}
+		a {
+			color: $danger;
+			text-decoration: none;
+			font-size: 0.875rem;
+			font-weight: 400;
+			img {
+				margin-left: 0.5rem;
+			}
+		}
+	}
+
+	.footer-contacts {
+		text-align: center;
+		margin-top: 1rem;
+		grid-area: d;
+		@media screen and (min-width: $mobile) {
+			width: 60%;
+			margin-left: 20%;
+		}
+		@media screen and (min-width: $md) {
+			margin-left: 15%;
+		}
+		@media screen and (min-width: 1300px) {
+			margin-left: 20%;
+		}
+		.footer-contact-title {
+			font-size: 0.875rem;
+			color: #000;
+		}
+		p {
+			font-size: 1rem;
+			color: rgba(0, 0, 0, 0.5);
+			width: 100%;
+		}
+	}
+
+	.footer-icon-details {
+		text-align: center;
+		grid-area: e;
+		margin-top: 1rem;
+		@media screen and (min-width: $md) {
+			padding-top: 2rem;
+		}
+		.footer_icons {
+			display: flex;
+			justify-content: center;
+			gap: 1rem;
+			text-align: center;
+			a {
+				font-size: 1.2rem;
+				color: rgba(0, 0, 0, 0.5);
+				&:hover {
+					color: $danger;
+				}
+			}
+		}
+
+		.more-details {
+			margin-top: 3rem;
+			a {
+				text-decoration: none;
+				font-size: 0.875rem;
+				color: #000;
+			}
+		}
+	}
 }

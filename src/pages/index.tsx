@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import React from "react";
 import FrontLayout from "../layouts/front.layout";
 import Link from "next/link";
@@ -23,7 +24,7 @@ const Home = () => {
 										<h1>Diverse & Flexible Structure</h1>
 									</div>
 									<div className="home-hero_upper-rigth_text_lower">
-										<p>End to end
+										<p className="fs-18 fw-500">End to end
 											service in the design, engineering, procurement, fabrication,
 											installation, repair of (GRE), (GRP) and Vinylester Pipe system and products.</p>
 									</div>
@@ -35,20 +36,24 @@ const Home = () => {
 						</div>
 						<div className="home-hero_lower">
 							<div className="home-hero_lower-inner">
-								<div className="home-hero_lower_inner-image">
-									<img src="./images/frame8.png" alt="" />
-								</div>
-								<div className="home-hero_lower_play-box">
-									<div className="home-hero_lower_play-box-play-button bg-black">
-										<img src="./images/playarrow.png" alt="" />
-									</div>
-									<div className="home-hero_lower_play-box-inner">
-										<div className="home-hero_lower_play-box-inner-text">
-											<h3>Watch Video Tour</h3>
-											<p>5:15 min</p>
+								<div className="home-hero_lowwer-inner-video">
+									<div className="home-hero_lower_play-box">
+										<div className="home-hero_lower_play-box-play-button">
+											<img src="./images/playarrow.png" alt="" />
+										</div>
+										<div className="home-hero_lower_play-box-inner">
+											<div className="home-hero_lower_play-box-inner-text">
+												<h3 className="fs-18 fw-600">Watch Video Tour</h3>
+												<p className="fw-500 fs-14">5:15 min</p>
+											</div>
 										</div>
 									</div>
+									<div className="home-hero_lower_inner-video-image">
+										<img src="./images/frame8.png" alt="" />
+									</div>
+
 								</div>
+
 							</div>
 						</div>
 					</section>
@@ -102,18 +107,18 @@ const Home = () => {
 								</div>
 								<div className="home-second-section_inner-left_box">
 									<div className="home-second-section_inner-left_box_inner">
-										<div className="home-second-section_inner-left_box_inner-text">
+										<div className="home-second-section_inner-left_box_inner-text first">
 
 											<h1>25+</h1>
 											<p>Trusted Partners</p>
 
 										</div>
-										<div className="home-second-section_inner-left_box_inner-text">
+										<div className="home-second-section_inner-left_box_inner-text second">
 											<h1>50+</h1>
 											<p>Satisfied Clients</p>
 
 										</div>
-										<div className="home-second-section_inner-left_box_inner-text">
+										<div className="home-second-section_inner-left_box_inner-text third">
 											<h1>5+</h1>
 											<p>Years Experience</p>
 
@@ -122,10 +127,16 @@ const Home = () => {
 								</div>
 							</div>
 							<div className="home-second-section-inner_right">
-								<div className="home-second-section_inner_right-image">
-									<img src="./images/rectangle1.png" alt="" />
-									<img src="./images/rectangle2.png" alt="" />
-									<img src="./images/rectangle3.png" alt="" />
+								<div className="home-second-section_inner_right-inner">
+									<div className="home-second-section_inner-right-inner-one">
+										<img src="./images/rectangle1.png" alt="" />
+									</div>
+									<div className="home-second-section_inner-right-inner-two">
+										<img src="./images/rectangle2.png" alt="" />
+									</div>
+									<div className="home-second-section_inner-right-inner-third">
+										<img src="./images/rectangle3.png" alt="" />
+									</div>
 								</div>
 							</div>
 						</div>
@@ -141,47 +152,56 @@ const Home = () => {
 								<div className="home-third-section-inner-right-header">
 									<h1>Why Choose Us</h1>
 								</div>
-								<div className="home-third-section-inner-right_box-table">
-									<div className="home-third-section-inner-right_box-table-inner">
-										<div className="home-third-section-inner-right-box-table-inner_img">
-											<img src="./images/badge.png" alt="" />
-										</div>
-										<div className="home-third-section-inner-right_box-table_inner_text">
-											<h3>Quality</h3>
-											<p>
-												Great service delivery is incomplete without quality. It is our core value of operation, we achieve this by employing the policy of harnessing available resources, experience (of higly skilled engineers) and technical expertise.
-											</p>
-										</div>
-										<div className="home-third-section-inner-right-box-table-inner_img">
-											<img src="./images/union.png" alt="" />
-										</div>
-										<div className="home-third-section-inner-right_box-table_inner_text">
-											<h3>Integrity</h3>
-											<p>
-												Service entails a lot of commitment laced with passion, with years of experience and service provision, we stand for excellent and honest work as we stay true to our words.
-												Maintaining the trust placed in us by all our clients and stakeholders is key to us.
-											</p>
-										</div>
-										<div className="home-third-section-inner-right-box-table-inner_img">
-											<img src="./images/bag.png" alt="" />
-										</div>
-										<div className="home-third-section-inner-right_box-table_inner_text">
-											<h3>Professionalism</h3>
-											<p>
-												Skill and competence are as important as practice therefore all staff are highly trained, possess high experiential knowledge in the field, and are highly professional.
-												We value professionalism, to us it means giving clients the best value for their money.
-											</p>
-										</div>
-										<div className="home-third-section-inner-right-box-table-inner_img">
-											<img src="./images/helmet.png" alt="" />
-										</div>
-										<div className="home-third-section-inner-right_box-table_inner_text">
-											<h3>Safety</h3>
-											<p>
-												As one of our offered service we are not lacking in ensuring that our installations and technical works are properly done.
-												We have zero reservations as regards safety. Our staff are highly trained for personal & on-site safety.
-											</p>
-										</div>
+								<div className="home-third-section-inner-right_box">
+									<div className="home-third-section-inner-right_box-table">
+
+											<div className="home-third-section-inner-right_box-table-inner one">
+												<div className="home-third-section-inner-right-box-table-inner_img">
+													<img src="./images/badge.png" alt="" />
+												</div>
+												<div className="home-third-section-inner-right_box-table_inner_text">
+													<h3>Quality</h3>
+													<p>
+														Great service delivery is incomplete without quality. It is our core value of operation, we achieve this by employing the policy of harnessing available resources, experience (of higly skilled engineers) and technical expertise.
+													</p>
+												</div>
+											</div>
+											<div className="home-third-section-inner-right_box-table-inner two">
+												<div className="home-third-section-inner-right-box-table-inner_img">
+													<img src="./images/union.png" alt="" />
+												</div>
+												<div className="home-third-section-inner-right_box-table_inner_text">
+													<h3>Integrity</h3>
+													<p>
+														Service entails a lot of commitment laced with passion, with years of experience and service provision, we stand for excellent and honest work as we stay true to our words.
+														Maintaining the trust placed in us by all our clients and stakeholders is key to us.
+													</p>
+												</div>
+											</div>
+											<div className="home-third-section-inner-right_box-table-inner third">
+												<div className="home-third-section-inner-right-box-table-inner_img">
+													<img src="./images/bag.png" alt="" />
+												</div>
+												<div className="home-third-section-inner-right_box-table_inner_text">
+													<h3>Professionalism</h3>
+													<p>
+														Skill and competence are as important as practice therefore all staff are highly trained, possess high experiential knowledge in the field, and are highly professional.
+														We value professionalism, to us it means giving clients the best value for their money.
+													</p>
+												</div>
+											</div>
+											<div className="home-third-section-inner-right_box-table-inner fourth">
+												<div className="home-third-section-inner-right-box-table-inner_img">
+													<img src="./images/helmet.png" alt="" />
+												</div>
+												<div className="home-third-section-inner-right_box-table_inner_text">
+													<h3>Safety</h3>
+													<p>
+														As one of our offered service we are not lacking in ensuring that our installations and technical works are properly done.
+														We have zero reservations as regards safety. Our staff are highly trained for personal & on-site safety.
+													</p>
+												</div>
+											</div>
 									</div>
 								</div>
 							</div>
@@ -258,15 +278,67 @@ const Home = () => {
 
 									</div>
 									<div className="home-fifth-section-inner_profile-slider2">
-										
+
 									</div>
 									<div className="home-fifth-section-inner_profile-slider3">
-										
+
 									</div>
 								</div>
 							</div>
 						</div>
 					</section>
+					<section className="home-sixth-section">
+						<div className="home-sixth-section-inner">
+							<div className="home-sixth-section-inner_header">
+								<h1>Our Projects</h1>
+							</div>
+							<div className="home-sixth-section-inner_magazine">
+
+								<div className="home-sixth-ssection-inner_magazine-inner">
+									<div className="home-sixth-section-inner_magazine-inner-box">
+										<div className="home-sixth-section-inner_magazine-inner-box_text-box">
+											<h3>Project Name</h3>
+											<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis mi sagittis aliquet elementum nunc lectus. Arcu, non ornare commodo, convallis lectus.</p>
+											<Link href={'/projects'}>
+												<a>More Details <img src="./images/vectorwhite.png" alt="" /></a>
+											</Link>
+										</div>
+									</div>
+									<div className="home-sixth-section-inner_magazine-inner-image">
+										<img src="./images/project1.png" alt="" />
+									</div>
+									<div className="home-sixth-section-inner_magazine-inner-box">
+										<div className="home-sixth-section-inner_magazine-inner-box_text-box">
+											<h3>Project Name</h3>
+											<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis mi sagittis aliquet elementum nunc lectus. Arcu, non ornare commodo, convallis lectus.</p>
+											<Link href={'/projects'}>
+												<a>More Details <img src="./images/vectorwhite.png" alt="" /></a>
+											</Link>
+										</div>
+									</div>
+									<div className="home-sixth-section-inner_magazine-inner-image">
+										<img src="./images/project2.png" alt="" />
+									</div>
+									<div className="home-sixth-section-inner_magazine-inner-box">
+										<div className="home-sixth-section-inner_magazine-inner-box_text-box">
+											<h3>Project Name</h3>
+											<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis mi sagittis aliquet elementum nunc lectus. Arcu, non ornare commodo, convallis lectus.</p>
+											<Link href={'/projects'}>
+												<a>More Details <img src="./images/vectorwhite.png" alt="" /></a>
+											</Link>
+										</div>
+									</div>
+									<div className="home-sixth-section-inner_magazine-inner-image">
+										<img src="./images/project3.png" alt="" />
+									</div>
+								</div>
+							</div>
+							<div className="home-sixth-section-inner-button">
+								<button className="btn btn hug bg-danger">All Services</button>
+							</div>
+						</div>
+					</section>
+
 				</div>
 			</FrontLayout>
 		</div>

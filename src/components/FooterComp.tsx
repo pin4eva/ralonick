@@ -5,7 +5,7 @@ import Link from "next/link";
 const FooterComp = () => {
 	return (
 		<footer className="footer" >
-			<div>
+			<div className="footer-first-part">
 				<p>RALONICK LTD.</p>
 				<p>
 					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dolor, ultrices aliquam, quis nunc erat. Amet nullam
@@ -13,31 +13,31 @@ const FooterComp = () => {
 				</p>
 				<button className="btn btn-outline-danger hug">About Ralonik</button>
 			</div>
-			<div>
+			<div className="footer-second-part">
 				<p>Company</p>
 				<ul>
 					<li>
-						<Link href="/">About</Link>
+						<Link href="/"><a>About</a></Link>
 					</li>
 					<li>
-						<Link href="/">Projects</Link>
+						<Link href="/"><a>Projects </a></Link>
 					</li>
 					<li>
-						<Link href="/">Services</Link>
+						<Link href="/"><a>Services</a></Link>
 					</li>
 				</ul>
 			</div>
-			<div>
+			<div className="footer-third-part">
 				<p>Services</p>
 				<ul>
 					<li>
-						<Link href="/">Dredging</Link>
+						<Link href="/"><a>Dredging</a></Link>
 					</li>
 					<li>
-						<Link href="/">Fireproofing</Link>
+						<Link href="/"><a>Fireproofing</a></Link>
 					</li>
 					<li>
-						<Link href="/">Constructing</Link>
+						<Link href="/"><a>Constructing</a></Link>
 					</li>
 				</ul>
 				<Link href="/">
@@ -47,14 +47,14 @@ const FooterComp = () => {
 					</a>
 				</Link>
 			</div>
-			<div>
+			<div className="footer-fourth-part">
 				<p>Contact</p>
 				<p>+234 9012 624 162</p>
 				<p>4517 Washington Ave. Manchester, Kentucky 3949</p>
 				<p>Charlesclifford43@gmail.com</p>
 				<p>Mon - Sat: 8;am-5pm</p>
 			</div>
-			<div>
+			<div className="footer-last-part">
 				<div className="footer_icons">
 					<a href="www.figma.com">
 						<i className="fa-brands fa-figma"></i>

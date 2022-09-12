@@ -5,9 +5,7 @@ const Project=()=>{
         <div>
             <FrontLayout>
                 <div className="project-page container">
-                    <section className="project-page_first-section">
-
-                    </section>
+              
                 </div>
             </FrontLayout>
         </div>

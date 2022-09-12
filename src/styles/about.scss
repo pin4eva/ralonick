@@ -1,8 +1,50 @@
 .about-page {
-    .about-first-section {
-        height: 200vh;
-        // border: 1px solid;
+    padding-top: 3rem;
+    margin-bottom: 4rem;
 
+    .about-hero {
+        margin-bottom: 4rem;
+        flex-direction: column-reverse;
+        display: flex;
+        @media screen and (min-width:992px) {
+              height: 50vh;
+        }
+
+        @media screen and (min-width:992px) {
+            display: flex;
+            flex-direction: row;
+            gap: 1rem;
+            align-items: baseline;
+        }
+
+        h1 {
+            font-weight: 600;
+            font-size: 24px;
+
+            @media screen and (min-width:768px) {
+                font-weight: 600;
+                font-size: 36px;
+                margin: 0%;
+                padding: 0%;
+            }
+
+            @media screen and (min-width:1200px) {
+                font-weight: 800;
+                font-size: 48px;
+            }
+        }
+
+        img {
+            width: 100%;
+            height: auto;
+        }
+    }
+
+    .about-first-section {
+  margin-bottom: 5%;
+        @media screen and (min-width:992px) {
+            height: 125vh;    
+        }
         .about-first-section-inner {
             @media screen and (min-width:992px) {
 
@@ -50,8 +92,10 @@
     }
 
     .about-second-section {
-        height: 250vh;
-
+ margin-bottom: 20%;    
+@media screen and (min-width:992px) {
+    height: 130vh;
+}
         .about-second-section_inner {
             @media screen and (min-width:992px) {
                 display: grid;
@@ -137,4 +181,196 @@
             }
         }
     }
+}
+
+.about-third-section {
+   margin-bottom: 20%;
+    @media screen and (min-width:992px) {
+        height: 250vh;
+      }
+    img {
+        width: 100%;
+    }
+
+    .about-third-section_inner {
+gap: 1rem;
+        .about-third-section_inner-inner {
+         
+            @media screen and (min-width:992px) {
+                display: flex;
+              }
+            .lower{
+              @media screen and (min-width:992px) {
+                margin-top: -25%;
+              }
+              @media screen and (min-width:1200px) {
+                margin-top: -16.1%;
+              }
+            }
+            .about-third-section_inner-text-box {
+                @media screen and (min-width:992px) {
+                    width: 35%;
+                    height: 35%;
+                  }
+                border: 1px;
+                padding: 1rem;
+               
+                background: rgba(51, 51, 51, 0.1);
+
+                h3 {
+                    font-weight: 600;
+                    font-size: 18px;
+                    line-height: 24px;
+                }
+
+                li {
+                    font-weight: 500;
+                    font-size: 14px;
+                    line-height: 26px;
+                }
+            }
+        }
+
+        // .about-third-section_inner-upper{
+
+        // }
+    }
+}
+
+.about-fourth-section {
+margin-bottom: 20%;
+@media screen and (min-width:992px) {
+    height: 150vh;  
+}
+    .about-fourth-section_inner {
+        @media screen and (min-width:1200px) {
+            display: grid;
+            grid-template-columns: 0.7fr 1fr;
+            grid-template-rows: 1fr;
+            gap: 3rem;
+        }
+
+        .about-fourth-section_inner_left {
+            // border: 1px solid;
+            // padding: 1rem;
+
+            .about-fourth-section_inner_left-image {
+                // border: 1px solid;
+                // padding: 1rem;
+
+                img {
+                    display: none;
+
+                    @media screen and (min-width:1200px) {
+                        height: 120vh;
+                        width: 100%;
+                        display: block;
+                    }
+                }
+            }
+        }
+
+        .about-fourth-section-inner-right {
+            // border: 1px solid;
+            // padding: 1rem;
+            margin-top: 2rem;
+
+            .about-fourth-section-inner-right_box-table {
+
+                h3 {
+                    font-weight: 600;
+                    font-size: 18px;
+                }
+
+                p {
+                    font-weight: 500;
+                    font-size: 14px;
+                }
+
+                @media screen and (min-width:992px) {
+                    display: grid;
+                    width: 100%;
+                    grid-template-columns: 1fr 1fr;
+                }
+
+                // :hover{
+                //     border: 1px black solid;
+                //     padding: 1rem;
+                // }
+
+                .about-fourth-section-inner-right_box-table-inner {
+                    border: 1px grey solid;
+                    padding: 1rem;
+                    // height: 50vh;
+
+                    .about-fourth-section-inner-right-box-table-inner_img {
+                        margin-bottom: 1rem;
+
+                        // border: 1px solid;
+                        // padding: 1rem;
+                        img {
+                            border: 1px solid;
+                            padding: 1rem;
+                            width: auto;
+                            border-radius: 1rem;
+
+                        }
+                    }
+
+                }
+            }
+        }
+    }
+}
+
+.about-last-section {
+    .about-last-section_inner {
+
+        .about-last-section_inner-profile {
+
+            .about-last-section_inner-profile-inner {
+
+
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr;
+                gap: 1rem;
+
+
+                .about-last-section_inner-profile-inner_image {
+
+                    img {
+                        width: 100%;
+                    }
+                }
+
+                .about-last-section_inner-profile-inner_info {
+                    border: 1px;
+                    padding: 1rem;
+                    background: #333333;
+                    text-align: center;
+                    color: white;
+
+                    h3 {
+                        font-weight: 600;
+                        font-size: 18px;
+                    }
+
+                    h5 {
+                        font-weight: 500;
+                        font-size: 14px;
+                    }
+
+                    .fa-instagram {
+                        margin-right: 5%;
+                    }
+
+                }
+
+
+            }
+        }
+
+
+    }
+
 }

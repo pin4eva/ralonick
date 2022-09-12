@@ -54,16 +54,18 @@ const FooterComp = () => {
 
 			<div className="footer-contacts">
 				<p className="footer-contact-title fw-600">Contact</p>
-				<p className="telephone fw-700">+234 9012 624 162</p>
-				<p className="location fw-400">4517 Washington Ave. Manchester, Kentucky 3949</p>
-				<p className="contact-email fw-700">Charlesclifford43@gmail.com</p>
+				<p className="telephone fw-700">+234-70 3008 1280</p>
+				<p className="location fw-400">
+					Plot 102, Km 5 East-West Road, Rumuodara, Port Harcourt, Rivers State, Nigeria.
+				</p>
+				<p className="contact-email fw-700">ralonickservicesltd@gmail.com</p>
 				<p className="open-duration fw-400">Mon - Sat: 8am-5pm</p>
 			</div>
 
 			<div className="footer-icon-details">
 				<div className="footer_icons">
 					<a href="www.figma.com">
-						<i className="fa-brands fa-figma"></i>
+						<i className="fa-brands fa-facebook"></i>
 					</a>
 					<a href="www.figma.com">
 						<i className="fa-brands fa-twitter"></i>

@@ -3,13 +3,13 @@ import { useSwiper } from "swiper/react";
 import FrontLayout from "../layouts/front.layout";
 import Link from "next/link";
 import ClientComp from "../components/ClientComp";
-import ServiceComp from "../components/ServiceComp";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect, useState } from "react";
 import { SwiperSlide, Swiper } from "swiper/react";
 import "swiper/css/navigation";
 import { SwiperData } from "../components/Data";
+import Data from "../components/data.json";
 
 const Home = () => {
 	const [disableNext, setDisableNext] = useState(false);
@@ -61,15 +61,6 @@ const Home = () => {
 
 						<div className="inner-right" data-aos="fade-up" data-aos-duration="3000" ease-in-out-quart="true">
 							<img src="/assets/hero_img2.png" alt="" />
-							{/* <div className="video-desc">
-								<div className="video-desc-inner">
-									<img src="/assets/PlayArrow.png" alt="" />
-									<div>
-										<p className="mb-0 desc-text">Watch Video Tour</p>
-										<p className="duration mb-0">5:15 min</p>
-									</div>
-								</div>
-							</div> */}
 						</div>
 					</div>
 				</section>
@@ -219,109 +210,56 @@ const Home = () => {
 							</Link>
 						</div>
 					</div>
-					<ServiceComp />
+					<Swiper
+						className="service-swiper-card"
+						spaceBetween={10}
+						slidesPerView={2}
+						navigation
+						loopFillGroupWithBlank={true}
+						speed={1000}
+						breakpoints={{
+							1400: {
+								slidesPerView: 3,
+								spaceBetween: 5,
+							},
+							1161: {
+								slidesPerView: 2,
+								spaceBetween: 5,
+							},
+							890: {
+								slidesPerView: 2,
+							},
+							768: {
+								slidesPerView: 1,
+							},
+							200: {
+								slidesPerView: 1,
+								spaceBetween: 30,
+							},
+						}}
+					>
+						{Data.map((item, i) => {
+							return (
+								<SwiperSlide key={i} className="service-swiper-card-items">
+									<img src={item.image} alt="" />
+									<div className="content">
+										<div className="title">
+											<p className=" fw-600">{item.title}</p>
+										</div>
+										<div className="description">
+											<p>{item.text.slice()}</p>
+										</div>
+									</div>
+								</SwiperSlide>
+							);
+						})}
+						<SwiperButtons />
+						{/* <SwiperButtonControl disableNext={disableNext} disablePrev={disablePrev} /> */}
+					</Swiper>
 				</section>
 
 				<h1 className="testimonial-head">Client Reviews</h1>
 				<ClientComp />
-
-				{/* <section className="home-section-7 container">
-					<div className="section7-inner">
-						<h2>Our Projects</h2>
-						<div className="section7-inner-sub">
-							<img
-								src="/assets/projects1.png"
-								alt=""
-								className="large-img"
-								data-aos="fade-left"
-								data-aos-offset="200"
-								data-aos-duration="500"
-							/>
-
-							<div
-								className="section7-inner-sub_text"
-								data-aos="fade-right"
-								data-aos-offset="200"
-								data-aos-duration="500"
-							>
-								<p className="text-heading">Project Name</p>
-								<p className="inner-text-body">
-									Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis mi sagittis aliquet elementum nunc
-									lectus. Arcu, non ornare commodo, convallis lectus.
-								</p>
-
-								<Link href="/" className="text-link">
-									<a className="text-link_link">
-										More Details <img src="/assets/moreDetailsArrow.png" alt="" />
-									</a>
-								</Link>
-							</div>
-						</div>
-						<div className="section7-inner-sub sub-2">
-							<img
-								src="/assets/projects2.png"
-								alt=""
-								className="large-img"
-								data-aos="fade-right"
-								data-aos-offset="200"
-								data-aos-duration="500"
-							/>
-
-							<div
-								className="section7-inner-sub_text sub-2_text"
-								data-aos="fade-left"
-								data-aos-offset="200"
-								data-aos-duration="500"
-							>
-								<p className="text-heading">Project Name</p>
-								<p className="inner-text-body">
-									Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis mi sagittis aliquet elementum nunc
-									lectus. Arcu, non ornare commodo, convallis lectus.
-								</p>
-
-								<Link href="/" className="text-link">
-									<a className="text-link_link">
-										More Details
-										<img src="/assets/moreDetailsArrow.png" alt="" />
-									</a>
-								</Link>
-							</div>
-						</div>
-						<div className="section7-inner-sub">
-							<img
-								src="/assets/projects3.png"
-								alt=""
-								className="large-img"
-								data-aos="fade-left"
-								data-aos-offset="200"
-								data-aos-duration="500"
-							/>
-
-							<div
-								className="section7-inner-sub_text"
-								data-aos="fade-right"
-								data-aos-offset="200"
-								data-aos-duration="500"
-							>
-								<p className="text-heading">Project Name</p>
-								<p className="inner-text-body">
-									Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis mi sagittis aliquet elementum nunc
-									lectus. Arcu, non ornare commodo, convallis lectus.
-								</p>
-
-								<Link href="/projects" className="text-link">
-									<a className="text-link_link">
-										More Details
-										<img src="/assets/moreDetailsArrow.png" alt="" />
-									</a>
-								</Link>
-							</div>
-						</div>
-						<div className="section7-inner-btn">
-							<button className="btn btn-danger hug">All Services</button>
-						</div>
-					</div>
-				</section> */}
 			</div>
 		</FrontLayout>
 	);
@@ -343,6 +281,25 @@ const SwiperButtonControl: React.FC<{ disableNext: boolean; disablePrev: boolean
 					<i className="fa-solid fa-chevron-left"></i>
 				</button>
 				<button disabled={disableNext} onClick={() => swiper.slideNext()} className="controls">
+					<i className="fa-solid fa-chevron-right"></i>
+				</button>
+			</div>
+		</div>
+	);
+};
+
+export const SwiperButtons = () => {
+	const swiper = useSwiper();
+
+	return (
+		<div className="swiper-clicks">
+			{" "}
+			<div className="line"></div>
+			<div className="arrows">
+				<button onClick={() => swiper.slidePrev()} className="swiper-control">
+					<i className="fa-solid fa-chevron-left"></i>
+				</button>
+				<button onClick={() => swiper.slideNext()} className="swiper-control">
 					<i className="fa-solid fa-chevron-right"></i>
 				</button>
 			</div>

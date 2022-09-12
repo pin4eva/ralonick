@@ -212,7 +212,7 @@ const Home = () => {
 					</div>
 					<Swiper
 						className="service-swiper-card"
-						spaceBetween={10}
+						spaceBetween={40}
 						slidesPerView={2}
 						navigation
 						loopFillGroupWithBlank={true}
@@ -220,11 +220,9 @@ const Home = () => {
 						breakpoints={{
 							1400: {
 								slidesPerView: 3,
-								spaceBetween: 5,
 							},
 							1161: {
 								slidesPerView: 2,
-								spaceBetween: 5,
 							},
 							890: {
 								slidesPerView: 2,
@@ -293,8 +291,6 @@ export const SwiperButtons = () => {
 
 	return (
 		<div className="swiper-clicks">
-			{" "}
-			<div className="line"></div>
 			<div className="arrows">
 				<button onClick={() => swiper.slidePrev()} className="swiper-control">
 					<i className="fa-solid fa-chevron-left"></i>
@@ -303,6 +299,7 @@ export const SwiperButtons = () => {
 					<i className="fa-solid fa-chevron-right"></i>
 				</button>
 			</div>
+			<div className="line"></div>
 		</div>
 	);
 };

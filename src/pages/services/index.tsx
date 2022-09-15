@@ -52,7 +52,7 @@ const Services = () => {
 									slidesPerView: 2,
 								},
 								890: {
-									slidesPerView: 2,
+									slidesPerView: 1,
 								},
 								768: {
 									slidesPerView: 1,
@@ -89,7 +89,7 @@ const Services = () => {
 								<p className="primary-bold">25+</p>
 								<p className="primary-light">Trusted Partners</p>
 							</div>
-							<div className="statistics-info">
+							<div className="statistics-info border-left-none">
 								<p className="primary-bold">50+</p>
 								<p className="primary-light">Satisfied Clients</p>
 							</div>

@@ -136,25 +136,6 @@ const AboutPage = () => {
 				</div>
 				{/* ==============END OF FOURTH SECTION========================== */}
 
-				<div className="background">
-					<h1>Background</h1>
-					<p>
-						<span>RALONICK SERVICES LTD.</span> was established in 2018 with her head office in Port Harcourt, Nigeria.
-						It is registered as a private limited liability Company under the Nigeria law. It is an indigenious Company
-						operating within the framework of commercial and Industrial activities, developing and carrying out basic
-						and detailed services in Engineering, procurement, construction, Equipment leasing and Marine.We strongly
-						believe that Equipment is useless without people with experience to operate them for maximum performance.
-						Our strength is drawn from the combination of these elements in our operations. By employing a policy of
-						harnessing available resources, experience and technical expertise, we are able to provide quality service
-						in the fastest possible manner with minimal impact on the environment. Our clients take pride in the work we
-						do because we do it well. We know our job and what it takes to handle difficult situations. And that
-						includes everyone from supervisor to laborer carrying out his or her responsibilities. What other companies
-						consider a difficult or impossible job; we consider it a challenge. Where we find challenges we find
-						solutions. Utilizing the latest specialized equipment and experienced personnel we tackle all forms of
-						difficult land marine constructions.
-					</p>
-				</div>
-
 				{/* =======================BEGINNING OF FIFTH SECTION==================== */}
 				<div className="quality-container container">
 					<div className="quality-container-image" data-aos="zoom-in-down" data-aos-duration="2500">

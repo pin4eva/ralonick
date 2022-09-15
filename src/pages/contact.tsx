@@ -21,17 +21,19 @@ const contact = () => {
 				<form>
 					<div className="form-group input-box">
 						<input
-							type="name"
+							type="text"
 							className="form-control"
 							id="exampleInputEmail1"
-							aria-describedby="emailHelp"
+							name="name"
 							placeholder="Your Name"
+							required
 						/>
 						<input
 							type="email"
 							className="form-control"
 							id="exampleInputEmail1"
 							aria-describedby="emailHelp"
+							name="email"
 							placeholder="your Email"
 							required
 						/>
@@ -39,8 +41,9 @@ const contact = () => {
 							type="number"
 							className="form-control"
 							id="exampleInputEmail1"
-							aria-describedby="emailHelp"
+							name="number"
 							placeholder="Your Phone"
+							required
 						/>
 					</div>
 					<div className="form-group textarea">

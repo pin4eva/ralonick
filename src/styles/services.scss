@@ -34,18 +34,25 @@
 				color: $secondary;
 			}
 			&-text {
-				display: grid;
-
-                @media screen and (min-width: $md) {
-                    grid-template-columns: 0.8fr 0.2fr;    
-                }
+				width: 100%;
+				position: relative;
+				@media screen and (min-width: $md) {
+					display: flex;
+				}
+				p {
+					font-family: "Raleway";
+					font-weight: 500;
+					font-size: 1.12rem;
+					line-height: 2rem;
+					@media screen and (min-width: $md) {
+						width: 60%;
+					}
+				}
 				.btn {
-					width: 11rem;
-					height: 4.3rem;
-                    
-                @media screen and (min-width: $md) {
-                   padding-top: 0.5rem;
-                }
+					@media screen and (min-width: $md) {
+						position: absolute;
+						right: 0;
+					}
 				}
 			}
 			&-cards {
@@ -80,7 +87,7 @@
 						p {
 							font-family: "Raleway";
 							font-style: normal;
-							font-weight: 500;
+							font-weight: 400;
 							font-size: 0.9;
 							line-height: 1.5rem;
 							color: $secondary;

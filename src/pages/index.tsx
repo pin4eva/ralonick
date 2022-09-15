@@ -32,9 +32,9 @@ const HomePage = () => {
 							<div className="inner-right-image">
 								<img src="/assets/hero_img2.png" alt="" />
 							</div>
-							{/* <div className="inner-right-video-desc">
+							<div className="inner-right-video-desc">
 								<img src="/assets/Frame 10.png" alt="" />
-							</div> */}
+							</div>
 						</div>
 					</div>
 				</section>
@@ -152,7 +152,77 @@ const HomePage = () => {
 					</div>
 				</section>
 
-				<section className="home-section-5"></section>
+				<section className="home-section-5">
+					<div className="section5-inner">
+						<h2>Our Services</h2>
+						<div className="section5-text">
+							<p>
+								At Ralonick, we offer a wide range of services from engineering, procurement, construction, to equipment
+								leasing for land & marine.
+							</p>
+							<button className="btn btn-outline-danger hug">All Services</button>
+						</div>
+
+						<div className="services-grid">
+							<div className="service-grid">
+								<div className="image">
+									<img src="/assets/services1.png" alt="" />
+								</div>
+								<div className="service-grid-info">
+									<h5>Active & Passive Fire Proofing</h5>
+									<p>
+										Fire Proofing is a vital component for any structure to ensure safety of lives and minimal financial
+										loss of properties. Ralonick offers professional fire proofing services ranging from cemetitious
+										fire proofing, to Automatic fire suppression, etc.
+									</p>
+									<div className="service-link-text">
+										<Link href="/">
+											<a>
+											Learn More <img src="/assets/learnMoreArrow.png" alt="" />
+											</a>
+										</Link>
+									</div>
+								</div>
+							</div>
+							<div className="service-grid">
+								<div className="image">
+									<img src="/assets/services2.png" alt="" />
+								</div>
+								<div className="service-grid-info">
+									<h5>Field Joint Coating Services</h5>
+									<p>
+									This involves the coating of girth weld produce on board the pipe-laying vessels or at any offshore location. Ralonick offers engineering design & fabrication of customized field joint coating equipment which involves liquid applied materials.
+									</p>
+									<div className="service-link-text">
+										<Link href="/">
+											<a>
+											Learn More <img src="/assets/learnMoreArrow.png" alt="" />
+											</a>
+										</Link>
+									</div>
+								</div>
+							</div>
+							<div className="service-grid">
+								<div className="image">
+									<img src="/assets/services3.png" alt="" />
+								</div>
+								<div className="service-grid-info">
+									<h5>Procurement & Installation of FRP/GRP</h5>
+									<p>
+									In conjunction with our foreign partners AOCOMM Composite Limited(major manufacturers of FRP and GRP Products) we secure leadership in the area of technical support, procurement and maintenance for upstream and downstream oil and gas refinery.
+									</p>
+									<div className="service-link-text">
+										<Link href="/">
+											<a>
+											Learn More <img src="/assets/learnMoreArrow.png" alt="" />
+											</a>
+										</Link>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
 
 				<section className="home-section-6">
 					<h2>Clients Reviews</h2>

@@ -1,7 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 import React from "react";
-import FrontLayout from "../layouts/front.layout";
-import Data from "../components/data.json";
+import FrontLayout from "../../layouts/front.layout";
+import Data from "../../components/data.json";
 import Link from "next/link";
 
 const ServicesPage = () => {
@@ -37,7 +37,7 @@ const ServicesPage = () => {
 											<p>{single.text}</p>
 											<div className="content-box">
 												<h5 className="content-link">
-													<Link href="/">{single.learn}</Link>
+													<Link href="/services/jjk">{single.learn}</Link>
 												</h5>
 												<div className="image-arrow">
 													<img src={single.btn} alt="" />

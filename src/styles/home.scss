@@ -2,7 +2,6 @@
 	.home-hero {
 		padding: 2rem 0;
 		.inner {
-			
 			.inner-content {
 				display: grid;
 				gap: 1rem;
@@ -55,8 +54,7 @@
 					height: 50%;
 					display: flex;
 					justify-content: flex-end;
-					top: -4rem;
-					
+					bottom: 90px;
 				}
 
 				&-image {
@@ -66,13 +64,21 @@
 				}
 				&-video-desc {
 					position: absolute;
+					left: 1rem;
+					top: 18rem;
+					@media screen and (min-width: $md) {
+						left: 18.7rem;
+					}
 				}
 			}
 		}
 	}
 
 	.about-section {
-		padding: 1rem 0;
+		padding: 3rem 0;
+		@media screen and (min-width: $md) {
+			padding-top: 0.5rem;
+		}
 
 		.about-inner {
 			display: grid;
@@ -258,6 +264,84 @@
 	}
 
 	.home-section-5 {
+		.section5-inner {
+			h2 {
+				font-family: "Raleway";
+				font-style: normal;
+				font-weight: 800;
+				font-size: 3rem;
+				line-height: 4rem;
+				color: $secondary;
+				padding-top: 2rem;
+			}
+			.section5-text {
+				width: 100%;
+				position: relative;
+				@media screen and (min-width: $md) {
+					display: flex;
+				}
+				p {
+					font-family: "Raleway";
+					font-weight: 500;
+					font-size: 1.12rem;
+					line-height: 2rem;
+					@media screen and (min-width: $md) {
+						width: 70%;
+					}
+				}
+				.btn {
+					@media screen and (min-width: $md) {
+						position: absolute;
+						right: 0;
+					}
+				}
+			}
+			.services-grid {
+				padding-top: 1.5rem;
+				display: grid;
+				gap: 1rem;
+				@media screen and (min-width: $md) {
+					grid-template-columns: 1fr 1fr 1fr;
+				}
+				.service-grid {
+					.image {
+						img {
+							width: 100%;
+						}
+					}
+					&-info {
+						padding: 1rem 0.7rem;
+						background: rgba(51, 51, 51, 0.04);
+						backdrop-filter: blur(34px);
+
+						h5 {
+							font-family: "Raleway";
+							font-style: normal;
+							font-weight: 600;
+							font-size: 1rem;
+							line-height: 1.5rem;
+							color: $secondary;
+						}
+						p {
+							font-family: "Raleway";
+							font-style: normal;
+							font-weight: 500;
+							font-size: 0.75rem;
+							line-height: 1.5rem;
+							color: $secondary;
+						}
+						.service-link-text {
+							a {
+								text-decoration: none;
+								img {
+									margin-left: 0.7rem;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
 	}
 
 	.home-section-6 {
@@ -315,32 +399,31 @@
 			gap: 1.5rem;
 			background: rgba(51, 51, 51, 0.02);
 			padding: 2rem 0;
-	
+
 			h2 {
 				color: $secondary;
 				font-size: 2.8rem;
 				font-weight: 800;
 				line-height: 4rem;
 				text-align: center;
-				
 			}
-	
+
 			&-sub {
 				position: relative;
 				height: 260px;
-	
+
 				.large-img {
 					width: 100%;
 					height: 100%;
 					object-fit: cover;
 					object-position: center;
-	
+
 					@media screen and (min-width: $md) {
 						width: 85%;
 						margin-left: 15%;
 					}
 				}
-	
+
 				&_text {
 					position: absolute;
 					width: 85%;
@@ -351,21 +434,21 @@
 					padding: 1rem;
 					display: grid;
 					gap: 1rem;
-	
+
 					@media screen and (min-width: $md) {
 						width: 35%;
 					}
-	
+
 					p {
 						margin: 0;
 						color: #fff;
-	
+
 						&.text-heading {
 							font-size: 12px;
 							font-weight: 700;
 							line-height: 0.880625rem;
 						}
-	
+
 						&.inner-text-body {
 							font-size: 10px;
 							font-weight: 400;
@@ -373,7 +456,7 @@
 							// margin-block: 0.5rem 0.625rem;
 						}
 					}
-	
+
 					.text-link {
 						&_link {
 							color: #fff;
@@ -381,37 +464,37 @@
 							font-size: 10px;
 							font-weight: 600;
 							line-height: 0.73375rem;
-	
+
 							img {
 								margin-left: 0.5rem;
 							}
 						}
 					}
 				}
-	
+
 				&.sub-2 {
 					.large-img {
 						margin-left: 0;
 					}
-	
+
 					.sub-2_text {
 						right: 0;
-	
+
 						@media screen and (min-width: $md) {
 							background-color: $danger;
 						}
 					}
 				}
 			}
-	
+
 			&-btn {
 				text-align: center;
 				// margin-top: 3rem;
-	
-			button{
-				background-color: white;
-			}
-				:hover{
+
+				button {
+					background-color: white;
+				}
+				:hover {
 					background-color: $danger;
 					color: white;
 				}
@@ -419,4 +502,3 @@
 		}
 	}
 }
-

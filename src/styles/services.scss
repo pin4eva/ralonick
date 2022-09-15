@@ -41,20 +41,28 @@
 
 			.services-list {
 				width: 100%;
+				overflow: hidden;
 
 				.swiper-clicks {
 					display: flex;
-					justify-content: flex-start;
+					justify-content: flex-end;
 					align-items: center;
 					gap: 1rem;
-					width: 2%;
-					margin-top: -4rem;
-
+					width: 80vw;
+					margin-top: -3rem;
+					margin-left: 2.5rem;
+					@media screen and (min-width: 705px) {
+						width: 70vw;
+					}
+					@media screen and (min-width: 768px) {
+						width: 80vw;
+					}
 					.line {
 						max-width: 150px;
 						height: 1px;
 						background: #adadad;
 						flex: 1;
+						// border: 1px solid red;
 					}
 
 					.arrows {

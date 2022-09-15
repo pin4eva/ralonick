@@ -76,7 +76,9 @@ const Services = () => {
 					<div className="more-details-inner">
 						<div className="more-details-inner_top">
 							<p>Still have a question(s) ?</p>
-							<button className="btn btn-outline-danger hug">Contact Us</button>
+							<Link href="/contact">
+								<button className="btn btn-outline-danger hug">Contact Us</button>
+							</Link>
 						</div>
 						<div className="statistics">
 							<div className="border-none statistics-info">

@@ -9,8 +9,12 @@ import "swiper/css";
 import "swiper/css/navigation";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { SwiperButtons } from "..";
+import { useState } from "react";
 
 const Services = () => {
+	const [disableNext, setDisableNext] = useState(false);
+	const [disablePrev, setDisablePrev] = useState(true);
+
 	const services = Data.map((service) => ({
 		...service,
 		slug: createSlug(service.title),
@@ -61,13 +65,17 @@ const Services = () => {
 									slidesPerView: 1,
 								},
 							}}
+							onSlideChange={(e) => {
+								e.isBeginning ? setDisablePrev(true) : setDisablePrev(false);
+								e.isEnd ? setDisableNext(true) : setDisableNext(false);
+							}}
 						>
 							{services.map((item, i) => (
 								<SwiperSlide>
 									<ServiceItemComp key={i} />
 								</SwiperSlide>
 							))}
-							<SwiperButtons />
+							<SwiperButtons disableNext={disableNext} disablePrev={disablePrev} />
 						</Swiper>
 					</div>
 				</section>

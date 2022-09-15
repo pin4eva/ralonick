@@ -30,7 +30,6 @@ const Home = () => {
 							<div className="inner-left">
 								<Swiper
 									className="hero_img1"
-									spaceBetween={50}
 									slidesPerView={1}
 									speed={1000}
 									onSlideChange={(e) => {
@@ -235,6 +234,10 @@ const Home = () => {
 								spaceBetween: 30,
 							},
 						}}
+						onSlideChange={(e) => {
+							e.isBeginning ? setDisablePrev(true) : setDisablePrev(false);
+							e.isEnd ? setDisableNext(true) : setDisableNext(false);
+						}}
 					>
 						{Data.map((item, i) => {
 							return (
@@ -251,8 +254,7 @@ const Home = () => {
 								</SwiperSlide>
 							);
 						})}
-						<SwiperButtons />
-						{/* <SwiperButtonControl disableNext={disableNext} disablePrev={disablePrev} /> */}
+						<SwiperButtons disableNext={disableNext} disablePrev={disablePrev} />
 					</Swiper>
 				</section>
 
@@ -286,16 +288,19 @@ const SwiperButtonControl: React.FC<{ disableNext: boolean; disablePrev: boolean
 	);
 };
 
-export const SwiperButtons = () => {
+export const SwiperButtons: React.FC<{ disableNext: boolean; disablePrev: boolean }> = ({
+	disableNext,
+	disablePrev,
+}) => {
 	const swiper = useSwiper();
 
 	return (
 		<div className="swiper-clicks">
 			<div className="arrows">
-				<button onClick={() => swiper.slidePrev()} className="swiper-control">
+				<button disabled={disablePrev} onClick={() => swiper.slidePrev()} className="swiper-control">
 					<i className="fa-solid fa-chevron-left"></i>
 				</button>
-				<button onClick={() => swiper.slideNext()} className="swiper-control">
+				<button disabled={disableNext} onClick={() => swiper.slideNext()} className="swiper-control">
 					<i className="fa-solid fa-chevron-right"></i>
 				</button>
 			</div>

@@ -7,7 +7,6 @@
 		.inner {
 			display: grid;
 			gap: 1rem;
-			// position: relative;
 
 			&-left {
 				display: grid;
@@ -61,7 +60,12 @@
 								background: #f5e5e6;
 								border-radius: 50%;
 								padding: 0.3rem 0.7rem;
-								z-index: 3;
+								z-index: 2;
+								&:disabled {
+									background: transparent;
+									border: 1px solid #adadad;
+									color: #adadad;
+								}
 							}
 						}
 					}
@@ -400,6 +404,11 @@
 						border-radius: 50%;
 						padding: 0.5rem 0.8rem;
 						width: 2.5rem;
+						&:disabled {
+							background: transparent;
+							border: 1px solid #adadad;
+							color: #adadad;
+						}
 					}
 				}
 			}

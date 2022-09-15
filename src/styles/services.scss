@@ -80,6 +80,11 @@
 							padding: 0.5rem 0.8rem;
 							width: 2.5rem;
 							z-index: 3;
+							&:disabled {
+								background: transparent;
+								border: 1px solid #adadad;
+								color: #adadad;
+							}
 						}
 					}
 				}

@@ -218,7 +218,7 @@ const Home = () => {
 						speed={1000}
 						breakpoints={{
 							1400: {
-								slidesPerView: 3,
+								slidesPerView: 2,
 							},
 							1161: {
 								slidesPerView: 2,

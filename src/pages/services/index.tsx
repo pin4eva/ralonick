@@ -4,21 +4,31 @@ import FrontLayout from "../../layouts/front.layout";
 import Data from "../../components/data.json";
 import Link from "next/link";
 import ClientComp from "../../components/ClientComp";
-import { createSlug } from "../../utils/string.utils";
+import { createSlug, truncateText } from "../../utils/string.utils";
 import "swiper/css";
 import "swiper/css/navigation";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { SwiperButtons } from "..";
 import { useState } from "react";
 
+export interface IService {
+	image: string;
+	title: string;
+	slug: string;
+	description: string;
+	images?: string[];
+}
+
+export const services: IService[] = Data.map((service) => ({
+	slug: createSlug(service.title),
+	title: service.title,
+	image: service.image,
+	description: service.text,
+}));
+
 const Services = () => {
 	const [disableNext, setDisableNext] = useState(false);
 	const [disablePrev, setDisablePrev] = useState(true);
-
-	const services = Data.map((service) => ({
-		...service,
-		slug: createSlug(service.title),
-	}));
 
 	return (
 		<FrontLayout>
@@ -71,8 +81,8 @@ const Services = () => {
 							}}
 						>
 							{services.map((item, i) => (
-								<SwiperSlide>
-									<ServiceItemComp key={i} />
+								<SwiperSlide key={i}>
+									<ServiceItemComp service={item} />
 								</SwiperSlide>
 							))}
 							<SwiperButtons disableNext={disableNext} disablePrev={disablePrev} />
@@ -117,22 +127,17 @@ const Services = () => {
 
 export default Services;
 
-const ServiceItemComp = () => (
+const ServiceItemComp: React.FC<{ service: IService }> = ({ service }) => (
 	<div className="services-items">
 		<div className="service-item-inner">
 			<div className="services-item-image">
-				<img src="/images/services/steel1.png" alt="ig" />
+				<img src={service?.image} alt="ig" />
 			</div>
 			<div className="content">
-				<p className="title">Title</p>
-				<div className="texts">
-					Ralonick Service Limited Offer a complete range of advanced insulation solutions for the oil and gas and food
-					and beverages industries. Our products range covers various insulation requirements for piping and equipment
-					systems, and insulation of subsea systems. Or uproducts range meets demanding NORSOK requirement and suited
-					for tough environmental conditions
-				</div>
+				<p className="title">{service?.title}</p>
+				<div className="texts">{truncateText(service.description)}</div>
 				<div className="single-service-link">
-					<Link href={`/services/jdjdj`}>
+					<Link href={`/services/${service?.slug}`}>
 						<a className="text-on-click">
 							Learn More
 							<img src="/assets/learnMoreArrow.png" alt="arrow" />

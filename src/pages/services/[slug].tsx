@@ -1,13 +1,25 @@
 /* eslint-disable @next/next/no-img-element */
+import { useRouter } from "next/router";
+import { useEffect, useState } from "react";
+import { IService, services } from ".";
 import FrontLayout from "../../layouts/front.layout";
 
-const singleservice = () => {
+const Singleservice = () => {
+	const router = useRouter();
+	const [service, setService] = useState<IService>();
+	useEffect(() => {
+		const slug = router.query?.slug;
+		const service = services.find((service) => service.slug === slug);
+		setService(service);
+	}, [router]);
+
+	if (!service) return <p>Loading...</p>;
 	return (
 		<FrontLayout>
 			<div className="single-service-wrapper">
 				<section className="single-service-hero container">
 					<div className="single-service-hero-image">
-						<img src="/assets/Frame 50.png" alt="bg" />
+						<img src={service?.image} alt="bg" />
 					</div>
 				</section>
 
@@ -104,39 +116,9 @@ const singleservice = () => {
 						</div>
 					</div>
 				</div>
-
-				{/* <div className="single-service-2-inner-heading">
-							<h3>Why Choose Us</h3>
-							<div className="single-service-2-inner-bottom">
-								<div className="single-service-2-inner-bottom-item">
-									<div className="icon">
-										<img src="/assets/img1.png" alt="p1" />
-									</div>
-									<p>Quality</p>
-								</div>
-								<div className="single-service-2-inner-bottom-item">
-									<div className="icon">
-										<img src="/assets/img2.png" alt="p1" />
-									</div>
-									<p>Integrity</p>
-								</div>
-								<div className="single-service-2-inner-bottom-item">
-									<div className="icon">
-										<img src="/assets/img3.png" alt="p1" />
-									</div>
-									<p>Safety</p>
-								</div>
-								<div className="single-service-2-inner-bottom-item">
-									<div className="icon">
-										<img src="/assets/img4.png" alt="p1" />
-									</div>
-									<p>Professionalism</p>
-								</div>
-							</div>
-						</div> */}
 			</div>
 		</FrontLayout>
 	);
 };
 
-export default singleservice;
+export default Singleservice;

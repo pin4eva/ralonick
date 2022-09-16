@@ -248,7 +248,7 @@ const Home = () => {
 											<p className=" fw-600">{item.title}</p>
 										</div>
 										<div className="description">
-											<p>{item.text.slice()}</p>
+											<p>{item.text}</p>
 										</div>
 									</div>
 								</SwiperSlide>

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { ElementType, FormEvent, MutableRefObject } from "react";
 import FrontLayout from "../layouts/front.layout";
 import { useRef } from "react";
 import emailjs from "emailjs-com";
@@ -6,10 +6,14 @@ import emailjs from "emailjs-com";
 const contact = () => {
 	const form = useRef<HTMLFormElement>(null);
 
-	const sendEmail = (e: { preventDefault: () => void }) => {
-		e.preventDefault();
+	const sendEmail = (e: FormEvent & { target: any }) => {
+		const currentForm = form.current;
 
-		emailjs.sendForm("service_3v9dlod", "template_n56wgqw", `${form.current}`, "nwqUtlSWhBh4vaEL4");
+		if (currentForm == null) return;
+
+		e.preventDefault();
+		emailjs.sendForm("service_3v9dlod", "template_n56wgqw", currentForm, "nwqUtlSWhBh4vaEL4");
+		e.target.reset();
 	};
 	return (
 		<FrontLayout>
@@ -56,7 +60,7 @@ const contact = () => {
 						/>
 					</div>
 					<div className="form-group textarea">
-						<textarea name="message" id="" className="filltext" placeholder="Your Message" />
+						<textarea name="message" id="" className="filltext" placeholder="Your Message" required />
 					</div>
 					<button type="submit" className="btn btn-danger hug">
 						Submit

@@ -1,7 +1,16 @@
 import React from "react";
 import FrontLayout from "../layouts/front.layout";
+import { useRef } from "react";
+import emailjs from "emailjs-com";
 
 const contact = () => {
+	const form = useRef<HTMLFormElement>(null);
+
+	const sendEmail = (e: { preventDefault: () => void }) => {
+		e.preventDefault();
+
+		emailjs.sendForm("service_3v9dlod", "template_n56wgqw", `${form.current}`, "nwqUtlSWhBh4vaEL4");
+	};
 	return (
 		<FrontLayout>
 			<div className="contact-page container">
@@ -18,7 +27,7 @@ const contact = () => {
 						State, Nigeria.
 					</p>
 				</div>
-				<form>
+				<form ref={form} onSubmit={sendEmail}>
 					<div className="form-group input-box">
 						<input
 							type="text"
@@ -47,7 +56,7 @@ const contact = () => {
 						/>
 					</div>
 					<div className="form-group textarea">
-						<textarea name="" id="" className="filltext" placeholder="Your Message" />
+						<textarea name="message" id="" className="filltext" placeholder="Your Message" />
 					</div>
 					<button type="submit" className="btn btn-danger hug">
 						Submit

@@ -10,6 +10,7 @@ import { SwiperSlide, Swiper } from "swiper/react";
 import "swiper/css/navigation";
 import { SwiperData } from "../components/Data";
 import Data from "../components/data.json";
+import { truncateText } from "../utils/string.utils";
 
 const Home = () => {
 	const [disableNext, setDisableNext] = useState(false);
@@ -208,54 +209,51 @@ const Home = () => {
 								<button className="btn btn-outline-danger hug">All Services</button>
 							</Link>
 						</div>
+
+						<Swiper
+							className="service-swiper-card"
+							spaceBetween={40}
+							slidesPerView={2}
+							navigation
+							loopFillGroupWithBlank={true}
+							speed={1000}
+							breakpoints={{
+								890: {
+									slidesPerView: 2,
+								},
+								768: {
+									slidesPerView: 1,
+								},
+								200: {
+									slidesPerView: 1,
+									spaceBetween: 30,
+								},
+							}}
+							onSlideChange={(e) => {
+								e.isBeginning ? setDisablePrev(true) : setDisablePrev(false);
+								e.isEnd ? setDisableNext(true) : setDisableNext(false);
+							}}
+						>
+							{Data.map((item, i) => {
+								return (
+									<SwiperSlide key={i} className="service-swiper-card-items">
+										<img src={item.image} alt="" />
+										<div className="content">
+											<div className="title">
+												<p className=" fw-600">{item.title}</p>
+											</div>
+											<div className="description">
+												<p>{truncateText(item.text, 20)}...</p>
+											</div>
+										</div>
+									</SwiperSlide>
+								);
+							})}
+							<div className="control-wrapper">
+								<SwiperButtons disableNext={disableNext} disablePrev={disablePrev} />
+							</div>
+						</Swiper>
 					</div>
-					<Swiper
-						className="service-swiper-card"
-						spaceBetween={40}
-						slidesPerView={2}
-						navigation
-						loopFillGroupWithBlank={true}
-						speed={1000}
-						breakpoints={{
-							1400: {
-								slidesPerView: 2,
-							},
-							1161: {
-								slidesPerView: 2,
-							},
-							890: {
-								slidesPerView: 2,
-							},
-							768: {
-								slidesPerView: 1,
-							},
-							200: {
-								slidesPerView: 1,
-								spaceBetween: 30,
-							},
-						}}
-						onSlideChange={(e) => {
-							e.isBeginning ? setDisablePrev(true) : setDisablePrev(false);
-							e.isEnd ? setDisableNext(true) : setDisableNext(false);
-						}}
-					>
-						{Data.map((item, i) => {
-							return (
-								<SwiperSlide key={i} className="service-swiper-card-items">
-									<img src={item.image} alt="" />
-									<div className="content">
-										<div className="title">
-											<p className=" fw-600">{item.title}</p>
-										</div>
-										<div className="description">
-											<p>{item.text}</p>
-										</div>
-									</div>
-								</SwiperSlide>
-							);
-						})}
-						<SwiperButtons disableNext={disableNext} disablePrev={disablePrev} />
-					</Swiper>
 				</section>
 
 				<h1 className="testimonial-head">Client Reviews</h1>

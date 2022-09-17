@@ -4,7 +4,7 @@ import Link from "next/link";
 
 const FooterComp = () => {
 	return (
-		<footer className="footer" >
+		<footer className="footer container" >
 			<div className="footer-first-part">
 				<p>RALONICK LTD.</p>
 				<p>
@@ -67,7 +67,7 @@ const FooterComp = () => {
 					</a>
 				</div>
 				<p>
-					<Link href="/">Still Have a Question? </Link>
+					<Link href="/"><a>Still Have a Question? </a></Link>
 				</p>
 				<button className="btn hug btn-danger">Send a Message</button>
 			</div>

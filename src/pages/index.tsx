@@ -14,7 +14,9 @@ const Home = () => {
 									<img src="./images/frame9.png" alt="" />
 								</div>
 								<div className="home-hero_upper-left_scroll">
-
+									<div className="home-hero_upper-left_scroll-line"></div>
+									<i className="fa-solid fa-chevron-left"></i>
+									<i className="fa-solid fa-chevron-right"></i>
 								</div>
 							</div>
 
@@ -30,7 +32,7 @@ const Home = () => {
 									</div>
 								</div>
 								<div className="home-hero_upper-right_button">
-									<button className="btn btn hug bg-danger">See projects</button>
+									<Link href="/projects"><button className="btn btn hug bg-danger">See projects</button></Link>
 								</div>
 							</div>
 						</div>
@@ -83,7 +85,7 @@ const Home = () => {
 									</div>
 								</div>
 								<div className="home-first-section_inner-right_button">
-									<button className="button hug">Learn More</button>
+									<Link href="/about"><button className="button hug">Learn More</button></Link>
 								</div>
 							</div>
 						</div>
@@ -214,7 +216,7 @@ const Home = () => {
 								<div className="home-fourth-section-inner-top-text">
 									<p>At Ralonick, we offer a wide range of services from engineering, procurement, construction, to equipment leasing for land & marine.</p>
 									<div className="home-fourth-section-inner_top_button">
-										<button className="button hug">All Services</button>
+										<Link href="/services"><button className="button hug">All Services</button></Link>
 									</div>
 								</div>
 
@@ -260,8 +262,15 @@ const Home = () => {
 
 
 								</div>
+							
 							</div>
+							<div className="home-hero_upper-left_scroll">
+									<div className="home-hero_upper-left_scroll-line"></div>
+									<i className="fa-solid fa-chevron-right"></i>
+									<i className="fa-solid fa-chevron-left"></i>
+								</div>
 						</div>
+						
 					</section>
 					<section className="home-fifth-section">
 						<div className="home-fifth-section-inner">
@@ -349,7 +358,7 @@ const Home = () => {
 								</div>
 							</div>
 							<div className="home-sixth-section-inner-button">
-								<button className="btn btn hug bg-danger">All Services</button>
+								<Link href="/services"><button className="btn btn hug bg-danger">All Services</button></Link>
 							</div>
 						</div>
 					</section>

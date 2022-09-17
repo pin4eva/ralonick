@@ -37,7 +37,7 @@ const Services = () => {
                     </section>
                     <section className="services-second-section">
                         <div className="services-second-section-inner">
-                         
+
                             <div className="services-second-section-inner_card">
                                 <div className="services-second-section-inner_card-inner">
                                     <div className="services-second-section_inner-card-inner one">
@@ -149,11 +149,16 @@ const Services = () => {
                                         </div>
                                     </div>
                                 </div>
+                                <div className="home-hero_upper-left_scroll">
+									<div className="home-hero_upper-left_scroll-line"></div>
+									<i className="fa-solid fa-chevron-right"></i>
+									<i className="fa-solid fa-chevron-left"></i>
+								</div>
                             </div>
-<div className="services-second-section-inner-button">
-    <p>Still have a question?</p>
-    <button className="button hug">Contact Us</button>
-</div>
+                            <div className="services-second-section-inner-button">
+                                <p>Still have a question?</p>
+                                <button className="button hug">Contact Us</button>
+                            </div>
                         </div>
                     </section>
                     <section className="services-third-section">
@@ -185,36 +190,36 @@ const Services = () => {
                         </div>
                     </section>
                     <section className="services-fourth-section">
-						<div className="services-fourth-section-inner">
-							<div className="services-fourth-section-inner_text">
-								<h1>Clients Reviews</h1>
-							</div>
+                        <div className="services-fourth-section-inner">
+                            <div className="services-fourth-section-inner_text">
+                                <h1>Clients Reviews</h1>
+                            </div>
 
-							<div className="services-fourth-section-inner_profile">
-								<div className="services-fourth-section-inner_profile-text-testimonial">
-									<p>I had been looking to get my shipment and maintenance done but couldn't find the right Construction Company to do so. Rolanick Construction has been exceptional at what they do, from pre-planning, procurement, constructing in itself and maintenance it has been worth it. They understood the job and they delivered! Thank you!</p>
-								</div>
-								<div className="services-fourth-section-inner_profile-img">
-									<img src="./images/image.png" alt="" />
-								</div>
-								<div className="services-fourth-section-inner_profile-text-info">
-									<h3>Cindy Clifford</h3>
-									<p>Creative Director Sobaz Oil and gas</p>
-								</div>
-								<div className="services-fourth-section-inner_profile-slider">
-									<div className="services-fourth-section-inner_profile-slider1">
+                            <div className="services-fourth-section-inner_profile">
+                                <div className="services-fourth-section-inner_profile-text-testimonial">
+                                    <p>I had been looking to get my shipment and maintenance done but couldn't find the right Construction Company to do so. Rolanick Construction has been exceptional at what they do, from pre-planning, procurement, constructing in itself and maintenance it has been worth it. They understood the job and they delivered! Thank you!</p>
+                                </div>
+                                <div className="services-fourth-section-inner_profile-img">
+                                    <img src="./images/image.png" alt="" />
+                                </div>
+                                <div className="services-fourth-section-inner_profile-text-info">
+                                    <h3>Cindy Clifford</h3>
+                                    <p>Creative Director Sobaz Oil and gas</p>
+                                </div>
+                                <div className="services-fourth-section-inner_profile-slider">
+                                    <div className="services-fourth-section-inner_profile-slider1">
 
-									</div>
-									<div className="services-fourth-section-inner_profile-slider2">
+                                    </div>
+                                    <div className="services-fourth-section-inner_profile-slider2">
 
-									</div>
-									<div className="services-fourth-section-inner_profile-slider3">
+                                    </div>
+                                    <div className="services-fourth-section-inner_profile-slider3">
 
-									</div>
-								</div>
-							</div>
-						</div>
-					</section>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
                 </div>
             </FrontLayout>
         </div>

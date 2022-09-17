@@ -217,7 +217,7 @@
 .footer {
 	text-align: center;
 	border: 1px solid;
-	padding: 1rem;
+	padding-block: 4rem 0rem;
 
 	div {
 		&:nth-child(1) {
@@ -319,17 +319,16 @@
 
 					font-size: 1.2rem;
 					color: rgba(0, 0, 0, 0.5);
+					margin-inline: 1rem;
 
 					&:hover {
 						color: $danger;
+
 					}
 				}
 			}
 
 			p {
-				// margin-block: 4.4375rem 1.5rem;
-				margin: 0rem 4rem 0rem 1.5rem;
-
 				a {
 					text-decoration: none;
 					font-size: 0.875rem;
@@ -342,50 +341,36 @@
 	}
 
 	@media screen and (min-width:768px) {
-		// display: grid;
-		// grid-template-columns: 1fr 1fr 1fr;
-		// grid-template-rows: 1fr 1fr 1fr;
 
-		// div {
-		// 	&:nth-child(1) {
-		// 		grid-column: 1/4;
-		// 	}
-
-		// 	&:nth-child(5) {
-		// 		grid-column: 1/4;
-		// 		text-align: center;
-
-		// 		.footer_icons {
-		// 			a {
-		// 				margin-inline: 1rem;
-		// 			}
-		// 		}
-
-		// 		p:nth-child(2) {
-		// 			width: 70%;
-		// 			margin-inline: auto;
-		// 			margin-block: 0.88889rem 1.33333rem;
-		// 		}
-
-		// 	}
 		display: grid;
-		grid-template-columns: 1fr 1fr ;
-		grid-template-rows: 1fr 1fr;
-		div{
-			:nth-child(1){
+		grid-template-columns: 1fr 1fr 1fr;
+		grid-template-rows: 1fr 1fr 1fr;
+
+		div {
+			&:nth-child(1) {
 				grid-column: 1/4;
 			}
-			:nth-child(5){
+
+			&:nth-child(5) {
 				grid-column: 1/4;
+				text-align: center;
+				margin-top: 1rem;
+
+				p:nth-child(2) {
+
+					width: 70%;
+					margin-inline: auto;
+					margin-block: 0.88889rem 1.33333rem;
+				}
 			}
 		}
-	
+
 	}
 
 
 	@media screen and (min-width:992px) {
-		grid-template-columns: 0.5fr 0.8fr 1fr 1fr;
-
+		grid-template-columns: 0.5fr 0.8fr;
+		grid-template-rows: 1fr 1fr;
 		&>div {
 			&:nth-child(1) {
 				grid-column: 1/5;
@@ -408,7 +393,8 @@
 			}
 
 			&:nth-child(5) {
-				grid-column: 0;
+
+				grid-column: none;
 
 				p {
 
@@ -421,11 +407,46 @@
 	}
 
 	@media screen and (min-width:1200px) {
-		// 	display: grid;
-		// 	grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-		// 	grid-template-rows: 0fr;
-		// 	gap: 2rem;
-		gap: 1rem;
-		grid-template-columns: 1fr 0.5fr 0.8fr 1fr 1fr;
+ 	// padding-inline: 4.5rem;
+	margin-block: 4.5rem 3.5rem;
+	display: grid;
+	grid-template-columns: 2fr 1fr 1fr 2fr;
+	grid-template-rows: 1fr;
+	gap: 1rem;
+		&>div {
+			&:nth-child(1) {
+				grid-column: 1;
+				text-align:left;
+			
+
+				p:nth-child(2) {
+					width: 100%;
+					margin-inline: 0rem;
+				}
+			}
+
+			&:nth-child(4) {
+
+				p {
+					&:nth-child(3) {
+						padding-right: 10%;
+					}
+				}
+			}
+
+			&:nth-child(5) {
+
+				grid-column: 0;
+
+				p {
+
+				a{
+					margin-block: 4rem 0rem;
+				}
+				}
+			}
+		}
+
+
 	}
 }

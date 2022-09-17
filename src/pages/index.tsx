@@ -303,7 +303,7 @@ const Home = () => {
 							</div>
 						</div>
 					</section>
-					<section className="home-sixth-section">
+					{/* <section className="home-sixth-section">
 						<div className="home-sixth-section-inner">
 							<div className="home-sixth-section-inner_header">
 								<h1>Our Projects</h1>
@@ -358,10 +358,10 @@ const Home = () => {
 								</div>
 							</div>
 							<div className="home-sixth-section-inner-button">
-								<Link href="/services"><button className="btn btn hug bg-danger">All Services</button></Link>
+								<Link href="/services"><button className="btn hug btn-dange">All Services</button></Link>
 							</div>
 						</div>
-					</section>
+					</section> */}
 
 				</div>
 			</FrontLayout>

@@ -42,67 +42,23 @@
 			.services-list {
 				width: 100%;
 				overflow: hidden;
-				height: max-content;
-
-				.swiper-clicks {
-					display: flex;
-					justify-content: flex-end;
-					align-items: center;
-					gap: 1rem;
-					width: 80vw;
-					margin-top: -3.5rem;
-					margin-left: 2.5rem;
-					@media screen and (min-width: 989px) {
-						margin-top: -4rem;
-					}
-					@media screen and (min-width: 705px) {
-						width: 70vw;
-					}
-					@media screen and (min-width: 768px) {
-						width: 80vw;
-					}
-					.line {
-						max-width: 150px;
-						height: 1px;
-						background: #adadad;
-						flex: 1;
-					}
-
-					.arrows {
-						display: flex;
-						gap: 1rem;
-
-						.swiper-control {
-							border: 1px solid #a00107;
-							color: #a00107;
-							background: #f5e5e6;
-							border-radius: 50%;
-							padding: 0.5rem 0.8rem;
-							width: 2.5rem;
-							z-index: 3;
-							&:disabled {
-								background: transparent;
-								border: 1px solid #adadad;
-								color: #adadad;
-							}
-						}
-					}
-				}
 
 				.swiper-button-prev,
 				.swiper-button-next {
 					display: none;
 				}
 				.services-items {
-					width: 100%;
 					.service-item-inner {
-						height: 40rem;
-						width: 90%;
-						gap: 2rem;
+						@media screen and (max-width: $mobile) {
+							grid-template-rows: 350px 300px;
+							height: 650px;
+						}
+						height: 700px;
 						margin: 4rem auto;
-
+						display: grid;
+						grid-template-rows: 350px 350px;
 						.services-item-image {
-							height: 40%;
+							height: 100%;
 							img {
 								width: 100%;
 								height: 100%;
@@ -112,7 +68,7 @@
 						.content {
 							padding: 1.5rem 1.125rem;
 							background: rgba(51, 51, 51, 0.04);
-
+							position: relative;
 							.title {
 								font-weight: 600;
 								font-size: 1.125rem;
@@ -127,7 +83,8 @@
 
 							.single-service-link {
 								display: flex;
-								margin-top: 3rem;
+								position: absolute;
+								bottom: 30px;
 								.text-on-click {
 									display: flex;
 									align-items: center;
@@ -137,6 +94,43 @@
 										width: 0.5rem;
 										aspect-ratio: 1/1;
 									}
+								}
+							}
+						}
+					}
+				}
+				.control-wrapper {
+					width: 30%;
+					justify-content: end;
+					margin-left: auto;
+					.swiper-clicks {
+						display: flex;
+						align-items: center;
+						gap: 1rem;
+						width: 100%;
+						margin-top: -3rem;
+						.line {
+							height: 1px;
+							background: #adadad;
+							flex: 1;
+						}
+
+						.arrows {
+							display: flex;
+							gap: 1rem;
+
+							.swiper-control {
+								border: 1px solid #a00107;
+								color: #a00107;
+								background: #f5e5e6;
+								border-radius: 50%;
+								padding: 0.5rem 0.8rem;
+								width: 2.5rem;
+								z-index: 3;
+								&:disabled {
+									background: transparent;
+									border: 1px solid #adadad;
+									color: #adadad;
 								}
 							}
 						}

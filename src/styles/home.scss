@@ -139,12 +139,15 @@
 
 			.about-inner-right {
 				margin-top: 1rem;
-
 				@media screen and (min-width: $md) {
 					width: 50%;
-					margin-top: 1rem;
-					display: flex;
-					align-items: center;
+				}
+				.right-text {
+					p {
+						@media screen and (min-width: 1400px) {
+							margin-bottom: 2rem;
+						}
+					}
 				}
 			}
 		}
@@ -162,24 +165,14 @@
 			@media screen and (min-width: $md) {
 				width: 100%;
 				display: flex;
-				justify-content: space-between;
-
-				&-left {
-					width: 47%;
-				}
-
-				&-right {
-					width: 47%;
-					height: fit-content;
-
-					img {
-						width: 100%;
-					}
-				}
+				gap: 2rem;
 			}
 
 			&-left {
 				text-align: center;
+				@media screen and (min-width: $md) {
+					width: 47%;
+				}
 
 				h2 {
 					color: $secondary;
@@ -209,11 +202,7 @@
 					display: flex;
 					text-align: center;
 					margin-bottom: 1.5rem;
-
-					@media screen and (max-width: $md) {
-						justify-content: center;
-					}
-
+					justify-content: center;
 					.statistics-info {
 						padding: 2%;
 						border: 1px solid $primary;
@@ -239,16 +228,16 @@
 			}
 
 			&-right {
-				height: 100%;
 				display: none;
 
 				@media screen and (min-width: $md) {
 					display: block;
-					margin-top: 3rem;
+					height: 700px;
+					width: 48%;
 				}
-
 				img {
 					height: 100%;
+					width: 100%;
 				}
 			}
 		}
@@ -269,8 +258,6 @@
 			@media screen and (min-width: $md) {
 				display: block;
 				width: 40%;
-				border: 1px solid green;
-				// height: auto;
 				height: 800px;
 				margin-top: 3.5rem;
 
@@ -322,11 +309,8 @@
 	//============END OF QUALITY SECTION===============
 
 	.service-container {
-
-
 		.service-container-inner {
 			margin-top: 5rem;
-
 
 			&_text {
 				@media screen and (min-width: $md) {
@@ -347,8 +331,6 @@
 		}
 
 		.service-swiper-card {
-			// display: grid;
-			// gap: 2rem;
 			margin-top: 2rem;
 			flex: 1;
 
@@ -365,37 +347,27 @@
 				display: grid;
 				grid-template-rows: 400px 1fr;
 
-
 				img {
 					width: 100%;
 					height: 100%;
 				}
 
 				.content {
-
-
 					p {
 						padding: 1.5rem 1.125rem;
 					}
-
 					.title {
 						font-size: 1rem;
 						color: $secondary;
-
-
 					}
-
 					.description {
 						font-weight: 500;
 						font-size: 0.9rem;
 						color: $secondary;
-
 					}
 				}
 			}
-
 			.control-wrapper {
-
 				display: flex;
 				justify-content: end;
 				width: 30%;
@@ -407,10 +379,6 @@
 				align-items: center;
 				gap: 1rem;
 				width: 100%;
-
-
-
-
 				.line {
 					flex: 1;
 					height: 1px;

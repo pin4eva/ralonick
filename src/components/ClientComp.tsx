@@ -25,8 +25,6 @@ const ClientComp = () => {
 			{ClientReviews.map((item) => {
 				return (
 					<SwiperSlide className="client-reviews-inner" key={item.id}>
-						{/* <h2>Clients Reviews</h2> */}
-
 						<p className="client-reviews-inner-text">{item.text}</p>
 						<div className="client-reviews-profile">
 							<img src={item.image} alt="" />

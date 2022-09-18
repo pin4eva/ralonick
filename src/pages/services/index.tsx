@@ -16,6 +16,8 @@ export interface IService {
 	title: string;
 	slug: string;
 	description: string;
+	subtitle: string;
+	subtext: string;
 	images?: string[];
 }
 
@@ -24,6 +26,8 @@ export const services: IService[] = Data.map((service) => ({
 	title: service.title,
 	image: service.image,
 	description: service.text,
+	subtitle: service.subtitle,
+	subtext: service.subtext,
 }));
 
 const Services = () => {
@@ -60,7 +64,7 @@ const Services = () => {
 							speed={1000}
 							breakpoints={{
 								1370: {
-									slidesPerView: 3,
+									slidesPerView: 2,
 								},
 								1161: {
 									slidesPerView: 2,
@@ -85,7 +89,9 @@ const Services = () => {
 									<ServiceItemComp service={item} />
 								</SwiperSlide>
 							))}
-							<SwiperButtons disableNext={disableNext} disablePrev={disablePrev} />
+							<div className="control-wrapper">
+								<SwiperButtons disableNext={disableNext} disablePrev={disablePrev} />
+							</div>
 						</Swiper>
 					</div>
 				</section>
@@ -135,7 +141,7 @@ const ServiceItemComp: React.FC<{ service: IService }> = ({ service }) => (
 			</div>
 			<div className="content">
 				<p className="title">{service?.title}</p>
-				<div className="texts">{truncateText(service.description)}</div>
+				<div className="texts">{truncateText(service.description)}......</div>
 				<div className="single-service-link">
 					<Link href={`/services/${service?.slug}`}>
 						<a className="text-on-click">

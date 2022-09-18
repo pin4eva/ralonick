@@ -7,6 +7,7 @@ import FrontLayout from "../../layouts/front.layout";
 const Singleservice = () => {
 	const router = useRouter();
 	const [service, setService] = useState<IService>();
+
 	useEffect(() => {
 		const slug = router.query?.slug;
 		const service = services.find((service) => service.slug === slug);
@@ -25,27 +26,12 @@ const Singleservice = () => {
 
 				<section className="single-service-description container">
 					<div className="single-service-description_inner">
-						<h1 className="title">Active & Passive Fire Proofing</h1>
+						<h1 className="title">{service.title}</h1>
 
 						<div className="single-service-description_item">
-							<p className="description-text">
-								Ralonick is a professional fire proofing company offering clients’ a one-stop for all their fire
-								proofing needs be it passive or active fire proofing. Fire Proofing is applied to Building, Steel
-								Decking, Structural Beams, Siding System.
-							</p>
-							<h4 className="description-subitle">Passive Fire Proofing:</h4>
-							<p className="description-text">
-								Passive Fire Proofing is a vital component for any structure of building to safeguard lives and limit
-								financial impact of damage to building and their content. We offer Cementitious Fire Proofing, Mineral
-								Fibre Fire Proofing, Itumescent Paint Fire Proofing under Passive Fire Proofing.
-							</p>
-
-							<h4 className="description-subitle">Active Fire Proofing:</h4>
-							<p className="description-text">
-								Active Fire Proofing (AFP) is an integral part of fire protection characterized by items and systems
-								which require a certain amount of motion and response in order to work. We offer Manual Fire Suppression
-								& Automatic Fire Suppression.
-							</p>
+							<p className="description-text">{service.description}</p>
+							<h4 className="description-subitle">{service.subtitle}</h4>
+							<p className="description-text">{service.subtext}</p>
 						</div>
 
 						<div className="single-service-image_wrapper">

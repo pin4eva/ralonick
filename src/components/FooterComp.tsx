@@ -29,6 +29,16 @@ const FooterComp = () => {
 				</ul>
 			</div>
 
+			<div className="footer-contacts">
+				<p className="footer-contact-title fw-600">Contact</p>
+				<p className="telephone fw-700">+234-70 3008 1280</p>
+				<p className="location fw-400">
+					Plot 102, Km 5 East-West Road, Rumuodara, Port Harcourt, Rivers State, Nigeria.
+				</p>
+				<p className="contact-email fw-700">ralonickservicesltd@gmail.com</p>
+				<p className="open-duration fw-400">Mon - Sat: 8am-5pm</p>
+			</div>
+
 			<div className="footer-service-links">
 				<p className="footer-service-link-title fw-600">Services</p>
 				<ul className="list-unstyled">
@@ -50,16 +60,6 @@ const FooterComp = () => {
 						</Link>
 					</a>
 				</Link>
-			</div>
-
-			<div className="footer-contacts">
-				<p className="footer-contact-title fw-600">Contact</p>
-				<p className="telephone fw-700">+234-70 3008 1280</p>
-				<p className="location fw-400">
-					Plot 102, Km 5 East-West Road, Rumuodara, Port Harcourt, Rivers State, Nigeria.
-				</p>
-				<p className="contact-email fw-700">ralonickservicesltd@gmail.com</p>
-				<p className="open-duration fw-400">Mon - Sat: 8am-5pm</p>
 			</div>
 
 			<div className="footer-icon-details">

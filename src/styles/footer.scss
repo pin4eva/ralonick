@@ -5,7 +5,7 @@
 		display: grid;
 		grid-template-areas:
 			"a a a"
-			"b c d"
+			"b d c"
 			"e e e";
 	}
 	@media screen and (min-width: $md) {
@@ -26,7 +26,7 @@
 			margin-inline: auto;
 		}
 		@media screen and (min-width: 1300px) {
-			margin-top: 1rem;
+			margin-top: 0.8rem;
 			width: 90%;
 		}
 		.footer-about-logo {
@@ -51,6 +51,9 @@
 		grid-area: b;
 		@media screen and (min-width: $md) {
 			padding-left: 1rem;
+		}
+		@media screen and (min-width: 1300px) {
+			margin-top: 0.9rem;
 		}
 
 		.footer-links-title {
@@ -78,12 +81,15 @@
 		margin-top: 1rem;
 		grid-area: c;
 		@media screen and (min-width: $mobile) {
-			margin-left: 4.5rem;
+			margin-left: 4rem;
 			padding-left: 2rem;
 		}
 		@media screen and (min-width: $md) {
 			padding-left: 0;
-			margin-left: 3rem;
+			margin-left: 4rem;
+		}
+		@media screen and (min-width: 1300px) {
+			margin-top: 0.8rem;
 		}
 
 		.footer-service-links-title {
@@ -121,14 +127,12 @@
 		grid-area: d;
 		@media screen and (min-width: $mobile) {
 			width: 60%;
-			margin-left: 20%;
+			margin-left: 40%;
 		}
 		@media screen and (min-width: $md) {
-			margin-left: 15%;
-		}
-		@media screen and (min-width: 1300px) {
 			margin-left: 20%;
 		}
+
 		.footer-contact-title {
 			font-size: 0.875rem;
 			color: #000;
@@ -146,7 +150,10 @@
 		margin-top: 1rem;
 		@media screen and (min-width: $md) {
 			padding-top: 2rem;
-			margin-top: 3rem;
+			margin-top: 0.3rem;
+		}
+		@media screen and (min-width: 1300px) {
+			margin-top: 0.8rem;
 		}
 		.footer_icons {
 			display: flex;
@@ -167,6 +174,7 @@
 			@media screen and (min-width: $md) {
 				margin-top: 4rem;
 			}
+
 			a {
 				text-decoration: none;
 				font-size: 0.875rem;

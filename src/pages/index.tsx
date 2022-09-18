@@ -79,7 +79,6 @@ const Home = () => {
 							ease-in-out-quart="true"
 						>
 							<div className="right-text">
-								<p className="text-danger fw-600">RALONICK</p>
 								<h1>About Us</h1>
 								<p>
 									Ralonick is a fast growing construction company rapidly spreading its frontiers across Nigeria, with

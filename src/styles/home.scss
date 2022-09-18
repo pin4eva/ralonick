@@ -1,64 +1,77 @@
-.app {
-	display: grid;
-	min-height: 100vh;
-	grid-template-rows: auto 1fr auto;
-	margin: 0;
-}
-
 .home {
-	display: grid;
-
-	//Hero section
 	&-hero {
 		display: grid;
 		margin-bottom: 3rem;
-
-		@media screen and (min-width: $md) {
-			margin-bottom: 27rem;
-		}
+		margin-top: 2rem;
 
 		.inner {
 			display: grid;
 			gap: 1rem;
-			position: relative;
-
-			@media screen and (min-width: $md) {
-				display: flex;
-
-				.inner-right {
-					position: absolute;
-					top: 30rem;
-					right: 0;
-
-					.video-desc {
-						bottom: 10%;
-						left: -10%;
-					}
-				}
-			}
 
 			&-left {
 				display: grid;
 				gap: 3rem;
 
-				.hero-arrows {
-					margin-top: 1.5rem;
-					position: relative;
-					bottom: 0;
-					display: flex;
-					left: -10%;
-					align-items: center;
-					gap: 1rem;
+				.hero_img1 {
+					width: 90%;
+					height: 100%;
 
-					.line {
-						height: 0.8px;
-						background: #adadad;
-						flex: 1;
+					@media screen and (min-width: $mobile) {
+						height: 500px;
 					}
 
-					.arrow-img {
+					// @media screen and (max-width: 576px) {
+					// 	width: 90vw;
+					// }
+
+					//============ styling for the navigation buttons on the HERO SECCTION=============
+					.swiper-button-prev,
+					.swiper-button-next {
+						display: none;
+					}
+
+					img {
+						width: 100%;
+						height: 90%;
+
+						@media screen and (min-width: $mobile) {
+							height: 85%;
+						}
+					}
+
+					.hero-arrows {
+						margin-top: -2.5rem;
+						bottom: 0;
 						display: flex;
+						left: -10%;
+						align-items: center;
 						gap: 1rem;
+
+						.line {
+							height: 0.8px;
+							background: #adadad;
+							flex: 1;
+						}
+
+						.control-arrows {
+							display: flex;
+							gap: 1rem;
+
+							.controls {
+								border: 1px solid #a00107;
+								color: #a00107;
+								background: #f5e5e6;
+								border-radius: 50%;
+								padding: 0.3rem 0.7rem;
+								z-index: 2;
+
+								&:disabled {
+									background: transparent;
+									border: 1px solid #adadad;
+									color: #adadad;
+								}
+							}
+						}
 					}
 				}
 
@@ -83,217 +96,56 @@
 				}
 			}
 
-			&-right {
-				position: relative;
-
-				.video-desc {
-					position: absolute;
-
-					&-inner {
-						background: rgba(51, 51, 51, 0.3);
-						backdrop-filter: blur(34px);
-						padding: 1.125rem 1.5rem;
-						display: flex;
-						align-items: center;
-						gap: 1rem;
-						color: white;
-
-						.desc-text {
-							font-size: 14px;
-							font-weight: 600;
-						}
-
-						.duration {
-							font-size: 10px;
-							font-weight: 500;
-						}
-
-						img {
-							width: 36px;
-							height: 36px;
-						}
-					}
-
-					@media screen and (max-width: $md) {
-						bottom: -10%;
-						left: 1rem;
-					}
-				}
-
-				.img2 {
-					width: 100%;
-				}
-			}
-		}
-	}
-
-	// About section
-	.about-section {
-		position: relative;
-
-		.about-inner {
-			display: grid;
-			gap: 1rem;
-			min-height: 60vh;
-
-			&-right {
-				margin-top: 1rem;
-			}
-
-			@media screen and (min-width: $md) {
-				display: flex;
-
-				&-left {
-					width: 50%;
-
-					img {
-						width: 100%;
-					}
-				}
-
-				&-right {
-					width: 50%;
-					margin-top: 0;
-					display: flex;
-					align-items: center;
-				}
-			}
-		}
-
-		img {
-			@media screen and (max-width: $md) {
+			.inner-right {
 				width: 100%;
-			}
-		}
-	}
 
-	//3rd section
-
-    .thirdSection {
-        margin-top: 7.6875rem;
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 4rem;
-
-
-        .text {
-            margin-top: 9.5rem;
-            // &-inner{
-            //     // .h2{
-            //     //     color: $danger;
-            //     // }
-            // }
-        }
-
-        .box {
-            margin-top: 2.25rem;
-
-            &-inner {
-                display: grid;
-                grid-template-columns: 1fr 1fr 1fr;
-
-                .box-inner-in {
-                    border: 1px solid $primary;
-                    text-align: center;
-                }
-
-                :nth-child(1) {
-                    border-left: none;
-                }
-
-                :last-child {
-                    border-right: none;
-                }
-            }
-        }
-
-        .img {
-            display: grid;
-            grid-template-columns: 1fr 1fr 1fr;
-            gap: 2rem;
-
-            :nth-child(2) {
-                margin-top: 5rem;
-            }
-
-            :last-child {
-                margin-top: 2.5rem;
-            }
-        }
-
-        .h1 {
-            font-weight: 600;
-        }
-		
-    
-	}
-
-	//4th section
-	.home-section-4 {
-		margin-top: 5rem;
-
-		.section4-inner {
-			display: grid;
-			gap: 1.8rem;
-
-			&-img {
-				display: none;
-			}
-
-			@media screen and (min-width: $lg) {
-				grid-template-columns: auto 1fr;
-				align-items: center;
-
-				&-img {
-					display: block;
-					width: 100%;
+				@media screen and (min-width: $mobile) {
+					width: 60%;
+					display: flex;
+					justify-self: end;
 				}
-			}
 
-			&-img {
 				img {
 					width: 100%;
 				}
 			}
+		}
+	}
 
-			&-text {
-				h2 {
-					color: $secondary;
-					font-size: 3rem;
-					font-weight: 800;
-					line-height: 4rem;
+	.about-section {
+		margin-top: 3rem;
+
+		.about-section-inner {
+			display: grid;
+			gap: 1rem;
+
+			@media screen and (min-width: $md) {
+				display: flex;
+			}
+
+			.about-inner-left {
+				width: 90%;
+				margin-inline: auto;
+
+				img {
+					width: 100%;
+					height: 100%;
 				}
 
-				.text_gridbox {
-					@media screen and (min-width: $md) {
-						display: grid;
-						grid-template-columns: 1fr 1fr;
-					}
+				@media screen and (min-width: $md) {
+					width: 50%;
+				}
+			}
 
-					.text_gridItem {
-						padding: 1.5rem;
-						border: 1px solid #adadad;
-						&:hover {
-							border-color: black;
-						}
-
-						.empty-box {
-							height: 4.5rem;
-							width: 4.5rem;
-							border: 1px solid #000;
-							border-radius: 20px;
-						}
-
-						p {
-							font-size: 14px;
-							margin: 0;
-							font-weight: 500;
-						}
-
-						.grid-heading {
-							font-size: 1rem;
-							font-weight: 600;
-							margin-block: 1rem;
+			.about-inner-right {
+				margin-top: 1rem;
+				@media screen and (min-width: $md) {
+					width: 50%;
+				}
+				.right-text {
+					p {
+						@media screen and (min-width: 1400px) {
+							margin-bottom: 2rem;
 						}
 					}
 				}
@@ -301,104 +153,235 @@
 		}
 	}
 
-	//5th section
-	.home-section-5 {
-		.section5-inner {
-			margin-top: 5rem;
-			h2 {
-				color: $secondary;
-				font-size: 3rem;
-				font-weight: 800;
-				line-height: 4rem;
+	//================END OF ABOUT SECTION==================
+
+	.transforming {
+		margin-top: 3rem;
+
+		.transforming-inner {
+			width: 90%;
+			margin: 0 auto;
+
+			@media screen and (min-width: $md) {
+				width: 100%;
+				display: flex;
+				gap: 2rem;
 			}
-			&-text {
-				margin-bottom: 3rem;
+
+			&-left {
+				text-align: center;
+				@media screen and (min-width: $md) {
+					width: 47%;
+				}
+
+				h2 {
+					color: $secondary;
+					font-size: 3rem;
+					font-weight: 800;
+				}
+
+				&.text-danger {
+					font-weight: 600;
+				}
+
+				.transforming-heading {
+					color: $secondary;
+				}
+
+				.transforming-paragraph {
+					margin-block: 1.5rem 0;
+					font-weight: 500;
+				}
+
+				.transforming-sub-text {
+					margin-bottom: 2.5rem;
+					font-weight: 500;
+				}
+
+				.statistics {
+					display: flex;
+					text-align: center;
+					margin-bottom: 1.5rem;
+					justify-content: center;
+					.statistics-info {
+						padding: 2%;
+						border: 1px solid $primary;
+					}
+
+					.border-none {
+						border-left: none;
+						border-right: none;
+					}
+
+					.primary-bold {
+						font-size: 3rem;
+						font-weight: 600;
+						color: $primary;
+					}
+
+					.primary-light {
+						font-size: 1rem;
+						font-weight: 500;
+						color: $secondary;
+					}
+				}
+			}
+
+			&-right {
+				display: none;
+
+				@media screen and (min-width: $md) {
+					display: block;
+					height: 700px;
+					width: 48%;
+				}
+				img {
+					height: 100%;
+					width: 100%;
+				}
+			}
+		}
+	}
+
+	//=========END OF TRANFORMING SECTION===============
+
+	.quality-container {
+		@media screen and (min-width: $md) {
+			display: flex;
+			justify-content: space-between;
+			margin-top: 3rem;
+		}
+
+		.quality-container-image {
+			display: none;
+
+			@media screen and (min-width: $md) {
+				display: block;
+				width: 40%;
+				height: 800px;
+				margin-top: 3.5rem;
+
+				img {
+					width: 100%;
+					height: 100%;
+				}
+			}
+		}
+
+		.quality-container-text {
+			width: 80%;
+			margin: 3rem auto;
+
+			@media screen and (min-width: $md) {
+				width: 50%;
+				margin-top: 0;
+			}
+
+			&-inner {
+				display: grid;
+				grid-template-columns: 1fr;
+				margin-top: 1.5rem;
+
+				@media screen and (min-width: $md) {
+					grid-template-columns: 1fr 1fr;
+				}
+
+				.text-grid {
+					border: 1px solid $secondary;
+					padding: 1.5rem 1rem 2rem 1rem;
+
+					h5 {
+						font-size: 18px;
+						font-weight: 700;
+						margin-top: 1.5rem;
+					}
+
+					p {
+						font-weight: 500;
+						font-size: 14px;
+						margin-top: 1.5rem;
+					}
+				}
+			}
+		}
+	}
+
+	//============END OF QUALITY SECTION===============
+
+	.service-container {
+		.service-container-inner {
+			margin-top: 5rem;
+
+			&_text {
 				@media screen and (min-width: $md) {
 					display: flex;
 					justify-content: space-between;
 					align-items: center;
-					p {
-						width: 60%;
-					}
 				}
-				p {
-					color: #000;
+
+				.service-desc {
 					font-size: 1.125rem;
-					font-weight: 500;
-					line-height: 2rem;
-					margin-block: 1.8125rem 3rem;
+
+					@media screen and (min-width: $md) {
+						width: 60%;
+						margin-block: auto;
+					}
 				}
 			}
-			&-gridbox {
+		}
+
+		.service-swiper-card {
+			margin-top: 2rem;
+			flex: 1;
+
+			.swiper-button-prev,
+			.swiper-button-next {
+				display: none;
+			}
+
+			&-items {
+				background: rgba(51, 51, 51, 0.04);
+				overflow: hidden;
+				padding-bottom: 1rem;
+				height: 700px;
 				display: grid;
-				gap: 1rem;
-				place-content: center;
-				@media screen and (min-width: $md) {
-					grid-template-columns: repeat(2, 21.33rem);
-					justify-content: space-between;
-					.item3 {
-						grid-column: 1/3;
-						justify-self: center;
-					}
+				grid-template-rows: 400px 1fr;
 
-					@media screen and (min-width: $lg) {
-						grid-template-columns: repeat(3, 21.33rem);
-						.item3 {
-							grid-column: 3/4;
-						}
-					}
+				img {
+					width: 100%;
+					height: 100%;
 				}
-				.section5-gridItem {
-					&-img {
-						width: 100%;
+
+				.content {
+					p {
+						padding: 1.5rem 1.125rem;
 					}
-					&-text {
-						background-color: $paleGreyBg;
-						padding-inline: 1rem;
-						max-width: 384px;
-						padding-bottom: 1rem;
-						p {
-							line-height: 1.5rem;
-
-							&.grid-heading {
-								font-weight: 600;
-								font-size: 1.2rem;
-								color: $secondary;
-								padding-top: 1.5rem;
-							}
-							&.grid-text {
-								font-weight: 500;
-								font-size: 14px;
-								color: $secondary;
-								padding-block: 0.5rem;
-							}
-						}
-						.grid-link {
-							text-decoration: none;
-							font-weight: 500;
-							font-size: 14px;
-							color: #000;
-							line-height: 1rem;
-
-							&:hover {
-								color: $primary;
-							}
-							img {
-								margin-left: 0.5rem;
-							}
-						}
+					.title {
+						font-size: 1rem;
+						color: $secondary;
+					}
+					.description {
+						font-weight: 500;
+						font-size: 0.9rem;
+						color: $secondary;
 					}
 				}
 			}
-			.section5-arrows {
-				margin-top: 1.5rem;
+			.control-wrapper {
+				display: flex;
+				justify-content: end;
+				width: 30%;
+				margin-left: auto;
+			}
+
+			.swiper-clicks {
 				display: flex;
 				align-items: center;
 				gap: 1rem;
-
+				width: 100%;
 				.line {
-					max-width: 210px;
-					height: 0.8px;
+					flex: 1;
+					height: 1px;
 					background: #adadad;
 					flex: 1;
 				}
@@ -406,49 +389,90 @@
 				.arrows {
 					display: flex;
 					gap: 1rem;
-					margin-left: auto;
+
+					.swiper-control {
+						border: 1px solid $danger;
+						color: $danger;
+						background: #f5e5e6;
+						border-radius: 50%;
+						padding: 0.5rem 0.8rem;
+						width: 2.5rem;
+
+						&:disabled {
+							background: transparent;
+							border: 1px solid #adadad;
+							color: #adadad;
+						}
+					}
 				}
 			}
 		}
 	}
 
-	//6th section
-	.home-section-6 {
-		.section6-inner {
+	.testimonial-head {
+		text-align: center;
+		font-size: 3rem;
+		font-weight: 800;
+		margin-top: 3rem;
+	}
+
+	.client-reviews-wrapper {
+		width: 100%;
+		margin-top: 1rem;
+
+		@media screen and (max-width: 576px) {
+			width: 90vw;
+		}
+
+		.swiper-pagination-clickable .swiper-pagination-bullet {
+			background: $primary;
+			width: 1rem;
+			height: 1rem;
+			border-radius: 50%;
+		}
+
+		h2 {
+			color: $secondary;
+			font-size: 3rem;
+			font-weight: 800;
+			line-height: 4rem;
+			text-align: center;
+		}
+
+		.client-reviews-inner {
 			text-align: center;
 			margin-inline: auto;
-			margin-top: 5rem;
-			h2 {
-				color: $secondary;
-				font-size: 3rem;
-				font-weight: 800;
-				line-height: 4rem;
-			}
-			.section6-inner-txt1 {
+
+			width: 100%;
+
+			.client-reviews-inner-text {
 				color: #000;
 				font-size: 1.125rem;
 				font-weight: 400;
 				line-height: 2rem;
 				margin-block: 1.8125rem 3rem;
 				font-style: italic;
+
 				@media screen and (min-width: $md) {
 					width: 65%;
 					margin-inline: auto;
 				}
 			}
-			.section6-inner-profile {
+
+			.client-reviews-profile {
 				color: #000;
-				line-height: 1.76125rem;
 
 				img {
 					border-radius: 50%;
 				}
+
 				h3 {
 					font-size: 1.5rem;
 					font-weight: 600;
 					margin-block: 1.5rem 0.5rem;
 				}
-				&_caption {
+
+				.client-position {
 					font-size: 1.125rem;
 					font-weight: 500;
 					margin-bottom: 2.5rem;
@@ -456,112 +480,4 @@
 			}
 		}
 	}
-
-	//7th section
-	.home-section-7 {
-		.section7-inner {
-			margin-top: 5rem;
-			display: grid;
-			gap: 1.5rem;
-			h2 {
-				color: $secondary;
-				font-size: 3rem;
-				font-weight: 800;
-				line-height: 4rem;
-				text-align: center;
-				margin-bottom: 3rem;
-			}
-
-			&-sub {
-				position: relative;
-				height: 260px;
-				.large-img {
-					width: 100%;
-					height: 100%;
-					object-fit: cover;
-					object-position: center;
-					@media screen and (min-width: $md) {
-						width: 85%;
-						margin-left: 15%;
-					}
-				}
-				&_text {
-					position: absolute;
-					width: 85%;
-					top: 27%;
-					background-color: rgba(51, 51, 51, 0.65);
-					backdrop-filter: blur(34px);
-					padding: 1rem;
-					display: grid;
-					gap: 1rem;
-					@media screen and (min-width: $md) {
-						width: 35%;
-					}
-					p {
-						margin: 0;
-						color: #fff;
-						&.text-heading {
-							font-size: 12px;
-							font-weight: 700;
-							line-height: 0.880625rem;
-						}
-						&.inner-text-body {
-							font-size: 10px;
-							font-weight: 400;
-							line-height: 1.125rem;
-							// margin-block: 0.5rem 0.625rem;
-						}
-					}
-					.text-link {
-						&_link {
-							color: #fff;
-							text-decoration: none;
-							font-size: 10px;
-							font-weight: 600;
-							line-height: 0.73375rem;
-							img {
-								margin-left: 0.5rem;
-							}
-						}
-					}
-				}
-
-				&.sub-2 {
-					.large-img {
-						margin-left: 0;
-					}
-					.sub-2_text {
-						right: 0;
-						@media screen and (min-width: $md) {
-							background-color: $danger;
-						}
-					}
-				}
-			}
-
-			&-btn {
-				text-align: center;
-				margin-top: 3rem;
-				button{
-					color: white;
-				}
-
-			}
-		}
-	}
-	@media screen and (max-width:500px) {
-        .thirdSection {
-
-            display: flex;
-            flex-direction: column;
-
-            .img {
-                display: flex;
-                gap: 1rem;
-                justify-content: center;
-                width: 100%;
-                height: auto;
-            }
-        }
-    }
 }

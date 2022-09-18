@@ -1,223 +1,228 @@
-.service-section {
-
-	&-hero {
-		min-height: 20vh;
+.service-wrapper {
+	.service-hero-section {
+		margin-top: 2rem;
 		display: grid;
-		align-items: center;
 
-		.inner {
-			display: grid;
-			padding-top: 2rem;
-			gap: 0.8rem;
-			font-family: "Raleway";
+		.image-wrapper {
+			width: 100%;
+
+			img {
+				width: 100%;
+			}
+		}
+
+		.text-wrapper {
 			font-weight: 800;
-			font-size: 2.2rem;
+			font-size: 2rem;
 			color: $primary;
-			line-height: 4rem;
-
-			@media screen and (min-width: $md) {
-				grid-template-columns: 1fr 352px;
-				align-items: end;
-			}
-
-			.service-section-hero-image {
-				img {
-					width: 100%;
-				}
-			}
 		}
 	}
+	//==========END OF SERVICE HERO SECTION========
 
-	.second-part {
+	.services-intro {
 		margin-top: 3rem;
-
-		.second-part-inner {
+		.services-intro-inner {
 			display: grid;
-			h2 {
-				font-family: "Raleway";
-				font-style: normal;
-				font-weight: 800;
-				font-size: 3rem;
-				line-height: 4rem;
-				color: $secondary;
-			}
-
-			.services-offer {
+			.services-intro-description {
 				@media screen and (min-width: $md) {
-					display: grid;
-					grid-template-columns: 1fr auto;
+					display: flex;
+					justify-content: space-between;
+					align-items: center;
 				}
-
-				p {
-					font-family: "Raleway";
-					font-style: normal;
-					font-weight: 500;
+				.description-text {
+					@media screen and (min-width: $md) {
+						width: 60%;
+					}
 					font-size: 1.1rem;
-					line-height: 2rem;
 					color: #000000;
-				}
-				.btn {
-					height: 4.1rem;
+					margin: auto 0;
 				}
 			}
 
-			.services {
-				display: grid;
-				gap: 1rem;
-				margin-top: 3rem;
+			.services-list {
+				width: 100%;
+				overflow: hidden;
 
-				@media screen and (min-width: $md) {
-					grid-template-columns: 1fr 1fr 1fr;
+				.swiper-button-prev,
+				.swiper-button-next {
+					display: none;
 				}
-
-				&-items {
-					display: grid;
-					grid-template-rows: auto 1fr;
-
-					img {
-						width: 100%;
-					}
-
-					.content {
+				.services-items {
+					.service-item-inner {
+						@media screen and (max-width: $mobile) {
+							grid-template-rows: 350px 300px;
+							height: 650px;
+						}
+						height: 700px;
+						margin: 4rem auto;
 						display: grid;
-						grid-template-rows: 0.4fr 1fr auto;
-						padding: 1.5rem 1.125rem;
-						gap: 0.625rem;
-						background: rgba(51, 51, 51, 0.04);
-						backdrop-filter: blur(34px);
-
-						p {
-							font-family: "Raleway";
-							font-style: normal;
-							font-weight: 600;
-							font-size: 1.125rem;
-							line-height: 1.5rem;
-							color: $secondary;
+						grid-template-rows: 350px 350px;
+						.services-item-image {
+							height: 100%;
+							img {
+								width: 100%;
+								height: 100%;
+							}
 						}
 
-						.texts {
-							font-family: "Raleway";
-							font-style: normal;
-							font-weight: 500;
-							font-size: 0.875rem;
-							line-height: 1.5rem;
-							color: $secondary;
-						}
-
-						.services-info {
-							display: flex;
-
-							&-list {
-								Link {
-									cursor: pointer;
-								}
+						.content {
+							padding: 1.5rem 1.125rem;
+							background: rgba(51, 51, 51, 0.04);
+							position: relative;
+							.title {
+								font-weight: 600;
+								font-size: 1.125rem;
+								color: $secondary;
+							}
+							.texts {
+								margin-top: 4.5rem;
+								font-weight: 500;
+								font-size: 0.875rem;
+								color: $secondary;
 							}
 
-							&-pointer {
-								margin-left: 0.4rem;
+							.single-service-link {
+								display: flex;
+								position: absolute;
+								bottom: 30px;
+								.text-on-click {
+									display: flex;
+									align-items: center;
+									gap: 2px;
+									text-decoration: none;
+									img {
+										width: 0.5rem;
+										aspect-ratio: 1/1;
+									}
+								}
+							}
+						}
+					}
+				}
+				.control-wrapper {
+					width: 30%;
+					justify-content: end;
+					margin-left: auto;
+					.swiper-clicks {
+						display: flex;
+						align-items: center;
+						gap: 1rem;
+						width: 100%;
+						margin-top: -3rem;
+						.line {
+							height: 1px;
+							background: #adadad;
+							flex: 1;
+						}
 
-								img {
-									width: 100%;
-									height: 27%;
+						.arrows {
+							display: flex;
+							gap: 1rem;
+
+							.swiper-control {
+								border: 1px solid #a00107;
+								color: #a00107;
+								background: #f5e5e6;
+								border-radius: 50%;
+								padding: 0.5rem 0.8rem;
+								width: 2.5rem;
+								z-index: 3;
+								&:disabled {
+									background: transparent;
+									border: 1px solid #adadad;
+									color: #adadad;
 								}
 							}
 						}
 					}
 				}
 			}
-			&-bottom-arrow {
-				display: flex;
-				justify-content: flex-end;
-				gap: 0.8rem;
-				margin-right: 3rem;
-				margin-top: 0.8rem;
-			}
 		}
 	}
+	//==============END OF SERVICE SWIPER==============
 
-	.third-part-inner {
-		min-height: 20vh;
-		padding: 4rem 0rem;
+	.more-details-wrapper {
 		text-align: center;
+		margin-top: 5rem;
+		.more-details-inner {
+			text-align: center;
+			margin: 0 auto;
 
-		&-top-info {
-			font-family: "Raleway";
-			font-style: normal;
-			font-weight: 600;
-			font-size: 1.5rem;
-			color: #000000;
-		}
+			.statistics {
+				display: flex;
+				justify-content: center;
+				width: 90%;
+				height: 30%;
+				margin: 3rem auto;
+				@media screen and (min-width: $md) {
+					margin-top: 4rem;
+				}
 
-		&-bottom-info {
-			display: grid;
-			grid-template-columns: 1fr 1fr 1fr 1fr;
-			margin: 5rem 4rem;
-			border-top: 1px solid blue;
-			border-bottom: 1px solid blue;
+				.statistics-info {
+					padding: 2%;
+					border: 1px solid $primary;
+					height: 100%;
+				}
+				.border-none {
+					border-left: none;
+					border-right: none;
+				}
 
-			@media screen and (max-width: $md) {
-				grid-template-columns: 1fr;
-				border: 1px solid blue;
-			}
+				.border-left-none {
+					border-left: none;
+				}
 
-
-			&-collation {
-				padding: 1rem;
-				.years {
-					font-family: "Raleway";
-					font-style: normal;
-					font-weight: 600;
+				.primary-bold {
 					font-size: 3rem;
-					line-height: 3.5rem;
+					font-weight: 600;
 					color: $primary;
-					
-				}
-				.data {
-					font-family: "Raleway";
-					font-style: normal;
-					font-weight: 500;
-					font-size: 1rem;
-					line-height: 0.1rem;
 				}
 
-				&:first-child {
-					border-right: 1px solid blue;
-					@media screen and (max-width: $md) {
-						border-right: none;
-					}	
-				}
-				&:nth-child(2) {
-					border-right: 1px solid blue;
-					@media screen and (max-width: $md) {
-						border-right: none;
-					}	
-				}
-				&:nth-child(3) {
-					border-right: 1px solid blue;
-					@media screen and (max-width: $md) {
-						border-right: none;
-					}	
+				.primary-light {
+					font-size: 1rem;
+					font-weight: 500;
+					color: $secondary;
 				}
 			}
 		}
 	}
 
-	.fourth-part {
-		&-inner {
+	.testimonial-head {
+		text-align: center;
+		font-size: 3rem;
+		margin-top: 3rem;
+	}
+
+	.client-reviews-wrapper {
+		width: 100%;
+		margin-top: 1rem;
+		@media screen and (max-width: 576px) {
+			width: 90vw;
+		}
+
+		.swiper-pagination-clickable .swiper-pagination-bullet {
+			background: $primary;
+			width: 1rem;
+			height: 1rem;
+			border-radius: 50%;
+		}
+		h2 {
+			color: $secondary;
+			font-size: 3rem;
+			font-weight: 800;
+			text-align: center;
+		}
+
+		.client-reviews-inner {
 			text-align: center;
 			margin-inline: auto;
-			margin-top: 5rem;
-			h2 {
-				color: $secondary;
-				font-size: 3rem;
-				font-weight: 800;
-				line-height: 4rem;
-			}
-			.fourth-part-inner-txt1 {
+
+			width: 100%;
+
+			.client-reviews-inner-text {
 				color: #000;
 				font-size: 1.125rem;
 				font-weight: 400;
-				line-height: 2rem;
 				margin-block: 1.8125rem 3rem;
 				font-style: italic;
 				@media screen and (min-width: $md) {
@@ -225,9 +230,8 @@
 					margin-inline: auto;
 				}
 			}
-			.fourth-part-inner-profile {
+			.client-reviews-profile {
 				color: #000;
-				line-height: 1.76125rem;
 
 				img {
 					border-radius: 50%;
@@ -237,7 +241,7 @@
 					font-weight: 600;
 					margin-block: 1.5rem 0.5rem;
 				}
-				&_caption {
+				.client-position {
 					font-size: 1.125rem;
 					font-weight: 500;
 					margin-bottom: 2.5rem;

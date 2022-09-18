@@ -4,10 +4,10 @@ import Link from "next/link";
 import { useRouter } from "next/router";
 
 export const navList = [
-	// { name: "Home", link: "/" },
+	{ name: "Home", link: "/" },
 	{ name: "About", link: "/about" },
 	{ name: "Services", link: "/services" },
-	{ name: "Projects", link: "/projects" },
+	// { name: "Projects", link: "/projects" },
 ];
 
 const HeaderComp = () => {
@@ -37,7 +37,9 @@ const HeaderComp = () => {
 							</li>
 						))}
 						<li>
-							<button className="btn btn-danger">Contact Us</button>
+							<Link href="/contact">
+								<button className="btn btn-danger">Contact Us</button>
+							</Link>
 						</li>
 					</ul>
 					<div className="bars">
@@ -59,7 +61,9 @@ const HeaderComp = () => {
 								</li>
 							))}
 							<li>
-								<button className="btn btn-danger">Contact Us</button>
+								<Link href="/contact">
+									<button className="btn btn-danger">Contact Us</button>
+								</Link>
 							</li>
 						</ul>
 					</div>

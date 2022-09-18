@@ -1,8 +1,10 @@
 .app-header {
 	position: relative;
+
 	@media screen and (max-width: $md) {
 		margin-block: 0.5rem;
 	}
+
 	a {
 		text-decoration: none;
 		color: inherit;
@@ -40,6 +42,11 @@
 			@media screen and (min-width: $md) {
 				display: flex;
 			}
+
+			.active {
+				border-bottom: 2px solid $primary;
+				padding-bottom: 0.6rem;
+			}
 		}
 
 		.bars {
@@ -55,7 +62,7 @@
 		z-index: 2;
 		right: 0;
 		left: 0;
-		min-height: 50vh;
+		min-height: 60vh;
 		display: none;
 
 		&.show {
@@ -83,6 +90,11 @@
 				font-weight: 600;
 				place-content: center;
 				text-align: center;
+
+				@media screen and (min-width: $mobile) {
+					margin-top: 10px;
+					gap: 3rem;
+				}
 
 				a {
 					color: black;

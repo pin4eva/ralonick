@@ -5,7 +5,7 @@ const Services = () => {
     return (
         <div>
             <FrontLayout>
-                <div className="services container">
+                <div className="services container animate__animated animate__zoomInUp">
                     <section className="services-hero">
 
                         <div className="services-hero_left">

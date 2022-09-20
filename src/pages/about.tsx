@@ -4,7 +4,7 @@ const About = () => {
     return (
         <div>
             <FrontLayout>
-                <div className="about-page container">
+                <div className="about-page container animate__animated animate__zoomInUp">
                     <section className="about-hero">
 
                         <div className="about-hero_left">

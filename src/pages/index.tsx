@@ -2,11 +2,12 @@
 import React from "react";
 import FrontLayout from "../layouts/front.layout";
 import Link from "next/link";
+import "animate.css"
 const Home = () => {
 	return (
 		<div>
 			<FrontLayout>
-				<div className="home-page container">
+				<div className="home-page container animate__animated animate__zoomInUp">
 					<section className="home-hero">
 						<div className="home-hero_upper">
 							<div className="home-hero_upper-left">
@@ -20,7 +21,7 @@ const Home = () => {
 								</div>
 							</div>
 
-							<div className="home-hero_uppper-right">
+							<div className="home-hero_uppper-right ">
 								<div className="home-hero_upper-right_text">
 									<div className="home-hero_upper-right_text-upper">
 										<h1>Diverse & Flexible Structure</h1>
@@ -36,7 +37,7 @@ const Home = () => {
 								</div>
 							</div>
 						</div>
-						<div className="home-hero_lower">
+						<div className="home-hero_lower animate__animated animate__zoomInRight">
 							<div className="home-hero_lower-inner">
 								<div className="home-hero_lowwer-inner-video">
 									<div className="home-hero_lower_play-box">
@@ -61,12 +62,12 @@ const Home = () => {
 					</section>
 					<section className="home-first-section">
 						<div className="home-first-section-inner">
-							<div className="home-first-section_inner-left">
+							<div className="home-first-section_inner-left animate__animated animate__zoomInLeft">
 								<div className="home-first-section_inner-left_image">
 									<img src="./images/twohelmet.png" alt="" />
 								</div>
 							</div>
-							<div className="home-first-section-inner-right">
+							<div className="home-first-section-inner-right animate__animated animate__zoomInRight">
 								<div className="home-first-section_inner-right_text">
 									<div className="home-first-section_inner-right_text_upper">
 										<h3>ROLANIK</h3>

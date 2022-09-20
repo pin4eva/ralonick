@@ -4,7 +4,7 @@ const Project=()=>{
     return(
         <div>
             <FrontLayout>
-                <div className="project-page container">
+                <div className="project-page container animate__animated animate__zoomInUp">
               
                 </div>
             </FrontLayout>

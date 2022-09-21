@@ -20,7 +20,7 @@ const Singleservice = () => {
 			<div className="single-service-wrapper">
 				<section className="single-service-hero container">
 					<div className="single-service-hero-image">
-						<img src={service?.image} alt="bg" />
+						<img src="/assets/Frame 50.png" alt="bg" />
 					</div>
 				</section>
 
@@ -35,18 +35,11 @@ const Singleservice = () => {
 						</div>
 
 						<div className="single-service-image_wrapper">
-							<div className="grid-image">
-								<img src="/assets/b4.png" alt="b1" />
-							</div>
-							<div className="grid-image">
-								<img src="/assets/b3.png" alt="b2" />
-							</div>
-							<div className="grid-image">
-								<img src="/assets/b2.png" alt="b3" />
-							</div>
-							<div className="grid-image">
-								<img src="/assets/b1.png" alt="b4" />
-							</div>
+							{service?.images?.map((image) => (
+								<div className="grid-image">
+									<img src={`/${image}`} alt={image} />
+								</div>
+							))}
 						</div>
 						<div className="order-button">
 							<button className="btn btn-danger hug">Book Service</button>

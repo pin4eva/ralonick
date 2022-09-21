@@ -52,8 +52,8 @@ const Home = () => {
 										End to end service in the design, engineering, procurement, fabrication, installation, repair of
 										(GRE), (GRP) and Vinylester Pipe system and products.
 									</p>
-									<Link href="/projects">
-										<button className="btn btn-danger hug">See Projects</button>
+									<Link href="/services">
+										<button className="btn btn-danger hug">See Services</button>
 									</Link>
 								</div>
 							</div>

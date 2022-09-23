@@ -1,4 +1,3 @@
-import { title } from "process";
 import React from "react";
 import Data from "../data.json";
 import ServiceInterface from "./service_interface";

@@ -39,27 +39,28 @@ const Services = () => {
 
 	return (
 		<FrontLayout>
-			<>
-				<div className="service-wrapper container">
-					<section className="service-hero-section">
-						<div className="image-wrapper">
-							<img src="/assets/about1.png" alt="about" />
+			<div className="service-wrapper container">
+				<section className="service-hero-section">
+					<div className="image-wrapper">
+						<img src="/assets/about1.png" alt="about" />
+					</div>
+					<p className="text-wrapper">Ralonik LTD. Services</p>
+				</section>
+
+				<section className="services-intro">
+					<div className="services-intro-inner">
+						<h1>We build Solutions</h1>
+						<div className="services-intro-description">
+							<p className="description-text fw-500">
+								At Ralonick, we offer a wide range of services from engineering, procurement, construction, to equipment
+								leasing for land & marine.
+							</p>
+							<button className="btn btn-danger hug">Book Service</button>
 						</div>
-						<p className="text-wrapper">Ralonik LTD. Services</p>
-					</section>
 
-					<section className="services-intro">
-						<div className="services-intro-inner">
-							<h1>We build Solutions</h1>
-							<div className="services-intro-description">
-								<p className="description-text fw-500">
-									At Ralonick, we offer a wide range of services from engineering, procurement, construction, to
-									equipment leasing for land & marine.
-								</p>
-								<button className="btn btn-danger hug">Book Service</button>
-							</div>
+						<AllserviceComp />
 
-							<Swiper
+						{/* <Swiper
 								className="services-list"
 								spaceBetween={5}
 								slidesPerView={2}
@@ -96,43 +97,41 @@ const Services = () => {
 								<div className="control-wrapper">
 									<SwiperButtons disableNext={disableNext} disablePrev={disablePrev} />
 								</div>
-							</Swiper>
-						</div>
-					</section>
+							</Swiper> */}
+					</div>
+				</section>
 
-					<section className="more-details-wrapper container">
-						<div className="more-details-inner">
-							<div className="more-details-inner_top">
-								<p>Still have a question(s) ?</p>
-								<Link href="/contact">
-									<button className="btn btn-outline-danger hug">Contact Us</button>
-								</Link>
+				<section className="more-details-wrapper container">
+					<div className="more-details-inner">
+						<div className="more-details-inner_top">
+							<p>Still have a question(s) ?</p>
+							<Link href="/contact">
+								<button className="btn btn-outline-danger hug">Contact Us</button>
+							</Link>
+						</div>
+						<div className="statistics">
+							<div className="border-none statistics-info">
+								<p className="primary-bold">25+</p>
+								<p className="primary-light">Completed Projects</p>
 							</div>
-							<div className="statistics">
-								<div className="border-none statistics-info">
-									<p className="primary-bold">25+</p>
-									<p className="primary-light">Completed Projects</p>
-								</div>
-								<div className="statistics-info">
-									<p className="primary-bold">25+</p>
-									<p className="primary-light">Trusted Partners</p>
-								</div>
-								<div className="statistics-info border-left-none">
-									<p className="primary-bold">50+</p>
-									<p className="primary-light">Satisfied Clients</p>
-								</div>
-								<div className="border-none statistics-info ">
-									<p className="primary-bold">5+</p>
-									<p className="primary-light">Years Experience</p>
-								</div>
+							<div className="statistics-info">
+								<p className="primary-bold">25+</p>
+								<p className="primary-light">Trusted Partners</p>
+							</div>
+							<div className="statistics-info border-left-none">
+								<p className="primary-bold">50+</p>
+								<p className="primary-light">Satisfied Clients</p>
+							</div>
+							<div className="border-none statistics-info ">
+								<p className="primary-bold">5+</p>
+								<p className="primary-light">Years Experience</p>
 							</div>
 						</div>
-					</section>
-					<h1 className="testimonial-head">Client Reviews</h1>
-					<ClientComp />
-				</div>
-				<AllserviceComp />
-			</>
+					</div>
+				</section>
+				<h1 className="testimonial-head">Client Reviews</h1>
+				<ClientComp />
+			</div>
 		</FrontLayout>
 	);
 };

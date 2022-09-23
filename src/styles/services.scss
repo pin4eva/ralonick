@@ -24,6 +24,7 @@
 		.services-intro-inner {
 			display: grid;
 			.services-intro-description {
+				margin-bottom: 3rem;
 				@media screen and (min-width: $md) {
 					display: flex;
 					justify-content: space-between;

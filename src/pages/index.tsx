@@ -58,10 +58,6 @@ const Home = () => {
 								</div>
 							</div>
 						</div>
-
-						<div className="inner-right" data-aos="fade-up" data-aos-duration="3000" ease-in-out-quart="true">
-							<img src="/assets/hero_img2.png" alt="" />
-						</div>
 					</div>
 				</section>
 

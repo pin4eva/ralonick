@@ -1,4 +1,5 @@
 import React from "react";
+import "animate.css";
 import FrontLayout from "../../layouts/front.layout";
 const Project=()=>{
     return(

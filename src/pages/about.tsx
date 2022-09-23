@@ -1,5 +1,6 @@
 import React from "react";
 import FrontLayout from "../layouts/front.layout";
+import "animate.css";
 const About = () => {
     return (
         <div>

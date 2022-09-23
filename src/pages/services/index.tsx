@@ -1,9 +1,21 @@
 import React from "react";
 import Link from "next/link";
+
 import FrontLayout from "../../layouts/front.layout";
+import "animate.css";
+import { Navigation, Pagination, Scrollbar, A11y } from 'swiper';
+
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { useSwiper } from 'swiper/react';
+// Import Swiper styles
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
+import 'swiper/css/scrollbar';
 const Services = () => {
     return (
         <div>
+
             <FrontLayout>
                 <div className="services container animate__animated animate__zoomInUp">
                     <section className="services-hero">
@@ -150,10 +162,10 @@ const Services = () => {
                                     </div>
                                 </div>
                                 <div className="home-hero_upper-left_scroll">
-									<div className="home-hero_upper-left_scroll-line"></div>
-									<i className="fa-solid fa-chevron-right"></i>
-									<i className="fa-solid fa-chevron-left"></i>
-								</div>
+                                    <div className="home-hero_upper-left_scroll-line"></div>
+                                    <i className="fa-solid fa-chevron-right"></i>
+                                    <i className="fa-solid fa-chevron-left"></i>
+                                </div>
                             </div>
                             <div className="services-second-section-inner-button">
                                 <p>Still have a question?</p>
@@ -194,30 +206,65 @@ const Services = () => {
                             <div className="services-fourth-section-inner_text">
                                 <h1>Clients Reviews</h1>
                             </div>
+                            <Swiper
+                                // install Swiper modules
+                                modules={[Navigation, Pagination, Scrollbar, A11y]}
+                                spaceBetween={0}
+                                slidesPerView={1}
+                                pagination={{ clickable: true }}
+                                // scrollbar={{ draggable: true }}
+                                onSwiper={(swiper) => console.log(swiper)}
+                                onSlideChange={() => console.log('slide change')}>
+                                <div className="home-hero_uppeer-left_image">
 
-                            <div className="services-fourth-section-inner_profile">
-                                <div className="services-fourth-section-inner_profile-text-testimonial">
-                                    <p>I had been looking to get my shipment and maintenance done but couldn't find the right Construction Company to do so. Rolanick Construction has been exceptional at what they do, from pre-planning, procurement, constructing in itself and maintenance it has been worth it. They understood the job and they delivered! Thank you!</p>
+                                    <SwiperSlide>
+                                        <div className="services-fourth-section-inner_profile">
+                                            <div className="home-fifth-section-inner_profile-text-testimonial">
+                                                <p>I had been looking to get my shipment and maintenance done but couldn't find the right Construction Company to do so. Rolanick Construction has been exceptional at what they do, from pre-planning, procurement, constructing in itself and maintenance it has been worth it. They understood the job and they delivered! Thank you!</p>
+                                            </div>
+                                            <div className="services-fourth-section-inner_profile-img">
+                                                <img src="./images/image.png" alt="" />
+                                            </div>
+                                            <div className="services-fourth-section-inner_profile-text-info">
+                                                <h3>Cindy Clifford</h3>
+                                                <p>Creative Director Sobaz Oil and gas</p>
+                                            </div>
+                                 
+                                        </div>
+                                    </SwiperSlide>
+                                    <SwiperSlide>
+                                        <div className="services-fourth-section-inner_profile">
+                                            <div className="home-fifth-section-inner_profile-text-testimonial">
+                                                <p>I had been looking to get my shipment and maintenance done but couldn't find the right Construction Company to do so. Rolanick Construction has been exceptional at what they do, from pre-planning, procurement, constructing in itself and maintenance it has been worth it. They understood the job and they delivered! Thank you!</p>
+                                            </div>
+                                            <div className="services-fourth-section-inner_profile-img">
+                                                <img src="./images/image.png" alt="" />
+                                            </div>
+                                            <div className="services-fourth-section-inner_profile-text-info">
+                                                <h3>Cindy Clifford</h3>
+                                                <p>Creative Director Sobaz Oil and gas</p>
+                                            </div>
+                        
+                                        </div>
+                                    </SwiperSlide>
+                                    <SwiperSlide>
+                                        <div className="services-fourth-section-inner_profile">
+                                            <div className="home-fifth-section-inner_profile-text-testimonial">
+                                                <p>I had been looking to get my shipment and maintenance done but couldn't find the right Construction Company to do so. Rolanick Construction has been exceptional at what they do, from pre-planning, procurement, constructing in itself and maintenance it has been worth it. They understood the job and they delivered! Thank you!</p>
+                                            </div>
+                                            <div className="services-fourth-section-inner_profile-img">
+                                                <img src="./images/image.png" alt="" />
+                                            </div>
+                                            <div className="services-fourth-section-inner_profile-text-info">
+                                                <h3>Cindy Clifford</h3>
+                                                <p>Creative Director Sobaz Oil and gas</p>
+                                            </div>
+                        
+                                        </div>
+                                    </SwiperSlide>
                                 </div>
-                                <div className="services-fourth-section-inner_profile-img">
-                                    <img src="./images/image.png" alt="" />
-                                </div>
-                                <div className="services-fourth-section-inner_profile-text-info">
-                                    <h3>Cindy Clifford</h3>
-                                    <p>Creative Director Sobaz Oil and gas</p>
-                                </div>
-                                <div className="services-fourth-section-inner_profile-slider">
-                                    <div className="services-fourth-section-inner_profile-slider1">
+                            </Swiper>
 
-                                    </div>
-                                    <div className="services-fourth-section-inner_profile-slider2">
-
-                                    </div>
-                                    <div className="services-fourth-section-inner_profile-slider3">
-
-                                    </div>
-                                </div>
-                            </div>
                         </div>
                     </section>
                 </div>

@@ -12,18 +12,21 @@
                 gap: 1rem;
             }
 
-            @media screen and (min-width:992px) {
-                width: 100%;
-                display: flex;
-                gap: 1rem;
-            }
-
             .home-hero_upper-left {
                 border: 1px;
+                width: 100%;
+
+                @media screen and (min-width:768px) {
+                    width: 40%;
+                }
+
+                @media screen and (min-width:992px) {
+                    width: 25%;
+                }
 
                 .home-hero_uppeer-left_image {
                     img {
-                        width: 100%;
+                        width: 200%;
                     }
                 }
 
@@ -121,55 +124,7 @@
                         }
                     }
 
-                    .home-hero_lower_play-box {
-                        margin: 50% 0% 0% 7%;
-                        z-index: 1;
-                        position: absolute;
-                        border: 1px;
-                        padding: 0.5rem 1rem;
-                        display: flex;
-                        align-items: center;
-                        background: rgba(51, 51, 51, 0.3);
-                        backdrop-filter: blur(34px);
-                        -webkit-backdrop-filter: blur(34px);
-                        color: white;
 
-                        @media screen and (min-width:576px) {
-                            margin: 48% 0% 0% 7%;
-                        }
-
-                        @media screen and (min-width:577px) {
-                            margin: 45% 0% 0% 7%;
-                        }
-
-                        @media screen and (min-width:730px) {
-                            margin: 45% 0% 0% 7%;
-                        }
-
-                        @media screen and (min-width:734px) {
-                            margin: 38% 0% 0% 7%;
-                        }
-
-                        @media screen and (min-width:768px) {
-                            margin: 50% 0% 0% 7%;
-                        }
-
-                        @media screen and (min-width:825px) {
-                            margin-top: 40%;
-                        }
-
-                        @media screen and (min-width:992px) {
-                            margin: 25% 0% 0% -8%;
-                        }
-
-                        @media screen and (min-width:1200px) {
-                            margin: 20% 0% 0% -7%;
-                        }
-
-                        .home-hero_lower_play-box-inner {
-                            margin-left: 1rem;
-                        }
-                    }
                 }
 
             }
@@ -397,6 +352,7 @@
 
     .home-fourth-section {
         margin-bottom: 5%;
+
         .home-fourth-section-inner {
             .home-fourth-section-inner_top {
                 h1 {
@@ -500,7 +456,7 @@
     }
 
     .home-fifth-section {
-   margin-bottom: 5%;
+        margin-bottom: 5%;
 
         .home-fifth-section-inner {
             text-align: center;
@@ -510,6 +466,7 @@
             }
 
             .home-fifth-section-inner_profile {
+                margin-bottom: 5%;
                 .home-fifth-section-inner_profile-text-testimonial {
                     height: 30vh;
 
@@ -520,6 +477,7 @@
                 }
 
                 .home-fifth-section-inner_profile-img {
+                    
                     img {
                         border-radius: 4rem;
                     }
@@ -538,146 +496,4 @@
 
         }
     }
-
-//     .home-sixth-section {
-
-//         .home-sixth-section-inner {
-//             text-align: center;
-//             background-color: rgba(51, 51, 51, 0.02);
-//             border: 1px ;
-//             padding: 2rem;
-//             button{
-//                 color: white;
-//             }
-//             .home-sixth-section-inner_header {
-
-
-//                 h1 {
-//                     font-weight: 800;
-//                     font-size: 48px;
-//                 }
-//             }
-
-//             .home-sixth-section-inner_magazine {
-//                 border: 1px;
-// margin-bottom: 5%;
-
-//                 .home-sixth-ssection-inner_magazine-inner {
-
-//                     // grid-template-columns: 0.1fr 1fr;
-
-//                     .home-sixth-section-inner_magazine-inner-part {
-//                      text-align: left;
-//                         .home-sixth-section-inner_magazine-inner-box {
-//                             padding: 16px 24px;
-
-
-//                             position: absolute;
-//                             width: 306px;
-//                             height: 130px;
-//                             background: rgba(51, 51, 51, 0.65);
-//                             backdrop-filter: blur(34px);
-//                             -webkit-backdrop-filter: blur(34px);
-//                             left: 11px;
-//                             @media screen and (min-width:576px) {
-//                                 left: 16px;
-//                                       }
-//                             margin-top: 30px;
-
-//                             .home-sixth-section-inner_magazine-inner-box_text-box {
-//                                 color: white;
-
-//                                 h3 {
-//                                     font-weight: 700;
-//                                     font-size: 12px;
-//                                 }
-
-//                                 p {
-//                                     font-weight: 400;
-//                                     font-size: 10px;
-//                                 }
-
-//                                 a {
-//                                     color: white;
-//                                     font-weight: 600;
-//                                     font-size: 10px;
-//                                     text-decoration: none;
-
-//                                 }
-//                             }
-//                         }
-
-//                         .home-sixth-section-inner_magazine-inner-image {
-//                             img {
-                             
-//                                 width: 100%;
-//                                 height: 202px;
-                                
-//                                 @media screen and (min-width:768px) {
-//                              height: auto;
-//                                 }
-
-
-//                                 @media screen and (min-width:576px) {
-//                                     margin-left: 3%;
-//                                 }
-
-
-//                             }
-//                         }
-
-//                         &.two {
-//                             margin: 1rem 0rem 1rem 0rem;
-//                             .home-sixth-section-inner_magazine-inner-image {
-//                                 img {
-//                                     @media screen and (min-width:576px) {
-//                                         margin-left: -17%;
-//                                     }
-//                                     @media screen and (min-width:768px) {
-//                                         margin-left: -11%;
-//                                     }
-//                                     @media screen and (min-width:992px) {
-//                                         margin-left: -2%;
-//                                     }
-//                                 }
-//                             }
-
-//                             .home-sixth-section-inner_magazine-inner-box {
-//                                 @media screen and (min-width:533px) {
-//                                     left: 40%;
-//                                 }
-
-//                                 @media screen and (min-width:569px) {
-//                                     left: 43%;
-//                                     background-color: $danger;
-//                                 }
-
-//                                 @media screen and (min-width:768px) {
-//                                     left: 57%;
-//                                 }
-
-//                                 @media screen and (min-width:992px) {
-//                                     left: 68.8%;
-//                                 }
-
-//                                 @media screen and (min-width:1200px) {
-//                                     left: 72%;
-//                                 }
-
-                           
-
-
-//                                 left: 34.5%;
-
-
-
-//                             }
-//                         }
-//                     }
-//                 }
-//             }
-
-//         }
-//     }
-
 }

@@ -2,26 +2,70 @@
 import React from "react";
 import FrontLayout from "../layouts/front.layout";
 import Link from "next/link";
-import "animate.css"
+import "animate.css";
+import { Navigation, Pagination, Scrollbar, A11y } from 'swiper';
+
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { useSwiper } from 'swiper/react';
+// Import Swiper styles
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
+import 'swiper/css/scrollbar';
+export function SlideNext() {
+	const swiper = useSwiper();
+
+	return (
+		<i className="fa-solid fa-chevron-right" onClick={() => swiper.slideNext()}></i>
+	);
+}
+export function SlidePrev() {
+	const swiper = useSwiper();
+	return (
+		<i className="fa-solid fa-chevron-left" onClick={() => swiper.slidePrev()}></i>
+	);
+}
+export function SlideCirclePrev() {
+	const swiper = useSwiper();
+	return (
+		<i className="fa-solid fa-chevron-left" onClick={() => swiper.slidePrev()}></i>
+	);
+}
 const Home = () => {
+
+
 	return (
 		<div>
+
 			<FrontLayout>
 				<div className="home-page container animate__animated animate__zoomInUp">
 					<section className="home-hero">
 						<div className="home-hero_upper">
 							<div className="home-hero_upper-left">
-								<div className="home-hero_uppeer-left_image">
-									<img src="./images/frame9.png" alt="" />
-								</div>
-								<div className="home-hero_upper-left_scroll">
-									<div className="home-hero_upper-left_scroll-line"></div>
-									<i className="fa-solid fa-chevron-left"></i>
-									<i className="fa-solid fa-chevron-right"></i>
-								</div>
+								<Swiper
+									modules={[Navigation, Pagination, Scrollbar, A11y]}
+									spaceBetween={0}
+									slidesPerView={1}
+									onReachEnd={() => console.log('end')}
+									onSwiper={(swiper) => console.log(swiper)}
+									onSlideChange={() => console.log('slide change')}>
+									<div className="home-hero_uppeer-left_image">
+										<SwiperSlide><img src="./images/frame9.png" alt="" /></SwiperSlide>
+										<SwiperSlide><img src="./images/frame9.png" alt="" /></SwiperSlide>
+										<SwiperSlide><img src="./images/frame9.png" alt="" /></SwiperSlide>
+										<SwiperSlide><img src="./images/frame9.png" alt="" /></SwiperSlide>
+										<SwiperSlide><img src="./images/frame9.png" alt="" /></SwiperSlide>
+										<SwiperSlide><img src="./images/frame9.png" alt="" /></SwiperSlide>
+									</div>
+									<div className="home-hero_upper-left_scroll">
+										<div className="home-hero_upper-left_scroll-line"></div>
+										<SlidePrev />
+										<SlideNext />
+									</div>
+								</Swiper>
 							</div>
 
-							<div className="home-hero_uppper-right ">
+							<div className="home-hero_uppper-right">
 								<div className="home-hero_upper-right_text">
 									<div className="home-hero_upper-right_text-upper">
 										<h1>Diverse & Flexible Structure</h1>
@@ -37,22 +81,12 @@ const Home = () => {
 								</div>
 							</div>
 						</div>
-						<div className="home-hero_lower animate__animated animate__zoomInRight">
+						<div className="home-hero_lower">
 							<div className="home-hero_lower-inner">
 								<div className="home-hero_lowwer-inner-video">
-									<div className="home-hero_lower_play-box">
-										<div className="home-hero_lower_play-box-play-button">
-											<img src="./images/playarrow.png" alt="" />
-										</div>
-										<div className="home-hero_lower_play-box-inner">
-											<div className="home-hero_lower_play-box-inner-text">
-												<h3 className="fs-18 fw-600">Watch Video Tour</h3>
-												<p className="fw-500 fs-14">5:15 min</p>
-											</div>
-										</div>
-									</div>
+
 									<div className="home-hero_lower_inner-video-image">
-										<img src="./images/frame8.png" alt="" />
+										<img src="./images/truck.png" alt="" />
 									</div>
 
 								</div>
@@ -62,12 +96,12 @@ const Home = () => {
 					</section>
 					<section className="home-first-section">
 						<div className="home-first-section-inner">
-							<div className="home-first-section_inner-left animate__animated animate__zoomInLeft">
+							<div className="home-first-section_inner-left">
 								<div className="home-first-section_inner-left_image">
 									<img src="./images/twohelmet.png" alt="" />
 								</div>
 							</div>
-							<div className="home-first-section-inner-right animate__animated animate__zoomInRight">
+							<div className="home-first-section-inner-right">
 								<div className="home-first-section_inner-right_text">
 									<div className="home-first-section_inner-right_text_upper">
 										<h3>ROLANIK</h3>
@@ -223,75 +257,153 @@ const Home = () => {
 
 							</div>
 							<div className="home-fourth-section-inner_card">
-								<div className="home-fourth-section-inner_card-inner">
-									<div className="home-fourth-section_inner-card-inner one">
-										<div className="home-fourth-section-inner_card-inner_image">
-											<img src="./images/frame44.png" alt="" />
-										</div>
-										<div className="home-fourth-section-inner_card-inner_text">
-											<h3>Active & Passive Fire Proofing</h3>
-											<p>Fire Proofing is a vital component for any structure to ensure safety of lives and minimal financial loss of properties. Ralonick offers professional fire proofing services ranging from cemetitious fire proofing, to Automatic fire suppression, etc.</p>
-											<Link href={'/services/single-service'}>
-												<a>Learn More <img src="./images/vector2.png" alt="" /></a>
-											</Link>
-										</div>
-									</div>
-									<div className="home-fourth-section_inner-card-inner one">
-										<div className="home-fourth-section-inner_card-inner_image">
-											<img src="./images/frame46.png" alt="" />
-										</div>
-										<div className="home-fourth-section-inner_card-inner_text">
-											<h3>Field Joint Coating Services</h3>
-											<p>This involves the coating of girth weld produce on board the pipe-laying vessels or at any offshore location. Ralonick offers engineering design & fabrication of customized field joint coating equipment which involves liquid applied materials.</p>
-											<Link href={'/services/single-service'}>
-												<a>Learn More <img src="./images/vector2.png" alt="" /></a>
-											</Link>
-										</div>
-									</div>
-									<div className="home-fourth-section_inner-card-inner one">
-										<div className="home-fourth-section-inner_card-inner_image">
-											<img src="./images/frame45.png" alt="" />
-										</div>
-										<div className="home-fourth-section-inner_card-inner_text">
-											<h3>Procurement & Installation of FRP/GRP</h3>
-											<p>In conjunction with our foreign partners AOCOMM Composite Limited(major manufacturers of FRP and GRP Products) we secure leadership in the area of technical support, procurement and maintenance for upstream and downstream oil and gas refinery.</p>
-											<Link href={'/services/single-service'}>
-												<a>Learn More <img src="./images/vector2.png" alt="" /></a>
-											</Link>
-										</div>
-									</div>
+								<Swiper
+									// install Swiper modules
+									modules={[Navigation, Pagination, Scrollbar, A11y]}
+									spaceBetween={0}
+									slidesPerView={1}
+									onReachEnd={() => {/*...*/ }}
+									// pagination={{ clickable: true }}
+									//   scrollbar={{ draggable: true }}
+									onSwiper={(swiper) => console.log(swiper)}
+									onSlideChange={() => console.log('slide change')}>
+									<div className="home-hero_uppeer-left_image">
+										<SwiperSlide>
+											<div className="home-fourth-section-inner_card-inner">
+												<div className="home-fourth-section_inner-card-inner one">
+													<div className="home-fourth-section-inner_card-inner_image">
+														<img src="./images/frame44.png" alt="" />
+													</div>
+													<div className="home-fourth-section-inner_card-inner_text">
+														<h3>Active & Passive Fire Proofing</h3>
+														<p>Fire Proofing is a vital component for any structure to ensure safety of lives and minimal financial loss of properties. Ralonick offers professional fire proofing services ranging from cemetitious fire proofing, to Automatic fire suppression, etc.</p>
+														<Link href={'/services/single-service'}>
+															<a>Learn More <img src="./images/vector2.png" alt="" /></a>
+														</Link>
+													</div>
+												</div>
+												<div className="home-fourth-section_inner-card-inner one">
+													<div className="home-fourth-section-inner_card-inner_image">
+														<img src="./images/frame46.png" alt="" />
+													</div>
+													<div className="home-fourth-section-inner_card-inner_text">
+														<h3>Field Joint Coating Services</h3>
+														<p>This involves the coating of girth weld produce on board the pipe-laying vessels or at any offshore location. Ralonick offers engineering design & fabrication of customized field joint coating equipment which involves liquid applied materials.</p>
+														<Link href={'/services/single-service'}>
+															<a>Learn More <img src="./images/vector2.png" alt="" /></a>
+														</Link>
+													</div>
+												</div>
+												<div className="home-fourth-section_inner-card-inner one">
+													<div className="home-fourth-section-inner_card-inner_image">
+														<img src="./images/frame45.png" alt="" />
+													</div>
+													<div className="home-fourth-section-inner_card-inner_text">
+														<h3>Procurement & Installation of FRP/GRP</h3>
+														<p>In conjunction with our foreign partners AOCOMM Composite Limited(major manufacturers of FRP and GRP Products) we secure leadership in the area of technical support, procurement and maintenance for upstream and downstream oil and gas refinery.</p>
+														<Link href={'/services/single-service'}>
+															<a>Learn More <img src="./images/vector2.png" alt="" /></a>
+														</Link>
+													</div>
+												</div>
 
 
-								</div>
-							
+											</div>
+										</SwiperSlide>
+										<SwiperSlide>
+											<div className="home-fourth-section-inner_card-inner">
+												<div className="home-fourth-section_inner-card-inner one">
+													<div className="home-fourth-section-inner_card-inner_image">
+														<img src="./images/frame44.png" alt="" />
+													</div>
+													<div className="home-fourth-section-inner_card-inner_text">
+														<h3>Active & Passive Fire Proofing</h3>
+														<p>Fire Proofing is a vital component for any structure to ensure safety of lives and minimal financial loss of properties. Ralonick offers professional fire proofing services ranging from cemetitious fire proofing, to Automatic fire suppression, etc.</p>
+														<Link href={'/services/single-service'}>
+															<a>Learn More <img src="./images/vector2.png" alt="" /></a>
+														</Link>
+													</div>
+												</div>
+												<div className="home-fourth-section_inner-card-inner one">
+													<div className="home-fourth-section-inner_card-inner_image">
+														<img src="./images/frame46.png" alt="" />
+													</div>
+													<div className="home-fourth-section-inner_card-inner_text">
+														<h3>Field Joint Coating Services</h3>
+														<p>This involves the coating of girth weld produce on board the pipe-laying vessels or at any offshore location. Ralonick offers engineering design & fabrication of customized field joint coating equipment which involves liquid applied materials.</p>
+														<Link href={'/services/single-service'}>
+															<a>Learn More <img src="./images/vector2.png" alt="" /></a>
+														</Link>
+													</div>
+												</div>
+												<div className="home-fourth-section_inner-card-inner one">
+													<div className="home-fourth-section-inner_card-inner_image">
+														<img src="./images/frame45.png" alt="" />
+													</div>
+													<div className="home-fourth-section-inner_card-inner_text">
+														<h3>Procurement & Installation of FRP/GRP</h3>
+														<p>In conjunction with our foreign partners AOCOMM Composite Limited(major manufacturers of FRP and GRP Products) we secure leadership in the area of technical support, procurement and maintenance for upstream and downstream oil and gas refinery.</p>
+														<Link href={'/services/single-service'}>
+															<a>Learn More <img src="./images/vector2.png" alt="" /></a>
+														</Link>
+													</div>
+												</div>
+											</div>
+										</SwiperSlide>
+									</div>
+									<div className="home-hero_upper-left_scroll">
+										<div className="home-hero_upper-left_scroll-line"></div>
+										<SlideNext />
+										<SlidePrev />
+									</div>
+								</Swiper>
 							</div>
-							<div className="home-hero_upper-left_scroll">
-									<div className="home-hero_upper-left_scroll-line"></div>
-									<i className="fa-solid fa-chevron-right"></i>
-									<i className="fa-solid fa-chevron-left"></i>
-								</div>
 						</div>
-						
+
 					</section>
 					<section className="home-fifth-section">
 						<div className="home-fifth-section-inner">
 							<div className="home-fifth-section-inner_text">
 								<h1>Clients Reviews</h1>
 							</div>
-
-							<div className="home-fifth-section-inner_profile">
-								<div className="home-fifth-section-inner_profile-text-testimonial">
-									<p>I had been looking to get my shipment and maintenance done but couldn't find the right Construction Company to do so. Rolanick Construction has been exceptional at what they do, from pre-planning, procurement, constructing in itself and maintenance it has been worth it. They understood the job and they delivered! Thank you!</p>
-								</div>
-								<div className="home-fifth-section-inner_profile-img">
-									<img src="./images/image.png" alt="" />
-								</div>
-								<div className="home-fifth-section-inner_profile-text-info">
-									<h3>Cindy Clifford</h3>
-									<p>Creative Director Sobaz Oil and gas</p>
-								</div>
-								<div className="home-fifth-section-inner_profile-slider">
-									<div className="home-fifth-section-inner_profile-slider1">
+							<Swiper
+								// install Swiper modules
+								modules={[Navigation, Pagination, Scrollbar, A11y]}
+								spaceBetween={0}
+								slidesPerView={1}
+								pagination={{ clickable: true }}
+								// scrollbar={{ draggable: true }}
+								onSwiper={(swiper) => console.log(swiper)}
+								onSlideChange={() => console.log('slide change')}>
+								<div className="home-hero_uppeer-left_image">
+									<SwiperSlide>
+										<div className="home-fifth-section-inner_profile">
+											<div className="home-fifth-section-inner_profile-text-testimonial">
+												<p>I had been looking to get my shipment and maintenance done but couldn't find the right Construction Company to do so. Rolanick Construction has been exceptional at what they do, from pre-planning, procurement, constructing in itself and maintenance it has been worth it. They understood the job and they delivered! Thank you!</p>
+											</div>
+											<div className="home-fifth-section-inner_profile-img">
+												<img src="./images/image.png" alt="" />
+											</div>
+											<div className="home-fifth-section-inner_profile-text-info">
+												<h3>Cindy Clifford</h3>
+												<p>Creative Director Sobaz Oil and gas</p>
+											</div>
+										</div>
+									</SwiperSlide>
+									<SwiperSlide>
+										<div className="home-fifth-section-inner_profile">
+											<div className="home-fifth-section-inner_profile-text-testimonial">
+												<p>I had been looking to get my shipment and maintenance done but couldn't find the right Construction Company to do so. Rolanick Construction has been exceptional at what they do, from pre-planning, procurement, constructing in itself and maintenance it has been worth it. They understood the job and they delivered! Thank you!</p>
+											</div>
+											<div className="home-fifth-section-inner_profile-img">
+												<img src="./images/image.png" alt="" />
+											</div>
+											<div className="home-fifth-section-inner_profile-text-info">
+												<h3>Cindy Clifford</h3>
+												<p>Creative Director Sobaz Oil and gas</p>
+											</div>
+											<div className="home-fifth-section-inner_profile-slider">
+												<div className="home-fifth-section-inner_profile-slider1">
 
 									</div>
 									<div className="home-fifth-section-inner_profile-slider2">
@@ -300,8 +412,12 @@ const Home = () => {
 									<div className="home-fifth-section-inner_profile-slider3">
 
 									</div>
+											</div>
+										</div>
+									</SwiperSlide>
 								</div>
-							</div>
+							</Swiper>
+
 						</div>
 					</section>
 				</div>

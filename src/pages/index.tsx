@@ -24,7 +24,7 @@ export function SlidePrev() {
 	const swiper = useSwiper();
 	const swiperSlide = useSwiperSlide();
 	return (
-		<i className="fa-solid fa-chevron-left active" onClick={() => swiper.slidePrev() } ></i>
+		<i className="fa-solid fa-chevron-left" onClick={() => swiper.slidePrev() } ></i>
 
 	);
 }

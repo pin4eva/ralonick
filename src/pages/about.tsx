@@ -1,6 +1,36 @@
 import React from "react";
 import FrontLayout from "../layouts/front.layout";
 import "animate.css";
+import { Navigation, Pagination, Scrollbar, A11y } from 'swiper';
+import { useSwiperSlide } from 'swiper/react';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { useSwiper } from 'swiper/react';
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
+import 'swiper/css/scrollbar';
+export function SlideNext() {
+	const swiper = useSwiper();
+
+	return (
+
+		<i className="fa-solid fa-chevron-right" onClick={() => swiper.slideNext()}></i>
+	);
+}
+export function SlidePrev() {
+	const swiper = useSwiper();
+	const swiperSlide = useSwiperSlide();
+	return (
+		<i className="fa-solid fa-chevron-left active" onClick={() => swiper.slidePrev() } ></i>
+
+	);
+}
+export function SlideCirclePrev() {
+	const swiper = useSwiper();
+	return (
+		<i className="fa-solid fa-chevron-left" onClick={() => swiper.slidePrev()}></i>
+	);
+}
 const About = () => {
     return (
         <div>
@@ -213,7 +243,19 @@ const About = () => {
                         <div className="about-last-section_inner">
                             <h1>Our Team</h1>
                             <div className="about-last-section_inner-profile">
-                                <div className="about-last-section_inner-profile-inner">
+                            <Swiper
+									// install Swiper modules
+									modules={[Navigation, Pagination, Scrollbar, A11y]}
+									spaceBetween={0}
+									slidesPerView={1}
+									onReachEnd={() => {/*...*/ }}
+									// pagination={{ clickable: true }}
+									//   scrollbar={{ draggable: true }}
+									onSwiper={(swiper) => console.log(swiper)}
+									onSlideChange={() => console.log('slide change')}>
+									<div className="home-hero_uppeer-left_image">
+										<SwiperSlide>
+                                        <div className="about-last-section_inner-profile-inner">
                                     <div className="about-last-section_inner-profile-inner-one">
                                         <div className="about-last-section_inner-profile-inner_image">
                                             <img src="./images/portrait1.png" alt="" />
@@ -254,6 +296,59 @@ const About = () => {
                                         </div>
                                     </div>
                                 </div>
+										</SwiperSlide>
+                                        <SwiperSlide>
+                                        <div className="about-last-section_inner-profile-inner">
+                                    <div className="about-last-section_inner-profile-inner-one">
+                                        <div className="about-last-section_inner-profile-inner_image">
+                                            <img src="./images/portrait1.png" alt="" />
+                                        </div>
+                                        <div className="about-last-section_inner-profile-inner_info">
+                                            <h3>Joy Julius</h3>
+                                            <h5>CEO</h5>
+                                            <div className="about-last-section_inner-profile-inner_icon">
+                                                <i className="fa-brands fa-instagram"></i>
+                                                <i className="fa-brands fa-twitter"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div className="about-last-section_inner-profile-inner-two">
+                                        <div className="about-last-section_inner-profile-inner_image">
+                                            <img src="./images/portrait2.png" alt="" />
+                                        </div>
+                                        <div className="about-last-section_inner-profile-inner_info">
+                                            <h3>Joy Julius</h3>
+                                            <h5>CEO</h5>
+                                            <div className="about-last-section_inner-profile-inner_icon">
+                                                <i className="fa-brands fa-instagram"></i>
+                                                <i className="fa-brands fa-twitter"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div className="about-last-section_inner-profile-inner-third">
+                                        <div className="about-last-section_inner-profile-inner_image">
+                                            <img src="./images/portrait3.png" alt="" />
+                                        </div>
+                                        <div className="about-last-section_inner-profile-inner_info">
+                                            <h3>Joy Julius</h3>
+                                            <h5>CEO</h5>
+                                            <div className="about-last-section_inner-profile-inner_icon">
+                                                <i className="fa-brands fa-instagram"></i>
+                                                <i className="fa-brands fa-twitter"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+										</SwiperSlide>
+										
+									</div>
+									<div className="home-hero_upper-left_scroll">
+										<div className="home-hero_upper-left_scroll-line"></div>
+										<SlideNext />
+										<SlidePrev />
+									</div>
+								</Swiper>
+                               
                             </div>
                         </div>
                     </section>

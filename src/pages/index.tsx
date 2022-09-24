@@ -4,7 +4,7 @@ import FrontLayout from "../layouts/front.layout";
 import Link from "next/link";
 import "animate.css";
 import { Navigation, Pagination, Scrollbar, A11y } from 'swiper';
-
+import { useSwiperSlide } from 'swiper/react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { useSwiper } from 'swiper/react';
 // Import Swiper styles
@@ -16,13 +16,16 @@ export function SlideNext() {
 	const swiper = useSwiper();
 
 	return (
+
 		<i className="fa-solid fa-chevron-right" onClick={() => swiper.slideNext()}></i>
 	);
 }
 export function SlidePrev() {
 	const swiper = useSwiper();
+	const swiperSlide = useSwiperSlide();
 	return (
-		<i className="fa-solid fa-chevron-left" onClick={() => swiper.slidePrev()}></i>
+		<i className="fa-solid fa-chevron-left active" onClick={() => swiper.slidePrev() } ></i>
+
 	);
 }
 export function SlideCirclePrev() {
@@ -46,7 +49,7 @@ const Home = () => {
 									modules={[Navigation, Pagination, Scrollbar, A11y]}
 									spaceBetween={0}
 									slidesPerView={1}
-									onReachEnd={() => console.log('end')}
+
 									onSwiper={(swiper) => console.log(swiper)}
 									onSlideChange={() => console.log('slide change')}>
 									<div className="home-hero_uppeer-left_image">
@@ -405,13 +408,13 @@ const Home = () => {
 											<div className="home-fifth-section-inner_profile-slider">
 												<div className="home-fifth-section-inner_profile-slider1">
 
-									</div>
-									<div className="home-fifth-section-inner_profile-slider2">
+												</div>
+												<div className="home-fifth-section-inner_profile-slider2">
 
-									</div>
-									<div className="home-fifth-section-inner_profile-slider3">
+												</div>
+												<div className="home-fifth-section-inner_profile-slider3">
 
-									</div>
+												</div>
 											</div>
 										</div>
 									</SwiperSlide>

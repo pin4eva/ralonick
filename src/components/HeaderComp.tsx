@@ -2,6 +2,7 @@
 import React, { useState } from "react";
 import Link from "next/link";
 import { useRouter } from "next/router";
+import LogoComp from "./LogoComp";
 
 export const navList = [
 	{ name: "Home", link: "/" },
@@ -25,7 +26,9 @@ const HeaderComp = () => {
 			<header className="app-header">
 				<nav className="desktop-nav container ">
 					<Link href="/">
-						<a className="logo">Ralonick LTD.</a>
+						<a className="logo">
+							<LogoComp />
+						</a>
 					</Link>
 					<ul className="app-nav">
 						{navList.map((nav, i) => (

@@ -30,8 +30,8 @@ export const services: IService[] = Data.map((service, i) => ({
 }));
 
 const Services = () => {
-	const [disableNext, setDisableNext] = useState(false);
-	const [disablePrev, setDisablePrev] = useState(true);
+	// const [disableNext, setDisableNext] = useState(false);
+	// const [disablePrev, setDisablePrev] = useState(true);
 	const [service, setService] = useState<IService>();
 
 	return (

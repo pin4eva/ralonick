@@ -1,5 +1,5 @@
-.service-wrapper {
-	.service-hero-section {
+.service {
+	&-hero-section {
 		margin-top: 2rem;
 		display: grid;
 
@@ -16,24 +16,100 @@
 			font-size: 2rem;
 			color: $primary;
 		}
+
+
 	}
+
+	.service-box {
+		.title-header {
+			font-size: 1.5rem;
+			border-top: 1px solid $secondary;
+			border-bottom: 1px solid $secondary;
+			cursor: pointer;
+			transition: all 400ms ease-in-out;
+			margin-bottom: 1rem;
+			transition: all 400ms ease-in-out;
+
+			&:hover {
+				padding-left: 10px;
+			}
+		}
+
+		.service-content {
+			.service-image {
+				width: 100%;
+				margin: 0 auto;
+
+				@media screen and (min-width: $md) {
+					height: 50%;
+				}
+
+				@media screen and (min-width: 1200px) {
+					width: 80%;
+					height: 80%;
+				}
+
+				img {
+					width: 100%;
+					height: 100%;
+				}
+			}
+
+			.service-text {
+				.description {
+					margin-top: 1rem;
+					font-weight: 500;
+					font-size: 1.125rem;
+				}
+
+				.subtitle {
+					font-weight: 600;
+					font-size: 1.5rem;
+				}
+
+				.subtext {
+					font-weight: 500;
+					font-size: 1.125rem;
+				}
+			}
+
+			.service-image-grid {
+				display: grid;
+				grid-template-columns: 1fr 1fr 1fr;
+				grid-template-rows: 70%;
+				gap: 1rem;
+
+				img {
+					border-radius: 5px;
+					width: 100%;
+					height: 100%;
+				}
+			}
+		}
+	}
+
 	//==========END OF SERVICE HERO SECTION========
 
 	.services-intro {
 		margin-top: 3rem;
+
 		.services-intro-inner {
 			display: grid;
+
 			.services-intro-description {
 				margin-bottom: 3rem;
+
 				@media screen and (min-width: $md) {
 					display: flex;
 					justify-content: space-between;
 					align-items: center;
 				}
+
 				.description-text {
 					@media screen and (min-width: $md) {
 						width: 60%;
 					}
+
 					font-size: 1.1rem;
 					color: #000000;
 					margin: auto 0;
@@ -48,18 +124,22 @@
 				.swiper-button-next {
 					display: none;
 				}
+
 				.services-items {
 					.service-item-inner {
 						@media screen and (max-width: $mobile) {
 							grid-template-rows: 350px 300px;
 							height: 650px;
 						}
+
 						height: 700px;
 						margin: 4rem auto;
 						display: grid;
 						grid-template-rows: 350px 350px;
+
 						.services-item-image {
 							height: 100%;
+
 							img {
 								width: 100%;
 								height: 100%;
@@ -70,11 +150,13 @@
 							padding: 1.5rem 1.125rem;
 							background: rgba(51, 51, 51, 0.04);
 							position: relative;
+
 							.title {
 								font-weight: 600;
 								font-size: 1.125rem;
 								color: $secondary;
 							}
+
 							.texts {
 								margin-top: 4.5rem;
 								font-weight: 500;
@@ -86,11 +168,13 @@
 								display: flex;
 								position: absolute;
 								bottom: 30px;
+
 								.text-on-click {
 									display: flex;
 									align-items: center;
 									gap: 2px;
 									text-decoration: none;
+
 									img {
 										width: 0.5rem;
 										aspect-ratio: 1/1;
@@ -100,16 +184,19 @@
 						}
 					}
 				}
+
 				.control-wrapper {
 					width: 30%;
 					justify-content: end;
 					margin-left: auto;
+
 					.swiper-clicks {
 						display: flex;
 						align-items: center;
 						gap: 1rem;
 						width: 100%;
 						margin-top: -3rem;
+
 						.line {
 							height: 1px;
 							background: #adadad;
@@ -128,6 +215,7 @@
 								padding: 0.5rem 0.8rem;
 								width: 2.5rem;
 								z-index: 3;
+
 								&:disabled {
 									background: transparent;
 									border: 1px solid #adadad;
@@ -140,11 +228,13 @@
 			}
 		}
 	}
+
 	//==============END OF SERVICE SWIPER==============
 
 	.more-details-wrapper {
 		text-align: center;
 		margin-top: 5rem;
+
 		.more-details-inner {
 			text-align: center;
 			margin: 0 auto;
@@ -155,6 +245,7 @@
 				width: 90%;
 				height: 30%;
 				margin: 3rem auto;
+
 				@media screen and (min-width: $md) {
 					margin-top: 4rem;
 				}
@@ -164,6 +255,7 @@
 					border: 1px solid $primary;
 					height: 100%;
 				}
+
 				.border-none {
 					border-left: none;
 					border-right: none;
@@ -197,6 +289,7 @@
 	.client-reviews-wrapper {
 		width: 100%;
 		margin-top: 1rem;
+
 		@media screen and (max-width: 576px) {
 			width: 90vw;
 		}
@@ -207,6 +300,7 @@
 			height: 1rem;
 			border-radius: 50%;
 		}
+
 		h2 {
 			color: $secondary;
 			font-size: 3rem;
@@ -226,22 +320,26 @@
 				font-weight: 400;
 				margin-block: 1.8125rem 3rem;
 				font-style: italic;
+
 				@media screen and (min-width: $md) {
 					width: 65%;
 					margin-inline: auto;
 				}
 			}
+
 			.client-reviews-profile {
 				color: #000;
 
 				img {
 					border-radius: 50%;
 				}
+
 				h3 {
 					font-size: 1.5rem;
 					font-weight: 600;
 					margin-block: 1.5rem 0.5rem;
 				}
+
 				.client-position {
 					font-size: 1.125rem;
 					font-weight: 500;

@@ -1,25 +1,21 @@
 /* eslint-disable @next/next/no-img-element */
-import React from "react";
-import FrontLayout from "../../layouts/front.layout";
-import Data from "../../components/data.json";
 import Link from "next/link";
-import ClientComp from "../../components/ClientComp";
-import { createSlug, truncateText } from "../../utils/string.utils";
+import React, { useState } from "react";
 import "swiper/css";
 import "swiper/css/navigation";
-import { Swiper, SwiperSlide } from "swiper/react";
-import { SwiperButtons } from "..";
-import { useState } from "react";
-import ServiceInterface from "../../components/ServicesComp/service_interface";
-import AllserviceComp from "../../components/ServicesComp/AllserviceComp";
+import ClientComp from "components/ClientComp";
+import Data from "components/data.json";
+import ServiceComp from "components/ServicesComp/ServiceComp";
+import FrontLayout from "layouts/front.layout";
+import { createSlug, truncateText } from "utils/string.utils";
 
 export interface IService {
-	image: string;
-	title: string;
-	slug: string;
-	description: string;
-	subtitle: string;
-	subtext: string;
+	image?: string;
+	title?: string;
+	slug?: string;
+	description?: string;
+	subtitle?: string;
+	subtext?: string;
 	images?: string[];
 }
 
@@ -36,10 +32,11 @@ export const services: IService[] = Data.map((service, i) => ({
 const Services = () => {
 	const [disableNext, setDisableNext] = useState(false);
 	const [disablePrev, setDisablePrev] = useState(true);
+	const [service, setService] = useState<IService>();
 
 	return (
 		<FrontLayout>
-			<div className="service-wrapper container">
+			<div className="service container">
 				<section className="service-hero-section">
 					<div className="image-wrapper">
 						<img src="/assets/about1.png" alt="about" />
@@ -58,46 +55,14 @@ const Services = () => {
 							<button className="btn btn-danger hug">Book Service</button>
 						</div>
 
-						<AllserviceComp />
-
-						{/* <Swiper
-								className="services-list"
-								spaceBetween={5}
-								slidesPerView={2}
-								navigation
-								loopFillGroupWithBlank={true}
-								speed={1000}
-								breakpoints={{
-									1370: {
-										slidesPerView: 2,
-									},
-									1161: {
-										slidesPerView: 2,
-									},
-									890: {
-										slidesPerView: 1,
-									},
-									768: {
-										slidesPerView: 1,
-									},
-									200: {
-										slidesPerView: 1,
-									},
-								}}
-								onSlideChange={(e) => {
-									e.isBeginning ? setDisablePrev(true) : setDisablePrev(false);
-									e.isEnd ? setDisableNext(true) : setDisableNext(false);
-								}}
-							>
-								{services.map((item, i) => (
-									<SwiperSlide key={i}>
-										<ServiceItemComp service={item} />
-									</SwiperSlide>
-								))}
-								<div className="control-wrapper">
-									<SwiperButtons disableNext={disableNext} disablePrev={disablePrev} />
-								</div>
-							</Swiper> */}
+						{Data.map((item, i) => (
+							<ServiceComp
+								key={i}
+								setOpen={() => setService(item?.title === service?.title ? undefined : item)}
+								open={service?.title === item?.title}
+								service={item}
+							/>
+						))}
 					</div>
 				</section>
 
@@ -137,25 +102,3 @@ const Services = () => {
 };
 
 export default Services;
-
-const ServiceItemComp: React.FC<{ service: IService }> = ({ service }) => (
-	<div className="services-items">
-		<div className="service-item-inner">
-			<div className="services-item-image">
-				<img src={service?.image} alt="ig" />
-			</div>
-			<div className="content">
-				<p className="title">{service?.title}</p>
-				<div className="texts">{truncateText(service.description)}......</div>
-				<div className="single-service-link">
-					<Link href={`/services/${service?.slug}`}>
-						<a className="text-on-click">
-							Learn More
-							<img src="/assets/learnMoreArrow.png" alt="arrow" />
-						</a>
-					</Link>
-				</div>
-			</div>
-		</div>
-	</div>
-);

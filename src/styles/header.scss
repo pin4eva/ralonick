@@ -18,12 +18,13 @@
 	.desktop-nav {
 		display: flex;
 		align-items: center;
+		justify-content: space-between;
 
 		.logo {
-			font-size: 1.16rem;
-			font-weight: 600;
-			color: $primary;
-			flex: 1;
+			// font-size: 1.16rem;
+			// font-weight: 600;
+			// color: $primary;
+			// flex: 1;
 
 			@media screen and (max-width: $md) {
 				padding-block: 1vw;

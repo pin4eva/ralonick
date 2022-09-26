@@ -5,7 +5,7 @@ const LogoComp: React.FC<{ props?: SVGProps<SVGSVGElement> }> = ({ props }) => {
 	return (
 		<svg
 			xmlns="http://www.w3.org/2000/svg"
-			width={"2rem"}
+			width={"3rem"}
 			height={"2rem"}
 			color={"white"}
 			viewBox="0 0 146 140"

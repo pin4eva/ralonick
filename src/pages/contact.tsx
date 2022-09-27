@@ -52,11 +52,13 @@ const contact = () => {
 						/>
 						<input
 							type="number"
-							className="form-control"
+							className="form-control number-input"
 							id="exampleInputEmail1"
 							name="number"
 							placeholder="Your Phone"
 							required
+							min="4"
+							max="11"
 						/>
 					</div>
 					<div className="form-group textarea">

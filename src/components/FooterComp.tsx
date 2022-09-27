@@ -11,8 +11,8 @@ const FooterComp = () => {
 					<LogoComp />
 				</p>
 				<p className="fw-500 footer-about-description">
-					Ralonick is a fast growing construction company rapidly spreading its frontiers across Nigeria,with sole
-					interest in operation and maintenance of production facilities.
+					Ralonick is a rapidly expanding construction company with a sole focus on the operation and maintenance of
+					manufacturing facilities in Nigeria.
 				</p>
 				<button className="btn btn-outline-danger hug">About Ralonik</button>
 			</div>

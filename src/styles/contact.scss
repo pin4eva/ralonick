@@ -27,6 +27,12 @@
 			@media screen and (min-width: $md) {
 				width: 100%;
 			}
+			.number-input {
+				&::-webkit-outer-spin-button,
+				&::-webkit-inner-spin-button {
+					display: none;
+				}
+			}
 			input {
 				margin-bottom: 2rem;
 				height: 4rem;

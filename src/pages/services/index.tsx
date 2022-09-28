@@ -8,30 +8,14 @@ import Data from "components/data.json";
 import ServiceComp from "components/ServicesComp/ServiceComp";
 import FrontLayout from "layouts/front.layout";
 import { createSlug, truncateText } from "utils/string.utils";
-
-export interface IService {
-	image?: string;
-	title?: string;
-	slug?: string;
-	description?: string;
-	subtitle?: string;
-	subtext?: string;
-	images?: string[];
-}
+import { IService } from "interface/service.interface";
 
 export const services: IService[] = Data.map((service, i) => ({
 	slug: createSlug(service.title),
-	title: service.title,
-	image: service.image,
-	description: service.text,
-	subtitle: service.subtitle,
-	subtext: service.subtext,
-	images: service.images,
+	...service,
 }));
 
 const Services = () => {
-	const [disableNext, setDisableNext] = useState(false);
-	const [disablePrev, setDisablePrev] = useState(true);
 	const [service, setService] = useState<IService>();
 
 	return (

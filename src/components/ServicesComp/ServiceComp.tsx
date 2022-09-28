@@ -1,6 +1,7 @@
 /* eslint-disable jsx-a11y/alt-text */
 /* eslint-disable @next/next/no-img-element */
-import { IService } from "pages/services";
+
+import { IService } from "interface/service.interface";
 import React, { useState } from "react";
 
 interface IProp {
@@ -15,6 +16,7 @@ const ServiceComp: React.FC<IProp> = ({ service, open, setOpen }) => {
 			<div className="service-box container">
 				<h2 className="title-header" onClick={setOpen}>
 					{service?.title}
+					<span>{open ? <i className="fa fa-chevron-up"></i> : <i className="fa fa-chevron-down"></i>}</span>
 				</h2>
 
 				<div className={open ? "service-content" : "d-none"}>

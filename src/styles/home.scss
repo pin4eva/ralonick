@@ -1,11 +1,17 @@
+.spinner {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	color: $primary;
+}
+
 .home {
 	&-hero {
 		display: grid;
 		margin-bottom: 3rem;
 		margin-top: 2rem;
-
-		min-height: 70vh;
-		align-items: center;
+		width: 100%;
 
 		.inner {
 			display: grid;
@@ -16,8 +22,9 @@
 				gap: 3rem;
 
 				.hero_img1 {
-					width: 90%;
+					width: 95%;
 					height: 100%;
+					// padding-inline: 1rem;
 
 					@media screen and (min-width: $mobile) {
 						height: 500px;
@@ -116,9 +123,7 @@
 	}
 
 	.about-section {
-
-		display: grid;
-		min-height: 80vh;
+		margin-top: 4rem;
 
 		.about-section-inner {
 			display: grid;
@@ -127,10 +132,11 @@
 
 			@media screen and (min-width: $md) {
 				display: flex;
+				gap: 2rem;
 			}
 
 			.about-inner-left {
-				width: 90%;
+				width: 100%;
 				margin-inline: auto;
 
 				img {
@@ -164,13 +170,11 @@
 	//================END OF ABOUT SECTION==================
 
 	.transforming {
-		display: grid;
-		min-height: 90vh;
-		align-items: center;
+		margin-top: 4rem;
 
 		.transforming-inner {
-			width: 90%;
-			margin: 0 auto;
+			width: 100%;
+			// margin: 0 auto;
 
 			@media screen and (min-width: $md) {
 				width: 100%;
@@ -258,27 +262,20 @@
 
 	//=========END OF TRANFORMING SECTION===============
 
-	.quality {
-		min-height: 90vh;
-		display: grid;
-		align-items: center;
+	.quality-container {
+		@media screen and (min-width: $md) {
+			display: flex;
+			justify-content: space-between;
+			margin-top: 4rem;
+		}
 
-		&-inner {
-			@media screen and (min-width: $md) {
-				display: flex;
-				justify-content: space-between;
-				align-items: center;
+		.quality-container-image {
+			display: none;
 
-			}
-
-			.quality-container-image {
-				display: none;
-
+			&-inner {
 				@media screen and (min-width: $md) {
 					display: block;
 					width: 40%;
-					height: 800px;
-
 
 					img {
 						width: 100%;
@@ -288,231 +285,256 @@
 			}
 
 			.quality-container-text {
-				width: 80%;
-				margin-inline: auto;
+				width: 100%;
+				margin: 3rem auto;
 
 				@media screen and (min-width: $md) {
 					width: 50%;
 					margin-top: 0;
 				}
 
-				&-inner {
+				.quality-container-image {
+					display: none;
+
+					@media screen and (min-width: $md) {
+						display: block;
+						width: 40%;
+						height: 800px;
+
+
+						img {
+							width: 100%;
+							height: 100%;
+						}
+					}
+				}
+
+				.quality-container-text {
+					width: 80%;
+					margin-inline: auto;
+
+					@media screen and (min-width: $md) {
+						width: 50%;
+						margin-top: 0;
+					}
+
+					&-inner {
+						display: grid;
+						grid-template-columns: 1fr;
+						margin-top: 1.5rem;
+
+						@media screen and (min-width: $md) {
+							grid-template-columns: 1fr 1fr;
+						}
+
+						.text-grid {
+							border: 1px solid $secondary;
+							padding: 1.5rem 1rem 2rem 1rem;
+
+							h5 {
+								font-size: 18px;
+								font-weight: 700;
+								margin-top: 1.5rem;
+							}
+
+							p {
+								font-weight: 500;
+								font-size: 14px;
+								margin-top: 1.5rem;
+							}
+						}
+					}
+				}
+			}
+
+
+
+
+		}
+
+		//============END OF QUALITY SECTION===============
+
+		.service-container {
+			margin-top: 4rem;
+
+			.service-container-inner {
+				&_text {
+					@media screen and (min-width: $md) {
+						display: flex;
+						justify-content: space-between;
+						align-items: center;
+					}
+
+					.service-desc {
+						font-size: 1.125rem;
+
+						@media screen and (min-width: $md) {
+							width: 60%;
+							margin-block: auto;
+						}
+					}
+				}
+			}
+
+			.service-swiper-card {
+				margin-top: 2rem;
+				flex: 1;
+
+				.swiper-button-prev,
+				.swiper-button-next {
+					display: none;
+				}
+
+				&-items {
+					background: rgba(51, 51, 51, 0.04);
+					overflow: hidden;
+					padding-bottom: 1rem;
+					height: 700px;
 					display: grid;
-					grid-template-columns: 1fr;
-					margin-top: 1.5rem;
+					grid-template-rows: 400px 1fr;
 
-					@media screen and (min-width: $md) {
-						grid-template-columns: 1fr 1fr;
+					img {
+						width: 100%;
+						height: 100%;
 					}
 
-					.text-grid {
-						border: 1px solid $secondary;
-						padding: 1.5rem 1rem 2rem 1rem;
-
-						h5 {
-							font-size: 18px;
-							font-weight: 700;
-							margin-top: 1.5rem;
-						}
-
+					.content {
 						p {
+							padding: 1.5rem 1.125rem;
+						}
+
+						.title {
+							font-size: 1rem;
+							color: $secondary;
+						}
+
+						.description {
 							font-weight: 500;
-							font-size: 14px;
-							margin-top: 1.5rem;
+							font-size: 0.9rem;
+							color: $secondary;
+						}
+					}
+				}
+
+				.control-wrapper {
+					display: flex;
+					justify-content: end;
+					width: 30%;
+					margin-left: auto;
+					margin-top: 1rem;
+				}
+
+				.swiper-clicks {
+					display: flex;
+					align-items: center;
+					gap: 1rem;
+					width: 100%;
+
+					.line {
+						flex: 1;
+						height: 1px;
+						background: #adadad;
+						flex: 1;
+					}
+
+					.arrows {
+						display: flex;
+						gap: 1rem;
+
+						.swiper-control {
+							border: 1px solid $danger;
+							color: $danger;
+							background: #f5e5e6;
+							border-radius: 50%;
+							padding: 0.5rem 0.8rem;
+							width: 2.5rem;
+
+							&:disabled {
+								background: transparent;
+								border: 1px solid #adadad;
+								color: #adadad;
+							}
 						}
 					}
 				}
 			}
 		}
 
+		.testimonial {
+			display: grid;
 
+			min-height: 80vh;
+			align-items: center;
 
+			.testimonial-head {
+				text-align: center;
+				font-size: 3rem;
+				font-weight: 800;
 
-	}
-
-	//============END OF QUALITY SECTION===============
-
-	.service-container {
-		min-height: 90vh;
-
-		.service-container-inner {
-
-
-			&_text {
-				@media screen and (min-width: $md) {
-					display: flex;
-					justify-content: space-between;
-					align-items: center;
-				}
-
-				.service-desc {
-					font-size: 1.125rem;
-
-					@media screen and (min-width: $md) {
-						width: 60%;
-						margin-block: auto;
-					}
-				}
 			}
 		}
 
-		.service-swiper-card {
-			margin-top: 2rem;
-			flex: 1;
+		.client-reviews-wrapper {
+			width: 100%;
+			margin-top: 1rem;
 
-			.swiper-button-prev,
-			.swiper-button-next {
-				display: none;
+			@media screen and (max-width: 576px) {
+				width: 90vw;
 			}
 
-			&-items {
-				background: rgba(51, 51, 51, 0.04);
-				overflow: hidden;
-				padding-bottom: 1rem;
-				height: 700px;
-				display: grid;
-				grid-template-rows: 400px 1fr;
-
-				img {
-					width: 100%;
-					height: 100%;
-				}
-
-				.content {
-					p {
-						padding: 1.5rem 1.125rem;
-					}
-
-					.title {
-						font-size: 1rem;
-						color: $secondary;
-					}
-
-					.description {
-						font-weight: 500;
-						font-size: 0.9rem;
-						color: $secondary;
-					}
-				}
+			.swiper-pagination-clickable .swiper-pagination-bullet {
+				background: $primary;
+				width: 1rem;
+				height: 1rem;
+				border-radius: 50%;
 			}
 
-			.control-wrapper {
-				display: flex;
-				justify-content: end;
-				width: 30%;
-				margin-left: auto;
+			h2 {
+				color: $secondary;
+				font-size: 3rem;
+				font-weight: 800;
+				line-height: 4rem;
+				text-align: center;
 			}
 
-			.swiper-clicks {
-				display: flex;
-				align-items: center;
-				gap: 1rem;
+			.client-reviews-inner {
+				text-align: center;
+				margin-inline: auto;
+
 				width: 100%;
 
-				.line {
-					flex: 1;
-					height: 1px;
-					background: #adadad;
-					flex: 1;
-				}
+				.client-reviews-inner-text {
+					color: #000;
+					font-size: 1.125rem;
+					font-weight: 400;
+					line-height: 2rem;
+					margin-block: 1.8125rem 3rem;
+					font-style: italic;
 
-				.arrows {
-					display: flex;
-					gap: 1rem;
-
-					.swiper-control {
-						border: 1px solid $danger;
-						color: $danger;
-						background: #f5e5e6;
-						border-radius: 50%;
-						padding: 0.5rem 0.8rem;
-						width: 2.5rem;
-
-						&:disabled {
-							background: transparent;
-							border: 1px solid #adadad;
-							color: #adadad;
-						}
+					@media screen and (min-width: $md) {
+						width: 65%;
+						margin-inline: auto;
 					}
 				}
-			}
-		}
-	}
 
-	.testimonial {
-		display: grid;
+				.client-reviews-profile {
+					color: #000;
 
-		min-height: 80vh;
-		align-items: center;
+					img {
+						border-radius: 50%;
+					}
 
-		.testimonial-head {
-			text-align: center;
-			font-size: 3rem;
-			font-weight: 800;
+					h3 {
+						font-size: 1.5rem;
+						font-weight: 600;
+						margin-block: 1.5rem 0.5rem;
+					}
 
-		}
-	}
-
-	.client-reviews-wrapper {
-		width: 100%;
-		margin-top: 1rem;
-
-		@media screen and (max-width: 576px) {
-			width: 90vw;
-		}
-
-		.swiper-pagination-clickable .swiper-pagination-bullet {
-			background: $primary;
-			width: 1rem;
-			height: 1rem;
-			border-radius: 50%;
-		}
-
-		h2 {
-			color: $secondary;
-			font-size: 3rem;
-			font-weight: 800;
-			line-height: 4rem;
-			text-align: center;
-		}
-
-		.client-reviews-inner {
-			text-align: center;
-			margin-inline: auto;
-
-			width: 100%;
-
-			.client-reviews-inner-text {
-				color: #000;
-				font-size: 1.125rem;
-				font-weight: 400;
-				line-height: 2rem;
-				margin-block: 1.8125rem 3rem;
-				font-style: italic;
-
-				@media screen and (min-width: $md) {
-					width: 65%;
-					margin-inline: auto;
-				}
-			}
-
-			.client-reviews-profile {
-				color: #000;
-
-				img {
-					border-radius: 50%;
-				}
-
-				h3 {
-					font-size: 1.5rem;
-					font-weight: 600;
-					margin-block: 1.5rem 0.5rem;
-				}
-
-				.client-position {
-					font-size: 1.125rem;
-					font-weight: 500;
-					margin-bottom: 2.5rem;
+					.client-position {
+						font-size: 1.125rem;
+						font-weight: 500;
+						margin-bottom: 2.5rem;
+					}
 				}
 			}
 		}

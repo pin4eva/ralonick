@@ -1,3 +1,7 @@
+.container {
+	padding-inline: 0;
+}
+
 .footer {
 	width: 100%;
 	margin-block: 2rem;
@@ -27,7 +31,7 @@
 		}
 		@media screen and (min-width: 1300px) {
 			margin-top: 0.8rem;
-			width: 90%;
+			width: 100%;
 		}
 		.footer-about-logo {
 			color: #000;
@@ -40,7 +44,13 @@
 			width: 90%;
 			margin-inline: auto;
 			@media screen and (min-width: 1300px) {
-				text-align: center;
+				text-align: left;
+				margin-top: 0.7rem;
+			}
+		}
+		.btn {
+			@media screen and (min-width: 1300px) {
+				margin-top: 1.4rem;
 			}
 		}
 	}
@@ -57,11 +67,14 @@
 		}
 
 		.footer-links-title {
-			font-size: 0.875rem;
+			font-size: 1.125rem;
 			color: #000;
 		}
 		ul {
 			text-align: center;
+			@media screen and (min-width: $md) {
+				margin-top: 1.1rem;
+			}
 			li {
 				@media screen and (min-width: $mobile) {
 					margin-bottom: 1rem;
@@ -89,15 +102,18 @@
 			margin-left: 4rem;
 		}
 		@media screen and (min-width: 1300px) {
-			margin-top: 0.8rem;
+			margin-top: 0.96rem;
 		}
 
-		.footer-service-links-title {
-			font-size: 0.875rem;
+		.footer-service-link-title {
+			font-size: 1.125rem;
 			color: #000;
 		}
 		ul {
 			text-align: center;
+			@media screen and (min-width: 1300px) {
+				margin-top: 1.1rem;
+			}
 			li {
 				@media screen and (min-width: $mobile) {
 					margin-bottom: 1rem;
@@ -113,7 +129,7 @@
 		a {
 			color: $danger;
 			text-decoration: none;
-			font-size: 0.875rem;
+			font-size: 1rem;
 			font-weight: 400;
 			img {
 				margin-left: 0.5rem;
@@ -134,7 +150,7 @@
 		}
 
 		.footer-contact-title {
-			font-size: 0.875rem;
+			font-size: 1.125rem;
 			color: #000;
 		}
 		p {
@@ -153,7 +169,7 @@
 			margin-top: 0.6rem;
 		}
 		@media screen and (min-width: 1300px) {
-			margin-top: 2rem;
+			margin-top: 4rem;
 		}
 		.footer_icons {
 			display: flex;
@@ -186,7 +202,7 @@
 				margin-top: 2rem;
 			}
 			@media screen and (min-width: 1300px) {
-				margin-top: 3rem;
+				margin-top: 3.1rem;
 			}
 		}
 	}

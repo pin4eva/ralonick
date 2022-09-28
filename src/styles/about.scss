@@ -34,7 +34,7 @@
 
 	.about-description {
 		width: 100%;
-		margin-top: 2rem;
+		margin-top: 4rem;
 		@media screen and (min-width: $md) {
 			display: flex;
 			justify-content: space-between;
@@ -70,10 +70,10 @@
 	//=============END OF ABOUT DESCRIPTION===========
 
 	.transforming {
-		margin-top: 3rem;
+		margin-top: 4rem;
 
 		.transforming-inner {
-			width: 90%;
+			width: 95%;
 			margin: 0 auto;
 
 			@media screen and (min-width: $md) {
@@ -83,7 +83,7 @@
 			}
 
 			&-left {
-				width: 90%;
+				width: 100%;
 				text-align: center;
 				margin: 0 auto;
 
@@ -166,7 +166,7 @@
 	.misson-vision-container {
 		.mission-vision-container_inner {
 			display: grid;
-			margin-top: 3.9375rem;
+			margin-top: 4rem;
 			width: 100%;
 			grid-template-areas:
 				"a a a"
@@ -262,20 +262,20 @@
 	//======END OF MISSION VISION CONTAINER====
 
 	.quality-container {
+		margin-top: 4rem;
 		@media screen and (min-width: $md) {
 			display: flex;
 			justify-content: space-between;
-			margin-top: 3rem;
+			margin-top: 4rem;
 		}
 		.quality-container-image {
 			display: none;
 			@media screen and (min-width: $md) {
 				display: block;
 				width: 40%;
-				border: 1px solid green;
-				height: 800px;
-				max-height: 900px;
-				margin-top: 3.5rem;
+				// height: 800px;
+				// max-height: 900px;
+				// margin-top: 3.5rem;
 
 				img {
 					width: 100%;
@@ -285,7 +285,7 @@
 		}
 
 		.quality-container-text {
-			width: 80%;
+			width: 95%;
 			margin: 3rem auto;
 			@media screen and (min-width: $md) {
 				width: 50%;
@@ -321,7 +321,7 @@
 	}
 
 	.team-card-container {
-		margin-top: 2rem;
+		margin-top: 4rem;
 		.team-card {
 			display: grid;
 			grid-template-columns: 100%;
@@ -335,6 +335,7 @@
 			.team-card-single {
 				width: 80%;
 				margin: auto;
+
 				color: white;
 				// padding-block: 1rem;
 				@media screen and (min-width: $mobile) {
@@ -359,6 +360,11 @@
 						gap: 1rem;
 						margin: auto;
 						padding-bottom: 1rem;
+
+						i:hover {
+							color: $danger;
+							cursor: pointer;
+						}
 					}
 					h5 {
 						padding-top: 1rem;

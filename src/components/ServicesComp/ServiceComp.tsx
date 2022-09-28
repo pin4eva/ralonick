@@ -15,6 +15,7 @@ const ServiceComp: React.FC<IProp> = ({ service, open, setOpen }) => {
 			<div className="service-box container">
 				<h2 className="title-header" onClick={setOpen}>
 					{service?.title}
+					<span>{open ? <i className="fa fa-chevron-up"></i> : <i className="fa fa-chevron-down"></i>}</span>
 				</h2>
 
 				<div className={open ? "service-content" : "d-none"}>
@@ -22,8 +23,8 @@ const ServiceComp: React.FC<IProp> = ({ service, open, setOpen }) => {
 						<img src={service?.image} />
 					</div>
 					<div className="service-text">
-						<p className="subtitle">{service?.subtitle}</p>
 						<p className="description">{service?.description}</p>
+						<p className="subtitle">{service?.subtitle}</p>
 						<p className="subtext">{service?.subtext}</p>
 					</div>
 

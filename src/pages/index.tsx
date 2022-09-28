@@ -27,27 +27,10 @@ const Home = () => {
 		setTimeout(() => {
 			setIsReady(false);
 		}, 5000);
-		// if (document.readyState === "complete") {
-		// 	setIsReady(true);
-		// } else {
-		// 	window.addEventListener("load", () => {
-		// 		const images = document.getElementsByTagName("img");
-		// 		let loadedImages = 0;
-		// 		Array.from(images).forEach((img) => {
-		// 			if (img.complete && img.naturalHeight !== 0) loadedImages++;
-		// 			if (loadedImages === images.length) setIsReady(true);
-		// 		});
-		// 	});
-		// }
 	}, []);
 
 	return (
 		<>
-			{/* spinner */}
-			{/* <div className="spinner" style={{ display: isReady ? "none" : "flex" }}>
-				<ClipLoader size={70} />
-			</div> */}
-			{/* home */}
 			<div>
 				{isReady ? (
 					<div className="spinner">
@@ -64,6 +47,7 @@ const Home = () => {
 												className="hero_img1"
 												slidesPerView={1}
 												speed={1000}
+												spaceBetween={10}
 												onSlideChange={(e) => {
 													e.isBeginning ? setDisablePrev(true) : setDisablePrev(false);
 													e.isEnd ? setDisableNext(true) : setDisableNext(false);
@@ -94,22 +78,11 @@ const Home = () => {
 
 							<section className="about-section container">
 								<div className="about-section-inner">
-									<div
-										className=" about-inner-left"
-										data-aos="fade-up"
-										data-aos-duration="3000"
-										ease-in-out-quart="true"
-									>
+									<div className=" about-inner-left" data-aos="zoom-in-up" data-aos-duration="500">
 										<img className="about-img" src="/assets/about_img1.png" alt="" />
 									</div>
 
-									<div
-										className="about-inner-right"
-										data-aos-easing="ease-out-cubic"
-										data-aos="fade-down"
-										data-aos-duration="2000"
-										ease-in-out-quart="true"
-									>
+									<div className="about-inner-right" data-aos="zoom-in-up" data-aos-duration="500">
 										<div className="right-text">
 											<h1>About Us</h1>
 											<p>
@@ -247,6 +220,8 @@ const Home = () => {
 									</div>
 
 									<Swiper
+										data-aos="zoom-in-up"
+										data-aos-duration="1000"
 										className="service-swiper-card"
 										spaceBetween={40}
 										slidesPerView={2}
@@ -272,12 +247,7 @@ const Home = () => {
 									>
 										{Data.map((item, i) => {
 											return (
-												<SwiperSlide
-													key={i}
-													className="service-swiper-card-items"
-													data-aos="zoom-in-up"
-													data-aos-duration="1000"
-												>
+												<SwiperSlide key={i} className="service-swiper-card-items">
 													<img src={item.image} alt="" />
 													<div className="content">
 														<div className="title">
@@ -350,3 +320,22 @@ export const SwiperButtons: React.FC<{ disableNext: boolean; disablePrev: boolea
 		</div>
 	);
 };
+
+// if (document.readyState === "complete") {
+// 	setIsReady(true);
+// } else {
+// 	window.addEventListener("load", () => {
+// 		const images = document.getElementsByTagName("img");
+// 		let loadedImages = 0;
+// 		Array.from(images).forEach((img) => {
+// 			if (img.complete && img.naturalHeight !== 0) loadedImages++;
+// 			if (loadedImages === images.length) setIsReady(true);
+// 		});
+// 	});
+// }
+
+{
+	/* <div className="spinner" style={{ display: isReady ? "none" : "flex" }}>
+				<ClipLoader size={70} />
+			</div> */
+}

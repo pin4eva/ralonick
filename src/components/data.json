@@ -73,30 +73,30 @@
 	},
 
 	{
-		"image": "https://stshabitat.com/wp-content/uploads/sts-580x316.jpg",
+		"image": "/images/services/welding1.png",
 		"title": "WELDING HABITAT SERVICES",
 		"text": "Ralonick Service Limited provides welding habitats services in order to provide safe enclosure for welders to carry out repairs or replacement of process pipe work and equipment, removal and replacement of deck plates hands rails , walkways, vessel internal and external nozzle repairs, crane boom structural repairs and refurbishment, housing of non IS equipment, riser and caisson installation and applying specialist coatings or removing insulations which requires temperature controlled enclosures and as required in other application which requires temperature controlled enclosures and as required in other application",
 		"subtitle": "VESSELS TUBE CLEANING & INSPECTION",
 		"subtext": "Ralonick Service Limited provides cleaning and inspection services for vessel, storage tanks and heat exchangers of all sizes for the oil and gas industries and refineries.Ralonick Service Limited has developed a range of technologies and methods to safety clean tanks and vessels using personnel with adequate procedure and methods for the removal of wet or dry bulk muds, brines, sand and sludge deposits",
-		"images":["assets/b1.png", "assets/b2.png", "assets/b3.png"]
+		"images":["https://stshabitat.com/wp-content/uploads/sts-580x316.jpg", "/images/services/welding2.png", "assets/b3.png"]
 
 	},
 	{
-		"image": "https://stshabitat.com/wp-content/uploads/sts-580x316.jpg",
+		"image": "/images/services/heat.png",
 		"title": "HEAT EXCHANGE SERVICE",
-		"text": "Ralonick Service Limited is pioneer in using Bundle Pillers for insertion and extraction of heat exchanger bundles for offshore/onshore in Nigeria. To use these equipments will enhances safety and also saves time.Ralonick Service Limited is able complete, ‘blinds to blinds’ service for the cleaning of Heat exchangers (tube Bundles). We achieve this by owning all the necessary equipment for cleaning; Bundle lifters, bundles Pullers, and a wide range of high and ultra high pressure automated water jetting equipment combined with our skilled technicians and operators",
+		"text": "Ralonick Service Limited is pioneer in using Bundle Pillers for insertion and extraction of heat exchanger bundles for offshore/onshore in Nigeria. To use these equipments will enhances safety and also saves time.Ralonick Service Limited is able complete, ‘blinds to blinds’ service for the cleaning of Heat exchangers (tube Bundles). We achieve this by owning all the necessary equipment for cleaning; Bundle lifters, bundles Pullers, and a wide range of high and ultra high pressure automated water jetting equipment combined with our skilled technicians and operators. Our Heat Exchangers Services cover Tube Bundle Extractors, Tube bundle Lifters, Hydro – Jetting Services, Pad & In - Situ Tube cleaning On– Line Chemical cleaning & Decontamination, Pad & In-Situ Tube Cleaning.",
 		"subtitle": "BOILER MAINTENANCE",
-		"subtext": "Ralonick Service Limitedcommissioning and start up assistance, refurbishment and upgrade of existing boilers, retrofitting and revamping existing boilers, installation of control and safety electronic systems, burner management systems, repairs and replacement of pressure parts, delivery and installation of original square parts, quick repair, preventive maintenance contracts and training",
+		"subtext": "Ralonick Service Limitedcommissioning and start up assistance, refurbishment and upgrade of existing boilers, retrofitting and revamping existing boilers, installation of control and safety electronic systems, burner management systems, repairs and replacement of pressure parts, delivery and installation of original square parts, quick repair, preventive maintenance contracts and training. Our boiler services includes Boiler installations, 24/7 emergency service, Boiler maintenance and repairs, Burner Services, Engineering Services, Boiler operators, Training.",
 		"images":["assets/b1.png", "assets/b2.png", "assets/b3.png"]
 
 	},
 	{
-		"image": "https://stshabitat.com/wp-content/uploads/sts-580x316.jpg",
+		"image": "/images/services/corrosion.png",
 		"title": "CORROSION CONTROL SERVICES",
 		"text": "Ralonick Service Limited corrosion control service and inspection for protecting equipment and facilities corrosion thereby prolonging the useful life of the asset. Our expertise in corrosion control and industrial coating technologies has enabled us to secure painting contracts. Ralonick offers management solutions for pre-survey work, through life coatings specification, grit blasting and water blasting for surface preparation and high quality coating systems.",
 		"subtitle": "CORROSION CONTROL SERVICES COVER THE FOLLOWING",
 		"subtext": "Grit Blasting,  Hydro Blasting, Coatings, Thermal Spray Application,  Epoxy Syntactic Foam",
-		"images":["assets/b1.png", "assets/b2.png", "assets/b3.png"]
+		"images":["https://stshabitat.com/wp-content/uploads/sts-580x316.jpg", "/images/services/corrosion2.png", "assets/b3.png"]
 	}
 ]
 

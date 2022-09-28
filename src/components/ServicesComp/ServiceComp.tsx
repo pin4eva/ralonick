@@ -22,8 +22,8 @@ const ServiceComp: React.FC<IProp> = ({ service, open, setOpen }) => {
 						<img src={service?.image} />
 					</div>
 					<div className="service-text">
-						<p className="description">{service?.description}</p>
 						<p className="subtitle">{service?.subtitle}</p>
+						<p className="description">{service?.description}</p>
 						<p className="subtext">{service?.subtext}</p>
 					</div>
 

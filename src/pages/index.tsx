@@ -24,14 +24,8 @@ export function SlidePrev() {
 	const swiper = useSwiper();
 	const swiperSlide = useSwiperSlide();
 	return (
-		<i className="fa-solid fa-chevron-left" onClick={() => swiper.slidePrev() } ></i>
+		<i className="fa-solid fa-chevron-left" onClick={() => swiper.slidePrev()} ></i>
 
-	);
-}
-export function SlideCirclePrev() {
-	const swiper = useSwiper();
-	return (
-		<i className="fa-solid fa-chevron-left" onClick={() => swiper.slidePrev()}></i>
 	);
 }
 const Home = () => {
@@ -56,9 +50,6 @@ const Home = () => {
 										<SwiperSlide><img src="./images/frame9.png" alt="" /></SwiperSlide>
 										<SwiperSlide><img src="./images/frame9.png" alt="" /></SwiperSlide>
 										<SwiperSlide><img src="./images/frame9.png" alt="" /></SwiperSlide>
-										<SwiperSlide><img src="./images/frame9.png" alt="" /></SwiperSlide>
-										<SwiperSlide><img src="./images/frame9.png" alt="" /></SwiperSlide>
-										<SwiperSlide><img src="./images/frame9.png" alt="" /></SwiperSlide>
 									</div>
 									<div className="home-hero_upper-left_scroll">
 										<div className="home-hero_upper-left_scroll-line"></div>
@@ -80,11 +71,11 @@ const Home = () => {
 									</div>
 								</div>
 								<div className="home-hero_upper-right_button">
-									<Link href="/projects"><button className="btn btn hug bg-danger">See projects</button></Link>
+									<Link href="/projects"><button className="btn hug btn-danger">See projects</button></Link>
 								</div>
 							</div>
 						</div>
-						<div className="home-hero_lower">
+						{/* <div className="home-hero_lower">
 							<div className="home-hero_lower-inner">
 								<div className="home-hero_lowwer-inner-video">
 
@@ -95,7 +86,7 @@ const Home = () => {
 								</div>
 
 							</div>
-						</div>
+						</div> */}
 					</section>
 					<section className="home-first-section">
 						<div className="home-first-section-inner">
@@ -123,7 +114,7 @@ const Home = () => {
 									</div>
 								</div>
 								<div className="home-first-section_inner-right_button">
-									<Link href="/about"><button className="button hug">Learn More</button></Link>
+									<Link href="/about"><button className="btn btn-outline-danger hug">Learn More</button></Link>
 								</div>
 							</div>
 						</div>
@@ -254,7 +245,7 @@ const Home = () => {
 								<div className="home-fourth-section-inner-top-text">
 									<p>At Ralonick, we offer a wide range of services from engineering, procurement, construction, to equipment leasing for land & marine.</p>
 									<div className="home-fourth-section-inner_top_button">
-										<Link href="/services"><button className="button hug">All Services</button></Link>
+										<Link href="/services"><button className="btn btn-outline-danger hug">All Services</button></Link>
 									</div>
 								</div>
 

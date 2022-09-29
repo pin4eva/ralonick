@@ -428,7 +428,9 @@ img{
                     @media screen and (max-width:576px){
                         display: block;
                             padding: 1rem;
-                    background: #333333;
+                            backdrop-filter: blur(17px);
+                            -webkit-backdrop-filter: blur(17px);
+                    background: rgba(51, 51, 51, 0.3);
                     }
 
                     h3 {

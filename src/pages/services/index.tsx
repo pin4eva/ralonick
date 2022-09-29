@@ -1,18 +1,74 @@
 import React from "react";
-import Link from "next/link";
-
 import FrontLayout from "../../layouts/front.layout";
 import "animate.css";
 import { Navigation, Pagination, Scrollbar, A11y } from 'swiper';
-
+import { useRouter } from "next/router";
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { useSwiper } from 'swiper/react';
-// Import Swiper styles
+import { useState } from "react";
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
+
 const Services = () => {
+    const router = useRouter();
+
+    const [singleServicesDisplay, setSingleServicesDisplay] = useState(false);
+    const [singleServicesSecondDisplay, setSingleServicesSecondDisplay] = useState(false);
+    const [singleServicesThirdDisplay, setSingleServicesThirdDisplay] = useState(false);
+    const [singleServicesFourthDisplay, setSingleServicesFourthDisplay] = useState(false);
+    const [singleServicesFifthDisplay, setSingleServicesFifthDisplay] = useState(false);
+    const [singleServicesSixthDisplay, setSingleServicesSixthDisplay] = useState(false);
+    const [singleServicesSeventhDisplay, setSingleServicesSeventhDisplay] = useState(false);
+    const showSingleServicesHandler = () => {
+        setSingleServicesDisplay(true);
+    };
+    const hideSingleServicesHandler = () => {
+        setSingleServicesDisplay(false);
+    };
+    //second-display
+    const revailSingleServicesSecondHandler = () => {
+        setSingleServicesSecondDisplay(true);
+    };
+    const returnSingleServicesSecondHandler = () => {
+        setSingleServicesSecondDisplay(false);
+    };
+    //third-display
+    const revailSingleServicesThirdHandler = () => {
+        setSingleServicesThirdDisplay(true);
+    };
+    const returnSingleServicesThirdHandler = () => {
+        setSingleServicesThirdDisplay(false);
+    };
+    //fourth-display
+    const revailSingleServicesFourthHandler = () => {
+        setSingleServicesFourthDisplay(true);
+    };
+    const returnSingleServicesFourthHandler = () => {
+        setSingleServicesFourthDisplay(false);
+    };
+    //fifth-display
+    const revailSingleServicesFifthHandler = () => {
+        setSingleServicesFifthDisplay(true);
+    };
+    const returnSingleServicesFifthHandler = () => {
+        setSingleServicesFifthDisplay(false);
+    };
+    //sixth-display
+    const revailSingleServicesSixthHandler = () => {
+        setSingleServicesSixthDisplay(true);
+    };
+    const returnSingleServicesSixthHandler = () => {
+        setSingleServicesSixthDisplay(false);
+    };
+    //seventh-display
+    const revailSingleServicesSeventhHandler = () => {
+        setSingleServicesSeventhDisplay(true);
+    };
+    const returnSingleServicesSeventhHandler = () => {
+        setSingleServicesSeventhDisplay(false);
+    };
+
     return (
         <div>
 
@@ -42,12 +98,12 @@ const Services = () => {
                                     <p>At Ralonick, we offer a wide range of services from engineering, procurement, construction, to equipment leasing for land & marine.</p>
                                 </div>
                                 <div className="services-first-section_inner-inner-right">
-                                    <button className="button hug">Book Service</button>
+                                    <button className="btn btn-outline-danger hug">Book Service</button>
                                 </div>
                             </div>
                         </div>
                     </section>
-                    <section className="services-second-section">
+                    {/* <section className="services-second-section">
                         <div className="services-second-section-inner">
 
                             <div className="services-second-section-inner_card">
@@ -169,10 +225,99 @@ const Services = () => {
                             </div>
                             <div className="services-second-section-inner-button">
                                 <p>Still have a question?</p>
-                                <button className="button hug">Contact Us</button>
+                                <button className="btn btn-outline-danger hug">Contact Us</button>
+                            </div>
+                        </div>
+                    </section> */}
+                    <section className="services-second-section">
+                        <div className="services-second-section-inner">
+                            <div className="services-second-section-inner-header">
+
+                                <div className="services-second-section-inner-header-inner">
+                                    {/* First-single-services */}
+                                    <div className={"services-second-section-inner-header-inner-top"}>
+
+                                        {singleServicesDisplay ? (
+                                            <h1 onClick={hideSingleServicesHandler} className="c-pointer">{"Active & Passive Fire Proofing"}</h1>
+
+                                        ) : (
+                                            <h1 onClick={showSingleServicesHandler} className="c-pointer ">{"Active & Passive ....."}</h1>
+
+                                        )}
+                                        <div className="bars">
+                                            {singleServicesDisplay ? (
+
+                                                <i  className="fa-solid fa-arrow-right c-pointer" onClick={hideSingleServicesHandler}></i>
+                                            ) : (
+
+                                                <i className="fa-solid fa-arrow-up c-pointer" onClick={showSingleServicesHandler}></i>
+                                            )}
+                                        </div>
+
+                                    </div>
+                                    {/* Second-single-services */}
+                                    <div className={"services-second-section-inner-header-inner-top"}>
+
+                                        {singleServicesSecondDisplay ? (
+                                            <h1 onClick={returnSingleServicesSecondHandler} className="c-pointer">{"Active & Passive...."}</h1>
+
+                                        ) : (
+                                            <h1 onClick={revailSingleServicesSecondHandler} className="c-pointer">{"Active & Passive Fire Proofing"}</h1>
+
+                                        )}
+                                        <div className="bars">
+                                            {singleServicesSecondDisplay ? (
+
+                                                <i className="fa-solid fa-arrow-up c-pointer" onClick={returnSingleServicesSecondHandler}></i>
+                                            ) : (
+
+                                                <i className="fa-solid fa-arrow-right c-pointer" onClick={revailSingleServicesSecondHandler}></i>
+                                            )}
+                                        </div>
+                                    </div>
+                                    {/* Third-single-services */}
+                                    <div className="services-second-section-inner-header-inner-top">
+                                        {singleServicesThirdDisplay ? (
+                                            <h1 onClick={returnSingleServicesThirdHandler} className="c-pointer">{"Active & Passive........"}</h1>
+
+                                        ) : (
+                                            <h1 onClick={revailSingleServicesThirdHandler} className="c-pointer">{"Active & Passive Fire Proofing"}</h1>
+
+                                        )}
+                                        <div className="bars">
+                                            {singleServicesThirdDisplay ? (
+
+                                                <i className="fa-solid fa-arrow-up c-pointer" onClick={returnSingleServicesThirdHandler}></i>
+                                            ) : (
+
+                                                <i className="fa-solid fa-arrow-right c-pointer" onClick={revailSingleServicesThirdHandler}></i>
+                                            )}
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="services-second-section-inner-single-section">
+                                    <div className={`services-second-section_single-section  ${singleServicesDisplay ? "" : "show"}`}>
+                                        <div className="services-second-section_single-section-inner container">
+                                            <img src="./images/project1.png" alt="" />
+                                        </div>
+                                    </div>
+                                    <div className={`services-second-section_single-section  ${singleServicesSecondDisplay ? "show" : "hide"}`}>
+                                        <div className="services-second-section_single-section-inner container">
+                                            <img src="./images/project1.png" alt="" />
+                                        </div>
+                                    </div>
+                                    <div className={`services-second-section_single-section  ${singleServicesThirdDisplay ? "show" : "hide"}`}>
+                                        <div className="services-second-section_single-section-inner container">
+                                            <img src="./images/project1.png" alt="" />
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </section>
+
+
+
                     <section className="services-third-section">
                         <div className="services-third-section_inner-left_box">
                             <div className="services-third-section_inner-left_box_inner">
@@ -229,7 +374,7 @@ const Services = () => {
                                                 <h3>Cindy Clifford</h3>
                                                 <p>Creative Director Sobaz Oil and gas</p>
                                             </div>
-                                 
+
                                         </div>
                                     </SwiperSlide>
                                     <SwiperSlide>
@@ -244,7 +389,7 @@ const Services = () => {
                                                 <h3>Cindy Clifford</h3>
                                                 <p>Creative Director Sobaz Oil and gas</p>
                                             </div>
-                        
+
                                         </div>
                                     </SwiperSlide>
                                     <SwiperSlide>
@@ -259,7 +404,7 @@ const Services = () => {
                                                 <h3>Cindy Clifford</h3>
                                                 <p>Creative Director Sobaz Oil and gas</p>
                                             </div>
-                        
+
                                         </div>
                                     </SwiperSlide>
                                 </div>

@@ -8,7 +8,7 @@ export const navList = [
 	{ name: "Home", link: "/" },
 	{ name: "About", link: "/about" },
 	{ name: "Services", link: "/services" },
-	{ name: "Projects", link: "/projects" },
+
 ];
 
 const HeaderComp = () => {
@@ -23,7 +23,7 @@ const HeaderComp = () => {
 		setNavDisplay(false);
 	};
 	return (
-		<React.Fragment>
+		// <React.Fragment>
 			<header className="app-header">
 				<nav className="desktop-nav container ">
 					<Link href="/">
@@ -66,7 +66,7 @@ const HeaderComp = () => {
 					</div>
 				</div>
 			</header>
-		</React.Fragment>
+		
 	);
 };
 

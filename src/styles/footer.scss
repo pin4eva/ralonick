@@ -5,8 +5,7 @@
 
 	div {
 		&:nth-child(1) {
-
-
+			
 			p:nth-child(1) {
 				color: #000;
 				font-weight: 700;
@@ -88,7 +87,6 @@
 					font-weight: 400;
 					line-height: 1.21rem;
 					color: rgba(0, 0, 0, 0.5);
-					padding-right: 30%;
 				}
 
 				&:nth-child(2) {
@@ -194,8 +192,8 @@
  	// padding-inline: 4.5rem;
 	margin-block: 4.5rem 3.5rem;
 	display: grid;
-	grid-template-columns: 2fr 1fr 1fr 2fr;
-	grid-template-rows: 1fr;
+	grid-template-columns: 2fr 0.5fr 1fr 2fr;
+	grid-template-rows: none;
 	gap: 1rem;
 		&>div {
 			&:nth-child(1) {
@@ -213,7 +211,7 @@
 
 				p {
 					&:nth-child(3) {
-						padding-right: 10%;
+						text-align: center;
 					}
 				}
 			}
@@ -230,7 +228,5 @@
 				}
 			}
 		}
-
-
 	}
 }

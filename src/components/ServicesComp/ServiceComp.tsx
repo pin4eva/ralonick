@@ -1,6 +1,7 @@
 /* eslint-disable jsx-a11y/alt-text */
 /* eslint-disable @next/next/no-img-element */
-import { IService } from "pages/services";
+
+import { IService } from "interface/service.interface";
 import React, { useState } from "react";
 
 interface IProp {

@@ -50,7 +50,6 @@ const Services = () => {
 								At Ralonick, we offer a wide range of services from engineering, procurement, construction, to equipment
 								leasing for land & marine.
 							</p>
-							<button className="btn btn-danger hug">Book Service</button>
 						</div>
 
 						{Data.map((item, i) => (

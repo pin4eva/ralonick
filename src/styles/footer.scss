@@ -36,11 +36,14 @@
 		.footer-about-logo {
 			color: #000;
 			font-size: 1.3rem;
+			@media screen and (min-width: 1300px) {
+				margin-left: auto;
+			}
 		}
 
 		.footer-about-description {
 			color: rgba(0, 0, 0, 0.5);
-			font-size: 0.875rem;
+			font-size: 0.777rem;
 			width: 90%;
 			margin-inline: auto;
 			@media screen and (min-width: 1300px) {
@@ -61,13 +64,14 @@
 		grid-area: b;
 		@media screen and (min-width: $md) {
 			padding-left: 1rem;
+			text-align: left;
 		}
 		@media screen and (min-width: 1300px) {
 			margin-top: 0.9rem;
 		}
 
 		.footer-links-title {
-			font-size: 1.125rem;
+			font-size: 1rem;
 			color: #000;
 		}
 		ul {
@@ -75,13 +79,16 @@
 			@media screen and (min-width: $md) {
 				margin-top: 1.1rem;
 			}
+			@media screen and (min-width: 1300px) {
+				text-align: left;
+			}
 			li {
 				@media screen and (min-width: $mobile) {
 					margin-bottom: 1rem;
 				}
 				a {
 					font-weight: 400;
-					font-size: 1rem;
+					font-size: 0.888rem;
 					color: rgba(0, 0, 0, 0.5);
 					text-decoration: none;
 				}
@@ -103,15 +110,17 @@
 		}
 		@media screen and (min-width: 1300px) {
 			margin-top: 0.96rem;
+			text-align: left;
 		}
 
 		.footer-service-link-title {
-			font-size: 1.125rem;
+			font-size: 1rem;
 			color: #000;
 		}
 		ul {
 			text-align: center;
 			@media screen and (min-width: 1300px) {
+				text-align: left;
 				margin-top: 1.1rem;
 			}
 			li {
@@ -120,7 +129,7 @@
 				}
 				a {
 					font-weight: 400;
-					font-size: 1rem;
+					font-size: 0.888rem;
 					color: rgba(0, 0, 0, 0.5);
 					text-decoration: none;
 				}
@@ -129,7 +138,7 @@
 		a {
 			color: $danger;
 			text-decoration: none;
-			font-size: 1rem;
+			font-size: 0.888rem;
 			font-weight: 400;
 			img {
 				margin-left: 0.5rem;
@@ -147,14 +156,15 @@
 		}
 		@media screen and (min-width: $md) {
 			margin-left: 20%;
+			text-align: left;
 		}
 
 		.footer-contact-title {
-			font-size: 1.125rem;
+			font-size: 1rem;
 			color: #000;
 		}
 		p {
-			font-size: 1rem;
+			font-size: 0.888rem;
 			color: rgba(0, 0, 0, 0.5);
 			width: 100%;
 		}
@@ -165,7 +175,6 @@
 		grid-area: e;
 		margin-top: 1rem;
 		@media screen and (min-width: $md) {
-			// padding-top: 2rem;
 			margin-top: 0.6rem;
 		}
 		@media screen and (min-width: 1300px) {
@@ -177,7 +186,7 @@
 			gap: 1rem;
 			text-align: center;
 			a {
-				font-size: 1.2rem;
+				font-size: 0.888rem;
 				color: rgba(0, 0, 0, 0.5);
 				&:hover {
 					color: $danger;
@@ -202,7 +211,7 @@
 				margin-top: 2rem;
 			}
 			@media screen and (min-width: 1300px) {
-				margin-top: 3.1rem;
+				margin-top: 0.38rem;
 			}
 		}
 	}

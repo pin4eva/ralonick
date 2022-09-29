@@ -28,12 +28,6 @@
 					@media screen and (min-width: $mobile) {
 						height: 500px;
 					}
-
-					// @media screen and (max-width: 576px) {
-					// 	width: 90vw;
-					// }
-
-					//============ styling for the navigation buttons on the HERO SECCTION=============
 					.swiper-button-prev,
 					.swiper-button-next {
 						display: none;
@@ -85,6 +79,8 @@
 				}
 
 				.hero-text {
+					width: 95%;
+					margin-inline: auto;
 					h1 {
 						font-size: 48px;
 						color: $primary;
@@ -104,20 +100,6 @@
 					align-items: center;
 				}
 			}
-
-			.inner-right {
-				width: 100%;
-
-				@media screen and (min-width: $mobile) {
-					width: 60%;
-					display: flex;
-					justify-self: end;
-				}
-
-				img {
-					width: 100%;
-				}
-			}
 		}
 	}
 
@@ -134,7 +116,7 @@
 			}
 
 			.about-inner-left {
-				width: 100%;
+				width: 95%;
 				margin-inline: auto;
 
 				img {
@@ -149,9 +131,17 @@
 
 			.about-inner-right {
 				margin-top: 1rem;
+				width: 95%;
+				margin-inline: auto;
 				@media screen and (min-width: $md) {
 					width: 50%;
+					margin: 0;
 				}
+
+				@media screen and (min-width: 1200px) {
+					margin-block: auto;
+				}
+
 				.right-text {
 					p {
 						@media screen and (min-width: 1400px) {
@@ -180,6 +170,8 @@
 
 			&-left {
 				text-align: center;
+				width: 95%;
+				margin-inline: auto;
 				@media screen and (min-width: $md) {
 					width: 47%;
 				}
@@ -213,6 +205,7 @@
 					text-align: center;
 					margin-bottom: 1.5rem;
 					justify-content: center;
+					width: 100%;
 					.statistics-info {
 						padding: 2%;
 						border: 1px solid $primary;
@@ -277,7 +270,7 @@
 		}
 
 		.quality-container-text {
-			width: 100%;
+			width: 95%;
 			margin: 3rem auto;
 
 			@media screen and (min-width: $md) {
@@ -297,7 +290,6 @@
 				.text-grid {
 					border: 1px solid $secondary;
 					padding: 1.5rem 1rem 2rem 1rem;
-
 					h5 {
 						font-size: 18px;
 						font-weight: 700;
@@ -318,6 +310,10 @@
 
 	.service-container {
 		margin-top: 4rem;
+		width: 95%;
+		@media screen and (min-width: $md) {
+			width: 100%;
+		}
 		.service-container-inner {
 			&_text {
 				@media screen and (min-width: $md) {

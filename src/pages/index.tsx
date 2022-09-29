@@ -43,7 +43,8 @@ const Home = () => {
 						if (image?.complete && image?.naturalHeight != 0) loadedImages++;
 						console.log("almost ready");
 					});
-					if (loadedImages === imageLength) setIsReady(true);
+					if (loadedImages === imageLength) console.log("done");
+					setIsReady(true);
 				};
 			}
 		}
@@ -51,7 +52,7 @@ const Home = () => {
 
 	return (
 		<>
-			<div className="spinner" style={{ display: isReady ? "none" : "block" }}>
+			<div className="spinner" style={{ display: isReady ? "none" : "flex" }}>
 				<ClipLoader size={70} color="#2E3092" />
 			</div>
 
@@ -239,8 +240,6 @@ const Home = () => {
 								</div>
 
 								<Swiper
-									data-aos="zoom-in-up"
-									data-aos-duration="1000"
 									className="service-swiper-card"
 									spaceBetween={40}
 									slidesPerView={2}

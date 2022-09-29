@@ -3,16 +3,6 @@ h1 {
 	color: $secondary;
 	font-weight: 700;
 }
-.button {
-	border-radius: 0;
-	border: 1px $danger solid;
-	color: $danger;
-	&.hug {
-		padding: 1.5vw 3vw;
-		font-size: 1.125rem;
-		font-weight: 600;
-	}
-}
 
 .btn {
 	border-radius: 0;

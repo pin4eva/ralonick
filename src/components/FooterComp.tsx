@@ -55,8 +55,10 @@ const FooterComp = () => {
 				<p>Mon - Sat: 8;am-5pm</p>
 			</div>
 			<div className="footer-last-part">
+		
+				<Link href="">
 				<div className="footer_icons">
-					<a href="www.figma.com">
+				<a href="www.figma.com">
 						<i className="fa-brands fa-figma"></i>
 					</a>
 					<a href="www.figma.com">
@@ -66,6 +68,8 @@ const FooterComp = () => {
 						<i className="fa-brands fa-instagram"></i>
 					</a>
 				</div>
+					</Link>
+				
 				<p>
 					<Link href="/"><a>Still Have a Question? </a></Link>
 				</p>

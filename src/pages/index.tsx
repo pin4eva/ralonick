@@ -62,7 +62,7 @@ const Home = () => {
 							<div className="home-hero_uppper-right">
 								<div className="home-hero_upper-right_text">
 									<div className="home-hero_upper-right_text-upper">
-										<h1>Diverse & Flexible Structure</h1>
+										<h1>{"Diverse & Flexible Structure"}</h1>
 									</div>
 									<div className="home-hero_upper-rigth_text_lower">
 										<p className="fs-18 fw-500">End to end
@@ -104,7 +104,7 @@ const Home = () => {
 									<div className="home-first-section_inner-right_text_lower">
 										<p>Ralonick is a fast growing construction company rapidly spreading its frontiers across Nigeria, with sole interest in operation and maintenance of production facilities, local and foreign procurement of oil & gas materials and consultation.</p>
 										<p>
-											Our operation is based on a diverse and flexible structure. We
+										Our operation is based on a diverse and flexible structure. We
 											adopt a system of Total quality Management (TQM) at a
 											reasonable cost and within the shortest possible time, in
 											conjunction with our technical partners. We provide end to end
@@ -133,7 +133,7 @@ const Home = () => {
 									</div>
 									<div className="home-second-section_inner-left_text_lower">
 										<p>Ralonick Constructions operates within the framework of commercial and industrial activities, developing and carrying out basic and detailed services in engineering, procurement, construction, equipment leasing and marine. </p>
-										<p>We exceed our clients' trust through the timely delivery of quality, satisfactory products and services.</p>
+										<p>{"We exceed our clients' trust through the timely delivery of quality, satisfactory products and services."}</p>
 									</div>
 								</div>
 								<div className="home-second-section_inner-left_box">
@@ -228,9 +228,8 @@ const Home = () => {
 											<div className="home-third-section-inner-right_box-table_inner_text">
 												<h3>Safety</h3>
 												<p>
-													As one of our offered service we are not lacking in ensuring that our installations and technical works are properly done.
-													We have zero reservations as regards safety. Our staff are highly trained for personal & on-site safety.
-												</p>
+												{"	As one of our offered service we are not lacking in ensuring that our installations and technical works are properly done."}
+													{"We have zero reservations as regards safety. Our staff are highly trained for personal & on-site safety."}</p>
 											</div>
 										</div>
 									</div>
@@ -243,7 +242,7 @@ const Home = () => {
 							<div className="home-fourth-section-inner_top">
 								<h1>Our Services</h1>
 								<div className="home-fourth-section-inner-top-text">
-									<p>At Ralonick, we offer a wide range of services from engineering, procurement, construction, to equipment leasing for land & marine.</p>
+									<p>{"At Ralonick, we offer a wide range of services from engineering, procurement, construction, to equipment leasing for land & marine."}</p>
 									<div className="home-fourth-section-inner_top_button">
 										<Link href="/services"><button className="btn btn-outline-danger hug">All Services</button></Link>
 									</div>
@@ -269,7 +268,7 @@ const Home = () => {
 														<img src="./images/frame44.png" alt="" />
 													</div>
 													<div className="home-fourth-section-inner_card-inner_text">
-														<h3>Active & Passive Fire Proofing</h3>
+														<h3>{"Active & Passive Fire Proofing"}</h3>
 														<p>Fire Proofing is a vital component for any structure to ensure safety of lives and minimal financial loss of properties. Ralonick offers professional fire proofing services ranging from cemetitious fire proofing, to Automatic fire suppression, etc.</p>
 														<Link href={'/services/single-service'}>
 															<a>Learn More <img src="./images/vector2.png" alt="" /></a>
@@ -282,7 +281,7 @@ const Home = () => {
 													</div>
 													<div className="home-fourth-section-inner_card-inner_text">
 														<h3>Field Joint Coating Services</h3>
-														<p>This involves the coating of girth weld produce on board the pipe-laying vessels or at any offshore location. Ralonick offers engineering design & fabrication of customized field joint coating equipment which involves liquid applied materials.</p>
+														<p>{"This involves the coating of girth weld produce on board the pipe-laying vessels or at any offshore location. Ralonick offers engineering design & fabrication of customized field joint coating equipment which involves liquid applied materials."}</p>
 														<Link href={'/services/single-service'}>
 															<a>Learn More <img src="./images/vector2.png" alt="" /></a>
 														</Link>
@@ -293,7 +292,7 @@ const Home = () => {
 														<img src="./images/frame45.png" alt="" />
 													</div>
 													<div className="home-fourth-section-inner_card-inner_text">
-														<h3>Procurement & Installation of FRP/GRP</h3>
+														<h3>{"Procurement & Installation of FRP/GRP"}</h3>
 														<p>In conjunction with our foreign partners AOCOMM Composite Limited(major manufacturers of FRP and GRP Products) we secure leadership in the area of technical support, procurement and maintenance for upstream and downstream oil and gas refinery.</p>
 														<Link href={'/services/single-service'}>
 															<a>Learn More <img src="./images/vector2.png" alt="" /></a>
@@ -311,7 +310,7 @@ const Home = () => {
 														<img src="./images/frame44.png" alt="" />
 													</div>
 													<div className="home-fourth-section-inner_card-inner_text">
-														<h3>Active & Passive Fire Proofing</h3>
+														<h3>{"Active & Passive Fire Proofing"}</h3>
 														<p>Fire Proofing is a vital component for any structure to ensure safety of lives and minimal financial loss of properties. Ralonick offers professional fire proofing services ranging from cemetitious fire proofing, to Automatic fire suppression, etc.</p>
 														<Link href={'/services/single-service'}>
 															<a>Learn More <img src="./images/vector2.png" alt="" /></a>
@@ -324,7 +323,7 @@ const Home = () => {
 													</div>
 													<div className="home-fourth-section-inner_card-inner_text">
 														<h3>Field Joint Coating Services</h3>
-														<p>This involves the coating of girth weld produce on board the pipe-laying vessels or at any offshore location. Ralonick offers engineering design & fabrication of customized field joint coating equipment which involves liquid applied materials.</p>
+														<p>{"This involves the coating of girth weld produce on board the pipe-laying vessels or at any offshore location. Ralonick offers engineering design & fabrication of customized field joint coating equipment which involves liquid applied materials."}</p>
 														<Link href={'/services/single-service'}>
 															<a>Learn More <img src="./images/vector2.png" alt="" /></a>
 														</Link>
@@ -335,7 +334,7 @@ const Home = () => {
 														<img src="./images/frame45.png" alt="" />
 													</div>
 													<div className="home-fourth-section-inner_card-inner_text">
-														<h3>Procurement & Installation of FRP/GRP</h3>
+														<h3>{"Procurement & Installation of FRP/GRP"}</h3>
 														<p>In conjunction with our foreign partners AOCOMM Composite Limited(major manufacturers of FRP and GRP Products) we secure leadership in the area of technical support, procurement and maintenance for upstream and downstream oil and gas refinery.</p>
 														<Link href={'/services/single-service'}>
 															<a>Learn More <img src="./images/vector2.png" alt="" /></a>
@@ -373,7 +372,7 @@ const Home = () => {
 									<SwiperSlide>
 										<div className="home-fifth-section-inner_profile">
 											<div className="home-fifth-section-inner_profile-text-testimonial">
-												<p>I had been looking to get my shipment and maintenance done but couldn't find the right Construction Company to do so. Rolanick Construction has been exceptional at what they do, from pre-planning, procurement, constructing in itself and maintenance it has been worth it. They understood the job and they delivered! Thank you!</p>
+												<p>{"I had been looking to get my shipment and maintenance done but couldn't find the right Construction Company to do so. Rolanick Construction has been exceptional at what they do, from pre-planning, procurement, constructing in itself and maintenance it has been worth it. They understood the job and they delivered! Thank you!"}</p>
 											</div>
 											<div className="home-fifth-section-inner_profile-img">
 												<img src="./images/image.png" alt="" />
@@ -387,7 +386,7 @@ const Home = () => {
 									<SwiperSlide>
 										<div className="home-fifth-section-inner_profile">
 											<div className="home-fifth-section-inner_profile-text-testimonial">
-												<p>I had been looking to get my shipment and maintenance done but couldn't find the right Construction Company to do so. Rolanick Construction has been exceptional at what they do, from pre-planning, procurement, constructing in itself and maintenance it has been worth it. They understood the job and they delivered! Thank you!</p>
+												<p>{"I had been looking to get my shipment and maintenance done but couldn't find the right Construction Company to do so. Rolanick Construction has been exceptional at what they do, from pre-planning, procurement, constructing in itself and maintenance it has been worth it. They understood the job and they delivered! Thank you!"}</p>
 											</div>
 											<div className="home-fifth-section-inner_profile-img">
 												<img src="./images/image.png" alt="" />

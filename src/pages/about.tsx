@@ -91,7 +91,7 @@ const About = () => {
                                     </div>
                                     <div className="about-second-section_inner-left_text_lower">
                                         <p>Ralonick Constructions operates within the framework of commercial and industrial activities, developing and carrying out basic and detailed services in engineering, procurement, construction, equipment leasing and marine. </p>
-                                        <p>We exceed our clients' trust through the timely delivery of quality, satisfactory products and services.</p>
+                                        <p>{"We exceed our clients' trust through the timely delivery of quality, satisfactory products and services.</"}</p>
                                     </div>
                                 </div>
                                 <div className="about-second-section_inner-left_box">
@@ -142,12 +142,12 @@ const About = () => {
                                     </div>
                                     <div className="about-third-section_inner-upper-text-box_lower">
                                         <ul>
-                                            <li>We aim to be Nigeria’s leading company in Design,  Engineering, Procurement, Fabrication, Construction, Equipment Leasing  and Installation Services in Land & Marine.</li>
+                                            <li>{"We aim to be Nigeria’s leading company in Design,  Engineering, Procurement, Fabrication, Construction, Equipment Leasing  and Installation Services in Land & Marine."}</li>
                                             <li>Continous delivery of excellent innovative values and construction solutions to meeet our clients’  requirements.</li>
                                             <li>
                                                 Be the primary preference at all times nationally for excellence and quality in all types of construction.</li>
                                             <li>
-                                                Continually improve the competence of our team & employ innovative and result-oriented persons.</li>
+                                             {"   Continually improve the competence of our team & employ innovative and result-oriented persons."}</li>
                                         </ul>
                                     </div>
                                 </div>
@@ -160,9 +160,9 @@ const About = () => {
                                     <div className="about-third-section_inner-lower-text-box_lower">
                                         <ul>
                                             <li>To provide quality service in the fastest possible manner with minimal impact on the environment.</li>
-                                            <li>To exceed our clients' trust through the delivery of quality and exclusive world class satisfactory products & services. </li>
-                                            <li>To utilize the latest specialized equipment and experience personnel and tackle all land & marine constructions.</li>
-                                            <li>To ensure minimal safety hazards on-site for personnels through the use of suitable equipments, experts and safety equipments & measures.</li>
+                                            <li>{"To exceed our clients' trust through the delivery of quality and exclusive world class satisfactory products & services."} </li>
+                                            <li>{"To utilize the latest specialized equipment and experience personnel and tackle all land & marine constructions."}</li>
+                                            <li>{"To ensure minimal safety hazards on-site for personnels through the use of suitable equipments, experts and safety equipments & measures."}</li>
                                         </ul>
                                     </div>
                                 </div>
@@ -229,8 +229,7 @@ const About = () => {
                                             <div className="about-fourth-section-inner-right_box-table_inner_text">
                                                 <h3>Safety</h3>
                                                 <p>
-                                                    As one of our offered service we are not lacking in ensuring that our installations and technical works are properly done.
-                                                    We have zero reservations as regards safety. Our staff are highly trained for personal & on-site safety.
+                                    {"        As one of our offered service we are not lacking in ensuring that our installations and technical works are properly done. We have zero reservations as regards safety. Our staff are highly trained for personal & on-site safety."}
                                                 </p>
                                             </div>
                                         </div>

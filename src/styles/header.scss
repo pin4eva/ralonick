@@ -1,8 +1,10 @@
 .app-header {
 	position: relative;
+
 	@media screen and (max-width: $md) {
 		margin-block: 0.5rem;
 	}
+
 	a {
 		text-decoration: none;
 		color: inherit;
@@ -18,10 +20,11 @@
 		align-items: center;
 
 		.logo {
-			font-size: 1.16rem;
-			font-weight: 600;
-			color: $primary;
 			flex: 1;
+
+			img {
+				width: 10%;
+			}
 
 			@media screen and (max-width: $md) {
 				padding-block: 1vw;
@@ -41,7 +44,7 @@
 				display: flex;
 			}
 
-			.active{
+			.active {
 				border-bottom: 2px solid $primary;
 				padding-bottom: 0.6rem;
 			}
@@ -88,13 +91,13 @@
 				font-weight: 600;
 				place-content: center;
 				text-align: center;
-			transition: all 400ms ease-out;
+				transition: all 400ms ease-out;
 
-			@media screen and (min-width: $mobile){
-				margin-top: 2rem;
-				gap: 3rem;
-			}
-				
+				@media screen and (min-width: $mobile) {
+					margin-top: 2rem;
+					gap: 3rem;
+				}
+
 
 				a {
 					color: black;

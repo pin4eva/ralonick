@@ -27,7 +27,7 @@ const HeaderComp = () => {
 			<header className="app-header">
 				<nav className="desktop-nav container ">
 					<Link href="/">
-						<a className="logo">Ralonick LTD.</a>
+						<a className="logo"><img src="./images/ralonik-ld.png" alt="" /></a>
 					</Link>
 					<ul className="app-nav">
 						{navList.map((nav, i) => (

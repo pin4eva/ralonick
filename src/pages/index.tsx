@@ -3,14 +3,12 @@ import { useSwiper } from "swiper/react";
 import FrontLayout from "../layouts/front.layout";
 import Link from "next/link";
 import ClientComp from "../components/ClientComp";
-// import AOS from "aos";
-// import "aos/dist/aos.css";
 import { useEffect, useState } from "react";
 import { SwiperSlide, Swiper } from "swiper/react";
 import "swiper/css/navigation";
 import { SwiperData } from "../components/Data";
 import Data from "../components/data.json";
-import { truncateText } from "../utils/string.utils";
+import { truncateText } from "utils/string.utils";
 import ClipLoader from "react-spinners/ClipLoader";
 
 const Home = () => {
@@ -19,16 +17,6 @@ const Home = () => {
 	const [isReady, setIsReady] = useState(false);
 
 	useEffect(() => {
-		// if (typeof window !== undefined) {
-		// 	AOS.init();
-		// 	AOS.refresh();
-		// }
-
-		// setIsReady(true);
-		// setTimeout(() => {
-		// 	setIsReady(false);
-		// }, 5000);
-
 		if (document.readyState === "complete") {
 			setIsReady(true);
 			console.log("this is ready");
@@ -272,7 +260,8 @@ const Home = () => {
 														<p className=" fw-600">{item.title}</p>
 													</div>
 													<div className="description">
-														<p>{truncateText(item.text, 20)}...</p>
+														{/* <p>{truncateText(item.text, 20)}....</p> */}
+														{/* <p>{item.text.split(" ").splice(0, 32).join(" ")}....</p> */}
 													</div>
 												</div>
 											</SwiperSlide>

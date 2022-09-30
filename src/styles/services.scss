@@ -3,6 +3,12 @@
 }
 
 .service {
+	width: 95%;
+	margin-inline: auto;
+	@media screen and (min-width: $md) {
+		width: 100%;
+	}
+
 	&-hero-section {
 		margin-top: 2rem;
 		display: grid;

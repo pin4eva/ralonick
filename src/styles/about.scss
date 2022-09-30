@@ -1,8 +1,11 @@
 .about-page {
 	.about-hero-section {
+		width: 95%;
+		margin-inline: auto;
 		@media screen and (min-width: $md) {
 			display: flex;
 			gap: 2rem;
+			width: 100%;
 		}
 
 		.hero-image {
@@ -33,11 +36,13 @@
 	//===========END OF ABOUT HERO==========
 
 	.about-description {
-		width: 100%;
+		width: 95%;
 		margin-top: 4rem;
+		margin-inline: auto;
 		@media screen and (min-width: $md) {
 			display: flex;
 			justify-content: space-between;
+			width: 100%;
 		}
 		&-text {
 			width: 100%;
@@ -167,7 +172,8 @@
 		.mission-vision-container_inner {
 			display: grid;
 			margin-top: 4rem;
-			width: 100%;
+			width: 95%;
+			margin-inline: auto;
 			grid-template-areas:
 				"a a a"
 				"b b b"
@@ -273,9 +279,6 @@
 			@media screen and (min-width: $md) {
 				display: block;
 				width: 40%;
-				// height: 800px;
-				// max-height: 900px;
-				// margin-top: 3.5rem;
 
 				img {
 					width: 100%;
@@ -322,6 +325,11 @@
 
 	.team-card-container {
 		margin-top: 4rem;
+		width: 95%;
+		h1 {
+			width: 95%;
+			margin-inline: auto;
+		}
 		.team-card {
 			display: grid;
 			grid-template-columns: 100%;
@@ -335,9 +343,6 @@
 			.team-card-single {
 				width: 80%;
 				margin: auto;
-
-				color: white;
-				// padding-block: 1rem;
 				@media screen and (min-width: $mobile) {
 					width: 30%;
 					text-align: center;

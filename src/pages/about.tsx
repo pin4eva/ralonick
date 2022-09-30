@@ -1,6 +1,5 @@
 import React from "react";
 import FrontLayout from "../layouts/front.layout";
-import ClientComp from "../components/ClientComp";
 import Link from "next/link";
 
 const AboutPage = () => {

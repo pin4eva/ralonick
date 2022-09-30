@@ -208,7 +208,7 @@ const Home = () => {
 										<p>
 											As one of our offered service we are not lacking in ensuring that our installations and technical
 											works are properly done. We have zero reservations as regards safety. Our staff are highly trained
-											for personal & on-site safety.{" "}
+											for personal & on-site safety.
 										</p>
 									</div>
 								</div>
@@ -260,8 +260,7 @@ const Home = () => {
 														<p className=" fw-600">{item.title}</p>
 													</div>
 													<div className="description">
-														{/* <p>{truncateText(item.text, 20)}....</p> */}
-														{/* <p>{item.text.split(" ").splice(0, 32).join(" ")}....</p> */}
+														<p>{truncateText(item.description, 20)}....</p>
 													</div>
 												</div>
 											</SwiperSlide>
@@ -326,22 +325,3 @@ export const SwiperButtons: React.FC<{ disableNext: boolean; disablePrev: boolea
 		</div>
 	);
 };
-
-// if (document.readyState === "complete") {
-// 	setIsReady(true);
-// } else {
-// 	window.addEventListener("load", () => {
-// 		const images = document.getElementsByTagName("img");
-// 		let loadedImages = 0;
-// 		Array.from(images).forEach((img) => {
-// 			if (img.complete && img.naturalHeight !== 0) loadedImages++;
-// 			if (loadedImages === images.length) setIsReady(true);
-// 		});
-// 	});
-// }
-
-{
-	/* <div className="spinner" style={{ display: isReady ? "none" : "flex" }}>
-				<ClipLoader size={70} />
-			</div> */
-}

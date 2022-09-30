@@ -9,8 +9,10 @@ import "aos/dist/aos.css";
 
 function MyApp({ Component, pageProps }: AppProps) {
 	useEffect(() => {
-		AOS.init();
-		AOS.refresh();
+		if (typeof window !== undefined) {
+			AOS.init();
+			AOS.refresh();
+		}
 	}, []);
 	return (
 		<Fragment>

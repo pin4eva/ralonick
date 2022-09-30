@@ -7,7 +7,7 @@ import ClientComp from "components/ClientComp";
 import Data from "components/data.json";
 import ServiceComp from "components/ServicesComp/ServiceComp";
 import FrontLayout from "layouts/front.layout";
-import { createSlug, truncateText } from "utils/string.utils";
+import { createSlug } from "utils/string.utils";
 import { IService } from "interface/service.interface";
 
 export const services: IService[] = Data.map((service, i) => ({

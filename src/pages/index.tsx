@@ -10,6 +10,8 @@ import { SwiperData } from "../components/Data";
 import Data from "../components/data.json";
 import { truncateText } from "utils/string.utils";
 import ClipLoader from "react-spinners/ClipLoader";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const Home = () => {
 	const [disableNext, setDisableNext] = useState(false);
@@ -24,15 +26,18 @@ const Home = () => {
 			if (typeof window !== undefined) {
 				window.onload = (event) => {
 					const images = document?.images;
-					const imageLength = images.length;
-					let loadedImages = 0;
-					console.log(images);
-					Array.from(images).forEach((image) => {
-						if (image?.complete && image?.naturalHeight != 0) loadedImages++;
-						console.log("almost ready");
-					});
-					if (loadedImages === imageLength) console.log("done");
+					// const imageLength = images.length;
+					// let loadedImages = 0;
+					console.log(images[1]);
+					// Array.from(images).forEach((image) => {
+					// 	if (image?.complete && image?.naturalHeight != 0) loadedImages++;
+					// 	console.log("almost ready");
+					// });
+					if (images[1].naturalHeight != 0) console.log("done");
 					setIsReady(true);
+
+					AOS.init();
+					AOS.refresh();
 				};
 			}
 		}

@@ -1,5 +1,3 @@
-// /* eslint-disable @next/next/no-img-element */
-import React from "react";
 // import { useRouter } from "next/router";
 // import { useEffect, useState } from "react";
 // import { IService, services } from ".";
@@ -102,3 +100,11 @@ import React from "react";
 // };
 
 // export default Singleservice;
+
+import React from "react";
+
+const SingleService = () => {
+	return <div>SingleService</div>;
+};
+
+export default SingleService;

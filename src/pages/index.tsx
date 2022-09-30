@@ -26,7 +26,7 @@ const Home = () => {
 					const images = document?.images;
 					const imageLength = images.length;
 					let loadedImages = 0;
-					console.log(imageLength);
+					console.log(images);
 					Array.from(images).forEach((image) => {
 						if (image?.complete && image?.naturalHeight != 0) loadedImages++;
 						console.log("almost ready");

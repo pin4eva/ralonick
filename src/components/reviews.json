@@ -1,0 +1,25 @@
+[
+    {
+        "id": 1,
+        "heading": "Clients Reviews",
+        "text": "I had been looking to get my shipment and maintenance done but could not find the right Construction Company to do so. Rolanick Construction has been exceptional at what they do, from pre-planning, procurement, constructing in itself and maintenance it has been worth it. They understood the job and they delivered! Thank you!",
+        "pic": "/assets/clientPic.png",
+        "name": "Cindy Clifford",
+        "rank": "Creative Director Sobaz Oil and gas"
+    },
+    {
+        "id": 2,
+        "heading": "Clients Reviews",
+        "text": "I had been looking to get my shipment and maintenance done but could not find the right Construction Company to do so. Rolanick Construction has been exceptional at what they do, from pre-planning, procurement, constructing in itself and maintenance it has been worth it. They understood the job and they delivered! Thank you!",
+        "pic": "/assets/clientPic.png",
+        "name": "Cindy Clifford",
+        "rank": "Creative Director Sobaz Oil and gas"
+    },
+    {
+        "heading": "Clients Reviews",
+        "text": "I had been looking to get my shipment and maintenance done but could not find the right Construction Company to do so. Rolanick Construction has been exceptional at what they do, from pre-planning, procurement, constructing in itself and maintenance it has been worth it. They understood the job and they delivered! Thank you!",
+        "pic": "/assets/clientPic.png",
+        "name": "Cindy Clifford",
+        "rank": "Creative Director Sobaz Oil and gas"
+    }
+]

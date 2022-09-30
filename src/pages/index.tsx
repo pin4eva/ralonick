@@ -2,6 +2,27 @@
 import React from "react";
 import FrontLayout from "../layouts/front.layout";
 import Link from "next/link";
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
+import { Pagination, Autoplay, Navigation, Scrollbar, A11y } from "swiper";
+import "swiper/css/pagination";
+import "swiper/css/autoplay";
+import Reviews from "../components/reviews.json";
+import { useSwiper } from "swiper/react";
+import "swiper/css/navigation";
+import "swiper/css/scrollbar";
+
+export function SlideNext() {
+	const swiper = useSwiper();
+
+	return <i className="fa-solid fa-circle-chevron-left fa-2x" onClick={() => swiper.slideNext()}></i>;
+}
+
+export function SlidePrev() {
+	const swiper = useSwiper();
+
+	return <i className="fa-solid fa-circle-chevron-right fa-2x" onClick={() => swiper.slidePrev()}></i>;
+}
 
 const HomePage = () => {
 	return (
@@ -12,11 +33,26 @@ const HomePage = () => {
 						<div className="inner-content">
 							<div className="inner-left">
 								<div className="inner-left-image">
-									<img src="assets/hero_img1.png" alt="" />
-								</div>
-								<div className="inner-left-arrow_img">
-									<img src="/assets/keyboardArrowLeft.png" alt="" />
-									<img src="/assets/keyboardArrowRight.png" alt="" />
+									<Swiper
+										modules={[Navigation, Pagination, Scrollbar, A11y]}
+										spaceBetween={0}
+										slidesPerView={1}
+										onSwiper={(swiper) => console.log(swiper)}
+										onSlideChange={() => console.log("slide change")}
+									>
+										<SwiperSlide>
+											<img src="assets/hero_img1.png" alt="" />
+										</SwiperSlide>
+										<SwiperSlide>
+											<img src="assets/hero_img1.png" alt="" />
+										</SwiperSlide>
+
+										<div className="inner-left-arrow_img">
+											<div className="swiper-line"></div>
+											<SlideNext />
+											<SlidePrev />
+										</div>
+									</Swiper>
 								</div>
 							</div>
 							<div className="hero-text">
@@ -26,14 +62,6 @@ const HomePage = () => {
 									(GRE), (GRP) and Vinylester Pipe system and products.
 								</p>
 								<button className="btn btn-danger">See Projects</button>
-							</div>
-						</div>
-						<div className="inner-right">
-							<div className="inner-right-image">
-								<img src="/assets/hero_img2.png" alt="" />
-							</div>
-							<div className="inner-right-video-desc">
-								<img src="/assets/Frame 10.png" alt="" />
 							</div>
 						</div>
 					</div>
@@ -178,7 +206,7 @@ const HomePage = () => {
 									<div className="service-link-text">
 										<Link href="/">
 											<a>
-											Learn More <img src="/assets/learnMoreArrow.png" alt="" />
+												Learn More <img src="/assets/learnMoreArrow.png" alt="" />
 											</a>
 										</Link>
 									</div>
@@ -191,12 +219,14 @@ const HomePage = () => {
 								<div className="service-grid-info">
 									<h5>Field Joint Coating Services</h5>
 									<p>
-									This involves the coating of girth weld produce on board the pipe-laying vessels or at any offshore location. Ralonick offers engineering design & fabrication of customized field joint coating equipment which involves liquid applied materials.
+										This involves the coating of girth weld produce on board the pipe-laying vessels or at any offshore
+										location. Ralonick offers engineering design & fabrication of customized field joint coating
+										equipment which involves liquid applied materials.
 									</p>
 									<div className="service-link-text">
 										<Link href="/">
 											<a>
-											Learn More <img src="/assets/learnMoreArrow.png" alt="" />
+												Learn More <img src="/assets/learnMoreArrow.png" alt="" />
 											</a>
 										</Link>
 									</div>
@@ -209,12 +239,14 @@ const HomePage = () => {
 								<div className="service-grid-info">
 									<h5>Procurement & Installation of FRP/GRP</h5>
 									<p>
-									In conjunction with our foreign partners AOCOMM Composite Limited(major manufacturers of FRP and GRP Products) we secure leadership in the area of technical support, procurement and maintenance for upstream and downstream oil and gas refinery.
+										In conjunction with our foreign partners AOCOMM Composite Limited(major manufacturers of FRP and GRP
+										Products) we secure leadership in the area of technical support, procurement and maintenance for
+										upstream and downstream oil and gas refinery.
 									</p>
 									<div className="service-link-text">
 										<Link href="/">
 											<a>
-											Learn More <img src="/assets/learnMoreArrow.png" alt="" />
+												Learn More <img src="/assets/learnMoreArrow.png" alt="" />
 											</a>
 										</Link>
 									</div>
@@ -225,29 +257,37 @@ const HomePage = () => {
 				</section>
 
 				<section className="home-section-6">
-					<h2>Clients Reviews</h2>
-					<div className="section6-text">
-						I had been looking to get my shipment and maintenance done but could not find the right Construction Company
-						to do so. Rolanick Construction has been exceptional at what they do, from pre-planning, procurement,
-						constructing in itself and maintenance it has been worth it. They understood the job and they delivered!
-						Thank you!
-					</div>
-					<div className="profile">
-						<div className="profile-image">
-							<img src="/assets/clientPic.png" alt="" />
-						</div>
-						<div className="profile-text">
-							<h5>Cindy Clifford</h5>
-							<p>Creative Director Sobaz Oil and gas</p>
-							<img src="/assets/reviewslider2.png" alt="" />
-						</div>
-					</div>
+					<Swiper
+						modules={[Pagination, Autoplay]}
+						spaceBetween={50}
+						slidesPerView={1}
+						autoplay={true}
+						pagination={{ clickable: true }}
+					>
+						{Reviews.map((single) => {
+							return (
+								<SwiperSlide key={single.id} className="client-info">
+									<h2>{single.heading}</h2>
+									<p>{single.text}</p>
+									<div className="profile">
+										<div className="profile-image">
+											<img src={single.pic} alt="" />
+										</div>
+										<div className="profile-text">
+											<h4>{single.name}</h4>
+											<h5>{single.rank}</h5>
+										</div>
+									</div>
+								</SwiperSlide>
+							);
+						})}
+					</Swiper>
 				</section>
 
 				<section className="home-section-7">
 					<div className="section7-inner">
 						<div className="section7-inner-sub">
-							<img src="/assets/projects1.png" alt="" className="large-img" />
+							<img src="/assets/projects1.png" alt="" className="big-img" />
 							<div className="section7-inner-sub_text">
 								<p className="text-heading">Project Name</p>
 								<p className="inner-text-body">
@@ -262,7 +302,7 @@ const HomePage = () => {
 							</div>
 						</div>
 						<div className="section7-inner-sub sub-2">
-							<img src="/assets/projects2.png" alt="" className="large-img" />
+							<img src="/assets/projects2.png" alt="" className="big-img" />
 							<div className="section7-inner-sub_text sub-2_text">
 								<p className="text-heading">Project Name</p>
 								<p className="inner-text-body">
@@ -279,7 +319,7 @@ const HomePage = () => {
 							</div>
 						</div>
 						<div className="section7-inner-sub">
-							<img src="/assets/projects3.png" alt="" className="large-img" />
+							<img src="/assets/projects3.png" alt="" className="big-img" />
 							<div className="section7-inner-sub_text">
 								<p className="text-heading">Project Name</p>
 								<p className="inner-text-body">
@@ -295,10 +335,8 @@ const HomePage = () => {
 								</Link>
 							</div>
 						</div>
-						<div className="last-part">
-							<div className="section7-inner-btn">
-								<button className="button hug">Contact Us</button>
-							</div>
+						<div className="section7-inner-btn">
+							<button className="button hug">Contact Us</button>
 						</div>
 					</div>
 				</section>

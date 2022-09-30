@@ -3,27 +3,43 @@
 		padding: 2rem 0;
 		.inner {
 			.inner-content {
-				display: grid;
-				gap: 1rem;
 				@media screen and (min-width: $md) {
-					grid-template-columns: 0.3fr 0.5fr;
+					// grid-template-columns: 0.3fr 0.5fr;
+					display: flex;
+					gap: 1rem;
 				}
 				.inner-left {
+					width: 100%;
+					@media screen and (min-width: $md) {
+						width: 25%;
+					}
 					&-image {
-						img {
 							width: 100%;
+							img {
+								width: 100%;
+							}
+						
+						
+						.inner-left-arrow_img {
+							.swiper-line {
+								background-color: $secondary;
+								width: 90%;
+								height: 0.05rem;
+								margin-top: 0.6rem;
+							}
+							display: flex;
+							justify-content: flex-end;
+							gap: 1rem;
+							padding-top: 1.2rem;
 						}
 					}
-					&-arrow_img {
-						display: flex;
-						justify-content: flex-end;
-						gap: 1.5rem;
-						padding-top: 1.2rem;
-					}
+				
 				}
 				.hero-text {
 					@media screen and (min-width: $md) {
 						padding-top: 4rem;
+						width: 50%;
+
 					}
 					h2 {
 						color: $primary;
@@ -44,30 +60,6 @@
 					.btn {
 						padding: 1vw 3vw;
 						font-weight: 600;
-					}
-				}
-			}
-			.inner-right {
-				position: relative;
-				@media screen and (min-width: $md) {
-					width: 100%;
-					height: 50%;
-					display: flex;
-					justify-content: flex-end;
-					bottom: 90px;
-				}
-
-				&-image {
-					img {
-						width: 100%;
-					}
-				}
-				&-video-desc {
-					position: absolute;
-					left: 1rem;
-					top: 18rem;
-					@media screen and (min-width: $md) {
-						left: 18.7rem;
 					}
 				}
 			}
@@ -347,47 +339,49 @@
 	.home-section-6 {
 		text-align: center;
 		margin: 4rem 3rem;
-		padding: 3rem 0;
+		// padding: 3rem 0;
 
-		h2 {
-			font-family: "Raleway";
-			font-style: normal;
-			font-weight: 800;
-			font-size: 3rem;
-			line-height: 4rem;
-			color: $secondary;
-		}
-		.section6-text {
-			font-family: "Raleway";
-			font-style: italic;
-			font-weight: 400;
-			font-size: 1.12rem;
-			line-height: 2rem;
-			margin-top: 2rem;
-		}
-		.profile {
-			padding-top: 2.5rem;
-
-			&-image {
-				padding-bottom: 1.5rem;
-				img {
-					border-radius: 50%;
-				}
+		.client-info {
+			h2 {
+				font-family: "Raleway";
+				font-style: normal;
+				font-weight: 800;
+				font-size: 3rem;
+				line-height: 4rem;
+				color: $secondary;
 			}
-			&-text {
-				h5 {
-					font-family: "Raleway";
-					font-style: normal;
-					font-weight: 600;
-					font-size: 1.5rem;
-					color: #000000;
+			p {
+				font-family: "Raleway";
+				font-style: italic;
+				font-weight: 400;
+				font-size: 1.12rem;
+				line-height: 2rem;
+				margin-top: 2rem;
+			}
+			.profile {
+				padding-top: 2.5rem;
+
+				&-image {
+					padding-bottom: 1.5rem;
+					img {
+						border-radius: 50%;
+					}
 				}
-				p {
-					font-family: "Raleway";
-					font-style: normal;
-					font-weight: 500;
-					font-size: 1.12rem;
-					color: #000000;
+				&-text {
+					h4 {
+						font-family: "Raleway";
+						font-style: normal;
+						font-weight: 600;
+						font-size: 1.5rem;
+						color: #000000;
+					}
+					h5 {
+						font-family: "Raleway";
+						font-style: normal;
+						font-weight: 500;
+						font-size: 1.12rem;
+						color: #000000;
+					}
 				}
 			}
 		}
@@ -400,19 +394,11 @@
 			background: rgba(51, 51, 51, 0.02);
 			padding: 2rem 0;
 
-			h2 {
-				color: $secondary;
-				font-size: 2.8rem;
-				font-weight: 800;
-				line-height: 4rem;
-				text-align: center;
-			}
-
 			&-sub {
 				position: relative;
 				height: 260px;
 
-				.large-img {
+				.big-img {
 					width: 100%;
 					height: 100%;
 					object-fit: cover;
@@ -453,7 +439,6 @@
 							font-size: 10px;
 							font-weight: 400;
 							line-height: 1.125rem;
-							// margin-block: 0.5rem 0.625rem;
 						}
 					}
 
@@ -473,7 +458,7 @@
 				}
 
 				&.sub-2 {
-					.large-img {
+					.big-img {
 						margin-left: 0;
 					}
 
@@ -489,7 +474,6 @@
 
 			&-btn {
 				text-align: center;
-				// margin-top: 3rem;
 
 				button {
 					background-color: white;

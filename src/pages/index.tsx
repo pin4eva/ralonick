@@ -47,9 +47,9 @@ const Home = () => {
 									onSwiper={(swiper) => console.log(swiper)}
 									onSlideChange={() => console.log('slide change')}>
 									<div className="home-hero_uppeer-left_image">
-										<SwiperSlide><img src="./images/frame9.png" alt="" /></SwiperSlide>
-										<SwiperSlide><img src="./images/frame9.png" alt="" /></SwiperSlide>
-										<SwiperSlide><img src="./images/frame9.png" alt="" /></SwiperSlide>
+										<SwiperSlide><img src="./images/homehero.png" alt="" /></SwiperSlide>
+										<SwiperSlide><img src="./images/homehero.png" alt="" /></SwiperSlide>
+										<SwiperSlide><img src="./images/homehero.png" alt="" /></SwiperSlide>
 									</div>
 									<div className="home-hero_upper-left_scroll">
 										<div className="home-hero_upper-left_scroll-line"></div>

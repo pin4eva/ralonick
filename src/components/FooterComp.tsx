@@ -11,19 +11,19 @@ const FooterComp = () => {
 					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dolor, ultrices aliquam, quis nunc erat. Amet nullam
 					elementum eget nec.
 				</p>
-				<button className="btn btn-outline-danger hug">About Ralonik</button>
+				<Link href="/about"><button className="btn btn-outline-danger hug">About Ralonik</button></Link>
 			</div>
 			<div className="footer-second-part">
 				<p>Company</p>
 				<ul>
 					<li>
-						<Link href="/"><a>About</a></Link>
+						<Link href="/about"><a>About</a></Link>
 					</li>
-					<li>
+					{/* <li>
 						<Link href="/"><a>Projects </a></Link>
-					</li>
+					</li> */}
 					<li>
-						<Link href="/"><a>Services</a></Link>
+						<Link href="/services"><a>Services</a></Link>
 					</li>
 				</ul>
 			</div>
@@ -40,7 +40,7 @@ const FooterComp = () => {
 						<Link href="/"><a>Constructing</a></Link>
 					</li>
 				</ul>
-				<Link href="/">
+				<Link href="/services">
 					<a className="footer_arrowlink">
 						See all Services
 						<img src="/assets/footerArrow.png" alt="" />
@@ -48,30 +48,32 @@ const FooterComp = () => {
 				</Link>
 			</div>
 			<div className="footer-fourth-part">
-				<p>Contact</p>
-				<p>+234 9012 624 162</p>
-				<p>4517 Washington Ave. Manchester, Kentucky 3949</p>
-				<p>Charlesclifford43@gmail.com</p>
+				<div>Contact</div>
+				<h6>+234 9012 624 162</h6>
+				<p>Plot 102, Km 5 East-West Road,</p>
+					<p>Rumuodara, Port Harcourt,</p>
+					<p>Rivers State, Nigeria.</p>
+			<a href="mailto:info@ralonik.com"><h6>info@ralonik.com</h6></a>
 				<p>Mon - Sat: 8;am-5pm</p>
 			</div>
 			<div className="footer-last-part">
-		
+
 				<Link href="">
-				<div className="footer_icons">
-				<a href="www.figma.com">
-						<i className="fa-brands fa-figma"></i>
-					</a>
-					<a href="www.figma.com">
-						<i className="fa-brands fa-twitter"></i>
-					</a>
-					<a href="www.figma.com">
-						<i className="fa-brands fa-instagram"></i>
-					</a>
-				</div>
-					</Link>
-				
+					<div className="footer_icons">
+						<a href="www.figma.com">
+							<i className="fa-brands fa-figma"></i>
+						</a>
+						<a href="www.figma.com">
+							<i className="fa-brands fa-twitter"></i>
+						</a>
+						<a href="www.figma.com">
+							<i className="fa-brands fa-instagram"></i>
+						</a>
+					</div>
+				</Link>
+
 				<p>
-					<Link href="/"><a>Still Have a Question? </a></Link>
+					<Link href="/contact"><a>Still Have a Question? </a></Link>
 				</p>
 				<button className="btn hug btn-danger">Send a Message</button>
 			</div>

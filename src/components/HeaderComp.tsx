@@ -26,9 +26,12 @@ const HeaderComp = () => {
 		// <React.Fragment>
 			<header className="app-header">
 				<nav className="desktop-nav container ">
+					<div className="logo">
 					<Link href="/">
-						<a className="logo"><img src="./images/ralonik-ld.png" alt="" /></a>
+						<a ><img src="./images/ralonik-ld.png" alt="" /></a>
 					</Link>
+					</div>
+				
 					<ul className="app-nav">
 						{navList.map((nav, i) => (
 							<li key={i}>

@@ -167,7 +167,7 @@ const About = () => {
                                     </div>
                                 </div>
                                 <div className="about-third-section_inner-lower-image">
-                                    <img src="./images/frame8.png" alt="" />
+                                    <img src="./images/frame89.png" alt="" />
                                 </div>
 
                             </div>

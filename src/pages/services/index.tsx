@@ -560,7 +560,7 @@ const Services = () => {
                                     <div className={`services-second-section_single-section  ${singleServicesDisplay ? "" : "show"}`}>
                                         <div className="services-second-section_single-section-inner ">
                                             <div className="services-second-section_single-section-inner-image upper">
-                                                <img src="./images/project1.png" alt="" />
+                                                <img src="./images/field1.png" alt="" />
                                             </div>
                                             <div className="services-second-section_single-section-inner-text">
                                                 <div className="services-second-section_single-section-inner-text_header">
@@ -976,7 +976,7 @@ const Services = () => {
                                                 <p>{"I had been looking to get my shipment and maintenance done but couldn't find the right Construction Company to do so. Rolanick Construction has been exceptional at what they do, from pre-planning, procurement, constructing in itself and maintenance it has been worth it. They understood the job and they delivered! Thank you!"}</p>
                                             </div>
                                             <div className="services-fourth-section-inner_profile-img">
-                                                <img src="./images/image.png" alt="" />
+                                                <img src="./images/profileimage.png" alt="" />
                                             </div>
                                             <div className="services-fourth-section-inner_profile-text-info">
                                                 <h3>Cindy Clifford</h3>
@@ -991,7 +991,7 @@ const Services = () => {
                                                 <p>{"I had been looking to get my shipment and maintenance done but couldn't find the right Construction Company to do so. Rolanick Construction has been exceptional at what they do, from pre-planning, procurement, constructing in itself and maintenance it has been worth it. They understood the job and they delivered! Thank you!"}</p>
                                             </div>
                                             <div className="services-fourth-section-inner_profile-img">
-                                                <img src="./images/image.png" alt="" />
+                                                <img src="./images/profileimage.png" alt="" />
                                             </div>
                                             <div className="services-fourth-section-inner_profile-text-info">
                                                 <h3>Cindy Clifford</h3>
@@ -1006,7 +1006,7 @@ const Services = () => {
                                                 <p>{"I had been looking to get my shipment and maintenance done but couldn't find the right Construction Company to do so. Rolanick Construction has been exceptional at what they do, from pre-planning, procurement, constructing in itself and maintenance it has been worth it. They understood the job and they delivered! Thank you!"}</p>
                                             </div>
                                             <div className="services-fourth-section-inner_profile-img">
-                                                <img src="./images/image.png" alt="" />
+                                                <img src="./images/profileimage.png" alt="" />
                                             </div>
                                             <div className="services-fourth-section-inner_profile-text-info">
                                                 <h3>Cindy Clifford</h3>

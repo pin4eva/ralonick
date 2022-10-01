@@ -92,7 +92,7 @@ const Home = () => {
 						<div className="home-first-section-inner">
 							<div className="home-first-section_inner-left">
 								<div className="home-first-section_inner-left_image">
-									<img src="./images/twohelmet.png" alt="" />
+									<img src="./images/hometwohelmet.png" alt="" />
 								</div>
 							</div>
 							<div className="home-first-section-inner-right">
@@ -160,13 +160,13 @@ const Home = () => {
 							<div className="home-second-section-inner_right">
 								<div className="home-second-section_inner_right-inner">
 									<div className="home-second-section_inner-right-inner-one">
-										<img src="./images/rectangle1.png" alt="" />
+										<img src="./images/frame1.png" alt="" />
 									</div>
 									<div className="home-second-section_inner-right-inner-two">
-										<img src="./images/rectangle2.png" alt="" />
+										<img src="./images/frame2.png" alt="" />
 									</div>
 									<div className="home-second-section_inner-right-inner-third">
-										<img src="./images/rectangle3.png" alt="" />
+										<img src="./images/frame3.png" alt="" />
 									</div>
 								</div>
 							</div>
@@ -176,7 +176,7 @@ const Home = () => {
 						<div className="home-third-section_inner">
 							<div className="home-third-section_inner_left">
 								<div className="home-third-section_inner_left-image">
-									<img src="./images/rectangle4.png" alt="" />
+									<img src="./images/frame4.png" alt="" />
 								</div>
 							</div>
 							<div className="home-third-section-inner-right">
@@ -188,7 +188,7 @@ const Home = () => {
 
 										<div className="home-third-section-inner-right_box-table-inner one">
 											<div className="home-third-section-inner-right-box-table-inner_img">
-												<img src="./images/badge.png" alt="" />
+												<img src="./images/badgeicon.png" alt="" />
 											</div>
 											<div className="home-third-section-inner-right_box-table_inner_text">
 												<h3>Quality</h3>
@@ -199,7 +199,7 @@ const Home = () => {
 										</div>
 										<div className="home-third-section-inner-right_box-table-inner two">
 											<div className="home-third-section-inner-right-box-table-inner_img">
-												<img src="./images/union.png" alt="" />
+												<img src="./images/unionicon.png" alt="" />
 											</div>
 											<div className="home-third-section-inner-right_box-table_inner_text">
 												<h3>Integrity</h3>
@@ -211,7 +211,7 @@ const Home = () => {
 										</div>
 										<div className="home-third-section-inner-right_box-table-inner third">
 											<div className="home-third-section-inner-right-box-table-inner_img">
-												<img src="./images/bag.png" alt="" />
+												<img src="./images/bagicon.png" alt="" />
 											</div>
 											<div className="home-third-section-inner-right_box-table_inner_text">
 												<h3>Professionalism</h3>
@@ -223,7 +223,7 @@ const Home = () => {
 										</div>
 										<div className="home-third-section-inner-right_box-table-inner fourth">
 											<div className="home-third-section-inner-right-box-table-inner_img">
-												<img src="./images/helmet.png" alt="" />
+												<img src="./images/helmeticon.png" alt="" />
 											</div>
 											<div className="home-third-section-inner-right_box-table_inner_text">
 												<h3>Safety</h3>
@@ -265,37 +265,37 @@ const Home = () => {
 											<div className="home-fourth-section-inner_card-inner">
 												<div className="home-fourth-section_inner-card-inner one">
 													<div className="home-fourth-section-inner_card-inner_image">
-														<img src="./images/frame44.png" alt="" />
+														<img src="./images/frame5.png" alt="" />
 													</div>
 													<div className="home-fourth-section-inner_card-inner_text">
 														<h3>{"Active & Passive Fire Proofing"}</h3>
 														<p>Fire Proofing is a vital component for any structure to ensure safety of lives and minimal financial loss of properties. Ralonick offers professional fire proofing services ranging from cemetitious fire proofing, to Automatic fire suppression, etc.</p>
 														<Link href={'/services/single-service'}>
-															<a>Learn More <img src="./images/vector2.png" alt="" /></a>
+														<a>Learn More<i className="fa-solid fa-arrow-right"></i></a>
 														</Link>
 													</div>
 												</div>
 												<div className="home-fourth-section_inner-card-inner one">
 													<div className="home-fourth-section-inner_card-inner_image">
-														<img src="./images/frame46.png" alt="" />
+														<img src="./images/frame7.png" alt="" />
 													</div>
 													<div className="home-fourth-section-inner_card-inner_text">
 														<h3>Field Joint Coating Services</h3>
 														<p>{"This involves the coating of girth weld produce on board the pipe-laying vessels or at any offshore location. Ralonick offers engineering design & fabrication of customized field joint coating equipment which involves liquid applied materials."}</p>
 														<Link href={'/services/single-service'}>
-															<a>Learn More <img src="./images/vector2.png" alt="" /></a>
+														<a>Learn More<i className="fa-solid fa-arrow-right"></i></a>
 														</Link>
 													</div>
 												</div>
 												<div className="home-fourth-section_inner-card-inner one">
 													<div className="home-fourth-section-inner_card-inner_image">
-														<img src="./images/frame45.png" alt="" />
+														<img src="./images/frame6.png" alt="" />
 													</div>
 													<div className="home-fourth-section-inner_card-inner_text">
 														<h3>{"Procurement & Installation of FRP/GRP"}</h3>
 														<p>In conjunction with our foreign partners AOCOMM Composite Limited(major manufacturers of FRP and GRP Products) we secure leadership in the area of technical support, procurement and maintenance for upstream and downstream oil and gas refinery.</p>
 														<Link href={'/services/single-service'}>
-															<a>Learn More <img src="./images/vector2.png" alt="" /></a>
+														<a>Learn More<i className="fa-solid fa-arrow-up-right"></i></a>
 														</Link>
 													</div>
 												</div>
@@ -307,7 +307,7 @@ const Home = () => {
 											<div className="home-fourth-section-inner_card-inner">
 												<div className="home-fourth-section_inner-card-inner one">
 													<div className="home-fourth-section-inner_card-inner_image">
-														<img src="./images/frame44.png" alt="" />
+														<img src="./images/frame5.png" alt="" />
 													</div>
 													<div className="home-fourth-section-inner_card-inner_text">
 														<h3>{"Active & Passive Fire Proofing"}</h3>
@@ -319,7 +319,7 @@ const Home = () => {
 												</div>
 												<div className="home-fourth-section_inner-card-inner one">
 													<div className="home-fourth-section-inner_card-inner_image">
-														<img src="./images/frame46.png" alt="" />
+														<img src="./images/frame7.png" alt="" />
 													</div>
 													<div className="home-fourth-section-inner_card-inner_text">
 														<h3>Field Joint Coating Services</h3>
@@ -331,7 +331,7 @@ const Home = () => {
 												</div>
 												<div className="home-fourth-section_inner-card-inner one">
 													<div className="home-fourth-section-inner_card-inner_image">
-														<img src="./images/frame45.png" alt="" />
+														<img src="./images/frame6.png" alt="" />
 													</div>
 													<div className="home-fourth-section-inner_card-inner_text">
 														<h3>{"Procurement & Installation of FRP/GRP"}</h3>
@@ -375,7 +375,7 @@ const Home = () => {
 												<p>{"I had been looking to get my shipment and maintenance done but couldn't find the right Construction Company to do so. Rolanick Construction has been exceptional at what they do, from pre-planning, procurement, constructing in itself and maintenance it has been worth it. They understood the job and they delivered! Thank you!"}</p>
 											</div>
 											<div className="home-fifth-section-inner_profile-img">
-												<img src="./images/image.png" alt="" />
+												<img src="./images/profileimage.png" alt="" />
 											</div>
 											<div className="home-fifth-section-inner_profile-text-info">
 												<h3>Cindy Clifford</h3>
@@ -389,7 +389,7 @@ const Home = () => {
 												<p>{"I had been looking to get my shipment and maintenance done but couldn't find the right Construction Company to do so. Rolanick Construction has been exceptional at what they do, from pre-planning, procurement, constructing in itself and maintenance it has been worth it. They understood the job and they delivered! Thank you!"}</p>
 											</div>
 											<div className="home-fifth-section-inner_profile-img">
-												<img src="./images/image.png" alt="" />
+												<img src="./images/profileimage.png" alt="" />
 											</div>
 											<div className="home-fifth-section-inner_profile-text-info">
 												<h3>Cindy Clifford</h3>

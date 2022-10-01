@@ -72,7 +72,7 @@ const About = () => {
                             </div>
                             <div className="about-first-section_inner-right">
                                 <div className="about-first-section_inner-right_image">
-                                    <img src="./images/twohelmet.png" alt="" />
+                                    <img src="./images/hometwohelmet.png" alt="" />
                                 </div>
                             </div>
                         </div>
@@ -118,13 +118,13 @@ const About = () => {
                             <div className="about-second-section-inner_right">
                                 <div className="about-second-section_inner_right-inner">
                                     <div className="about-second-section_inner-right-inner-one">
-                                        <img src="./images/rectangle1.png" alt="" />
+                                        <img src="./images/frame1.png" alt="" />
                                     </div>
                                     <div className="about-second-section_inner-right-inner-two">
-                                        <img src="./images/rectangle2.png" alt="" />
+                                        <img src="./images/frame2.png" alt="" />
                                     </div>
                                     <div className="about-second-section_inner-right-inner-third">
-                                        <img src="./images/rectangle3.png" alt="" />
+                                        <img src="./images/frame3.png" alt="" />
                                     </div>
                                 </div>
                             </div>
@@ -134,7 +134,7 @@ const About = () => {
                         <div className="about-third-section_inner">
                             <div className="about-third-section_inner-inner">
                                 <div className="about-third-section_inner-upper-image">
-                                    <img src="./images/frame89.png" alt="" />
+                                    <img src="./images/frame9.png" alt="" />
                                 </div>
                                 <div className="about-third-section_inner-text-box">
                                     <div className="about-third-section_inner-upper-text-box_upper">
@@ -167,7 +167,7 @@ const About = () => {
                                     </div>
                                 </div>
                                 <div className="about-third-section_inner-lower-image">
-                                    <img src="./images/frame78.png" alt="" />
+                                    <img src="./images/frame8.png" alt="" />
                                 </div>
 
                             </div>
@@ -177,7 +177,7 @@ const About = () => {
                         <div className="about-fourth-section_inner">
                             <div className="about-fourth-section_inner_left">
                                 <div className="about-fourth-section_inner_left-image">
-                                    <img src="./images/rectangle4.png" alt="" />
+                                    <img src="./images/frame4.png" alt="" />
                                 </div>
                             </div>
                             <div className="about-fourth-section-inner-right">
@@ -189,7 +189,7 @@ const About = () => {
 
                                         <div className="about-fourth-section-inner-right_box-table-inner one">
                                             <div className="about-fourth-section-inner-right-box-table-inner_img">
-                                                <img src="./images/badge.png" alt="" />
+                                                <img src="./images/badgeicon.png" alt="" />
                                             </div>
                                             <div className="about-fourth-section-inner-right_box-table_inner_text">
                                                 <h3>Quality</h3>
@@ -200,7 +200,7 @@ const About = () => {
                                         </div>
                                         <div className="about-fourth-section-inner-right_box-table-inner two">
                                             <div className="about-fourth-section-inner-right-box-table-inner_img">
-                                                <img src="./images/union.png" alt="" />
+                                                <img src="./images/unionicon.png" alt="" />
                                             </div>
                                             <div className="about-fourth-section-inner-right_box-table_inner_text">
                                                 <h3>Integrity</h3>
@@ -212,7 +212,7 @@ const About = () => {
                                         </div>
                                         <div className="about-fourth-section-inner-right_box-table-inner third">
                                             <div className="about-fourth-section-inner-right-box-table-inner_img">
-                                                <img src="./images/bag.png" alt="" />
+                                                <img src="./images/bagicon.png" alt="" />
                                             </div>
                                             <div className="about-fourth-section-inner-right_box-table_inner_text">
                                                 <h3>Professionalism</h3>
@@ -224,7 +224,7 @@ const About = () => {
                                         </div>
                                         <div className="about-fourth-section-inner-right_box-table-inner fourth">
                                             <div className="about-fourth-section-inner-right-box-table-inner_img">
-                                                <img src="./images/helmet.png" alt="" />
+                                                <img src="./images/helmeticon.png" alt="" />
                                             </div>
                                             <div className="about-fourth-section-inner-right_box-table_inner_text">
                                                 <h3>Safety</h3>
@@ -257,7 +257,7 @@ const About = () => {
                                         <div className="about-last-section_inner-profile-inner">
                                     <div className="about-last-section_inner-profile-inner-one">
                                         <div className="about-last-section_inner-profile-inner_image">
-                                            <img src="./images/portrait1.png" alt="" />
+                                            <img src="./images/team1.png" alt="" />
                                         </div>
                                         <div className="about-last-section_inner-profile-inner_info">
                                             <h3>Joy Julius</h3>
@@ -270,7 +270,7 @@ const About = () => {
                                     </div>
                                     <div className="about-last-section_inner-profile-inner-two">
                                         <div className="about-last-section_inner-profile-inner_image">
-                                            <img src="./images/portrait2.png" alt="" />
+                                            <img src="./images/team2.png" alt="" />
                                         </div>
                                         <div className="about-last-section_inner-profile-inner_info">
                                             <h3>Joy Julius</h3>
@@ -283,7 +283,7 @@ const About = () => {
                                     </div>
                                     <div className="about-last-section_inner-profile-inner-third">
                                         <div className="about-last-section_inner-profile-inner_image">
-                                            <img src="./images/portrait3.png" alt="" />
+                                            <img src="./images/team3.png" alt="" />
                                         </div>
                                         <div className="about-last-section_inner-profile-inner_info">
                                             <h3>Joy Julius</h3>
@@ -300,7 +300,7 @@ const About = () => {
                                         <div className="about-last-section_inner-profile-inner">
                                     <div className="about-last-section_inner-profile-inner-one">
                                         <div className="about-last-section_inner-profile-inner_image">
-                                            <img src="./images/portrait1.png" alt="" />
+                                            <img src="./images/team1.png" alt="" />
                                         </div>
                                         <div className="about-last-section_inner-profile-inner_info">
                                             <h3>Joy Julius</h3>
@@ -313,7 +313,7 @@ const About = () => {
                                     </div>
                                     <div className="about-last-section_inner-profile-inner-two">
                                         <div className="about-last-section_inner-profile-inner_image">
-                                            <img src="./images/portrait2.png" alt="" />
+                                            <img src="./images/team2.png" alt="" />
                                         </div>
                                         <div className="about-last-section_inner-profile-inner_info">
                                             <h3>Joy Julius</h3>
@@ -326,7 +326,7 @@ const About = () => {
                                     </div>
                                     <div className="about-last-section_inner-profile-inner-third">
                                         <div className="about-last-section_inner-profile-inner_image">
-                                            <img src="./images/portrait3.png" alt="" />
+                                            <img src="./images/team3.png" alt="" />
                                         </div>
                                         <div className="about-last-section_inner-profile-inner_info">
                                             <h3>Joy Julius</h3>

@@ -1,6 +1,9 @@
 .services {
     margin-block: 1rem;
-
+&.dark{
+    background-color: black;
+    color: white;
+}
     .services-hero {
         margin-bottom: 5%;
         flex-direction: column-reverse;
@@ -211,7 +214,7 @@
 
                                 h1 {
                                     color: black;
-                                    
+
                                 }
                             }
 
@@ -256,6 +259,17 @@
                         font-weight: 600;
                         font-size: 18px;
                     }
+                    h2{
+                        list-style-type: none;
+                        font-weight: 600;
+                        font-size: 18px;
+                    }
+                    ul {
+                        li {
+                            font-weight: 500;
+                            font-size: 16px;
+                           }
+                    }
                 }
 
                 img {
@@ -265,6 +279,7 @@
                 &.show {
                     display: block;
                 }
+
 
                 .services-second-section_single-section-inner-image {
                     &.lower {

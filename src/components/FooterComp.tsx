@@ -6,7 +6,7 @@ const FooterComp = () => {
 	return (
 		<footer className="footer container" >
 			<div className="footer-first-part">
-				<p>RALONICK LTD.</p>
+			<img src="./images/ralonik-ld.png" alt="" />
 				<p>
 					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dolor, ultrices aliquam, quis nunc erat. Amet nullam
 					elementum eget nec.
@@ -51,9 +51,9 @@ const FooterComp = () => {
 				<div>Contact</div>
 				<h6>+234 9012 624 162</h6>
 				<p>Plot 102, Km 5 East-West Road,</p>
-					<p>Rumuodara, Port Harcourt,</p>
-					<p>Rivers State, Nigeria.</p>
-			<a href="mailto:info@ralonik.com"><h6>info@ralonik.com</h6></a>
+				<p>Rumuodara, Port Harcourt,</p>
+				<p>Rivers State, Nigeria.</p>
+				<a href="mailto:info@ralonik.com"><h6>info@ralonik.com</h6></a>
 				<p>Mon - Sat: 8;am-5pm</p>
 			</div>
 			<div className="footer-last-part">

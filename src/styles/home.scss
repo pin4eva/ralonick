@@ -1,7 +1,8 @@
 .home-page {
     margin-block: 1rem;
+
     .home-hero {
-        margin-bottom: 5%;
+        margin-bottom: 10%;
 
         .home-hero_upper {
 
@@ -27,13 +28,12 @@
                     img {
                         width: 200vh;
                         align-items: center;
-                        @media screen and (min-width:567px){
-                            
-                        }
+
+                        @media screen and (min-width:567px) {}
                     }
                 }
 
-             .home-hero_upper-left_scroll {
+                .home-hero_upper-left_scroll {
                     @media screen and (min-width:768px) {
                         margin: 1rem 0rem 0rem -4rem;
                         gap: 0.5rem;
@@ -134,7 +134,7 @@
     }
 
     .home-first-section {
-        margin-bottom: 5%;
+        margin-bottom: 10%;
         // border: 1px solid;
 
         .home-first-section-inner {
@@ -184,7 +184,7 @@
     }
 
     .home-second-section {
-        margin-bottom: 5%;
+        margin-bottom: 10%;
 
         .home-second-section_inner {
             @media screen and (min-width:992px) {
@@ -273,11 +273,11 @@
     }
 
     .home-third-section {
-        margin-bottom: 20%;
+        margin-bottom: 10%;
 
-        @media screen and (min-width:992px) {
-            height: 150vh;
-        }
+        // @media screen and (min-width:992px) {
+        //     height: 150vh;
+        // }
 
         .home-third-section_inner {
             @media screen and (min-width:1200px) {
@@ -329,7 +329,7 @@
                         border: 1px grey solid;
                         padding: 1rem;
 
-                   
+
 
                         .home-third-section-inner-right-box-table-inner_img {
                             margin-bottom: 1rem;
@@ -353,11 +353,12 @@
 
 
     .home-fourth-section {
-        margin-bottom: 5%;
+        margin-bottom: 15%;
 
         .home-fourth-section-inner {
             .home-fourth-section-inner_top {
                 margin-bottom: 1rem;
+
                 h1 {
                     font-weight: 800;
                     font-size: 48px;
@@ -406,48 +407,49 @@
                         background: rgba(51, 51, 51, 0.04);
                         -webkit-backdrop-filter:blur(34px);
                         backdrop-filter: blur(34px);
-                    
+
                     }
                 }
+
                 .home-hero_upper-left_scroll {
                     @media screen and (min-width:992px) {
                         margin: 1rem -4rem 0rem 0rem;
                         display: flex;
                     }
-    
+
                     display: none;
                     width: 100%;
                     margin-top: 1rem;
                     gap: 0.5rem;
                     flex-direction: row-reverse;
                     align-items: center;
-    
+
                     .home-hero_upper-left_scroll-line {
                         border: 1px solid #ADADAD;
                         width: 100vw;
-    
-    
+
+
                         @media screen and (min-width:992px) {
                             width: 30%;
                         }
                     }
-    
+
                     i {
                         font-size: 1rem;
                         border: 0.8px solid #A00107;
                         gap: 2rem;
                         border-radius: 4rem;
                         padding: 0.8rem 1rem;
-    
+
                         @media screen and (min-width:768px) {
                             padding: 0.4rem 0.6rem;
                         }
-    
+
                         &.fa-chevron-right {
                             color: $danger;
                             background: rgba(160, 1, 7, 0.1);
                         }
-    
+
                         &.fa-chevron-left {
                             color: grey;
                             border: 0.8px solid grey;
@@ -456,25 +458,25 @@
                 }
             }
 
-  
+
         }
     }
 
     .home-fifth-section {
-        margin-bottom: 5%;
+        margin: 5% 0% 5% 0%;
 
         .home-fifth-section-inner {
             text-align: center;
 
             .home-fifth-section-inner_text {
-                height: 20vh;
+                margin-bottom: 5%;
             }
 
             .home-fifth-section-inner_profile {
                 margin-bottom: 5%;
 
                 .home-fifth-section-inner_profile-text-testimonial {
-                    height: 30vh;
+                    margin: 0% 12.5% 3% 12.5%;
 
                     p {
                         font-weight: 400;

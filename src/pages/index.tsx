@@ -19,6 +19,9 @@ const Home = () => {
 	const [isReady, setIsReady] = useState(false);
 
 	useEffect(() => {
+		AOS.init();
+		AOS.refresh();
+
 		if (document.readyState === "complete") {
 			setIsReady(true);
 			console.log("this is ready");
@@ -26,18 +29,9 @@ const Home = () => {
 			if (typeof window !== undefined) {
 				window.onload = (event) => {
 					const images = document?.images;
-					// const imageLength = images.length;
-					// let loadedImages = 0;
 					console.log(images[1]);
-					// Array.from(images).forEach((image) => {
-					// 	if (image?.complete && image?.naturalHeight != 0) loadedImages++;
-					// 	console.log("almost ready");
-					// });
 					if (images[1].naturalHeight != 0) console.log("done");
 					setIsReady(true);
-
-					AOS.init();
-					AOS.refresh();
 				};
 			}
 		}

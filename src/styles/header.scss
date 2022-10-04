@@ -1,30 +1,106 @@
 .app-header {
-  position: relative;
+	position: relative;
+	width: 100%;
 
-  .nav-brand {
-    font-weight: 700;
-    text-decoration: none;
+	.container {
+		padding-inline: 0;
+	}
+	@media screen and (max-width: $md) {
+		margin-block: 0.5rem;
+	}
 
-  }
+	a {
+		text-decoration: none;
+		color: inherit;
+	}
 
-  .nav {
-    // display: none;
+	.btn {
+		padding: 1vw 3vw;
+		font-weight: 600;
+	}
 
-    // @media screen and (min-width:768px) {
-    //   display: flex;
-    // }
+	.desktop-nav {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
 
-    &-link {
-      font-weight: 600;
-      color: black;
-    }
-  }
+		.logo {
+			@media screen and (max-width: $md) {
+				padding-block: 1vw;
+			}
+		}
 
-  .mobile-nav {
-    background-color: red;
-    position: absolute;
-    top: 0;
-    width: 100%;
-    min-height: 30vh;
-  }
+		.app-nav {
+			list-style: none;
+			margin: 0;
+			padding: 0;
+			display: none;
+			align-items: center;
+			gap: 1.5rem;
+			font-weight: 600;
+
+			@media screen and (min-width: $md) {
+				display: flex;
+			}
+
+			.active {
+				border-bottom: 2px solid $primary;
+				padding-bottom: 0.6rem;
+			}
+		}
+
+		.bars {
+			margin-right: 0.8rem;
+			@media screen and (min-width: $md) {
+				display: none;
+			}
+		}
+	}
+
+	.mobile-nav {
+		position: absolute;
+		background-color: $gray;
+		z-index: 2;
+		right: 0;
+		left: 0;
+		min-height: 60vh;
+		display: none;
+
+		&.show {
+			display: block;
+
+			@media screen and (min-width: $md) {
+				display: none;
+			}
+		}
+
+		.inner {
+			display: flex;
+			flex-direction: column;
+			font-size: 16px;
+			height: 45vh;
+			justify-content: center;
+
+			ul {
+				list-style: none;
+				margin: 0;
+				padding: 0;
+				align-items: center;
+				display: grid;
+				gap: 4rem;
+				font-weight: 600;
+				place-content: center;
+				text-align: center;
+
+				@media screen and (min-width: $mobile) {
+					margin-top: 10px;
+					gap: 3rem;
+				}
+
+				a {
+					color: black;
+				}
+			}
+		}
+	}
 }

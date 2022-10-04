@@ -1,0 +1,136 @@
+.single-service-wrapper {
+	.single-service-hero {
+		.single-service-hero-image {
+			width: 100%;
+			margin-top: 2rem;
+			height: 400px;
+			img {
+				width: 100%;
+				height: 100%;
+			}
+		}
+	}
+
+	.single-service-description {
+		.single-service-description_inner {
+			margin: 2rem auto;
+			.title {
+				text-align: center;
+			}
+			.single-service-description_item {
+				width: 80%;
+				text-align: center;
+				margin-inline: auto;
+				@media screen and (min-width: $mobile) {
+					margin: 1.5rem auto;
+				}
+				.description-text {
+					font-weight: 500;
+					font-size: 1.125rem;
+					margin-top: 1rem;
+				}
+
+				.description-subitle {
+					font-weight: 600;
+					font-size: 1.5rem;
+					margin-top: 1.5rem;
+				}
+			}
+
+			.single-service-image_wrapper {
+				width: 100%;
+				display: grid;
+				grid-template-columns: 80%;
+				gap: 1rem;
+				justify-content: center;
+				@media screen and (min-width: $md) {
+					grid-template-columns: 40% 40%;
+				}
+
+				.grid-image {
+					width: 100%;
+					height: 100%;
+					img {
+						border-radius: 15px;
+						width: 100%;
+						height: 100%;
+					}
+				}
+			}
+
+			.order-button {
+				text-align: center;
+				margin-top: 4rem;
+			}
+		}
+	}
+
+	.statistics {
+		display: flex;
+		justify-content: center;
+		width: 90%;
+		height: 30%;
+		margin: 3rem auto;
+		@media screen and (min-width: $md) {
+			margin-top: 4rem;
+		}
+
+		.statistics-info {
+			padding: 2%;
+			border: 1px solid $primary;
+			height: 100%;
+		}
+		.border-none {
+			border-left: none;
+			border-right: none;
+		}
+
+		.primary-bold {
+			font-size: 3rem;
+			font-weight: 600;
+			color: $primary;
+			display: flex;
+			justify-content: center;
+		}
+
+		.primary-light {
+			font-size: 1rem;
+			font-weight: 500;
+			color: $secondary;
+		}
+	}
+
+	.quality-wrapper {
+		margin-top: 4rem;
+		.quality-wrapper-title {
+			text-align: center;
+		}
+		.quality-statistics {
+			display: flex;
+			justify-content: center;
+			width: 100%;
+			height: 20%;
+			margin: 2rem auto;
+
+			.quality-statistics-info {
+				padding: 4%;
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				border: 1px solid $secondary;
+				max-height: 100%;
+
+				.icons {
+					font-size: 3rem;
+					font-weight: 600;
+					padding-inline: auto;
+					margin-inline: auto;
+				}
+			}
+			.border-none {
+				border-left: none;
+				border-right: none;
+			}
+		}
+	}
+}

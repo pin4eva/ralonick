@@ -1,0 +1,107 @@
+[
+	{
+		"image": "/images/services/fireproofing.png",
+		"title": "PASSIVE AND ACTIVE FIRE PROOFING",
+		"description": "Ralonick Services Limited is a professional fire proofing company, offering customer a one stop shop for all their fire proofing needs be it passive or active fire proofing. Passive fire proofing is a vital component of a strategy into the structure of building to safeguard peoples life and limit financial impact of damage to building and their content.",
+		"subtitle": "MIRERAL FIBRE FIRE PROOFING",
+		"subtext": "This a fibrous material that is mixed with water and adhesive applied to structural steel,roof decks and often wet joist.The water is mixed with the fibre at the spring gun.The material is blown into surface.",
+		"images": [
+			"https://5.imimg.com/data5/SELLER/Default/2020/10/QD/HO/RH/8079914/corrosion-control-services-500x500.jpg",
+			"https://cdn.shawcor.com/hg/medialibraries/shawcor/corporate/banners/subpage-integritymgmtsolutions-integrityengineeringservices-corrosioncontrolservices-banner-mobile.jpg?ext=.jpg",
+			"https://www.fallonsglobal.com/image/corro1.jpg"
+		]
+	},
+	{
+		"image": "/images/services/feild1.png",
+		"title": "FIELD JOINT COATING SERVICES",
+		"description": "This involves the coating of girth weld produce on board the pipe-laying vessels or at any offshore location. Ralonick offers engineering design & fabrication of customized field joint coating equipment which involves liquid applied materials.",
+		"subtitle": "",
+		"subtext": "We specialised in typical field joint coating that includes liquid applied materials such as exoxies, Urethanes epoxy/urethanes heat shrinkable sleeves or sometimes fusion bonded epoxy among other materials. Field joint coating services involves the coating of girth weld produce on board the pipe-laying vessels or at any offshore location. Ralonick Services carries out the engineering design and fabrication of customized field joint coating equipment.",
+		"images": [
+			"http://www.materialsperformance.com/uploads/images/2018/07/ThinkstockPhotos-498337716.jpg",
+			"https://d8fzg2skuayt4.cloudfront.net/media/articles/pop/218106.jpg",
+			"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTeI5AEAa2Q-bDB9ufz1RvoWXz0CobeRwjdNKfDoOdGnROcc6Yu5RHpfk4XCUgj264TEUQ&usqp=CAU"
+		]
+	},
+	{
+		"image": "http://ehimatieglobal.com/images/services/service-glassfibre-reinforced.jpg",
+		"title": "GLASSFIBER REINFORCED EPOXY PIPE SYSTEM",
+		"description": "Ralonick Service Limited offer solutions for Glass reinforced Epoxy pipes(GRP & FRP) in the upstream, downstream of the Oil and gas,refinery, Petrochemical, power plant and other industries. We procure, fabricate and install glass reinforcement epoxy pipes as per Flow and Crude oil line, Scrubber lines, Drinking water lines, Sanitary & wastes lines, inert gas and condensate lines, Fire fighting lines, Chemical and injection lines",
+		"subtitle": "HIGH DENSITY POLYTHENE PIPE (HDPE)",
+		"subtext": "Ralonick Service Limited offer solutions for High Density Polythene Pipe (HDPE) in the upstream, downstream of the Oil and gas, refinery, Petrochemical, power plant and other industries. We procure, fabricate and install glass reinforcement epoxy pipes as per Portable water, Underground fire water line and Drain line",
+		"images": ["/images/services/glassfiber2.png", "https://static.wixstatic.com/media/4fd11b_a995d3292d7a48c6835d39f1fe634219~mv2.jpg/v1/fill/w_560,h_316,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/4fd11b_a995d3292d7a48c6835d39f1fe634219~mv2.jpg", "https://www.cppiping.com/wp-content/uploads/2020/01/frp-piping-grp-pipes-gre-cpp-1080x605.png"]
+	},
+	{
+		"image": "/images/services/polyprop1.png",
+		"title": "POLYPROPYLENE RANDOM PIPES (PPR)",
+		"description": "Ralonick Service Limited Polypropylene (PP- R) Pipes for the offshore and onshore of the oil and gas, food and beverage processing heating & cooling, potable water, compressed air, fire protection, gray water and other industrial applications.",
+		"subtitle": "",
+		"subtext": "Our PP-R PipeServices cover the following Applications Potable water, HVAC, Fire Protection, Heating & Cooling, Refrigeration, Compressed Air, Chemical Transport",
+		"images": ["http://mcgrawimages.buildingmedia.com/CE/CE_images/2015/Mar_Aquatherm-1.jpg", "https://i0.wp.com/fluidtermsa.co.za/fluid-term-wp/wp-content/uploads/2017/09/DSCF1676-1024x768.jpg?fit=1024%2C768&ssl=1", "http://mcgrawimages.buildingmedia.com/CE/CE_images/2015/Mar_Aquatherm-15.jpg"]
+	},
+	{
+		"image": "/images/services/procurement2.png",
+		"title": "PROCUREMENT AND INSTALLATION OF FRP/GRP PRODUCTS",
+		"description": "Ralonick Service Limited provides procurement& installation of FRP/GRP product.We services, supply and installs all kinds of FRP/GRP products for upstream and downstream oil & gas refinery petrochemical and other industrial application.",
+		"subtitle": "",
+		"subtext": "Our partnership with our foreign partner AOCOMM Composite Limited a major manufacturers of FRP and GRP products, we secure leadership in the area of Technical support, Engineering, Procurement and Maintenance services. Our Products span across  FRP Handrails, Walkways & Grating, FRP MobilToilet & Office Cabins, Bio-Digester Tank, FRP Swimming pools, etc.",
+		"images": ["/images/services/procurement1.png", "/images/services/procurement3.png", "/images/services/procurement4.png"]
+	},
+	{
+		"image": "/images/services/steel2.png",
+		"title": "STEEL STRUCTURES AND PIPES FABRICATION & INSTALLATION",
+		"description": "Ralonick Service Limited provides Steel structures and pipes fabrication & installation with expertise in construction capabilities and project management Ralonick delivers solutions by providing competent personnel that has the knowledge in all kinds of fabrication and installation works.",
+		"subtitle": "PIPING AND STRUCTURAL FABRICATION SERVICES",
+		"subtext": "Pipe spool fabrication, Fabrication of boat landing & repairs, Structural Pipe Support, Steel Shelter Platform Fabrication, Pig Launcher fabrication, Structural Skid fabrication, Security cage",
+		"images": ["/images/services/steel1.png", "https://upload.wikimedia.org/wikipedia/commons/9/9b/FANUC_6-axis_welding_robots.jpg", "https://www.stevensec.com/hubfs/Pipe-Fabrication/steel-pipe-fabrication-in-geo-city-geo-state.jpg"]
+	},
+	{
+		"image": "https://media-exp1.licdn.com/dms/image/C4D12AQHrMuveWUWxwg/article-cover_image-shrink_600_2000/0/1584799834221?e=2147483647&v=beta&t=xIw3p9RkYq0nf6YZFNdwdAnAQFhZxkr_kDx7TjAa1xY",
+		"title": "PIPELINE CONSTRUCTION & REPAIR",
+		"description": "Ralonick Service Limited provides Steel structures and pipes fabrication & installation with expertise in construction capabilitie an project managemen Ralonick delivers solutions by providing values for our customers through: Improved HSE achievement Increased efficiency and production Reduced operational costs Ralonick Service Limited undertakes complete pipeline construction, replacement and repairs",
+		"subtitle": "FLANGE MANAGEMENT AND TORQUING SERVICES",
+		"subtext": "Ralonick Service Limited provides flange management and touring services to the oil & gas processing industry. We are able to select and use the correct flange, valves, gaskets & bolt using our procedures and method for the management of client facility. We have experienced technicians and touring equipment for project delivery. Our flange & Torquing Services Included: Joint Data Management, Manual Bolt Torquing, Hydraulic Bolt Tensioning",
+		"images": ["https://thumbs.dreamstime.com/b/natural-gas-pipeline-construction-work-dug-trench-ground-installation-installation-industrial-gas-natural-170031901.jpg", "https://fedoz.net/assets/images/158229-582x327-582x327.png", "https://obmac.com.ng/images/resource/Pipeline_Construction_Services_Obmac_Services_3060.jpg"]
+	},
+	{
+		"image": "https://gemstone-ge.com/wp-content/uploads/insulation-serv.jpg",
+		"title": "INSULATION SERVICES",
+		"description": "Ralonick Service Limited Offer a complete range of advanced insulation solutions for the oil and gas and food and beverages industries. Our products range covers various insulation requirements for piping and equipment systems, and insulation of subsea systems. Or uproducts range meets demanding NORSOK requirement and suited for tough environmental conditions",
+		"subtitle": "SCAFFOLDING SERVICES",
+		"subtext": "Ralonick Service Limited provides specialist scaffolding services to the offshore and onshore of the Oil and Gas, refinery petrochemical, chemical and for other industrial applications.Our skilled workforces are known for competency and strict adherenceto safety. At Ralonick Service Limited, we believe in continually improving skill of all scaffold erectors. All our scaffold workers are certified and fully trained in every area of health and safety",
+		"images": ["/images/services/scaffold3.png", "https://3.imimg.com/data3/EK/FY/MY-2955638/insulation-services-provider-500x500.jpg", "https://marowinengr.com/wp-content/uploads/2020/07/insulation.jpg"]
+	},
+
+	{
+		"image": "/images/services/welding1.png",
+		"title": "WELDING HABITAT SERVICES",
+		"description": "Ralonick Service Limited provides welding habitats services in order to provide safe enclosure for welders to carry out repairs or replacement of process pipe work and equipment, removal and replacement of deck plates hands rails , walkways, vessel internal and external nozzle repairs, crane boom structural repairs and refurbishment, housing of non IS equipment, riser and caisson installation and applying specialist coatings or removing insulations which requires temperature controlled enclosures and as required in other application which requires temperature controlled enclosures and as required in other application",
+		"subtitle": "VESSELS TUBE CLEANING & INSPECTION",
+		"subtext": "Ralonick Service Limited provides cleaning and inspection services for vessel, storage tanks and heat exchangers of all sizes for the oil and gas industries and refineries.Ralonick Service Limited has developed a range of technologies and methods to safety clean tanks and vessels using personnel with adequate procedure and methods for the removal of wet or dry bulk muds, brines, sand and sludge deposits",
+		"images": [
+			"https://stshabitat.com/wp-content/uploads/sts-580x316.jpg",
+			"/images/services/welding2.png",
+			"https://www.segofsenergy.com/images/pg-bn-habitat.jpg"
+		]
+	},
+	{
+		"image": "https://3.imimg.com/data3/RR/NE/MY-13284860/heat-exchanger-service-500x500.jpg",
+		"title": "HEAT EXCHANGE SERVICE",
+		"description": "Ralonick Service Limited is pioneer in using Bundle Pillers for insertion and extraction of heat exchanger bundles for offshore/onshore in Nigeria. To use these equipments will enhances safety and also saves time.Ralonick Service Limited is able complete, ‘blinds to blinds’ service for the cleaning of Heat exchangers (tube Bundles). We achieve this by owning all the necessary equipment for cleaning; Bundle lifters, bundles Pullers, and a wide range of high and ultra high pressure automated water jetting equipment combined with our skilled technicians and operators. Our Heat Exchangers Services cover Tube Bundle Extractors, Tube bundle Lifters, Hydro – Jetting Services, Pad & In - Situ Tube cleaning On– Line Chemical cleaning & Decontamination, Pad & In-Situ Tube Cleaning.",
+		"subtitle": "BOILER MAINTENANCE",
+		"subtext": "Ralonick Service Limitedcommissioning and start up assistance, refurbishment and upgrade of existing boilers, retrofitting and revamping existing boilers, installation of control and safety electronic systems, burner management systems, repairs and replacement of pressure parts, delivery and installation of original square parts, quick repair, preventive maintenance contracts and training. Our boiler services includes Boiler installations, 24/7 emergency service, Boiler maintenance and repairs, Burner Services, Engineering Services, Boiler operators, Training.",
+		"images": ["https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8Y-fD97aosKKMGX17dRHCTeYuzG8iteIp1g&usqp=CAU", "https://phe-nordic.com/wp-content/uploads/2020/02/Services-page-chemical-img-3.jpg", "/images/services/heat.png"]
+	},
+	{
+		"image": "/images/services/corrosion.png",
+		"title": "CORROSION CONTROL SERVICES",
+		"description": "Ralonick Service Limited corrosion control service and inspection for protecting equipment and facilities corrosion thereby prolonging the useful life of the asset. Our expertise in corrosion control and industrial coating technologies has enabled us to secure painting contracts. Ralonick offers management solutions for pre-survey work, through life coatings specification, grit blasting and water blasting for surface preparation and high quality coating systems.",
+		"subtitle": "CORROSION CONTROL SERVICES COVER THE FOLLOWING",
+		"subtext": "Grit Blasting,  Hydro Blasting, Coatings, Thermal Spray Application,  Epoxy Syntactic Foam",
+		"images": [
+			"https://stshabitat.com/wp-content/uploads/sts-580x316.jpg",
+			"/images/services/corrosion2.png",
+			"https://kemtechengr.com.ng/wp-content/uploads/2015/04/corrosion_control.jpg"
+		]
+	}
+]

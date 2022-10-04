@@ -1,6 +1,10 @@
 .app-header {
 	position: relative;
+	width: 100%;
 
+	.container {
+		padding-inline: 0;
+	}
 	@media screen and (max-width: $md) {
 		margin-block: 0.5rem;
 	}
@@ -18,13 +22,9 @@
 	.desktop-nav {
 		display: flex;
 		align-items: center;
+		justify-content: space-between;
 
 		.logo {
-			font-size: 1.16rem;
-			font-weight: 600;
-			color: $primary;
-			flex: 1;
-
 			@media screen and (max-width: $md) {
 				padding-block: 1vw;
 			}
@@ -50,6 +50,7 @@
 		}
 
 		.bars {
+			margin-right: 0.8rem;
 			@media screen and (min-width: $md) {
 				display: none;
 			}

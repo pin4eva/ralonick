@@ -22,9 +22,4 @@ export const ClientReviews = [
 	},
 ];
 
-export const SwiperData = [
-	"/assets/hero_img1.png",
-	"/assets/hero_img1.png",
-	"/assets/hero_img1.png",
-	"/assets/hero_img1.png",
-];
+export const SwiperData = ["/assets/hero_img1.png", "assets/why__img.png", "/assets/b1.png"];

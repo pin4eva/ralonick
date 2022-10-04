@@ -1,6 +1,6 @@
 import React from "react";
 import FrontLayout from "../layouts/front.layout";
-import ClientComp from "../components/ClientComp";
+import Link from "next/link";
 
 const AboutPage = () => {
 	return (
@@ -51,7 +51,7 @@ const AboutPage = () => {
 				<section className="transforming container">
 					<div className="transforming-inner">
 						<div className="transforming-inner-left " data-aos="zoom-in-up" data-aos-duration="3000">
-							<p className="text-danger">ROLANICK</p>
+							<p className="text-danger fw-600">ROLANICK</p>
 							<p className="transforming-heading">Who We Are...</p>
 							<h2>Transforming With Innovations</h2>
 							<p className="transforming-paragraph">
@@ -206,8 +206,12 @@ const AboutPage = () => {
 								<h5>Joy Julius</h5>
 								<h6>CEO</h6>
 								<span>
-									<i className="fa-brands fa-twitter"></i>
-									<i className="fa-brands fa-instagram"></i>
+									<Link href="/">
+										<i className="fa-brands fa-twitter"></i>
+									</Link>
+									<Link href="/">
+										<i className="fa-brands fa-instagram"></i>
+									</Link>
 								</span>
 							</div>
 						</div>
@@ -218,8 +222,12 @@ const AboutPage = () => {
 								<h5>Joy Julius</h5>
 								<h6>CEO</h6>
 								<span>
-									<i className="fa-brands fa-twitter twi"></i>
-									<i className="fa-brands fa-instagram"></i>
+									<Link href="/">
+										<i className="fa-brands fa-twitter twi"></i>
+									</Link>
+									<Link href="/">
+										<i className="fa-brands fa-instagram"></i>
+									</Link>
 								</span>
 							</div>
 						</div>
@@ -230,8 +238,12 @@ const AboutPage = () => {
 								<h5>Joy Julius</h5>
 								<h6>CEO</h6>
 								<span>
-									<i className="fa-brands fa-twitter"></i>
-									<i className="fa-brands fa-instagram"></i>
+									<Link href="/">
+										<i className="fa-brands fa-twitter"></i>
+									</Link>
+									<Link href="/">
+										<i className="fa-brands fa-instagram"></i>
+									</Link>
 								</span>
 							</div>
 						</div>

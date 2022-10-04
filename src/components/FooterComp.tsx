@@ -1,15 +1,18 @@
 /* eslint-disable @next/next/no-img-element */
 import React from "react";
 import Link from "next/link";
+import LogoComp from "./LogoComp";
 
 const FooterComp = () => {
 	return (
 		<footer className="footer container">
 			<div className="footer-about-container">
-				<p className="fw-700 footer-about-logo">RALONICK LTD.</p>
+				<p className="fw-700 footer-about-logo">
+					<LogoComp />
+				</p>
 				<p className="fw-500 footer-about-description">
-					Ralonick is a fast growing construction company rapidly spreading its frontiers across Nigeria,with sole
-					interest in operation and maintenance of production facilities.
+					Ralonick is a rapidly expanding construction company with a sole focus on the operation and maintenance of
+					manufacturing facilities in Nigeria.
 				</p>
 				<button className="btn btn-outline-danger hug">About Ralonik</button>
 			</div>

@@ -1,9 +1,16 @@
+.spinner {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+}
+
 .home {
 	&-hero {
 		display: grid;
 		margin-bottom: 3rem;
 		margin-top: 2rem;
-
+		width: 100%;
 		.inner {
 			display: grid;
 			gap: 1rem;
@@ -13,18 +20,13 @@
 				gap: 3rem;
 
 				.hero_img1 {
-					width: 90%;
+					width: 95%;
 					height: 100%;
+					// padding-inline: 1rem;
 
 					@media screen and (min-width: $mobile) {
 						height: 500px;
 					}
-
-					// @media screen and (max-width: 576px) {
-					// 	width: 90vw;
-					// }
-
-					//============ styling for the navigation buttons on the HERO SECCTION=============
 					.swiper-button-prev,
 					.swiper-button-next {
 						display: none;
@@ -76,6 +78,8 @@
 				}
 
 				.hero-text {
+					width: 95%;
+					margin-inline: auto;
 					h1 {
 						font-size: 48px;
 						color: $primary;
@@ -95,25 +99,11 @@
 					align-items: center;
 				}
 			}
-
-			.inner-right {
-				width: 100%;
-
-				@media screen and (min-width: $mobile) {
-					width: 60%;
-					display: flex;
-					justify-self: end;
-				}
-
-				img {
-					width: 100%;
-				}
-			}
 		}
 	}
 
 	.about-section {
-		margin-top: 3rem;
+		margin-top: 4rem;
 
 		.about-section-inner {
 			display: grid;
@@ -121,10 +111,11 @@
 
 			@media screen and (min-width: $md) {
 				display: flex;
+				gap: 2rem;
 			}
 
 			.about-inner-left {
-				width: 90%;
+				width: 95%;
 				margin-inline: auto;
 
 				img {
@@ -139,9 +130,17 @@
 
 			.about-inner-right {
 				margin-top: 1rem;
+				width: 95%;
+				margin-inline: auto;
 				@media screen and (min-width: $md) {
 					width: 50%;
+					margin: 0;
 				}
+
+				@media screen and (min-width: 1200px) {
+					margin-block: auto;
+				}
+
 				.right-text {
 					p {
 						@media screen and (min-width: 1400px) {
@@ -156,11 +155,11 @@
 	//================END OF ABOUT SECTION==================
 
 	.transforming {
-		margin-top: 3rem;
+		margin-top: 4rem;
 
 		.transforming-inner {
-			width: 90%;
-			margin: 0 auto;
+			width: 100%;
+			// margin: 0 auto;
 
 			@media screen and (min-width: $md) {
 				width: 100%;
@@ -170,6 +169,8 @@
 
 			&-left {
 				text-align: center;
+				width: 95%;
+				margin-inline: auto;
 				@media screen and (min-width: $md) {
 					width: 47%;
 				}
@@ -203,6 +204,7 @@
 					text-align: center;
 					margin-bottom: 1.5rem;
 					justify-content: center;
+					width: 100%;
 					.statistics-info {
 						padding: 2%;
 						border: 1px solid $primary;
@@ -249,7 +251,7 @@
 		@media screen and (min-width: $md) {
 			display: flex;
 			justify-content: space-between;
-			margin-top: 3rem;
+			margin-top: 4rem;
 		}
 
 		.quality-container-image {
@@ -258,8 +260,6 @@
 			@media screen and (min-width: $md) {
 				display: block;
 				width: 40%;
-				height: 800px;
-				margin-top: 3.5rem;
 
 				img {
 					width: 100%;
@@ -269,7 +269,7 @@
 		}
 
 		.quality-container-text {
-			width: 80%;
+			width: 95%;
 			margin: 3rem auto;
 
 			@media screen and (min-width: $md) {
@@ -289,7 +289,6 @@
 				.text-grid {
 					border: 1px solid $secondary;
 					padding: 1.5rem 1rem 2rem 1rem;
-
 					h5 {
 						font-size: 18px;
 						font-weight: 700;
@@ -309,9 +308,12 @@
 	//============END OF QUALITY SECTION===============
 
 	.service-container {
+		margin-top: 4rem;
+		width: 95%;
+		@media screen and (min-width: $md) {
+			width: 100%;
+		}
 		.service-container-inner {
-			margin-top: 5rem;
-
 			&_text {
 				@media screen and (min-width: $md) {
 					display: flex;
@@ -372,6 +374,7 @@
 				justify-content: end;
 				width: 30%;
 				margin-left: auto;
+				margin-top: 1rem;
 			}
 
 			.swiper-clicks {

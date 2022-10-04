@@ -4,20 +4,15 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import { Pagination } from "swiper";
 import "swiper/css/pagination";
-import { Autoplay } from "swiper";
 
 const ClientComp = () => {
 	return (
 		<Swiper
 			className="client-reviews-wrapper container"
-			modules={[Pagination, Autoplay]}
+			modules={[Pagination]}
 			spaceBetween={50}
 			slidesPerView={1}
 			pagination={{ clickable: true }}
-			autoplay={{
-				delay: 3000,
-				disableOnInteraction: false,
-			}}
 			loop={true}
 			loopFillGroupWithBlank={true}
 			speed={1000}

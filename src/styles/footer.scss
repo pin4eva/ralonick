@@ -3,8 +3,9 @@
 }
 
 .footer {
-	width: 100%;
+	width: 95%;
 	margin-block: 2rem;
+	margin-inline: auto;
 	@media screen and (min-width: $mobile) {
 		display: grid;
 		grid-template-areas:

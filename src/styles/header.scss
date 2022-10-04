@@ -50,6 +50,7 @@
 		}
 
 		.bars {
+			margin-right: 0.8rem;
 			@media screen and (min-width: $md) {
 				display: none;
 			}

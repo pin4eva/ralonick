@@ -1,0 +1,39 @@
+[
+    {
+        "id": 1,
+        "image": "/assets/services1.png",
+        "heading": "Active & Passive Fire Proofing",
+        "info": "Fire Proofing is a vital component for any structure to ensure safety of lives and minimal financial loss of properties. Ralonick offers professional fire proofing services ranging from cemetitious fire proofing, to Automatic fire suppression, etc."
+    },
+    {
+        "id": 2,
+        "image": "/assets/services2.png",
+        "heading": "Field Joint Coating Services",
+        "info": "This involves the coating of girth weld produce on board the pipe-laying vessels or at any offshore location. Ralonick offers engineering design & fabrication of customized field joint coating equipment which involves liquid applied materials."
+    },
+    {
+        "id": 3,
+        "image": "/assets/services3.png",
+        "heading": "Procurement & Installation of FRP/GRP",
+        "info": "In conjunction with our foreign partners AOCOMM Composite Limited(major manufacturers of FRP and GRP Products) we secure leadership in the area of technical support, procurement and maintenance for upstream and downstream oil and gas refinery."
+    },
+    {
+        "id": 4,
+        "image": "/assets/services1.png",
+        "heading": "Active & Passive Fire Proofing",
+        "info": "Fire Proofing is a vital component for any structure to ensure safety of lives and minimal financial loss of properties. Ralonick offers professional fire proofing services ranging from cemetitious fire proofing, to Automatic fire suppression, etc."
+    },
+    {
+        "id": 5,
+        "image": "/assets/services2.png",
+        "heading": "Field Joint Coating Services",
+        "info": "This involves the coating of girth weld produce on board the pipe-laying vessels or at any offshore location. Ralonick offers engineering design & fabrication of customized field joint coating equipment which involves liquid applied materials."
+    },
+    {
+        "id": 6,
+        "image": "/assets/services3.png",
+        "heading": "Procurement & Installation of FRP/GRP",
+        "info": "In conjunction with our foreign partners AOCOMM Composite Limited(major manufacturers of FRP and GRP Products) we secure leadership in the area of technical support, procurement and maintenance for upstream and downstream oil and gas refinery."
+    }
+
+]

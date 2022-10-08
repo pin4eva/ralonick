@@ -11,6 +11,7 @@ import Reviews from "../components/reviews.json";
 import { useSwiper } from "swiper/react";
 import "swiper/css/navigation";
 import "swiper/css/scrollbar";
+import ServiceCard from "../components/servicecard.json";
 
 export function SlideNext() {
 	const swiper = useSwiper();
@@ -191,66 +192,42 @@ const HomePage = () => {
 							<button className="btn btn-outline-danger hug">All Services</button>
 						</div>
 
-						<div className="services-grid">
-							<div className="service-grid">
-								<div className="image">
-									<img src="/assets/services1.png" alt="" />
-								</div>
-								<div className="service-grid-info">
-									<h5>Active & Passive Fire Proofing</h5>
-									<p>
-										Fire Proofing is a vital component for any structure to ensure safety of lives and minimal financial
-										loss of properties. Ralonick offers professional fire proofing services ranging from cemetitious
-										fire proofing, to Automatic fire suppression, etc.
-									</p>
-									<div className="service-link-text">
-										<Link href="/">
-											<a>
-												Learn More <img src="/assets/learnMoreArrow.png" alt="" />
-											</a>
-										</Link>
+						<div className="services-grid-wrapper">
+							<div className="services-grid">
+								<Swiper
+									modules={[Navigation, Pagination, Scrollbar, A11y]}
+									spaceBetween={8}
+									slidesPerView={3}
+									onSwiper={(swiper) => console.log(swiper)}
+									onSlideChange={() => console.log("slide change")}
+								>
+									{ServiceCard.map((item) => {
+										return (
+											<SwiperSlide key={item.id} className="service">
+												<div className="service-grid-image">
+													<img src={item.image} alt="" />
+												</div>
+												<div className="service-grid-info">
+													<h4>{item.heading}</h4>
+													<p>{item.info}</p>
+													<h5>
+														<Link href="/">
+															<a>
+																Learn More <img src="/assets/learnMoreArrow.png" alt="" />
+															</a>
+														</Link>
+													</h5>
+												</div>
+											</SwiperSlide>
+											
+										);
+									})}
+									<div className="servicecard-icon">
+										<SlideNext />
+										<SlidePrev />
+										<div className="swiper-line"></div>
 									</div>
-								</div>
-							</div>
-							<div className="service-grid">
-								<div className="image">
-									<img src="/assets/services2.png" alt="" />
-								</div>
-								<div className="service-grid-info">
-									<h5>Field Joint Coating Services</h5>
-									<p>
-										This involves the coating of girth weld produce on board the pipe-laying vessels or at any offshore
-										location. Ralonick offers engineering design & fabrication of customized field joint coating
-										equipment which involves liquid applied materials.
-									</p>
-									<div className="service-link-text">
-										<Link href="/">
-											<a>
-												Learn More <img src="/assets/learnMoreArrow.png" alt="" />
-											</a>
-										</Link>
-									</div>
-								</div>
-							</div>
-							<div className="service-grid">
-								<div className="image">
-									<img src="/assets/services3.png" alt="" />
-								</div>
-								<div className="service-grid-info">
-									<h5>Procurement & Installation of FRP/GRP</h5>
-									<p>
-										In conjunction with our foreign partners AOCOMM Composite Limited(major manufacturers of FRP and GRP
-										Products) we secure leadership in the area of technical support, procurement and maintenance for
-										upstream and downstream oil and gas refinery.
-									</p>
-									<div className="service-link-text">
-										<Link href="/">
-											<a>
-												Learn More <img src="/assets/learnMoreArrow.png" alt="" />
-											</a>
-										</Link>
-									</div>
-								</div>
+								</Swiper>
 							</div>
 						</div>
 					</div>
@@ -282,63 +259,6 @@ const HomePage = () => {
 							);
 						})}
 					</Swiper>
-				</section>
-
-				<section className="home-section-7">
-					<div className="section7-inner">
-						<div className="section7-inner-sub">
-							<img src="/assets/projects1.png" alt="" className="big-img" />
-							<div className="section7-inner-sub_text">
-								<p className="text-heading">Project Name</p>
-								<p className="inner-text-body">
-									Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis mi sagittis aliquet elementum nunc
-									lectus. Arcu, non ornare commodo, convallis lectus.
-								</p>
-								<Link href="/" className="text-link">
-									<a className="text-link_link">
-										More Details <img src="/assets/moreDetailsArrow.png" alt="" />
-									</a>
-								</Link>
-							</div>
-						</div>
-						<div className="section7-inner-sub sub-2">
-							<img src="/assets/projects2.png" alt="" className="big-img" />
-							<div className="section7-inner-sub_text sub-2_text">
-								<p className="text-heading">Project Name</p>
-								<p className="inner-text-body">
-									Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis mi sagittis aliquet elementum nunc
-									lectus. Arcu, non ornare commodo, convallis lectus.
-								</p>
-
-								<Link href="/" className="text-link">
-									<a className="text-link_link">
-										More Details
-										<img src="/assets/moreDetailsArrow.png" alt="" />
-									</a>
-								</Link>
-							</div>
-						</div>
-						<div className="section7-inner-sub">
-							<img src="/assets/projects3.png" alt="" className="big-img" />
-							<div className="section7-inner-sub_text">
-								<p className="text-heading">Project Name</p>
-								<p className="inner-text-body">
-									Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis mi sagittis aliquet elementum nunc
-									lectus. Arcu, non ornare commodo, convallis lectus.
-								</p>
-
-								<Link href="/" className="text-link">
-									<a className="text-link_link">
-										More Details
-										<img src="/assets/moreDetailsArrow.png" alt="" />
-									</a>
-								</Link>
-							</div>
-						</div>
-						<div className="section7-inner-btn">
-							<button className="button hug">Contact Us</button>
-						</div>
-					</div>
 				</section>
 			</div>
 		</FrontLayout>

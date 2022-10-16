@@ -1,14 +1,10 @@
 .about-page {
-margin-block: 1rem;
+    margin-block: 1rem;
 
     .about-hero {
         margin-bottom: 5%;
         flex-direction: column-reverse;
         display: flex;
-
-        // @media screen and (min-width:992px) {
-        //     height: 50vh;
-        // }
 
         @media screen and (min-width:992px) {
             display: flex;
@@ -42,10 +38,6 @@ margin-block: 1rem;
 
     .about-first-section {
         margin-bottom: 10%;
-
-        // @media screen and (min-width:992px) {
-        //     height: 125vh;
-        // }
 
         .about-first-section-inner {
             @media screen and (min-width:992px) {
@@ -249,11 +241,8 @@ margin-block: 1rem;
 }
 
 .about-fourth-section {
-    margin-bottom: 20%;
+    margin-block: 5rem;
 
-    @media screen and (min-width:992px) {
-        height: 150vh;
-    }
 
     .about-fourth-section_inner {
         @media screen and (min-width:1200px) {
@@ -282,8 +271,7 @@ margin-block: 1rem;
         }
 
         .about-fourth-section-inner-right {
-            // border: 1px solid;
-            // padding: 1rem;
+       
             margin-top: 2rem;
 
             .about-fourth-section-inner-right_box-table {
@@ -303,11 +291,6 @@ margin-block: 1rem;
                     width: 100%;
                     grid-template-columns: 1fr 1fr;
                 }
-
-                // :hover{
-                //     border: 1px black solid;
-                //     padding: 1rem;
-                // }
 
                 .about-fourth-section-inner-right_box-table-inner {
                     border: 1px grey solid;
@@ -391,7 +374,6 @@ margin-block: 1rem;
 
                     .about-last-section_inner-profile-inner_info {
 
-                        // bottom: 0%;
                         @media screen and (min-width:576px) {
                             margin-top: -100%;
                             padding-block: 50% 0%;
@@ -419,8 +401,6 @@ margin-block: 1rem;
                     border: 1px;
                     display: block;
                     padding: 1rem;
-                    // backdrop-filter: blur(17px);
-                    // -webkit-backdrop-filter: blur(17px);
                     background: #333333;
                     text-align: center;
                     color: white;
@@ -458,14 +438,8 @@ margin-block: 1rem;
                             color: $danger;
                         }
                     }
-
                 }
-
-
             }
         }
-
-
     }
-
 }

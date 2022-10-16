@@ -243,13 +243,10 @@ const About = () => {
                             <h1>Our Team</h1>
                             <div className="about-last-section_inner-profile">
                             <Swiper
-									// install Swiper modules
 									modules={[Navigation, Pagination, Scrollbar, A11y]}
 									spaceBetween={0}
 									slidesPerView={1}
 									onReachEnd={() => {/*...*/ }}
-									// pagination={{ clickable: true }}
-									//   scrollbar={{ draggable: true }}
 									onSwiper={(swiper) => console.log(swiper)}
 									onSlideChange={() => console.log('slide change')}>
 									<div className="home-hero_uppeer-left_image">

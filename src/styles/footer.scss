@@ -1,12 +1,14 @@
 .footer {
 	text-align: center;
 	border: 1px;
-	padding-block: 4rem 0rem;
+	width: 100%;
+	padding-block: 1rem;
 
 	div {
 		&:nth-child(1) {
+			margin-block: 1rem;
 
-			img{
+			img {
 				width: 17%;
 			}
 
@@ -21,6 +23,7 @@
 
 		&:nth-child(2),
 		&:nth-child(3) {
+
 			p {
 				font-size: 0.875rem;
 				font-weight: 600;
@@ -61,6 +64,8 @@
 		}
 
 		&:nth-child(4) {
+			margin-block: 1rem;
+
 			p {
 				font-size: 1rem;
 				font-weight: 400;
@@ -72,7 +77,6 @@
 			div {
 				font-size: 0.875rem;
 				font-weight: 600;
-				line-height: 1.0275rem;
 				color: #000;
 				margin: 0;
 			}
@@ -85,13 +89,15 @@
 				color: #000;
 				margin-block: 0.7rem;
 
-
 				&:nth-child(1) {
 					margin-block: 1rem;
-					
+
 				}
-				a{
+
+				a {
+					color: #000;
 					text-decoration: none;
+
 				}
 			}
 		}
@@ -127,13 +133,23 @@
 
 		display: grid;
 		grid-template-columns: 1fr 1fr 1fr;
-		grid-template-rows: 1fr 1fr 1fr;
+		grid-template-rows: 0fr;
 		text-align: left;
 
 		div {
 			&:nth-child(1) {
 				grid-column: 1/4;
 				text-align: center;
+				margin-block: 0rem 2rem;
+			}
+
+			&:nth-child(4) {
+				margin-block: 0rem;
+
+				div {
+					text-align: left;
+
+				}
 			}
 
 			&:nth-child(5) {
@@ -143,9 +159,8 @@
 
 				p:nth-child(2) {
 
-					width: 70%;
+					width: 100%;
 					margin-inline: auto;
-					margin-block: 0.88889rem 1.33333rem;
 				}
 			}
 		}
@@ -155,13 +170,13 @@
 
 	@media screen and (min-width:992px) {
 		grid-template-columns: 0.5fr 0.8fr;
-		grid-template-rows: 1fr 1fr;
+		grid-template-rows: 0fr;
 
 		&>div {
 			&:nth-child(1) {
 				grid-column: 1/5;
 				text-align: center;
-				margin-bottom: 2rem;
+
 
 				p:nth-child(2) {
 					width: 70%;
@@ -185,11 +200,10 @@
 	}
 
 	@media screen and (min-width:1200px) {
-		// padding-inline: 4.5rem;
-		margin-block: 4.5rem 3.5rem;
+
 		display: grid;
-		grid-template-columns: 2fr 0.5fr 1fr 2fr;
-		grid-template-rows: none;
+		grid-template-columns: 1fr 0.5fr 0.7fr 1fr;
+		grid-template-rows: 0fr;
 		gap: 1rem;
 
 		&>div {
@@ -205,6 +219,7 @@
 			}
 
 			&:nth-child(5) {
+				grid-column: 0;
 
 				p {
 

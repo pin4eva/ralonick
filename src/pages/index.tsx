@@ -7,7 +7,6 @@ import { Navigation, Pagination, Scrollbar, A11y } from 'swiper';
 import { useSwiperSlide } from 'swiper/react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { useSwiper } from 'swiper/react';
-// Import Swiper styles
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
@@ -75,18 +74,6 @@ const Home = () => {
 								</div>
 							</div>
 						</div>
-						{/* <div className="home-hero_lower">
-							<div className="home-hero_lower-inner">
-								<div className="home-hero_lowwer-inner-video">
-
-									<div className="home-hero_lower_inner-video-image">
-										<img src="./images/truck.png" alt="" />
-									</div>
-
-								</div>
-
-							</div>
-						</div> */}
 					</section>
 					<section className="home-first-section">
 						<div className="home-first-section-inner">
@@ -251,13 +238,12 @@ const Home = () => {
 							</div>
 							<div className="home-fourth-section-inner_card">
 								<Swiper
-									// install Swiper modules
+						
 									modules={[Navigation, Pagination, Scrollbar, A11y]}
 									spaceBetween={0}
 									slidesPerView={1}
 									onReachEnd={() => {/*...*/ }}
-									// pagination={{ clickable: true }}
-									//   scrollbar={{ draggable: true }}
+								
 									onSwiper={(swiper) => console.log(swiper)}
 									onSlideChange={() => console.log('slide change')}>
 									<div className="home-hero_uppeer-left_image">
@@ -360,12 +346,12 @@ const Home = () => {
 								<h1>Clients Reviews</h1>
 							</div>
 							<Swiper
-								// install Swiper modules
+					
 								modules={[Navigation, Pagination, Scrollbar, A11y]}
 								spaceBetween={0}
 								slidesPerView={1}
 								pagination={{ clickable: true }}
-								// scrollbar={{ draggable: true }}
+								
 								onSwiper={(swiper) => console.log(swiper)}
 								onSlideChange={() => console.log('slide change')}>
 								<div className="home-hero_uppeer-left_image">

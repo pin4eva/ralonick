@@ -6,7 +6,7 @@ const FooterComp = () => {
 	return (
 		<footer className="footer container" >
 			<div className="footer-first-part">
-			<img src="./images/ralonik-ld.png" alt="" />
+				<img src="./images/ralonik-ld.png" alt="" />
 				<p>
 					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dolor, ultrices aliquam, quis nunc erat. Amet nullam
 					elementum eget nec.
@@ -19,9 +19,6 @@ const FooterComp = () => {
 					<li>
 						<Link href="/about"><a>About</a></Link>
 					</li>
-					{/* <li>
-						<Link href="/"><a>Projects </a></Link>
-					</li> */}
 					<li>
 						<Link href="/services"><a>Services</a></Link>
 					</li>
@@ -53,7 +50,7 @@ const FooterComp = () => {
 				<p>Plot 102, Km 5 East-West Road,</p>
 				<p>Rumuodara, Port Harcourt,</p>
 				<p>Rivers State, Nigeria.</p>
-				<a href="mailto:info@ralonik.com"><h6>info@ralonik.com</h6></a>
+				<h6><a href="mailto:info@ralonik.com">info@ralonik.com</a></h6>
 				<p>Mon - Sat: 8;am-5pm</p>
 			</div>
 			<div className="footer-last-part">
@@ -75,7 +72,7 @@ const FooterComp = () => {
 				<p>
 					<Link href="/contact"><a>Still Have a Question? </a></Link>
 				</p>
-				<button className="btn hug btn-danger">Send a Message</button>
+			<Link href="/contact"><button className="btn hug btn-danger">Send a Message</button></Link>
 			</div>
 		</footer>
 	);

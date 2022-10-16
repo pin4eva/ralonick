@@ -38,7 +38,7 @@ return (
                     <div className="contact-inner-right">
                         <div className="contact-inner-right-inner">
                             <div className="contact-inner-right-inner-image">
-                                <img src="./images/komi.png" alt="" />
+                                <img src="./images/contact.jpg" alt="" />
                             </div>
                         </div>
                     </div>

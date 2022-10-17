@@ -122,7 +122,7 @@ const Home = () => {
 						<section className="transforming container">
 							<div className="transforming-inner">
 								<div className="transforming-inner-left" data-aos="zoom-in-up" data-aos-duration="3000">
-									<p className="text-danger fw-600">ROLANICK</p>
+									<p className="text-danger fw-600">RALONICK</p>
 									<p className="transforming-heading">Who We Are...</p>
 									<h2>Transforming With Innovations</h2>
 									<p className="transforming-paragraph">

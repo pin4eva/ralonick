@@ -12,7 +12,7 @@ const AboutPage = () => {
 					</div>
 					<div className="hero-text fw-800">
 						<p>About </p>
-						<p className="hero-logo">Ralonik LTD.</p>
+						<p className="hero-logo">Ralonick Services LTD.</p>
 					</div>
 				</div>
 				{/*========== END OF SECTION ONE ==========*/}

@@ -25,7 +25,7 @@ const Services = () => {
 					<div className="image-wrapper">
 						<img src="/assets/about1.png" alt="about" />
 					</div>
-					<p className="text-wrapper">Ralonik LTD. Services</p>
+					<p className="text-wrapper">Ralonick Services LTD.</p>
 				</section>
 
 				<section className="services-intro">

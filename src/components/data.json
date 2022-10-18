@@ -5,7 +5,7 @@
 		"description": "Ralonick Services Limited is a professional fire proofing company, offering customer a one stop shop for all their fire proofing needs be it passive or active fire proofing. Passive fire proofing is a vital component of a strategy into the structure of building to safeguard peoples life and limit financial impact of damage to building and their content.",
 		"subtitle": "MIRERAL FIBRE FIRE PROOFING",
 		"subtext": "This a fibrous material that is mixed with water and adhesive applied to structural steel,roof decks and often wet joist.The water is mixed with the fibre at the spring gun.The material is blown into surface. CEMENTITIOUS FIRE PROOFING also consist of Cement or Gypsum which when wet forms a durable sureface with high fire resistance. ITUMESCENT PAINT FIRE PROOFING Is considered the lightest form of passive protection when exposed to heat, it rapidly transforms through sublimation and expands many times its Original thickness (up to 100 times) to form stable carbonaceous char.",
-		"images": ["", "", ""]
+		"images": ["/images/services/fire1.png", "/images/services/fire2.png", "/images/services/fire3.png"]
 	},
 	{
 		"image": "/images/services/feild1.png",
@@ -26,21 +26,21 @@
 		"subtitle": "",
 		"subtext": "",
 		"images": [
-			"/images/services/glassfiber2.png",
-			"https://static.wixstatic.com/media/4fd11b_a995d3292d7a48c6835d39f1fe634219~mv2.jpg/v1/fill/w_560,h_316,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/4fd11b_a995d3292d7a48c6835d39f1fe634219~mv2.jpg",
-			"https://www.cppiping.com/wp-content/uploads/2020/01/frp-piping-grp-pipes-gre-cpp-1080x605.png"
+			"/images/services/glass2.png",
+			"/images/services/glass1.png",
+			"/images/services/glassfiber1.png"
 		]
 	},
 	{
-		"image": "http://ehimatieglobal.com/images/services/service-glassfibre-reinforced.jpg",
+		"image": "/images/services/glassfiber2.png",
 		"title": "HIGH DENSITY POLYTHENE PIPE (HDPE)",
 		"description": "Ralonick Service Limited offer solutions for High Density Polythene Pipe (HDPE) in the upstream, downstream of the Oil and gas, refinery, Petrochemical, power plant and other industries. We procure, fabricate and install glass reinforcement epoxy pipes as per Portable water, Underground fire water line and Drain line",
 		"subtitle": "",
 		"subtext": "",
 		"images": [
-			"/images/services/glassfiber2.png",
-			"https://static.wixstatic.com/media/4fd11b_a995d3292d7a48c6835d39f1fe634219~mv2.jpg/v1/fill/w_560,h_316,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/4fd11b_a995d3292d7a48c6835d39f1fe634219~mv2.jpg",
-			"https://www.cppiping.com/wp-content/uploads/2020/01/frp-piping-grp-pipes-gre-cpp-1080x605.png"
+			"/images/services/glassfiber3.png",
+			"/images/services/hdpe1.png",
+			""
 		]
 	},
 	{
@@ -50,7 +50,7 @@
 		"subtitle": "",
 		"subtext": "Our PP-R PipeServices cover the following Applications Potable water, HVAC, Fire Protection, Heating & Cooling, Refrigeration, Compressed Air, Chemical Transport",
 		"images": [
-			"http://mcgrawimages.buildingmedia.com/CE/CE_images/2015/Mar_Aquatherm-1.jpg",
+			"/images/services/prop1.png",
 			"https://i0.wp.com/fluidtermsa.co.za/fluid-term-wp/wp-content/uploads/2017/09/DSCF1676-1024x768.jpg?fit=1024%2C768&ssl=1",
 			"http://mcgrawimages.buildingmedia.com/CE/CE_images/2015/Mar_Aquatherm-15.jpg"
 		]
@@ -69,14 +69,14 @@
 	},
 	{
 		"image": "/images/services/steel2.png",
-		"title": "STEEL STRUCTURES AND PIPES FABRICATION & INSTALLATION",
+		"title": "FABRICATION AND INSTALLATION OF SPOOLS",
 		"description": "Ralonick Service Limited provides Steel structures and pipes fabrication & installation with expertise in construction capabilities and project management Ralonick delivers solutions by providing competent personnel that has the knowledge in all kinds of fabrication and installation works.",
 		"subtitle": "PIPING AND STRUCTURAL FABRICATION SERVICES",
 		"subtext": "Pipe spool fabrication, Fabrication of boat landing & repairs, Structural Pipe Support, Steel Shelter Platform Fabrication, Pig Launcher fabrication, Structural Skid fabrication, Security cage",
 		"images": [
-			"/images/services/steel1.png",
-			"https://upload.wikimedia.org/wikipedia/commons/9/9b/FANUC_6-axis_welding_robots.jpg",
-			"https://www.stevensec.com/hubfs/Pipe-Fabrication/steel-pipe-fabrication-in-geo-city-geo-state.jpg"
+			"/images/services/feild4.png",
+			"/images/services/feild7.png",
+			"/images/services/feild6.png"
 		]
 	},
 	{
@@ -110,8 +110,8 @@
 		"subtitle": "OUR INSULATION SERVICES COVERS",
 		"subtext": "Acoustic insulation: Epoxy cable Tray, Cellular Glass XP, Flexiroll XP, Structure Panel Pipeshell, Drain Plug, Fire insulation, Steel Boxes, Sound reducing curtain and Thermal insulations: Aerogels, Performed End cap gasket, Sunsea insulation, Corrosion under insulation (CUI).",
 		"images": [
-			"/images/services/scaffold3.png",
-			"https://3.imimg.com/data3/EK/FY/MY-2955638/insulation-services-provider-500x500.jpg",
+			"/images/services/insulation1.png",
+			"/images/services/insulation2.png",
 			"https://marowinengr.com/wp-content/uploads/2020/07/insulation.jpg"
 		]
 	},

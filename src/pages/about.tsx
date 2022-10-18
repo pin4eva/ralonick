@@ -8,7 +8,7 @@ const AboutPage = () => {
 			<div className="about-page container">
 				<div className="about-hero-section mt-3">
 					<div className="hero-image">
-						<img src="assets/about1.png" alt="frame1" />
+						<img src="images/about-hero.png" alt="frame1" />
 					</div>
 					<div className="hero-text fw-800">
 						<p>About </p>

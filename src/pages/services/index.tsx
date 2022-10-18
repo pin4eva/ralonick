@@ -23,7 +23,7 @@ const Services = () => {
 			<div className="service container">
 				<section className="service-hero-section">
 					<div className="image-wrapper">
-						<img src="/assets/about1.png" alt="about" />
+						<img src="/images/service-hero.png" alt="about" />
 					</div>
 					<p className="text-wrapper">Ralonick Services LTD.</p>
 				</section>

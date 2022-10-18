@@ -116,7 +116,7 @@
 		]
 	},
 	{
-		"image": "https://gemstone-ge.com/wp-content/uploads/insulation-serv.jpg",
+		"image": "/images/services/scaffold3.png",
 		"title": "SCAFFOLDING SERVICES",
 		"description": "Ralonick Service Limited provides specialist scaffolding services to the offshore and onshore of the Oil and Gas, refinery petrochemical, chemical and for other industrial applications.Our skilled workforces are known for competency and strict adherenceto safety. At Ralonick Service Limited, we believe in continually improving skill of all scaffold erectors. All our scaffold workers are certified and fully trained in every area of health and safety",
 		"subtitle": "",
@@ -136,12 +136,12 @@
 		"subtext": "",
 		"images": [
 			"https://stshabitat.com/wp-content/uploads/sts-580x316.jpg",
-			"/images/services/welding2.png",
+			"",
 			"https://www.segofsenergy.com/images/pg-bn-habitat.jpg"
 		]
 	},
 	{
-		"image": "/images/services/welding1.png",
+		"image": "/images/services/welding2.png",
 		"title": "VESSELS TUBE CLEANING & INSPECTION",
 		"description": "Ralonick Service Limited provides cleaning and inspection services for vessel, storage tanks and heat exchangers of all sizes for the oil and gas industries and refineries.Ralonick Service Limited has developed a range of technologies and methods to safety clean tanks and vessels using personnel with adequate procedure and methods for the removal of wet or dry bulk muds, brines, sand and sludge deposits",
 		"subtitle": "Our Vessels and Tube Cleaning & Inspection",

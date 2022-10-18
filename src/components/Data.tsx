@@ -30,4 +30,5 @@ export const SwiperData = [
 	"/images/services/hdpe.png",
 	"/images/services/insulation1.png",
 	"/images/services/insulation2.png",
+	"/images/services/prop1.png",
 ];

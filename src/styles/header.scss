@@ -23,8 +23,7 @@
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
-		// position: fixed;
-		// top: 0;
+		position: relative;
 
 		.logo {
 			@media screen and (max-width: $md) {
@@ -40,7 +39,6 @@
 			align-items: center;
 			gap: 1.5rem;
 			font-weight: 600;
-			position: relative;
 
 			@media screen and (min-width: $md) {
 				display: flex;
@@ -58,15 +56,56 @@
 				display: none;
 			}
 		}
+
+		.click {
+			&:hover {
+				div {
+					width: 100%;
+				}
+			}
+			div {
+				width: 0;
+				height: 2px;
+				bottom: 0;
+				left: 0;
+				background-color: $primary;
+				transition: all 0.3s ease-in-out 0s;
+			}
+		}
 		.dropdown-center {
 			position: static;
 			.dropdown-menu {
+				&:hover {
+					div {
+						width: 100%;
+					}
+				}
+				div {
+					width: 100%;
+					height: 2px;
+					top: 0;
+					// bottom: 0;
+					left: 0;
+					background-color: $primary;
+					transition: all 0.3s ease-in-out 0s;
+				}
 				position: absolute;
-				width: 100%;
-				border: 1px solid BLUE;
-				left: 0;
+				width: 50%;
 				right: 0;
-				float: left;
+				padding: 2rem 1rem;
+				float: right;
+				margin-top: 1rem;
+				backdrop-filter: blur(10px);
+				background: hsla(0, 0%, 0%, 0.81);
+				&:hover {
+					display: block;
+				}
+
+				li {
+					font-size: 0.9rem;
+					color: #ddd;
+					margin-bottom: 1rem;
+				}
 			}
 		}
 	}

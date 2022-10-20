@@ -16,10 +16,7 @@ const HeaderComp = () => {
 
 	const [navDisplay, setNavDisplay] = useState(false);
 	const [dropdown, setDropdown] = useState(false);
-
-	const toggleService = () => {
-		setDropdown(!dropdown);
-	};
+	const [hoverdown, setHoverdown] = useState(false);
 
 	const showNavHandler = () => {
 		setNavDisplay(true);
@@ -37,15 +34,17 @@ const HeaderComp = () => {
 						</a>
 					</Link>
 					<ul className="app-nav">
-						<li>
+						<li className="click">
 							<Link href={navList[0].link}>
 								<a className={router.pathname == `${navList[0].link}` ? "active" : ""}>{navList[0].name}</a>
 							</Link>
+							<div></div>
 						</li>
-						<li>
+						<li className="click">
 							<Link href={navList[1].link}>
 								<a className={router.pathname == `${navList[1].link}` ? "active" : ""}>{navList[1].name}</a>
 							</Link>
+							<div></div>
 						</li>
 						<li className="dropdown-center">
 							<a
@@ -54,33 +53,27 @@ const HeaderComp = () => {
 								type="button"
 								data-bs-toggle="dropdown"
 								aria-expanded="false"
-								onClick={toggleService}
-								onMouseOver={toggleService}
-								onMouseOut={() => setDropdown(false)}
+								onClick={() => setDropdown(!dropdown)}
+								onMouseOver={() => setHoverdown(true)}
+								onMouseOut={() => setHoverdown(!hoverdown)}
 							>
 								{navList[2].name}
 							</a>
 							<ul className={`dropdown-menu ${dropdown ? "d-block" : "d-none"}`} aria-labelledby="book-dropdown">
-								{/* <li>
-									<a className="dropdown-item" href="#">
-										Action
-									</a>
-								</li>
-								<li>
-									<a className="dropdown-item" href="#">
-										Another action
-									</a>
-								</li>
-								<li>
-									<a className="dropdown-item" href="#">
-										Something else here
-									</a>
-								</li>
-								<li>
-									<a className="dropdown-item" href="#">
-										Something else here
-									</a>
-								</li> */}
+								<div></div>
+								{services.map((item, i) => {
+									return (
+										<li key={i}>
+											<Link className="dropdown-item" href={`/services/${item.slug}`}>
+												{item.title}
+											</Link>
+										</li>
+									);
+								})}
+							</ul>
+							<ul className={`dropdown-menu ${hoverdown ? "d-block" : "d-none"}`} aria-labelledby="book-dropdown">
+								<div></div>
+
 								{services.map((item, i) => {
 									return (
 										<li key={i}>

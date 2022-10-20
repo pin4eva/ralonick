@@ -18,9 +18,12 @@ const Singleservice = () => {
 	return (
 		<FrontLayout>
 			<div className="single-service-wrapper">
-				{/* <section className="single-service-hero container">
-					<div className="single-service-hero-image"> <img src="/assets/Frame 50.png" alt="bg" /> </div>
-				</section> */}
+				<section className="single-service-hero container">
+					<div className="single-service-hero-image">
+						{" "}
+						<img src="/assets/Frame 50.png" alt="bg" />{" "}
+					</div>
+				</section>
 
 				<section className="single-service-description container">
 					<div className="single-service-description_inner">

@@ -59,11 +59,12 @@ const HeaderComp = () => {
 							>
 								{navList[2].name}
 							</a>
+							<div></div>
+
 							<ul className={`dropdown-menu ${dropdown ? "d-block" : "d-none"}`} aria-labelledby="book-dropdown">
-								<div></div>
 								{services.map((item, i) => {
 									return (
-										<li key={i}>
+										<li key={i} onClick={() => setDropdown(false)}>
 											<Link className="dropdown-item" href={`/services/${item.slug}`}>
 												{item.title}
 											</Link>
@@ -72,8 +73,6 @@ const HeaderComp = () => {
 								})}
 							</ul>
 							<ul className={`dropdown-menu ${hoverdown ? "d-block" : "d-none"}`} aria-labelledby="book-dropdown">
-								<div></div>
-
 								{services.map((item, i) => {
 									return (
 										<li key={i}>

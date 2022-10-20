@@ -20,8 +20,7 @@ const Singleservice = () => {
 			<div className="single-service-wrapper">
 				<section className="single-service-hero container">
 					<div className="single-service-hero-image">
-						{" "}
-						<img src="/assets/Frame 50.png" alt="bg" />{" "}
+						<img src={service.image} alt="bg" />
 					</div>
 				</section>
 

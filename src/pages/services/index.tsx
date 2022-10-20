@@ -5,7 +5,7 @@ import "swiper/css";
 import "swiper/css/navigation";
 import ClientComp from "components/ClientComp";
 import Data from "components/data.json";
-import ServiceComp from "components/ServicesComp/ServiceComp";
+// import ServiceComp from "components/ServicesComp/ServiceComp";
 import FrontLayout from "layouts/front.layout";
 import { createSlug } from "utils/string.utils";
 import { IService } from "interface/service.interface";
@@ -37,15 +37,17 @@ const Services = () => {
 								leasing for land & marine.
 							</p>
 						</div>
-
-						{Data.map((item, i) => (
-							<ServiceComp
-								key={i}
-								setOpen={() => setService(item?.title === service?.title ? undefined : item)}
-								open={service?.title === item?.title}
-								service={item}
-							/>
-						))}
+						<div className="all-service">
+							<div className="all-service-inner">
+								{services.map((item) => {
+									return (
+										<Link className="" href={`/services/${item.slug}`}>
+											{item.title}
+										</Link>
+									);
+								})}
+							</div>
+						</div>
 					</div>
 				</section>
 
@@ -85,3 +87,14 @@ const Services = () => {
 };
 
 export default Services;
+
+// {
+// 	Data.map((item, i) => (
+// 		<ServiceComp
+// 			key={i}
+// 			setOpen={() => setService(item?.title === service?.title ? undefined : item)}
+// 			open={service?.title === item?.title}
+// 			service={item}
+// 		/>
+// 	));
+// }

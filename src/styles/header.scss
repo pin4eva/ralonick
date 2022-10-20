@@ -23,6 +23,8 @@
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
+		// position: fixed;
+		// top: 0;
 
 		.logo {
 			@media screen and (max-width: $md) {
@@ -38,6 +40,7 @@
 			align-items: center;
 			gap: 1.5rem;
 			font-weight: 600;
+			position: relative;
 
 			@media screen and (min-width: $md) {
 				display: flex;
@@ -53,6 +56,17 @@
 			margin-right: 0.8rem;
 			@media screen and (min-width: $md) {
 				display: none;
+			}
+		}
+		.dropdown-center {
+			position: static;
+			.dropdown-menu {
+				position: absolute;
+				width: 100%;
+				border: 1px solid BLUE;
+				left: 0;
+				right: 0;
+				float: left;
 			}
 		}
 	}

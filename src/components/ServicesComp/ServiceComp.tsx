@@ -2,6 +2,7 @@
 /* eslint-disable @next/next/no-img-element */
 
 import { IService } from "interface/service.interface";
+import Link from "next/link";
 import React, { useState } from "react";
 
 interface IProp {
@@ -14,11 +15,11 @@ const ServiceComp: React.FC<IProp> = ({ service, open, setOpen }) => {
 	return (
 		<div className="service-layout container">
 			<div className="service-box container">
-				<h2 className="title-header" onClick={setOpen}>
-					{service?.title}
-					<span>{open ? <i className="fa fa-chevron-up"></i> : <i className="fa fa-chevron-down"></i>}</span>
+				<h2 className="title-header">
+					<Link href={"/services/"}>{service.title}</Link>
+					{/* <span>{open ? <i className="fa fa-chevron-up"></i> : <i className="fa fa-chevron-down"></i>}</span> */}
 				</h2>
-
+				{/* 
 				<div className={open ? "service-content" : "d-none"}>
 					<div className="service-image">
 						<img src={service?.image} />
@@ -34,10 +35,14 @@ const ServiceComp: React.FC<IProp> = ({ service, open, setOpen }) => {
 							<img src={image} key={i} />
 						))}
 					</div>
-				</div>
+				</div> */}
 			</div>
 		</div>
 	);
 };
 
 export default ServiceComp;
+
+{
+	/* <h2 className="title-header" onClick={setOpen}> */
+}

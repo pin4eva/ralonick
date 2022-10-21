@@ -38,13 +38,13 @@ const HeaderComp = () => {
 							<Link href={navList[0].link}>
 								<a className={router.pathname == `${navList[0].link}` ? "active" : ""}>{navList[0].name}</a>
 							</Link>
-							<div></div>
+							<div className={router.pathname == `${navList[0].link}` ? "d-none" : ""}></div>
 						</li>
 						<li className="click">
 							<Link href={navList[1].link}>
 								<a className={router.pathname == `${navList[1].link}` ? "active" : ""}>{navList[1].name}</a>
 							</Link>
-							<div></div>
+							<div className={router.pathname == `${navList[1].link}` ? "d-none" : ""}></div>
 						</li>
 						<li className="dropdown-center">
 							<a

@@ -57,7 +57,18 @@
 			}
 
 			.all-service {
-				background-color: red;
+				// background-color: red;
+				.all-service-inner {
+					display: block;
+
+					.service-item {
+						margin-bottom: 1rem;
+						a {
+							list-style: none;
+							text-decoration: none;
+						}
+					}
+				}
 			}
 
 			.services-list {

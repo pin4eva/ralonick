@@ -46,7 +46,8 @@
 
 			.active {
 				border-bottom: 2px solid $primary;
-				padding-bottom: 0.6rem;
+				padding-bottom: 0.1rem;
+				// border: 1px solid red;
 			}
 		}
 
@@ -75,9 +76,11 @@
 		.dropdown-center {
 			position: static;
 
-			&:hover {
-				div {
-					width: 100%;
+			.dropdown-toggle {
+				&:hover {
+					div {
+						width: 100%;
+					}
 				}
 			}
 			div {
@@ -87,7 +90,7 @@
 				background-color: $primary;
 				transition: all 0.3s ease-in-out 0s;
 				left: 0;
-				float: right;
+				// float: right;
 			}
 
 			.dropdown-menu {

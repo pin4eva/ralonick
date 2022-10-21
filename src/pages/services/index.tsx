@@ -41,9 +41,11 @@ const Services = () => {
 							<div className="all-service-inner">
 								{services.map((item) => {
 									return (
-										<Link className="" href={`/services/${item.slug}`}>
-											{item.title}
-										</Link>
+										<div className="service-item">
+											<Link className="" href={`/services/${item.slug}`}>
+												{item.title}
+											</Link>
+										</div>
 									);
 								})}
 							</div>

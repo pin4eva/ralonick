@@ -42,7 +42,7 @@ const AboutPage = () => {
 						</p>
 					</div>
 					<div className="about-description-image">
-						<img src="assets/about_img1.png" alt="sec2" />
+						<img src="images/services/pipeline3.png" alt="sec2" />
 					</div>
 				</div>
 				{/* ============================END OF SECOND SECTION============================= */}

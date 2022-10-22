@@ -13,29 +13,40 @@
 
 	.title {
 		text-align: center;
-		font-size: 2.3rem;
-		font-weight: 400;
+		font-size: 2rem;
+		font-weight: 700;
+		margin-top: 2rem;
 	}
 
-	.single-service-description {
-		border: 1px solid red;
-		aside {
-			width: 90%;
-			margin-inline: auto;
-			padding: 0.75rem 1.25rem;
-			border-top-left-radius: 0.25rem;
-			border-top-right-radius: 0.25rem;
-			border: 1px solid rgba(0, 0, 0, 0.125);
-			font-size: 13px;
+	.single-service-descriptions {
+		@media screen and (min-width: $mobile) {
+			display: grid;
+			grid-template-columns: 30% 70%;
+			gap: 1rem;
+		}
+		.aside-section {
+			margin-top: 2rem;
 
-			a {
-				text-decoration: none;
-				color: $primary;
+			aside {
+				width: 90%;
+				margin-inline: auto;
+				padding: 0.75rem 1.25rem;
+				border: 1px solid rgba(0, 0, 0, 0.125);
+				font-size: 15px;
+				transition: all 400ms ease-in-out;
+				&:hover {
+					margin-left: 3px;
+				}
+
+				a {
+					text-decoration: none;
+					color: $primary;
+					font-weight: 500;
+				}
 			}
 		}
 
 		.single-service-description_inner {
-			border: 1px solid red;
 			width: 90%;
 			margin-top: 2rem;
 			margin-inline: auto;
@@ -53,7 +64,7 @@
 				text-align: center;
 				margin-inline: auto;
 				@media screen and (min-width: $mobile) {
-					margin: 1.5rem auto;
+					margin: 0;
 				}
 				.description-text {
 					font-weight: 500;
@@ -86,11 +97,6 @@
 						height: 100%;
 					}
 				}
-			}
-
-			.order-button {
-				text-align: center;
-				margin-top: 4rem;
 			}
 		}
 	}

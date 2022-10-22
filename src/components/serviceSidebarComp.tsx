@@ -4,7 +4,7 @@ import Link from "next/link";
 
 const ServiceSidebarComp = () => {
 	return (
-		<div>
+		<div className="aside-section">
 			{services.map((item) => {
 				return <aside>{<Link href={`/services/${item.slug}`}>{item.title}</Link>}</aside>;
 			})}

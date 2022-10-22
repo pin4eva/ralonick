@@ -28,7 +28,7 @@ const Singleservice = () => {
 					<p>{service.title}</p>
 				</div>
 
-				<section className="single-service-description container">
+				<section className="single-service-descriptions container">
 					<ServiceSidebarComp />
 
 					<div className="single-service-description_inner">

@@ -84,13 +84,6 @@ const HeaderComp = () => {
 								})}
 							</ul>
 						</li>
-						{/* {navList.map((nav, i) => (
-							<li key={i}>
-								<Link href={nav.link}>
-									<a className={router.pathname == `${nav.link}` ? "active" : ""}>{nav.name}</a>
-								</Link>
-							</li>
-						))} */}
 						<li>
 							<Link href="/contact">
 								<button className="btn btn-danger">Contact Us</button>
@@ -131,4 +124,14 @@ const HeaderComp = () => {
 export default HeaderComp;
 {
 	/* <a className={router.pathname == `${navList[2].link}` ? "active" : ""}>{navList[2].name}</a> */
+}
+
+{
+	/* {navList.map((nav, i) => (
+							<li key={i}>
+								<Link href={nav.link}>
+									<a className={router.pathname == `${nav.link}` ? "active" : ""}>{nav.name}</a>
+								</Link>
+							</li>
+						))} */
 }

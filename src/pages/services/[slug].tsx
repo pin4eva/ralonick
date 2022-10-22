@@ -3,6 +3,7 @@ import { useEffect, useState } from "react";
 import { services } from ".";
 import { IService } from "interface/service.interface";
 import FrontLayout from "../../layouts/front.layout";
+import ServiceSidebarComp from "components/serviceSidebarComp";
 
 const Singleservice = () => {
 	const router = useRouter();
@@ -23,11 +24,17 @@ const Singleservice = () => {
 						<img src={service.image} alt="bg" />
 					</div>
 				</section>
+				<div className="title">
+					<p>{service.title}</p>
+				</div>
 
 				<section className="single-service-description container">
-					<div className="single-service-description_inner">
-						<h1 className="title">{service.title}</h1>
+					<ServiceSidebarComp />
 
+					<div className="single-service-description_inner">
+						<div className="title-2">
+							<p>{service.title}</p>
+						</div>
 						<div className="single-service-description_item">
 							<p className="description-text">{service.description}</p>
 							<h4 className="description-subitle">{service.subtitle}</h4>
@@ -41,12 +48,9 @@ const Singleservice = () => {
 								</div>
 							))}
 						</div>
-						<div className="order-button">
-							<button className="btn btn-danger hug">Book Service</button>
-						</div>
 					</div>
 				</section>
-
+				{/* 
 				<div className="statistics container">
 					<div className="border-none statistics-info">
 						<p className="primary-bold">25+</p>
@@ -64,37 +68,7 @@ const Singleservice = () => {
 						<p className="primary-bold">5+</p>
 						<p className="primary-light">Years Experience</p>
 					</div>
-				</div>
-
-				<div className="quality-wrapper container">
-					<h1 className="quality-wrapper-title">Why Choose Us</h1>
-					<div className="quality-statistics">
-						<div className="border-none quality-statistics-info">
-							<div className="icons">
-								<img src="/assets/img1.png" alt="p1" />
-							</div>
-							<p className="primary-light">Quality</p>
-						</div>
-						<div className="quality-statistics-info">
-							<div className="icons">
-								<img src="/assets/img2.png" alt="p1" />
-							</div>
-							<p className="primary-light">Integrity</p>
-						</div>
-						<div className="quality-statistics-info">
-							<div className="icons">
-								<img src="/assets/img3.png" alt="p1" />
-							</div>
-							<p className="primary-light">Safety</p>
-						</div>
-						<div className="border-none quality-statistics-info ">
-							<div className="icons">
-								<img src="/assets/img4.png" alt="p1" />
-							</div>
-							<p className="primary-light">Professionalism</p>
-						</div>
-					</div>
-				</div>
+				</div> */}
 			</div>
 		</FrontLayout>
 	);

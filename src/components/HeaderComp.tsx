@@ -16,7 +16,6 @@ const HeaderComp = () => {
 
 	const [navDisplay, setNavDisplay] = useState(false);
 	const [dropdown, setDropdown] = useState(false);
-	const [hoverdown, setHoverdown] = useState(false);
 
 	const showNavHandler = () => {
 		setNavDisplay(true);
@@ -54,8 +53,6 @@ const HeaderComp = () => {
 								data-bs-toggle="dropdown"
 								aria-expanded="false"
 								onClick={() => setDropdown(!dropdown)}
-								onMouseOver={() => setHoverdown(true)}
-								onMouseOut={() => setHoverdown(!hoverdown)}
 							>
 								{navList[2].name}
 							</a>
@@ -72,7 +69,7 @@ const HeaderComp = () => {
 									);
 								})}
 							</ul>
-							<ul className={`dropdown-menu ${hoverdown ? "d-block" : "d-none"}`} aria-labelledby="book-dropdown">
+							{/* <ul className="dropdown-menu hoverdown" aria-labelledby="book-dropdown">
 								{services.map((item, i) => {
 									return (
 										<li key={i}>
@@ -82,7 +79,7 @@ const HeaderComp = () => {
 										</li>
 									);
 								})}
-							</ul>
+							</ul> */}
 						</li>
 						<li>
 							<Link href="/contact">

@@ -16,6 +16,7 @@
 		font-size: 2rem;
 		font-weight: 700;
 		margin-top: 2rem;
+		color: $primary;
 	}
 
 	.single-service-descriptions {
@@ -33,10 +34,6 @@
 				padding: 0.75rem 1.25rem;
 				border: 1px solid rgba(0, 0, 0, 0.125);
 				font-size: 15px;
-				transition: all 400ms ease-in-out;
-				&:hover {
-					margin-left: 3px;
-				}
 
 				a {
 					text-decoration: none;

@@ -57,7 +57,7 @@
 			}
 
 			.all-service {
-				// background-color: red;
+				display: none;
 				.all-service-inner {
 					display: block;
 
@@ -68,6 +68,9 @@
 							text-decoration: none;
 						}
 					}
+				}
+				@media screen and (max-width: 900px) {
+					display: block;
 				}
 			}
 

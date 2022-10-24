@@ -12,6 +12,9 @@ import { truncateText } from "utils/string.utils";
 import ClipLoader from "react-spinners/ClipLoader";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import "swiper/css";
+import { Autoplay } from "swiper";
+import "swiper/css/autoplay";
 
 const Home = () => {
 	const [disableNext, setDisableNext] = useState(false);
@@ -52,6 +55,8 @@ const Home = () => {
 									<div className="inner-left">
 										<Swiper
 											className="hero_img1"
+											modules={[Autoplay]}
+											autoplay={true}
 											slidesPerView={1}
 											speed={1000}
 											spaceBetween={10}

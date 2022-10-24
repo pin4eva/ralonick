@@ -9,6 +9,7 @@ export const navList = [
 	{ name: "Home", link: "/" },
 	{ name: "About", link: "/about" },
 	{ name: "Services", link: "/services" },
+	{ name: "Documents", link: "/documents" },
 ];
 
 const HeaderComp = () => {
@@ -16,6 +17,12 @@ const HeaderComp = () => {
 
 	const [navDisplay, setNavDisplay] = useState(false);
 	const [dropdown, setDropdown] = useState(false);
+
+	const showDropdown = () => {
+		setDropdown(!dropdown);
+		let change = document.getElementById("remove-active");
+		change?.classList.remove("active");
+	};
 
 	const showNavHandler = () => {
 		setNavDisplay(true);
@@ -35,30 +42,34 @@ const HeaderComp = () => {
 					<ul className="app-nav">
 						<li className="click">
 							<Link href={navList[0].link}>
-								<a className={router.pathname == `${navList[0].link}` ? "active" : ""}>{navList[0].name}</a>
+								<a className={router.pathname == `${navList[0].link}` ? "active" : ""} id="remove-active">
+									{navList[0].name}
+								</a>
 							</Link>
 							<div className={router.pathname == `${navList[0].link}` ? "d-none" : ""}></div>
 						</li>
 						<li className="click">
 							<Link href={navList[1].link}>
-								<a className={router.pathname == `${navList[1].link}` ? "active" : ""}>{navList[1].name}</a>
+								<a className={router.pathname == `${navList[1].link}` ? "active" : ""} id="remove-active">
+									{navList[1].name}
+								</a>
 							</Link>
 							<div className={router.pathname == `${navList[1].link}` ? "d-none" : ""}></div>
 						</li>
-						<li className="dropdown-center">
+						<li className="dropdown">
 							<a
 								className=" dropdown-toggle"
 								id="book-dropdown"
 								type="button"
 								data-bs-toggle="dropdown"
 								aria-expanded="false"
-								onClick={() => setDropdown(!dropdown)}
+								// onClick={showDropdown}
 							>
 								{navList[2].name}
 							</a>
 							<div></div>
 
-							<ul className={`dropdown-menu ${dropdown ? "d-block" : "d-none"}`} aria-labelledby="book-dropdown">
+							<ul className="dropdown-menu" aria-labelledby="book-dropdown">
 								{services.map((item, i) => {
 									return (
 										<li key={i} onClick={() => setDropdown(false)}>
@@ -69,17 +80,14 @@ const HeaderComp = () => {
 									);
 								})}
 							</ul>
-							{/* <ul className="dropdown-menu hoverdown" aria-labelledby="book-dropdown">
-								{services.map((item, i) => {
-									return (
-										<li key={i}>
-											<Link className="dropdown-item" href={`/services/${item.slug}`}>
-												{item.title}
-											</Link>
-										</li>
-									);
-								})}
-							</ul> */}
+						</li>
+						<li className="click">
+							<Link href={navList[3].link}>
+								<a className={router.pathname == `${navList[3].link}` ? "active" : ""} id="remove-active">
+									{navList[3].name}
+								</a>
+							</Link>
+							<div className={router.pathname == `${navList[3].link}` ? "d-none" : ""}></div>
 						</li>
 						<li>
 							<Link href="/contact">

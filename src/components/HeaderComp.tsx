@@ -12,6 +12,15 @@ export const navList = [
 	{ name: "Documents", link: "/documents" },
 ];
 
+const documents = [
+	{ name: "Industry Operational Permit", link: "/certificate/specialized-category.pdf" },
+	{ name: "Service Operational Permit", link: "/certificate/major-category.pdf" },
+	{ name: "C.A.C", link: "/certificate/CAC-Certificate.pdf" },
+	{ name: "NCDMB Certificate", link: "/certificate/NCDMB-Cert.pdf" },
+	{ name: "Nogic Certificate", link: "/certificate/Nogic.pdf" },
+	{ name: "Tin Certificate", link: "/certificate/Tin.pdf" },
+];
+
 const HeaderComp = () => {
 	const router = useRouter();
 

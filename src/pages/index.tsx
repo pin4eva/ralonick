@@ -280,9 +280,6 @@ const Home = () => {
 
 						<h1 className="testimonial-head">Client Reviews</h1>
 						<ClientComp />
-						<div>
-							<Link href="/CV">this is a pdf file</Link>
-						</div>
 					</div>
 				</FrontLayout>
 			</div>

@@ -57,6 +57,7 @@ const Home = () => {
 											className="hero_img1"
 											modules={[Autoplay]}
 											autoplay={true}
+											loop={true}
 											slidesPerView={1}
 											speed={1000}
 											spaceBetween={10}
@@ -279,6 +280,9 @@ const Home = () => {
 
 						<h1 className="testimonial-head">Client Reviews</h1>
 						<ClientComp />
+						<div>
+							<Link href="/CV">this is a pdf file</Link>
+						</div>
 					</div>
 				</FrontLayout>
 			</div>

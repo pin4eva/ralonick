@@ -59,6 +59,7 @@
 		}
 
 		.click {
+			color: $primary;
 			&:hover {
 				div {
 					width: 100%;
@@ -75,6 +76,7 @@
 
 		.dropdown {
 			position: static;
+			color: $primary;
 			&:hover {
 				.dropdown-menu {
 					display: block;
@@ -98,20 +100,20 @@
 				width: 50%;
 				right: 10rem;
 				padding: 2rem 1rem;
-				// float: right;
 				margin-top: 1rem;
 				backdrop-filter: blur(10px);
 				background: hsla(0, 0%, 0%, 0.81);
-
-				&.show {
-					margin-right: 10rem;
-					transform: translate(67px, 43px);
+				&.custom {
+					width: 30%;
 				}
-
 				li {
 					font-size: 0.9rem;
 					color: #ddd;
 					margin-bottom: 1rem;
+					width: 100%;
+				}
+				.dropdown-item {
+					width: 100%;
 				}
 			}
 		}

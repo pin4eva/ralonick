@@ -12,7 +12,7 @@ export const navList = [
 	{ name: "Documents", link: "/documents" },
 ];
 
-const documents = [
+export const documents = [
 	{ name: "Industry Operational Permit", link: "/certificate/specialized-category.pdf" },
 	{ name: "Service Operational Permit", link: "/certificate/major-category.pdf" },
 	{ name: "C.A.C", link: "/certificate/CAC-Certificate.pdf" },
@@ -81,13 +81,29 @@ const HeaderComp = () => {
 								})}
 							</ul>
 						</li>
-						<li className="click">
-							<Link href={navList[3].link}>
-								<a className={router.pathname == `${navList[3].link}` ? "active" : ""} id="remove-active">
-									{navList[3].name}
-								</a>
-							</Link>
-							<div className={router.pathname == `${navList[3].link}` ? "d-none" : ""}></div>
+						<li className="dropdown">
+							<a
+								className=" dropdown-toggle"
+								id="book-dropdown"
+								type="button"
+								data-bs-toggle="dropdown"
+								aria-expanded="false"
+							>
+								{navList[3].name}
+							</a>
+							<div></div>
+
+							<ul className="dropdown-menu custom" aria-labelledby="book-dropdown">
+								{documents.map((item, i) => {
+									return (
+										<li key={i}>
+											<Link href={item.link} className="dropdown-item">
+												{item.name}
+											</Link>
+										</li>
+									);
+								})}
+							</ul>
 						</li>
 						<li>
 							<Link href="/contact">

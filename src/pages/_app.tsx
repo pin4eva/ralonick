@@ -6,11 +6,6 @@ import { Fragment, useEffect } from "react";
 import Head from "next/head";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import "@popperjs/core";
-
-if (process.browser) {
-	require("bootstrap/dist/js/bootstrap");
-}
 
 function MyApp({ Component, pageProps }: AppProps) {
 	useEffect(() => {

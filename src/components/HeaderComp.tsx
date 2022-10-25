@@ -18,12 +18,6 @@ const HeaderComp = () => {
 	const [navDisplay, setNavDisplay] = useState(false);
 	const [dropdown, setDropdown] = useState(false);
 
-	const showDropdown = () => {
-		setDropdown(!dropdown);
-		let change = document.getElementById("remove-active");
-		change?.classList.remove("active");
-	};
-
 	const showNavHandler = () => {
 		setNavDisplay(true);
 	};
@@ -42,31 +36,28 @@ const HeaderComp = () => {
 					<ul className="app-nav">
 						<li className="click">
 							<Link href={navList[0].link}>
-								<a className={router.pathname == `${navList[0].link}` ? "active" : ""} id="remove-active">
-									{navList[0].name}
-								</a>
+								<a className={router.pathname == `${navList[0].link}` ? "active" : ""}>{navList[0].name}</a>
 							</Link>
 							<div className={router.pathname == `${navList[0].link}` ? "d-none" : ""}></div>
 						</li>
 						<li className="click">
 							<Link href={navList[1].link}>
-								<a className={router.pathname == `${navList[1].link}` ? "active" : ""} id="remove-active">
-									{navList[1].name}
-								</a>
+								<a className={router.pathname == `${navList[1].link}` ? "active" : ""}>{navList[1].name}</a>
 							</Link>
 							<div className={router.pathname == `${navList[1].link}` ? "d-none" : ""}></div>
 						</li>
 						<li className="dropdown">
-							<a
-								className=" dropdown-toggle"
-								id="book-dropdown"
-								type="button"
-								data-bs-toggle="dropdown"
-								aria-expanded="false"
-								// onClick={showDropdown}
-							>
-								{navList[2].name}
-							</a>
+							<Link href={navList[2].link}>
+								<a
+									className=" dropdown-toggle"
+									id="book-dropdown"
+									type="button"
+									data-bs-toggle="dropdown"
+									aria-expanded="false"
+								>
+									{navList[2].name}
+								</a>
+							</Link>
 							<div></div>
 
 							<ul className="dropdown-menu" aria-labelledby="book-dropdown">
@@ -127,16 +118,3 @@ const HeaderComp = () => {
 };
 
 export default HeaderComp;
-{
-	/* <a className={router.pathname == `${navList[2].link}` ? "active" : ""}>{navList[2].name}</a> */
-}
-
-{
-	/* {navList.map((nav, i) => (
-							<li key={i}>
-								<Link href={nav.link}>
-									<a className={router.pathname == `${nav.link}` ? "active" : ""}>{nav.name}</a>
-								</Link>
-							</li>
-						))} */
-}

@@ -78,11 +78,6 @@
 				width: 100%;
 				overflow: hidden;
 
-				.swiper-button-prev,
-				.swiper-button-next {
-					display: none;
-				}
-
 				.services-items {
 					.service-item-inner {
 						@media screen and (max-width: $mobile) {
@@ -137,47 +132,6 @@
 										width: 0.5rem;
 										aspect-ratio: 1/1;
 									}
-								}
-							}
-						}
-					}
-				}
-
-				.control-wrapper {
-					width: 30%;
-					justify-content: flex-end;
-					margin-left: auto;
-
-					.swiper-clicks {
-						display: flex;
-						align-items: center;
-						gap: 1rem;
-						width: 100%;
-						margin-top: -3rem;
-
-						.line {
-							height: 1px;
-							background: #adadad;
-							flex: 1;
-						}
-
-						.arrows {
-							display: flex;
-							gap: 1rem;
-
-							.swiper-control {
-								border: 1px solid #a00107;
-								color: #a00107;
-								background: #f5e5e6;
-								border-radius: 50%;
-								padding: 0.5rem 0.8rem;
-								width: 2.5rem;
-								z-index: 3;
-
-								&:disabled {
-									background: transparent;
-									border: 1px solid #adadad;
-									color: #adadad;
 								}
 							}
 						}

@@ -115,7 +115,7 @@ const HeaderComp = () => {
 						{navDisplay ? (
 							<img className="c-pointer" src="/assets/closeButton.svg" alt="" onClick={hideNavHandler} />
 						) : (
-							<img className="c-pointer" src="/assets/hamburger.svg" alt="" onClick={showNavHandler} />
+							<i className="fa-solid fa-bars c-pointer" onClick={showNavHandler}></i>
 						)}
 					</div>
 				</nav>

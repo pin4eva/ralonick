@@ -56,17 +56,16 @@ const HeaderComp = () => {
 							<div className={router.pathname == `${navList[1].link}` ? "d-none" : ""}></div>
 						</li>
 						<li className="dropdown">
-							<Link href={navList[2].link}>
-								<a
-									className=" dropdown-toggle"
-									id="book-dropdown"
-									type="button"
-									data-bs-toggle="dropdown"
-									aria-expanded="false"
-								>
-									{navList[2].name}
-								</a>
-							</Link>
+							<a
+								className=" dropdown-toggle"
+								id="book-dropdown"
+								type="button"
+								data-bs-toggle="dropdown"
+								aria-expanded="false"
+							>
+								{navList[2].name}
+							</a>
+
 							<div></div>
 
 							<ul className="dropdown-menu" aria-labelledby="book-dropdown">

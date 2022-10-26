@@ -46,7 +46,7 @@
 
 			.active {
 				border-bottom: 2px solid $primary;
-				padding-bottom: 0.1rem;
+				padding-bottom: 0.15rem;
 				// border: 1px solid red;
 			}
 		}
@@ -101,10 +101,10 @@
 				right: 10rem;
 				padding: 2rem 1rem;
 				margin-top: 1rem;
-				backdrop-filter: blur(10px);
+				backdrop-filter: blur(4px);
 				// background: hsla(0, 0%, 0%, 0.81);
 				background: rgb(0, 2, 105);
-				opacity: 0.91;
+				opacity: 0.92;
 				&.custom {
 					width: 30%;
 				}

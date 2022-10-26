@@ -102,8 +102,8 @@
 				padding: 2rem 1rem;
 				margin-top: 1rem;
 				backdrop-filter: blur(4px);
-				// background: hsla(0, 0%, 0%, 0.81);
-				background: rgb(0, 2, 105);
+				background: hsla(0, 0%, 0%, 0.81);
+				// background: rgb(0, 2, 105);
 				opacity: 0.92;
 				&.custom {
 					width: 30%;
@@ -113,9 +113,8 @@
 					color: #ddd;
 					margin-bottom: 1rem;
 					width: 100%;
-				}
-				.dropdown-item {
-					width: 100%;
+					// border: 1px solid white;
+					padding: 0.8rem 0.3rem;
 				}
 			}
 		}

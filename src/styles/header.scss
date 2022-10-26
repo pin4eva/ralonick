@@ -102,7 +102,9 @@
 				padding: 2rem 1rem;
 				margin-top: 1rem;
 				backdrop-filter: blur(10px);
-				background: hsla(0, 0%, 0%, 0.81);
+				// background: hsla(0, 0%, 0%, 0.81);
+				background: rgb(0, 2, 105);
+				opacity: 0.91;
 				&.custom {
 					width: 30%;
 				}

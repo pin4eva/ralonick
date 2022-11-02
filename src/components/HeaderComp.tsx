@@ -25,7 +25,6 @@ const HeaderComp = () => {
 	const router = useRouter();
 
 	const [navDisplay, setNavDisplay] = useState(false);
-	const [dropdown, setDropdown] = useState(false);
 
 	const showNavHandler = () => {
 		setNavDisplay(true);
@@ -71,7 +70,7 @@ const HeaderComp = () => {
 							<ul className="dropdown-menu" aria-labelledby="book-dropdown">
 								{services.map((item, i) => {
 									return (
-										<li key={i} onClick={() => setDropdown(false)}>
+										<li key={i}>
 											<Link className="dropdown-item" href={`/services/${item.slug}`}>
 												{item.title}
 											</Link>

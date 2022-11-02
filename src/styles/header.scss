@@ -56,6 +56,7 @@
 			@media screen and (min-width: $md) {
 				display: none;
 			}
+			width: 10px;
 		}
 
 		.click {
@@ -103,8 +104,19 @@
 				margin-top: 1rem;
 				backdrop-filter: blur(4px);
 				background: hsla(0, 0%, 0%, 0.81);
-				// background: rgb(0, 2, 105);
 				opacity: 0.92;
+				height: 500px;
+				border: 1px solid $primary;
+				overflow: auto;
+				overflow-x: hidden;
+				&::-webkit-scrollbar-thumb {
+					background-color: darkgrey;
+					outline: 1px solid slategrey;
+				}
+				&::-webkit-scrollbar {
+					width: 0.7rem;
+				}
+
 				&.custom {
 					width: 30%;
 				}

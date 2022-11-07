@@ -28,81 +28,6 @@
 		}
 	}
 
-	.service-box {
-		border-top: 1px solid $secondary;
-		border-bottom: 1px solid $secondary;
-		padding-top: 1rem;
-		margin-bottom: 1rem;
-		.title-header {
-			font-size: 1.5rem;
-			cursor: pointer;
-			transition: all 400ms ease-in-out;
-			margin-bottom: 1rem;
-			transition: all 400ms ease-in-out;
-			display: flex;
-			justify-content: space-between;
-			span {
-				margin-right: 1rem;
-			}
-
-			&:hover {
-				padding-left: 10px;
-			}
-		}
-
-		.service-content {
-			.service-image {
-				width: 100%;
-				margin: 0 auto;
-
-				@media screen and (min-width: $md) {
-					height: 50%;
-				}
-
-				@media screen and (min-width: 1200px) {
-					width: 80%;
-					height: 80%;
-				}
-
-				img {
-					width: 100%;
-					height: 100%;
-				}
-			}
-
-			.service-text {
-				.description {
-					margin-top: 1rem;
-					font-weight: 500;
-					font-size: 1.125rem;
-				}
-
-				.subtitle {
-					font-weight: 600;
-					font-size: 1.5rem;
-				}
-
-				.subtext {
-					font-weight: 500;
-					font-size: 1.125rem;
-				}
-			}
-
-			.service-image-grid {
-				display: grid;
-				grid-template-columns: 1fr 1fr 1fr;
-				grid-template-rows: 70%;
-				gap: 1rem;
-
-				img {
-					border-radius: 5px;
-					width: 100%;
-					height: 100%;
-				}
-			}
-		}
-	}
-
 	//==========END OF SERVICE HERO SECTION========
 
 	.services-intro {
@@ -131,14 +56,27 @@
 				}
 			}
 
+			.all-service {
+				display: none;
+				.all-service-inner {
+					display: block;
+
+					.service-item {
+						margin-bottom: 1rem;
+						a {
+							list-style: none;
+							text-decoration: none;
+						}
+					}
+				}
+				@media screen and (max-width: 900px) {
+					display: block;
+				}
+			}
+
 			.services-list {
 				width: 100%;
 				overflow: hidden;
-
-				.swiper-button-prev,
-				.swiper-button-next {
-					display: none;
-				}
 
 				.services-items {
 					.service-item-inner {
@@ -194,47 +132,6 @@
 										width: 0.5rem;
 										aspect-ratio: 1/1;
 									}
-								}
-							}
-						}
-					}
-				}
-
-				.control-wrapper {
-					width: 30%;
-					justify-content: flex-end;
-					margin-left: auto;
-
-					.swiper-clicks {
-						display: flex;
-						align-items: center;
-						gap: 1rem;
-						width: 100%;
-						margin-top: -3rem;
-
-						.line {
-							height: 1px;
-							background: #adadad;
-							flex: 1;
-						}
-
-						.arrows {
-							display: flex;
-							gap: 1rem;
-
-							.swiper-control {
-								border: 1px solid #a00107;
-								color: #a00107;
-								background: #f5e5e6;
-								border-radius: 50%;
-								padding: 0.5rem 0.8rem;
-								width: 2.5rem;
-								z-index: 3;
-
-								&:disabled {
-									background: transparent;
-									border: 1px solid #adadad;
-									color: #adadad;
 								}
 							}
 						}

@@ -1,4 +1,4 @@
-import React, { FormEvent } from "react";
+import React, { FormEvent, useEffect } from "react";
 import FrontLayout from "../layouts/front.layout";
 import { useRef } from "react";
 import emailjs from "emailjs-com";
@@ -6,7 +6,7 @@ import emailjs from "emailjs-com";
 const contact = () => {
 	const form = useRef<HTMLFormElement>(null);
 
-	const sendEmail = (e: FormEvent & { target: any }) => {
+	const sendEmail = (e: React.FormEvent<HTMLFormElement> | any) => {
 		const currentForm = form.current;
 
 		if (currentForm == null) return;
@@ -21,7 +21,8 @@ const contact = () => {
 				<div className="contact-header">
 					<h1>Get In Touch</h1>
 					<p>
-						<i className="fa-solid fa-phone"></i>+234-70 3008 1280
+						<i className="fa-solid fa-phone"></i>
+						+234-70 3008 1280
 					</p>
 					<p>
 						<i className="fa-solid fa-envelope"></i>Email: ralonickservicesltd@gmail.com

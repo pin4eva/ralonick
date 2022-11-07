@@ -105,7 +105,7 @@
 				background: hsla(0, 0%, 0%, 0.81);
 				opacity: 0.92;
 				height: 500px;
-				overflow: auto;
+				overflow: hidden;
 				overflow-x: hidden;
 				&::-webkit-scrollbar-thumb {
 					background-color: darkgrey;
@@ -124,7 +124,7 @@
 					margin-bottom: 1rem;
 					width: 100%;
 
-					padding: 0.8rem 0.3rem;
+					padding-inline: 0.8rem;
 				}
 			}
 		}

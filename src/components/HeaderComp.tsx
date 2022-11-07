@@ -68,7 +68,7 @@ const HeaderComp = () => {
 							<div></div>
 
 							<ul className="dropdown-menu" aria-labelledby="book-dropdown">
-								{services.slice(0, 4).map((item, i) => {
+								{services.slice(0, 6).map((item, i) => {
 									return (
 										<li key={i}>
 											<Link className="dropdown-item" href={`/services/${item.slug}`}>

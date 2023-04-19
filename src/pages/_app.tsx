@@ -8,12 +8,12 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 
 function MyApp({ Component, pageProps }: AppProps) {
-	useEffect(() => {
-		if (typeof window !== undefined) {
-			AOS.init();
-			AOS.refresh();
-		}
-	}, []);
+	// useEffect(() => {
+	// 	if (typeof window !== undefined) {
+	// 		AOS.init();
+	// 		AOS.refresh();
+	// 	}
+	// }, []);
 	return (
 		<Fragment>
 			<Head>

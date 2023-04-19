@@ -12,6 +12,9 @@ import { truncateText } from "utils/string.utils";
 import ClipLoader from "react-spinners/ClipLoader";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import "swiper/css";
+import { Autoplay } from "swiper";
+import "swiper/css/autoplay";
 
 const Home = () => {
 	const [disableNext, setDisableNext] = useState(false);
@@ -52,6 +55,9 @@ const Home = () => {
 									<div className="inner-left">
 										<Swiper
 											className="hero_img1"
+											modules={[Autoplay]}
+											autoplay={true}
+											loop={true}
 											slidesPerView={1}
 											speed={1000}
 											spaceBetween={10}
@@ -68,7 +74,7 @@ const Home = () => {
 											<SwiperButtonControl disableNext={disableNext} disablePrev={disablePrev} />
 										</Swiper>
 
-										<div className="hero-text" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="500">
+										<div className="hero-text" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="500">
 											<h1>{`Diverse & Flexible Structure `}</h1>
 											<p>
 												End to end service in the design, engineering, procurement, fabrication, installation, repair of
@@ -86,7 +92,7 @@ const Home = () => {
 						<section className="about-section container">
 							<div className="about-section-inner">
 								<div className=" about-inner-left" data-aos="zoom-in-up" data-aos-duration="500">
-									<img className="about-img" src="/assets/about_img1.png" alt="" />
+									<img className="about-img" src="/images/services/corrosion.png" alt="" />
 								</div>
 
 								<div className="about-inner-right" data-aos="zoom-in-up" data-aos-duration="500">

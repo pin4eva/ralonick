@@ -8,11 +8,11 @@ const AboutPage = () => {
 			<div className="about-page container">
 				<div className="about-hero-section mt-3">
 					<div className="hero-image">
-						<img src="assets/about1.png" alt="frame1" />
+						<img src="images/about-hero.png" alt="frame1" />
 					</div>
 					<div className="hero-text fw-800">
 						<p>About </p>
-						<p className="hero-logo">Ralonik LTD.</p>
+						<p className="hero-logo">Ralonick Services LTD.</p>
 					</div>
 				</div>
 				{/*========== END OF SECTION ONE ==========*/}
@@ -42,7 +42,7 @@ const AboutPage = () => {
 						</p>
 					</div>
 					<div className="about-description-image">
-						<img src="assets/about_img1.png" alt="sec2" />
+						<img src="images/services/pipeline3.png" alt="sec2" />
 					</div>
 				</div>
 				{/* ============================END OF SECOND SECTION============================= */}

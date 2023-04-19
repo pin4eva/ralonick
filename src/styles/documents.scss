@@ -1,0 +1,37 @@
+.documents {
+	margin-top: 1rem;
+	margin-inline: auto;
+	width: 90%;
+	.document-inner {
+		h2 {
+			color: $primary;
+			text-align: center;
+		}
+		ul {
+			// width: 100%;
+			margin: 1rem auto;
+			text-align: center;
+
+			li {
+				border: 1px solid $primary;
+				border-radius: 10px;
+				list-style: none;
+				text-align: center;
+				padding-block: 1rem;
+				margin: 0 auto;
+				width: inherit;
+				transition: all 100ms ease-in-out;
+				&:hover {
+					scale: 1.05;
+				}
+
+				a {
+					text-decoration: none;
+					font-weight: 500;
+					font-size: 1rem;
+					width: 100%;
+				}
+			}
+		}
+	}
+}

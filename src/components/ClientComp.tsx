@@ -5,16 +5,18 @@ import "swiper/css";
 import { Pagination } from "swiper";
 import "swiper/css/pagination";
 
+import { Autoplay } from "swiper";
+import "swiper/css/autoplay";
+
 const ClientComp = () => {
 	return (
 		<Swiper
 			className="client-reviews-wrapper container"
-			modules={[Pagination]}
+			modules={[Pagination, Autoplay]}
+			autoplay={true}
 			spaceBetween={50}
 			slidesPerView={1}
 			pagination={{ clickable: true }}
-			loop={true}
-			loopFillGroupWithBlank={true}
 			speed={1000}
 		>
 			{ClientReviews.map((item) => {

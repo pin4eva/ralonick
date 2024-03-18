@@ -1,6 +1,9 @@
 .app-header {
 	position: relative;
-
+.active{
+	border-bottom: 2px solid $primary;
+	padding-bottom: 0.6rem;
+}
 	@media screen and (max-width: $md) {
 		margin-block: 0.5rem;
 	}

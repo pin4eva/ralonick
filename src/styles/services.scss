@@ -1,5 +1,6 @@
 .services {
     margin-block: 1rem;
+
     .services-hero {
         margin-bottom: 5%;
         flex-direction: column-reverse;
@@ -48,20 +49,23 @@
             }
         }
     }
-    
+
     .services-second-section {
         margin: 1rem 0rem 1rem 0rem;
 
         .services-second-section-inner {
             .services-second-section-inner-header {
                 width: 100%;
-                &.mobile{
+
+                &.mobile {
                     display: block;
-                    @media screen and (min-width:992px){
+
+                    @media screen and (min-width:992px) {
                         display: none;
                     }
-                    .services-second-section-inner-header-inner-inner{
-          
+
+                    .services-second-section-inner-header-inner-inner {
+
                         &.active {
                             border-bottom: 2px solid black;
                             border-top: 2px solid black;
@@ -71,28 +75,35 @@
 
                             }
                         }
-                  
+
                     }
-                
+
                 }
+
                 &.desktop {
                     display: none;
-                    @media screen and (min-width:992px){
+
+                    @media screen and (min-width:992px) {
                         display: block;
                         display: grid;
-                        grid-template-columns: 1fr 1fr;
-                    
+                        grid-template-columns: 1fr 2fr;
+
                     }
                 }
 
-     
 
-            
+
+
 
                 .services-second-section-inner-header-inner {
 
                     .services-second-section-inner-header-inner-top {
                         border-bottom: 1px solid rgb(225, 223, 223);
+
+                        h1 {
+                            color: rgb(225, 223, 223);
+                            ;
+                        }
 
                         &:nth-child(1) {
                             border-top: 1px solid rgb(225, 223, 223);
@@ -125,11 +136,11 @@
                             text-transform: uppercase;
                         }
 
-                     
-                            i {
-                                font-size: large;
-                            }
-                     
+
+                        i {
+                            font-size: large;
+                        }
+
                     }
                 }
             }
@@ -142,7 +153,7 @@
                         font-weight: 600;
                         font-size: 27px;
                         text-transform: uppercase;
-                    
+
                     }
 
                     p {

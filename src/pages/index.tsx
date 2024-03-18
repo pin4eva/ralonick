@@ -1,5 +1,5 @@
 /* eslint-disable @next/next/no-img-element */
-import React from "react";
+import React, { useState } from "react";
 import FrontLayout from "../layouts/front.layout";
 import Link from "next/link";
 import "animate.css";
@@ -28,8 +28,19 @@ export function SlidePrev() {
 	);
 }
 const Home = () => {
-
-
+	const [homehero, sethomehero] = useState(false)
+const [secondhomehero, setsecondhomehero]=useState(false)
+	const hideHomeHero = () => {
+		sethomehero(true)
+	};
+	const showHomeHero = () => {
+		sethomehero(false)
+	};
+	const showSecondHomeHero=()=>{
+		setsecondhomehero(false)
+		sethomehero(false)
+	}
+	
 	return (
 		<div>
 
@@ -38,7 +49,7 @@ const Home = () => {
 					<section className="home-hero">
 						<div className="home-hero_upper">
 							<div className="home-hero_upper-left">
-								<Swiper
+								{/* <Swiper
 									modules={[Navigation, Pagination, Scrollbar, A11y]}
 									spaceBetween={0}
 									slidesPerView={1}
@@ -55,7 +66,32 @@ const Home = () => {
 										<SlidePrev />
 										<SlideNext />
 									</div>
-								</Swiper>
+								</Swiper> */}
+								<div className={`home-cont ${homehero ||secondhomehero?"" : "active"}`}>
+									<div className={"home-arrows-inner"}>
+
+										{homehero ? (
+											<div className="c-pointer" onClick={showHomeHero}>
+												<i className="fa-solid fa-arrow-up" ></i>
+											</div>
+										):(
+											<div className="c-pointer" onClick={showSecondHomeHero}>
+											<i className="fa-solid fa-chevron-left" ></i>
+										</div>
+										)
+									}
+
+									</div>
+						
+									
+									<div className={`home-left-content  ${homehero ? "show" : ""}`}>
+										<img src="./images/homehero.png" alt="" />
+									</div>
+									<div className={`home-left-content  ${secondhomehero ? "" : "show"}`}>
+										<img src="./images/hometwohelmet.png" alt="" />
+									</div>
+								</div>
+								
 							</div>
 
 							<div className="home-hero_uppper-right">
@@ -91,7 +127,7 @@ const Home = () => {
 									<div className="home-first-section_inner-right_text_lower">
 										<p>Ralonick is a fast growing construction company rapidly spreading its frontiers across Nigeria, with sole interest in operation and maintenance of production facilities, local and foreign procurement of oil & gas materials and consultation.</p>
 										<p>
-										Our operation is based on a diverse and flexible structure. We
+											Our operation is based on a diverse and flexible structure. We
 											adopt a system of Total quality Management (TQM) at a
 											reasonable cost and within the shortest possible time, in
 											conjunction with our technical partners. We provide end to end
@@ -215,7 +251,7 @@ const Home = () => {
 											<div className="home-third-section-inner-right_box-table_inner_text">
 												<h3>Safety</h3>
 												<p>
-												{"	As one of our offered service we are not lacking in ensuring that our installations and technical works are properly done."}
+													{"	As one of our offered service we are not lacking in ensuring that our installations and technical works are properly done."}
 													{"We have zero reservations as regards safety. Our staff are highly trained for personal & on-site safety."}</p>
 											</div>
 										</div>
@@ -238,12 +274,12 @@ const Home = () => {
 							</div>
 							<div className="home-fourth-section-inner_card">
 								<Swiper
-						
+
 									modules={[Navigation, Pagination, Scrollbar, A11y]}
 									spaceBetween={0}
 									slidesPerView={1}
 									onReachEnd={() => {/*...*/ }}
-								
+
 									onSwiper={(swiper) => console.log(swiper)}
 									onSlideChange={() => console.log('slide change')}>
 									<div className="home-hero_uppeer-left_image">
@@ -257,7 +293,7 @@ const Home = () => {
 														<h3>{"Active & Passive Fire Proofing"}</h3>
 														<p>Fire Proofing is a vital component for any structure to ensure safety of lives and minimal financial loss of properties. Ralonick offers professional fire proofing services ranging from cemetitious fire proofing, to Automatic fire suppression, etc.</p>
 														<Link href={'/services/single-service'}>
-														<a>Learn More<i className="fa-solid fa-arrow-right"></i></a>
+															<a>Learn More<i className="fa-solid fa-arrow-right"></i></a>
 														</Link>
 													</div>
 												</div>
@@ -269,7 +305,7 @@ const Home = () => {
 														<h3>Field Joint Coating Services</h3>
 														<p>{"This involves the coating of girth weld produce on board the pipe-laying vessels or at any offshore location. Ralonick offers engineering design & fabrication of customized field joint coating equipment which involves liquid applied materials."}</p>
 														<Link href={'/services/single-service'}>
-														<a>Learn More<i className="fa-solid fa-arrow-right"></i></a>
+															<a>Learn More<i className="fa-solid fa-arrow-right"></i></a>
 														</Link>
 													</div>
 												</div>
@@ -281,7 +317,7 @@ const Home = () => {
 														<h3>{"Procurement & Installation of FRP/GRP"}</h3>
 														<p>In conjunction with our foreign partners AOCOMM Composite Limited(major manufacturers of FRP and GRP Products) we secure leadership in the area of technical support, procurement and maintenance for upstream and downstream oil and gas refinery.</p>
 														<Link href={'/services/single-service'}>
-														<a>Learn More<i className="fa-solid fa-arrow-up-right"></i></a>
+															<a>Learn More<i className="fa-solid fa-arrow-up-right"></i></a>
 														</Link>
 													</div>
 												</div>
@@ -346,12 +382,12 @@ const Home = () => {
 								<h1>Clients Reviews</h1>
 							</div>
 							<Swiper
-					
+
 								modules={[Navigation, Pagination, Scrollbar, A11y]}
 								spaceBetween={0}
 								slidesPerView={1}
 								pagination={{ clickable: true }}
-								
+
 								onSwiper={(swiper) => console.log(swiper)}
 								onSlideChange={() => console.log('slide change')}>
 								<div className="home-hero_uppeer-left_image">
